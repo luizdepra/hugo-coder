@@ -1,0 +1,26 @@
+name = "Coder"
+license = "MIT"
+licenselink = "https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md"
+description = "A simple and clean blog theme for Hugo"
+homepage = "https://luizdepra.com/posts/hugo-coder/"
+tags = [
+  "blog",
+  "minimal",
+  "minimalist",
+  "responsive",
+  "simple",
+  "clean",
+  "personal"
+]
+features = [
+  "analytics",
+  "favicon",
+  "pagination",
+  "single-column",
+  "syntax-highlighting"
+]
+min_version = "0.32"
+
+[author]
+  name = "Luiz F. A. de Prá"
+  homepage = "https://luizdepra.com"

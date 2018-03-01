@@ -1,0 +1,14 @@
+<nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="{{ "/" | absURL }}">
+      {{ .Site.Title }}
+    </a>
+    <ul class="navigation-list float-right">
+      {{ range sort .Site.Menus.main }}
+      <li class="navigation-item">
+        <a class="navigation-link" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+</nav>

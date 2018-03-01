@@ -1,0 +1,26 @@
+# http://editorconfig.org
+
+# this file is the top-most editorconfig file
+root = true
+
+# all files
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# markdown files
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+# configuration files
+[*.toml]
+indent_size = 2
+
+# web files
+[*.{html,css,less}]
+indent_size = 2

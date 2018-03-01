@@ -1,0 +1,11 @@
+<section class="container centered">
+  <div class="about">
+    <h1>{{ .Site.Params.author }}</h1>
+    <h2>{{ .Site.Params.info }}</h2>
+    <ul>
+      {{ range sort .Site.Params.social }}
+      <li><a href="{{ .url }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>

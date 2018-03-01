@@ -1,0 +1,45 @@
+baseurl = "//johndoe.com/"
+title = "johndoe"
+
+theme = "coder"
+
+languagecode = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[permalinks]
+    post = "posts/:title/"
+    default = ":title/"
+
+[params]
+    author = "John Doe"
+    description = "John Doe's personal website"
+    keywords = "blog,developer,personal"
+    info = "Full Stack DevOps and Magician"
+
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/johndoe/"
+[[params.social]]
+    name = "Twitter"
+    weight = 2
+    url = "https://twitter.com/johndoe/"
+[[params.social]]
+    name = "LinkedIn"
+    weight = 3
+    url = "https://www.linkedin.com/in/johndoe/"
+
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"

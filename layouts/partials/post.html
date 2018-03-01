@@ -1,0 +1,10 @@
+<section class="container post">
+  <article>
+    <header>
+      <h1 class="title">{{ .Title }}</h1>
+      <h2 class="date">{{ .Date.Format "January 2, 2006" }}</h2>
+    </header>
+
+    {{ .Content }}
+  </article>
+</section>
