@@ -70,7 +70,6 @@ hugo server
 
 ## To Do
 
-- GoogleAnalytics integration
 - Comments (probably not Disqus, sorry)
 - Tags, Categories and Series
 
