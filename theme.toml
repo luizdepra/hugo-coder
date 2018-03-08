@@ -2,7 +2,7 @@ name = "Coder"
 license = "MIT"
 licenselink = "https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md"
 description = "A simple and clean blog theme for Hugo"
-homepage = "https://luizdepra.com/posts/hugo-coder/"
+homepage = "https://github.com/luizdepra/hugo-coder/"
 tags = [
   "blog",
   "minimal",
