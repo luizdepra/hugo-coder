@@ -13,7 +13,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 [permalinks]
-    post = "posts/:title/"
+    posts = "posts/:title/"
     default = ":title/"
 
 [params]
