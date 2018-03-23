@@ -3,7 +3,7 @@
     <a class="navigation-title" href="{{ "/" | absURL }}">
       {{ .Site.Title }}
     </a>
-    {{with .Site.Menus.main}}
+    {{ with .Site.Menus.main }}
     <ul class="navigation-list float-right">
       {{ range sort . }}
       <li class="navigation-item">
@@ -11,6 +11,6 @@
       </li>
       {{ end }}
     </ul>
-    {{end}}
+    {{ end }}
   </section>
 </nav>

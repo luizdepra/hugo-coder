@@ -23,10 +23,6 @@ Add the following lines to your `config.toml`.
 ```toml
 theme = "coder" # set the theme
 
-[permalinks] # configure post and fixed pages permalinks
-    post = "posts/:title/"
-    default = ":title/"
-
 [params] # theme parameters
     author = "John Doe" # author's name
     info = "Full Stack DevOps and Magician" # author's job title or info
@@ -84,3 +80,4 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 ## Special Thanks
 
 - Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
+- All contributors, for every PR and Issue reported.\
