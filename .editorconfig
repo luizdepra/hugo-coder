@@ -24,3 +24,6 @@ indent_size = 2
 # web files
 [*.{html,css,less}]
 indent_size = 2
+
+[Makefile]
+indent_style = tab

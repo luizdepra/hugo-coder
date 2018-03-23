@@ -58,6 +58,12 @@ You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-c
 
 ### Build & Test
 
+To update or generate the minified CSS file:
+
+```
+make build
+```
+
 To build your site and test, run:
 
 ```
@@ -80,4 +86,4 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 ## Special Thanks
 
 - Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
-- All contributors, for every PR and Issue reported.\
+- All contributors, for every PR and Issue reported.
