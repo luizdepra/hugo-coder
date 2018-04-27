@@ -49,8 +49,12 @@ theme = "coder" # set the theme
     weight = 1
     url  = "/posts/"
 [[menu.main]]
-    name = "About"
+    name = "Talks"
     weight = 2
+    url  = "/talks/"
+[[menu.main]]
+    name = "About"
+    weight = 3
     url = "/about/"
 ```
 
