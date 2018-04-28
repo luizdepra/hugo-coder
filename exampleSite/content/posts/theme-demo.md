@@ -26,6 +26,12 @@ _This is italic text_
 
 ~~Deleted text~~
 
+| Heading | Another heading |
+| :----:  | :-------------: |
+|  text   |      text       |
+|  text   |      text       |
+|  text   |      text       |
+
 > Block quotes are
 > written like so.
 >
