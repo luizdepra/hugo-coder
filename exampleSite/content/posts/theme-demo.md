@@ -26,6 +26,12 @@ _This is italic text_
 
 ~~Deleted text~~
 
+Text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+
+$$
+\sum_{n=1}^{\infty} 2^{-n} = 1
+$$
+
 > Block quotes are
 > written like so.
 >
