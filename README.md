@@ -54,11 +54,7 @@ theme = "coder" # set the theme
     url = "/about/"
 ```
 
-### Disqus
-Add the following line to your config,
-```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
-You can disable comments for a post by adding the following to your page meta data.
-```disable_comments: true```
+
 
 
 You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
@@ -76,6 +72,17 @@ To build your site and test, run:
 ```
 hugo server
 ```
+To preview the exampleSite, run
+```
+make demo #Copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D
+```
+
+### Disqus
+dd the following line to your config,
+```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
+You can disable comments for a post by adding the following to your page meta data.
+```disable_comments: true```
+
 
 ## To Do
 - Tags, Categories and Series
