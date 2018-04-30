@@ -32,12 +32,15 @@ disqusShortname = "yourdiscussshortname"
     name = "LinkedIn"
     weight = 3
     url = "https://www.linkedin.com/in/johndoe/"
-
+[[menu.main]]
+    name = "Projects"
+    weight = 1
+    url = "/projects"
 [[menu.main]]
     name = "Blog"
-    weight = 1
+    weight = 2 
     url  = "/posts/"
 [[menu.main]]
     name = "About"
-    weight = 2
+    weight = 3 
     url = "/about/"

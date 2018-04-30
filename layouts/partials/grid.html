@@ -1,0 +1,16 @@
+<section class="container grid">
+    <h1 class="title">{{ .Title }}</h1>
+   
+    <div class="grid-wrapper">
+        {{ range .Paginator.Pages }}
+            <a href="{{ .URL }}" class="grid-item">
+                <img src="http://via.placeholder.com/350x150"/>
+                <!-- <span>{{ .Date.Format "January 2, 2006" }}</span><a href="{{ .URL }}">{{ .Title }}</a> -->
+                {{ .Title }}
+            </a>
+        {{ end }}
+        </ul>
+    </div>
+    {{ partial "pagination.html" . }}
+  </section>
+  
