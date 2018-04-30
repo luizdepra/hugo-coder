@@ -74,8 +74,9 @@ hugo server
 ```
 To preview the exampleSite, run
 ```
-make demo #Copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D
+make demo
 ```
+ The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
 
 ### Disqus
 dd the following line to your config,
