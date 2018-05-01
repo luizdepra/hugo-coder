@@ -1,6 +1,7 @@
 +++
 date = "2017-01-08"
 title = "Theme Demo"
+math = "true"
 
 +++
 
@@ -25,6 +26,18 @@ __This is bold text__
 _This is italic text_
 
 ~~Deleted text~~
+
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+
+$$
+\sum_{n=1}^{\infty} 2^{-n} = 1
+$$
+
+| Heading | Another heading |
+| :----:  | :-------------: |
+|  text   |      text       |
+|  text   |      text       |
+|  text   |      text       |
 
 > Block quotes are
 > written like so.
