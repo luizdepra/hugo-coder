@@ -2,6 +2,7 @@
 @fg-color: #323232;
 @darker-bg-color: #dcdcdc;
 @darker-fg-color: #000;
+@link-color: #3366CC;
 
 
 *,
@@ -42,6 +43,16 @@ a {
 
 p {
   margin: 1.6rem 0 1.6rem 0;
+  a {
+    font-weight: 400;
+    color: @darker-fg-color;
+    text-decoration: underline;
+    text-underline-position: under;
+    &:focus,
+    &:hover {
+      color: @link-color;
+    }
+  }
 }
 
 h1,
