@@ -33,6 +33,12 @@ $$
 \sum_{n=1}^{\infty} 2^{-n} = 1
 $$
 
+| Heading | Another heading |
+| :----:  | :-------------: |
+|  text   |      text       |
+|  text   |      text       |
+|  text   |      text       |
+
 > Block quotes are
 > written like so.
 >
