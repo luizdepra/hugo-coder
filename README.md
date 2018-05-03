@@ -79,7 +79,7 @@ make demo
  The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
 
 ### Disqus
-dd the following line to your config,
+Add the following line to your config,
 ```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
 You can disable comments for a post by adding the following to your page meta data.
 ```disable_comments: true```
