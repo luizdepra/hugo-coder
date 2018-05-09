@@ -28,6 +28,10 @@ theme = "coder" # set the theme
     info = "Full Stack DevOps and Magician" # author's job title or info
     description = "John Doe's personal website" # site description
     keywords = "blog,developer,personal" # site keywords
+
+    # wether you want to hide copyright and credits in the footer
+    hideCredits = false
+    hideCopyright = false
     
 # Social links
 [[params.social]]
