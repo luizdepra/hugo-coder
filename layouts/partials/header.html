@@ -1,6 +1,6 @@
 <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="{{ "/" | absURL }}">
+    <a class="navigation-title" href="{{ .Site.BaseURL }}">
       {{ .Site.Title }}
     </a>
     {{ with .Site.Menus.main }}
