@@ -1,5 +1,5 @@
 ---
-title: "Example3"
+title: "Coder THE hugo theme"
 date: 2018-04-29T23:47:16+02:00
-tags: []
+tags: [hugo, html, css, go, js]
 ---
