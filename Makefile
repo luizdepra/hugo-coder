@@ -23,7 +23,7 @@ demo: build
 	cp -r $(current_dir)/layouts/* exampleSite/themes/coder/layouts
 	cp -r $(current_dir)/static/* exampleSite/themes/coder/static
 	cp -r $(current_dir)/theme.toml exampleSite/themes/coder/theme.toml
-	cd examplesite && hugo serve -D
+	cd exampleSite && hugo serve -D
 
 clean:
 	rm -f $(CSS_DIR)/*.css
