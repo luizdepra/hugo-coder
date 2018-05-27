@@ -1,6 +1,4 @@
-![hugo-coder logotype a](https://user-images.githubusercontent.com/36028424/40582328-583f656c-61a5-11e8-8d86-6e7c23f2b45d.png)
-
-# hugo-coder
+![](https://github.com/luizdepra/hugo-coder/blob/master/static/images/logo/huco-coder-logotype-a.png)
 
 A simple and clean blog theme for Hugo.
 
