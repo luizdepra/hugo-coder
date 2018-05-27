@@ -1,4 +1,4 @@
-# hugo-coder
+![](https://github.com/luizdepra/hugo-coder/blob/master/static/images/logo/hugo-coder-logotype-a.png)
 
 A simple and clean blog theme for Hugo.
 
