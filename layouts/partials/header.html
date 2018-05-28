@@ -4,7 +4,7 @@
       {{ .Site.Title }}
     </a>
     {{ with .Site.Menus.main }}
-    <ul class="navigation-list float-right">
+    <ul class="navigation-list {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}">
       {{ range sort . }}
       <li class="navigation-item">
         <a class="navigation-link" href="{{ .URL }}">{{ .Name }}</a>

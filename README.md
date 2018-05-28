@@ -46,7 +46,10 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     hideCopyright = false
 
     # Custom CSS
-	custom_css = []
+    custom_css = []
+
+    # RTL support
+    rtl = false
 
 # Social links
 [[params.social]]
