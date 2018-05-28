@@ -98,7 +98,20 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 
 ## Author
 
-[Luiz de Prá](https://luizdepra.com)
+[Luiz de Prá](https://github.com/luizdepra)
+
+## Contributors
+
+- [Gabor Nagy](https://github.com/Aigeruth)
+- [Ihor Dvoretskyi](https://github.com/idvoretskyi)
+- [Jan Baudisch](https://github.com/flyingP0tat0)
+- [Jiri Hubacek](https://github.com/qeef)
+- [Khosrow Moossavi](https://github.com/khos2ow)
+- [Maikel](https://github.com/mbollemeijer)
+- [peterrus](https://github.com/peterrus)
+- [Ralf Junghanns](https://github.com/rabbl)
+- [tobaloidee](https://github.com/Tobaloidee)
+- [Vlad Ionescu](https://github.com/Vlaaaaaaad)
 
 ## Special Thanks
 
