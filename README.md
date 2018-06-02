@@ -32,7 +32,13 @@ theme = "coder" # set the theme
     # wether you want to hide copyright and credits in the footer
     hideCredits = false
     hideCopyright = false
-    
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
 # Social links
 [[params.social]]
     name = "Github"

@@ -24,7 +24,10 @@ disqusShortname = "yourdiscussshortname"
     hideCopyright = false
 
     # Custom CSS
-	custom_css = []
+    custom_css = []
+
+    # RTL support
+    rtl = false
 
 [[params.social]]
     name = "Github"
