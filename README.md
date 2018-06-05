@@ -21,18 +21,32 @@ git clone https://github.com/luizdepra/hugo-coder.git themes/coder
 Add the following lines to your `config.toml`.
 
 ```toml
-theme = "coder" # set the theme
+baseurl = "http://www.example.com" # Hostname (and path) to the root.
+title = "johndoe" # Site title.
+theme = "coder" # Set the theme.
+languagecode = "en" # The site’s language code.
+
+paginate = 20 # Default number of pages per page in pagination.
+canonifyurls = true # Enable to turn relative URLs into absolute.
+
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
 
 [params] # theme parameters
-    author = "John Doe" # author's name
-    info = "Full Stack DevOps and Magician" # author's job title or info
-    description = "John Doe's personal website" # site description
-    keywords = "blog,developer,personal" # site keywords
+    author = "John Doe" # Author's name.
+    info = "Full Stack DevOps and Magician" # Author's job title or info.
+    description = "John Doe's personal website" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
 
-    # wether you want to hide copyright and credits in the footer
+    disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
+
+    # Wether you want to hide copyright and credits in the footer.
     hideCredits = false
     hideCopyright = false
-    
+
+    # Custom CSS
+	custom_css = []
+
 # Social links
 [[params.social]]
     name = "Github"
@@ -112,6 +126,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Ralf Junghanns](https://github.com/rabbl)
 - [tobaloidee](https://github.com/Tobaloidee)
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
+- [Niels Reijn](https://github.com/reijnn)
 
 ## Special Thanks
 
