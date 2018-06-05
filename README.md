@@ -21,19 +21,34 @@ git clone https://github.com/luizdepra/hugo-coder.git themes/coder
 Add the following lines to your `config.toml`.
 
 ```toml
-theme = "coder" # set the theme
+baseurl = "http://www.example.com"
+title = "johndoe"
 
-[params] # theme parameters
-    author = "John Doe" # author's name
-    info = "Full Stack DevOps and Magician" # author's job title or info
-    description = "John Doe's personal website" # site description
-    keywords = "blog,developer,personal" # site keywords
+theme = "coder"
 
-    # wether you want to hide copyright and credits in the footer
+languagecode = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "John Doe"
+    description = "John Doe's personal website"
+    keywords = "blog,developer,personal"
+    info = "Full Stack DevOps and Magician"
+
     hideCredits = false
     hideCopyright = false
-    
-# Social links
+
+    # Custom CSS
+	custom_css = []
+
 [[params.social]]
     name = "Github"
     weight = 1
@@ -47,7 +62,6 @@ theme = "coder" # set the theme
     weight = 3
     url = "https://www.linkedin.com/in/johndoe/"
 
-# Menu links
 [[menu.main]]
     name = "Blog"
     weight = 1
@@ -56,6 +70,7 @@ theme = "coder" # set the theme
     name = "About"
     weight = 2
     url = "/about/"
+
 ```
 
 
