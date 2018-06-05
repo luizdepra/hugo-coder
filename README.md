@@ -21,34 +21,33 @@ git clone https://github.com/luizdepra/hugo-coder.git themes/coder
 Add the following lines to your `config.toml`.
 
 ```toml
-baseurl = "http://www.example.com"
-title = "johndoe"
+baseurl = "http://www.example.com" # Hostname (and path) to the root.
+title = "johndoe" # Site title.
+theme = "coder" # Set the theme.
+languagecode = "en" # The site’s language code.
 
-theme = "coder"
+paginate = 20 # Default number of pages per page in pagination.
+canonifyurls = true # Enable to turn relative URLs into absolute.
 
-languagecode = "en"
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
 
-paginate = 20
-canonifyurls = true
+[params] # theme parameters
+    author = "John Doe" # Author's name.
+    info = "Full Stack DevOps and Magician" # Author's job title or info.
+    description = "John Doe's personal website" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+    disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 
-disqusShortname = "yourdiscussshortname"
-
-[params]
-    author = "John Doe"
-    description = "John Doe's personal website"
-    keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
-
+    # Wether you want to hide copyright and credits in the footer.
     hideCredits = false
     hideCopyright = false
 
     # Custom CSS
 	custom_css = []
 
+# Social links
 [[params.social]]
     name = "Github"
     weight = 1
@@ -62,6 +61,7 @@ disqusShortname = "yourdiscussshortname"
     weight = 3
     url = "https://www.linkedin.com/in/johndoe/"
 
+# Menu links
 [[menu.main]]
     name = "Blog"
     weight = 1
@@ -70,7 +70,6 @@ disqusShortname = "yourdiscussshortname"
     name = "About"
     weight = 2
     url = "/about/"
-
 ```
 
 
@@ -127,6 +126,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Ralf Junghanns](https://github.com/rabbl)
 - [tobaloidee](https://github.com/Tobaloidee)
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
+- [Niels Reijn](https://github.com/reijnn)
 
 ## Special Thanks
 
