@@ -30,6 +30,7 @@ paginate = 20 # Default number of pages per page in pagination.
 canonifyurls = true # Enable to turn relative URLs into absolute.
 
 pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
 
 [params] # theme parameters
@@ -40,7 +41,7 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
 
     disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 
-    # Wether you want to hide copyright and credits in the footer.
+    # Whether you want to hide copyright and credits in the footer.
     hideCredits = false
     hideCopyright = false
 
@@ -127,6 +128,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [tobaloidee](https://github.com/Tobaloidee)
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
 - [Niels Reijn](https://github.com/reijnn)
+- [Harry Khanna](https://github.com/hkhanna)
 
 ## Special Thanks
 
