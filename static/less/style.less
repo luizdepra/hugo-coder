@@ -343,3 +343,49 @@ img {
 .float-left {
   float: left;
 }
+
+.inverted-colors {
+  color: @inverted-fg-color;
+  background-color: @inverted-bg-color;
+  a {
+    color: @inverted-fg-color;
+  }
+  p {
+    a {
+      color: @inverted-fg-color;
+      &:hover {
+        color: @inverted-link-color;
+      }
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: @inverted-fg-color;
+  }
+  code {
+    background-color: @inverted-darker-fg-color;
+    color: @fg-color;
+  }
+
+  table td, table th {
+    border-color: @inverted-darker-fg-color;
+  }
+  article {
+    header {
+      h2 {
+        color: @inverted-fg-color;
+      }
+    }
+  }
+  pre {
+    background-color: @inverted-darker-fg-color;
+    code {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+}

@@ -23,6 +23,8 @@ disqusShortname = "yourdiscussshortname"
     hideCredits = false
     hideCopyright = false
 
+    invertedColors = false
+
     # Custom CSS
     custom_css = []
 

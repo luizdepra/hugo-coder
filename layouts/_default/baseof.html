@@ -37,7 +37,7 @@
     {{ .Hugo.Generator }}
   </head>
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+  <body class="{{ if .Site.Params.invertedColors }}inverted-colors{{ end }} {{ if .Site.Params.rtl }} rtl{{ end }}">
     <main class="wrapper">
       {{ partial "header.html" . }}
 

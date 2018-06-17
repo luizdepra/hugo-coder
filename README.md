@@ -44,7 +44,10 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = false
     hideCopyright = false
-
+    
+    # Inverted color scheme - black background, white letters.
+    invertedColors = false
+    
     # Custom CSS
     custom_css = []
 
@@ -132,6 +135,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
 - [Niels Reijn](https://github.com/reijnn)
 - [Harry Khanna](https://github.com/hkhanna)
+- [Jan Masarik](https://github.com/janmasarik)
 
 ## Special Thanks
 
