@@ -1,7 +1,7 @@
 # LESS params
 LESS_DIR = ./static/less
-LESS_RTL_DIR = ./static/less/rtl
-LESS_TMP_FILE = tmp.less
+LESS_FILE = style.less
+LESS_RTL_FILE = style-rtl.less
 
 # CSS params
 CSS_DIR = ./static/css
@@ -9,23 +9,21 @@ CSS_FILE = style.min.css
 CSS_RTL_FILE = style-rtl.min.css
 CSS_TMP_FILE = tmp.css
 
-.PHONY: clean demo build
-
-build: clean
-	for f in "`find $(LESS_DIR) -maxdepth 1 -type f`"; do cat $$f >> $(LESS_DIR)/$(LESS_TMP_FILE); done
-	for f in "`find $(LESS_RTL_DIR) -maxdepth 1 -type f`"; do cat $$f >> $(LESS_RTL_DIR)/$(LESS_TMP_FILE); done
-
-	# LTR
-	lessc $(LESS_DIR)/$(LESS_TMP_FILE) > $(CSS_DIR)/$(CSS_TMP_FILE)
-	uglifycss $(CSS_DIR)/$(CSS_TMP_FILE) > $(CSS_DIR)/$(CSS_FILE)
+define build_less
+	lessc $(LESS_DIR)/$(1) > $(CSS_DIR)/$(CSS_TMP_FILE)
+	uglifycss $(CSS_DIR)/$(CSS_TMP_FILE) > $(CSS_DIR)/$(2)
 	rm -f $(CSS_DIR)/$(CSS_TMP_FILE)
-	rm -f $(LESS_DIR)/$(LESS_TMP_FILE)
+endef
 
-	# RTL
-	lessc $(LESS_RTL_DIR)/$(LESS_TMP_FILE) > $(CSS_DIR)/$(CSS_TMP_FILE)
-	uglifycss $(CSS_DIR)/$(CSS_TMP_FILE) > $(CSS_DIR)/$(CSS_RTL_FILE)
-	rm -f $(CSS_DIR)/$(CSS_TMP_FILE)
-	rm -f $(LESS_RTL_DIR)/$(LESS_TMP_FILE)
+.PHONY: clean demo build build-ltr build-rtl
+
+build: clean build-ltr build-rtl
+
+build-ltr:
+	$(call build_less,$(LESS_FILE),$(CSS_FILE))
+
+build-rtl:
+	$(call build_less,$(LESS_RTL_FILE),$(CSS_RTL_FILE))
 
 demo: build
 	mkdir -p demo/themes/coder
@@ -35,6 +33,4 @@ demo: build
 
 clean:
 	rm -f $(CSS_DIR)/*.css
-	rm -f $(LESS_DIR)/$(LESS_TMP_FILE)
-	rm -f $(LESS_RTL_DIR)/$(LESS_TMP_FILE)
 	rm -rf demo
