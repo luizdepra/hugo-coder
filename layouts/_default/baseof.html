@@ -16,6 +16,7 @@
 
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="{{ "css/fontawesome-all.min.css" | absURL }}">
     <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
 
     {{ if .Site.Params.rtl}}
@@ -26,6 +27,12 @@
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
 
+    {{ if .Site.Params.rtl}}
+      {{ range .Site.Params.custom_rtl_css }}
+        <link rel="stylesheet" href="{{ . | absURL }}">
+      {{ end }}
+    {{ end }}
+
     <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
@@ -33,6 +40,8 @@
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
+
+    {{ template "_internal/twitter_cards.html" . }}
 
     {{ .Hugo.Generator }}
   </head>
@@ -48,8 +57,8 @@
       {{ partial "footer.html" . }}
     </main>
 
-    {{ template "_internal/google_analytics.html" . }}
-
+    {{ if not .Site.BuildDrafts }}
+      {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
   </body>
-
 </html>

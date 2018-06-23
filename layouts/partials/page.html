@@ -1,9 +1,25 @@
 <section class="container page">
   <article>
-    <header>
-      <h1>{{ .Title }}</h1>
+    <header class="page-header">
+      <div class="page-title">
+        <h1>{{ .Title }}</h1>
+      </div>
+      <div class="page-meta">
+        <span class="posted-on">
+          <i class="far fa-calendar"></i>
+          <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+            {{ .Date.Format "2006, Jan 02" }}
+          </time>
+        </span>
+        <span class="reading-time">
+          <i class="far fa-clock"></i>
+          {{ i18n "readingTime" .ReadingTime }}
+        </span>
+      </div>
     </header>
 
-    {{ .Content }}
+    <div class="page-content">
+      {{ .Content }}
+    </div>
   </article>
 </section>

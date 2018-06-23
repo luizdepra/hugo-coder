@@ -1,4 +1,6 @@
 @import "colors.less";
+@font-family__main: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@font-family__code: Menlo, Consolas, Monaco, 'Ubuntu Mono', 'Liberation Mono', 'Lucida Console', monospace;
 
 *,
 *:after,
@@ -15,7 +17,7 @@ body {
   display:flex;
   color: @fg-color;
   background-color: @bg-color;
-	font-family: 'Fira Mono', monospace;
+	font-family: @font-family__main;
 	font-size: 1.6em;
 	font-weight: 400;
 	letter-spacing: 0.0625em;
@@ -37,7 +39,8 @@ a {
 }
 
 p {
-  margin: 1.6rem 0 1.6rem 0;
+  text-align: justify;
+  margin: 1.6rem 0 2rem 0;
   a {
     font-weight: 400;
     color: @darker-fg-color;
@@ -57,7 +60,7 @@ h4,
 h5,
 h6 {
   color: @darker-fg-color;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.0625em;
   margin: 3.2rem 0 1.6rem 0;
 }
@@ -153,6 +156,14 @@ img {
   max-width: 100%;
 }
 
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -200,11 +211,20 @@ img {
 .content {
   flex: 1;
   margin-top: 1.6rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
   article {
-    header {
+    header.page-header {
       margin-top: 3.2rem;
       margin-bottom: 3.2rem;
+      &:after {
+        content: "";
+        display: block;
+        width: 4em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        border-bottom: .125em solid #bdbdbd;
+        border-bottom-color: #ffcd00;
+      }
       h1, h2 {
         margin: 0;
       }
@@ -215,6 +235,15 @@ img {
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
           font-size: 1.6rem;
         }
+      }
+      .page-title {
+        margin-bottom: .75em;
+      }
+      .page-meta {
+          .posted-on {
+              margin-left: 0;
+              margin-right: 10px;
+          }
       }
     }
   }
@@ -330,10 +359,45 @@ img {
 }
 
 .footer {
-  height: 6.0rem;
+  height: auto;
   width: 100%;
   text-align: center;
-  line-height: 6.0rem;
+  line-height: 3rem;
+  @media(min-width:632px) {
+    height: 7rem;
+    line-height: 4rem;
+  }
+  .centered {
+    height: auto;
+    @media(min-width:632px) {
+      height: 3rem;
+    }
+    .about ul {
+      margin-top: 0;
+      margin-bottom: 0;
+      .separator {
+        font-size: 12px;
+      }
+    }
+  }
+  .copyright {
+    display: block;
+    @media(min-width:632px) {
+      display: inline-block;
+    }
+  }
+  .credits {
+    display: block;
+    @media(min-width:632px) {
+      display: inline-block;
+    }
+    .credits-separator {
+      display: none;
+      @media(min-width:632px) {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 .float-right {
