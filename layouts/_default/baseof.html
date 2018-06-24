@@ -17,19 +17,19 @@
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="{{ "css/fontawesome-all.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}{{ with $.Site.Params.css.version }}?v={{ . }}{{ end }}">
 
     {{ if .Site.Params.rtl}}
-      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}">
+      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}{{ with $.Site.Params.css.version }}?v={{ . }}{{ end }}">
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | absURL }}">
+      <link rel="stylesheet" href="{{ . | absURL }}{{ with $.Site.Params.css.version }}?v={{ . }}{{ end }}">
     {{ end }}
 
-    {{ if .Site.Params.rtl}}
+    {{ if .Site.Params.rtl }}
       {{ range .Site.Params.custom_rtl_css }}
-        <link rel="stylesheet" href="{{ . | absURL }}">
+        <link rel="stylesheet" href="{{ . | absURL }}{{ with $.Site.Params.css.version }}?v={{ . }}{{ end }}">
       {{ end }}
     {{ end }}
 
