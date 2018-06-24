@@ -1,11 +1,24 @@
 <section class="container list">
-  <h1 class="title">{{ .Title }}</h1>
-  <ul>
-    {{ range .Paginator.Pages }}
-    <li>
-      <span>{{ .Date.Format "January 2, 2006" }}</span><a href="{{ .URL }}">{{ .Title }}</a>
-    </li>
+  <div class="page-header">
+    <div class="page-title">
+      <h1>{{ .Title }}</h1>
+    </div>
+  </div>
+  <div class="page-content">
+    {{ $records := where .Data.Pages "Section" "posts" }}
+    {{ if gt (len $records ) 0 }}
+      <ul>
+        {{ $paginator := .Paginate ($records) }}
+        {{ range $paginator.Pages }}
+          <li>
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+            <a href="{{ .URL }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      {{ partial "pagination.html" . }}
+    {{ else }}
+      <p>{{ i18n "noPosts" }}</p>
     {{ end }}
-  </ul>
-  {{ partial "pagination.html" . }}
+  </div>
 </section>

@@ -1,12 +1,24 @@
 <section class="container post">
   <article>
-    <header>
-      <h1 class="title">{{ .Title }}</h1>
-      <h2 class="date">{{ .Date.Format "January 2, 2006" }}</h2>
+    <header class="page-header">
+      <div class="page-title">
+        <h1 class="title">{{ .Title }}</h1>
+      </div>
+      <div class="page-meta">
+        <span class="posted-on">
+          <i class="far fa-calendar"></i>
+          <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+        </span>
+        <span class="reading-time">
+          <i class="far fa-clock"></i>
+          {{ i18n "readingTime" .ReadingTime }}
+        </span>
+      </div>
 
       {{ if eq .Params.math "true" }}
-        <script type="text/javascript" async
-          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
           MathJax.Hub.Config({
             tex2jax: {
               inlineMath: [['$','$']],
@@ -30,7 +42,38 @@
       {{ end }}
     </header>
 
-    {{ .Content }}
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+
+    <footer class="page-footer">
+      <div class="tags">
+        <i class="fas fa-tag"></i>
+        {{ with .Page.Params.Tags }}
+          {{ range $index, $el := . }}
+            {{ if gt $index 0 }}
+              <span class="separator">•</span>
+            {{ end }}
+            <a href="{{ ( print "tags/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+          {{ end }}
+        {{ else }}
+          {{ i18n "noTags" }}
+        {{ end }}
+      </div>
+      <div class="categories">
+        <i class="fas fa-folder"></i>
+        {{ with .Page.Params.Categories }}
+          {{ range $index, $el := . }}
+            {{ if gt $index 0 }}
+              <span class="separator">•</span>
+            {{ end }}
+            <a href="{{ ( print "categories/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+          {{ end }}
+        {{ else }}
+          {{ i18n "noCategories" }}
+        {{ end }}
+      </div>
+    </footer>
   </article>
 
   <br/>
@@ -38,5 +81,4 @@
   {{ if and (not (eq .Site.DisqusShortname "" )) (eq (.Params.disable_comments | default false) false)}}
       {{ template "_internal/disqus.html" . }}
   {{ end }}
-  
 </section>

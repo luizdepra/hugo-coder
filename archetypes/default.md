@@ -1,6 +1,6 @@
-+++ 
-draft = true
-date = {{ .Date }}
-title = ""
-slug = "" 
-+++
+---
+draft: true
+date: {{ .Date }}
+title: "{{ .File.BaseFileName | humanize | title }}"
+slug: "{{ .File.BaseFileName }}"
+---

@@ -4,6 +4,7 @@ body.rtl {
   direction: rtl;
 
   blockquote {
+    border-left: 0;
     border-right: 2px solid @darker-bg-color;
     padding-right: 1.6rem;
   }
@@ -42,8 +43,9 @@ body.rtl {
     ul {
       li {
         span {
-          text-align: left;
+          text-align: right;
           margin-left: 3.0rem;
+          margin-right: 0;
           @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             text-align: right;
           }

@@ -60,5 +60,16 @@
     {{ if not .Site.BuildDrafts }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
+
+    <script type="text/javascript">
+      window.onscroll = function() {
+        var nav = document.getElementById('navigation');
+        if ( window.pageYOffset > 10 ) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      };
+    </script>
   </body>
 </html>
