@@ -38,6 +38,11 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     info = "Full Stack DevOps and Magician" # Author's job title or info.
     description = "John Doe's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
+    avatar = true # display an avatar.
+    avatarurl = "images/avatar.jpg" # if avatar = true, must contain the path of the avatar in the static folder.
+
+    # Add footer content
+    footercontent = "Enter a text here."
 
     disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 

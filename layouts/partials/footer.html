@@ -1,5 +1,6 @@
 <footer class="footer">
   <section class="container">
+    <p>{{ .Site.Params.footercontent }}</p>
     {{ if not .Site.Params.hideCopyright }} © {{ .Site.LastChange.Format "2006" }} {{ end }} {{ if not .Site.Params.hideCredits}} {{ if not .Site.Params.hideCopyright }} · {{ end }} Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. {{ end }}
   </section>
 </footer>

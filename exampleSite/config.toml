@@ -19,9 +19,15 @@ disqusShortname = "yourdiscussshortname"
     description = "John Doe's personal website"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
+    avatar = true # display an avatar.
+    avatarurl = "images/avatar.jpg" # if avatar = true, must contain the path of the avatar in the static folder.
+
+    # Add footer content
+    footercontent = "Enter a text here."
 
     hideCredits = false
     hideCopyright = false
+
 
     # Custom CSS
     custom_css = []
