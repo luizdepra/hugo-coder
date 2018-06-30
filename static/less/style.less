@@ -34,6 +34,7 @@ a {
   text-decoration: none;
   &:focus,
   &:hover {
+    color: @link-hover-color;
     text-decoration: underline;
   }
 }
@@ -41,6 +42,9 @@ a {
 p {
   text-align: justify;
   margin: 1.6rem 0 2rem 0;
+}
+
+.page-content {
   a {
     font-weight: 400;
     color: @darker-fg-color;
@@ -48,7 +52,7 @@ p {
     text-underline-position: under;
     &:focus,
     &:hover {
-      color: @link-color;
+      color: @link-hover-color;
     }
   }
 }
@@ -122,7 +126,6 @@ pre {
   -o-tab-size: 4;
   tab-size: 4;
 }
-
 code {
   font-family: @font-family__code;
   background-color: @bg-color-code-inline;
@@ -136,6 +139,7 @@ pre code {
   color: @fg-color-code-pre;
   border: none;
   border-radius: 0;
+  padding: 0;
 }
 
 blockquote {
@@ -195,42 +199,47 @@ img {
   padding-right: 2.0rem;
 }
 
-.navigation {
-  height: 6.0rem;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: @bg-color;
-  z-index: 10;
-  &.scrolled {
-    -webkit-box-shadow: -1px 3px 5px -1px @nav-box-shadow-color;
-    -moz-box-shadow: -1px 3px 5px -1px @nav-box-shadow-color;
-    box-shadow: -1px 3px 5px -1px @nav-box-shadow-color;
-    border-bottom: 1px solid @nav-border-color;
-  }
-  a {
-    display: inline;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    line-height: 6.0rem;
-    letter-spacing: 0.1rem;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-      font-size: 1.4rem;
+.navbar-default {
+  border-color: rgba(34,34,34,.05);
+  background-color: @bg-color;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+
+  @media(min-width:768px) {
+    border-color: rgba(255,255,255,.3);
+    &.affix {
+      border-color: rgba(34,34,34,.05);
     }
   }
-  ul {
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    li {
-      float: left;
-      margin: 0;
-      position: relative;
-      a {
-        margin-left: 1.0rem;
-        margin-right: 1.0rem;
+  
+  .navbar-header .navbar-brand {
+    color: @darker-fg-color;
+    &:hover,
+    &:focus {
+      color: @link-hover-color;
+    }
+  }
+
+  .nav {
+    > li {
+      > a,
+      > a:focus {
+        font-weight: 500;
+        color: @darker-fg-color;
+        &:hover {
+          color: @link-hover-color;
+        }
+      }
+
+      &.active > a,
+      &.active > a:focus {
+        color: @navbar-link-active !important;
+        background-color: transparent;
+
+        &:hover {
+          background-color: transparent;
+        }
       }
     }
   }
@@ -243,6 +252,8 @@ img {
   .page-header {
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
+    border: none;
+    padding: 0;
     &:after {
       content: "";
       display: block;
@@ -309,9 +320,6 @@ img {
           text-align: left;
         }
       }
-      a {
-        text-transform: uppercase;
-      }
     }
   }
 }
@@ -364,7 +372,6 @@ img {
         display: inline-block;
         position: relative;
         a {
-          text-transform: uppercase;
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem;
@@ -445,7 +452,6 @@ img {
 .float-right {
   float: right;
 }
-
 .float-left {
   float: left;
 }

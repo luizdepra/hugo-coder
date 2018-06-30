@@ -18,11 +18,25 @@ body.rtl {
       border-left: 0;
   }
 
-  .navigation {
-    ul {
-      li {
-        float: right;
-      }
+  .navbar-default .nav.navbar-nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: 768px) {
+    .navbar > .container .navbar-brand {
+      margin-left: 0;
+      margin-right: -15px;
+    }
+    .navbar-nav > li {
+      float: right;
+    }
+    .navbar-header {
+      float: right;
+    }
+    .navbar-left {
+      float: left!important;
+      margin-left: -15px;
     }
   }
 

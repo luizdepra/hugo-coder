@@ -16,6 +16,7 @@
 
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
     <link rel="stylesheet" href="{{ "css/fontawesome-all.min.css" | absURL }}">
     <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}{{ with $.Site.Params.css.version }}?v={{ . }}{{ end }}">
 
@@ -57,19 +58,15 @@
       {{ partial "footer.html" . }}
     </main>
 
+    <script src="{{ "js/jquery.min.js" | absURL }}"></script>
+    <script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+
+    {{ range .Site.Params.custom_js }}
+      <script src="{{ . | absURL }}{{ with $.Site.Params.css.version }}?v={{ . }}{{ end }}"></script>
+    {{ end }}
+
     {{ if not .Site.BuildDrafts }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
-
-    <script type="text/javascript">
-      window.onscroll = function() {
-        var nav = document.getElementById('navigation');
-        if ( window.pageYOffset > 10 ) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
-        }
-      };
-    </script>
   </body>
 </html>
