@@ -8,7 +8,9 @@
           {{ if gt $index 0 }}
             <span class="separator">•</span>
           {{ end }}
-          <a href="{{ .url }}" title="{{ .name }}"><i class="fa{{ .type }} fa-{{ .icon }}"></i></a>
+          <a href="{{ .url }}" title="{{ i18n ( print "footer_social_" .icon ) }}">
+            <i class="fa{{ .type }} fa-{{ .icon }}"></i>
+          </a>
         </li>
         {{ end }}
       </ul>
