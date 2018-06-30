@@ -221,10 +221,13 @@ img {
 }
 
 .avatar img{
-  width:200px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
   border: solid @darker-fg-color 1px;
+  @media only screen and (max-device-width : 768px) {
+    width: 100px;
+  }
 }
 
 .list {
