@@ -20,9 +20,14 @@
   <section class="container">
     {{ if not .Site.Params.hideCopyright }}
     <span class="copyright">
-      © 2018 
+      ©
+      {{ with .Site.Params.copyright.year }}
+        {{ . }}
+      {{ else }}
+        {{ now.Year }}
+      {{ end }}
       {{ if not .Site.Params.hideCopyrightOwner }}
-        <a href="{{ .Site.BaseURL }}">{{ .Site.Title | lower }}</a>
+        <a href="{{ .Site.Params.Home.url | absLangURL }}">{{ .Site.Title | lower }}</a>
       {{ end }}
     </span>
     {{ end }}
