@@ -7,8 +7,8 @@
       <div class="page-meta">
         <span class="posted-on">
           <i class="far fa-calendar"></i>
-          <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-            {{ .Date.Format "2006, Jan 02" }}
+          <time datetime='{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}'>
+            {{ .Lastmod.Format "2006, Jan 02" }}
           </time>
         </span>
         <span class="reading-time">
