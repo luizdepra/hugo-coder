@@ -197,6 +197,19 @@ img {
   }
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  a.navigation-title {
+    font-size: 0rem;
+
+    &::after {
+      content: '~';
+      font-size: 2.4rem;
+      text-align: center;
+      margin-left: -1.4rem;
+    }
+  }
+}
+
 .content {
   flex: 1;
   margin-top: 1.6rem;
