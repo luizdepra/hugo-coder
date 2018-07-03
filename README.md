@@ -132,6 +132,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
 - [Niels Reijn](https://github.com/reijnn)
 - [Harry Khanna](https://github.com/hkhanna)
+- [Chip Senkbeil](https://github.com/chipsenkbeil)
 
 ## Special Thanks
 
