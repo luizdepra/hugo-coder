@@ -320,8 +320,26 @@ img {
 
 .grid-item {
     width: 350px;
-    height: 200px;
-    background-color: red;
+    height: 210px;
+    max-height: 210px;
     float: left;
-    margin: 10px;
+    margin: 10px; 
+    background-color: @fg-color;
+    line-height: 1.1em;
+
+    .grid-item-title {
+        margin-left: 5px;
+        font-size: 15px;
+        color: @bg-color;
+    }
+
+   .tags {
+        margin-left: 5px;
+        color: @darker-bg-color;
+        font-size: 10px;
+        background-color: inherit;
+        max-height: inherit;
+        overflow: hidden;
+     }
 }
+

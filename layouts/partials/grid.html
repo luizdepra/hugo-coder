@@ -3,16 +3,17 @@
    
     <div class="grid-wrapper">
         {{ range .Paginator.Pages }}
-            <a href="{{ .URL }}" class="grid-item">
+        <div class="grid-item">
+            <a href="{{ .URL }}">
                 <img src="http://via.placeholder.com/350x150"/>
-                <!-- <span>{{ .Date.Format "January 2, 2006" }}</span><a href="{{ .URL }}">{{ .Title }}</a> -->
-                {{ .Title }}
+                <span class="grid-item-title">{{ .Title }}</span>
                 <div class="tags">
                     {{ range .Params.tags }}
                         {{ . }}
                     {{ end }}
                 </div>
             </a>
+        </div>
         {{ end }}
         </ul>
     </div>
