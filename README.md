@@ -38,11 +38,9 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     info = "Full Stack DevOps and Magician" # Author's job title or info.
     description = "John Doe's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
-    avatar = true # display an avatar.
-    avatarurl = "images/avatar.jpg" # if avatar = true, must contain the path of the avatar in the static folder.
+    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
-    # Add footer content
-    footercontent = "Enter a text here."
+    footercontent = "Enter a text here." # Add footer content
 
     disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 
@@ -137,6 +135,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
 - [Niels Reijn](https://github.com/reijnn)
 - [Harry Khanna](https://github.com/hkhanna)
+- [rdhox](https://rdhox.io)
 
 ## Special Thanks
 
