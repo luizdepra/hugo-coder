@@ -33,6 +33,8 @@ pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
 pygmentscodefences = true # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
 
+disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
+
 [params] # theme parameters
     author = "John Doe" # Author's name.
     info = "Full Stack DevOps and Magician" # Author's job title or info.
@@ -41,8 +43,6 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Enter a text here." # Add footer content
-
-    disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = false
@@ -136,6 +136,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Niels Reijn](https://github.com/reijnn)
 - [Harry Khanna](https://github.com/hkhanna)
 - [rdhox](https://rdhox.io)
+- [Chip Senkbeil](https://github.com/chipsenkbeil)
 
 ## Special Thanks
 
