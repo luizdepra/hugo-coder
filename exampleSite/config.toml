@@ -19,9 +19,12 @@ disqusShortname = "yourdiscussshortname"
     description = "John Doe's personal website"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
+    avatarurl = "images/avatar.jpg"
+    footercontent = "Enter a text here."
 
     hideCredits = false
     hideCopyright = false
+
 
     # Custom CSS
     custom_css = []
