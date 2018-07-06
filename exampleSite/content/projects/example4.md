@@ -1,8 +1,8 @@
 ---
-title: "Coder THE hugo theme"
-date: 2018-04-29T23:47:16+02:00
-tags: [hugo, html, css, go, js, hugo, html, css, go, js, hugo, html, css, go, js,hugo]
-image: "/images/logotype-a.png"
+title: "MyFirstProject"
+date: 2018-04-29T22:37:03+02:00
+tags: [Android, Java]
+image: "http://via.placeholder.com/350x150"
 ---
 # Te Chaonius fores
 

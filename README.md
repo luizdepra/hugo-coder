@@ -1,4 +1,4 @@
-# hugo-coder
+![Hugo Coder Logotype](https://github.com/luizdepra/hugo-coder/blob/master/images/logos/logotype-a.png)
 
 A simple and clean blog theme for Hugo.
 
@@ -21,14 +21,36 @@ git clone https://github.com/luizdepra/hugo-coder.git themes/coder
 Add the following lines to your `config.toml`.
 
 ```toml
-theme = "coder" # set the theme
+baseurl = "http://www.example.com" # Hostname (and path) to the root.
+title = "johndoe" # Site title.
+theme = "coder" # Set the theme.
+languagecode = "en" # The site’s language code.
+
+paginate = 20 # Default number of pages per page in pagination.
+canonifyurls = true # Enable to turn relative URLs into absolute.
+
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+
+disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 
 [params] # theme parameters
-    author = "John Doe" # author's name
-    info = "Full Stack DevOps and Magician" # author's job title or info
-    description = "John Doe's personal website" # site description
-    keywords = "blog,developer,personal" # site keywords
-    
+    author = "John Doe" # Author's name.
+    info = "Full Stack DevOps and Magician" # Author's job title or info.
+    description = "John Doe's personal website" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
+    hideCopyright = false
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
 # Social links
 [[params.social]]
     name = "Github"
@@ -77,6 +99,7 @@ To preview the exampleSite, run
 make demo
 ```
  The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
+<<<<<<< HEAD
 
 ### Disqus
 dd the following line to your config,
@@ -85,6 +108,16 @@ You can disable comments for a post by adding the following to your page meta da
 ```disable_comments: true```
 
 
+=======
+
+### Disqus
+Add the following line to your config,
+```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
+You can disable comments for a post by adding the following to your page meta data.
+```disable_comments: true```
+
+
+>>>>>>> 9fdd4f2f4a6f5ecdf8ed9b5359060fe84fabab0a
 ## To Do
 - Tags, Categories and Series
 
@@ -94,7 +127,23 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 
 ## Author
 
-[Luiz de Prá](https://luizdepra.com)
+[Luiz de Prá](https://github.com/luizdepra)
+
+## Contributors
+
+- [Gabor Nagy](https://github.com/Aigeruth)
+- [Ihor Dvoretskyi](https://github.com/idvoretskyi)
+- [Jan Baudisch](https://github.com/flyingP0tat0)
+- [Jiri Hubacek](https://github.com/qeef)
+- [Khosrow Moossavi](https://github.com/khos2ow)
+- [Maikel](https://github.com/mbollemeijer)
+- [peterrus](https://github.com/peterrus)
+- [Ralf Junghanns](https://github.com/rabbl)
+- [tobaloidee](https://github.com/Tobaloidee)
+- [Vlad Ionescu](https://github.com/Vlaaaaaaad)
+- [Niels Reijn](https://github.com/reijnn)
+- [Harry Khanna](https://github.com/hkhanna)
+- [Chip Senkbeil](https://github.com/chipsenkbeil)
 
 ## Special Thanks
 

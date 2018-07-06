@@ -20,6 +20,15 @@ disqusShortname = "yourdiscussshortname"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
 
+    hideCredits = false
+    hideCopyright = false
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
 [[params.social]]
     name = "Github"
     weight = 1
