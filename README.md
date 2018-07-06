@@ -79,9 +79,6 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
     url = "/about/"
 ```
 
-
-
-
 You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
 
 ### Build & Test
@@ -101,7 +98,21 @@ To preview the exampleSite, run
 ```
 make demo
 ```
- The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
+The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
+
+If you're having trouble running ```make``` commands you may need to install some dependencies for ```build``` to work. If this is the case, try installing the ```npm``` dependencies with the following commands:
+
+```
+npm install -g less
+```
+
+or
+
+```
+npm install -g uglifycss
+```
+
+Try the Build & Test steps again. :)
 
 ### Disqus
 Add the following line to your config,
