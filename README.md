@@ -74,6 +74,11 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
     name = "About"
     weight = 2
     url = "/about/"
+# Optionial
+[[menu.main]]
+    name = "Projects"
+    weight = 4
+    url = "/projects/
 ```
 
 
@@ -99,16 +104,6 @@ To preview the exampleSite, run
 make demo
 ```
  The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
-<<<<<<< HEAD
-
-### Disqus
-dd the following line to your config,
-```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
-You can disable comments for a post by adding the following to your page meta data.
-```disable_comments: true```
-
-
-=======
 
 ### Disqus
 Add the following line to your config,
@@ -116,8 +111,12 @@ Add the following line to your config,
 You can disable comments for a post by adding the following to your page meta data.
 ```disable_comments: true```
 
+### Projects
+Use the following command to add a project to your site.
+```
+hugo new projects/example.md
+```
 
->>>>>>> 9fdd4f2f4a6f5ecdf8ed9b5359060fe84fabab0a
 ## To Do
 - Tags, Categories and Series
 
@@ -136,7 +135,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Jan Baudisch](https://github.com/flyingP0tat0)
 - [Jiri Hubacek](https://github.com/qeef)
 - [Khosrow Moossavi](https://github.com/khos2ow)
-- [Maikel](https://github.com/mbollemeijer)
+- [Maikel Bollemeijer](https://github.com/mbollemeijer)
 - [peterrus](https://github.com/peterrus)
 - [Ralf Junghanns](https://github.com/rabbl)
 - [tobaloidee](https://github.com/Tobaloidee)
