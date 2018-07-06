@@ -40,6 +40,9 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
     info = "Full Stack DevOps and Magician" # Author's job title or info.
     description = "John Doe's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
+    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+
+    footercontent = "Enter a text here." # Add footer content
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = false
@@ -142,6 +145,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
 - [Niels Reijn](https://github.com/reijnn)
 - [Harry Khanna](https://github.com/hkhanna)
+- [rdhox](https://rdhox.io)
 - [Chip Senkbeil](https://github.com/chipsenkbeil)
 
 ## Special Thanks
