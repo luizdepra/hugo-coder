@@ -1,6 +1,5 @@
 @import "colors.less";
 @font-family__main: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-@font-family__code: Menlo, Consolas, Monaco, 'Ubuntu Mono', 'Liberation Mono', 'Lucida Console', monospace;
 
 *,
 *:after,
@@ -120,14 +119,13 @@ pre {
   overflow-x: auto;
   direction: ltr;
   border-radius: 5px;
-  color:@bg-color;
+  color:@fg-color-code-pre;
   background-color:@bg-color-code-pre;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
 }
 code {
-  font-family: @font-family__code;
   background-color: @bg-color-code-inline;
   color: @fg-color-code-inline;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
@@ -137,6 +135,7 @@ code {
 pre code {
   background-color: @bg-color-code-pre;
   color: @fg-color-code-pre;
+  white-space: pre;
   border: none;
   border-radius: 0;
   padding: 0;
@@ -241,6 +240,19 @@ img {
           background-color: transparent;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  a.navigation-title {
+    font-size: 0rem;
+
+    &::after {
+      content: '~';
+      font-size: 2.4rem;
+      text-align: center;
+      margin-left: -1.4rem;
     }
   }
 }

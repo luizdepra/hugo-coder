@@ -7,19 +7,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand {{ if $.Site.Params.rtl }} float-right {{ else }} float-left {{ end }}" href="{{ .Site.Params.Home.url | absLangURL }}">
+      <a class="navbar-brand {{ if $.Site.Params.rtl }} float-right {{ else }} float-left {{ end }}" href="{{ print "/" | absLangURL }}">
         {{ .Site.Title }}
       </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-menu">
-      {{ with .Site.Menus.main }}
-        <ul class="nav navbar-nav {{ if $.Site.Params.rtl }} navbar-left {{ else }} navbar-right {{ end }}">
+      <ul class="nav navbar-nav {{ if $.Site.Params.rtl }} navbar-left {{ else }} navbar-right {{ end }}">
+        {{ with .Site.Menus.main }}
           {{ range sort . }}
             <li>
               <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
             </li>
           {{ end }}
-          {{ range $.Site.Home.AllTranslations }}
+        {{ end }}
+
+        {{ if .Site.IsMultiLingual }}
+          {{ range .Site.Home.AllTranslations }}
             {{ $language := printf "%s" .Language }}
             {{ if ne $.Site.Params.Langcode $language }}
               <li>
@@ -27,8 +30,8 @@
               </li>
             {{ end }}
           {{ end }}
-        </ul>
-      {{ end }}
+        {{ end }}
+      </ul>
     </div>
   </section>
 </nav>

@@ -2,6 +2,8 @@
 LESS_DIR = ./static/less
 LESS_FILE = style.less
 LESS_RTL_FILE = style-rtl.less
+LESS_HIGHLIGHT_FILE = code-highlight.less
+LESS_TMP_FILE = tmp.less
 
 # CSS params
 CSS_DIR = ./static/css
@@ -20,7 +22,9 @@ endef
 build: clean build-ltr build-rtl
 
 build-ltr:
-	$(call build_less,$(LESS_FILE),$(CSS_FILE))
+	cat $(LESS_DIR)/$(LESS_FILE) $(LESS_DIR)/$(LESS_HIGHLIGHT_FILE) > $(LESS_DIR)/$(LESS_TMP_FILE)
+	$(call build_less,$(LESS_TMP_FILE),$(CSS_FILE))
+	rm -f $(LESS_DIR)/$(LESS_TMP_FILE)
 
 build-rtl:
 	$(call build_less,$(LESS_RTL_FILE),$(CSS_RTL_FILE))

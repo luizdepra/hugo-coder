@@ -27,7 +27,7 @@
         {{ now.Year }}
       {{ end }}
       {{ if not .Site.Params.hideCopyrightOwner }}
-        <a href="{{ .Site.Params.Home.url | absLangURL }}">{{ .Site.Title | lower }}</a>
+        <a href="{{ print "/" | absLangURL }}">{{ .Site.Title | lower }}</a>
       {{ end }}
     </span>
     {{ end }}
