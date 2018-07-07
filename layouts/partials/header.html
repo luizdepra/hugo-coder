@@ -1,16 +1,34 @@
 <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="{{ .Site.BaseURL }}">
+    <a class="navigation-title" href="{{ print "/" | absLangURL }}">
       {{ .Site.Title }}
     </a>
-    {{ with .Site.Menus.main }}
     <ul class="navigation-list {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}">
-      {{ range sort . }}
-      <li class="navigation-item">
-        <a class="navigation-link" href="{{ .URL }}">{{ .Name }}</a>
-      </li>
+      {{ with .Site.Menus.main}}
+        {{ range sort . }}
+          <li class="navigation-item">
+            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if .Site.IsMultiLingual }}
+        {{ $node := . }}
+        {{ .Scratch.Set "separator" true }}
+    
+        {{ range .Site.Home.AllTranslations }}
+          {{ if ne $.Site.Language .Language }}
+            {{ if $node.Scratch.Get "separator" }}
+              <li>
+                <p>{{ .Site.Params.LangSeparator }}</p>
+              </li>
+              {{ $node.Scratch.Set "separator" false }}
+            {{ end }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
       {{ end }}
     </ul>
-    {{ end }}
   </section>
 </nav>

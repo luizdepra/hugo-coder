@@ -54,6 +54,9 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
     # RTL support
     rtl = false
 
+    # Multilingualism
+    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
 # Social links
 [[params.social]]
     name = "Github"
@@ -79,8 +82,65 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
     url = "/about/"
 ```
 
+To support multilingualism the configuration above needs to be extended by parameters for the specific languages.
+Each `language` section overrides default site's parameters when that language is chosen.
+
+```toml
+DefaultContentLanguage = "en" # needs to match one of the language sections, add this at the main section of the configuration
+
+[params] # add this to theme params, do not duplicate tables
+    LangSeparator = "|" # separates menus from language selectors
 
 
+[languages]
+
+    [languages.en]
+    languagename = "English"
+
+        [languages.en.params]
+        author = "John Doe" # Author's name.
+        info = "Full Stack DevOps and Magician" # Author's job title or info.
+        description = "John Doe's personal website" # Site description.
+        keywords = "blog,developer,personal" # Site keywords.
+
+        [languages.en.menu]
+
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 1.0
+        url = "/about/"
+
+        [[languages.en.menu.main]]
+        name = "Blog"
+        weight = 2.0
+        url = "/posts/"
+
+
+    [languages.pl]
+        languagename = "Polski"
+        title = "John Doe po polsku"
+
+        [languages.pl.params]
+        author = "John Doe"
+        languagecode = "pl"
+        description = "Strona domowa John'a Doe"
+        keywords = "blog,developer,strona domowa"
+        info = "Full Stack DevOps i Magik"
+        weight = 2.0
+
+        [languages.pl.menu]
+
+            [[languages.pl.menu.main]]
+            name = "O mnie"
+            weight = 1.0
+            url = "/pl/about/"
+
+            [[languages.pl.menu.main]]
+            name = "Blog"
+            weight = 2.0
+            url = "/pl/posts/"
+
+```
 
 You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
 
@@ -137,6 +197,7 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 - [Harry Khanna](https://github.com/hkhanna)
 - [rdhox](https://rdhox.io)
 - [Chip Senkbeil](https://github.com/chipsenkbeil)
+- [Tomasz Wąsiński](https://github.com/wasinski)
 
 ## Special Thanks
 
