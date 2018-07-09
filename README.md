@@ -24,7 +24,8 @@ Add the following lines to your `config.toml`.
 baseurl = "http://www.example.com" # Hostname (and path) to the root.
 title = "johndoe" # Site title.
 theme = "coder" # Set the theme.
-languagecode = "en" # The site’s language code.
+languagecode = "en" # The site’s language code used to generate RSS.
+defaultcontentlanguage = "en" # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
 canonifyurls = true # Enable to turn relative URLs into absolute.
@@ -33,7 +34,7 @@ pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
 pygmentscodefences = true # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
 
-disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
+disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 
 [params] # theme parameters
     author = "John Doe" # Author's name.
@@ -54,7 +55,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
     # RTL support
     rtl = false
 
-    # Multilingualism
+    # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
 
 # Social links
@@ -82,28 +83,30 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
     url = "/about/"
 ```
 
-To support multilingualism the configuration above needs to be extended by parameters for the specific languages.
+You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
+
+#### Multilingual mode
+
+To use multilingual mode, the configuration above needs to be extended by parameters for the specific languages.
 Each `language` section overrides default site's parameters when that language is chosen.
 
 ```toml
-DefaultContentLanguage = "en" # needs to match one of the language sections, add this at the main section of the configuration
-
-[params] # add this to theme params, do not duplicate tables
-    LangSeparator = "|" # separates menus from language selectors
-
+[params]
+    langseparator = "|" # separates menus from language selectors.
 
 [languages]
-
     [languages.en]
-    languagename = "English"
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "John Doe"
 
+        # You can configure the theme parameter for each language. 
         [languages.en.params]
-        author = "John Doe" # Author's name.
-        info = "Full Stack DevOps and Magician" # Author's job title or info.
-        description = "John Doe's personal website" # Site description.
-        keywords = "blog,developer,personal" # Site keywords.
+        author = "John Doe"
+        info = "Full Stack DevOps and Magician"
+        description = "John Doe's personal website"
+        keywords = "blog,developer,personal"
 
-        [languages.en.menu]
+        [languages.en.menu] # It is possible to change the menu too.
 
         [[languages.en.menu.main]]
         name = "About"
@@ -121,12 +124,10 @@ DefaultContentLanguage = "en" # needs to match one of the language sections, add
         title = "John Doe po polsku"
 
         [languages.pl.params]
-        author = "John Doe"
-        languagecode = "pl"
-        description = "Strona domowa John'a Doe"
-        keywords = "blog,developer,strona domowa"
-        info = "Full Stack DevOps i Magik"
-        weight = 2.0
+            author = "John Doe"
+            description = "Strona domowa John'a Doe"
+            keywords = "blog,developer,strona domowa"
+            info = "Full Stack DevOps i Magik"
 
         [languages.pl.menu]
 
@@ -140,11 +141,16 @@ DefaultContentLanguage = "en" # needs to match one of the language sections, add
             weight = 2.0
             url = "/pl/posts/"
 
+
 ```
 
-You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
+It is possible to force Hugo to render all default language content under the language code with `defaultContentLanguageInSubdir = true`.
+In this case, remember to update your menus URLs (i.e. `/en/about/`).
 
 ### Build & Test
+
+It is necessary to have `less` and `uglifycss` installed to build and run the demo.
+Assuming that already have NodeJS/NPM installed, run `npm install -g less uglifycss`.
 
 To update or generate the minified CSS file:
 
@@ -157,21 +163,20 @@ To build your site and test, run:
 ```
 hugo server
 ```
+
 To preview the exampleSite, run
+
 ```
 make demo
 ```
- The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
+
+The above command copies current state of the theme to exampleSite/themes and starts hugo with hugo serve -D (Go does not support Symlink directories)
 
 ### Disqus
-Add the following line to your config,
-```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
-You can disable comments for a post by adding the following to your page meta data.
-```disable_comments: true```
 
+Add the following line to your config, ```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
+You can disable comments for a post by adding the following to your page meta data: ```disable_comments: true```.
 
-## To Do
-- Tags, Categories and Series
 
 ## License
 
