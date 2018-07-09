@@ -369,6 +369,7 @@ img {
 
 .grid-wrapper {
   flex-wrap: wrap;
+  overflow-x: hidden
 }
 
 .grid-item {
@@ -407,5 +408,15 @@ img {
 .project {
     .project-header-image {
         width: 120.0rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-item {
+        width: 100%;
+        .grid-item-img {
+            max-width: 100%;
+            min-width: 100%;
+        }
     }
 }
