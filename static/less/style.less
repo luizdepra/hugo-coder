@@ -1,8 +1,4 @@
-@bg-color: #fefefe;
-@fg-color: #323232;
-@darker-bg-color: #dcdcdc;
-@darker-fg-color: #000;
-
+@import "colors.less";
 
 *,
 *:after,
@@ -42,6 +38,16 @@ a {
 
 p {
   margin: 1.6rem 0 1.6rem 0;
+  a {
+    font-weight: 400;
+    color: @darker-fg-color;
+    text-decoration: underline;
+    text-underline-position: under;
+    &:focus,
+    &:hover {
+      color: @link-color;
+    }
+  }
 }
 
 h1,
@@ -108,6 +114,7 @@ pre {
 }
 
 code {
+  display: inline-block;
   background-color: @darker-fg-color;
   color: @bg-color;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
@@ -117,6 +124,30 @@ blockquote {
   border-left: 2px solid @darker-bg-color;
   padding-left: 1.6rem;
   font-style: italic;
+}
+
+th, td {
+  padding: 1.6rem;
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 2px solid @darker-fg-color;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 0;
 }
 
 img {
@@ -163,6 +194,19 @@ img {
         margin-left: 1.0rem;
         margin-right: 1.0rem;
       }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  a.navigation-title {
+    font-size: 0rem;
+
+    &::after {
+      content: '~';
+      font-size: 2.4rem;
+      text-align: center;
+      margin-left: -1.4rem;
     }
   }
 }
@@ -272,7 +316,7 @@ img {
       margin: 3.0rem 0 1.0rem 0;
       padding: 0;
       li {
-        display: inline;
+        display: inline-block;
         position: relative;
         a {
           text-transform: uppercase;
