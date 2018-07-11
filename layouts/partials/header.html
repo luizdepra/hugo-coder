@@ -5,8 +5,10 @@
     </a>
     <input type="checkbox" id="menu-control"/>
     <label class="btn-mobile" for="menu-control">
-      <span>~</span>
       <ul class="navigation-list {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}">
+          <li class="navigation-item-mobile-origin">
+              <a class="navigation-link" href="{{ print "/" | absLangURL }}">~</a>
+          </li>
         {{ with .Site.Menus.main}}
           {{ range sort . }}
             <li class="navigation-item">

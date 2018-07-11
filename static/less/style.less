@@ -179,7 +179,7 @@ img {
     line-height: 6.0rem;
     letter-spacing: 0.1rem;
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
   ul {
@@ -213,24 +213,49 @@ img {
     font-size: 0rem;
   }
 }
-// Menu Mobile
+
 #menu-control {
   display: none;
 }
+
+.navigation-item-mobile-origin {
+  display: none;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .btn-mobile::before {
+    content: "\268C";
+    font-size: 4rem;
+    cursor: pointer;
+  }
+
+  #menu-control:checked + label::before {
+    content: "";
+  }
+
+  #menu-control:checked + label ul::before {
+    content: "\268F";
+    font-size: 4rem;
+    cursor: pointer;
+  }
+
   #menu-control:checked + label ul {
     display: block;
     float: left;
-    padding-left: 0rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
   }
-}
-.btn-mobile span {
-  display: none;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .navigation-item-mobile-origin {
     display: block;
   }
+
+  [class ^= navigation-item] {
+    height: 4rem;
+    text-align: left;
+  }
 }
-// ------------
+
 .content {
   flex: 1;
   margin-top: 1.6rem;
