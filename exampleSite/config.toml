@@ -32,6 +32,8 @@ disqusShortname = "yourdiscussshortname"
     # RTL support
     rtl = false
 
+    langseparator = "|"
+
 [[params.social]]
     name = "Github"
     weight = 1
@@ -53,3 +55,88 @@ disqusShortname = "yourdiscussshortname"
     name = "About"
     weight = 2
     url = "/about/"
+[[menu.main]]
+    name = "Projects"
+    weight = 3
+    url = "/projects/"
+[[menu.main]]
+    name = "Profile"
+    weight = 4
+    url = "/profile/"
+[[menu.main]]
+    name = "Contact me"
+    weight = 5
+    url = "/contact/"
+
+[languages]
+    [languages.en]
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "John Doe"
+
+        # You can configure the theme parameter for each language.
+        [languages.en.params]
+        author = "John Doe"
+        info = "Full Stack DevOps and Magician"
+        description = "John Doe's personal website"
+        keywords = "blog,developer,personal"
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 1.0
+        url = "/about/"
+
+        [[languages.en.menu.main]]
+        name = "Blog"
+        weight = 2.0
+        url = "/posts/"
+
+        [[languages.en.menu.main]]
+        name = "Projects"
+        weight = 3
+        url = "/projects/"
+        [[languages.en.menu.main]]
+        name = "Profile"
+        weight = 4
+        url = "/profile/"
+        [[languages.en.menu.main]]
+        name = "Contact me"
+        weight = 5
+        url = "/contact/"
+
+
+    [languages.pl]
+        languagename = "Polski"
+        title = "John Doe po polsku"
+
+        [languages.pl.params]
+            author = "John Doe"
+            description = "Strona domowa John'a Doe"
+            keywords = "blog,developer,strona domowa"
+            info = "Full Stack DevOps i Magik"
+
+        [languages.pl.menu]
+
+            [[languages.pl.menu.main]]
+            name = "O mnie"
+            weight = 1.0
+            url = "/pl/about/"
+
+            [[languages.pl.menu.main]]
+            name = "Blog"
+            weight = 2.0
+            url = "/pl/posts/"
+
+            [[languages.pl.menu.main]]
+            name = "projektowanie"
+            weight = 3
+            url = "/projektowanie/"
+            [[languages.pl.menu.main]]
+            name = "Profil"
+            weight = 4
+            url = "/profil/"
+            [[languages.pl.menu.main]]
+            name = "kontakt"
+            weight = 5
+            url = "/kontakt/"

@@ -178,7 +178,7 @@ img {
     text-transform: uppercase;
     line-height: 6.0rem;
     letter-spacing: 0.1rem;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
       font-size: 1.6rem;
     }
   }
@@ -194,13 +194,23 @@ img {
         margin-left: 1.0rem;
         margin-right: 1.0rem;
       }
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
         float: none !important;
-        position: relative;
       }
     }
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-      display: none;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+      visibility: hidden;
+      opacity: 0;
+      max-height: 0;
+      z-index: 5;
+      top: 5rem;
+      right: 0;
+      width: 100%;
+      position: absolute;
+      background-color: rgba(254,254,254 ,0.98);
+      padding: 0;
+      border-bottom: solid 2px #E2DFE1;
+      transition: opacity 0.25s, max-height 0.15s linear;
     }
   }
 }
@@ -213,21 +223,32 @@ img {
   display: none;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
   .btn-mobile {
     display: block;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    color: black;
     cursor: pointer;
     padding-top: 1.5rem;
   }
 
-  #menu-control:checked + label ul {
-    display: block;
+  #menu-control:checked + label .btn-mobile {
+    color: #E2DFE1;
   }
 
-  [class ^= navigation-item] {
-    height: 7rem;
+  #menu-control:checked + label ul {
+    visibility: visible;
+    opacity: 1;
+    max-height: 100rem;
+  }
+
+  .navigation-item {
     text-align: center;
+    position: relative;
+  }
+
+  .multilingual-separator {
+    display: none;
   }
 }
 
@@ -387,14 +408,3 @@ img {
   float: left;
 }
 
-.align-right {
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    text-align: right;
-  }
-}
-
-.align-left {
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    text-align: left;
-  }
-}
