@@ -17,7 +17,9 @@
         {{ if .Site.IsMultiLingual }}
           {{ $node := . }}
           {{ .Scratch.Set "separator" true }}
-
+          <li class= "mobile-menu-lang-separator">
+              <hr />
+          </li>
           {{ range .Site.Home.AllTranslations }}
             {{ if ne $.Site.Language .Language }}
               {{ if $node.Scratch.Get "separator" }}
