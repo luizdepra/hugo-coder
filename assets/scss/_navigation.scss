@@ -1,0 +1,45 @@
+.navigation {
+  height: 6.0rem;
+  width: 100%;
+  a {
+    display: inline;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 6.0rem;
+    letter-spacing: 0.1rem;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      font-size: 1.4rem;
+    }
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    li {
+      @if $rtl {
+        float: right;
+      } @else {
+        float: left;
+      }
+      margin: 0;
+      position: relative;
+      a {
+        margin-left: 1.0rem;
+        margin-right: 1.0rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  a.navigation-title {
+    font-size: 0rem;
+
+    &::after {
+      content: '~';
+      font-size: 2.4rem;
+      text-align: center;
+      margin-left: -1.4rem;
+    }
+  }
+}
