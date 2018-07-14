@@ -226,10 +226,10 @@ img {
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
   .btn-mobile {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: black;
     cursor: pointer;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   #menu-control:checked + label .btn-mobile {
@@ -243,18 +243,42 @@ img {
   }
 
   .navigation-item {
-    text-align: center;
     position: relative;
   }
 
-  .mobile-menu-lang-separator {
+  .mobile-menu-lang-separator-centered {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .mobile-menu-lang-separator-ltr {
+    padding-left: 1.5rem;
+    padding-right: 7rem;
+  }
+
+  .mobile-menu-lang-separator-rtl {
+    padding-left: 7rem;
+    padding-right: 1.5rem;
   }
 
   .multilingual-separator {
     display: none;
   }
+
+  .align-left {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .align-right {
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
 }
 
 .content {

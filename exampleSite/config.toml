@@ -29,6 +29,9 @@ disqusShortname = "yourdiscussshortname"
     # Custom CSS
     custom_css = []
 
+    # Alignment of Mobile Menu items
+    itemscentered = false
+
     # RTL support
     rtl = false
 
