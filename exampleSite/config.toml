@@ -63,10 +63,6 @@ disqusShortname = "yourdiscussshortname"
     weight = 3
     url = "/projects/"
 [[menu.main]]
-    name = "Profile"
-    weight = 4
-    url = "/profile/"
-[[menu.main]]
     name = "Contact me"
     weight = 5
     url = "/contact/"
@@ -100,10 +96,6 @@ disqusShortname = "yourdiscussshortname"
         weight = 3
         url = "/projects/"
         [[languages.en.menu.main]]
-        name = "Profile"
-        weight = 4
-        url = "/profile/"
-        [[languages.en.menu.main]]
         name = "Contact me"
         weight = 5
         url = "/contact/"
@@ -135,10 +127,6 @@ disqusShortname = "yourdiscussshortname"
             name = "projektowanie"
             weight = 3
             url = "/projektowanie/"
-            [[languages.pl.menu.main]]
-            name = "Profil"
-            weight = 4
-            url = "/profil/"
             [[languages.pl.menu.main]]
             name = "kontakt"
             weight = 5
