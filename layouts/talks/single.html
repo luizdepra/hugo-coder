@@ -14,17 +14,19 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://rawgithub.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage();
+      });
+    </script>
+
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
-
-    {{ if .Site.Params.rtl}}
-      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}">
-    {{ end }}
-
-    {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | absURL }}">
-    {{ end }}
 
     <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
@@ -37,19 +39,12 @@
     {{ .Hugo.Generator }}
   </head>
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
-    <main class="wrapper">
-      {{ partial "header.html" . }}
-
-      <div class="content">
-        {{ block "content" . }}{{ end }}
-      </div>
-
-      {{ partial "footer.html" . }}
-    </main>
-
-    {{ template "_internal/google_analytics.html" . }}
-
+  <body>
+  <section class="container page">
+    <div id="fullpage">
+      {{ .Content }}
+    </div>
+  </section>
   </body>
 
 </html>
