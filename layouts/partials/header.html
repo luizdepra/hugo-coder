@@ -3,32 +3,42 @@
     <a class="navigation-title" href="{{ print "/" | absLangURL }}">
       {{ .Site.Title }}
     </a>
-    <ul class="navigation-list {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}">
-      {{ with .Site.Menus.main}}
-        {{ range sort . }}
-          <li class="navigation-item">
-            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-          </li>
-        {{ end }}
-      {{ end }}
-      {{ if .Site.IsMultiLingual }}
-        {{ $node := . }}
-        {{ .Scratch.Set "separator" true }}
-    
-        {{ range .Site.Home.AllTranslations }}
-          {{ if ne $.Site.Language .Language }}
-            {{ if $node.Scratch.Get "separator" }}
-              <li>
-                <p>{{ .Site.Params.LangSeparator }}</p>
-              </li>
-              {{ $node.Scratch.Set "separator" false }}
-            {{ end }}
-            <li>
-              <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}" for="menu-control">
+      <span class="btn-mobile {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}">&#9776;</span>
+      <ul class="navigation-list">
+        {{ with .Site.Menus.main}}
+          {{ range sort . }}
+            <li class="navigation-item {{ if $.Site.Params.itemscentered }} align-center {{ else }} {{ if $.Site.Params.rtl }} align-right {{ else }} align-left {{ end }} {{ end }}">
+              <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
-      {{ end }}
-    </ul>
+        {{ if .Site.IsMultiLingual }}
+          {{ $node := . }}
+          {{ .Scratch.Set "separator" true }}
+          {{ with .Site.Params.LangSeparator }}
+            <li class= "{{ if $.Site.Params.itemscentered }} mobile-menu-lang-separator-centered {{ else }} mobile-menu-lang-separator-full {{ end }}">
+              <hr />
+            </li>
+          {{ end }}
+          {{ range .Site.Home.AllTranslations }}
+            {{ if ne $.Site.Language .Language }}
+              {{ if $node.Scratch.Get "separator" }}
+                {{ with .Site.Params.LangSeparator }}
+                  <li class="multilingual-separator">
+                    <p>{{ . }}</p>
+                  </li>
+                {{ end }}
+                {{ $node.Scratch.Set "separator" false }}
+              {{ end }}
+              <li class="navigation-item {{ if $.Site.Params.itemscentered }} align-center {{ else }} {{ if $.Site.Params.rtl }} align-right {{ else }} align-left {{ end }} {{ end }}">
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </label>
   </section>
 </nav>
