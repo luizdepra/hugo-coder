@@ -178,8 +178,8 @@ img {
     text-transform: uppercase;
     line-height: 6.0rem;
     letter-spacing: 0.1rem;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-      font-size: 1.4rem;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+      font-size: 1.6rem;
     }
   }
   ul {
@@ -194,21 +194,86 @@ img {
         margin-left: 1.0rem;
         margin-right: 1.0rem;
       }
+      @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+        float: none !important;
+      }
+    }
+    @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+      visibility: hidden;
+      opacity: 0;
+      max-height: 0;
+      z-index: 5;
+      top: 5rem;
+      right: 0;
+      width: 100%;
+      position: absolute;
+      background-color: rgba(254,254,254 ,0.98);
+      padding: 0;
+      border-bottom: solid 2px #E2DFE1;
+      transition: opacity 0.25s, max-height 0.15s linear;
     }
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  a.navigation-title {
-    font-size: 0rem;
+#menu-control {
+  display: none;
+}
 
-    &::after {
-      content: '~';
-      font-size: 2.4rem;
-      text-align: center;
-      margin-left: -1.4rem;
-    }
+.btn-mobile {
+  display: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+  .btn-mobile {
+    display: block;
+    font-size: 2.0rem;
+    color: black;
+    cursor: pointer;
+    margin-top: 1.5rem;
   }
+
+  #menu-control:checked + label .btn-mobile {
+    color: #E2DFE1;
+  }
+
+  #menu-control:checked + label ul {
+    visibility: visible;
+    opacity: 1;
+    max-height: 100rem;
+  }
+
+  .navigation-item {
+    position: relative;
+  }
+
+  .mobile-menu-lang-separator-centered {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .mobile-menu-lang-separator-full {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .multilingual-separator {
+    display: none;
+  }
+
+  .align-left {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .align-right {
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
 }
 
 .content {
