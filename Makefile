@@ -1,5 +1,5 @@
 # LESS params
-LESS_DIR = ./static/less
+LESS_DIR = ./resources/less
 LESS_FILE = style.less
 LESS_RTL_FILE = style-rtl.less
 LESS_HIGHLIGHT_FILE = code-highlight.less
