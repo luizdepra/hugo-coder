@@ -19,11 +19,9 @@
         {{ range .Site.Home.AllTranslations }}
           {{ if ne $.Site.Language .Language }}
             {{ if $node.Scratch.Get "separator" }}
-              {{ with .Site.Params.LangSeparator }}
-                <li class="multilingual-separator">
-                  <p>{{ . }}</p>
-                </li>
-              {{ end }}
+              <li class="navigation-item">
+                <span class="menu-separator">|</span>
+              </li>
               {{ $node.Scratch.Set "separator" false }}
             {{ end }}
             <li class="navigation-item">
