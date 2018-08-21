@@ -18,12 +18,29 @@
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
+  @media only screen and (max-device-width : 768px) {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    z-index: 5;
+    top: 5rem;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(254,254,254 ,0.98);
+    padding: 0;
+    border-bottom: solid 2px #E2DFE1;
+    transition: opacity 0.25s, max-height 0.15s linear;
+  }
 }
 
 .navigation-item {
   float: left;
   margin: 0;
   position: relative;
+  @media only screen and (max-device-width : 768px) {
+    float: none !important;
+  }
   a, span {
     margin-left: 1.0rem;
     margin-right: 1.0rem;
@@ -33,10 +50,24 @@
 .menu-button {
   display: none;
   @media only screen and (max-device-width : 768px) {
-    display: inline;
+    display: block;
+    font-size: 2.4rem;
+    line-height: 6.0rem;
+    color: black;
+    cursor: pointer;
   }
 }
 
 #menu-toggle {
   display: none;
+  @media only screen and (max-device-width : 768px) {
+    &:checked + label {
+      color: #E2DFE1;
+    }
+    &:checked + label + ul {
+      visibility: visible;
+      opacity: 1;
+      max-height: 100rem;
+    }
+  }
 }
