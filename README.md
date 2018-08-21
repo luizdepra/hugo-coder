@@ -52,9 +52,6 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     # Custom CSS
     custom_css = []
 
-    # Multilanguage mode
-    langseparator = "|" # Separates menus from language selectors when site is multilingual.
-
 # Social links
 [[params.social]]
     name = "Github"
@@ -89,7 +86,7 @@ Each `language` section overrides default site's parameters when that language i
 
 ```toml
 [params]
-    langseparator = "|" # separates menus from language selectors.
+    author = "John Doe"
 
 [languages]
     [languages.en]
@@ -98,7 +95,6 @@ Each `language` section overrides default site's parameters when that language i
 
         # You can configure the theme parameter for each language. 
         [languages.en.params]
-        author = "John Doe"
         info = "Full Stack DevOps and Magician"
         description = "John Doe's personal website"
         keywords = "blog,developer,personal"
@@ -121,7 +117,6 @@ Each `language` section overrides default site's parameters when that language i
         title = "John Doe po polsku"
 
         [languages.pl.params]
-            author = "John Doe"
             description = "Strona domowa John'a Doe"
             keywords = "blog,developer,strona domowa"
             info = "Full Stack DevOps i Magik"
