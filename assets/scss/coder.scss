@@ -1,0 +1,12 @@
+// Colors
+$bg-color: #fefefe !default;
+$fg-color: #323232 !default;
+$alt-bg-color: #dcdcdc !default;
+$alt-fg-color: #000 !default;
+$link-color: #3366CC !default;
+
+@import "_base";
+@import "_content";
+@import "_navigation";
+@import "_pagination";
+@import "_footer";
