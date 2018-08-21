@@ -4,9 +4,9 @@ A simple and clean blog theme for Hugo.
 
 ![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
 
-**Coder is using Asset Pipeline now!**
+**Coder uses Asset Pipeline now!**
 
-To use this theme you need Hugo Extended Version, v0.45 or later. But, if you still want to use the old version, you can clone the [v1.0](https://github.com/luizdepra/hugo-coder/releases/tag/v1.0) release.
+To use this theme you need Hugo Extended Version, v0.43 or later. But, if you still want to use the old version, you can clone the [v1.0](https://github.com/luizdepra/hugo-coder/releases/tag/v1.0) release.
 
 ## How to use this theme
 
