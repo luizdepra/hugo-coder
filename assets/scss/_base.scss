@@ -10,11 +10,6 @@ html {
 }
 
 body {
-  @if $rtl {
-    direction: rtl;
-  } @else {
-    direction: ltr;
-  }
   display:flex;
   color: $fg-color;
   background-color: $bg-color;
@@ -124,13 +119,8 @@ code {
 }
 
 blockquote {
-  @if $rtl {
-    border-right: 2px solid $alt-bg-color;
-    padding-right: 1.6rem;
-  } @else {
-    border-left: 2px solid $alt-bg-color;
-    padding-left: 1.6rem;
-  }
+  border-left: 2px solid $alt-bg-color;
+  padding-left: 1.6rem;
   font-style: italic;
 }
 
@@ -151,19 +141,11 @@ table tr:last-child td {
 }
 table tr td:first-child,
 table tr th:first-child {
-  @if $rtl {
-    border-right: 0;
-  } @else {
-    border-left: 0;
-  }
+  border-left: 0;
 }
 table tr td:last-child,
 table tr th:last-child {
-  @if $rtl {
-    border-left: 0;
-  } @else {
-    border-right: 0;
-  }
+  border-right: 0;
 }
 
 img {
@@ -186,17 +168,9 @@ img {
 }
 
 .float-right {
-  @if $rtl {
-    float: left;
-  } @else {
-    float: right;
-  }
+  float: right;
 }
 
 .float-left {
-  @if $rtl {
-    float: right;
-  } @else {
-    float: left;
-  }
+  float: left;
 }

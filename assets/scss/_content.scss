@@ -46,20 +46,11 @@
         width: 20.0rem;
         text-align: right;
         margin-right: 3.0rem;
-        @if $rtl {
-          text-align: left;
-          margin-left: 3.0rem;
-        } @else {
-          text-align: right;
-          margin-right: 3.0rem;
-        }
+        text-align: right;
+        margin-right: 3.0rem;
         @media only screen and (max-device-width : 768px) {
           display: block;
-          @if $rtl {
-            text-align: right;
-          } @else {
-            text-align: left;
-          }
+          text-align: left;
         }
       }
       a {

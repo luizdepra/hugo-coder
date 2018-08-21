@@ -52,9 +52,6 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     # Custom CSS
     custom_css = []
 
-    # RTL support
-    rtl = false
-
     # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
 

@@ -32,9 +32,6 @@ disqusShortname = "yourdiscussshortname"
     # Alignment of Mobile Menu items
     itemscentered = true
 
-    # RTL support
-    rtl = false
-
     langseparator = "|"
 
 [[params.social]]

@@ -16,11 +16,7 @@
     margin-bottom: 0;
     margin-top: 0;
     li {
-      @if $rtl {
-        float: right;
-      } @else {
-        float: left;
-      }
+      float: left;
       margin: 0;
       position: relative;
       a {
