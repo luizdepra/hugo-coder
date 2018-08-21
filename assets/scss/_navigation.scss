@@ -7,7 +7,7 @@
     text-transform: uppercase;
     line-height: 6.0rem;
     letter-spacing: 0.1rem;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (max-device-width : 768px) {
       font-size: 1.4rem;
     }
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 768px) {
   a.navigation-title {
     font-size: 0rem;
 
