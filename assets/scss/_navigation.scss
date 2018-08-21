@@ -19,17 +19,18 @@
   margin-bottom: 0;
   margin-top: 0;
   @media only screen and (max-device-width : 768px) {
+    position: absolute;
+    top: 6.0rem;
+    right: 0;
+    z-index: 5;
     visibility: hidden;
     opacity: 0;
-    max-height: 0;
-    z-index: 5;
-    top: 5rem;
-    right: 0;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(254,254,254 ,0.98);
     padding: 0;
-    border-bottom: solid 2px #E2DFE1;
+    max-height: 0;
+    width: 100%;
+    background-color: $bg-color;
+    border-top: solid 2px $alt-bg-color;
+    border-bottom: solid 2px $alt-bg-color;
     transition: opacity 0.25s, max-height 0.15s linear;
   }
 }
@@ -40,6 +41,10 @@
   position: relative;
   @media only screen and (max-device-width : 768px) {
     float: none !important;
+    text-align: center;
+    a, span {
+      line-height: 4.0rem;
+    }
   }
   a, span {
     margin-left: 1.0rem;
@@ -53,8 +58,18 @@
     display: block;
     font-size: 2.4rem;
     line-height: 6.0rem;
-    color: black;
+    color: $fg-color;
     cursor: pointer;
+  }
+}
+
+.menu-separator {
+  @media only screen and (max-device-width : 768px) {
+    border-top: 2px solid $fg-color;
+    margin: 0 8.0rem;
+    span {
+      display: none;
+    }
   }
 }
 
@@ -62,7 +77,7 @@
   display: none;
   @media only screen and (max-device-width : 768px) {
     &:checked + label {
-      color: #E2DFE1;
+      color: $alt-bg-color;
     }
     &:checked + label + ul {
       visibility: visible;
