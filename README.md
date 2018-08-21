@@ -4,6 +4,10 @@ A simple and clean blog theme for Hugo.
 
 ![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
 
+**Coder is using Asset Pipeline now!**
+
+To use this theme you need Hugo Extended Version, v0.45 or later. But, if you still want to use the old version, you can clone the [v1.0](https://github.com/luizdepra/hugo-coder/releases/tag/v1.0) release.
+
 ## How to use this theme
 
 To use `hugo-coder` go through the following steps.
@@ -52,12 +56,6 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     # Custom CSS
     custom_css = []
 
-    # RTL support
-    rtl = false
-
-    # Multilanguage mode
-    langseparator = "|" # Separates menus from language selectors when site is multilingual.
-
 # Social links
 [[params.social]]
     name = "Github"
@@ -92,7 +90,7 @@ Each `language` section overrides default site's parameters when that language i
 
 ```toml
 [params]
-    langseparator = "|" # separates menus from language selectors.
+    author = "John Doe"
 
 [languages]
     [languages.en]
@@ -101,7 +99,6 @@ Each `language` section overrides default site's parameters when that language i
 
         # You can configure the theme parameter for each language. 
         [languages.en.params]
-        author = "John Doe"
         info = "Full Stack DevOps and Magician"
         description = "John Doe's personal website"
         keywords = "blog,developer,personal"
@@ -124,7 +121,6 @@ Each `language` section overrides default site's parameters when that language i
         title = "John Doe po polsku"
 
         [languages.pl.params]
-            author = "John Doe"
             description = "Strona domowa John'a Doe"
             keywords = "blog,developer,strona domowa"
             info = "Full Stack DevOps i Magik"

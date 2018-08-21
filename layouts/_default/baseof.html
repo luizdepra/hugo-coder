@@ -16,10 +16,15 @@
 
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
 
-    {{ if .Site.Params.rtl}}
-      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}">
+    {{ if .Site.IsServer }}
+      {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
+      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ else }}
+      {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
+      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
@@ -37,7 +42,7 @@
     {{ .Hugo.Generator }}
   </head>
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+  <body>
     <main class="wrapper">
       {{ partial "header.html" . }}
 

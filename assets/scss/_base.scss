@@ -1,0 +1,176 @@
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+  display:flex;
+  color: $fg-color;
+  background-color: $bg-color;
+	font-family: 'Fira Mono', monospace;
+	font-size: 1.6em;
+	font-weight: 400;
+	letter-spacing: 0.0625em;
+  line-height: 1.8em;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+}
+
+a {
+  font-weight: 700;
+  color: $alt-fg-color;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 1.6rem 0 1.6rem 0;
+  a {
+    font-weight: 400;
+    color: $alt-fg-color;
+    text-decoration: underline;
+    text-underline-position: under;
+    &:focus,
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $alt-fg-color;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  margin: 3.2rem 0 1.6rem 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
+h2 {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+  }
+}
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+h5 {
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+h6 {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+pre {
+  margin: 1.6rem 0 1.0rem 0;
+  padding: 1.6rem;
+  overflow-x: auto;
+}
+
+code {
+  display: inline-block;
+  background-color: $alt-fg-color;
+  color: $bg-color;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+}
+
+blockquote {
+  border-left: 2px solid $alt-bg-color;
+  padding-left: 1.6rem;
+  font-style: italic;
+}
+
+th, td {
+  padding: 1.6rem;
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 2px solid $alt-fg-color;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120.0rem;
+  width: 100%;
+  padding-left: 2.0rem;
+  padding-right: 2.0rem;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
