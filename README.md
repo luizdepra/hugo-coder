@@ -59,16 +59,19 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 # Social links
 [[params.social]]
     name = "Github"
+    icon = "fab fa-github fa-2x"
     weight = 1
     url = "https://github.com/johndoe/"
 [[params.social]]
-    name = "Twitter"
+    name = "Gitlab"
+    icon = "fab fa-gitlab fa-2x"
     weight = 2
-    url = "https://twitter.com/johndoe/"
+    url = "https://gitlab.com/johndoe/"
 [[params.social]]
-    name = "LinkedIn"
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
     weight = 3
-    url = "https://www.linkedin.com/in/johndoe/"
+    url = "https://twitter.com/johndoe/"
 
 # Menu links
 [[menu.main]]
