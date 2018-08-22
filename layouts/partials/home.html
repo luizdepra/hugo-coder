@@ -8,7 +8,11 @@
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort .}}
-      <li><a href="{{ .url }}">{{ .name }}</a></li>
+        {{ if .icon }}
+          <li><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
+        {{ else }}
+          <li><a href="{{ .url }}">{{ .name }}</a></li>
+        {{ end }}
       {{ end }}
     </ul>
     {{ end }}
