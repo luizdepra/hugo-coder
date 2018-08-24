@@ -13,7 +13,7 @@ body {
   display:flex;
   color: $fg-color;
   background-color: $bg-color;
-	font-family: 'Fira Mono', monospace;
+	font-family: $text-font-family;
 	font-size: 1.6em;
 	font-weight: 400;
 	letter-spacing: 0.0625em;
@@ -54,6 +54,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $heading-font-family;
   color: $alt-fg-color;
   text-transform: uppercase;
   letter-spacing: 0.0625em;
@@ -106,6 +107,7 @@ h6 {
 }
 
 pre {
+  font-family: $code-font-family;
   margin: 1.6rem 0 1.0rem 0;
   padding: 1.6rem;
   overflow-x: auto;
@@ -113,6 +115,7 @@ pre {
 
 code {
   display: inline-block;
+  font-family: $code-font-family;
   background-color: $alt-fg-color;
   color: $bg-color;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
