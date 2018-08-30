@@ -28,6 +28,18 @@
       <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
     {{ end }}
 
+    {{ if .Site.Params.rtl }}
+      {{ if .Site.IsServer }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" "enableSourceMap" true ) }}
+        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+      {{ else }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
+        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+      {{ end }}
+    {{ end }}
+
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
@@ -43,7 +55,7 @@
     {{ .Hugo.Generator }}
   </head>
 
-  <body>
+  <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
     <main class="wrapper">
       {{ partial "header.html" . }}
 

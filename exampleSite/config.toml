@@ -25,6 +25,8 @@ disqusShortname = "yourdiscussshortname"
     hideCredits = false
     hideCopyright = false
 
+    rtl = false
+
     # Custom CSS
     custom_css = []
 
