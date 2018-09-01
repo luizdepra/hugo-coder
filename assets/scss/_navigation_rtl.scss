@@ -10,4 +10,10 @@ body.rtl {
   .navigation-item {
     float: right;
   }
+
+  .menu-button {
+    @media only screen and (max-device-width : 768px) {
+      float: left;
+    }
+  }
 }
