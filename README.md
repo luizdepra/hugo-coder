@@ -53,6 +53,9 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     hideCredits = false
     hideCopyright = false
 
+    # to switch bewteen LTR and RTL layout
+    rtl = false
+
     # Custom CSS
     custom_css = []
 
