@@ -1,37 +1,35 @@
-<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+<nav class="navigation" id="navigation">
   <section class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }}" data-toggle="collapse" data-target="#navbar-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand {{ if $.Site.Params.rtl }} float-right {{ else }} float-left {{ end }}" href="{{ print "/" | absLangURL }}">
-        {{ .Site.Title }}
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-menu">
-      <ul class="nav navbar-nav {{ if $.Site.Params.rtl }} navbar-left {{ else }} navbar-right {{ end }}">
-        {{ with .Site.Menus.main }}
-          {{ range sort . }}
-            <li>
-              <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
+    <a class="navigation-title" href="{{ .Site.BaseURL | absLangURL }}">
+      {{ .Site.Title }}
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      {{ with .Site.Menus.main}}
+        {{ range sort . }}
+          <li class="navigation-item">
+            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ default .Name ( i18n .Name ) }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if .Site.IsMultiLingual }}
+        {{ $node := . }}
+        {{ .Scratch.Set "separator" true }}
+        {{ range .Site.Home.AllTranslations }}
+          {{ if ne $.Site.Language .Language }}
+            {{ if $node.Scratch.Get "separator" }}
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              {{ $node.Scratch.Set "separator" false }}
+            {{ end }}
+            <li class="navigation-item">
+              <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
             </li>
           {{ end }}
         {{ end }}
-
-        {{ if .Site.IsMultiLingual }}
-          {{ range .Site.Home.AllTranslations }}
-            {{ $language := printf "%s" .Language }}
-            {{ if ne $.Site.Params.Langcode $language }}
-              <li>
-                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-              </li>
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </ul>
-    </div>
+      {{ end }}
+    </ul>
   </section>
 </nav>

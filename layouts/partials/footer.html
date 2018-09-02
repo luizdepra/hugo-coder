@@ -18,6 +18,9 @@
     </div>
   </section>
   <section class="container">
+    {{ with .Site.Params.footercontent }}
+      <p>{{ . }}</p>
+    {{ end }}
     {{ if not .Site.Params.hideCopyright }}
     <span class="copyright">
       ©

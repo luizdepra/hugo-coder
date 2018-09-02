@@ -14,24 +14,44 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "css/fontawesome-all.min.css" | absURL }}">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}{{ with $.Site.Params.version.css }}?v={{ . }}{{ end }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
 
-    {{ if .Site.Params.rtl}}
-      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}{{ with $.Site.Params.version.css }}?v={{ . }}{{ end }}">
+    {{ if .Site.IsServer }}
+      {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
+      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ else }}
+      {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
+      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+    {{ end }}
+
+    {{ if .Site.Params.rtl }}
+      {{ if .Site.IsServer }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" "enableSourceMap" true ) }}
+        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+      {{ else }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
+        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+      {{ end }}
+    {{ end }}
+
+    {{ if .Site.IsServer }}
+      {{ $cssOpts := (dict "targetPath" "css/khosrow.css" "enableSourceMap" true ) }}
+      {{ $styles := resources.Get "scss/khosrow.scss" | resources.ExecuteAsTemplate "style.khosrow.css" . | toCSS $cssOpts }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ else }}
+      {{ $cssOpts := (dict "targetPath" "css/khosrow.css" ) }}
+      {{ $styles := resources.Get "scss/khosrow.scss" | resources.ExecuteAsTemplate "style.khosrow.css" . | toCSS $cssOpts | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}{{ with $.Site.Params.version.css }}?v={{ . }}{{ end }}">
-    {{ end }}
-
-    {{ if .Site.Params.rtl }}
-      {{ range .Site.Params.custom_rtl_css }}
-        <link rel="stylesheet" href="{{ . | absURL }}{{ with $.Site.Params.version.css }}?v={{ . }}{{ end }}">
-      {{ end }}
     {{ end }}
 
     <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
@@ -58,8 +78,13 @@
       {{ partial "footer.html" . }}
     </main>
 
-    <script src="{{ "js/jquery.min.js" | absURL }}"></script>
-    <script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/khosrow.js" }}
+      <script src="{{ $script.Permalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/khosrow.js" | minify | fingerprint }}
+      <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    {{ end }}
 
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | absURL }}{{ with $.Site.Params.version.js }}?v={{ . }}{{ end }}"></script>
@@ -69,4 +94,5 @@
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
   </body>
+
 </html>
