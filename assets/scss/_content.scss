@@ -10,9 +10,10 @@
         margin: 0;
       }
       h2 {
-        margin-top: 1.0rem;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
         color: $fg-color;
+        margin-top: 1.8rem;
         @media only screen and (max-device-width : 768px) {
           font-size: 1.6rem;
         }
@@ -36,9 +37,9 @@
     list-style: none;
     padding: 0;
     li {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       @media only screen and (max-device-width : 768px) {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin: 1.6rem 0 1.6rem 0;
       }
       span {
@@ -52,7 +53,10 @@
         }
       }
       a {
-        text-transform: uppercase;
+        font-size: 2.0rem;
+        color: $fg-color;
+        font-family: $heading-font-family;
+        font-weight: 700;
       }
     }
   }

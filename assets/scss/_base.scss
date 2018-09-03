@@ -14,19 +14,18 @@ body {
   color: $fg-color;
   background-color: $bg-color;
 	font-family: $text-font-family;
-	font-size: 1.6em;
-	font-weight: 400;
-	letter-spacing: 0.0625em;
+	font-size: 1.8em;
+	font-weight: 300;
   line-height: 1.8em;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    font-size: 1.4em;
+  @media only screen and (max-device-width : 768px) {
+    font-size: 1.6em;
     line-height: 1.6em;
   }
 }
 
 a {
-  font-weight: 700;
-  color: $alt-fg-color;
+  font-weight: 300;
+  color: $link-color;
   text-decoration: none;
   &:focus,
   &:hover {
@@ -35,17 +34,7 @@ a {
 }
 
 p {
-  margin: 1.6rem 0 1.6rem 0;
-  a {
-    font-weight: 400;
-    color: $alt-fg-color;
-    text-decoration: underline;
-    text-underline-position: under;
-    &:focus,
-    &:hover {
-      color: $link-color;
-    }
-  }
+  margin: 2.0rem 0 2.0rem 0;
 }
 
 h1,
@@ -55,75 +44,89 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
+  font-weight: 700;
   color: $alt-fg-color;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
-  margin: 3.2rem 0 1.6rem 0;
+  margin: 6.4rem 0 3.2rem 0;
 }
 
 h1 {
-  font-size: 3.2rem;
-  line-height: 3.2rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    font-size: 2.8rem;
-    line-height: 2.8rem;
+  font-size: 5.4rem;
+  line-height: 5.8rem;
+  @media only screen and (max-device-width : 768px) {
+    font-size: 3.4rem;
+    line-height: 3.8rem;
   }
 }
 h2 {
-  font-size: 2.8rem;
-  line-height: 2.8rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    font-size: 2.4rem;
-    line-height: 2.4rem;
+  font-size: 4.6rem;
+  line-height: 5.0rem;
+  @media only screen and (max-device-width : 768px) {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
   }
 }
 h3 {
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    font-size: 2.0rem;
-    line-height: 2.0rem;
+  font-size: 3.8rem;
+  line-height: 4.2rem;
+  @media only screen and (max-device-width : 768px) {
+    font-size: 3.0rem;
+    line-height: 3.4rem;
   }
 }
 h4 {
-  font-size: 2.2rem;
-  line-height: 2.2rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  @media only screen and (max-device-width : 768px) {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
   }
 }
 h5 {
-  font-size: 2.0rem;
-  line-height: 2.0rem;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    font-size: 1.6rem;
-    line-height: 1.6rem;
+  font-size: 2.6rem;
+  line-height: 3.0rem;
+  @media only screen and (max-device-width : 768px) {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
   }
 }
 h6 {
-  font-size: 1.4rem;
-  line-height: 1.4rem;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+b, strong {
+  font-weight: 700;
 }
 
 pre {
+  display: block;
   font-family: $code-font-family;
-  margin: 1.6rem 0 1.0rem 0;
-  padding: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 2.0rem 0 2.0rem 0;
+  padding: 2.0rem;
   overflow-x: auto;
+  code {
+    background-color: inherit;
+    color: inherit;
+  }
 }
 
 code {
-  display: inline-block;
   font-family: $code-font-family;
-  background-color: $alt-fg-color;
-  color: $bg-color;
-  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: $alt-bg-color;
+  color: $fg-color;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
 }
 
 blockquote {
   border-left: 2px solid $alt-bg-color;
-  padding-left: 1.6rem;
+  padding-left: 2.0rem;
+  line-height: 2.2rem;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -158,13 +161,14 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
+
   min-height: 100vh;
   width: 100%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 120.0rem;
+  max-width: 96.0rem;
   width: 100%;
   padding-left: 2.0rem;
   padding-right: 2.0rem;
