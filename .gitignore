@@ -1,3 +1,5 @@
 **/themes/
 demo/
 resources/
+.hugo/*
+!.hugo/version
