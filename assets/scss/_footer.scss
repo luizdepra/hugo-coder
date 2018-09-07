@@ -3,4 +3,12 @@
   text-align: center;
   line-height: 2.0rem;
   margin-bottom:1.0rem;
+  a {
+    color: $fg-color;
+    font-weight: 700;
+    &:hover,
+    &:focus {
+      color: $link-color
+    }
+  }
 }

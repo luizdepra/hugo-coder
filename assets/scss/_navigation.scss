@@ -9,6 +9,12 @@
     line-height: 6.0rem;
     color: $fg-color;
   }
+  a {
+    &:hover,
+    &:focus {
+      color: $link-color
+    }
+  }
   .navigation-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -81,6 +87,10 @@
       line-height: 6.0rem;
       color: $fg-color;
       cursor: pointer;
+      &:hover,
+      &:focus {
+        color: $link-color
+      }
     }
   }
 }

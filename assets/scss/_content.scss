@@ -57,6 +57,10 @@
         color: $fg-color;
         font-family: $heading-font-family;
         font-weight: 700;
+        &:hover,
+        &:focus {
+          color: $link-color
+        }
       }
     }
   }
@@ -89,10 +93,15 @@
         display: inline-block;
         position: relative;
         a {
+          color: $fg-color;
           text-transform: uppercase;
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem;
+          &:hover,
+          &:focus {
+            color: $link-color
+          }
           @media only screen and (max-device-width : 768px) {
             font-size: 1.4rem;
           }
