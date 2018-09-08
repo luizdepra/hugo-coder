@@ -85,6 +85,17 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 
 You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
 
+### Commit SHA on the footer
+If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two environment variables have to be set (GIT_COMMIT_SHA and GIT_COMMIT_SHA_SHORT) and parameter commit has to be defined in the config file:
+```
+[Params]
+  commit = "https://github.com/<username>/<siterepo>/tree/"
+```
+This can be achieved by running the next command prior to calling Hugo:
+```
+  GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD`
+```
+
 #### Multilingual mode
 
 To use multilingual mode, the configuration above needs to be extended by parameters for the specific languages.
@@ -99,7 +110,7 @@ Each `language` section overrides default site's parameters when that language i
         languagename = "English" # The language name to be displayed in the selector.
         title = "John Doe"
 
-        # You can configure the theme parameter for each language. 
+        # You can configure the theme parameter for each language.
         [languages.en.params]
         author = "John Doe"
         info = "Full Stack DevOps and Magician"
