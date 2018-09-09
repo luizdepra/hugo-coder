@@ -4,7 +4,7 @@ A simple and clean blog theme for Hugo.
 
 ![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
 
-**Coder uses Asset Pipeline now!**
+**HugoCoder uses Asset Pipeline now!**
 
 To use this theme you need Hugo Extended Version, v0.43 or later. But, if you still want to use the old version, you can clone the [v1.0](https://github.com/luizdepra/hugo-coder/releases/tag/v1.0) release.
 
@@ -27,7 +27,7 @@ Add the following lines to your `config.toml`.
 ```toml
 baseurl = "http://www.example.com" # Hostname (and path) to the root.
 title = "johndoe" # Site title.
-theme = "coder" # Set the theme.
+theme = "hugo-coder" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
 
