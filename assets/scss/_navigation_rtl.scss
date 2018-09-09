@@ -1,0 +1,18 @@
+body.rtl {
+  .navigation-list {
+    float: left;
+    @media only screen and (max-device-width : 768px) {
+      left: 0;
+      right: auto;
+    }
+    .navigation-item {
+      float: right;
+    }
+  }
+
+  .menu-button {
+    @media only screen and (max-device-width : 768px) {
+      float: left;
+    }
+  }
+}

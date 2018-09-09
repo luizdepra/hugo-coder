@@ -28,29 +28,36 @@ disqusShortname = "yourdiscussshortname"
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://gitlab.com/dnoe/dalenoe-com/tree/master"
 
+    rtl = false
+
     # Custom CSS
     custom_css = []
 
-    # Alignment of Mobile Menu items
-    itemscentered = true
-
-    # RTL support
-    rtl = false
-
-    langseparator = "|"
-
 [[params.social]]
     name = "Github"
+    icon = "fab fa-github fa-2x"
     weight = 1
     url = "https://github.com/johndoe/"
 [[params.social]]
-    name = "Twitter"
+    name = "Gitlab"
+    icon = "fab fa-gitlab fa-2x"
     weight = 2
+    url = "https://gitlab.com/johndoe/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
     url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
-    weight = 3
+    icon = "fab fa-linkedin fa-2x"
+    weight = 4
     url = "https://www.linkedin.com/in/johndoe/"
+[[params.social]]
+    name = "Medium"
+    icon = "fab fa-medium fa-2x"
+    weight = 5
+    url = "https://medium.com/@johndoe"
 
 [[menu.main]]
     name = "Blog"
