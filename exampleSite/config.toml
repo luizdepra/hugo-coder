@@ -1,7 +1,7 @@
 baseurl = "http://www.example.com"
 title = "johndoe"
 
-theme = "coder"
+theme = "hugo-coder"
 
 languagecode = "en"
 
