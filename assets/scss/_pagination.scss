@@ -1,0 +1,20 @@
+.pagination {
+  margin-top: 6.0rem;
+  text-align: center;
+  li {
+    display: inline;
+    text-align: center;
+    span {
+      margin: 0;
+      text-align: center;
+      width: 3.2rem;
+    }
+    a {
+      span {
+        margin: 0;
+        text-align: center;
+        width: 3.2rem;
+      }
+    }
+  }
+}
