@@ -26,7 +26,7 @@ disqusShortname = "yourdiscussshortname"
     hideCopyright = false
 
     # Git Commit in Footer, uncomment the line below to enable it.
-    commit = "https://gitlab.com/dnoe/dalenoe-com/tree/master"
+    commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
     # Custom CSS
     custom_css = []

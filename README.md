@@ -86,14 +86,19 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 You can look at full working [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) folder.
 
 ### Commit SHA on the footer
-If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two environment variables have to be set (GIT_COMMIT_SHA and GIT_COMMIT_SHA_SHORT) and parameter commit has to be defined in the config file:
-```
+
+If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two environment variables have to be set ```GIT_COMMIT_SHA and GIT_COMMIT_SHA_SHORT``` and parameter commit has to be defined in the config file:
+
+```toml
 [Params]
   commit = "https://github.com/<username>/<siterepo>/tree/"
 ```
+
 This can be achieved by running the next command prior to calling Hugo:
-```
-  GIT_COMMIT_SHA=`git rev-parse --verify HEAD` GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD`
+
+```bash
+export GIT_COMMIT_SHA=`git rev-parse --verify HEAD`
+export GIT_COMMIT_SHA_SHORT=`git rev-parse --short HEAD`
 ```
 
 #### Multilingual mode
