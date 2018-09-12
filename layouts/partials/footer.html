@@ -1,8 +1,45 @@
 <footer class="footer">
+  <section class="container centered">
+    <div class="about">
+      {{ with .Site.Params.social }}
+      <ul>
+        {{ range $index, $el := sort . }}
+        <li>
+          {{ if gt $index 0 }}
+            <span class="separator">•</span>
+          {{ end }}
+          <a href="{{ .url }}" title="{{ i18n ( print "footer_social_" .icon ) }}">
+            <i class="fa{{ .type }} fa-{{ .icon }}"></i>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </section>
   <section class="container">
     {{ with .Site.Params.footercontent }}
-      <p>{{.}}</p>
+      <p>{{ . }}</p>
     {{ end }}
-    {{ if not .Site.Params.hideCopyright }} © {{ .Site.LastChange.Format "2006" }} {{ end }} {{ if not .Site.Params.hideCredits}} {{ if not .Site.Params.hideCopyright }} · {{ end }} Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. {{ end }}
+    {{ if not .Site.Params.hideCopyright }}
+    <span class="copyright">
+      ©
+      {{ with .Site.Params.copyright.year }}
+        {{ . }}
+      {{ else }}
+        {{ now.Year }}
+      {{ end }}
+      {{ if not .Site.Params.hideCopyrightOwner }}
+        <a href="{{ print "/" | absLangURL }}">{{ .Site.Title | lower }}</a>
+      {{ end }}
+    </span>
+    {{ end }}
+
+    {{ if not .Site.Params.hideCredits }}
+    <span class="credits">
+      {{ if not .Site.Params.hideCopyright }}<span class="credits-separator">·</span>{{ end }}
+      Powered with <i class="fas fa-heart"></i> by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    </span>
+    {{ end }}
   </section>
 </footer>

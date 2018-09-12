@@ -1,8 +1,9 @@
-+++ 
-draft = true
-date = {{ .Date }}
-title = ""
-slug = "" 
-tags = []
-categories = []
-+++
+---
+draft: true
+date: {{ .Date }}
+lastmod: {{ .Date }}
+title: "{{ .File.BaseFileName | humanize | title }}"
+slug: "{{ .File.BaseFileName }}"
+tags:
+categories:
+---

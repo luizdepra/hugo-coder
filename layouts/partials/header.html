@@ -1,4 +1,4 @@
-<nav class="navigation">
+<nav class="navigation" id="navigation">
   <section class="container">
     <a class="navigation-title" href="{{ .Site.BaseURL | absLangURL }}">
       {{ .Site.Title }}
@@ -9,7 +9,7 @@
       {{ with .Site.Menus.main}}
         {{ range sort . }}
           <li class="navigation-item">
-            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ default .Name ( i18n .Name ) }}</a>
           </li>
         {{ end }}
       {{ end }}

@@ -40,8 +40,18 @@
       {{ end }}
     {{ end }}
 
+    {{ if .Site.IsServer }}
+      {{ $cssOpts := (dict "targetPath" "css/khosrow.css" "enableSourceMap" true ) }}
+      {{ $styles := resources.Get "scss/khosrow.scss" | resources.ExecuteAsTemplate "style.khosrow.css" . | toCSS $cssOpts }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ else }}
+      {{ $cssOpts := (dict "targetPath" "css/khosrow.css" ) }}
+      {{ $styles := resources.Get "scss/khosrow.scss" | resources.ExecuteAsTemplate "style.khosrow.css" . | toCSS $cssOpts | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+    {{ end }}
+
     {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | absURL }}">
+      <link rel="stylesheet" href="{{ . | absURL }}{{ with $.Site.Params.version.css }}?v={{ . }}{{ end }}">
     {{ end }}
 
     <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
@@ -51,6 +61,8 @@
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
+
+    {{ template "_internal/twitter_cards.html" . }}
 
     {{ .Hugo.Generator }}
   </head>
@@ -66,8 +78,21 @@
       {{ partial "footer.html" . }}
     </main>
 
-    {{ template "_internal/google_analytics.html" . }}
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/khosrow.js" }}
+      <script src="{{ $script.Permalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/khosrow.js" | minify | fingerprint }}
+      <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    {{ end }}
 
+    {{ range .Site.Params.custom_js }}
+      <script src="{{ . | absURL }}{{ with $.Site.Params.version.js }}?v={{ . }}{{ end }}"></script>
+    {{ end }}
+
+    {{ if not .Site.BuildDrafts }}
+      {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
   </body>
 
 </html>
