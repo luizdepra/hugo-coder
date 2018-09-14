@@ -4,14 +4,21 @@
   a, span {
     display: inline;
     font-size: 1.6rem;
-    text-transform: uppercase;
+    font-family: $heading-font-family;
+    font-weight: 700;
     line-height: 6.0rem;
-    letter-spacing: 0.1rem;
-    @media only screen and (max-device-width : 768px) {
-      font-size: 1.4rem;
+    color: $fg-color;
+  }
+  a {
+    &:hover,
+    &:focus {
+      color: $link-color
     }
   }
-
+  .navigation-title {
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
   .navigation-list {
     float: right;
     list-style: none;
@@ -58,7 +65,6 @@
       }
     }
   }
-
   #menu-toggle {
     display: none;
     @media only screen and (max-device-width : 768px) {
@@ -81,6 +87,10 @@
       line-height: 6.0rem;
       color: $fg-color;
       cursor: pointer;
+      &:hover,
+      &:focus {
+        color: $link-color
+      }
     }
   }
 }

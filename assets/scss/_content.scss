@@ -4,15 +4,16 @@
   margin-bottom: 3.2rem;
   article {
     header {
-      margin-top: 3.2rem;
+      margin-top: 6.4rem;
       margin-bottom: 3.2rem;
       h1, h2 {
         margin: 0;
       }
       h2 {
-        margin-top: 1.0rem;
         font-size: 1.8rem;
+        line-height: 2.2rem;
         color: $fg-color;
+        margin-top: 1.8rem;
         @media only screen and (max-device-width : 768px) {
           font-size: 1.6rem;
         }
@@ -38,7 +39,6 @@
     li {
       font-size: 1.6rem;
       @media only screen and (max-device-width : 768px) {
-        font-size: 1.4rem;
         margin: 1.6rem 0 1.6rem 0;
       }
       span {
@@ -52,7 +52,14 @@
         }
       }
       a {
-        text-transform: uppercase;
+        font-size: 1.8rem;
+        color: $fg-color;
+        font-family: $heading-font-family;
+        font-weight: 700;
+        &:hover,
+        &:focus {
+          color: $link-color
+        }
       }
     }
   }
@@ -85,15 +92,20 @@
         display: inline-block;
         position: relative;
         a {
+          color: $fg-color;
           text-transform: uppercase;
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem;
+          &:hover,
+          &:focus {
+            color: $link-color;
+          }
           @media only screen and (max-device-width : 768px) {
             font-size: 1.4rem;
           }
           i {
-            font-weight: 400;
+            font-size: 3.2rem;
           }
         }
       }
