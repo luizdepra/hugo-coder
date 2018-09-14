@@ -2,7 +2,7 @@
   <article>
     <header>
       <h1 class="title">{{ .Title }}</h1>
-      <h2 class="date">{{ .Date.Format "January 2, 2006" }}</h2>
+      <h2 class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</h2>
 
       {{ if eq .Params.math "true" }}
         <script type="text/javascript" async
@@ -38,5 +38,5 @@
   {{ if and (not (eq .Site.DisqusShortname "" )) (eq (.Params.disable_comments | default false) false)}}
       {{ template "_internal/disqus.html" . }}
   {{ end }}
-  
+
 </section>

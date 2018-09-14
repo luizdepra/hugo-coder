@@ -22,6 +22,8 @@ disqusShortname = "yourdiscussshortname"
     avatarurl = "images/avatar.jpg"
     footercontent = "Enter a text here."
 
+    dateformat = "January 2, 2006"
+
     hideCredits = false
     hideCopyright = false
 
