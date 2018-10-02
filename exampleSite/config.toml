@@ -147,7 +147,7 @@ disqusShortname = "yourdiscussshortname"
         [languages.nl.params]
         author = "Jan Daan"
         info = "Full Stack DevOps en Tovenaar"
-        description = "Jan Daan's persoonlijkke website"
+        description = "Jan Daan's persoonlijke website"
         keywords = "blog,developer,persoonlijk"
 
         [languages.nl.menu]
