@@ -171,6 +171,12 @@ img {
 .float-left {
   float: left; }
 
+.fab {
+  font-weight: 400; }
+
+.fas {
+  font-weight: 900; }
+
 .content {
   flex: 1;
   margin-top: 1.6rem;
@@ -188,6 +194,8 @@ img {
       @media only screen and (max-device-width: 768px) {
         .content article header h2 {
           font-size: 1.6rem; } }
+  .content article footer {
+    margin-top: 1.0rem; }
 
 .avatar img {
   width: 20rem;
@@ -202,7 +210,7 @@ img {
   list-style: none;
   padding: 0; }
   .list ul li {
-    font-size: 1.6rem; }
+    font-size: 1.8rem; }
     @media only screen and (max-device-width: 768px) {
       .list ul li {
         margin: 1.6rem 0 1.6rem 0; } }
