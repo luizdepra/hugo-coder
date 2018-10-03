@@ -139,3 +139,34 @@ disqusShortname = "yourdiscussshortname"
             name = "kontakt"
             weight = 5
             url = "/kontakt/"
+
+    [languages.nl]
+        languagename = "Nederlands"
+        title = "Jan Daan"
+
+        [languages.nl.params]
+        author = "Jan Daan"
+        info = "Full Stack DevOps en Tovenaar"
+        description = "Jan Daan's persoonlijke website"
+        keywords = "blog,developer,persoonlijk"
+
+        [languages.nl.menu]
+
+          [[languages.nl.menu.main]]
+          name = "Over"
+          weight = 1.0
+          url = "/over/"
+
+          [[languages.nl.menu.main]]
+          name = "Blog"
+          weight = 2.0
+          url = "/artikelen/"
+
+          [[languages.nl.menu.main]]
+          name = "Projecten"
+          weight = 3
+          url = "/projecten/"
+          [[languages.nl.menu.main]]
+          name = "Neem contact op"
+          weight = 5
+          url = "/contact/"
