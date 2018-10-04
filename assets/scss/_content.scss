@@ -14,6 +14,7 @@
         line-height: 2.2rem;
         color: $fg-color;
         margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
         @media only screen and (max-device-width : 768px) {
           font-size: 1.6rem;
         }
@@ -35,6 +36,17 @@
       }
       .reading-time {
         display: inline-block;
+      }
+    }
+    .tags,
+    .categories {
+      i {
+        margin-left: 0;
+        margin-right: 0.5rem;
+      }
+      .separator {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
       }
     }
   }

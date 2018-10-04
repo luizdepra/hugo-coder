@@ -1,0 +1,13 @@
+<div class="categories">
+  <i class="fas fa-folder"></i>
+  {{- with .Page.Params.Categories -}}
+    {{- range $index, $el := . -}}
+      {{- if gt $index 0 }}
+        <span class="separator">•</span>
+      {{- end }}
+      <a href="{{ ( print "categories/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+    {{- end -}}
+  {{- else }}
+    no categories
+  {{- end }}
+</div>

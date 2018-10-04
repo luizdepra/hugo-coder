@@ -20,6 +20,9 @@
             {{ i18n "readingTime" .ReadingTime }}
           </span>
         </div>
+
+        {{ partial "taxonomy/tags" . }}
+        {{ partial "taxonomy/categories" . }}
       </header>
 
       <div>

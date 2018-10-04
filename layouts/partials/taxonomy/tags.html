@@ -1,0 +1,13 @@
+<div class="tags">
+  <i class="fas fa-tag"></i>
+  {{- with .Page.Params.Tags -}}
+    {{- range $index, $el := . -}}
+      {{- if gt $index 0 }}
+        <span class="separator">•</span>
+      {{- end }}
+      <a href="{{ ( print "tags/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+    {{- end -}}
+  {{- else }}
+    no tags
+  {{- end }}
+</div>
