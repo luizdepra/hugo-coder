@@ -2,5 +2,22 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-  {{ partial "post.html" . }}
+  <section class="container post">
+    <article>
+      <header>
+        <h1 class="title">{{ .Title }}</h1>
+        <h2 class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</h2>
+      </header>
+
+      <div>
+        {{ .Content }}
+      </div>
+
+      <footer>
+        {{ partial "posts/disqus" . }}
+      </footer>
+    </article>
+
+    {{ partial "posts/math" . }}
+  </section>
 {{ end }}
