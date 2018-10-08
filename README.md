@@ -1,12 +1,14 @@
 ![Hugo Coder Logotype](https://github.com/luizdepra/hugo-coder/blob/master/images/logos/logotype-a.png)
 
-A simple and clean blog theme for Hugo.
+A simple and clean blog theme for [Hugo](https://gohugo.io/).
 
 ![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
 
-**Coder uses Asset Pipeline now!**
+## Quick Start
 
-To use this theme you need Hugo Extended Version, v0.43 or later. But, if you still want to use the old version, you can clone the [v1.0](https://github.com/luizdepra/hugo-coder/releases/tag/v1.0) release.
+1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/luizdepra/hugo-coder.git themes/coder`.
+2. Configure your `config.toml`. You can either use the [this minimal configuration](https://github.com/luizdepra/hugo-coder/wiki/Configurations#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/wiki/Configurations). The [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [`exampleSite`](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) is also a good reference.
+3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
 
 ## How to use this theme
 
@@ -195,6 +197,9 @@ The above command copies current state of the theme to exampleSite/themes and st
 Add the following line to your config, ```disqusShortname = "yourdiscussshortname"``` When this is set, all posts are disqus enabled   
 You can disable comments for a post by adding the following to your page meta data: ```disable_comments: true```.
 
+## Extra Guides
+
+* [Multilingual Mode](https://github.com/luizdepra/hugo-coder/wiki/Multilingual-Mode)
 
 ## License
 
