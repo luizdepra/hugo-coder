@@ -25,7 +25,7 @@
     {{ else }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
       {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
     {{ end }}
 
     {{ if .Site.Params.rtl }}
@@ -36,12 +36,12 @@
       {{ else }}
         {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
         {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | absURL }}" crossorigin="anonymous">
+      <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
 
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
