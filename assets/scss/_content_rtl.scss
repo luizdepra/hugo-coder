@@ -1,4 +1,14 @@
 body.rtl {
+  .content {
+    .post {
+      .post-meta {
+        .posted-on {
+          margin-left: 1.5rem;
+          margin-right: 0;
+        }
+      }
+    }
+  }
   .list {
     ul {
       li {
