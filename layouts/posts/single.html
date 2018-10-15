@@ -5,8 +5,21 @@
   <section class="container post">
     <article>
       <header>
-        <h1 class="title">{{ .Title }}</h1>
-        <h2 class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</h2>
+        <div class="post-title">
+          <h1 class="title">{{ .Title }}</h1>
+        </div>
+        <div class="post-meta">
+          <span class="posted-on">
+            <i class="far fa-calendar"></i>
+            <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+              {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+            </time>
+          </span>
+          <span class="reading-time">
+            <i class="far fa-clock"></i>
+            {{ i18n "readingTime" .ReadingTime }}
+          </span>
+        </div>
       </header>
 
       <div>
