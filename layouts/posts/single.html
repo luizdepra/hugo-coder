@@ -30,6 +30,10 @@
       </div>
 
       <footer>
+        <hr />
+        {{ partial "taxonomy/tags" . }}
+        {{ partial "taxonomy/categories" . }}
+        <br />
         {{ partial "posts/disqus" . }}
       </footer>
     </article>
