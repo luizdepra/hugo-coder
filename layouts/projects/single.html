@@ -8,29 +8,16 @@
         <div class="post-title">
           <h1 class="title">{{ .Title | emojify }}</h1>
         </div>
-        <div class="post-meta">
-          <span class="posted-on">
-            {{ ":calendar:" | emojify }}
-            <time datetime='{{ .Date.Format "2006-01-02" }}'>
-              {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
-            </time>
-          </span>
-          <span class="reading-time">
-            {{ ":clock1:" | emojify }}
-            {{ i18n "readingTime" .ReadingTime }}
-          </span>
-        </div>
+        <ul class="tags">
+            {{ range .Params.tags }}
+                <li>{{ . }}</li>
+            {{ end }}
+        </ul>
       </header>
 
       <div>
         {{ .Content }}
       </div>
-
-      <footer>
-        {{ partial "posts/disqus" . }}
-      </footer>
     </article>
-
-    {{ partial "posts/math" . }}
   </section>
 {{ end }}

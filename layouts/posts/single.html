@@ -20,6 +20,11 @@
             {{ i18n "readingTime" .ReadingTime }}
           </span>
         </div>
+        <ul class="tags">
+            {{ range .Params.tags }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
       </header>
 
       <div>

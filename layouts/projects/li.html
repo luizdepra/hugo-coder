@@ -1,21 +1,7 @@
-<li>
-    {{ with (index (sort (.Resources.ByType "image") ".Params.weight" "desc") 0) }}
-        {{ $image := . }}
-        <a href="{{ .Permalink }}">
-            <img class="article_image" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
-        </a>
-    {{ end }}
-
-    <div class="summary">
-        <header>
-            <a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
-            <span>{{ .Date.Format "2006" }}</span>
-        </header>
-        <p>{{ .Description }} <a href="{{ .Permalink }}">Read more.</a></p>
-        <ul class="tags">
-            {{ range .Params.tags }}
-                <li>{{ . }}</li>
-            {{ end }}
-        </ul>
-    </div>
+<li class="project">
+  <span class="date">{{ .Date.Format "2006" }}</span>
+  <div class="info">
+      <a href="{{ .URL }}">{{ .Title | emojify }}</a>
+      <p>{{ .Description }}</p>
+  </div>
 </li>
