@@ -1,5 +1,7 @@
 <section class="container list">
   <h1 class="title">{{ .Title }}</h1>
+  {{ .Content }}
+
   <ul>
     {{ range .Paginator.Pages }}
     <li>

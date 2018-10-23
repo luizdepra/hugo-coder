@@ -1,22 +1,22 @@
 {{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
+  {{ .Title | emojify }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
   <section class="container post">
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">{{ .Title }}</h1>
+          <h1 class="title">{{ .Title | emojify }}</h1>
         </div>
         <div class="post-meta">
           <span class="posted-on">
-            <i class="far fa-calendar"></i>
-            <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+            {{ ":calendar:" | emojify }}
+            <time datetime='{{ .Date.Format "2006-01-02" }}'>
               {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
             </time>
           </span>
           <span class="reading-time">
-            <i class="far fa-clock"></i>
+            {{ ":clock1:" | emojify }}
             {{ i18n "readingTime" .ReadingTime }}
           </span>
         </div>

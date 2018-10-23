@@ -1,0 +1,15 @@
+{{ with .Page.Resources.GetMatch (.Get 0) }}
+<figure>
+    {{ $image := . }}
+
+    {{ if isset $image.Params "href" }}
+    <a href="{{ $image.Params.href }}" target="_blank">
+        <img src="{{ $image.RelPermalink }}" alt="{{ $image.Title }}">
+    </a>
+    {{ else }}
+    <img src="{{ $image.RelPermalink }}" alt="{{ $image.Title }}">
+    {{ end }}
+
+    {{ with $image.Params.caption }}<figcaption>{{ . | markdownify | emojify }}</figcaption>{{ end }}
+</figure>
+{{ end }}

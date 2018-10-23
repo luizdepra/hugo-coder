@@ -12,21 +12,15 @@
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Params.canonical_url | default .Permalink }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Source+Serif+Pro:400,700|Changa+One|Source+Code+Pro:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
 
-    {{ if .Site.IsServer }}
-      {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-    {{ else }}
-      {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-    {{ end }}
+    {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
+    {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 
     {{ if .Site.Params.rtl }}
       {{ if .Site.IsServer }}
@@ -40,19 +34,21 @@
       {{ end }}
     {{ end }}
 
-    {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | absURL }}">
-    {{ end }}
-
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    {{ partial "head-extras.html" . }}
 
     {{ .Hugo.Generator }}
+
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">

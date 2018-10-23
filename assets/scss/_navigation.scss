@@ -5,26 +5,31 @@
     display: inline;
     font-size: 1.6rem;
     font-family: $heading-font-family;
-    font-weight: 700;
     line-height: 6.0rem;
     color: $fg-color;
   }
   a {
     &:hover,
     &:focus {
-      color: $link-color
+        border-bottom: 4px solid $link-color;
+        transition: border-bottom-width 150ms;
     }
   }
   .navigation-title {
     letter-spacing: 0.1rem;
+    font-family: $display-font-family;
+    font-size: 1.5em;
     text-transform: uppercase;
+  }
+  .navigation-link {
+    font-weight: 700;
   }
   .navigation-list {
     float: right;
     list-style: none;
     margin-bottom: 0;
     margin-top: 0;
-    @media only screen and (max-device-width : 768px) {
+    @media only screen and (max-width : 768px) {
       position: absolute;
       top: 6.0rem;
       right: 0;
@@ -43,7 +48,7 @@
       float: left;
       margin: 0;
       position: relative;
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-width : 768px) {
         float: none !important;
         text-align: center;
         a, span {
@@ -51,12 +56,11 @@
         }
       }
       a, span {
-        margin-left: 1.0rem;
-        margin-right: 1.0rem;
+        margin: 0 1.5rem;
       }
     }
     .menu-separator {
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-width : 768px) {
         border-top: 2px solid $fg-color;
         margin: 0 8.0rem;
         span {
@@ -67,7 +71,7 @@
   }
   #menu-toggle {
     display: none;
-    @media only screen and (max-device-width : 768px) {
+    @media only screen and (max-width : 768px) {
       &:checked + label {
         color: $alt-bg-color;
       }
@@ -80,7 +84,7 @@
   }
   .menu-button {
     display: none;
-    @media only screen and (max-device-width : 768px) {
+    @media only screen and (max-width : 768px) {
       display: block;
       font-size: 2.4rem;
       font-weight: 400;

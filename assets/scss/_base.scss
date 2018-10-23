@@ -14,9 +14,9 @@ body {
   color: $fg-color;
   background-color: $bg-color;
 	font-family: $text-font-family;
-	font-size: 1.6em;
-	font-weight: 300;
-  line-height: 1.8em;
+	font-size: 2em;
+	font-weight: 400;
+  line-height: 1.5em;
   @media only screen and (max-device-width : 768px) {
     font-size: 1.6em;
     line-height: 1.6em;
@@ -29,7 +29,7 @@ a {
   text-decoration: none;
   &:focus,
   &:hover {
-    text-decoration: underline;
+    color: lighten($link-color, 15%);
   }
 }
 
@@ -124,14 +124,6 @@ code {
   background-color: $alt-bg-color;
   color: $fg-color;
   padding: 0.2rem 0.4rem 0.2rem 0.4rem;
-}
-
-blockquote {
-  border-left: 2px solid $alt-bg-color;
-  padding-left: 2.0rem;
-  line-height: 2.2rem;
-  font-weight: 400;
-  font-style: italic;
 }
 
 th, td {
