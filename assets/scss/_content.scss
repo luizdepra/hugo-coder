@@ -119,6 +119,7 @@ ul.tags {
         li.project {
             display: flex;
             margin-bottom: 2rem;
+            align-items: baseline;
 
             span.date {
                 width: auto;
