@@ -1,0 +1,12 @@
+<p>
+    <a href="https://stackshare.io/{{ .Get "name" }}">See in Stackshare</a>
+</p>
+
+<a
+    frameborder="0"
+    data-theme="{{ "theme" | .Get | default "dark" }}"
+    data-layers="{{ "layers" | .Get | default "1,2,3,4" }}"
+    data-stack-embed="true"
+    href="https://embed.stackshare.io/stacks/embed/{{ .Get "id" }}"/>
+</a>
+<script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
