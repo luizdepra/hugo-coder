@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 
   <head>
+    {{ partial "google_analytics.html" . }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -45,7 +46,6 @@
 
     {{ .Hugo.Generator }}
 
-    {{ template "_internal/google_analytics_async.html" . }}
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
@@ -61,9 +61,5 @@
 
       {{ partial "footer.html" . }}
     </main>
-
-    {{ template "_internal/google_analytics.html" . }}
-
   </body>
-
 </html>
