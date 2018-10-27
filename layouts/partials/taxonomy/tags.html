@@ -1,0 +1,9 @@
+<div class="tags">
+  <i class="fas fa-tag"></i>
+  {{- range $index, $el := . -}}
+    {{- if gt $index 0 }}
+      <span class="separator">•</span>
+    {{- end }}
+    <a href="{{ ( print "tags/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+  {{- end -}}
+</div>
