@@ -6,16 +6,13 @@
     header {
       margin-top: 6.4rem;
       margin-bottom: 3.2rem;
-      h1, h2 {
+      h1 {
+        font-size: 4.2rem;
+        line-height: 4.6rem;
         margin: 0;
-      }
-      h2 {
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        color: $fg-color;
-        margin-top: 1.8rem;
         @media only screen and (max-device-width : 768px) {
-          font-size: 1.6rem;
+          font-size: 4.0rem;
+          line-height: 4.4rem;
         }
       }
     }
@@ -28,13 +25,17 @@
       margin-bottom: .75em;
     }
     .post-meta {
-      .posted-on {
-        display: inline-block;
+      i {
+        text-align: center;
+        width: 1.6rem;
         margin-left: 0;
-        margin-right: 1.5rem;
+        margin-right: 0.5rem;
       }
-      .reading-time {
-        display: inline-block;
+      .date {
+        .posted-on {
+          margin-left: 0;
+          margin-right: 1.5rem;
+        }
       }
     }
   }

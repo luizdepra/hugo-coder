@@ -7,8 +7,16 @@ body.rtl {
           margin-right: 0;
         }
       }
+      .tags,
+      .categories {
+        i {
+          margin-left: 0.5rem;
+          margin-right: 0;
+        }
+      }
     }
   }
+
   .list {
     ul {
       li {
