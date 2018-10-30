@@ -8,7 +8,7 @@
                 <h1>{{ .Title }}</h1>
             </header>
 
-            {{ .Content }}
+            {{ .Content | emojify }}
         </article>
     </section>
 {{ end }}
