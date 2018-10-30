@@ -3,6 +3,9 @@
 
   <head>
     {{ partial "google_analytics.html" . }}
+    {{ partial "open_graph.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -42,13 +45,7 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    {{ partial "head-extras.html" . }}
-
     {{ .Hugo.Generator }}
-
-    {{ template "_internal/schema.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
-    {{ template "_internal/opengraph.html" . }}
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
