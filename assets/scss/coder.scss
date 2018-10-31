@@ -1,4 +1,7 @@
 @import "variables";
+{{ if .Site.Params.inverted }}
+  @import "variables_inverted";
+{{ end }}
 @import "base";
 @import "content";
 @import "navigation";
