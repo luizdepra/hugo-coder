@@ -18,27 +18,9 @@ A simple and clean blog theme for [Hugo](https://gohugo.io/).
 
 Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).
 
-## Author
+## Maintenance
 
-[Luiz de Prá](https://github.com/luizdepra)
-
-## Contributors
-
-- [Gabor Nagy](https://github.com/Aigeruth)
-- [Ihor Dvoretskyi](https://github.com/idvoretskyi)
-- [Jan Baudisch](https://github.com/flyingP0tat0)
-- [Jiri Hubacek](https://github.com/qeef)
-- [Khosrow Moossavi](https://github.com/khos2ow)
-- [Maikel](https://github.com/mbollemeijer)
-- [peterrus](https://github.com/peterrus)
-- [Ralf Junghanns](https://github.com/rabbl)
-- [tobaloidee](https://github.com/Tobaloidee)
-- [Vlad Ionescu](https://github.com/Vlaaaaaaad)
-- [Niels Reijn](https://github.com/reijnn)
-- [Harry Khanna](https://github.com/hkhanna)
-- [rdhox](https://rdhox.io)
-- [Chip Senkbeil](https://github.com/chipsenkbeil)
-- [Tomasz Wąsiński](https://github.com/wasinski)
+This theme is maintained by its author [Luiz de Prá](https://github.com/luizdepra) with the help from these awesome [contributors](CONTRIBUTORS.md).
 
 ## Special Thanks
 
