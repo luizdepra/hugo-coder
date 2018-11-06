@@ -60,21 +60,18 @@
             margin-bottom: .75em;
         }
         .post-meta {
-            .posted-on {
+            .indicator {
                 display: inline-block;
-                margin-left: 0;
-                margin-right: 1.5rem;
-            }
-            .reading-time {
-                display: inline-block;
+                margin-right: 2rem;
             }
         }
     }
 }
 
 ul.tags {
-    display: inline;
+    display: inline-block;
     padding: 0;
+    margin: 1rem 0;
     list-style: none;
 
     & > li {

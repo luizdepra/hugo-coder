@@ -9,16 +9,26 @@
           <h1 class="title">{{ .Title | emojify }}</h1>
         </div>
         <div class="post-meta">
-          <span class="posted-on">
+          <span class="posted-on indicator">
             {{ ":calendar:" | emojify }}
             <time datetime='{{ .Date.Format "2006-01-02" }}'>
               {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
             </time>
           </span>
-          <span class="reading-time">
+          <span class="reading-time indicator">
             {{ ":clock1:" | emojify }}
             {{ i18n "readingTime" .ReadingTime }}
           </span>
+          {{ with .Params.distributed_through }}
+          <span class="read-on-other-platforms indicator">
+              Read on
+              {{ $platforms := . }}
+              {{ range $platforms }}
+                {{ if ne . (index $platforms 0) }} | {{ end }}
+                <a href="{{ .href }}">{{ .platform }}</a>
+              {{ end }}
+          </span>
+          {{ end }}
         </div>
         <ul class="tags">
             {{ range .Params.tags }}
