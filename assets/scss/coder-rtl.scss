@@ -1,7 +1,4 @@
 @import "_variables";
-{{ if .Site.Params.inverted }}
-  @import "_variables_inverted";
-{{ end }}
 @import "_base_rtl";
 @import "_content_rtl";
 @import "_navigation_rtl";

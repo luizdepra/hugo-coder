@@ -1,0 +1,45 @@
+body.inverted {
+
+
+  .navigation {
+    a, span {
+      color: $fg-color-inverted;
+    }
+    a {
+      &:hover,
+      &:focus {
+        color: $link-color-inverted;
+      }
+    }
+    .navigation-list {
+      @media only screen and (max-device-width : 768px) {
+        background-color: $bg-color-inverted;
+        border-top: solid 2px $alt-bg-color-inverted;
+        border-bottom: solid 2px $alt-bg-color-inverted;
+      }
+      .menu-separator {
+        @media only screen and (max-device-width : 768px) {
+          border-top: 2px solid $fg-color-inverted;
+        }
+      }
+    }
+    #menu-toggle {
+      @media only screen and (max-device-width : 768px) {
+        &:checked + label {
+          color: $alt-bg-color-inverted;
+        }
+      }
+    }
+    .menu-button {
+      display: none;
+      @media only screen and (max-device-width : 768px) {
+        color: $fg-color-inverted;
+        &:hover,
+        &:focus {
+          color: $link-color-inverted;
+        }
+      }
+    }
+  }
+
+}
