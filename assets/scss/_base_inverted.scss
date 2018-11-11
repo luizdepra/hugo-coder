@@ -7,6 +7,11 @@ body.inverted {
     color: $link-color-inverted;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
   h6 {
     color: $alt-fg-color-inverted;
   }
@@ -14,6 +19,13 @@ body.inverted {
   code {
     background-color: $alt-bg-color-inverted;
     color: $fg-color-inverted;
+  }
+
+  pre {
+    code {
+      background-color: inherit;
+      color: inherit;
+    }
   }
 
   blockquote {
