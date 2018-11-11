@@ -22,3 +22,4 @@
 - [Vinícius dos Santos Oliveira](https://github.com/vinipsmaker)
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
 - [Joseph Ting](https://github.com/josephting)
+- [Mish Ochu](https://github.com/mishfit)
