@@ -32,6 +32,9 @@ disqusShortname = "yourdiscussshortname"
 
     rtl = false
 
+    # Use inverted colors
+    inverted = false
+
     # Custom CSS
     custom_css = []
 

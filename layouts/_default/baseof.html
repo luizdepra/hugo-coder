@@ -40,6 +40,18 @@
       {{ end }}
     {{ end }}
 
+    {{ if .Site.Params.inverted }}
+      {{ if .Site.IsServer }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" "enableSourceMap" true ) }}
+        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ else }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" ) }}
+        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
+    {{ end }}
+
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
@@ -55,7 +67,7 @@
     {{ .Hugo.Generator }}
   </head>
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+  <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}">
     <main class="wrapper">
       {{ partial "header.html" . }}
 
