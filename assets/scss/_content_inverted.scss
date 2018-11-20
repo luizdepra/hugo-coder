@@ -1,0 +1,36 @@
+body.inverted {
+
+  .content {
+  
+    .list {
+      ul {
+        li {
+          a {
+            color: $fg-color-inverted;
+            &:hover,
+            &:focus {
+              color: $link-color-inverted
+            }
+          }
+        }
+      }
+    }
+
+    .centered {
+      .about {
+        ul {
+          li {
+            a {
+              color: $fg-color-inverted;
+              &:hover,
+              &:focus {
+                color: $link-color-inverted;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

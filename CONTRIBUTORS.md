@@ -21,4 +21,7 @@
 - [Tomasz Wąsiński](https://github.com/wasinski)
 - [Vinícius dos Santos Oliveira](https://github.com/vinipsmaker)
 - [Vlad Ionescu](https://github.com/Vlaaaaaaad)
+- [Joseph Ting](https://github.com/josephting)
+- [Abner Campanha](https://github.com/abnerpc)
+- [Martin Kiesel](https://github.com/Kyslik)
 - [John Tobin](https://www.johntobin.ie/)
