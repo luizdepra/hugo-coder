@@ -4,6 +4,6 @@
     {{- if gt $index 0 }}
       <span class="separator">•</span>
     {{- end }}
-    <a href="{{ ( print "categories/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+    <a href="{{ ( printf "categories/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
   {{- end -}}
 </div>
