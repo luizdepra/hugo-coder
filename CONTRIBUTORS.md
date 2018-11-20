@@ -24,3 +24,4 @@
 - [Joseph Ting](https://github.com/josephting)
 - [Abner Campanha](https://github.com/abnerpc)
 - [Martin Kiesel](https://github.com/Kyslik)
+- [John Tobin](https://www.johntobin.ie/)
