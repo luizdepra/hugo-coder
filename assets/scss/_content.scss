@@ -10,7 +10,7 @@
         font-size: 4.2rem;
         line-height: 4.6rem;
         margin: 0;
-        @media only screen and (max-device-width : 768px) {
+        @media only screen and (max-width : 768px) {
           font-size: 4.0rem;
           line-height: 4.4rem;
         }
@@ -45,7 +45,7 @@
   width: 20rem;
   height: auto;
   border-radius: 50%;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     width: 10rem;
   }
 }
@@ -57,7 +57,7 @@
     padding: 0;
     li {
       font-size: 1.8rem;
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-width : 768px) {
         margin: 1.6rem 0 1.6rem 0;
       }
       span {
@@ -65,7 +65,7 @@
         width: 20.0rem;
         text-align: right;
         margin-right: 3.0rem;
-        @media only screen and (max-device-width : 768px) {
+        @media only screen and (max-width : 768px) {
           display: block;
           text-align: left;
         }
@@ -99,7 +99,7 @@
       margin-top: 1.0rem;
       margin-bottom: 0.5rem;
       font-size: 2.4rem;
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-width : 768px) {
         font-size: 2.0rem;
       }
     }
@@ -120,7 +120,7 @@
           &:focus {
             color: $link-color;
           }
-          @media only screen and (max-device-width : 768px) {
+          @media only screen and (max-width : 768px) {
             font-size: 1.4rem;
           }
           i {
@@ -137,7 +137,7 @@
       margin-top: 2.0rem;
       margin-bottom: 0.5rem;
       font-size: 4.6rem;
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-width : 768px) {
         font-size: 3.2rem;
       }
     }
@@ -145,7 +145,7 @@
       margin-top: 2.0rem;
       margin-bottom: 3.2rem;
       font-size: 3.2rem;
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-width : 768px) {
         font-size: 2.8rem;
       }
     }
