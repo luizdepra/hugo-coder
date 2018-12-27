@@ -40,6 +40,17 @@
       }
     }
   }
+  figure {
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  figcaption p {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    margin: 0;
+  }
 }
 
 .avatar img{

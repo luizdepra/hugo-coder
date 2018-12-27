@@ -26,3 +26,4 @@
 - [Martin Kiesel](https://github.com/Kyslik)
 - [John Tobin](https://www.johntobin.ie/)
 - [Thomas Nys](https://thomasnys.com)
+- [Piotr Januszewski](https://piojanu.github.io)
