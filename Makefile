@@ -1,10 +1,12 @@
+HUGO_BIN=hugo
+
 .PHONY: prepare release build demo clean
 
 build: prepare
-	./hugow --source demo
+	$(HUGO_BIN) --source demo
 
 demo: prepare
-	./hugow server --buildDrafts --source demo
+	$(HUGO_BIN) server --buildDrafts --source demo
 
 release: build
 	rm -rf ./resources && cp -r ./demo/resources ./resources
