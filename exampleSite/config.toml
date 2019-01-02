@@ -64,22 +64,6 @@ disqusShortname = "yourdiscussshortname"
     weight = 5
     url = "https://medium.com/@johndoe"
 
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
-[[menu.main]]
-    name = "Projects"
-    weight = 3
-    url = "/projects/"
-[[menu.main]]
-    name = "Contact me"
-    weight = 5
-    url = "/contact/"
 
 [languages]
     [languages.en]
@@ -97,18 +81,19 @@ disqusShortname = "yourdiscussshortname"
 
         [[languages.en.menu.main]]
         name = "About"
-        weight = 1.0
+        weight = 1
         url = "/about/"
 
         [[languages.en.menu.main]]
         name = "Blog"
-        weight = 2.0
+        weight = 2
         url = "/posts/"
 
         [[languages.en.menu.main]]
         name = "Projects"
         weight = 3
         url = "/projects/"
+
         [[languages.en.menu.main]]
         name = "Contact me"
         weight = 5
@@ -129,19 +114,20 @@ disqusShortname = "yourdiscussshortname"
 
             [[languages.pl.menu.main]]
             name = "O mnie"
-            weight = 1.0
+            weight = 1
             url = "/pl/about/"
 
             [[languages.pl.menu.main]]
             name = "Blog"
-            weight = 2.0
+            weight = 2
             url = "/pl/posts/"
 
             [[languages.pl.menu.main]]
-            name = "projektowanie"
+            name = "Projektowanie"
             weight = 3
-            url = "/projektowanie/"
+            url = "/pl/projects/"
+
             [[languages.pl.menu.main]]
-            name = "kontakt"
+            name = "Kontakt"
             weight = 5
-            url = "/kontakt/"
+            url = "/pl/contact/"
