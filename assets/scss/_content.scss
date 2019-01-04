@@ -1,5 +1,6 @@
 .content {
   flex: 1;
+  display: flex;
   margin-top: 1.6rem;
   margin-bottom: 3.2rem;
   article {
@@ -86,7 +87,6 @@
 
 .centered {
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
   .about {
