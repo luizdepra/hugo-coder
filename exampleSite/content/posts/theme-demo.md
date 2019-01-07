@@ -74,3 +74,7 @@ var foo = function (bar) {
 
 console.log(foo(5));
 ```
+
+## Hugo shortcode for figure
+
+{{< figure src="/images/N90.jpg" caption="N90 nebula, \"New stars shed light on the past\" by ESA/Hubble" >}}
