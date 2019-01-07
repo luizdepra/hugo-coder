@@ -41,14 +41,13 @@
     }
   }
   figure {
-    border: thin silver solid;
-    margin: 0.5em;
-    padding: 0.5em;
+    margin: 0;
+    padding: 0;
   }
   figcaption p {
     text-align: center;
     font-style: italic;
-    font-size: smaller;
+    font-size: 1.6rem;
     margin: 0;
   }
 }
