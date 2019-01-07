@@ -9,6 +9,8 @@
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
+    {{ template "_internal/twitter_cards.html" . }}
+
     <base href="{{ .Permalink }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
