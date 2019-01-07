@@ -27,3 +27,4 @@
 - [John Tobin](https://www.johntobin.ie/)
 - [Thomas Nys](https://thomasnys.com)
 - [Piotr Januszewski](https://piojanu.github.io)
+- [Artem Khvastunov](https://artspb.me)
