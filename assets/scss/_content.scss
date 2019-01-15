@@ -11,19 +11,19 @@
         font-size: 4.2rem;
         line-height: 4.6rem;
         margin: 0;
-        @media only screen and (max-width : 768px) {
-          font-size: 4.0rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 4rem;
           line-height: 4.4rem;
         }
       }
     }
     footer {
-      margin-top: 4.0rem;
+      margin-top: 4rem;
     }
   }
   .post {
     .post-title {
-      margin-bottom: .75em;
+      margin-bottom: 0.75em;
     }
     .post-meta {
       i {
@@ -52,11 +52,11 @@
   }
 }
 
-.avatar img{
+.avatar img {
   width: 20rem;
   height: auto;
   border-radius: 50%;
-  @media only screen and (max-width : 768px) {
+  @media only screen and (max-width: 768px) {
     width: 10rem;
   }
 }
@@ -68,27 +68,31 @@
     padding: 0;
     li {
       font-size: 1.8rem;
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         margin: 1.6rem 0 1.6rem 0;
       }
       span {
-        display: inline-block;
-        width: 20.0rem;
-        text-align: right;
-        margin-right: 3.0rem;
-        @media only screen and (max-width : 768px) {
-          display: block;
-          text-align: left;
+        .date {
+          display: inline-block;
+          width: 20rem;
+          text-align: right;
+          margin-right: 3rem;
+          @media only screen and (max-width: 768px) {
+            display: block;
+            text-align: left;
+          }
         }
       }
       a {
-        font-size: 1.8rem;
-        color: $fg-color;
-        font-family: $heading-font-family;
-        font-weight: 700;
-        &:hover,
-        &:focus {
-          color: $link-color
+        .title {
+          font-size: 1.8rem;
+          color: $fg-color;
+          font-family: $heading-font-family;
+          font-weight: 700;
+          &:hover,
+          &:focus {
+            color: $link-color;
+          }
         }
       }
     }
@@ -102,20 +106,20 @@
   .about {
     text-align: center;
     h1 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
     h2 {
-      margin-top: 1.0rem;
+      margin-top: 1rem;
       margin-bottom: 0.5rem;
       font-size: 2.4rem;
-      @media only screen and (max-width : 768px) {
-        font-size: 2.0rem;
+      @media only screen and (max-width: 768px) {
+        font-size: 2rem;
       }
     }
     ul {
       list-style: none;
-      margin: 3.0rem 0 1.0rem 0;
+      margin: 3rem 0 1rem 0;
       padding: 0;
       li {
         display: inline-block;
@@ -123,14 +127,14 @@
         a {
           color: $fg-color;
           text-transform: uppercase;
-          margin-left: 1.0rem;
-          margin-right: 1.0rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
           font-size: 1.6rem;
           &:hover,
           &:focus {
             color: $link-color;
           }
-          @media only screen and (max-width : 768px) {
+          @media only screen and (max-width: 768px) {
             font-size: 1.4rem;
           }
           i {
@@ -144,18 +148,18 @@
   .error {
     text-align: center;
     h1 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
       font-size: 4.6rem;
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         font-size: 3.2rem;
       }
     }
     h2 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 3.2rem;
       font-size: 3.2rem;
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         font-size: 2.8rem;
       }
     }
