@@ -71,7 +71,7 @@
       @media only screen and (max-width : 768px) {
         margin: 1.6rem 0 1.6rem 0;
       }
-      span {
+      .date {
         display: inline-block;
         width: 20.0rem;
         text-align: right;
@@ -81,7 +81,7 @@
           text-align: left;
         }
       }
-      a {
+      .title {
         font-size: 1.8rem;
         color: $fg-color;
         font-family: $heading-font-family;

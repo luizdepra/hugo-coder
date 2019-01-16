@@ -5,7 +5,7 @@ body.inverted {
     .list {
       ul {
         li {
-          a {
+          .title {
             color: $fg-color-inverted;
             &:hover,
             &:focus {
