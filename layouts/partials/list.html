@@ -10,8 +10,8 @@
   <ul>
     {{ range .Paginator.Pages }}
     <li>
-      <span>{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-      <a href="{{ .URL }}">{{ .Title }}</a>
+      <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+      <a class="title" href="{{ .URL }}">{{ .Title }}</a>
     </li>
     {{ end }}
   </ul>

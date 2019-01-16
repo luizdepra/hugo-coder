@@ -28,3 +28,4 @@
 - [Thomas Nys](https://thomasnys.com)
 - [Piotr Januszewski](https://piojanu.github.io)
 - [Artem Khvastunov](https://artspb.me)
+- [Gabriel Nepomuceno] (https://blog.nepomuceno.me)
