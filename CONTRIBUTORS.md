@@ -29,3 +29,4 @@
 - [Piotr Januszewski](https://piojanu.github.io)
 - [Artem Khvastunov](https://artspb.me)
 - [Gabriel Nepomuceno] (https://blog.nepomuceno.me)
+- [Salvatore Giordano] (https://salvatore-giordano.github.io)
