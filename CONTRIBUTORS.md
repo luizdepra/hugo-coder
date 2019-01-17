@@ -25,3 +25,7 @@
 - [Abner Campanha](https://github.com/abnerpc)
 - [Martin Kiesel](https://github.com/Kyslik)
 - [John Tobin](https://www.johntobin.ie/)
+- [Thomas Nys](https://thomasnys.com)
+- [Piotr Januszewski](https://piojanu.github.io)
+- [Artem Khvastunov](https://artspb.me)
+- [Gabriel Nepomuceno] (https://blog.nepomuceno.me)

@@ -1,7 +1,23 @@
 +++ 
 date = "2014-03-10"
 title = "Migrate to Hugo from Jekyll"
+description = "The post explains how to migrate from from Jekyll to Hugo."
 +++
+
+Table of Contents
+=================
+
+1. [Move static content to `static`](#move-static-content-to-static)
+2. [Create your Hugo configuration file](#create-your-hugo-configuration-file)
+3. [Set your configuration publish folder to `site`](#set-your-configuration-publish-folder-to-site)
+4. [Convert Jekyll templates to Hugo templates](#convert-jekyll-templates-to-hugo-templates)
+5. [Convert Jekyll plugins to Hugo shortcodes](#convert-jekyll-plugins-to-hugo-shortcodes)
+    * [Implementation](#implementation)
+    * [Usage](#usage)
+6. [Finishing Touches](#finishing-touches)
+    * [Fix Content](#fix-content)
+    * [Clean Up](#clean-up)
+7. [A practical example in a diff](#a-practical-example-in-a-diff)
 
 ## Move static content to `static`
 Jekyll has a rule that any directory not starting with `_` will be copied as-is to the `_site` output. Hugo keeps all static content under `static`. You should therefore move it all there.

@@ -9,7 +9,9 @@
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
-    <base href="{{ .Site.BaseURL }}">
+    {{ template "_internal/twitter_cards.html" . }}
+
+    <base href="{{ .Permalink }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
     <link rel="canonical" href="{{ .Permalink }}">
@@ -53,7 +55,7 @@
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | absURL }}">
+      <link rel="stylesheet" href="{{ . | relURL }}">
     {{ end }}
 
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">

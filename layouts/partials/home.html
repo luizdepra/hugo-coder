@@ -1,7 +1,7 @@
 <section class="container centered">
   <div class="about">
     {{ with .Site.Params.avatarurl }}
-      <div class="avatar"><img src="{{ . }}" alt="avatar"></div>
+      <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
     <h2>{{ .Site.Params.info }}</h2>
@@ -9,9 +9,15 @@
     <ul>
       {{ range sort .}}
         {{ if .icon }}
-          <li><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
+          <li>
+            <a href="{{ .url }}" aria-label="{{ .name }}">
+              <i class="{{ .icon }}" aria-hidden></i>
+            </a>
+          </li>
         {{ else }}
-          <li><a href="{{ .url }}">{{ .name }}</a></li>
+          <li>
+            <a href="{{ .url }}" aria-label="{{ .name }}">{{ .name }}</a>
+          </li>
         {{ end }}
       {{ end }}
     </ul>

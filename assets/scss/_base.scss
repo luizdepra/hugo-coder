@@ -16,7 +16,7 @@ body {
 	font-size: 1.6em;
 	font-weight: 300;
   line-height: 1.8em;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     font-size: 1.6em;
     line-height: 1.6em;
   }
@@ -51,7 +51,7 @@ h6 {
 h1 {
   font-size: 3.2rem;
   line-height: 3.6rem;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     font-size: 3.0rem;
     line-height: 3.4rem;
   }
@@ -59,7 +59,7 @@ h1 {
 h2 {
   font-size: 2.8rem;
   line-height: 3.2rem;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     font-size: 2.6rem;
     line-height: 3.0rem;
   }
@@ -67,7 +67,7 @@ h2 {
 h3 {
   font-size: 2.4rem;
   line-height: 2.8rem;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
@@ -75,7 +75,7 @@ h3 {
 h4 {
   font-size: 2.2rem;
   line-height: 2.6rem;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     font-size: 2.0rem;
     line-height: 2.4rem;
   }
@@ -83,7 +83,7 @@ h4 {
 h5 {
   font-size: 2.0rem;
   line-height: 2.4rem;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
@@ -91,7 +91,7 @@ h5 {
 h6 {
   font-size: 1.8rem;
   line-height: 2.2rem;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-width : 768px) {
     font-size: 1.6rem;
     line-height: 2.0rem;
   }
@@ -111,6 +111,7 @@ pre {
   padding: 2.0rem;
   overflow-x: auto;
   code {
+    display: inline-block;
     background-color: inherit;
     color: inherit;
   }
