@@ -6,7 +6,7 @@
     {{ if not .Site.Params.hideCopyright }} © {{ now.Format "2006" }}{{ end }}
     {{ if not .Site.Params.hideCredits }}
       {{ if not .Site.Params.hideCopyright }} · {{ end }}
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     {{ end }}
     {{ if .Site.Params.commit }}
       {{ if or (not .Site.Params.hideCredits) (not .Site.Params.hideCopyright) }} · {{ end }}
