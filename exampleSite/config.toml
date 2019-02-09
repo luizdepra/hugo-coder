@@ -100,6 +100,7 @@ disqusShortname = "yourdiscussshortname"
             info = "Full Stack DevOps e Mágico"
             description = "Sítio pessoal de João Ninguém"
             keywords = "blog,desenvolvedor,pessoal"
+            footercontent = "Coloque algum texto aqui."
 
         [languages.pt-br.menu]
 
