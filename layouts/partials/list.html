@@ -1,7 +1,7 @@
 <section class="container list">
   <h1 class="title">
     {{- if eq .Kind "taxonomy" -}}
-      {{- .Data.Singular | title -}}
+      {{- i18n .Data.Singular | title -}}
       {{- print ": " -}}
     {{- end -}}
 
