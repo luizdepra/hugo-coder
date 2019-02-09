@@ -4,6 +4,7 @@ title = "johndoe"
 theme = "hugo-coder"
 
 languagecode = "en"
+defaultcontentlanguage = "en"
 
 paginate = 20
 canonifyurls = true
@@ -67,17 +68,7 @@ disqusShortname = "yourdiscussshortname"
 
 [languages]
     [languages.en]
-        languagename = "English" # The language name to be displayed in the selector.
-        title = "John Doe"
-
-        # You can configure the theme parameter for each language.
-        [languages.en.params]
-        author = "John Doe"
-        info = "Full Stack DevOps and Magician"
-        description = "John Doe's personal website"
-        keywords = "blog,developer,personal"
-
-        [languages.en.menu] # It is possible to change the menu too.
+        languagename = "English"
 
         [[languages.en.menu.main]]
         name = "About"
@@ -100,34 +91,35 @@ disqusShortname = "yourdiscussshortname"
         url = "/contact/"
 
 
-    [languages.pl]
-        languagename = "Polski"
-        title = "John Doe po polsku"
+    [languages.pt-br]
+        languagename = "Português"
+        title = "João Ninguém"
 
-        [languages.pl.params]
-            author = "John Doe"
-            description = "Strona domowa John'a Doe"
-            keywords = "blog,developer,strona domowa"
-            info = "Full Stack DevOps i Magik"
+        [languages.pt-br.params]
+            author = "João Ninguém"
+            info = "Full Stack DevOps e Mágico"
+            description = "Sítio pessoal de João Ninguém"
+            keywords = "blog,desenvolvedor,pessoal"
+            footercontent = "Coloque algum texto aqui."
 
-        [languages.pl.menu]
+        [languages.pt-br.menu]
 
-            [[languages.pl.menu.main]]
-            name = "O mnie"
+            [[languages.pt-br.menu.main]]
+            name = "Sobre"
             weight = 1
-            url = "/pl/about/"
+            url = "/pt-br/about/"
 
-            [[languages.pl.menu.main]]
+            [[languages.pt-br.menu.main]]
             name = "Blog"
             weight = 2
-            url = "/pl/posts/"
+            url = "/pt-br/posts/"
 
-            [[languages.pl.menu.main]]
-            name = "Projektowanie"
+            [[languages.pt-br.menu.main]]
+            name = "Projetos"
             weight = 3
-            url = "/pl/projects/"
+            url = "/pt-br/projects/"
 
-            [[languages.pl.menu.main]]
-            name = "Kontakt"
+            [[languages.pt-br.menu.main]]
+            name = "Contato"
             weight = 5
-            url = "/pl/contact/"
+            url = "/pt-br/contact/"
