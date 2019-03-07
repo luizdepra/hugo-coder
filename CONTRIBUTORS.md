@@ -32,3 +32,4 @@
 - [Salvatore Giordano] (https://salvatore-giordano.github.io)
 - [Jeffrey Carpenter](https://uvolabs.me)
 - [Paul Lettington](https://github.com/plett)
+- [Thomas Vochten](https://github.com/thomasvochten)
