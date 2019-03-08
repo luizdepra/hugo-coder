@@ -1,0 +1,24 @@
+{{ $currentPageUrl := .URL }}
+{{ if .Params.series }}
+<section class="see-also">
+  {{ range .Params.series }}
+    <h3>See also in {{ . }}</h3>
+    {{ $name := . | urlize }}
+    {{ $series := index $.Site.Taxonomies.series $name }}
+    {{ if gt (len $series.Pages) 0 }}
+      <nav>
+        <ul>
+        {{ $maxItems := $.Site.Params.maxSeeAlsoItems | default 5 }}
+        {{ range first (add $maxItems 1) $series.Pages }}
+          {{ if ne .URL $currentPageUrl }}
+            <li>
+              <a href="{{ .Params.ExternalLink | default .URL }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+        </ul>
+      </nav>
+    {{ end }}
+  {{ end }}
+</section>
+{{ end }}
