@@ -7,4 +7,5 @@ slug = ""
 tags = []
 categories = []
 externalLink = ""
+series = []
 +++
