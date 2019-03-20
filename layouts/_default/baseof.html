@@ -12,10 +12,14 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
 
-    <base href="{{ .Permalink }}">
+    {{ if .Permalink }}
+      <base href="{{ .Permalink }}">
+    {{ end }}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-    <link rel="canonical" href="{{ .Permalink }}">
+    {{ if .Permalink }}
+      <link rel="canonical" href="{{ .Permalink }}">
+    {{ end }}
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
