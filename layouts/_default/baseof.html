@@ -35,6 +35,8 @@
     {{ end }}
 
     {{ .Hugo.Generator }}
+
+    {{ partial "site-schema.html" . }}
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
