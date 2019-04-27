@@ -1,4 +1,4 @@
-{{ $currentPageUrl := .URL }}
+{{ $currentPageUrl := .RelPermalink }}
 {{ if .Params.series }}
 <section class="see-also">
   {{ range .Params.series }}
@@ -10,9 +10,9 @@
         <ul>
         {{ $maxItems := $.Site.Params.maxSeeAlsoItems | default 5 }}
         {{ range first (add $maxItems 1) $series.Pages }}
-          {{ if ne .URL $currentPageUrl }}
+          {{ if ne .RelPermalink $currentPageUrl }}
             <li>
-              <a href="{{ .Params.ExternalLink | default .URL }}">{{ .Title }}</a>
+              <a href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
             </li>
           {{ end }}
         {{ end }}
