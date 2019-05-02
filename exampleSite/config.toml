@@ -43,9 +43,9 @@ disqusShortname = "yourdiscussshortname"
     custom_css = []
 
 [taxonomies]
-  categories = "categories"
-  tags = "tags"
+  category = "categories"
   series = "series"
+  tag = "tags"
 
 [[params.social]]
     name = "Github"
