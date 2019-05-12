@@ -1,6 +1,6 @@
 <footer class="footer">
   <section class="container">
-    {{ with .Site.Params.footercontent }}
+    {{ with .Site.Params.footercontent | safeHTML }}
       <p>{{.}}</p>
     {{ end }}
     {{ if not .Site.Params.hideCopyright }} © {{ now.Format "2006" }}{{ end }}
