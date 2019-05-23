@@ -60,7 +60,7 @@
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | relURL }}"/>
+      <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
     {{ range .Site.Params.custom_js }}
