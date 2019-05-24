@@ -9,7 +9,7 @@
       {{ with .Site.Menus.main}}
         {{ range sort . }}
           <li class="navigation-item">
-            <a class="navigation-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            <a class="navigation-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
           </li>
         {{ end }}
       {{ end }}
