@@ -41,6 +41,9 @@ disqusShortname = "yourdiscussshortname"
 
     # Custom CSS
     custom_css = []
+    
+    # Custom JS
+    custom_js = []
 
 [taxonomies]
   category = "categories"
