@@ -1,0 +1,24 @@
+[category]
+other = "categoría"
+
+[tag]
+other = "tag"
+
+[series]
+other = "serie"
+
+[reading_time]
+one = "Un minuto de leer"
+other = "{{ .Count }} minutos de leer"
+
+[page_not_found]
+other = "Pagina no existe"
+
+[page_does_not_exist]
+other = "Disculpa, aquí no hay nada."
+
+[head_back]
+other = "Puedes regresar a la <a href=\"{{ . }}\">primera pagina</a>."
+
+[powered_by]
+other = "Promovido por"
