@@ -5,10 +5,13 @@
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}">
+    <span id='top-of-page'></span>
     <main class="wrapper">
-      {{ partial "header.html" . }}
+      {{ if not .IsHome }}
+        {{ partial "header.html" . }}
+      {{ end }} 
 
-      <div class="content">
+      <div class="{{ if .IsHome }}home{{ end }} content">
         {{ block "content" . }}{{ end }}
       </div>
 

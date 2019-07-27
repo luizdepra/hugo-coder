@@ -1,16 +1,39 @@
 <footer class="footer">
   <section class="container">
+    <p><a id="to-top" href='#top-of-page'>To top of page</a></p>
+
+    {{- if .Site.Menus.footer }}
+    {{ partial "menu" (dict "menus" .Site.Menus "currentPage" . "menuName" "footer") }}
+    {{ end -}}
+
     {{ with .Site.Params.footercontent | safeHTML }}
       <p>{{.}}</p>
     {{ end }}
-    {{ if not .Site.Params.hideCopyright }} © {{ now.Format "2006" }}{{ end }}
     {{ if not .Site.Params.hideCredits }}
+      {{ i18n "powered_by" }} {{ .Site.Params.PoweredBy | markdownify }}
       {{ if not .Site.Params.hideCopyright }} · {{ end }}
-      {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     {{ end }}
+    {{ if not .Site.Params.hideCopyright }} {{ .Site.Params.Copyright | markdownify }}{{ end }}
     {{ if .Site.Params.commit }}
       {{ if or (not .Site.Params.hideCredits) (not .Site.Params.hideCopyright) }} · {{ end }}
       [<a href="{{ .Site.Params.commit }}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]
     {{ end }}
+
+    {{- if .Site.Params.hiddenFooter }}
+    <p class='hide'>
+    Last change: {{ .Site.LastChange }}.
+    Hugo version: {{ .Hugo.Version }}.
+    </p>
+    {{ end -}}
+
   </section>
 </footer>
+<script>
+  var elem = document.getElementById("to-top");
+  if (window.scroll !== undefined) {
+    elem.removeAttribute("href");
+    elem.onclick = function() {
+      window.scroll({top: 0, behavior: 'smooth' });
+    }
+  }
+</script>

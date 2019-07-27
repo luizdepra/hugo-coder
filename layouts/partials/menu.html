@@ -1,0 +1,14 @@
+<nav class="menu">
+<ul>
+{{- $menuName := .menuName }} {{ $currentPage := .currentPage -}}
+{{- range (index .menus $menuName) }}
+  <li>
+    <a
+        {{ if (or ($currentPage.HasMenuCurrent $menuName .) ($currentPage.IsMenuCurrent $menuName .)) }} class="active" {{ end }} 
+        href="{{ .URL }}">
+      {{- .Pre }} <span>{{ .Name }}</span> {{ .Post -}}
+    </a>
+  </li>
+{{ end -}}
+</ul>
+</nav>
