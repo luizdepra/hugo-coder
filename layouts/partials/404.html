@@ -1,7 +1,19 @@
 <section class="container centered">
   <div class="error">
     <h1>404</h1>
-    <h2>{{ i18n "page_not_found" }}</h2>
+    <h2>{{ i18n "page_not_found" }} <span class="error-emoji"></span></h2>
     <p>{{ i18n "page_does_not_exist" }}<br />{{ i18n "head_back" .Site.BaseURL | safeHTML }}</p>
   </div>
 </section>
+
+<script>
+  var emojiArray = [
+    "\\(o_o)/", "(˚Δ˚)", "(^-^*)", "(≥o≤)", "(^_^)", "(·_·)",
+    "(>_<)", "(;-;)", "\\(^Д^)/",
+  ];
+  document.getElementsByClassName("error-emoji")[0].appendChild(
+    document.createTextNode(
+        emojiArray[Math.floor(Math.random() * emojiArray.length)]
+    )
+  );
+</script>
