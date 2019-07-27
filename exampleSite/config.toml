@@ -22,6 +22,7 @@ disqusShortname = "yourdiscussshortname"
     info = "Full Stack DevOps and Magician"
     avatarurl = "images/avatar.jpg"
     footercontent = "Enter a text here."
+    poweredBy = "[Hugo](https://gohugo.io)"
 
     dateformat = "January 2, 2006"
 
@@ -52,27 +53,33 @@ disqusShortname = "yourdiscussshortname"
 
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github"
+    icon = "github"
     weight = 1
     url = "https://github.com/johndoe/"
 [[params.social]]
     name = "Gitlab"
-    icon = "fab fa-gitlab"
+    icon = "gitlab"
     weight = 2
     url = "https://gitlab.com/johndoe/"
 [[params.social]]
     name = "Twitter"
-    icon = "fab fa-twitter"
+    icon = "twitter"
     weight = 3
     url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/johndoe/"
 [[params.social]]
     name = "Medium"
-    icon = "fab fa-medium"
+    icon = "medium"
+    weight = 5
+    url = "https://medium.com/@johndoe"
+[[params.email]]
+    name = "Email"
+    [[params.email.icon]]
+      fa = "fab fa-envelope"
     weight = 5
     url = "https://medium.com/@johndoe"
 
