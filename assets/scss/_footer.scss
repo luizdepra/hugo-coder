@@ -2,8 +2,21 @@
   width: 100%;
   text-align: center;
   line-height: 2.0rem;
-  margin-bottom:1.0rem;
+  padding: 0;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  hyphens: auto;
+  text-align: justify;
   a {
-    color: $link-color;
+    color: lighten($link-color, 20%);
+    &:hover,
+    &:active {
+      color: $link-color-active;
+    }
+  }
+  .container {
+    color: lighten($fg-color, 50%);
+    font-style: italic;
+    font-size: 90%;
   }
 }

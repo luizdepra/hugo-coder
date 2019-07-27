@@ -1,8 +1,11 @@
+.home {
+  background-color: lighten(blue, 45%);
+}
+
 .content {
   flex: 1;
   display: flex;
-  margin-top: 1.6rem;
-  margin-bottom: 3.2rem;
+  align-items: flex-start;
   article {
     header {
       margin-top: 6.4rem;
@@ -106,41 +109,90 @@
   align-items: center;
   justify-content: center;
   .about {
-    text-align: center;
-    h1 {
-      margin-top: 2.0rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin-top: 1.0rem;
-      margin-bottom: 0.5rem;
-      font-size: 2.4rem;
-      @media only screen and (max-width : 768px) {
-        font-size: 2.0rem;
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        margin-top: 2.0rem;
+        font-variant: all-small-caps;
+        line-height: 1em;
+        font-size: 4.5em;
+        @media only screen and (max-width : 768px) {
+          font-size: 3.5em;
+        }
+        margin-bottom: 0.5rem;
+        display: inline-block;
+      }
+      ul {
+        max-width: 30%;
+        text-align: right;
+        list-style: none;
+        margin: 3.0rem 0 1.0rem 0;
+        padding: 0;
+        li {
+          display: inline-block;
+          position: relative;
+          a {
+            color: $fg-color;
+            text-transform: uppercase;
+            margin-left: 1.0rem;
+            margin-right: 1.0rem;
+            font-size: 1.6rem;
+            &:hover,
+            &:focus {
+              color: $link-color;
+            }
+            @media only screen and (max-width : 768px) {
+              font-size: 1.4rem;
+            }
+            i {
+              font-size: 3.2rem;
+            }
+          }
+        }
       }
     }
-    ul {
-      list-style: none;
-      margin: 3.0rem 0 1.0rem 0;
-      padding: 0;
+
+    h2 {
+      text-align: justify;
+      margin-top: 1.0rem;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+
+    .home-content {
+      padding: 8rem 0;
+      font-size: 2.5rem;
+
+      ul {
+        padding-left: 0;
+      }
+
       li {
-        display: inline-block;
+        list-style-type: none;
         position: relative;
         a {
-          color: $fg-color;
-          text-transform: uppercase;
-          margin-left: 1.0rem;
-          margin-right: 1.0rem;
-          font-size: 1.6rem;
-          &:hover,
-          &:focus {
+          display: inline-block;
+          padding-right: 3rem;
+          width: 100%;
+          color: inherit;
+          &:hover {
             color: $link-color;
           }
-          @media only screen and (max-width : 768px) {
-            font-size: 1.4rem;
-          }
-          i {
-            font-size: 3.2rem;
+        }
+
+        &:after {
+          content: "\25BA \0020";
+          font-size: 3rem;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        &:hover {
+          &:after {
+            color: $link-color;
           }
         }
       }
@@ -164,6 +216,10 @@
       @media only screen and (max-width : 768px) {
         font-size: 2.8rem;
       }
+    }
+    .error-emoji {
+      color: lighten($fg-color, 20%);
+      font-style: italic;
     }
   }
 }

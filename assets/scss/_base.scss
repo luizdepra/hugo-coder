@@ -7,6 +7,7 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
+  hyphens: auto;
 }
 
 body {
@@ -28,7 +29,9 @@ a {
   text-decoration: none;
   &:focus,
   &:hover {
-    text-decoration: underline;
+    color: $link-color-active;
+    transition: all;
+    transition-delay: 0.25s;
   }
 }
 
@@ -165,8 +168,7 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
-
-  min-height: 100vh;
+  min-height: 200vh;
   width: 100%;
 }
 
@@ -177,6 +179,22 @@ img {
   padding-left: 2.0rem;
   padding-right: 2.0rem;
 }
+
+.footer,
+.container.page,
+.container.list {
+  ul {
+    list-style-type: none;
+  }
+
+  ul li:before {
+    /* --- */
+    content: '\2014';
+    position: absolute;
+    margin-left: -3rem;
+  }
+}
+
 
 .fab {
   font-weight: 400;
@@ -200,4 +218,20 @@ img {
 
 .fas {
   font-weight: 900;
+}
+
+.simple-icon svg {
+  width: 2em;
+  height: 2em;
+}
+
+.icon-link:hover {
+  * {
+    color: $link-color-icon;
+    transition: all 0.25s;
+  }
+  svg {
+    fill: $link-color-icon;
+    transition: all 0.25s;
+  }
 }
