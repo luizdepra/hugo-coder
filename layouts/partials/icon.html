@@ -1,0 +1,5 @@
+{{ if (eq "string" (printf "%T" .)) }}
+  {{ partial "simple-icon.html" . }}
+{{ else }}
+  {{ partial "fa-icon.html" .fa }}
+{{ end }}
