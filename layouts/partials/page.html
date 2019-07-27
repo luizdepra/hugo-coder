@@ -1,8 +1,10 @@
 <section class="container page">
   <article>
-    <header>
-      <h1>{{ .Title }}</h1>
-    </header>
+    {{ if (not .Params.HideTitle) }}
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
+    {{ end }}
 
     {{ .Content }}
   </article>
