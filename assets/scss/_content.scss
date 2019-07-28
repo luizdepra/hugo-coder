@@ -154,8 +154,9 @@
       text-align: right;
       list-style: none;
       padding: 0;
+      padding-right: 0.5rem;
       @media only screen and (max-width : 568px) {
-        max-width: 3rem;
+        max-width: 6rem;
       }
       li {
         display: inline-block;
@@ -165,16 +166,19 @@
           text-transform: uppercase;
           margin-left: 1.0rem;
           margin-right: 1.0rem;
-          font-size: 1.6rem;
           &:hover,
           &:focus {
             color: $link-color;
           }
-          @media only screen and (max-width : 768px) {
-            font-size: 1.4rem;
-          }
+          font-size: 1.4rem;
           i {
-            font-size: 3.2rem;
+            font-size: 2.8rem;
+          }
+          @media only screen and (max-width : 568px) {
+            font-size: 2.1rem;
+            i {
+              font-size: 4.2rem;
+            }
           }
         }
       }
