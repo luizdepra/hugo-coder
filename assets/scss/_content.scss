@@ -112,7 +112,6 @@
     left: 0;
     bottom: 0;
     @media only screen and (min-width : 568px) {
-      border-bottom: 1rem solid black;
     }
   }
 }
@@ -125,9 +124,6 @@
     justify-content: space-between;
     align-items: center;
     div {
-      @media only screen and (min-width : 768px) {
-        max-width: 60%;
-      }
       h1 {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -145,9 +141,6 @@
         margin-bottom: 1rem;
         font-style: italic;
         font-size: 3.2rem;
-        @media only screen and (min-width : 768px) {
-          max-width: 80%;
-        }
       }
     }
     ul {
@@ -190,13 +183,9 @@
   min-height: 50vh;
   font-size: 2.5rem;
 
-  @media only screen and (min-width : 768px) {
-    max-width: 50%;
-    margin-left: auto;
-  }
-
   ul {
     padding-left: 0;
+    text-align: right;
   }
 
   li {
