@@ -1,11 +1,8 @@
 .home {
-  background-color: lighten(blue, 45%);
+  background-color: lighten(orange, 45%);
 }
 
 .content {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
   article {
     header {
       margin-top: 6.4rem;
@@ -15,7 +12,6 @@
         line-height: 4.6rem;
         margin: 0;
         @media only screen and (max-width : 768px) {
-          font-size: 4.0rem;
           line-height: 4.4rem;
         }
       }
@@ -104,122 +100,140 @@
   }
 }
 
-.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .about {
-    .intro {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.about-container {
+  width: 100%;
+  padding: 2rem 0;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    @media only screen and (min-width : 568px) {
+      border-bottom: 1rem solid black;
+    }
+  }
+}
+
+.about {
+  padding: 0 1rem;
+
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      @media only screen and (min-width : 768px) {
+        max-width: 60%;
+      }
       h1 {
-        margin-top: 2.0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         font-variant: all-small-caps;
         line-height: 1em;
         font-size: 4.5em;
         @media only screen and (max-width : 768px) {
-          font-size: 3.5em;
+          font-size: 4.0em;
         }
-        margin-bottom: 0.5rem;
         display: inline-block;
       }
-      ul {
-        max-width: 30%;
-        text-align: right;
-        list-style: none;
-        margin: 3.0rem 0 1.0rem 0;
-        padding: 0;
-        li {
-          display: inline-block;
-          position: relative;
-          a {
-            color: $fg-color;
-            text-transform: uppercase;
-            margin-left: 1.0rem;
-            margin-right: 1.0rem;
-            font-size: 1.6rem;
-            &:hover,
-            &:focus {
-              color: $link-color;
-            }
-            @media only screen and (max-width : 768px) {
-              font-size: 1.4rem;
-            }
-            i {
-              font-size: 3.2rem;
-            }
-          }
+      h2 {
+        hyphens: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+        font-size: 3.2rem;
+        @media only screen and (min-width : 768px) {
+          max-width: 80%;
         }
       }
     }
-
-    h2 {
-      text-align: justify;
-      margin-top: 1.0rem;
-      margin-bottom: 0.5rem;
-      font-style: italic;
-    }
-
-    .home-content {
-      padding: 8rem 0;
-      font-size: 2.5rem;
-
-      ul {
-        padding-left: 0;
+    ul {
+      text-align: right;
+      list-style: none;
+      padding: 0;
+      @media only screen and (max-width : 568px) {
+        max-width: 3rem;
       }
-
       li {
-        list-style-type: none;
+        display: inline-block;
         position: relative;
         a {
-          display: inline-block;
-          padding-right: 3rem;
-          width: 100%;
-          color: inherit;
-          &:hover {
+          color: $fg-color;
+          text-transform: uppercase;
+          margin-left: 1.0rem;
+          margin-right: 1.0rem;
+          font-size: 1.6rem;
+          &:hover,
+          &:focus {
             color: $link-color;
           }
-        }
-
-        &:after {
-          content: "\25BA \0020";
-          font-size: 3rem;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-
-        &:hover {
-          &:after {
-            color: $link-color;
+          @media only screen and (max-width : 768px) {
+            font-size: 1.4rem;
+          }
+          i {
+            font-size: 3.2rem;
           }
         }
       }
     }
   }
+}
 
-  .error {
-    text-align: center;
-    h1 {
-      margin-top: 2.0rem;
-      margin-bottom: 0.5rem;
-      font-size: 4.6rem;
-      @media only screen and (max-width : 768px) {
-        font-size: 3.2rem;
+.home-content {
+  min-height: 50vh;
+  font-size: 2.5rem;
+
+  @media only screen and (min-width : 768px) {
+    max-width: 50%;
+    margin-left: auto;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+    position: relative;
+    a {
+      display: inline-block;
+      width: 100%;
+      color: inherit;
+      &:hover {
+        color: $link-color;
       }
     }
-    h2 {
-      margin-top: 2.0rem;
-      margin-bottom: 3.2rem;
+  }
+}
+
+.error {
+  text-align: center;
+  h1 {
+    margin-top: 2.0rem;
+    margin-bottom: 0.5rem;
+    font-size: 4.6rem;
+    @media only screen and (max-width : 768px) {
       font-size: 3.2rem;
-      @media only screen and (max-width : 768px) {
-        font-size: 2.8rem;
-      }
-    }
-    .error-emoji {
-      color: lighten($fg-color, 20%);
-      font-style: italic;
     }
   }
+  h2 {
+    margin-top: 2.0rem;
+    margin-bottom: 3.2rem;
+    font-size: 3.2rem;
+    @media only screen and (max-width : 768px) {
+      font-size: 2.8rem;
+    }
+  }
+  .error-emoji {
+    color: lighten($fg-color, 20%);
+    font-style: italic;
+  }
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,10 +1,15 @@
-<section class="container centered">
-  <div class="about">
-    {{ with .Site.Params.avatarurl }}
-      <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
-    {{ end }}
-    <section class="intro">
+<section class="about-container">
+  <article class="about container">
+    <div class="intro">
+      {{ with .Site.Params.avatarurl }}
+        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+      {{ end }}
+      <div>
       <h1>{{ .Site.Params.author }}</h1>
+      {{ if .Site.Params.info }}
+        <h2>{{ .Site.Params.info | markdownify }}</h2>
+      {{ end }}
+      </div>
       {{ with .Site.Params.social }}
       <ul>
         {{ range sort .}}
@@ -16,14 +21,13 @@
         {{ end }}
       </ul>
       {{ end }}
-    </section>
-    {{ if .Site.Params.info }}
-      <h2>{{ .Site.Params.info | markdownify }}</h2>
-    {{ end }}
-    <section class="home-content">
-    {{ with .Content }}
-    {{ . }}
-    {{ end }}
-    </section>
-  </div>
+    </div>
+  </article>
+</section>
+<section class="container">
+  <article class="home-content">
+  {{ with .Content }}
+  {{ . }}
+  {{ end }}
+  </article>
 </section>
