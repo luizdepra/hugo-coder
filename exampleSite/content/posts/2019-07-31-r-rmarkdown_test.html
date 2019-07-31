@@ -1,0 +1,83 @@
+---
+title: "Hello R Markdown"
+author: "Frida Gomam"
+date: 2019-07-31T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+output:
+  blogdown::html_page:
+    toc: true
+    fig_width: 6
+    dev: "svg"
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#r-markdown">R Markdown</a></li>
+<li><a href="#including-plots">Including Plots</a></li>
+<li><a href="#latex-test">latex test</a></li>
+<li><a href="#inline-test">Inline test</a><ul>
+<li><a href="#heading-test">heading test</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="/posts/2019-07-31-r-rmarkdown_test_files/figure-html/pie-1.svg" alt="A fancy pie chart." width="576" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
+<div id="latex-test" class="section level1">
+<h1>latex test</h1>
+<p><span class="math display">\[
+\begin{align}            
+    \qquad  x^{(i)}&amp;=\begin{cases}\bar{x} &amp; \text{$i=0$} \\
+    \bar{x}+\left(\sqrt{(n+\lambda)P}\right)^T_i &amp; \text{$i=1,\cdots,n$} \\[1.2ex]
+    \bar{x}-\left(\sqrt{(n+\lambda)P}\right)^T_i &amp; \text{$i=n+1,\cdots,2n$}
+    \end{cases}          
+\end{align}
+\]</span></p>
+</div>
+<div id="inline-test" class="section level1">
+<h1>Inline test</h1>
+<p>Here is inline test <span class="math inline">\(y=ax^2+bx\sqrt{3}\)</span>.</p>
+<div id="heading-test" class="section level2">
+<h2>heading test</h2>
+<p>sub heading</p>
+</div>
+</div>
