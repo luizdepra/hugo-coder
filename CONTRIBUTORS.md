@@ -41,3 +41,4 @@
 - [Jia "Jay" Tan](https://github.com/j7an)
 - [Ryan](https://github.com/alrayyes)
 - [Naim A.](https://github.com/naim94a)
+- [Alexander Rohde](https://github.com/a1x42)
