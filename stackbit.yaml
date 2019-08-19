@@ -129,7 +129,7 @@ models:
       - type: date
         name: date
         label: Date
-      - type: slug
+      - type: string
         name: slug
         label: Slug
       - type: list
