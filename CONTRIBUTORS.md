@@ -42,3 +42,4 @@
 - [Ryan](https://github.com/alrayyes)
 - [Naim A.](https://github.com/naim94a)
 - [Alexander Rohde](https://github.com/a1x42)
+- [Shreyansh Khajanchi](https://shreyanshja.in)
