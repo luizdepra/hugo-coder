@@ -193,6 +193,7 @@ models:
             name: main
             items:
               type: object
+              labelField: name
               fields:
                 - type: string
                   name: identifier
