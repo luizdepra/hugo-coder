@@ -165,27 +165,28 @@ models:
         items:
           type: string
   language_config:
-    - type: object
-      fields:
-        - type: string
-          name: languagename
-        - type: string
-          name: title
-        - type: object
-          name: params
-          fields:
-            - type: string
-              name: author
-            - type: string
-              name: info
-            - type: string
-              name: description
-            - type: string
-              name: keywords
-            - type: string
-              name: footercontent
-        - type: site_menus
-          name: menu
+    type: object
+    label: Language Config
+    fields:
+      - type: string
+        name: languagename
+      - type: string
+        name: title
+      - type: object
+        name: params
+        fields:
+          - type: string
+            name: author
+          - type: string
+            name: info
+          - type: string
+            name: description
+          - type: string
+            name: keywords
+          - type: string
+            name: footercontent
+      - type: site_menus
+        name: menu
   site_menus:
     type: object
     label: Site Menus
