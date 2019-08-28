@@ -79,7 +79,7 @@ models:
           - type: list
             name: social
             label: Social Media Icons
-            items: 
+            items:
               type: object
               fields:
                 - type: string
@@ -96,6 +96,11 @@ models:
                   label: URL
       - type: object
         name: languages
+        fields:
+          - type: language_config
+            name: en
+          - type: language_config
+            name: "pt-br"
       - type: object
         name: taxonomies
         fields:
@@ -108,8 +113,8 @@ models:
   basicpage:
     type: page
     label: Basic Page
-    match: '*.md'
-    exclude: 
+    match: "*.md"
+    exclude:
       - _index.md
     fields:
       - type: string
@@ -147,3 +152,75 @@ models:
         label: Series
         items:
           type: string
+      - type: string
+        name: externalLink
+      - type: string
+        name: description
+      - type: boolean
+        name: math
+      - type: boolean
+        name: katex
+      - type: list
+        name: images
+        items:
+          type: string
+  language_config:
+    - type: object
+      fields:
+        - type: string
+          name: languagename
+        - type: string
+          name: title
+        - type: object
+          name: params
+          fields:
+            - type: string
+              name: author
+            - type: string
+              name: info
+            - type: string
+              name: description
+            - type: string
+              name: keywords
+            - type: string
+              name: footercontent
+        - type: site_menus
+          name: menu
+  site_menus:
+    type: object
+    label: Site Menus
+    description: >-
+      Site menus model, defines list of menus that can be specified from within
+      site configuration
+    fields:
+      - type: list
+        name: main
+        label: Main menu
+        description: List of items for Main menu
+        items:
+          type: site_menu_item
+  site_menu_item:
+    type: object
+    label: Site Menu Item
+    labelField: name
+    description: "Site menu item model, defines fields for a single site menu item"
+    fields:
+      - type: string
+        name: identifier
+        label: Identifier
+      - type: string
+        name: name
+        label: Title
+        required: true
+      - type: string
+        name: url
+        label: URL
+        required: true
+      - type: number
+        name: weight
+        label: Weight
+        description: Position for sorting
+      - type: string
+        name: parent
+        label: Parent Menu Identifier
+        description: The parent of an entry should be the identifier of another entry.
