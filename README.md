@@ -26,3 +26,9 @@ This theme is maintained by its author [Luiz de Prá](https://github.com/luizdep
 
 - Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
 - All contributors, for every PR and Issue reported.
+
+## Stackbit
+
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/luizdepra/hugo-coder)
