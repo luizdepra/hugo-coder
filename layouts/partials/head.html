@@ -63,8 +63,15 @@
   <script src="{{ . | relURL }}"></script>
 {{ end }}
 
+<link rel="shortcut icon" href="{{ "/images/favicon.ico" | absURL }}" />
+<link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ "/images/apple-touch-icon-152x152.png" | absURL }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ "/images/apple-touch-icon-120x120.png" | absURL }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ "/images/apple-touch-icon-76x76.png" | absURL }}">
+<link rel="apple-touch-icon" href="{{ "/images/apple-touch-icon-60x60.png" | absURL }}">
+
 
 {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
