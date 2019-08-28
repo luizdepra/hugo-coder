@@ -185,43 +185,31 @@ models:
             name: keywords
           - type: string
             name: footercontent
-      - type: site_menus
+      - type: object
+        label: Menu
         name: menu
-  site_menus:
-    type: object
-    label: Site Menus
-    description: >-
-      Site menus model, defines list of menus that can be specified from within
-      site configuration
-    fields:
-      - type: list
-        name: main
-        label: Main menu
-        description: List of items for Main menu
-        items:
-          type: site_menu_item
-  site_menu_item:
-    type: object
-    label: Site Menu Item
-    labelField: name
-    description: "Site menu item model, defines fields for a single site menu item"
-    fields:
-      - type: string
-        name: identifier
-        label: Identifier
-      - type: string
-        name: name
-        label: Title
-        required: true
-      - type: string
-        name: url
-        label: URL
-        required: true
-      - type: number
-        name: weight
-        label: Weight
-        description: Position for sorting
-      - type: string
-        name: parent
-        label: Parent Menu Identifier
-        description: The parent of an entry should be the identifier of another entry.
+        fields:
+          - type: list
+            name: main
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: identifier
+                  label: Identifier
+                - type: string
+                  name: name
+                  label: Title
+                  required: true
+                - type: string
+                  name: url
+                  label: URL
+                  required: true
+                - type: number
+                  name: weight
+                  label: Weight
+                  description: Position for sorting
+                - type: string
+                  name: parent
+                  label: Parent Menu Identifier
+                  description: The parent of an entry should be the identifier of another entry.
