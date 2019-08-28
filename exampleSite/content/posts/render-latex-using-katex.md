@@ -2,7 +2,7 @@
 date = "2019-03-20"
 title = "Render LaTeX using KaTeX"
 description = "Katex support demo"
-katex = "true"
+katex = true
 series = ["Theme", "Hugo"]
 +++
 
