@@ -1,6 +1,32 @@
-@import "variables";
+// Fonts
+$text-font-family: 'Source Serif Pro', Georgia, serif;
+$heading-font-family: Lato, Helvetica, sans-serif;
+$display-font-family: 'Changa One', cursive;
+$code-font-family: 'Source Code Pro', 'Lucida Console', monospace;
+
+// Colors
+$bg-color: #FAFAFA !default;
+$fg-color: #212121 !default;
+$alt-bg-color: #E0E0E0 !default;
+$alt-fg-color: #000 !default;
+$link-color: {{ default "#5F9FFF" .Site.Params.accent_color }} !default;
+
 @import "base";
 @import "content";
 @import "navigation";
 @import "pagination";
 @import "footer";
+
+{{ with .Site.Params.avatarurl }}
+.avatar {
+    width: 250px;
+    max-width: 250px;
+    height: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    background-image: url('../{{ . }}');
+    background-size: cover;
+    background-position: center;
+}
+{{ end }}
+

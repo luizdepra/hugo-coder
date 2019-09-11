@@ -3,7 +3,7 @@
     {{ if not .Site.Params.hideCopyright }} © {{ .Site.LastChange.Format "2006" }}{{ end }}
     {{ if not .Site.Params.hideCredits }}
       {{ if not .Site.Params.hideCopyright }} · {{ end }}
-      Powered by <a href="https://gohugo.io/">Hugo</a>. Inspired by <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/larribas/hugo-coder/">a fork of the Coder theme</a>.
     {{ end }}
     {{ if .Site.Params.commit }}
       {{ if or (not .Site.Params.hideCredits) (not .Site.Params.hideCopyright) }} · {{ end }}
