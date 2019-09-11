@@ -21,9 +21,13 @@ $link-color: {{ default "#5F9FFF" .Site.Params.accent_color }} !default;
 .avatar {
     width: 250px;
     max-width: 250px;
+    min-width: 250px;
     height: 250px;
     max-height: 250px;
+    min-height: 250px;
+
     border-radius: 50%;
+
     background-image: url('../{{ . }}');
     background-size: cover;
     background-position: center;
