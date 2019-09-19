@@ -81,25 +81,27 @@ disqusShortname = "yourdiscussshortname"
     [languages.en]
         languagename = "English"
 
-        [[languages.en.menu.main]]
-        name = "About"
-        weight = 1
-        url = "about/"
+        [languages.en.menu]
 
-        [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 2
-        url = "posts/"
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
 
-        [[languages.en.menu.main]]
-        name = "Projects"
-        weight = 3
-        url = "projects/"
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
 
-        [[languages.en.menu.main]]
-        name = "Contact me"
-        weight = 5
-        url = "contact/"
+            [[languages.en.menu.main]]
+            name = "Projects"
+            weight = 3
+            url = "projects/"
+
+            [[languages.en.menu.main]]
+            name = "Contact me"
+            weight = 5
+            url = "contact/"
 
 
     [languages.pt-br]
