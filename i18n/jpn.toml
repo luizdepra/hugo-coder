@@ -1,0 +1,24 @@
+[category]
+other = "カテゴリー"
+
+[tag]
+other = "鬼ごっこ"
+
+[series]
+other = "シリーズ"
+
+[reading_time]
+one = "1 分 読む"
+other = "{{ .カウント }} 分 読む"
+
+[page_not_found]
+other = "ページ ない 見つかった"
+
+[page_does_not_exist]
+other = "ごめんなさい, この ページ する じゃない 存在する."
+
+[head_back]
+other = "君は できる 頭 バック に <a href=\"{{ . }}\">ホームページ</a>."
+
+[powered_by]
+other = "パワード 沿って"
