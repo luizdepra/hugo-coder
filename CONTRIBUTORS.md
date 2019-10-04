@@ -44,3 +44,4 @@
 - [Alexander Rohde](https://github.com/a1x42)
 - [Shreyansh Khajanchi](https://shreyanshja.in)
 - [Lionel Brianto](https://lionel.brianto.dev)
+- [Luis Zarate](https://github.com/jlzaratec)
