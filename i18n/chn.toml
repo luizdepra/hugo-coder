@@ -1,0 +1,24 @@
+[category]
+other = "类别"
+
+[tag]
+other = "标签"
+
+[series]
+other = "系列"
+
+[reading_time]
+one = "一 分钟 读"
+other = "{{ .计数 }} 分钟 读"
+
+[page_not_found]
+other = "页 不 找到了"
+
+[page_does_not_exist]
+other = "抱歉, 这个 页 确实 不 存在."
+
+[head_back]
+other = "您 能够 头 背部 至 <a href=\"{{ . }}\">主页</a>."
+
+[powered_by]
+other = "供电的 通过"
