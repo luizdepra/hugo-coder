@@ -1,0 +1,24 @@
+[category]
+other = "カテゴリー"
+
+[tag]
+other = "タグ"
+
+[series]
+other = "シリーズ"
+
+[reading_time]
+one = "1分で読めます"
+other = "{{ .Count }}分で読めます"
+
+[page_not_found]
+other = "ページが見つかりません"
+
+[page_does_not_exist]
+other = "申し訳ございません。アクセスしようとしたページが見つかりませんでした。"
+
+[head_back]
+other = "<a href=\"{{ . }}\">ホームページ</a>からお探しいただきますようお願い申し上げます。"
+
+[powered_by]
+other = "利用技術"
