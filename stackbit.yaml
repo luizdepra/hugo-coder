@@ -70,6 +70,8 @@ models:
             name: rtl
           - type: boolean
             name: inverted
+          - type: string
+            name: colorscheme
           - type: number
             name: maxSeeAlsoItems
           - type: list

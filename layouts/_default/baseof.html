@@ -47,14 +47,15 @@
       {{ end }}
     {{ end }}
 
-    {{ if .Site.Params.inverted }}
+    {{/* NOTE: inverted is deprecated */}}
+    {{ if  or (.Site.Params.inverted) (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
       {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
+        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
       {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" ) }}
-        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts | minify | fingerprint }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
+        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}
@@ -66,7 +67,7 @@
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
-    
+
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
@@ -77,7 +78,14 @@
     {{ hugo.Generator }}
   </head>
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}">
+  {{/* NOTE: inverted is deprecated */}}
+  {{ $csClass := "colorscheme-light" }}
+  {{ if or .Site.Params.inverted (eq .Site.Params.colorscheme "dark") }}
+    {{ $csClass = "colorscheme-dark" }}
+  {{ else if eq .Site.Params.colorscheme "auto" }}
+    {{ $csClass = "colorscheme-auto" }}
+  {{ end }}
+  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
     <main class="wrapper">
       {{ partial "header.html" . }}
 
