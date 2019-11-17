@@ -47,3 +47,4 @@
 - [Luis Zarate](https://github.com/jlzaratec)
 - [Ariejan de Vroom](https://www.devroom.io)
 - [Bobby Lindsey](https://bobbywlindsey.com)
+- [José Mª Escartín](https://github.com/jme52)
