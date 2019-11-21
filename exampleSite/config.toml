@@ -33,9 +33,6 @@ disqusShortname = "yourdiscussshortname"
 
     rtl = false
 
-    # Use inverted colors (deprecated, see "colorscheme" below)
-    inverted = false
-
     # Specify light/dark colorscheme
     # Supported values:
     # "auto" (use preference set by browser)

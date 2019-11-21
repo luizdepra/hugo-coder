@@ -47,8 +47,7 @@
       {{ end }}
     {{ end }}
 
-    {{/* NOTE: inverted is deprecated */}}
-    {{ if  or (.Site.Params.inverted) (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
+    {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
       {{ if .Site.IsServer }}
         {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
         {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
@@ -67,7 +66,7 @@
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
-
+    
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
@@ -78,9 +77,8 @@
     {{ hugo.Generator }}
   </head>
 
-  {{/* NOTE: inverted is deprecated */}}
   {{ $csClass := "colorscheme-light" }}
-  {{ if or .Site.Params.inverted (eq .Site.Params.colorscheme "dark") }}
+  {{ if eq .Site.Params.colorscheme "dark" }}
     {{ $csClass = "colorscheme-dark" }}
   {{ else if eq .Site.Params.colorscheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
