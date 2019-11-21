@@ -33,8 +33,12 @@ disqusShortname = "yourdiscussshortname"
 
     rtl = false
 
-    # Use inverted colors
-    inverted = false
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "light"
 
     # Series see also post count
     maxSeeAlsoItems = 5
