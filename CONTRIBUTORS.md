@@ -49,3 +49,4 @@
 - [Bobby Lindsey](https://bobbywlindsey.com)
 - [José Mª Escartín](https://github.com/jme52)
 - [John Schroeder](https://blog.schroedernet.software)
+- [Tobias Lindberg](https://tobiaslindberg.com)
