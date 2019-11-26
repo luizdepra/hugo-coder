@@ -14,6 +14,8 @@ katex = "true"
 +++
 ```
 
+If you want to enable KaTeX or MathJax for all post, add `katex = ture` or `math = true` in `config.toml` in `[params]` section.
+
 It's almost a dropin alternative to the mathjax solution,you should just choose one of them.  
 
 Inline math looks like this  
