@@ -3,7 +3,7 @@
     {{ with .Site.Params.footercontent | safeHTML }}
       <p>{{.}}</p>
     {{ end }}
-    {{ if not .Site.Params.hideCopyright }} © {{ now.Format "2006" }}{{ end }}
+    {{ if not .Site.Params.hideCopyright }} © {{ now.Format "2006" }} {{ if .Site.Params.Author }} {{ .Site.Params.Author }} {{ end }} {{ end }}
     {{ if not .Site.Params.hideCredits }}
       {{ if not .Site.Params.hideCopyright }} · {{ end }}
       {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
