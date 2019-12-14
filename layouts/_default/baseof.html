@@ -66,7 +66,19 @@
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
-    
+
+    {{ range .Site.Params.custom_scss }}
+      {{/* We don't change the targetPath to because it's transparent to users */}}
+      {{ if $.Site.IsServer }}
+        {{ $cssOpts := (dict "enableSourceMap" true ) }}
+        {{ $styles := resources.Get . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ else }}
+        {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
+    {{ end }}
+
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
