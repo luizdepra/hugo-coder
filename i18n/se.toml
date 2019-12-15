@@ -21,4 +21,4 @@ other = "Ursäkta, men denna sida existerar inte."
 other = "Här kan du komma tillbaka till <a href=\"{{ . }}\">startsidan</a>."
 
 [powered_by]
-other = "Byggd med"
+other = "Med hjälp av"
