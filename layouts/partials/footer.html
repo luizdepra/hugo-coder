@@ -5,11 +5,11 @@
     {{ end }}
 
     {{ if not .Site.Params.hideCopyright }}
-      © {{- with .Site.Params.since -}}
-        {{ if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year }}
-      {{- else -}}
-        {{ now.Year }}
-      {{- end -}}
+      {{ with .Site.Params.since }}
+        © {{ if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year }}
+      {{ else }}
+        © {{ now.Year }}
+      {{ end }}
       {{ if .Site.Params.Author }} {{ .Site.Params.Author }} {{ end }}
     {{ end }}
 
