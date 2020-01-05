@@ -51,3 +51,4 @@
 - [John Schroeder](https://blog.schroedernet.software)
 - [Tobias Lindberg](https://tobiaslindberg.com)
 - [KK](https://github.com/bebound)
+- [Víctor López](https://github.com/viticlick)
