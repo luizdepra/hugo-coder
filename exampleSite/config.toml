@@ -15,6 +15,12 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "yourdiscussshortname"
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
 [params]
     author = "John Doe"
     description = "John Doe's personal website"
