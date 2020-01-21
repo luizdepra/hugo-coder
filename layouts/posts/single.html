@@ -30,7 +30,7 @@
         {{ if .Params.featured_image }}
           <img src='{{ .Params.featured_image }}' alt="Featured image"/>
         {{ end }}
-        {{ if and (gt .WordCount 400 ) (.Params.toc) }}
+        {{ if .Params.toc }}
           <b><em>Table of Contents</em></b>
           <aside>
               {{ .TableOfContents }}
