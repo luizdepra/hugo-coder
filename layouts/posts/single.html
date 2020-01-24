@@ -30,12 +30,6 @@
         {{ if .Params.featured_image }}
           <img src='{{ .Params.featured_image }}' alt="Featured image"/>
         {{ end }}
-        {{ if .Params.toc }}
-          <h5>Table of Contents<h5>
-          <aside>
-              {{ .TableOfContents }}
-          </aside>
-        {{ end }}
         {{ .Content }}
       </div>
 
