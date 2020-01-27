@@ -27,8 +27,12 @@
       </header>
 
       <div>
+        {{ if .Params.featured_image }}
+          <img src='{{ .Params.featured_image }}' alt="Featured image"/>
+        {{ end }}
         {{ .Content }}
       </div>
+
 
       <footer>
         {{ partial "posts/series.html" . }}
