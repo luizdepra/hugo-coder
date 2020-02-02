@@ -1,0 +1,25 @@
+[category]
+other = "קטגוריה"
+
+[tag]
+other = "תגית"
+
+[series]
+other = "סדרה"
+
+[reading_time]
+one = "דקה אחת לקרוא"
+other = "דקות לקרוא {{ .Count }}"
+
+[page_not_found]
+other = "דף האינטרנט שביקשת לא נמצא"
+
+[page_does_not_exist]
+other = "מצטערים, דף אינטרנט זה אינו קיים"
+
+[head_back]
+other = " אתה יכול לחזור<a href=\"{{ . }}\">לדף הבית</a>."
+
+
+[powered_by]
+other = "מופעל על ידי"
