@@ -7,7 +7,7 @@
     <h2>{{ .Site.Params.info }}</h2>
     {{ with .Site.Params.social }}
     <ul>
-      {{ range sort .}}
+      {{ range sort . "weight" }}
         {{ if .icon }}
           <li>
             <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
