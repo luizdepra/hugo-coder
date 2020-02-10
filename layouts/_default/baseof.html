@@ -108,6 +108,10 @@
 
     {{ template "_internal/google_analytics.html" . }}
 
+    {{ if .Site.Params.fathomAnalytics }}
+      {{- partial "analytics/fathom" . -}}
+    {{ end }}
+
   </body>
 
 </html>

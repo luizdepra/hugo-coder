@@ -50,6 +50,11 @@ disqusShortname = "yourdiscussshortname"
     # Custom JS
     custom_js = []
 
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+    siteID = "ABCDE"
+    rootURL = "analytics.example.com"
+
 [taxonomies]
   category = "categories"
   series = "series"
