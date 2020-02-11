@@ -108,7 +108,7 @@
 
     {{ template "_internal/google_analytics.html" . }}
 
-    {{ if .Site.Params.fathomAnalytics }}
+    {{ if .Site.Params.fathomAnalytics.siteID }}
       {{- partial "analytics/fathom" . -}}
     {{ end }}
 
