@@ -1,8 +1,8 @@
-name = "Coder"
+name = "Coder-Timeline"
 license = "MIT"
-licenselink = "https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md"
-description = "A simple and clean blog theme for Hugo"
-homepage = "https://github.com/luizdepra/hugo-coder/"
+licenselink = "https://github.com/13hannes11/hugo-coder-timeline/blob/master/LICENSE.md"
+description = "An extenison for the theme Coder simple and clean blog theme for Hugo"
+homepage = "https://github.com/13hannes11/hugo-coder-timeline/"
 tags = [
   "blog",
   "minimal",
@@ -23,5 +23,6 @@ features = [
 min_version = "0.79.0"
 
 [author]
-name = "Luiz F. A. de Prá"
-homepage = "https://luizdepra.com"
+name = "Hannes Kuchelmeister"
+homepage = "https://hanneskuchelmeister.de"
+
