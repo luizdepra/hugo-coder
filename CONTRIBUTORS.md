@@ -57,3 +57,4 @@
 - [Michael Lynch](https://github.com/mtlynch)
 - [FIGBERT](https://figbert.com/)
 - [Yash Mehrotra](https://yashmehrotra.com)
+- [Paolo Mainardi](https://paolomainardi.com)
