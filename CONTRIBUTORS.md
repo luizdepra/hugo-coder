@@ -59,3 +59,4 @@
 - [Yash Mehrotra](https://yashmehrotra.com)
 - [Paolo Mainardi](https://paolomainardi.com)
 - [Ka-Wai Lin](https://github.com/kwlin)
+- [Piotr Orzechowski](https://orzechowski.tech)
