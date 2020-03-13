@@ -8,7 +8,7 @@ other = "tag"
 other = "seria"
 
 [reading_time]
-other = "czas czytania: {{ .Count }}"
+other = "czas czytania: {{ .Count }} min"
 
 [page_not_found]
 other = "Nie znaleziono strony"
