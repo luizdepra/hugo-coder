@@ -60,3 +60,4 @@
 - [Paolo Mainardi](https://paolomainardi.com)
 - [Ka-Wai Lin](https://github.com/kwlin)
 - [Piotr Orzechowski](https://orzechowski.tech)
+- [Glenn Feunteun](https://github.com/gfeun)
