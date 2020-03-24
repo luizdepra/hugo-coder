@@ -1,9 +1,17 @@
 <section class="container list">
-  <h1 class="title">{{ .Title }}</h1>
+  <h1 class="title">
+    {{- if eq .Kind "taxonomy" -}}
+      {{- i18n .Data.Singular | title -}}
+      {{- print ": " -}}
+    {{- end -}}
+
+    {{- .Title -}}
+  </h1>
   <ul>
     {{ range .Paginator.Pages }}
     <li>
-      <span>{{ .Date.Format "January 2, 2006" }}</span><a href="{{ .URL }}">{{ .Title }}</a>
+      <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+      <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
     </li>
     {{ end }}
   </ul>

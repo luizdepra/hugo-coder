@@ -1,0 +1,34 @@
+body.rtl {
+  .content {
+    .post {
+      .post-meta {
+        .posted-on {
+          margin-left: 1.5rem;
+          margin-right: 0;
+        }
+      }
+      .tags,
+      .categories {
+        i {
+          margin-left: 0.5rem;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .list {
+    ul {
+      li {
+        .date {
+          text-align: left;
+          margin-left: 3.0rem;
+          margin-right: 0;
+          @media only screen and (max-width : 768px) {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

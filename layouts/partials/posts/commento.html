@@ -1,0 +1,4 @@
+{{- if and (isset .Site.Params "commentourl") (not (eq .Site.Params.commentoUrl "" )) (eq (.Params.disable_comments | default false) false) -}}
+<div id="commento"></div>
+<script src="{{ .Site.Params.commentoUrl }}/js/commento.js"></script>
+{{- end -}}

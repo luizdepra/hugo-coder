@@ -1,0 +1,24 @@
+[category]
+other = "Kategori"
+
+[tag]
+other = "Tagg"
+
+[series]
+other = "Serie"
+
+[reading_time]
+one = "Ein minut lästid"
+other = "{{ .Count }} minuter lästid"
+
+[page_not_found]
+other = "Sida hittades inte"
+
+[page_does_not_exist]
+other = "Ursäkta, men denna sida existerar inte."
+
+[head_back]
+other = "Här kan du komma tillbaka till <a href=\"{{ . }}\">startsidan</a>."
+
+[powered_by]
+other = "Med hjälp av"

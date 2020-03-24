@@ -4,6 +4,7 @@ title = "Creating a New Theme"
 slug = "creating-a-new-theme" 
 tags = []
 categories = []
+series = ["Theme", "Hugo"]
 +++
 
 ## Introduction

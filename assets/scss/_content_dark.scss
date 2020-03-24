@@ -1,0 +1,46 @@
+@mixin content_dark {
+
+  .content {
+  
+    .list {
+      ul {
+        li {
+          .title {
+            color: $fg-color-dark;
+            &:hover,
+            &:focus {
+              color: $link-color-dark;
+            }
+          }
+        }
+      }
+    }
+
+    .centered {
+      .about {
+        ul {
+          li {
+            a {
+              color: $fg-color-dark;
+              &:hover,
+              &:focus {
+                color: $link-color-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+body.colorscheme-dark {
+  @include content_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include content_dark()
+  }
+}

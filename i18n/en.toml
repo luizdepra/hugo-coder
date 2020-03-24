@@ -1,0 +1,23 @@
+[category]
+other = "category"
+
+[tag]
+other = "tag"
+
+[series]
+other = "series"
+
+[reading_time]
+other = "{{ .Count }}-minute read"
+
+[page_not_found]
+other = "Page Not Found"
+
+[page_does_not_exist]
+other = "Sorry, this page does not exist."
+
+[head_back]
+other = "You can head back to <a href=\"{{ . }}\">homepage</a>."
+
+[powered_by]
+other = "Powered by"

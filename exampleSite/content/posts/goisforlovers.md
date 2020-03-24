@@ -13,6 +13,7 @@ categories = [
     "Development",
     "golang",
 ]
+series = ["Getting Started", "Hugo"]
 +++
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for

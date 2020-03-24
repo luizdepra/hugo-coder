@@ -4,19 +4,15 @@
     <div class="grid-wrapper">
         {{ range .Paginator.Pages }}
         <div class="grid-item">
-            <a href="{{ .URL }}">
+            <a href="{{ .Permalink }}">
                 <img class="grid-item-img" src="{{ .Params.image}}" width="350px" height="150px"/>
                 <span class="grid-item-title">{{ .Title }}</span>
-                <div class="tags">
-                    {{ range .Params.tags }}
-                        {{ . }}
-                    {{ end }}
+                <div class="grid-item-summary">
+                        {{ .Summary }}
                 </div>
             </a>
         </div>
         {{ end }}
-        </ul>
     </div>
     {{ partial "pagination.html" . }}
   </section>
-  

@@ -1,0 +1,216 @@
+stackbitVersion: ~0.2.0
+ssgName: custom
+publishDir: demo/public
+buildCommand: make prepare && hugo --source demo --baseURL "/"
+uploadDir: images
+staticDir: exampleSite/static
+pagesDir: exampleSite/content
+dataDir: exampleSite
+models:
+  config:
+    type: data
+    label: Config
+    file: config.toml
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: baseurl
+        label: Base URL
+        description: Hostname (and path) to the root
+      - type: string
+        name: languagecode
+      - type: string
+        name: defaultcontentlanguage
+      - type: string
+        name: themesDir
+      - type: string
+        name: theme
+        label: Theme Name
+      - type: number
+        name: paginate
+      - type: boolean
+        name: canonifyurls
+      - type: string
+        name: pygmentsstyle
+      - type: boolean
+        name: pygmentscodefences
+      - type: boolean
+        name: pygmentscodefencesguesssyntax
+      - type: string
+        name: disqusShortname
+      - type: object
+        name: params
+        label: Params
+        description: Site parameters
+        fields:
+          - type: string
+            name: author
+          - type: string
+            name: description
+          - type: string
+            name: keywords
+          - type: string
+            name: info
+          - type: string
+            name: avatarurl
+          - type: string
+            name: footercontent
+          - type: string
+            name: dateformat
+          - type: boolean
+            name: hideCredits
+          - type: boolean
+            name: hideCopyright
+          - type: string
+            name: commit
+          - type: boolean
+            name: rtl
+          - type: string
+            name: colorscheme
+          - type: number
+            name: maxSeeAlsoItems
+          - type: list
+            name: custom_css
+          - type: list
+            name: custom_js
+          - type: list
+            name: social
+            label: Social Media Icons
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: name
+                  label: Name
+                - type: string
+                  name: icon
+                  label: Icon
+                - type: number
+                  name: weight
+                  label: Weight
+                - type: string
+                  name: url
+                  label: URL
+      - type: object
+        name: languages
+        fields:
+          - type: language_config
+            name: en
+          - type: language_config
+            name: "pt-br"
+      - type: object
+        name: taxonomies
+        fields:
+          - type: string
+            name: category
+          - type: string
+            name: series
+          - type: string
+            name: tag
+  basicpage:
+    type: page
+    label: Basic Page
+    match: "*.md"
+    exclude:
+      - _index.md
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: slug
+        label: Slug
+  post:
+    type: page
+    label: Blog post
+    folder: posts
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: date
+        name: date
+        label: Date
+      - type: string
+        name: slug
+        label: Slug
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: list
+        name: categories
+        label: Categories
+        items:
+          type: string
+      - type: list
+        name: series
+        label: Series
+        items:
+          type: string
+      - type: string
+        name: externalLink
+      - type: string
+        name: description
+      - type: boolean
+        name: math
+      - type: boolean
+        name: katex
+      - type: list
+        name: images
+        items:
+          type: string
+  language_config:
+    type: object
+    label: Language Config
+    fields:
+      - type: string
+        name: languagename
+      - type: string
+        name: title
+      - type: object
+        name: params
+        fields:
+          - type: string
+            name: author
+          - type: string
+            name: info
+          - type: string
+            name: description
+          - type: string
+            name: keywords
+          - type: string
+            name: footercontent
+      - type: object
+        label: Menu
+        name: menu
+        fields:
+          - type: list
+            name: main
+            items:
+              type: object
+              labelField: name
+              fields:
+                - type: string
+                  name: identifier
+                  label: Identifier
+                - type: string
+                  name: name
+                  label: Title
+                  required: true
+                - type: string
+                  name: url
+                  label: URL
+                  required: true
+                - type: number
+                  name: weight
+                  label: Weight
+                  description: Position for sorting
+                - type: string
+                  name: parent
+                  label: Parent Menu Identifier
+                  description: The parent of an entry should be the identifier of another entry.
