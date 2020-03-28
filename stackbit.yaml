@@ -64,6 +64,8 @@ models:
             name: hideCredits
           - type: boolean
             name: hideCopyright
+          - type: number
+            name: since
           - type: string
             name: commit
           - type: boolean
@@ -108,7 +110,7 @@ models:
                 name: siteID
                 label: ID for Fathom Analytics
               - type: string
-                name: serverURl
+                name: serverURL
                 label: URL for Fathom Analytics
       - type: object
         name: languages
