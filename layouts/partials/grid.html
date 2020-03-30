@@ -5,10 +5,14 @@
         {{ range .Paginator.Pages }}
         <div class="grid-item">
             <a href="{{ .Permalink }}">
-                <img class="grid-item-img" src="{{ .Params.image}}" width="350px" height="150px"/>
-                <span class="grid-item-title">{{ .Title }}</span>
-                <div class="grid-item-summary">
+                {{ if .Params.image }}
+                    <img class="grid-item-img" src="/images/{{ .Params.image}}"/>
+                {{ end }}
+                <div class="grid-item-text">
+                    <span class="grid-item-title">{{ .Title }}</span>
+                    <p class="grid-item-summary">
                         {{ .Summary }}
+                    </p>
                 </div>
             </a>
         </div>

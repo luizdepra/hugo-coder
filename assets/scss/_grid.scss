@@ -1,31 +1,45 @@
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr) );
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr) );
+    grid-gap: 2rem;
 }
 
 .grid-item {
     background-color: #fafafa;
+    height: fit-content;
+}
+
+.grid-item a {
+    color: black;
+}
+
+.grid-item a:hover, .grid-item a:focus {
+    color: #1565c0;
+}
+
+.grid-item-text {
     border-radius: .25rem;
+    border: 1px solid #cacaca;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .grid-item .grid-item-title {
-    padding-left: 10px;
-    padding-right: 10px;
+    display: block;
+    padding-top: 1.25rem;
+    padding-bottom: 0;
     font-family: inherit;
     font-weight: bold;
-    font-size: 15px;
-    color: black;
+    font-size: 1.8rem;
 }
 
 .grid-item .grid-item-summary {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    line-height: 1.3em;
-    color: black;
-    font-size: 13px;
+    display: block;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
     background-color: inherit;
     max-height: inherit;
     overflow: hidden
@@ -34,6 +48,7 @@
 .grid-item .grid-item-img {
     width: 100%;
     height: auto;
+    margin-bottom: -1.1rem;
     object-fit: cover;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;

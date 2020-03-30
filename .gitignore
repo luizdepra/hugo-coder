@@ -1,3 +1,5 @@
 **/themes/
 demo/
-
+.Rproj.user
+.DS_Store
+.Rhistory
