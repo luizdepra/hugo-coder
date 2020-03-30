@@ -1,0 +1,27 @@
+@mixin grid_dark {
+  .grid-item {
+    background-color: #3a3a3a;
+  }
+  
+  .grid-item-text {
+    border: none;
+  }
+  
+  .grid-item a {
+    color: #dadada;
+  }
+  
+  .grid-item a:hover, .grid-item a:focus {
+    color: #36679f;
+  }
+}
+
+body.colorscheme-dark {
+  @include grid_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include grid_dark()
+  }
+}
