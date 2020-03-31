@@ -1,16 +1,16 @@
-{{ if .Site.Params.footer }}
+{{ if not .Site.Params.hideFooter | default false }}
   <footer class="footer">
     <section class="container">
       {{ with .Site.Params.footercontent | safeHTML }}
-        <p>{{.}}</p>
+        <p>{{ . }}</p>
       {{ end }}
       {{ if not .Site.Params.hideCopyright }}
-        {{ with .Site.Params.since }}
-          © {{ if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year }}
-        {{ else }}
-          © {{ now.Year }}
+        ©
+        {{ if (and (.Site.Params.since) (lt .Site.Params.since now.Year)) }}
+          {{ .Site.Params.since }} -
         {{ end }}
-        {{ if .Site.Params.Author }} {{ .Site.Params.Author }} {{ end }}
+        {{ now.Year }}
+        {{ with .Site.Params.Author }} {{ . }} {{ end }}
       {{ end }}
       {{ if not .Site.Params.hideCredits }}
         {{ if not .Site.Params.hideCopyright }} · {{ end }}
