@@ -26,6 +26,7 @@ disqusShortname = "yourdiscussshortname"
 
     dateformat = "January 2, 2006"
 
+    hideFooter = false
     hideCredits = false
     hideCopyright = false
     since = 2019
