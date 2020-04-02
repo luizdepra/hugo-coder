@@ -56,6 +56,8 @@ models:
             name: info
           - type: string
             name: avatarurl
+          - type: boolean
+            name: hideFooter
           - type: string
             name: footercontent
           - type: string
@@ -186,6 +188,14 @@ models:
         name: featured_image
         label: Featured Image
         description: Image featured in post display
+  snippets:
+    type: page
+    label: Snippets
+    folder: snippets
+    fields:
+      - type: string
+        name: title
+        label: Title
   language_config:
     type: object
     label: Language Config
