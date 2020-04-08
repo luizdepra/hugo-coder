@@ -61,12 +61,13 @@
 
     {{ if .Site.IsServer }}
       {{ range .Site.Params.custom_css }}
-        <link rel="stylesheet" href="{{ . | relURL }}"  media="screen" />
+        {{ $style := resources.Get . }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen" />
       {{ end }}
     {{ else }}
       {{ range .Site.Params.custom_css }}
-        {{ $style := resources.Get . | fingerprint}}
-        <link rel="stylesheet" href="{{ . | relURL }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+        {{ $style := resources.Get . }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}
 
