@@ -59,9 +59,15 @@
       {{ end }}
     {{ end }}
 
-    {{ range .Site.Params.custom_css }}
-      {{ $style := resources.Get . }}
-      <link rel="stylesheet" href="{{ . | relURL }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+    {{ if .Site.IsServer }}
+      {{ range .Site.Params.custom_css }}
+        <link rel="stylesheet" href="{{ . | relURL }}"  media="screen" />
+      {{ end }}
+    {{ else }}
+      {{ range .Site.Params.custom_css }}
+        {{ $style := resources.Get . }}
+        <link rel="stylesheet" href="{{ . | relURL }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
     {{ end }}
 
     {{ range .Site.Params.custom_js }}
