@@ -65,7 +65,7 @@
       {{ end }}
     {{ else }}
       {{ range .Site.Params.custom_css }}
-        {{ $style := resources.Get . }}
+        {{ $style := resources.Get . | fingerprint}}
         <link rel="stylesheet" href="{{ . | relURL }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}
