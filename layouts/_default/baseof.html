@@ -60,7 +60,8 @@
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | relURL }}" />
+      {{ $style := resources.Get . }}
+      <link rel="stylesheet" href="{{ . | relURL }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen" />
     {{ end }}
 
     {{ range .Site.Params.custom_js }}
