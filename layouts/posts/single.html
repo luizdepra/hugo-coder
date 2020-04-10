@@ -42,7 +42,17 @@
       </div>
 
       <footer>
-        {{ partial "posts/disqus" . }}
+        {{ with .Params.distributed_through }}
+        <hr>
+        <span>
+            Got any comments? Please, write them on
+            {{ $platforms := . }}
+            {{ range $platforms }}
+              {{ if ne . (index $platforms 0) }} | {{ end }}
+              <a href="{{ .href }}">{{ .platform }}</a>
+            {{ end }}
+        </span>
+        {{ end }}
       </footer>
     </article>
 
