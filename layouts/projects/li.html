@@ -1,0 +1,22 @@
+<li>
+  <div class="card">
+    <img class="card-image" src="{{ with .Params.featured_image }} {{ . }} {{ end }}" alt="{{ .Title }}">
+    <div class="card-tags">
+      {{ with .Page.Params.Technologies }}
+        {{ partial "taxonomy/technologies.html" . }}
+      {{ end }}
+    </div>
+    <div class="card-body">
+      <h4 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+      <p class="card-text">{{ .Summary }}</p>
+    </div>
+    <div class="card-footer">
+      {{ with .Params.website }}
+        <a href="{{ . }}" class="card-link"><i class="fas fa-link"></i></a>
+      {{ end }}
+      {{ with .Params.git_repo }}
+        <a href="{{ . }}" class="card-link"><i class="fab fa-git-square"></i></a>
+      {{ end }}
+    </div>
+  </div>
+</li>
