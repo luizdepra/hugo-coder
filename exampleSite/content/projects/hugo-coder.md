@@ -5,7 +5,7 @@ description = "My Hugo template project: Hugo Coder, a simple and clean blog the
 cover_image = "/images/hugo-coder-cover.png"
 featured_image = "/images/hugo-coder-featured.png"
 summary = "Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi natus omnis nulla quibusdam? Sint ea reprehenderit voluptatum, excepturi ipsa iste aliquam ullam nesciunt dolore exercitationem velit, ab incidunt soluta!"
-technologies = []
+tags = ["Hugo"]
 website = "https://themes.gohugo.io/theme/hugo-coder"
 git_repo = "https://github.com/luizdepra/hugo-coder"
 +++

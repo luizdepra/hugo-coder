@@ -14,6 +14,14 @@
 
   li:nth-child(odd):last-child { margin-bottom: 0; }
 
+  .card-small {
+    padding: 2rem;
+
+    background-color: $bg-color;
+    border: 1px solid $alt-bg-color;
+    border-radius: 1.5rem;
+  }
+
   .card {
     display: inline-flex;
   
@@ -22,7 +30,7 @@
     width: 100%;
     
     background-color: $bg-color;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid $alt-bg-color;
     border-radius: 1.5rem;
   
     .card-image {
@@ -36,34 +44,54 @@
       border-top-left-radius: 1.5rem;
       border-top-right-radius: 1.5rem;
     }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1.5rem 2rem;
+
+      .card-tag {
+        padding: .5rem 1rem;
+        margin-right: .5rem;
+        margin-bottom: 1rem;
+      
+        font-size: smaller;
+        text-align: center;
+        color: $fg-color;
+      
+        border-radius: .5rem;
+      }
+
+      .php { background-color: #5c6bc0; }
+      .joomla { background-color: #F2C986; }
+      .javascript { background-color: #ff9800; }
+      .android { background-color: #81c784; }
+      .java { background-color: #f44336; }
+      .api { background-color: #E1C1C1; }
+      .symfony { background-color: #6db8ee; }
+      .hugo { background-color: #36679f; }
+    }
     
-    .card-tags,
-    .card-body,
+    .card-body {
+      flex: 1 1 auto;
+      padding: 1.5rem 2rem;
+
+      .card-title {
+        margin: 0 0 .75rem 0;
+
+        a { font-weight: bold; }
+      }
+
+      .card-text { margin-bottom: 1rem; }
+    }
+    
     .card-footer {
       padding: 1.5rem 2rem;
-    }
-    
-    .card-body { flex: 1 1 auto; }
-    
-    .card-footer {
+
       border-bottom-left-radius: 1.5rem;
       border-bottom-right-radius: 1.5rem;
+
+      .card-link { margin-right: 1rem; }
     }
-    
-    .card-tag {
-      padding: .5rem 1rem;
-      margin-right: .5rem;
-    
-      font-size: smaller;
-      text-align: center;
-      color: $fg-color !important;
-    
-      border-radius: .5rem;
-    }
-    
-    .card-title { margin: 0 0 .75rem 0; }
-    .card-title a { font-weight: bold; }
-    .card-text { margin-bottom: 1rem; }
-    .card-link { margin-right: 1rem; }
   }
 }

@@ -1,6 +1,13 @@
 @mixin card_dark {
+  .card-small {
+    background-color: $bg-color-dark;
+    border: 1px solid $bg-color;
+  }
+
+  .card { border: 1px solid $bg-color; }
+
   .card-image {
-    filter: grayscale(50%);
+    filter: grayscale($filter-percentage);
   }
 
   .card-body,
