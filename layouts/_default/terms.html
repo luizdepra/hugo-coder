@@ -14,7 +14,8 @@
     <ul>
       {{ range .Data.Terms.ByCount }}
         <li>
-          <a href="/{{ $plural_term }}/{{ .Name | urlize }}">{{ .Name }}</a> ({{ i18n "taxonomyCount" . }})
+          {{ $url := printf "%s/%s" $plural_term .Name | relLangURL }}
+          <a href="{{ $url }}">{{ .Name }}</a> ({{ i18n "taxonomyCount" . }})
         </li>
       {{ end }}
     </ul>
