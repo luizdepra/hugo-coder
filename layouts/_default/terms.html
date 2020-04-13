@@ -1,5 +1,5 @@
 {{ define "title" }}
-  {{- .Title }} · {{ .Site.Title -}}
+  {{- i18n .Data.Plural | title }} · {{ .Site.Title -}}
 {{ end }}
 
 {{ define "content" }}
@@ -14,7 +14,7 @@
     <ul>
       {{ range .Data.Terms.ByCount }}
         <li>
-          <a href="/{{ $plural_term }}/{{ .Name | urlize }}">{{ .Name }}</a> ({{ .Count }} entries)
+          <a href="/{{ $plural_term }}/{{ .Name | urlize }}">{{ .Name }}</a> ({{ i18n "taxonomyCount" . }})
         </li>
       {{ end }}
     </ul>
