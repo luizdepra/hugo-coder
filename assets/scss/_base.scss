@@ -101,15 +101,21 @@ b, strong {
   font-weight: 700;
 }
 
+.highlight > div,
+.highlight > pre {
+  margin: 0 0 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
 pre {
   display: block;
   font-family: $code-font-family;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
-  margin: 2.0rem 0 2.0rem 0;
-  padding: 2.0rem;
   overflow-x: auto;
+  margin: 0;
   code {
     display: inline-block;
     background-color: inherit;
@@ -123,7 +129,6 @@ code {
   font-weight: 400;
   background-color: $alt-bg-color;
   color: $fg-color;
-  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
 }
 
 blockquote {
@@ -160,6 +165,10 @@ table tr th:last-child {
 
 img {
   max-width: 100%;
+}
+
+figure {
+  text-align: center;
 }
 
 .wrapper {

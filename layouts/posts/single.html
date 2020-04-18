@@ -21,21 +21,27 @@
               {{ i18n "reading_time" .ReadingTime }}
             </span>
           </div>
-          {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories" . }}{{ end }}
-          {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags" . }}{{ end }}
+          {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+          {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
         </div>
       </header>
 
       <div>
+        {{ if .Params.featured_image }}
+          <img src='{{ .Params.featured_image }}' alt="Featured image"/>
+        {{ end }}
         {{ .Content }}
       </div>
 
+
       <footer>
-        {{ partial "posts/series" . }}
-        {{ partial "posts/disqus" . }}
+        {{ partial "posts/series.html" . }}
+        {{ partial "posts/disqus.html" . }}
+        {{ partial "posts/commento.html" . }}
+        {{ partial "posts/utteranc.html" . }}
       </footer>
     </article>
 
-    {{ partial "posts/math" . }}
+    {{ partial "posts/math.html" . }}
   </section>
 {{ end }}

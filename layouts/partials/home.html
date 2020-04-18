@@ -1,22 +1,27 @@
 <section class="container centered">
   <div class="about">
-    {{ with .Site.Params.avatarurl }}
-      <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+    {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
+      {{ with .Site.Params.avatarurl }}
+        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+      {{ end }}
+    {{ end }}
+    {{ with .Site.Params.gravatar }}
+      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
     <h2>{{ .Site.Params.info }}</h2>
     {{ with .Site.Params.social }}
     <ul>
-      {{ range sort .}}
+      {{ range sort . "weight" }}
         {{ if .icon }}
           <li>
-            <a href="{{ .url }}" aria-label="{{ .name }}">
+            <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
               <i class="{{ .icon }}" aria-hidden="true"></i>
             </a>
           </li>
         {{ else }}
           <li>
-            <a href="{{ .url }}" aria-label="{{ .name }}">{{ .name }}</a>
+            <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
           </li>
         {{ end }}
       {{ end }}

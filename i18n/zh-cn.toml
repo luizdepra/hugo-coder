@@ -1,0 +1,24 @@
+[category]
+other = "分类"
+
+[tag]
+other = "标签"
+
+[series]
+other = "系列"
+
+[reading_time]
+one = "1分钟阅读时间"
+other = "{{ .Count }} 分钟阅读时间"
+
+[page_not_found]
+other = "找不到页面"
+
+[page_does_not_exist]
+other = "此页面不存在"
+
+[head_back]
+other = "返回 <a href=\"{{ . }}\">主页面</a>."
+
+[powered_by]
+other = "技术支持"

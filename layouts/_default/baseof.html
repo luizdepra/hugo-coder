@@ -21,8 +21,8 @@
       <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     {{ if .Site.IsServer }}
@@ -47,14 +47,14 @@
       {{ end }}
     {{ end }}
 
-    {{ if .Site.Params.inverted }}
+    {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
       {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
+        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
       {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" ) }}
-        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts | minify | fingerprint }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
+        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}
@@ -66,7 +66,19 @@
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
-    
+
+    {{ range .Site.Params.custom_scss }}
+      {{/* We don't change the targetPath to because it's transparent to users */}}
+      {{ if $.Site.IsServer }}
+        {{ $cssOpts := (dict "enableSourceMap" true ) }}
+        {{ $styles := resources.Get . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ else }}
+        {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
+    {{ end }}
+
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
@@ -77,7 +89,13 @@
     {{ hugo.Generator }}
   </head>
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}">
+  {{ $csClass := "colorscheme-light" }}
+  {{ if eq .Site.Params.colorscheme "dark" }}
+    {{ $csClass = "colorscheme-dark" }}
+  {{ else if eq .Site.Params.colorscheme "auto" }}
+    {{ $csClass = "colorscheme-auto" }}
+  {{ end }}
+  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
     <main class="wrapper">
       {{ partial "header.html" . }}
 
@@ -89,6 +107,10 @@
     </main>
 
     {{ template "_internal/google_analytics.html" . }}
+
+    {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
+      {{- partial "analytics/fathom" . -}}
+    {{ end }}
 
   </body>
 
