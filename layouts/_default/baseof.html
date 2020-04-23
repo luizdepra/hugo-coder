@@ -63,6 +63,10 @@
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
+    {{ if .Site.Params.googleAdSense }}
+    <script data-ad-client="{{ .Site.Params.googleAdSense }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    {{ end }}
+
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
