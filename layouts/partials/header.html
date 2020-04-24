@@ -17,7 +17,7 @@
       {{ if .Site.IsMultiLingual }}
         {{ $node := . }}
         {{ .Scratch.Set "separator" true }}
-        {{ range .Translations }}
+        {{ range (default .Site.Home.AllTranslations .Translations) }}
           {{ if ne $.Site.Language .Language }}
             {{ if $node.Scratch.Get "separator" }}
               <li class="navigation-item menu-separator">
