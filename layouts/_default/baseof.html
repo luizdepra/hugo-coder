@@ -63,10 +63,6 @@
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
-    {{ range .Site.Params.custom_js }}
-      <script src="{{ . | relURL }}"></script>
-    {{ end }}
-
     {{ range .Site.Params.custom_scss }}
       {{/* We don't change the targetPath to because it's transparent to users */}}
       {{ if $.Site.IsServer }}
@@ -105,6 +101,10 @@
 
       {{ partial "footer.html" . }}
     </main>
+
+    {{ range .Site.Params.custom_js }}
+      <script src="{{ . | relURL }}"></script>
+    {{ end }}
 
     {{ template "_internal/google_analytics.html" . }}
 
