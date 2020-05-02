@@ -1,0 +1,26 @@
+@mixin card_dark {
+  .card-small {
+    background-color: $bg-color-dark;
+    border: 1px solid $bg-color;
+  }
+
+  .card { border: 1px solid $bg-color; }
+
+  .card-image {
+    filter: grayscale($filter-percentage);
+  }
+
+  .card-body,
+  .card-tags,
+  .card-footer { background-color: $bg-color-dark; }
+}
+
+body.colorscheme-dark {
+  @include card_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include card_dark()
+  }
+}

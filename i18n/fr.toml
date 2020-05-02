@@ -1,11 +1,30 @@
 [category]
 other = "catégorie"
 
+[categories]
+other = "catégories"
+
 [tag]
 other = "tag"
 
+[tags]
+other = "tags"
+
 [series]
 other = "séries"
+
+[posts]
+other = "articles"
+
+[projects]
+other = "projets"
+
+[taxonomyCount]
+one = "1 entrée"
+other = "{{ .Count }} entrées"
+
+[taxonomytext]
+other = "Contenus avec le/la {{ .Data.Singular }} '{{ .Data.Term }}'"
 
 [reading_time]
 one = "Une minute de lecture"

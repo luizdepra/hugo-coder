@@ -1,0 +1,97 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  li {
+    flex: 0 0 45%;
+    margin-bottom: 6rem;
+  }
+
+  li:nth-child(odd):last-child { margin-bottom: 0; }
+
+  .card-small {
+    padding: 2rem;
+
+    background-color: $bg-color;
+    border: 1px solid $alt-bg-color;
+    border-radius: 1.5rem;
+  }
+
+  .card {
+    display: inline-flex;
+  
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+    background-color: $bg-color;
+    border: 1px solid $alt-bg-color;
+    border-radius: 1.5rem;
+  
+    .card-image {
+      height: 200px;
+      margin: auto;
+    }
+    
+    .card-image[src*="jpg"] {
+      width: 100%;
+    
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1.5rem 2rem;
+
+      .card-tag {
+        padding: .5rem 1rem;
+        margin-right: .5rem;
+        margin-bottom: 1rem;
+      
+        font-size: smaller;
+        text-align: center;
+        color: $fg-color;
+      
+        border-radius: .5rem;
+      }
+
+      .php { background-color: #5c6bc0; }
+      .joomla { background-color: #F2C986; }
+      .javascript { background-color: #ff9800; }
+      .android { background-color: #81c784; }
+      .java { background-color: #f44336; }
+      .api { background-color: #E1C1C1; }
+      .symfony { background-color: #6db8ee; }
+      .hugo { background-color: #36679f; }
+    }
+    
+    .card-body {
+      flex: 1 1 auto;
+      padding: 1.5rem 2rem;
+
+      .card-title {
+        margin: 0 0 .75rem 0;
+
+        a { font-weight: bold; }
+      }
+
+      .card-text { margin-bottom: 1rem; }
+    }
+    
+    .card-footer {
+      padding: 1.5rem 2rem;
+
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+
+      .card-link { margin-right: 1rem; }
+    }
+  }
+}

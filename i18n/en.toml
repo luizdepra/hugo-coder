@@ -1,11 +1,30 @@
 [category]
 other = "category"
 
+[categories]
+other = "categories"
+
 [tag]
 other = "tag"
 
+[tags]
+other = "tags"
+
 [series]
 other = "series"
+
+[posts]
+other = "posts"
+
+[projects]
+other = "projects"
+
+[taxonomyCount]
+# one = "1 entry" Doesn't work
+other = "{{ .Count }} entries"
+
+[taxonomytext]
+other = "Content with the {{ .Data.Singular }} '{{ .Data.Term }}'"
 
 [reading_time]
 other = "{{ .Count }}-minute read"

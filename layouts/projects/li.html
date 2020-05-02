@@ -1,0 +1,24 @@
+<li>
+  <div class="card">
+    <img class="card-image" src="{{ with .Params.featured_image }} {{ . }} {{ end }}" alt="{{ .Title }}">
+    <div class="card-tags">
+      {{ with .Page.Params.Tags }}
+        {{ range $index, $el := . }}
+          <a class="card-tag {{ trim (lower .) "!/" }}" href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="card-body">
+      <h4 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+      <p class="card-text">{{ .Summary }}</p>
+    </div>
+    <div class="card-footer">
+      {{ with .Params.website }}
+        <a href="{{ . }}" class="card-link"><i class="fas fa-link"></i></a>
+      {{ end }}
+      {{ with .Params.git_repo }}
+        <a href="{{ . }}" class="card-link"><i class="fab fa-git-square"></i></a>
+      {{ end }}
+    </div>
+  </div>
+</li>
