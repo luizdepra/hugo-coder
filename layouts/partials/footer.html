@@ -1,6 +1,9 @@
 <footer class="footer">
   <section class="container">
     {{ if not .Site.Params.hideCopyright }} © {{ .Site.LastChange.Format "2006" }}{{ end }}
+    {{ range .AlternativeOutputFormats -}}
+    · <a href="{{ .Permalink }}">{{ .Name }}</a>
+    {{ end }}
     {{ if not .Site.Params.hideCredits }}
       {{ if not .Site.Params.hideCopyright }} · {{ end }}
       Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/larribas/hugo-coder/">a fork of the Coder theme</a>.
