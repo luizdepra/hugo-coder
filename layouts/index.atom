@@ -12,10 +12,11 @@
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
 <feed xmlns="http://www.w3.org/2005/Atom">
-  {{ with .OutputFormats.Get "RSS" }}
+  {{ with .OutputFormats.Get "ATOM" }}
   <id>{{ .Permalink }}</id>
   <link href="{{ .Permalink }}" rel="self"/>
   {{ end }}
+  <uri>{{ .Permalink }}</uri>
 
   <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
 	<subtitle>Recent blog posts</subtitle>
@@ -27,8 +28,6 @@
     {{ with .Site.Author.email }}
     <email>{{ . }}</email>
     {{ end }}
-
-    <uri>{{ .Permalink }}</uri>
   </author>
 	<updated>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</updated>
 	
@@ -40,7 +39,6 @@
 		<updated>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</updated>
     <summary>{{ .Params.description }}</summary>
     <content type="html">{{ .Content | html }}</content>
-
 
     {{ range .Params.tags }}
     <category term="{{ . }}"/>
