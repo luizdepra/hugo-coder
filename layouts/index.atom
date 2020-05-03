@@ -39,7 +39,8 @@
     <link href="{{ .Permalink }}" />
 		<updated>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</updated>
     <summary>{{ .Params.description }}</summary>
-{{ `<content type="html"><![CDATA[` | safeHTML }}{{ .Content }}]]></content>
+    <content type="html">{{ .Content | html }}</content>
+
 
     {{ range .Params.tags }}
     <category term="{{ . }}"/>
