@@ -1,9 +1,9 @@
-## Hugo Coder Adaptation
+# Hugo Coder Adaptation
 
 A free adaptation of the [Hugo Coder](https://github.com/luizdepra/hugo-coder) theme I use for my personal website ([larribas.me](https://larribas.me))
 
 
-### Changes vs. Upstream
+## Changes vs. Upstream
 
 Some of the changes I included are:
 
@@ -31,7 +31,7 @@ Some of the changes I included are:
 
 
 
-### Disclaimers
+## Disclaimers
 
 I maintain this theme primarily for personal use. If you feel like you need a theme with wider adoption and maintenance, please check the upstream ([Hugo Coder](https://github.com/luizdepra/hugo-coder))
 
