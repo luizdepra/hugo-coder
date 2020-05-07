@@ -3,6 +3,8 @@
 A free adaptation of the [Hugo Coder](https://github.com/luizdepra/hugo-coder) theme I use for my personal website ([larribas.me](https://larribas.me))
 
 
+### Changes vs. Upstream
+
 Some of the changes I included are:
 
 * Blog posts include the date, reading time, alternative sites where it's published, and tags
