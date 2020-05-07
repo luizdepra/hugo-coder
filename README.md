@@ -9,6 +9,10 @@ Some of the changes I included are:
 
 * Blog posts include the date, reading time, alternative sites where it's published, and tags
 
+<p align="center">
+  <img src="readme/blog_headers.png" style="max-width:500px"/>
+</p>
+
 ![blog headers](readme/blog_headers.png)
 
 * If published on alternative sites, blog posts include a message instructing readers to leave their comments on those sites (I didn't want multiple simultaneous comment streams)
