@@ -18,6 +18,9 @@
   .navigation-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    img {
+      max-width: 180px;
+    }
   }
   .navigation-list {
     float: right;

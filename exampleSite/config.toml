@@ -21,6 +21,9 @@ disqusShortname = "yourdiscussshortname"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
     avatarurl = "images/avatar.jpg"
+    #logo will be shown instead of title in header
+    #logourl = "images/logotype-a.png"
+
     #gravatar = "john.doe@example.com"
     footercontent = "Enter a text here."
 
