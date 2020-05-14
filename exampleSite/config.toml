@@ -41,7 +41,7 @@ disqusShortname = "yourdiscussshortname"
     # "auto" (use preference set by browser)
     # "dark" (dark background, light foreground)
     # "light" (light background, dark foreground) (default)
-    colorscheme = "auto"
+    colorscheme = "light"
 
     # Series see also post count
     maxSeeAlsoItems = 5
