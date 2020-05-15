@@ -87,10 +87,6 @@
       line-height: 6.0rem;
       color: $fg-color;
       cursor: pointer;
-      &:hover,
-      &:focus {
-        color: $link-color
-      }
     }
   }
 }
