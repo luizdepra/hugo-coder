@@ -1,12 +1,17 @@
 <section class="container centered">
   <div class="about">
-    {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
+    {{ if (isset .Site.Params "gravatar") }}
+      {{ with .Site.Params.gravatar }}
+        <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
+      {{ end }}
+    {{ else if (isset .Site.Params "avatarurl") }}
       {{ with .Site.Params.avatarurl }}
         <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
       {{ end }}
-    {{ end }}
-    {{ with .Site.Params.gravatar }}
-      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
+    {{ else if (isset .Site.Params "gravatarmd5") }}
+      {{ with .Site.Params.gravatarmd5 }}
+        <div class="avatar"><img src="https://www.gravatar.com/avatar/{{ . }}?s=240&d=mp" alt="gravatar"></div>
+      {{ end }}
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
     <h2>{{ .Site.Params.info }}</h2>

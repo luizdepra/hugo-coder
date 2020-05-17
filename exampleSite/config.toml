@@ -20,8 +20,19 @@ disqusShortname = "yourdiscussshortname"
     description = "John Doe's personal website"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
+    
+    # Specify the image on the home page
+    # if nothing is specified then nothing is shown
+    # otherwise an image is chosen in the order:
+    # gravatar > avatarurl > gravatarmd5
+    # avatarurl is a locally hosted image
     avatarurl = "images/avatar.jpg"
+    # gravatar is the email address you use for gravatar
     #gravatar = "john.doe@example.com"
+    # gravatarmd5 is the MD5 hash of your gravatar email
+    # use this if you don't want to put your email address in git 
+    #gravatarmd5 = "8eb1b522f60d11fa897de1dc6351b7e8"
+
     footercontent = "Enter a text here."
 
     dateformat = "January 2, 2006"
