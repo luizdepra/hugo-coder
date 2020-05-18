@@ -66,3 +66,4 @@
 - [Clément Pannetier](https://clementpannetier.dev)
 - [FantasticMao](https://github.com/FantasticMao)
 - [Utkarsh Gupta](https://utkarsh2102.com)
+- [Latiif Alsharif](https://latiif.se)
