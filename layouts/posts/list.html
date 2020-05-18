@@ -3,7 +3,13 @@
 {{ end }}
 {{ define "content" }}
   <section class="container list">
-    <h1 class="title">{{ .Title }}</h1>
+    <h1 class="title">
+      {{- if i18n .Title}}
+        {{- i18n .Title }}
+      {{ else }}
+        {{- .Title }}
+      {{ end }}
+    </h1>
 
     <ul>
       {{- range .Paginator.Pages -}}
