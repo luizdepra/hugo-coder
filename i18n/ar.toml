@@ -1,0 +1,23 @@
+[category]
+other = "فئة"
+
+[tag]
+other = "وَسم"
+
+[series]
+other = "سلسلة"
+
+[reading_time]
+other = "تستغرق {{ .Count }} د"
+
+[page_not_found]
+other = "الصفحة غير موجودة"
+
+[page_does_not_exist]
+other = "هذه الصفحة غير موجودة"
+
+[head_back]
+other = "بإمكانك العودة إلى <a href=\"{{ . }}\">homepage</a>."
+
+[powered_by]
+other = "بواسطة"
