@@ -5,8 +5,8 @@
   <section class="container post">
     <article>
       <header>
-        {{ if .Params.featured_image }}
-          <img src='{{ .Params.cover_image }}' alt="Cover image"/>
+        {{ with .Params.cover_image }}
+          <img src='{{ . }}' alt="Cover image"/>
         {{ end }}
         
         <div class="post-title">
