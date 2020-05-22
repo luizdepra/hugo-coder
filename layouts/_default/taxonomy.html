@@ -8,11 +8,10 @@
 {{ define "content" }}
   <section class="container list">
     <h1>Content(s) with the {{ .Data.Singular }} "{{ .Data.Term }}"</h1>
-    <!-- <h1>{{ i18n "taxonomytext" . }}</h1> -->
+    
     <ul>
       {{ range .Pages.GroupBy "Section" }}
         <h2>{{ .Key | humanize }}</h2>
-        <!-- <h2>{{ i18n .Key | title }}</h2> -->
         
         {{ if eq .Key "posts" }}
           <ul>
