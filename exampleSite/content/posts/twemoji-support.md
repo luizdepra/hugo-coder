@@ -5,7 +5,7 @@ description = "The post demonstrates Twemooji support"
 series = ["Theme", "Hugo"]
 +++
 
-If you want to use Twitter's [Twemoji](https://twemoji.twitter.com/) across your website, enable it in your config.toml`
+If you want to use Twitter's [Twemoji](https://twemoji.twitter.com/) across your website, enable it in your `config.toml`
 ```toml
 [params]
   useTwemoji = true
