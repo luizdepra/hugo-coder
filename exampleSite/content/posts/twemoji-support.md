@@ -1,7 +1,7 @@
 +++
 date = "2020-05-25"
 title = "Twemoji Support 🤩"
-description = "The post demonstrates Twemooji support"
+description = "The post demonstrates Twemoji support"
 series = ["Theme", "Hugo"]
 +++
 
