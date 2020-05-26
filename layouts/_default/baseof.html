@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{ if .Site.Params.useTwemoji }}
+{{ if .Site.Params.enableTwemoji }}
   <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
 {{ end }}
 <html lang="{{ .Site.Language.Lang }}">
@@ -96,7 +96,7 @@
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
-        onload="{{ if .Site.Params.useTwemoji }} twemoji.parse(document.body); {{ end }}"
+        onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
   >
     <main class="wrapper">
       {{ partial "header.html" . }}
