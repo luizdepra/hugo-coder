@@ -55,6 +55,12 @@ disqusShortname = "yourdiscussshortname"
     # Custom JS
     custom_js = []
 
+    # Show a summary of each Post in the Posts list
+    showPostSummaryInPostList = false
+
+    # Show the featured image of each Post in the Posts list
+    showFeaturedImageInPostList = true
+
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 [params.fathomAnalytics]
     siteID = "ABCDE"

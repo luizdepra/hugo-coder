@@ -1,4 +1,14 @@
-<li>
-  <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-  <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+<li style="display: flex; flex-direction: row;">
+  <div>
+    <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+  </div>
+  <div>
+    <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+    {{ if and .Params.featured_image .Site.Params.showFeaturedImageInPostList }}
+      <a href="{{ .Params.ExternalLink | default .RelPermalink }}" class="image featured" alt="{{ .Title }}"><img src="{{ index .Params "featured_image" }}"></a>
+    {{ end }}
+    {{ if .Site.Params.showPostSummaryInPostList }}
+      <p>{{ .Summary }}</p>
+    {{ end }}
+  </div>
 </li>
