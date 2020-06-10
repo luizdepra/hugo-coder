@@ -9,6 +9,8 @@ other = "diel"
 
 [reading_time]
 one = "Prečítate si za minútu"
+few = "Prečítate si do {{ .Count }} minút"
+many = "Prečítate si do {{ .Count }} minút"
 other = "Prečítate si do {{ .Count }} minút"
 
 [page_not_found]
