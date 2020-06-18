@@ -1,0 +1,23 @@
+{{ define "title" }}
+  {{- .Title }} · {{ .Site.Title -}}
+{{ end }}
+
+{{ define "content" }}
+  <section class="container list">
+    <h1 class="title">      
+      {{- .Title -}}
+    </h1>
+
+    {{ .Content }}
+
+    {{ $plural_term := .Data.Plural }}
+    <ul>
+      {{ range .Data.Terms.ByCount }}
+        <li>
+          {{ $url := printf "%s/%s" $plural_term .Name | relLangURL }}
+          <a href="{{ $url }}">{{ .Name }}</a> ({{ .Count }} entries)
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
