@@ -1,5 +1,5 @@
-baseurl = "http://www.example.com"
-title = "johndoe"
+baseurl = "http://www.tombilske.com"
+title = "Tom Bilske"
 
 theme = "hugo-coder"
 
@@ -17,18 +17,18 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Tom Bilske"
-    description = "John Doe's personal website"
+    description = "A product manager who cares about experience"
     keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
-    avatarurl = "images/avatar.jpg"
+    info = "Product, UX, Experience"
+    #avatarurl = "images/avatar.jpg"
     #gravatar = "john.doe@example.com"
     footercontent = "Enter a text here."
 
     dateformat = "January 2, 2006"
 
-    hideFooter = false
-    hideCredits = false
-    hideCopyright = false
+    hideFooter = true
+    hideCredits = true
+    hideCopyright = true
     since = 2019
 
     # Git Commit in Footer, uncomment the line below to enable it.
