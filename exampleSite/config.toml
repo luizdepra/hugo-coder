@@ -66,28 +66,38 @@ disqusShortname = "yourdiscussshortname"
   series = "series"
   tag = "tags"
 
-
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/johndoe/"
+[[params.social]]
+    name = "Gitlab"
+    icon = "fab fa-gitlab"
+    weight = 2
+    url = "https://gitlab.com/johndoe/"
 [[params.social]]
     name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 1
-    url = "https://twitter.com/tombilske/"
+    icon = "fab fa-twitter"
+    weight = 3
+    url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 2
-    url = "https://www.linkedin.com/in/tombilske/"
+    icon = "fab fa-linkedin"
+    weight = 4
+    url = "https://www.linkedin.com/in/johndoe/"
 [[params.social]]
     name = "Medium"
-    icon = "fab fa-medium fa-2x"
-    weight = 3
-    url = "https://medium.com/@tombilske"
+    icon = "fab fa-medium"
+    weight = 5
+    url = "https://medium.com/@johndoe"
 [[params.social]]
-    name = "Email"
-    icon = "fab fa-envelope fa-2x"
-    weight = 4
-    url = "mailto:hello@tombilske.com"
-
+    name = "RSS"
+    icon = "fas fa-rss"
+    weight = 6
+    url = "https://myhugosite.com/index.xml"
+    rel = "alternate"
+    type = "application/rss+xml"
 
 
 [languages]
@@ -117,4 +127,35 @@ disqusShortname = "yourdiscussshortname"
             url = "contact/"
 
 
+    [languages.pt-br]
+        languagename = "Português"
+        title = "João Ninguém"
 
+        [languages.pt-br.params]
+            author = "João Ninguém"
+            info = "Full Stack DevOps e Mágico"
+            description = "Sítio pessoal de João Ninguém"
+            keywords = "blog,desenvolvedor,pessoal"
+            footercontent = "Coloque algum texto aqui."
+
+        [languages.pt-br.menu]
+
+            [[languages.pt-br.menu.main]]
+            name = "Sobre"
+            weight = 1
+            url = "about/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Projetos"
+            weight = 3
+            url = "projects/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Contato"
+            weight = 5
+            url = "contact/"
