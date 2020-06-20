@@ -91,23 +91,23 @@ disqusShortname = "yourdiscussshortname"
    
 # Menu Links
     
-[[menu.main]]
-    name = "About"
-    weight = 1
-    url = "about/"
+# [[menu.main]]
+#    name = "About"
+#    weight = 1
+#    url = "about/"
 
-[[menu.main]]
-    name = "Blog"
-    weight = 2
-    url = "posts/"
+# [[menu.main]]
+#    name = "Blog"
+#    weight = 2
+#    url = "posts/"
 
-[[menu.main]]
-    name = "Projects"
-    weight = 3
-    url = "projects/"
+# [[menu.main]]
+#    name = "Projects"
+#    weight = 3
+#    url = "projects/"
 
-[[menu.main]]
-    name = "Contact me"
-    weight = 5
-    url = "contact/"
+# [[menu.main]]
+#    name = "Contact me"
+#    weight = 5
+#    url = "contact/"
 
