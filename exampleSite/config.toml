@@ -20,7 +20,7 @@ disqusShortname = "yourdiscussshortname"
     description = "A product manager who cares about experience"
     keywords = "blog,developer,personal"
     info = "Product, UX, Experience"
-    #avatarurl = "images/avatar.jpg"
+    avatarurl = "images/profile.jpeg"
     #gravatar = "john.doe@example.com"
     footercontent = "Enter a text here."
 
