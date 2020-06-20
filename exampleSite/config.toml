@@ -83,8 +83,8 @@ disqusShortname = "yourdiscussshortname"
     weight = 3
     url = "https://medium.com/@tombilske"
 [[params.social]]
-    name = "Medium"
-    icon = "fab fa-envelope"
+    name = "Email"
+    icon = "fab fa-medium"
     weight = 4
     url = "mailto:hello@tombilske.com"
 
