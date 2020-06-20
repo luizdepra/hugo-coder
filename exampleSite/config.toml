@@ -66,38 +66,28 @@ disqusShortname = "yourdiscussshortname"
   series = "series"
   tag = "tags"
 
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/johndoe/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab"
-    weight = 2
-    url = "https://gitlab.com/johndoe/"
+
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
+    weight = 1
+    url = "https://twitter.com/tombilske/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
-    weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
+    weight = 2
+    url = "https://www.linkedin.com/in/tombilske/"
 [[params.social]]
     name = "Medium"
     icon = "fab fa-medium"
-    weight = 5
-    url = "https://medium.com/@johndoe"
+    weight = 3
+    url = "https://medium.com/@tombilske"
 [[params.social]]
-    name = "RSS"
-    icon = "fas fa-rss"
-    weight = 6
-    url = "https://myhugosite.com/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+    name = "Medium"
+    icon = "fab fa-envelope"
+    weight = 4
+    url = "mailto:hello@tombilske.com"
+
 
 
 [languages]
