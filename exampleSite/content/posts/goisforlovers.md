@@ -339,6 +339,5 @@ so, such as in this example:
 </nav>
 ```
 
-
 [go]: <http://golang.org/>
 [gohtmltemplate]: <http://golang.org/pkg/html/template/>
