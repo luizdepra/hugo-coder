@@ -55,6 +55,11 @@
         margin-right: 1.0rem;
       }
     }
+    .separator {
+      @media only screen and (max-width : 768px) {
+        display: none;
+      }
+    }
     .menu-separator {
       @media only screen and (max-width : 768px) {
         border-top: 2px solid $fg-color;
@@ -63,6 +68,18 @@
           display: none;
         }
       }
+    }
+  }
+  #dark-mode-toggle {
+    margin-top: 6px;
+    display: block;
+    cursor: pointer;
+    svg {
+      fill: currentColor;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-left: 10px;
+      margin-top: 3px;
     }
   }
   #menu-toggle {

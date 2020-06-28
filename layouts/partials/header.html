@@ -4,6 +4,13 @@
       {{ .Site.Title }}
     </a>
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
+    <span id="dark-mode-toggle" class="menu-button float-right">
+      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+              3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+              13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+      </svg>
+    </span>
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
@@ -31,6 +38,9 @@
           {{ end }}
         {{ end }}
       {{ end }}
+      <li class="navigation-item separator">
+        <span>|</span>
+      </li>
     </ul>
     {{ end }}
   </section>
