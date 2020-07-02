@@ -68,3 +68,5 @@
 - [Utkarsh Gupta](https://utkarsh2102.com)
 - [Latiif Alsharif](https://latiif.se)
 - [Endormi](https://endormi.io)
+- [Rajiv Ranjan Singh](https://iamrajiv.github.io/)
+
