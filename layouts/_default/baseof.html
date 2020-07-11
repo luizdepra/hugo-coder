@@ -89,8 +89,14 @@
 
     {{ hugo.Generator }}
   </head>
-
-  <body class="{{ if .Site.Params.rtl }} rtl{{ end }}"
+  
+  {{ $csClass := "colorscheme-light" }}
+  {{ if eq .Site.Params.colorscheme "dark" }}
+    {{ $csClass = "colorscheme-dark" }}
+  {{ else if eq .Site.Params.colorscheme "auto" }}
+    {{ $csClass = "colorscheme-auto" }}
+  {{ end }}
+  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
         onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
   >
     <main class="wrapper">
@@ -102,6 +108,14 @@
 
       {{ partial "footer.html" . }}
     </main>
+
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/dark-mode.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ end }}
 
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
