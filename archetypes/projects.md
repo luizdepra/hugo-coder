@@ -1,6 +1,5 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
-dates = ""
 description = ""
 cover_image = ""
 featured_image = ""

@@ -1,6 +1,5 @@
 +++
 title = "Hugo Coder"
-dates = "2018 - 2020"
 description = "My Hugo template project: Hugo Coder, a simple and clean blog theme for hugo."
 cover_image = "/images/hugo-coder-cover.png"
 featured_image = "/images/hugo-coder-featured.png"

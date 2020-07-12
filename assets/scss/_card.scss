@@ -14,14 +14,6 @@
 
   li:nth-child(odd):last-child { margin-bottom: 0; }
 
-  .card-small {
-    padding: 2rem;
-
-    background-color: $bg-color;
-    border: 1px solid $alt-bg-color;
-    border-radius: 1.5rem;
-  }
-
   .card {
     display: inline-flex;
   
