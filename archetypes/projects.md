@@ -4,7 +4,7 @@ description = ""
 cover_image = ""
 featured_image = ""
 summary = ""
-technologies = []
+tags = []
 website = ""
 git_repo = ""
 +++
