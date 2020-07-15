@@ -46,6 +46,9 @@
       }
     }
   }
+  .back-button{
+    color: $fg-color-dark !important;
+  }
 }
 
 body.colorscheme-dark {
@@ -57,3 +60,5 @@ body.colorscheme-auto {
     @include content_dark();
   }
 }
+
+
