@@ -13,27 +13,16 @@
       {{ range .Pages.GroupBy "Section" }}
         <h2>{{ .Key | humanize }}</h2>
         
-        {{ if eq .Key "posts" }}
-          <ul>
-            {{ range .Pages }}
-              <li>
-                <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-                <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        {{ else }}
-          <ul class="card-list">
-            {{ range .Pages }}
-              <li>
-                <div class="card-small">
-                  <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
-                  {{ with .Page.Params.dates }}<p>{{ . }}</p>{{ end }}
-                </div>
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
+        <ul>
+          {{ range .Pages }}
+            <li>
+              {{ with .Date }}
+                <span class="date">{{ .Format ($.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+              {{ end }}
+              <a class="{{ with not .Date }}nodate{{ end }} title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
       {{ end }}
     </ul>
   </section>

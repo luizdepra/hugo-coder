@@ -92,6 +92,12 @@
           text-align: left;
         }
       }
+      .nodate.title {
+        margin-left: 3.0rem;
+        @media only screen and (max-width : 768px) {
+          margin-left: 0;
+        }
+      }
       .title {
         font-size: 1.8rem;
         color: $fg-color;

@@ -1,11 +1,10 @@
 +++
 title = "Hugo Coder"
-dates = "2018 - 2020"
 description = "My Hugo template project: Hugo Coder, a simple and clean blog theme for hugo."
 cover_image = "/images/hugo-coder-cover.png"
 featured_image = "/images/hugo-coder-featured.png"
 summary = "Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi natus omnis nulla quibusdam? Sint ea reprehenderit voluptatum, excepturi ipsa iste aliquam ullam nesciunt dolore exercitationem velit, ab incidunt soluta!"
-tags = ["Hugo"]
+tags = ["Hugo", "go", "themes"]
 website = "https://themes.gohugo.io/theme/hugo-coder"
 git_repo = "https://github.com/luizdepra/hugo-coder"
 +++

@@ -2,14 +2,10 @@
   <div class="card">
     <img class="card-image" src="{{ with .Params.featured_image }} {{ . }} {{ end }}" alt="{{ .Title }}">
     <div class="card-tags">
-      {{ with .Page.Params.Tags }}
-        {{ range $index, $el := . }}
-          <a class="card-tag {{ trim (lower .) "!/" }}" href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
-        {{ end }}
-      {{ end }}
+      {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
     </div>
     <div class="card-body">
-      <h4 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+      <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       <p class="card-text">{{ .Summary }}</p>
     </div>
     <div class="card-footer">
