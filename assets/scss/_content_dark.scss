@@ -32,6 +32,9 @@
       }
     }
   }
+  .back-button{
+    color: $fg-color-dark !important;
+  }
 
 }
 
@@ -44,3 +47,5 @@ body.colorscheme-auto {
     @include content_dark()
   }
 }
+
+
