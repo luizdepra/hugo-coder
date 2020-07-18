@@ -49,8 +49,17 @@ disqusShortname = "yourdiscussshortname"
     # Enable Twemoji
     enableTwemoji = true
 
+    # Remote font and css
+    use_default_remote_font = true
+    use_default_remote_css  = true
+
     # Custom CSS
-    custom_css = []
+    custom_css_pre  = []
+    custom_css_post = []
+
+    # Custom SCSS
+    custom_scss_pre  = []
+    custom_scss_post = []
 
     # Custom JS
     custom_js = []

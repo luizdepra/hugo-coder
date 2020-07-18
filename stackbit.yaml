@@ -76,8 +76,18 @@ models:
             name: colorscheme
           - type: number
             name: maxSeeAlsoItems
+          - type: boolean
+            name: use_default_remote_font
+          - type: boolean
+            name: use_default_remote_css
           - type: list
-            name: custom_css
+            name: custom_css_pre
+          - type: list
+            name: custom_css_post
+          - type: list
+            name: custom_scss_pre
+          - type: list
+            name: custom_scss_post
           - type: list
             name: custom_js
           - type: list
