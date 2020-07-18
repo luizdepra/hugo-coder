@@ -55,6 +55,8 @@ models:
           - type: string
             name: info
           - type: string
+            name: navtitle
+          - type: string
             name: avatarurl
           - type: boolean
             name: hideFooter
