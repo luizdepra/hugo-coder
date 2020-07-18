@@ -80,6 +80,19 @@ models:
             name: custom_css
           - type: list
             name: custom_js
+          - type: object
+            name: favicons
+            label: Favicons
+            description: Site Favicons
+            fields:
+              - type: string
+                name: rel
+              - type: string
+                name: type
+              - type: string
+                name: href
+              - type: string
+                name: sizes
           - type: list
             name: social
             label: Social Media Icons
