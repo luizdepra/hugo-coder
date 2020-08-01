@@ -1,0 +1,24 @@
+[category]
+other = "Categorie"
+
+[tag]
+other = "Label"
+
+[series]
+other = "Serie"
+
+[reading_time]
+one = "Een minuut leestijd"
+other = "{{ .Count }} minuten leestijd"
+
+[page_not_found]
+other = "Pagina niet gevonden"
+
+[page_does_not_exist]
+other = "Sorry, deze pagina bestaat niet."
+
+[head_back]
+other = "U kunt terugkeren naar de <a href=\"{{ . }}\">thuispagina</a>."
+
+[powered_by]
+other = "Aangedreven door"

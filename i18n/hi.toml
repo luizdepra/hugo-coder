@@ -1,0 +1,24 @@
+[category]
+other = "श्रेणी"
+
+[tag]
+other = "टैग"
+
+[series]
+other = "श्रृंखला"
+
+[reading_time]
+one = "एक पढ़ने का समय"
+other = "{{ .Count }} पढ़ने का समय"
+
+[page_not_found]
+other = "पृष्ठ नहीं मिला"
+
+[page_does_not_exist]
+other = "क्षमा करें, यह पृष्ठ मौजूद नहीं है।"
+
+[head_back]
+other = "आप वापस आ सकते हैं <a href=\"{{ . }}\">मुखपृष्ठ</a>."
+
+[powered_by]
+other = "द्वारा संचालित"

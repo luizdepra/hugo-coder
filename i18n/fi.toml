@@ -1,0 +1,23 @@
+[category]
+other = "kategoria"
+
+[tag]
+other = "merkki"
+
+[series]
+other = "sarja"
+
+[reading_time]
+other = "{{ .Count }}-minuuttia"
+
+[page_not_found]
+other = "Sivua ei löydetty"
+
+[page_does_not_exist]
+other = "Valitettavasti tätä sivua ei ole olemassa."
+
+[head_back]
+other = "Voit palata takaisin <a href=\"{{ . }}\">kotisivulle</a>."
+
+[powered_by]
+other = "Tarjoaa"

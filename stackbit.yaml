@@ -56,6 +56,8 @@ models:
             name: info
           - type: string
             name: avatarurl
+          - type: boolean
+            name: hideFooter
           - type: string
             name: footercontent
           - type: string
@@ -64,6 +66,8 @@ models:
             name: hideCredits
           - type: boolean
             name: hideCopyright
+          - type: number
+            name: since
           - type: string
             name: commit
           - type: boolean
@@ -94,6 +98,22 @@ models:
                 - type: string
                   name: url
                   label: URL
+                - type: string
+                  name: rel
+                  label: Rel
+                - type: string
+                  name: type
+                  label: Type
+          - type: object
+            name: fathomAnalytics
+            label: Fathom Analytics (optional)
+            fields:
+              - type: string
+                name: siteID
+                label: ID for Fathom Analytics
+              - type: string
+                name: serverURL
+                label: URL for Fathom Analytics
       - type: object
         name: languages
         fields:
@@ -164,6 +184,18 @@ models:
         name: images
         items:
           type: string
+      - type: image
+        name: featured_image
+        label: Featured Image
+        description: Image featured in post display
+  snippets:
+    type: page
+    label: Snippets
+    folder: snippets
+    fields:
+      - type: string
+        name: title
+        label: Title
   language_config:
     type: object
     label: Language Config
@@ -185,6 +217,8 @@ models:
             name: keywords
           - type: string
             name: footercontent
+          - type: number
+            name: since
       - type: object
         label: Menu
         name: menu

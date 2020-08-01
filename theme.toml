@@ -19,7 +19,7 @@ features = [
   "single-column",
   "syntax-highlighting"
 ]
-min_version = "0.54"
+min_version = "0.73.0"
 
 [author]
   name = "Luiz F. A. de Prá"
