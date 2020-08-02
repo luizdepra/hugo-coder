@@ -8,7 +8,6 @@ if (localStorage.getItem("colorscheme")) {
 } else if (body.classList.contains('colorscheme-light') || body.classList.contains('colorscheme-dark')) {
   setTheme(body.classList.contains("colorscheme-dark") ? "dark" : "light");
 } else {
-  body.classList.remove('colorscheme-auto');
   setTheme(darkModeMediaQuery.matches ? "dark" : "light");
 }
 
@@ -21,13 +20,9 @@ darkModeMediaQuery.addListener((event) => {
 });
 
 function setTheme(theme) {
-  if (theme === "dark") {
-    localStorage.setItem("colorscheme", "dark");
-    body.classList.remove('colorscheme-light');
-    body.classList.add('colorscheme-dark');
-  } else {
-    localStorage.setItem("colorscheme", "light");
-    body.classList.remove('colorscheme-dark');
-    body.classList.add('colorscheme-light');
-  }
+  body.classList.remove('colorscheme-auto');
+  inverse = theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('colorscheme', theme);
+  body.classList.remove('colorscheme-' + inverse);
+  body.classList.add('colorscheme-' + theme);
 }
