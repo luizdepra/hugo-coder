@@ -119,6 +119,10 @@
       {{- partial "analytics/fathom" . -}}
     {{ end }}
 
+    {{ if and .Site.Params.plausibleAnalytics .Site.Params.plausibleAnalytics.domain }}
+      {{- partial "analytics/plausible" . -}}
+    {{ end }}
+
   </body>
 
 </html>
