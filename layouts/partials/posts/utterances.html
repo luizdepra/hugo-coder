@@ -3,6 +3,7 @@
   <script src="https://utteranc.es/client.js"
     repo= "{{ .Site.Params.utterances.repo }}"
     issue-term="{{ default "title" .Site.Params.utterances.issueTerm }}"
+    {{ if isset .Site.Params.utterances "label" }}label="{{ .Site.Params.utterances.label }}"{{ end }}
     theme="{{ default "github-light" .Site.Params.utterances.theme }}"
     crossorigin="anonymous"
     async>
