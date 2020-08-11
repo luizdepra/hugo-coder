@@ -55,6 +55,11 @@
         margin-right: 1.0rem;
       }
     }
+    .separator {
+      @media only screen and (max-width : 768px) {
+        display: none;
+      }
+    }
     .menu-separator {
       @media only screen and (max-width : 768px) {
         border-top: 2px solid $fg-color;
@@ -65,10 +70,15 @@
       }
     }
   }
+  #dark-mode-toggle {
+    margin: 1.7rem 0;
+    font-size: 2.4rem;
+    line-height: inherit;
+  }
   #menu-toggle {
     display: none;
     @media only screen and (max-width : 768px) {
-      &:checked + label {
+      &:checked + label > i {
         color: $alt-bg-color;
       }
       &:checked + label + ul {
@@ -82,15 +92,17 @@
     display: none;
     @media only screen and (max-width : 768px) {
       display: block;
+      margin: 1.8rem 0;
       font-size: 2.4rem;
       font-weight: 400;
-      line-height: 6.0rem;
-      color: $fg-color;
-      cursor: pointer;
-      &:hover,
-      &:focus {
-        color: $link-color
-      }
+    }
+  }
+  i {
+    color: $fg-color;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: $link-color;
     }
   }
 }

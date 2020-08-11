@@ -4,34 +4,42 @@
       {{ .Site.Title }}
     </a>
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      {{ with .Site.Menus.main}}
-        {{ range sort . }}
-          <li class="navigation-item">
-            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-          </li>
-        {{ end }}
-      {{ end }}
-      {{ if .Site.IsMultiLingual }}
-        {{ $node := . }}
-        {{ .Scratch.Set "separator" true }}
-        {{ range (default .Site.Home.AllTranslations .Translations) }}
-          {{ if ne $.Site.Language .Language }}
-            {{ if $node.Scratch.Get "separator" }}
-              <li class="navigation-item menu-separator">
-                <span>|</span>
-              </li>
-              {{ $node.Scratch.Set "separator" false }}
-            {{ end }}
+      <span id="dark-mode-toggle" class="float-right">
+        <i class="fas fa-adjust fa-fw"></i>
+      </span>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fas fa-bars fa-fw"></i>
+      </label>
+      <ul class="navigation-list">
+        {{ with .Site.Menus.main}}
+          {{ range sort . }}
             <li class="navigation-item">
-              <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+              <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
-      {{ end }}
-    </ul>
+        {{ if .Site.IsMultiLingual }}
+          {{ $node := . }}
+          {{ .Scratch.Set "separator" true }}
+          {{ range (default .Site.Home.AllTranslations .Translations) }}
+            {{ if ne $.Site.Language .Language }}
+              {{ if $node.Scratch.Get "separator" }}
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                {{ $node.Scratch.Set "separator" false }}
+              {{ end }}
+              <li class="navigation-item">
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        <li class="navigation-item separator">
+          <span>|</span>
+        </li>
+      </ul>
     {{ end }}
   </section>
 </nav>
