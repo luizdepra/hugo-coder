@@ -89,7 +89,7 @@
 
     {{ hugo.Generator }}
   </head>
-
+  
   {{ $csClass := "colorscheme-light" }}
   {{ if eq .Site.Params.colorscheme "dark" }}
     {{ $csClass = "colorscheme-dark" }}
@@ -108,6 +108,14 @@
 
       {{ partial "footer.html" . }}
     </main>
+
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/dark-mode.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ end }}
 
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
