@@ -71,4 +71,5 @@
 - [Endormi](https://endormi.io)
 - [Rajiv Ranjan Singh](https://iamrajiv.github.io/)
 - [Pakhomov Alexander](https://github.com/PakhomovAlexander)
+- [Rhys Perry](https://rhysperry.com)
 - [Arunvel Sriram](https://github.com/arunvelsriram)

@@ -114,6 +114,16 @@ models:
               - type: string
                 name: serverURL
                 label: URL for Fathom Analytics
+          - type: object
+            name: plausibleAnalytics
+            label: Plausible Analytics (optional)
+            fields:
+              - type: string
+                name: domain
+                label: Website domain for Plausible Analytics
+              - type: string
+                name: serverURL
+                label: URL for Plausible Analytics
       - type: object
         name: languages
         fields:
