@@ -10,6 +10,7 @@
 - [Jiri Hubacek](https://github.com/qeef)
 - [Khosrow Moossavi](https://github.com/khos2ow)
 - [Maikel](https://github.com/mbollemeijer)
+- [MetBril](https://github.com/metbril)
 - [Myles Johnson](https://github.com/MylesJohnson)
 - [Niels Reijn](https://github.com/reijnn)
 - [Padraic Renaghan](https://github.com/prenagha)
@@ -70,3 +71,5 @@
 - [Endormi](https://endormi.io)
 - [Rajiv Ranjan Singh](https://iamrajiv.github.io/)
 - [Pakhomov Alexander](https://github.com/PakhomovAlexander)
+- [Rhys Perry](https://rhysperry.com)
+- [Arunvel Sriram](https://github.com/arunvelsriram)

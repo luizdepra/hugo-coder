@@ -89,7 +89,7 @@
 
     {{ hugo.Generator }}
   </head>
-
+  
   {{ $csClass := "colorscheme-light" }}
   {{ if eq .Site.Params.colorscheme "dark" }}
     {{ $csClass = "colorscheme-dark" }}
@@ -109,6 +109,14 @@
       {{ partial "footer.html" . }}
     </main>
 
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/dark-mode.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ end }}
+
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
@@ -117,6 +125,10 @@
 
     {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
       {{- partial "analytics/fathom" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.plausibleAnalytics .Site.Params.plausibleAnalytics.domain }}
+      {{- partial "analytics/plausible" . -}}
     {{ end }}
 
   </body>
