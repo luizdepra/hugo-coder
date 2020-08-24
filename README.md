@@ -4,6 +4,10 @@ A simple and clean blog theme for [Hugo](https://gohugo.io/).
 
 ![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
 
+## Live Demo
+
+See [here](https://hugo-coder.netlify.app/).
+
 ## Quick Start
 
 1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder`.
@@ -29,6 +33,6 @@ This theme is maintained by its author [Luiz de Prá](https://github.com/luizdep
 
 ## Stackbit
 
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/luizdepra/hugo-coder)
