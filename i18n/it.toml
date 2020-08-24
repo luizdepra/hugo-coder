@@ -22,3 +22,6 @@ other = "Torna alla <a href=\"{{ . }}\">homepage</a>."
 
 [powered_by]
 other = "Generato da"
+
+[see_also]
+other = "Vedi anche in"
