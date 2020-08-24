@@ -73,3 +73,4 @@
 - [Pakhomov Alexander](https://github.com/PakhomovAlexander)
 - [Rhys Perry](https://rhysperry.com)
 - [Arunvel Sriram](https://github.com/arunvelsriram)
+- [Lorenzo Cameroni](https://github.com/came88)
