@@ -18,6 +18,12 @@ See [here](https://hugo-coder.netlify.app/).
 
 * [Multilingual Mode](https://github.com/luizdepra/hugo-coder/wiki/Multilingual-Mode)
 
+## Stackbit
+
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/luizdepra/hugo-coder)
+
 ## License
 
 Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).
@@ -26,13 +32,13 @@ Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-code
 
 This theme is maintained by its author [Luiz de Prá](https://github.com/luizdepra) with the help from these awesome [contributors](CONTRIBUTORS.md).
 
+## Sponsoring
+
+If you like my project or it was useful for you, consider supporting its development. Just:
+
+<a href="https://www.buymeacoffee.com/luizdepra" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 ## Special Thanks
 
 - Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
 - All contributors, for every PR and Issue reported.
-
-## Stackbit
-
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
-
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/luizdepra/hugo-coder)
