@@ -75,3 +75,4 @@
 - [Arunvel Sriram](https://github.com/arunvelsriram)
 - [Lorenzo Cameroni](https://github.com/came88)
 - [Jared Sturdy](https://github.com/jsturdy)
+- [Daniel Monteiro](https://github.com/dfamonteiro)
