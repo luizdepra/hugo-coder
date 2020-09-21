@@ -79,9 +79,6 @@
     padding: 0;
     li {
       font-size: 1.8rem;
-      @media only screen and (min-width : 768.1px) {
-        display: flex;
-      }
       @media only screen and (max-width : 768px) {
         margin: 1.6rem 0 1.6rem 0;
       }
@@ -106,6 +103,13 @@
         &:focus {
           color: $link-color
         }
+      }
+    }
+  }
+  ul:not(.pagination) {
+    li {
+      @media only screen and (min-width : 768.1px) {
+        display: flex;
       }
     }
   }
