@@ -15,7 +15,7 @@
         {{ with .Site.Menus.main}}
           {{ range sort . }}
             <li class="navigation-item">
-              <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              <a class="navigation-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
