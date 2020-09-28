@@ -11,13 +11,13 @@
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fas fa-calendar"></i>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
                 {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
               </time>
             </span>
             <span class="reading-time">
-              <i class="fas fa-clock"></i>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
               {{ i18n "reading_time" .ReadingTime }}
             </span>
           </div>
