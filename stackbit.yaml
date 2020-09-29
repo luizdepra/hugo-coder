@@ -66,6 +66,8 @@ models:
             name: hideCredits
           - type: boolean
             name: hideCopyright
+          - type: boolean
+            name: hidecolorschemetoggle
           - type: number
             name: since
           - type: string
