@@ -1,0 +1,27 @@
+[category]
+other = "kategori"
+
+[tag]
+other = "teg"
+
+[series]
+other = "siri"
+
+[reading_time]
+one = "Bacaan 1 minit"
+other = "Bacaan {{ .Count }} minit"
+
+[page_not_found]
+other = "Halaman Tidak Dijumpai"
+
+[page_does_not_exist]
+other = "Maaf, halaman ini tidak wujud."
+
+[head_back]
+other = "Kembali ke <a href=\"{{ . }}\">halaman utama</a>."
+
+[powered_by]
+other = "Dikuasakan oleh"
+
+[see_also]
+other = "Lihat juga"
