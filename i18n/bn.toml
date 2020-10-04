@@ -1,0 +1,30 @@
+[category]
+other = "বিভাগ"
+
+[tag]
+other = "ট্যাগ"
+
+[series]
+other = "সারি"
+
+[reading_time]
+one = "পড়তে এক মিনিট লাগবে"
+other = "পড়তে {{ .Count }} মিনিট লাগবে"
+
+[page_not_found]
+other = "কাঙ্ক্ষিত পাতাটি পাওয়া যায় নি"
+
+[page_does_not_exist]
+other = "দুঃখিত, পাতাটির অস্তিত্ব নেই"
+
+[head_back]
+other = "আপনি <a href=\"{{ . }}\">মূল পাতায় </a> ফিরে যেতে পারেন"
+
+[powered_by]
+other = "চালনায়"
+
+[see_also]
+other = "আরও দেখুন"
+
+[posts]
+other = "সব পোস্ট"
