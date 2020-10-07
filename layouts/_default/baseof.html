@@ -131,6 +131,9 @@
       {{- partial "analytics/plausible" . -}}
     {{ end }}
 
+    {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
+      {{- partial "analytics/goatcounter" . -}}
+    {{ end }}
   </body>
 
 </html>
