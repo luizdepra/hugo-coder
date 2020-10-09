@@ -8,7 +8,8 @@ other = "merkki"
 other = "sarja"
 
 [reading_time]
-other = "{{ .Count }}-minuuttia"
+one = "Yksi lukuminuutti"
+other = "{{ .Count }} lukuminuuttia"
 
 [page_not_found]
 other = "Sivua ei löydetty"
