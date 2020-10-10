@@ -7,7 +7,6 @@ languagecode = "en"
 defaultcontentlanguage = "en"
 
 paginate = 20
-canonifyurls = true
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
@@ -43,6 +42,9 @@ disqusShortname = "yourdiscussshortname"
     # "light" (light background, dark foreground) (default)
     colorscheme = "auto"
 
+    # Hide the toggle button, along with the associated vertical divider
+    hidecolorschemetoggle = false
+
     # Series see also post count
     maxSeeAlsoItems = 5
 
@@ -60,12 +62,16 @@ disqusShortname = "yourdiscussshortname"
     siteID = "ABCDE"
     # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
     serverURL = "analytics.example.com"
-    
+
 # If you want to use plausible(https://plausible.io) for analytics, add this section
 [params.plausibleAnalytics]
     domain = "example.com"
     # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
     serverURL = "analytics.example.com"
+
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+[params.goatCounter]
+    code = "code"
 
 [taxonomies]
   category = "categories"
@@ -74,32 +80,32 @@ disqusShortname = "yourdiscussshortname"
 
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github"
+    icon = "fa fa-github"
     weight = 1
     url = "https://github.com/johndoe/"
 [[params.social]]
     name = "Gitlab"
-    icon = "fab fa-gitlab"
+    icon = "fa fa-gitlab"
     weight = 2
     url = "https://gitlab.com/johndoe/"
 [[params.social]]
     name = "Twitter"
-    icon = "fab fa-twitter"
+    icon = "fa fa-twitter"
     weight = 3
     url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "fa fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/johndoe/"
 [[params.social]]
     name = "Medium"
-    icon = "fab fa-medium"
+    icon = "fa fa-medium"
     weight = 5
     url = "https://medium.com/@johndoe"
 [[params.social]]
     name = "RSS"
-    icon = "fas fa-rss"
+    icon = "fa fa-rss"
     weight = 6
     url = "https://myhugosite.com/index.xml"
     rel = "alternate"

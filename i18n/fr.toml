@@ -23,3 +23,5 @@ other = "Vous pouvez revenir à <a href=\"{{ . }}\">l'accueil</a>."
 [powered_by]
 other = "Propulsé par"
 
+[see_also]
+other = "Voir aussi dans"
