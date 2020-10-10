@@ -52,7 +52,7 @@ disqusShortname = "yourdiscussshortname"
     enableTwemoji = true
 
     # Custom CSS
-    custom_css = []
+    customCSS = []
 
     # Custom JS
     custom_js = []

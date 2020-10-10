@@ -79,7 +79,7 @@ models:
           - type: number
             name: maxSeeAlsoItems
           - type: list
-            name: custom_css
+            name: customCSS
           - type: list
             name: custom_js
           - type: list
