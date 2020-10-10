@@ -55,7 +55,7 @@ disqusShortname = "yourdiscussshortname"
     customCSS = []
 
     # Custom JS
-    custom_js = []
+    customJS = []
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 [params.fathomAnalytics]

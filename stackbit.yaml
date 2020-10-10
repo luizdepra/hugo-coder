@@ -81,7 +81,7 @@ models:
           - type: list
             name: customCSS
           - type: list
-            name: custom_js
+            name: customJS
           - type: list
             name: social
             label: Social Media Icons
