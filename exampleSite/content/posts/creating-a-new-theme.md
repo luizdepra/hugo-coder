@@ -1,10 +1,11 @@
 +++ 
 date = "2014-09-28"
 title = "Creating a New Theme"
-slug = "creating-a-new-theme" 
+slug = "creating-a-new-theme"
 tags = []
 categories = []
 series = ["Theme", "Hugo"]
+authors = ["John Doe"]
 +++
 
 ## Introduction
