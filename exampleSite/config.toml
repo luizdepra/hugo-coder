@@ -54,6 +54,9 @@ disqusShortname = "yourdiscussshortname"
     # Custom CSS
     customCSS = []
 
+    # Custom SCSS
+    customSCSS = []
+
     # Custom JS
     customJS = []
 
@@ -141,6 +144,7 @@ disqusShortname = "yourdiscussshortname"
 
     [languages.pt-br]
         languagename = "Português"
+        languageinitials = "BR"
         title = "João Ninguém"
 
         [languages.pt-br.params]
