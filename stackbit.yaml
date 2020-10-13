@@ -81,6 +81,8 @@ models:
           - type: list
             name: customCSS
           - type: list
+            name: customSCSS
+          - type: list
             name: customJS
           - type: list
             name: social
