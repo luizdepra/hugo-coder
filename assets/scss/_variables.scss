@@ -16,3 +16,38 @@ $fg-color-dark: #dadada !default;
 $alt-bg-color-dark: #424242 !default;
 $alt-fg-color-dark: #dadada !default;
 $link-color-dark: #42a5f5 !default;
+
+// Notice Colors
+$fg-color-notice-title: #FAFAFA !default;
+$fg-color-notice-title-dark: #212121 !default;
+
+
+// Each notice have two background color. One for title and one for contents
+$bg-color-notice-note-title: #6ab0de !default;
+$bg-color-notice-note: #e7f2fa !default;
+
+$bg-color-notice-warning-title: #d9534fe6 !default;
+$bg-color-notice-warning: #fae2e2 !default;
+
+$bg-color-notice-info-title: #f0b37e !default;
+$bg-color-notice-info: #fff2db !default;
+
+$bg-color-notice-tip-title: #5dd45dcc !default;
+$bg-color-notice-tip: #e6f9e6 !default;
+
+
+
+// Notice Colors dark
+$fg-colour-notice-text: #000000;
+
+$bg-color-notice-note-title-dark: #2384c6 !default;
+$bg-color-notice-note-dark: #3498db !default;
+
+$bg-color-notice-warning-title-dark: #d71c16 !default;
+$bg-color-notice-warning-dark: #ee5f5b !default;
+
+$bg-color-notice-info-title-dark: #d4860b !default;
+$bg-color-notice-info-dark: #f39c12 !default;
+
+$bg-color-notice-tip-title-dark: #379337 !default;
+$bg-color-notice-tip-dark: #62c462 !default;

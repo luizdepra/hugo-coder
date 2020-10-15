@@ -1,0 +1,52 @@
+.notice {
+	padding: 1rem;
+	line-height: 2rem;
+	border-radius: 0.5rem;
+	p {
+		&:last-child {
+      margin-bottom: 1.5rem;
+		}
+	}
+}
+
+.notice-title {
+	margin: -1rem -1rem 1rem;
+	padding: 1rem 1rem;
+	border-radius: 0.5rem 0.5rem 0 0;
+	font-weight: 700;
+	font-family: $heading-font-family;
+}
+
+.notice.warning {
+	.notice-title {
+		background: $bg-color-notice-warning-title;
+	}
+	background: $bg-color-notice-warning;
+}
+
+.notice.info {
+	.notice-title {
+		background: $bg-color-notice-info-title;
+	}
+	background: $bg-color-notice-info;
+}
+
+.notice.note {
+	.notice-title {
+		background: $bg-color-notice-note-title;
+	}
+	background: $bg-color-notice-note;
+}
+
+.notice.tip {
+	.notice-title {
+		background: $bg-color-notice-tip-title;
+	}
+	background: $bg-color-notice-tip;
+}
+
+.icon-notice {
+	display: inline-flex;
+	align-self: center;
+	margin-right: 8px;
+}
