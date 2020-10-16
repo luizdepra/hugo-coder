@@ -80,6 +80,7 @@ disqusShortname = "yourdiscussshortname"
   category = "categories"
   series = "series"
   tag = "tags"
+  author = "authors"
 
 [[params.social]]
     name = "Github"
