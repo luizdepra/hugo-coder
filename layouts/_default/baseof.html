@@ -57,11 +57,11 @@
       {{ end }}
     {{ end }}
 
-    {{ range .Site.Params.custom_css }}
+    {{ range .Site.Params.customCSS }}
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
-    {{ range .Site.Params.custom_scss }}
+    {{ range .Site.Params.customSCSS }}
       {{/* We don't change the targetPath to because it's transparent to users */}}
       {{ if $.Site.IsServer }}
         {{ $cssOpts := (dict "enableSourceMap" true ) }}
@@ -117,7 +117,7 @@
       <script src="{{ $script.RelPermalink }}"></script>
     {{ end }}
 
-    {{ range .Site.Params.custom_js }}
+    {{ range .Site.Params.customJS }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
 

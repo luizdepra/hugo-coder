@@ -81,4 +81,5 @@
 - [Rabin Adhikari](https://github.com/rabinadk1/)
 - [Hussaini Zulkifli](https://github.com/hussaini/)
 - [Ellison Leão](https://github.com/ellisonleao)
+- [Lucas de Oliveira](https://github.com/lucas-dOliveira)
 - [earnest ma](https://github.com/earnestma)
