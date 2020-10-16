@@ -84,6 +84,8 @@ models:
             name: customSCSS
           - type: list
             name: customJS
+          - type: boolean
+            name: enableTwemoji
           - type: list
             name: social
             label: Social Media Icons
@@ -128,6 +130,13 @@ models:
               - type: string
                 name: serverURL
                 label: URL for Plausible Analytics
+          - type: object
+            name: goatCounter
+            label: Goat Counter (optional)
+            fields:
+              - type: string
+                name: code
+                label: URL for Goat Counter
       - type: object
         name: languages
         fields:
