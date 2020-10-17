@@ -53,3 +53,13 @@
     margin-right: 8px;
   }
 }
+
+body.colorscheme-dark {
+  @include notices_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include notices_dark()
+  }
+}

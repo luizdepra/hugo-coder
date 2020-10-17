@@ -7,8 +7,7 @@
 }
 
 body.colorscheme-dark {
-  @include footer_dark();
-  @include notices_dark()
+  @include footer_dark()
 }
 
 body.colorscheme-auto {
