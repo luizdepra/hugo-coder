@@ -109,12 +109,14 @@
       {{ partial "footer.html" . }}
     </main>
 
-    {{ if .Site.IsServer }}
-      {{ $script := resources.Get "js/dark-mode.js" }}
-      <script src="{{ $script.RelPermalink }}"></script>
-    {{ else }}
-      {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
-      <script src="{{ $script.RelPermalink }}"></script>
+    {{ if not .Site.Params.hidecolorschemetoggle }}
+      {{ if .Site.IsServer }}
+        {{ $script := resources.Get "js/dark-mode.js" }}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{ else }}
+        {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{ end }}
     {{ end }}
 
     {{ range .Site.Params.customJS }}
