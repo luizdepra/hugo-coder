@@ -96,6 +96,12 @@
       font-size: 2.4rem;
       font-weight: 400;
     }
+
+    i {
+      &:hover, &:focus {
+        color: $alt-fg-color;
+      }
+    }
   }
   i {
     color: $fg-color;

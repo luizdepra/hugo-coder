@@ -37,6 +37,13 @@
         color: $link-color-dark;
       }
     }
+    .menu-button {
+      i {
+        &:hover, &:focus {
+          color: $alt-fg-color-dark;
+        }
+      }
+    }
   }
 
 }
