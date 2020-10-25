@@ -217,3 +217,11 @@ img.emoji {
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
 }
+
+#dark-mode-toggle {
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 100;
+  position: fixed;
+  font-size: 1.6em;
+}
