@@ -7,6 +7,9 @@ other = "tag"
 [series]
 other = "series"
 
+[author]
+other = "author"
+
 [reading_time]
 one = "One-minute read"
 other = "{{ .Count }}-minute read"

@@ -14,6 +14,7 @@ categories = [
     "golang",
 ]
 series = ["Getting Started", "Hugo"]
+authors = ["Jane Smith"]
 +++
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
