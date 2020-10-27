@@ -57,11 +57,11 @@
       {{ end }}
     {{ end }}
 
-    {{ range .Site.Params.custom_css }}
+    {{ range .Site.Params.customCSS }}
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
-    {{ range .Site.Params.custom_scss }}
+    {{ range .Site.Params.customSCSS }}
       {{/* We don't change the targetPath to because it's transparent to users */}}
       {{ if $.Site.IsServer }}
         {{ $cssOpts := (dict "enableSourceMap" true ) }}
@@ -109,15 +109,17 @@
       {{ partial "footer.html" . }}
     </main>
 
-    {{ if .Site.IsServer }}
-      {{ $script := resources.Get "js/dark-mode.js" }}
-      <script src="{{ $script.RelPermalink }}"></script>
-    {{ else }}
-      {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
-      <script src="{{ $script.RelPermalink }}"></script>
+    {{ if not .Site.Params.hidecolorschemetoggle }}
+      {{ if .Site.IsServer }}
+        {{ $script := resources.Get "js/dark-mode.js" }}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{ else }}
+        {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{ end }}
     {{ end }}
 
-    {{ range .Site.Params.custom_js }}
+    {{ range .Site.Params.customJS }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
 
@@ -131,6 +133,9 @@
       {{- partial "analytics/plausible" . -}}
     {{ end }}
 
+    {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
+      {{- partial "analytics/goatcounter" . -}}
+    {{ end }}
   </body>
 
 </html>

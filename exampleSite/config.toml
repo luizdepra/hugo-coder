@@ -52,27 +52,35 @@ disqusShortname = "yourdiscussshortname"
     enableTwemoji = true
 
     # Custom CSS
-    custom_css = []
+    customCSS = []
+
+    # Custom SCSS
+    customSCSS = []
 
     # Custom JS
-    custom_js = []
+    customJS = []
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 [params.fathomAnalytics]
     siteID = "ABCDE"
     # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
     serverURL = "analytics.example.com"
-    
+
 # If you want to use plausible(https://plausible.io) for analytics, add this section
 [params.plausibleAnalytics]
     domain = "example.com"
     # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
     serverURL = "analytics.example.com"
 
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+[params.goatCounter]
+    code = "code"
+
 [taxonomies]
   category = "categories"
   series = "series"
   tag = "tags"
+  author = "authors"
 
 [[params.social]]
     name = "Github"
