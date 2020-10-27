@@ -7,6 +7,9 @@ other = "תגית"
 [series]
 other = "סדרה"
 
+[author]
+other = "סופר"
+
 [reading_time]
 one = "דקה אחת לקרוא"
 other = "דקות לקרוא {{ .Count }}"
@@ -20,6 +23,12 @@ other = "מצטערים, דף אינטרנט זה אינו קיים"
 [head_back]
 other = " אתה יכול לחזור<a href=\"{{ . }}\">לדף הבית</a>."
 
-
 [powered_by]
 other = "מופעל על ידי"
+
+[see_also]
+other = "רואה עוד ב"
+
+[posts]
+other = "פוסטים"
+
