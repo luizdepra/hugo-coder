@@ -56,6 +56,8 @@ models:
             name: info
           - type: string
             name: avatarurl
+          - type: boolean
+            name: hideFooter
           - type: string
             name: footercontent
           - type: string
@@ -64,18 +66,26 @@ models:
             name: hideCredits
           - type: boolean
             name: hideCopyright
+          - type: boolean
+            name: hidecolorschemetoggle
+          - type: number
+            name: since
           - type: string
             name: commit
           - type: boolean
             name: rtl
-          - type: boolean
-            name: inverted
+          - type: string
+            name: colorscheme
           - type: number
             name: maxSeeAlsoItems
           - type: list
-            name: custom_css
+            name: customCSS
           - type: list
-            name: custom_js
+            name: customSCSS
+          - type: list
+            name: customJS
+          - type: boolean
+            name: enableTwemoji
           - type: list
             name: social
             label: Social Media Icons
@@ -94,6 +104,39 @@ models:
                 - type: string
                   name: url
                   label: URL
+                - type: string
+                  name: rel
+                  label: Rel
+                - type: string
+                  name: type
+                  label: Type
+          - type: object
+            name: fathomAnalytics
+            label: Fathom Analytics (optional)
+            fields:
+              - type: string
+                name: siteID
+                label: ID for Fathom Analytics
+              - type: string
+                name: serverURL
+                label: URL for Fathom Analytics
+          - type: object
+            name: plausibleAnalytics
+            label: Plausible Analytics (optional)
+            fields:
+              - type: string
+                name: domain
+                label: Website domain for Plausible Analytics
+              - type: string
+                name: serverURL
+                label: URL for Plausible Analytics
+          - type: object
+            name: goatCounter
+            label: Goat Counter (optional)
+            fields:
+              - type: string
+                name: code
+                label: URL for Goat Counter
       - type: object
         name: languages
         fields:
@@ -164,6 +207,18 @@ models:
         name: images
         items:
           type: string
+      - type: image
+        name: featured_image
+        label: Featured Image
+        description: Image featured in post display
+  snippets:
+    type: page
+    label: Snippets
+    folder: snippets
+    fields:
+      - type: string
+        name: title
+        label: Title
   language_config:
     type: object
     label: Language Config
@@ -185,6 +240,8 @@ models:
             name: keywords
           - type: string
             name: footercontent
+          - type: number
+            name: since
       - type: object
         label: Menu
         name: menu

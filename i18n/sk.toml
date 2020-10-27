@@ -1,0 +1,26 @@
+[category]
+other = "kategória"
+
+[tag]
+other = "téma"
+
+[series]
+other = "diel"
+
+[reading_time]
+one = "Prečítate si za minútu"
+few = "Prečítate si do {{ .Count }} minút"
+many = "Prečítate si do {{ .Count }} minút"
+other = "Prečítate si do {{ .Count }} minút"
+
+[page_not_found]
+other = "Stránka nebola nájdená"
+
+[page_does_not_exist]
+other = "Prepáčte, ale táto stránka neexistuje."
+
+[head_back]
+other = "Späť na <a href=\"{{ . }}\">domácu stránku</a>."
+
+[powered_by]
+other = "Táto stránka bola vytvorená cez"

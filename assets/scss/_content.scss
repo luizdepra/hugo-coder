@@ -26,6 +26,11 @@
         }
       }
     }
+    p {
+      text-align: justify;
+      text-justify: auto;
+      hyphens: auto;
+    }
   }
   .post {
     .post-title {
@@ -79,6 +84,7 @@
       }
       .date {
         display: inline-block;
+        flex:1;
         width: 20.0rem;
         text-align: right;
         margin-right: 3.0rem;
@@ -89,6 +95,7 @@
       }
       .title {
         font-size: 1.8rem;
+        flex:2;
         color: $fg-color;
         font-family: $heading-font-family;
         font-weight: 700;
@@ -96,6 +103,13 @@
         &:focus {
           color: $link-color
         }
+      }
+    }
+  }
+  ul:not(.pagination) {
+    li {
+      @media only screen and (min-width : 768.1px) {
+        display: flex;
       }
     }
   }
