@@ -84,3 +84,4 @@
 - [Lucas de Oliveira](https://github.com/lucas-dOliveira)
 - [earnest ma](https://github.com/earnestma)
 - [TMineCola](https://github.com/tminecola)
+- [Arafat Hasan](https://github.com/arafat-hasan)
