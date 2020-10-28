@@ -1,4 +1,4 @@
-stackbitVersion: ~0.2.0
+stackbitVersion: ~0.3.0
 ssgName: custom
 publishDir: demo/public
 buildCommand: make prepare && hugo --source demo --baseURL "/"
@@ -140,10 +140,12 @@ models:
       - type: object
         name: languages
         fields:
-          - type: language_config
+          - type: model
             name: en
-          - type: language_config
+            models: [language_config]
+          - type: model
             name: "pt-br"
+            models: [language_config]
       - type: object
         name: taxonomies
         fields:
@@ -153,6 +155,8 @@ models:
             name: series
           - type: string
             name: tag
+          - type: string
+            name: author
   basicpage:
     type: page
     label: Basic Page
@@ -211,6 +215,10 @@ models:
         name: featured_image
         label: Featured Image
         description: Image featured in post display
+      - type: list
+        name: authors
+        items:
+          type: string
   snippets:
     type: page
     label: Snippets
