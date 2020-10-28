@@ -5,7 +5,13 @@ other = "categoria"
 other = "tag"
 
 [series]
-other = "series"
+other = "serie"
+
+[author]
+other = "autore"
+
+[posts]
+other = "post"
 
 [reading_time]
 one = "Lettura di un minuto"
