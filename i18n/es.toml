@@ -2,23 +2,32 @@
 other = "categoría"
 
 [tag]
-other = "tag"
+other = "etiqueta"
 
 [series]
 other = "serie"
+
+[author]
+other = "autor"
+
+[posts]
+other = "publicaciones"
 
 [reading_time]
 one = "Un minuto de lectura"
 other = "{{ .Count }} minutos de lectura."
 
 [page_not_found]
-other = "Página no existe."
+other = "Página no encontrada."
 
 [page_does_not_exist]
-other = "Disculpa, aquí no hay nada."
+other = "Disculpa, la página no existe."
 
 [head_back]
-other = "Puedes regresar a la <a href=\"{{ . }}\">primera página</a>."
+other = "Puedes regresar a la <a href=\"{{ . }}\">página inicial</a>."
 
 [powered_by]
-other = "Promovido por"
+other = "Desarrollado por"
+
+[see_also]
+other = "También ver en"
