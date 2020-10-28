@@ -7,6 +7,9 @@ other = "標籤"
 [series]
 other = "系列"
 
+[author]
+other = "作者"
+
 [reading_time]
 one = "閱讀時間 1 分鐘"
 other = "閱讀時間 {{ .Count }} 分鐘"
@@ -22,3 +25,9 @@ other = "返回 <a href=\"{{ . }}\">首頁</a>."
 
 [powered_by]
 other = "技術支援"
+
+[see_also]
+other = "參見"
+
+[posts]
+other = "文章"

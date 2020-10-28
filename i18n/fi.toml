@@ -7,6 +7,9 @@ other = "merkki"
 [series]
 other = "sarja"
 
+[author]
+other = "Kirjoittaja"
+
 [reading_time]
 one = "Yksi lukuminuutti"
 other = "{{ .Count }} lukuminuuttia"
@@ -22,3 +25,9 @@ other = "Voit palata takaisin <a href=\"{{ . }}\">kotisivulle</a>."
 
 [powered_by]
 other = "Tarjoaa"
+
+[see_also]
+other = "Katso myös"
+
+[posts]
+other = "Artikkelit"
