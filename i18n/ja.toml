@@ -10,6 +10,9 @@ other = "シリーズ"
 [author]
 other = "筆者"
 
+[posts]
+other = "記事"
+
 [reading_time]
 one = "1分で読めます"
 other = "{{ .Count }}分で読めます"
