@@ -23,3 +23,12 @@ other = "Можете вернуться обратно на <a href=\"{{ . }}\"
 
 [powered_by]
 other = "Работает на"
+
+[author]
+other = "автор"
+
+[posts]
+other = "статьи"
+
+[see_also]
+other = "Также смотреть"
