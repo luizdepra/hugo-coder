@@ -153,6 +153,8 @@ models:
             name: series
           - type: string
             name: tag
+          - type: string
+            name: author
   basicpage:
     type: page
     label: Basic Page
@@ -193,6 +195,11 @@ models:
       - type: list
         name: series
         label: Series
+        items:
+          type: string
+      - type: list
+        name: authors
+        label: Authors
         items:
           type: string
       - type: string
