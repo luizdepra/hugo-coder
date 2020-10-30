@@ -26,6 +26,7 @@ a {
   font-weight: 300;
   color: $link-color;
   text-decoration: none;
+  transition: all .25s ease-in;
   &:focus,
   &:hover {
     text-decoration: underline;
