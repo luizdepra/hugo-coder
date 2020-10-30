@@ -7,6 +7,12 @@ other = "etichetă"
 [series]
 other = "serie"
 
+[author]
+other = "autor"
+
+[posts]
+other = "articole"
+
 [reading_time]
 one   = "Un minut de lectură"
 other = "{{ .Count }} {{ if lt .Count 20 }}minute{{ else }}de minute{{ end }} de lectură"
@@ -22,3 +28,6 @@ other = "Poți să te întorci la <a href=\"{{ . }}\">pagina principală</a>."
 
 [powered_by]
 other = "Susținut de"
+
+[see_also]
+other = "Altele din seria"
