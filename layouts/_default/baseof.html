@@ -45,7 +45,7 @@
       {{ end }}
     {{ end }}
 
-    {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
+    {{ if  or (eq .Site.Params.colorScheme "auto") (eq .Site.Params.colorScheme "dark") }}
       {{ if .Site.IsServer }}
         {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
         {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
@@ -91,9 +91,9 @@
   </head>
 
   {{ $csClass := "colorscheme-light" }}
-  {{ if eq .Site.Params.colorscheme "dark" }}
+  {{ if eq .Site.Params.colorScheme "dark" }}
     {{ $csClass = "colorscheme-dark" }}
-  {{ else if eq .Site.Params.colorscheme "auto" }}
+  {{ else if eq .Site.Params.colorScheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
@@ -110,7 +110,7 @@
       {{ partial "footer.html" . }}
     </main>
 
-    {{ if not .Site.Params.hidecolorschemetoggle }}
+    {{ if not .Site.Params.hideColorSchemeToggle }}
       {{ if .Site.IsServer }}
         {{ $script := resources.Get "js/dark-mode.js" }}
         <script src="{{ $script.RelPermalink }}"></script>

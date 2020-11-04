@@ -17,13 +17,13 @@ models:
         label: Title
         required: true
       - type: string
-        name: baseurl
+        name: baseURL
         label: Base URL
         description: Hostname (and path) to the root
       - type: string
-        name: languagecode
+        name: languageCode
       - type: string
-        name: defaultcontentlanguage
+        name: defaultContentLanguage
       - type: string
         name: themesDir
       - type: string
@@ -32,13 +32,13 @@ models:
       - type: number
         name: paginate
       - type: boolean
-        name: canonifyurls
+        name: canonifyURLs
       - type: string
-        name: pygmentsstyle
+        name: pygmentsStyle
       - type: boolean
-        name: pygmentscodefences
+        name: pygmentsCodeFences
       - type: boolean
-        name: pygmentscodefencesguesssyntax
+        name: pygmentsCodeFencesGuessSyntax
       - type: string
         name: disqusShortname
       - type: object
@@ -55,19 +55,19 @@ models:
           - type: string
             name: info
           - type: string
-            name: avatarurl
+            name: avatarURL
           - type: boolean
             name: hideFooter
           - type: string
-            name: footercontent
+            name: footerContent
           - type: string
-            name: dateformat
+            name: dateFormat
           - type: boolean
             name: hideCredits
           - type: boolean
             name: hideCopyright
           - type: boolean
-            name: hidecolorschemetoggle
+            name: hideColorSchemeToggle
           - type: number
             name: since
           - type: string
@@ -75,7 +75,7 @@ models:
           - type: boolean
             name: rtl
           - type: string
-            name: colorscheme
+            name: colorScheme
           - type: number
             name: maxSeeAlsoItems
           - type: list
@@ -215,7 +215,7 @@ models:
         items:
           type: string
       - type: image
-        name: featured_image
+        name: featuredImage
         label: Featured Image
         description: Image featured in post display
   snippets:
@@ -231,7 +231,7 @@ models:
     label: Language Config
     fields:
       - type: string
-        name: languagename
+        name: languageName
       - type: string
         name: title
       - type: object
@@ -246,7 +246,7 @@ models:
           - type: string
             name: keywords
           - type: string
-            name: footercontent
+            name: footerContent
           - type: number
             name: since
       - type: object
