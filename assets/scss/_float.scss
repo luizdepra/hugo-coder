@@ -1,0 +1,27 @@
+.float-container {
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  position: fixed;
+  font-size: 1.6em;
+  a {
+    display: block;
+    text-align: center;
+    width: 3.0rem;
+    height: 3.0rem;
+    color: $alt-fg-color;
+    background-color: $alt-bg-color;
+    font-size: 2.0rem;
+    border-radius: 0.5rem;
+    opacity: 50%;
+    transition: all .25s ease-in;
+    &:hover, &:focus {
+      color: $link-color;
+      opacity: 100%;
+      @media only screen and (max-width : 768px) {
+        color: $alt-fg-color;
+        opacity: 50%;
+      }
+    }
+  }
+}

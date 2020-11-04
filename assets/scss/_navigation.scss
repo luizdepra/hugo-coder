@@ -74,6 +74,10 @@
     margin: 1.7rem 0;
     font-size: 2.4rem;
     line-height: inherit;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 100;
+    position: fixed;
   }
   #menu-toggle {
     display: none;
@@ -95,6 +99,12 @@
       margin: 1.8rem 0;
       font-size: 2.4rem;
       font-weight: 400;
+    }
+
+    i {
+      &:hover, &:focus {
+        color: $alt-fg-color;
+      }
     }
   }
   i {

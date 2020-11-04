@@ -1,10 +1,11 @@
 +++ 
 date = "2014-09-28"
 title = "Creating a New Theme"
-slug = "creating-a-new-theme" 
+slug = "creating-a-new-theme"
 tags = []
 categories = []
 series = ["Theme", "Hugo"]
+authors = ["John Doe"]
 +++
 
 ## Introduction
@@ -308,7 +309,7 @@ Edit the file to add the theme, add a title for the site, and specify that all o
 ```
 $ vi config.toml
 theme = "zafta"
-baseurl = ""
+baseURL = ""
 languageCode = "en-us"
 title = "zafta - totally refreshing"
 MetaDataFormat = "toml"

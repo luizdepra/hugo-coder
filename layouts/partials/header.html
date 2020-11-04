@@ -4,11 +4,6 @@
       {{ .Site.Title }}
     </a>
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
-      {{ if not .Site.Params.hidecolorschemetoggle }}
-        <span id="dark-mode-toggle" class="float-right">
-          <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-        </span>
-      {{ end }}
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
         <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
@@ -37,11 +32,6 @@
               </li>
             {{ end }}
           {{ end }}
-        {{ end }}
-        {{ if not .Site.Params.hidecolorschemetoggle }}
-          <li class="navigation-item separator">
-            <span>|</span>
-          </li>
         {{ end }}
       </ul>
     {{ end }}
