@@ -1,0 +1,35 @@
+{{ $noticeType := .Get 0 }}
+{{ $raw := (markdownify .Inner | chomp) }}
+{{ $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 }}
+<div class="notice {{ $noticeType }}">
+  <p class="notice-title">
+    <span class="icon-notice baseline">
+      {{ if eq $noticeType "note" }}
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+      {{ end}}
+      {{ if eq $noticeType "warning" }}
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+      {{ end}}
+      {{ if eq $noticeType "tip" }}
+        <i class="fa fa-check" aria-hidden="true"></i>
+      {{ end}}
+      {{ if eq $noticeType "info" }}
+        <i class="fa fa-info" aria-hidden="true"></i>
+      {{ end}}
+    </span>
+
+  {{ if eq $noticeType "note" }}
+    {{ i18n "notice_note" }}
+  {{ end}}
+  {{ if eq $noticeType "warning" }}
+    {{ i18n "notice_warning" }}
+  {{ end}}
+  {{ if eq $noticeType "tip" }}
+    {{ i18n "notice_tip" }}
+  {{ end}}
+  {{ if eq $noticeType "info" }}
+    {{ i18n "notice_info" }}
+  {{ end}}
+  </p>
+  {{- if or $block (not $raw) }}{{ $raw }}{{ else }}<p>{{ $raw }}</p>{{ end -}}
+</div>

@@ -1,0 +1,65 @@
+@mixin notices_dark {
+  .notice {
+    padding: 1rem;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    color: $fg-colour-notice-text;
+    p {
+      &:last-child {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .notice-title {
+    margin: -1rem -1rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 700;
+    font-family: $heading-font-family;
+  }
+
+  .notice.warning {
+    .notice-title {
+      background: $bg-color-notice-warning-title-dark;
+    }
+    background: $bg-color-notice-warning-dark;
+  }
+
+  .notice.info {
+    .notice-title {
+      background: $bg-color-notice-info-title-dark;
+    }
+    background: $bg-color-notice-info-dark;
+  }
+
+  .notice.note {
+    .notice-title {
+      background: $bg-color-notice-note-title-dark;
+    }
+    background: $bg-color-notice-note-dark;
+  }
+
+  .notice.tip {
+    .notice-title {
+      background: $bg-color-notice-tip-title-dark;
+    }
+    background: $bg-color-notice-tip-dark;
+  }
+
+  .icon-notice {
+    display: inline-flex;
+    align-self: center;
+    margin-right: 8px;
+  }
+}
+
+body.colorscheme-dark {
+  @include notices_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include notices_dark()
+  }
+}
