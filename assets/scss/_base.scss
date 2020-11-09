@@ -5,11 +5,20 @@
 }
 
 html {
+  overflow: auto;
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
 
 body {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   color: $fg-color;
   background-color: $bg-color;
 	font-family: $text-font-family;
@@ -164,8 +173,32 @@ table tr th:last-child {
   border-right: 0;
 }
 
-img {
+img:not(.emoji) {
   max-width: 100%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1%;
+}
+
+@media (min-width: 550px) {
+  img[alt~="_gallery"] {
+    max-width: 49.5%;
+  }
+
+  img[alt$=">"] {
+    float: right;
+  }
+
+  img[alt$="<"] {
+    float: left;
+  }
+
+  img[alt$="><"] {
+    display: block;
+    margin: auto;
+    float: none !important;
+  }
 }
 
 figure {
@@ -173,10 +206,10 @@ figure {
 }
 
 .wrapper {
+  position: absolute;
   display: flex;
   flex-direction: column;
-
-  min-height: 100vh;
+  min-height: 99%;
   width: 100%;
 }
 
@@ -217,4 +250,20 @@ img.emoji {
   width: 1em;
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.7);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background:  rgba(128, 128, 128, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active { 
+  background-color:  rgba(128, 128, 128, 1);
 }
