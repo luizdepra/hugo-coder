@@ -261,11 +261,13 @@ img.emoji {
 }
 
 ::-webkit-scrollbar {
+  border-radius: 5px;
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
   background: rgba(128, 128, 128, 0.7);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
