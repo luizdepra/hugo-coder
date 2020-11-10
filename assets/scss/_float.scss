@@ -19,6 +19,7 @@
       color: $link-color;
       opacity: 100%;
       @media only screen and (max-width : 768px) {
+        font-size: 1.6rem;
         color: $alt-fg-color;
         opacity: 50%;
       }
