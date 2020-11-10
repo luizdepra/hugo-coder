@@ -2,11 +2,11 @@
   <div class="about">
     {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
       {{ with .Site.Params.avatarURL }}
-        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar" width="200px" height="200px"></div>
       {{ end }}
     {{ end }}
     {{ with .Site.Params.gravatar }}
-      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
+      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar" width="200px" height="200px"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
     <h2>{{ .Site.Params.info }}</h2>
