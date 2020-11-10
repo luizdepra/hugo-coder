@@ -12,7 +12,11 @@
         {{ with .Site.Menus.main}}
           {{ range sort . }}
             <li class="navigation-item">
-              <a class="navigation-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              {{ if eq (hasPrefix .URL "mailto:") true }}
+                  <a class="navigation-link" href="{{ .URL }}">{{ .Name }}</a>
+              {{ else }}
+                  <a class="navigation-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              {{ end }}
             </li>
           {{ end }}
         {{ end }}
