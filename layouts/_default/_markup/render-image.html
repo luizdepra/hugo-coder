@@ -1,0 +1,3 @@
+<p>
+  <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ htmlUnescape .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+</p>
