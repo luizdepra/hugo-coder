@@ -3,8 +3,8 @@
   right: 2rem;
   z-index: 100;
   position: fixed;
-  font-size: 1.6em;
   a {
+    line-height: 1.6em;
     display: block;
     text-align: center;
     width: 3.0rem;
@@ -19,7 +19,6 @@
       color: $link-color;
       opacity: 100%;
       @media only screen and (max-width : 768px) {
-        font-size: 1.6rem;
         color: $alt-fg-color;
         opacity: 50%;
       }
