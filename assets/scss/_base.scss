@@ -88,6 +88,12 @@ p {
   margin: 2.0rem 0 2.0rem 0;
 }
 
+p::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 h1,
 h2,
 h3,
