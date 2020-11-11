@@ -44,7 +44,7 @@
       margin: 0;
       position: relative;
       @media only screen and (max-width : 768px) {
-        float: none !important;
+        float: none;
         text-align: center;
         a, span {
           line-height: 5.0rem;
