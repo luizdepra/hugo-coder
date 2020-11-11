@@ -238,13 +238,17 @@ img:not(.emoji) {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-@media (min-width: 550px) {
-  img[alt~="_gallery"] {
+img[alt~="_gallery"] {
+  padding: 2px;
+  border: 1px solid $img-border-color;
+  background-color: $img-background-color;
+  @media only screen and (min-width : 550px) {
     max-width: 49.5%;
-    padding: 2px;
-    border: 1px solid $img-border-color;
-    background-color: $img-background-color;
   }
+}
+
+/* Aligning images only on tablet/pc, not mobile. */
+@media (min-width: 550px) {
 
   img[alt$=">"] {
     float: right;
