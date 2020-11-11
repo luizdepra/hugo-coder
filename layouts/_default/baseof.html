@@ -20,10 +20,9 @@
     {{ end }}
 
     <link rel="preload" href="/fonts/merriweather-v22-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/lato-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/lato-v17-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/source-code-pro-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 
     {{ if .Site.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
