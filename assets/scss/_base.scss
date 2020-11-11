@@ -224,9 +224,9 @@ table tr th:last-child {
 img:not(.emoji) {
   max-width: 100%;
   height: auto;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 3px $img-shadow-color;
+  -moz-box-shadow: 0 0 3px $img-shadow-color;
+  box-shadow: 0 0 3px $img-shadow-color;
   margin-bottom: 1%;
   pointer-events: none;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -241,6 +241,9 @@ img:not(.emoji) {
 @media (min-width: 550px) {
   img[alt~="_gallery"] {
     max-width: 49.5%;
+    padding: 2px;
+    border: 1px solid $img-border-color;
+    background-color: $img-background-color;
   }
 
   img[alt$=">"] {

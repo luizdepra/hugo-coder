@@ -10,7 +10,7 @@ authors = ["John Doe", "Jane Smith"]
 
 Now you can use Gallery feature,
 This is the code which gets transformed to gallery below, with two spaces after each line:
-```
+```md
 ![_gallery <](/images/N90.jpg)  
 ![_gallery >](/images/N90.jpg)  
 ![_gallery <](/images/N90.jpg)  
@@ -26,7 +26,7 @@ This is the code which gets transformed to gallery below, with two spaces after 
 
 
 This is the code which gets transformed to gallery below, without two spaces after each line::
-```
+```md
 ![_gallery <](/images/N90.jpg)
 ![_gallery >](/images/N90.jpg)
 ![_gallery <](/images/N90.jpg)
