@@ -1,0 +1,25 @@
+<!-- layouts/_default/_markup/render-image.html -->
+
+{{ $imgPath := add "/content" (.Destination | safeURL) }}
+{{ if fileExists $imgPath }}
+  {{ $img := imageConfig $imgPath }}
+  <img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ htmlUnescape .Text }}"
+    loading="lazy"
+    width="{{ $img.Width }}"
+    height="{{ $img.Height }}"
+  />
+{{ else }}
+  {{ $imgPath := add "/static" (.Destination | safeURL) }}
+  {{ if fileExists $imgPath }}
+    {{ $img := imageConfig $imgPath }}
+    <img
+      src="{{ .Destination | safeURL }}"
+      alt="{{ htmlUnescape .Text }}"
+      loading="lazy"
+      width="{{ $img.Width }}"
+      height="{{ $img.Height }}"
+    />
+    {{ end }}
+{{ end }}

@@ -5,11 +5,20 @@
 }
 
 html {
+  overflow: auto;
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
 
 body {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   color: $fg-color;
   background-color: $bg-color;
 	font-family: $text-font-family;
@@ -17,7 +26,7 @@ body {
 	font-weight: 300;
   line-height: 1.8em;
   @media only screen and (max-width : 768px) {
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 1.6em;
   }
 }
@@ -37,6 +46,12 @@ p {
   margin: 2.0rem 0 2.0rem 0;
 }
 
+p::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 h1,
 h2,
 h3,
@@ -53,48 +68,48 @@ h1 {
   font-size: 3.2rem;
   line-height: 3.6rem;
   @media only screen and (max-width : 768px) {
-    font-size: 3.0rem;
-    line-height: 3.4rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
   }
 }
 h2 {
   font-size: 2.8rem;
   line-height: 3.2rem;
   @media only screen and (max-width : 768px) {
-    font-size: 2.6rem;
-    line-height: 3.0rem;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
   }
 }
 h3 {
   font-size: 2.4rem;
   line-height: 2.8rem;
   @media only screen and (max-width : 768px) {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
   }
 }
 h4 {
   font-size: 2.2rem;
   line-height: 2.6rem;
   @media only screen and (max-width : 768px) {
-    font-size: 2.0rem;
-    line-height: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 }
 h5 {
   font-size: 2.0rem;
   line-height: 2.4rem;
   @media only screen and (max-width : 768px) {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
   }
 }
 h6 {
   font-size: 1.8rem;
   line-height: 2.2rem;
   @media only screen and (max-width : 768px) {
-    font-size: 1.6rem;
-    line-height: 2.0rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -164,8 +179,48 @@ table tr th:last-child {
   border-right: 0;
 }
 
-img {
+img:not(.emoji) {
   max-width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 3px $img-shadow-color;
+  -moz-box-shadow: 0 0 3px $img-shadow-color;
+  box-shadow: 0 0 3px $img-shadow-color;
+  margin-bottom: 1%;
+  pointer-events: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+img[alt~="_gallery"] {
+  padding: 2px;
+  border: 1px solid $img-border-color;
+  background-color: $img-background-color;
+  @media only screen and (min-width : 550px) {
+    max-width: 49.5%;
+  }
+}
+
+/* Aligning images only on tablet/pc, not mobile. */
+@media (min-width: 550px) {
+
+  img[alt$=">"] {
+    float: right;
+  }
+
+  img[alt$="<"] {
+    float: left;
+  }
+
+  img[alt$="><"] {
+    display: block;
+    margin: auto;
+    float: none !important;
+  }
 }
 
 figure {
@@ -173,10 +228,10 @@ figure {
 }
 
 .wrapper {
+  position: absolute;
   display: flex;
   flex-direction: column;
-
-  min-height: 100vh;
+  min-height: 99%;
   width: 100%;
 }
 
@@ -217,4 +272,22 @@ img.emoji {
   width: 1em;
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
+}
+
+::-webkit-scrollbar {
+  border-radius: 5px;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.7);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background:  rgba(128, 128, 128, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active { 
+  background-color:  rgba(128, 128, 128, 1);
 }

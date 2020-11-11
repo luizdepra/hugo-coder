@@ -19,9 +19,10 @@
       <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/lato-v17-latin-ext_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/merriweather-v22-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/source-code-pro-v13-vietnamese_latin-ext_latin_greek_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
 
     {{ if .Site.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
@@ -41,18 +42,6 @@
       {{ else }}
         {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
         {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
-    {{ if  or (eq .Site.Params.colorScheme "auto") (eq .Site.Params.colorScheme "dark") }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}
@@ -88,6 +77,7 @@
     {{ end }}
 
     {{ hugo.Generator }}
+
   </head>
 
   {{ $csClass := "colorscheme-light" }}
@@ -99,6 +89,7 @@
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
         onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
   >
+
     {{ partial "float" . }}
     <main class="wrapper">
       {{ partial "header.html" . }}
@@ -109,16 +100,36 @@
 
       {{ partial "footer.html" . }}
     </main>
-
-    {{ if not .Site.Params.hideColorSchemeToggle }}
-      {{ if .Site.IsServer }}
-        {{ $script := resources.Get "js/dark-mode.js" }}
-        <script src="{{ $script.RelPermalink }}"></script>
-      {{ else }}
-        {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
-        <script src="{{ $script.RelPermalink }}"></script>
-      {{ end }}
-    {{ end }}
+    <script>
+      const body = document.body;
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      // Check if user preference is set, if not check value of body class for light or dark else it means that colorsheme = auto
+      if (localStorage.getItem("colorscheme")) {
+        setTheme(localStorage.getItem("colorscheme"));
+      } else if (body.classList.contains('colorscheme-light') || body.classList.contains('colorscheme-dark')) {
+        setTheme(body.classList.contains("colorscheme-dark") ? "dark" : "light");
+      } else {
+        setTheme(darkModeMediaQuery.matches ? "dark" : "light");
+      }
+      
+      darkModeToggle.addEventListener('click', () => {
+        setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
+      });
+      
+      darkModeMediaQuery.addListener((event) => {
+        setTheme(event.matches ? "dark" : "light");
+      });
+      
+      function setTheme(theme) {
+        body.classList.remove('colorscheme-auto');
+        inverse = theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('colorscheme', theme);
+        body.classList.remove('colorscheme-' + inverse);
+        body.classList.add('colorscheme-' + theme);
+      }
+      </script>
 
     {{ range .Site.Params.customJS }}
       <script src="{{ . | relURL }}"></script>
