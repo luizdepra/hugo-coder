@@ -46,12 +46,6 @@ p {
   margin: 2.0rem 0 2.0rem 0;
 }
 
-p::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 h1,
 h2,
 h3,
@@ -179,48 +173,8 @@ table tr th:last-child {
   border-right: 0;
 }
 
-img:not(.emoji) {
+img {
   max-width: 100%;
-  height: auto;
-  -webkit-box-shadow: 0 0 3px $img-shadow-color;
-  -moz-box-shadow: 0 0 3px $img-shadow-color;
-  box-shadow: 0 0 3px $img-shadow-color;
-  margin-bottom: 1%;
-  pointer-events: none;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-img[alt~="_gallery"] {
-  padding: 2px;
-  border: 1px solid $img-border-color;
-  background-color: $img-background-color;
-  @media only screen and (min-width : 550px) {
-    max-width: 49.5%;
-  }
-}
-
-/* Aligning images only on tablet/pc, not mobile. */
-@media (min-width: 550px) {
-
-  img[alt$=">"] {
-    float: right;
-  }
-
-  img[alt$="<"] {
-    float: left;
-  }
-
-  img[alt$="><"] {
-    display: block;
-    margin: auto;
-    float: none;
-  }
 }
 
 figure {
