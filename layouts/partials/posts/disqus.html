@@ -1,3 +1,35 @@
 {{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disableComments | default false) false) -}}
-  {{ template "_internal/disqus.html" . }}
+  {{- if .Site.Params.disqusOnClick -}}
+    {{- $pc := .Site.Config.Privacy.Disqus -}}
+    {{- if not $pc.Disable -}}
+      {{- if .Site.DisqusShortname -}}
+      <section id="disqus" style="text-align: center;">
+        <div id="disqus_thread">
+          <a href="#" class="button" onclick="loadDisqus();return false;">Comments (Disqus)</a>
+        </div>
+        <script>
+          var disqus_config = function() {
+            this.page.title = '{{ .Title }}';
+            this.page.url = '{{ .Permalink }}';
+            this.page.identifier = '{{ .RelPermalink }}';
+          };
+          var is_disqus_loaded = false;
+          function loadDisqus() {
+            if (!is_disqus_loaded) {
+              is_disqus_loaded = true;
+              var d = document,
+                s = d.createElement('script');
+              s.src = 'https://{{ .Site.DisqusShortname }}.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            }
+          }
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </section>
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{ template "_internal/disqus.html" . }}
+  {{- end -}}
 {{- end -}}

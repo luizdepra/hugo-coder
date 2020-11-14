@@ -67,6 +67,8 @@ models:
           - type: boolean
             name: hideCopyright
           - type: boolean
+            name: disqusOnClick
+          - type: boolean
             name: hideColorSchemeToggle
           - type: number
             name: since

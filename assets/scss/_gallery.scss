@@ -1,9 +1,5 @@
-img:not(.emoji) {
+img {
   height: auto;
-  -webkit-box-shadow: 0 0 3px $img-shadow-color;
-  -moz-box-shadow: 0 0 3px $img-shadow-color;
-  box-shadow: 0 0 3px $img-shadow-color;
-  margin-bottom: 1%;
   pointer-events: none;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -14,16 +10,12 @@ img:not(.emoji) {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-img[alt~="_gallery"] {
-  padding: 3px;
-  background-color: $img-background-color;
-  @media only screen and (min-width: 550px) {
-    max-width: 49.5%;
-  }
-}
-
 /* Aligning images only on tablet/pc, not mobile. */
 @media (min-width: 550px) {
+  img[alt~="_gallery"] {
+    max-width: 49%;
+    margin-bottom: 2%;
+  }
   img[alt$=">"] {
     float: right;
   }
@@ -39,6 +31,7 @@ img[alt~="_gallery"] {
   }
 }
 
+/* Cleanup after gallery image */
 p::after {
   content: "";
   clear: both;

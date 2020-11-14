@@ -28,6 +28,7 @@ disqusShortname = "yourdiscussshortname"
     hideFooter = false
     hideCredits = false
     hideCopyright = false
+    disqusOnClick = true
     since = 2019
 
     # Git Commit in Footer, uncomment the line below to enable it.

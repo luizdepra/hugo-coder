@@ -173,6 +173,24 @@ table tr th:last-child {
   border-right: 0;
 }
 
+.button {
+  color: white !important;
+  background-color: $link-color;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $link-color-dark;
+}
+
 img {
   max-width: 100%;
 }
