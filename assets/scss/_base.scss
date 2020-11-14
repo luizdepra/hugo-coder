@@ -173,11 +173,12 @@ table tr th:last-child {
   border-right: 0;
 }
 
-.button {
+button {
   color: white !important;
   background-color: $link-color;
+  border: none;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none !important;
   display: inline-block;
@@ -187,7 +188,7 @@ table tr th:last-child {
   cursor: pointer;
 }
 
-.button:hover {
+button:hover {
   background-color: $link-color-dark;
 }
 
