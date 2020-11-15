@@ -11,6 +11,14 @@
     <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords }}">
 
     {{ template "_internal/twitter_cards.html" . }}
+
+    {{ if not .IsHome }}
+      {{ if .Site.Params.rtimeMeta }}
+      <meta name="twitter:label1" value="Reading time">
+      <meta name="twitter:data1" value="{{ i18n "reading_time" .ReadingTime }}">
+      {{ end }}
+    {{ end }}
+
     {{ template "_internal/opengraph.html" . }}
 
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>

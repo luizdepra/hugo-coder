@@ -31,6 +31,9 @@ disqusShortname = "yourdiscussshortname"
     disqusOnClick = true
     since = 2019
 
+    # Enable reading time metadata for twitter card
+    rtimeMeta = false
+
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
