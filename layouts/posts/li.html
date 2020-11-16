@@ -1,4 +1,48 @@
 <li>
-  <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-  <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+  <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+    {{ if .Site.Params.enableImgPreview }}
+    <div class="postimg">
+      {{ $source := "" }}
+      {{- with .Params.images -}}
+        {{ $source = index (.) 0 }}
+      {{ else -}}
+        {{- with .Site.Params.images -}}
+          {{ $source = index (.) 0 }}
+        {{- end -}}
+      {{- end }}
+
+      {{ with $source }}
+        {{ $img := "" }}
+        {{ $imgPath := (path.Join "/content" . )  }}
+        {{ if fileExists $imgPath }}
+            {{ $img = imageConfig $imgPath }}
+        {{ else }}
+            {{ $imgPath := (path.Join "/static" . ) }}
+            {{ if fileExists $imgPath }}
+                {{ $img = imageConfig $imgPath }}
+            {{ end }}
+        {{ end }}
+          <img
+          src="{{ . }}"
+          alt="article image"
+          loading="lazy"
+          width="{{ $img.Width }}"
+          height="{{ $img.Height }}"
+          />
+      {{ end }}
+    </div>
+    {{ end }}
+  </span>
+  <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">
+    {{ .Title }}
+    {{ if .Site.Params.enableSummary }}
+    <p class="summary">
+      {{ if gt (len .Summary) 250 }}
+        {{ htmlUnescape  ( slicestr .Summary 0 250 ) }}...
+      {{ else }}
+        {{ htmlUnescape .Summary }}
+      {{ end }}
+    </p>
+    {{ end }}
+  </a>
 </li>

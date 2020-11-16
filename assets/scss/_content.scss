@@ -134,6 +134,42 @@
   }
 }
 
+.postimg {
+  margin-bottom: 30px;
+  max-height: 105px;
+  box-shadow: 0 0 5px 0 $img-shadow-color;
+  border-radius: 5px;
+  overflow: hidden;
+  @media only screen and (max-width : 768px) {
+    margin-top: 10px;
+    display: block;
+    width: auto !important; /*override the width below*/
+    max-width: 400px;
+    max-height: 150px;
+    clear: both;
+  }
+  img {
+    height: inherit;
+    vertical-align: bottom;
+    object-fit: cover;
+    -webkit-transition: transform .5s ease;
+    transition: transform .5s ease;
+  }
+  &:focus img,
+  &:hover img {
+    -webkit-transform: scale(1.20);
+    transform: scale(1.20);
+  }
+}
+
+.summary {
+  margin-bottom: 30px;
+  margin-top:0;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
 .list {
   ul {
     margin: 3.2rem 0 3.2rem 0;
@@ -147,10 +183,10 @@
       .date {
         display: inline-block;
         flex:1;
-        width: 20.0rem;
         text-align: right;
         margin-right: 3.0rem;
         @media only screen and (max-width : 768px) {
+          margin-right: 0;
           display: block;
           text-align: left;
         }
