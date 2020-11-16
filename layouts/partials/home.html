@@ -77,7 +77,7 @@
     </ul>
   {{ end }}
   </div>
-  <a class="seemore" href="/{{ .Site.Params.showRecentType }}">
+  <a class="seemore" href="{{ path.Join .RelPermalink .Site.Params.showRecentType }}">
     {{ i18n "see_more"}} 
   </a>
 </section>
