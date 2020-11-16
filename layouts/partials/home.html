@@ -33,8 +33,9 @@
 {{ if .Site.Params.showLatestType }}
 <section class="list latest">
   <h3 class="title">Latest Posts</h3>
+  <div class="latestposts">
   {{ range first .Site.Params.showLatest (where .Paginator.Pages "Section" .Site.Params.showLatestType) }}
-    <ul class="latestposts">
+    <ul class="latestpost">
       <li>
         <span>{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
         <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">
@@ -125,7 +126,8 @@
       </li>
     </ul>
   {{ end }}
-  <a href="/{{ .Site.Params.showLatestType }}">See all</a>
+  </div>
+  <a style="display: block;margin-top: 30px;" href="/{{ .Site.Params.showLatestType }}">See all</a>
 </section>
 {{ end }}
 {{ end }}

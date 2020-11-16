@@ -74,36 +74,44 @@
 }
 
 .latest {
-  margin-top: 20px;
   text-align: center;
+  align-items: center;
   width: 100%;
+  h3 {
+    margin: 2rem 0 2rem 0;
+  }
   .latestposts {
     margin: auto;
-    margin-bottom: 30px;
-    transition: all .25s ease-in;
-    max-width: 480px;
-    border-radius: 5px;
-    li, li span, .title {
-      display: block !important;
-    }
-    a {
-      overflow: auto;
-    }
-    .latestimg {
-      overflow: hidden;
+    max-width: 1024px;
+    .latestpost {
+      display: inline-block;
+      max-width: 480px;
+      margin: 15px;
+      transition: all .25s ease-in;
       border-radius: 5px;
-      img {
-        vertical-align: bottom;
-        object-fit: cover;
-        height: 250px;
-        -webkit-transition: transform .5s ease;
-        transition: transform .5s ease;
+      li, li span, .title {
+        display: block !important;
       }
-      &:focus img,
-      &:hover img {
-        z-index: 100;
-        -webkit-transform: scale(1.20);
-        transform: scale(1.20);
+      a {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        .latestimg {
+          overflow: hidden;
+          border-radius: 5px;
+          img {
+            vertical-align: bottom;
+            object-fit: cover;
+            height: 200px;
+            -webkit-transition: transform .5s ease;
+            transition: transform .5s ease;
+          }
+          &:focus img,
+          &:hover img {
+            -webkit-transform: scale(1.20);
+            transform: scale(1.20);
+          }
+        }
       }
     }
   }
