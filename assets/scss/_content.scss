@@ -1,6 +1,7 @@
 .content {
   flex: 1;
   display: flex;
+  flex-flow: wrap;
   margin-top: 1.6rem;
   margin-bottom: 3.2rem;
   article {
@@ -72,6 +73,42 @@
   }
 }
 
+.latest {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  .latestposts {
+    margin: auto;
+    margin-bottom: 30px;
+    transition: all .25s ease-in;
+    max-width: 480px;
+    border-radius: 5px;
+    li, li span, .title {
+      display: block !important;
+    }
+    a {
+      overflow: auto;
+    }
+    .latestimg {
+      overflow: hidden;
+      border-radius: 5px;
+      img {
+        vertical-align: bottom;
+        object-fit: cover;
+        height: 250px;
+        -webkit-transition: transform .5s ease;
+        transition: transform .5s ease;
+      }
+      &:focus img,
+      &:hover img {
+        z-index: 100;
+        -webkit-transform: scale(1.20);
+        transform: scale(1.20);
+      }
+    }
+  }
+}
+
 .list {
   ul {
     margin: 3.2rem 0 3.2rem 0;
@@ -134,6 +171,7 @@
       }
     }
     ul {
+      cursor: pointer;
       list-style: none;
       margin: 3.0rem 0 1.0rem 0;
       padding: 0;

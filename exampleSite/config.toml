@@ -34,6 +34,12 @@ disqusShortname = "yourdiscussshortname"
     # Enable reading time metadata for twitter card
     rtimeMeta = false
 
+    # Show latest posts on homepage
+    showLatest = 4
+    
+    # Latest post type, e.g. "posts" for /posts
+    showLatestType = ""
+
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/luizdepra/hugo-coder/tree/"
 
