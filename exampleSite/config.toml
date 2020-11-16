@@ -38,7 +38,11 @@ disqusShortname = "yourdiscussshortname"
     showRecent = 4
     
     # Recent post type, e.g. "posts" for /posts
-    showRecentType = ""
+    showRecentType = "posts"
+
+    # Define default global site thumbnail (for twitter card etc.)
+    # is also used for showRecent option above, if not defined per post
+    images = ["/images/N90.jpg"]
 
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/luizdepra/hugo-coder/tree/"

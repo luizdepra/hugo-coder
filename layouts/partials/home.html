@@ -43,93 +43,41 @@
         <a class="recentblock" href="{{ .Params.externalLink | default .RelPermalink }}">
         <p class="title">{{ .Title }}</p>
           <div class="recentimg">
+            {{ $source := "" }}
             {{- with .Params.images -}}
-              {{ $imgPath := add "/content" ( index . 0 ) }}
-              {{ if fileExists $imgPath }}
-                {{ $img := imageConfig $imgPath }}
-                <img
-                  src="{{ index . 0 }}"
-                  alt="article image"
-                  loading="lazy"
-                  width="{{ $img.Width }}"
-                  height="{{ $img.Height }}"
-                />
-              {{ else }}
-                {{ $imgPath := add "/static" ( index . 0 ) }}
-                {{ if fileExists $imgPath }}
-                  {{ $img := imageConfig $imgPath }}
-                  <img
-                    src="{{ index . 0 }}"
-                    alt="article image"
-                    loading="lazy"
-                    width="{{ $img.Width }}"
-                    height="{{ $img.Height }}"
-                  />
-                  {{ end }}
-              {{ end }}
+              {{ $source = index (.) 0 }}
             {{ else -}}
-            {{- $images := .Resources.ByType "image" -}}
-            {{- $featured := $images.GetMatch "*feature*" -}}
-            {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
-            {{- with $featured -}}
-              {{ $imgPath := add "/content" $featured.Rel }}
+              {{- with .Site.Params.images -}}
+                {{ $source = index (.) 0 }}
+              {{- end -}}
+            {{- end }}
+
+            {{ with $source }}
+              {{ $img := "" }}
+              {{ $imgPath := (path.Join "/content" . )  }}
               {{ if fileExists $imgPath }}
-                {{ $img := imageConfig $imgPath }}
-                <img
-                  src="{{ $featured.Rel }}"
-                  alt="article image"
-                  loading="lazy"
-                  width="{{ $img.Width }}"
-                  height="{{ $img.Height }}"
-                />
+                  {{ $img = imageConfig $imgPath }}
               {{ else }}
-                {{ $imgPath := add "/static" $featured.Rel }}
-                {{ if fileExists $imgPath }}
-                  {{ $img := imageConfig $imgPath }}
-                  <img
-                    src="{{ $featured.Rel }}"
-                    alt="article image"
-                    loading="lazy"
-                    width="{{ $img.Width }}"
-                    height="{{ $img.Height }}"
-                  />
+                  {{ $imgPath := (path.Join "/static" . ) }}
+                  {{ if fileExists $imgPath }}
+                      {{ $img = imageConfig $imgPath }}
                   {{ end }}
               {{ end }}
-            {{- else -}}
-            {{- with $.Site.Params.images -}}
-              {{ $imgPath := add "/content" ( index . 0 ) }}
-              {{ if fileExists $imgPath }}
-                {{ $img := imageConfig $imgPath }}
                 <img
-                  src="{{ index . 0 }}"
-                  alt="article image"
-                  loading="lazy"
-                  width="{{ $img.Width }}"
-                  height="{{ $img.Height }}"
+                src="{{ . }}"
+                alt="article image"
+                loading="lazy"
+                width="{{ $img.Width }}"
+                height="{{ $img.Height }}"
                 />
-              {{ else }}
-                {{ $imgPath := add "/static" ( index . 0 ) }}
-                {{ if fileExists $imgPath }}
-                  {{ $img := imageConfig $imgPath }}
-                  <img
-                    src="{{ index . 0 }}"
-                    alt="article image"
-                    loading="lazy"
-                    width="{{ $img.Width }}"
-                    height="{{ $img.Height }}"
-                  />
-                {{ end }}
-              {{ end }}
-            {{- end -}}
-            {{- end -}}
-            {{- end }}
+            {{ end }}
           </div>
         </a>
       </li>
     </ul>
   {{ end }}
   </div>
-  <a style="display: block;margin-top: 15px;margin-bottom: -25px" href="/{{ .Site.Params.showRecentType }}">
+  <a class="seemore" href="/{{ .Site.Params.showRecentType }}">
     {{ i18n "see_more"}} 
   </a>
 </section>

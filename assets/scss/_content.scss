@@ -82,11 +82,13 @@
   }
   .recentposts {
     margin: auto;
-    max-width: 785px;
+    padding: 10px;
+    max-width: 800px;
     .recentpost {
       display: inline-block;
+      width: 100%;
       max-width: 380px;
-      margin: 5px;
+      margin: 0px;
       transition: all .25s ease-in;
       border-radius: 5px;
       .recentblock .title {
@@ -105,13 +107,14 @@
       a {
         padding: 10px;
         .recentimg {
+          height: 200px;
           box-shadow: 0 0 5px 0 $img-shadow-color;
           border-radius: 5px;
           overflow: hidden;
           img {
+            height: inherit;
             vertical-align: bottom;
             object-fit: cover;
-            height: 200px;
             -webkit-transition: transform .5s ease;
             transition: transform .5s ease;
           }
@@ -123,6 +126,11 @@
         }
       }
     }
+  }
+  .seemore {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: -25px;
   }
 }
 
