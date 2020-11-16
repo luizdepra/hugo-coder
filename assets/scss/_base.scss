@@ -5,20 +5,14 @@
 }
 
 html {
-  overflow: auto;
+  padding-left: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 	box-sizing: border-box;
 	font-size: 62.5%;
 }
 
 body {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  padding: 5px;
-  overflow-y: scroll;
-  overflow-x: hidden;
   color: $fg-color;
   background-color: $bg-color;
 	font-family: $text-font-family;
@@ -249,8 +243,8 @@ img.emoji {
 
 ::-webkit-scrollbar {
   border-radius: 5px;
-  width: 8px;
-  height: 8px;
+  width: 1rem;
+  height: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
