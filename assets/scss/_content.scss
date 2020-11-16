@@ -112,6 +112,9 @@
             transform: scale(1.20);
           }
         }
+        @media (max-width: 550px) {
+          white-space: normal !important;
+        }
       }
     }
   }
