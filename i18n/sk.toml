@@ -33,3 +33,9 @@ other = "autor"
 
 [powered_by]
 other = "Táto stránka bola vytvorená cez"
+
+[recent_posts]
+other = "Posledné príspevky"
+
+[see_more]
+other = "Pozrieť viac"

@@ -32,3 +32,9 @@ other = "статьи"
 
 [see_also]
 other = "Также смотреть"
+
+[recent_posts]
+other = "Недавние Посты"
+
+[see_more]
+other = "Узнать больше"

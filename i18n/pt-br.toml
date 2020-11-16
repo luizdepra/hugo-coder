@@ -28,3 +28,9 @@ other = "Você pode voltar para a <a href=\"{{ . }}\">página inicial</a>."
 
 [powered_by]
 other = "Promovido por"
+
+[recent_posts]
+other = "Postagens recentes"
+
+[see_more]
+other = "Ver mais"

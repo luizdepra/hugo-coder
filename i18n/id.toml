@@ -31,3 +31,9 @@ other = "Dipersembahkan oleh"
 
 [see_also]
 other = "artikel terkait"
+
+[recent_posts]
+other = "Tulisan Terbaru"
+
+[see_more]
+other = "Lihat lebih banyak"

@@ -29,18 +29,20 @@
     {{ end }}
   </div>
 </section>
-{{ if .Site.Params.showLatest }}
-{{ if .Site.Params.showLatestType }}
-<section class="list latest">
-  <h3 class="title">Latest Posts</h3>
-  <div class="latestposts">
-  {{ range first .Site.Params.showLatest (where .Paginator.Pages "Section" .Site.Params.showLatestType) }}
-    <ul class="latestpost">
+{{ if .Site.Params.showRecent }}
+{{ if .Site.Params.showRecentType }}
+<section class="list recent">
+  <h3 class="title">
+    {{ i18n "recent_posts" }}
+  </h3>
+  <div class="recentposts">
+  {{ range first .Site.Params.showRecent (where .Paginator.Pages "Section" .Site.Params.showRecentType) }}
+    <ul class="recentpost">
       <li>
         <span>{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-        <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">
-        {{ .Title }}
-          <div class="latestimg">
+        <a class="recentblock" href="{{ .Params.externalLink | default .RelPermalink }}">
+        <p class="title">{{ .Title }}</p>
+          <div class="recentimg">
             {{- with .Params.images -}}
               {{ $imgPath := add "/content" ( index . 0 ) }}
               {{ if fileExists $imgPath }}
@@ -127,7 +129,9 @@
     </ul>
   {{ end }}
   </div>
-  <a style="display: block;margin-top: 15px;margin-bottom: -25px" href="/{{ .Site.Params.showLatestType }}">See all</a>
+  <a style="display: block;margin-top: 15px;margin-bottom: -25px" href="/{{ .Site.Params.showRecentType }}">
+    {{ i18n "see_more"}} 
+  </a>
 </section>
 {{ end }}
 {{ end }}

@@ -31,3 +31,9 @@ other = "यह भी देखें"
 
 [posts]
 other = "सामग्री"
+
+[recent_posts]
+other = "हाल के पोस्ट"
+
+[see_more]
+other = "और देखें"

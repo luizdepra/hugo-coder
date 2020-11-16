@@ -31,3 +31,9 @@ other = "Motor:"
 
 [see_also]
 other = "Lásd még"
+
+[recent_posts]
+other = "Legutóbbi hozzászólások"
+
+[see_more]
+other = "Többet látni"

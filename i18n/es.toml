@@ -31,3 +31,9 @@ other = "Desarrollado por"
 
 [see_also]
 other = "También ver en"
+
+[recent_posts]
+other = "Mensajes recientes"
+
+[see_more]
+other = "Ver más"

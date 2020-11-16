@@ -31,3 +31,9 @@ other = "參見"
 
 [posts]
 other = "文章"
+
+[recent_posts]
+other = "最近的帖子"
+
+[see_more]
+other = "查看更多"

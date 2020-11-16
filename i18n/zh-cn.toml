@@ -22,3 +22,9 @@ other = "返回 <a href=\"{{ . }}\">主页面</a>."
 
 [powered_by]
 other = "技术支持"
+
+[recent_posts]
+other = "最近的帖子"
+
+[see_more]
+other = "查看更多"

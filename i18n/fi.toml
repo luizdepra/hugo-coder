@@ -31,3 +31,9 @@ other = "Katso myös"
 
 [posts]
 other = "Artikkelit"
+
+[recent_posts]
+other = "Uusimmat viestit"
+
+[see_more]
+other = "Katso lisää"

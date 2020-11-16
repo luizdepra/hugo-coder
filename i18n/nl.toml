@@ -22,3 +22,9 @@ other = "U kunt terugkeren naar de <a href=\"{{ . }}\">thuispagina</a>."
 
 [powered_by]
 other = "Aangedreven door"
+
+[recent_posts]
+other = "Recente berichten"
+
+[see_more]
+other = "Bekijk meer"

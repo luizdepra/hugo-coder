@@ -22,3 +22,9 @@ other = "Du kannst hier zurück zur <a href=\"{{ . }}\">Startseite</a>."
 
 [powered_by]
 other = "Gestaltet mit"
+
+[recent_posts]
+other = "Letzte Beiträge"
+
+[see_more]
+other = "Mehr sehen"

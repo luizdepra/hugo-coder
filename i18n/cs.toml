@@ -24,3 +24,9 @@ other = "Stránka používá"
 
 [see_also]
 other = "Podívejte se také na"
+
+[recent_posts]
+other = "Nedávné příspěvky"
+
+[see_more]
+other = "Vidět víc"

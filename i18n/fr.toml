@@ -31,3 +31,9 @@ other = "Voir aussi dans"
 
 [posts]
 other = "Articles"
+
+[recent_posts]
+other = "Messages récents"
+
+[see_more]
+other = "En savoir plus"

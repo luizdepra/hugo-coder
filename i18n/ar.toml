@@ -30,3 +30,9 @@ other = "انظر أيضاً"
 
 [posts]
 other = "المنشورات"
+
+[recent_posts]
+other = "المشاركات الاخيرة"
+
+[see_more]
+other = "شاهد المزيد"

@@ -31,3 +31,9 @@ other = "Powered by"
 
 [see_also]
 other = "See also in"
+
+[recent_posts]
+other = "Recent posts"
+
+[see_more]
+other = "See more"

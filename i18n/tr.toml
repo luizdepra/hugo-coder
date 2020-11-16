@@ -31,3 +31,9 @@ other = "Ayrıca bakınız"
 
 [posts]
 other = "Gönderiler"
+
+[recent_posts]
+other = "Yakın zamanda Gönderilenler"
+
+[see_more]
+other = "Pozrieť viac"

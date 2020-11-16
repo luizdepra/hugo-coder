@@ -22,3 +22,9 @@ other = "Här kan du komma tillbaka till <a href=\"{{ . }}\">startsidan</a>."
 
 [powered_by]
 other = "Med hjälp av"
+
+[recent_posts]
+other = "Nya Inlägg"
+
+[see_more]
+other = "Se mer"

@@ -31,3 +31,9 @@ other = "Generato da"
 
 [see_also]
 other = "Vedi anche in"
+
+[recent_posts]
+other = "Messaggi recenti"
+
+[see_more]
+other = "Vedi altro"
