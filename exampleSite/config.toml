@@ -34,17 +34,12 @@ disqusShortname = "yourdiscussshortname"
     # Enable reading time metadata for twitter card
     rtimeMeta = false
 
-    # Show recent posts on homepage
-    showRecent = 4
+    # Show recent blog posts on homepage
+    showRecent = 2
     
-    # Recent post type, e.g. "posts" for /posts
-    showRecentType = "posts"
-
-    # Enable Image Preview on blog page
-    enableImgPreview = true
-
-    # Enable Post Summary on blog page
-    enableSummary = true
+    # Enable Image Preview & Post Summary on posts page
+    enablePostImg = true
+    enablePostSummary = true
 
     # Define default global site thumbnail (for twitter card etc.)
     # is also used for showRecent & enableImgPreview options above, if not defined per post

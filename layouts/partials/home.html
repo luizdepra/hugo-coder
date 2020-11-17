@@ -30,56 +30,19 @@
   </div>
 </section>
 {{ if .Site.Params.showRecent }}
-{{ if .Site.Params.showRecentType }}
-<section class="list recent">
+<section class="recent list">
   <h3 class="title">
     {{ i18n "recent_posts" }}
   </h3>
-  <div class="recentposts">
-  {{ range first .Site.Params.showRecent (where .Paginator.Pages "Section" .Site.Params.showRecentType) }}
-    <ul class="recentpost">
-      <li>
-        <span>{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-        <a class="recentblock" href="{{ .Params.externalLink | default .RelPermalink }}">
-        <p class="title">{{ .Title }}</p>
-          <div class="recentimg">
-            {{ $source := "" }}
-            {{- with .Params.images -}}
-              {{ $source = index (.) 0 }}
-            {{ else -}}
-              {{- with .Site.Params.images -}}
-                {{ $source = index (.) 0 }}
-              {{- end -}}
-            {{- end }}
-
-            {{ with $source }}
-              {{ $img := "" }}
-              {{ $imgPath := (path.Join "/content" . )  }}
-              {{ if fileExists $imgPath }}
-                  {{ $img = imageConfig $imgPath }}
-              {{ else }}
-                  {{ $imgPath := (path.Join "/static" . ) }}
-                  {{ if fileExists $imgPath }}
-                      {{ $img = imageConfig $imgPath }}
-                  {{ end }}
-              {{ end }}
-                <img
-                src="{{ . }}"
-                alt="article image"
-                loading="lazy"
-                width="{{ $img.Width }}"
-                height="{{ $img.Height }}"
-                />
-            {{ end }}
-          </div>
-        </a>
-      </li>
+  <div class="posts">
+    <ul>
+      {{ range first .Site.Params.showRecent .Paginator.Pages }}
+        {{- .Render "li" -}}
+      {{ end }}
     </ul>
-  {{ end }}
   </div>
-  <a class="seemore" href="{{ path.Join .RelPermalink .Site.Params.showRecentType }}">
+  <a class="title seemore" href="/posts">
     {{ i18n "see_more"}} 
   </a>
 </section>
-{{ end }}
 {{ end }}

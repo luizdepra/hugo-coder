@@ -1,48 +1,47 @@
 <li>
   <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
-    {{ if .Site.Params.enableImgPreview }}
-    <div class="postimg">
-      {{ $source := "" }}
-      {{- with .Params.images -}}
+    {{ if .Site.Params.enablePostImg }}
+    {{ $source := "" }}
+    {{- with .Params.images -}}
+      {{ $source = index (.) 0 }}
+    {{ else -}}
+      {{- with .Site.Params.images -}}
         {{ $source = index (.) 0 }}
-      {{ else -}}
-        {{- with .Site.Params.images -}}
-          {{ $source = index (.) 0 }}
-        {{- end -}}
-      {{- end }}
-
-      {{ with $source }}
-        {{ $img := "" }}
-        {{ $imgPath := (path.Join "/content" . )  }}
-        {{ if fileExists $imgPath }}
-            {{ $img = imageConfig $imgPath }}
-        {{ else }}
-            {{ $imgPath := (path.Join "/static" . ) }}
+      {{- end -}}
+    {{- end }}
+    {{ with $source }}
+      {{ $img := "" }}
+      {{ $imgPath := (path.Join "/content" . )  }}
+      {{ if fileExists $imgPath }}
+          {{ $img = imageConfig $imgPath }}
+      {{ else }}
+          {{ $imgPath := (path.Join "/static" . ) }}
             {{ if fileExists $imgPath }}
                 {{ $img = imageConfig $imgPath }}
             {{ end }}
-        {{ end }}
-          <img
-          src="{{ . }}"
-          alt="article image"
-          loading="lazy"
-          width="{{ $img.Width }}"
-          height="{{ $img.Height }}"
-          />
       {{ end }}
-    </div>
+        <div class="postimg">
+              <img
+              src="{{ . }}"
+              alt="article image"
+              loading="lazy"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+              />
+        </div>
+      {{ end }}
     {{ end }}
   </span>
   <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">
-    {{ .Title }}
-    {{ if .Site.Params.enableSummary }}
-    <p class="summary">
-      {{ if gt (len .Summary) 250 }}
-        {{ htmlUnescape  ( slicestr .Summary 0 250 ) }}...
+    <br>{{ .Title }}
+    {{ if .Site.Params.enablePostSummary }}
+      {{ if gt (len .Summary) 0 }}
+        <p class="summary">
+          {{ htmlUnescape .Summary | truncate 250 }} <i class="fa fa-terminal" aria-hidden="true"></i>
+        </p>
       {{ else }}
-        {{ htmlUnescape .Summary }}
+       <br><br>
       {{ end }}
-    </p>
     {{ end }}
   </a>
 </li>
