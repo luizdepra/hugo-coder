@@ -13,7 +13,9 @@ img {
 /* Aligning images only on tablet/pc, not mobile. */
 @media (min-width: 550px) {
   img[alt~="_gallery"] {
-    box-shadow: 0 0 5px $img-shadow-color;
+    -moz-box-shadow:    0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
+    -webkit-box-shadow: 0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
+    box-shadow:         0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
     border-radius: 5px;
     max-width: 49%;
     margin-bottom: 2%;

@@ -76,8 +76,11 @@
 .recent {
   width: 100%;
   text-align: center;
+  h3 {
+    margin-top: 2rem;
+  }
   .posts {
-    max-width: 480px;
+    max-width: 500px;
     margin: auto;
     padding: 0 10px 0 10px;
     ul li {
@@ -86,8 +89,8 @@
         margin-right: 0;
         text-align: center;
         .postimg {
+          max-height: 240px;
           max-width: 100%;
-          max-height: 220px;
           img {
             -webkit-transition: transform .5s ease;
             transition: transform .5s ease;
@@ -105,25 +108,19 @@
       }
     } 
   }
-  .seemore {
-    text-align: center;
-    display: block;
-    margin-top: 15px;
-    margin-bottom: -25px;
-  }
 }
 
 .postimg {
+  max-height: 138px;
   margin-left: auto;
   margin-bottom: 30px;
-  max-width: 278px;
-  max-height: 138px;
-  box-shadow: 0 0 5px 0 $img-shadow-color;
+  -moz-box-shadow:    0px 0px 2px $img-shadow-color, 0px 0px 5px $img-shadow-color2;
+  -webkit-box-shadow: 0px 0px 2px $img-shadow-color, 0px 0px 5px $img-shadow-color2;
+  box-shadow:         0px 0px 2px $img-shadow-color, 0px 0px 5px $img-shadow-color2;
   border-radius: 5px;
   overflow: hidden;
   @media only screen and (max-width: 768px) {
-    max-width: 330px;
-    max-height: 150px;
+    max-width: 350px;
     margin-bottom: 10px;
     margin-right: auto;
     margin-top: 10px;
@@ -135,11 +132,7 @@
   }
 }
 .summary {
-  margin-bottom: 30px;
-  margin-top: 0;
   font-weight: normal;
-  display: inline-block;
-  text-decoration: none !important;
   text-align: justify;
 }
 

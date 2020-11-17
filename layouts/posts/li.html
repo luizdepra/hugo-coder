@@ -32,8 +32,11 @@
       {{ end }}
     {{ end }}
   </span>
+  {{ if not .Site.Params.enablePostImg }}
+  <br>
+  {{ end }}
   <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">
-    <br>{{ .Title }}
+    {{ .Title }}
     {{ if .Site.Params.enablePostSummary }}
       {{ if gt (len .Summary) 0 }}
         <p class="summary">
