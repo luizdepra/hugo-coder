@@ -89,6 +89,7 @@
         margin-right: 0;
         text-align: center;
         .postimg {
+          margin-top: 10px;
           max-height: 240px;
           max-width: 100%;
           img {
@@ -120,7 +121,8 @@
   border-radius: 5px;
   overflow: hidden;
   @media only screen and (max-width: 768px) {
-    max-width: 350px;
+    max-width: 400px;
+    max-height: 200px;
     margin-bottom: 10px;
     margin-right: auto;
     margin-top: 10px;
@@ -134,6 +136,10 @@
 .summary {
   font-weight: normal;
   text-align: justify;
+  @media only screen and (max-width: 768px) {
+    margin: 10px auto;
+    max-width: 550px;
+  }
 }
 
 .list {
@@ -168,7 +174,8 @@
           color: $link-color
         }
         @media only screen and (max-width : 768px) {
-          margin-right: 0;
+          max-width: 550px;
+          margin: 0 auto;
           display: block;
           text-align: center;
         }
