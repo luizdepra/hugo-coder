@@ -1,52 +1,60 @@
 {{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disableComments | default false) false) -}}
   {{- if .Site.Params.disqusOnClick -}}
-    {{- $pc := .Site.Config.Privacy.Disqus -}}
+  {{- $pc := .Site.Config.Privacy.Disqus -}}
     {{- if not $pc.Disable -}}
       {{- if .Site.DisqusShortname -}}
       <section id="disqus" style="text-align: center">
-        <button class="disqus-comment-count"
-                data-disqus-identifier="{{ .RelPermalink }}"
-                id="show-comments"
-                onclick="disqus();return false;"
-        >Comments
+        <button
+          style="display: none"
+          class="disqus-comment-count"
+          data-disqus-identifier="{{ .Permalink }}"
+          id="show-comments"
+          onclick="disqus();return false;"
+        >
+          Comments
         </button>
         <div id="disqus_thread"></div>
         <script>
+          window.onload = function () {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById("disqus_thread").innerHTML =
+                "Disqus comments not available when the website is previewed locally.";
+              return;
+            } else {
+              document.getElementById("show-comments").style.display = null;
+            }
+          };
 
           var disqus_loaded = false;
-          var disqus_shortname = "{{ .Site.DisqusShortname }}";
-      
+          var disqus_config = function () {
+            this.page.identifier = "{{ .Permalink }}";
+            this.page.title = "{{ .Title }}";
+            this.page.url = "{{ .Permalink | html }}";
+          };
           function disqus() {
-            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-            }
             if (!disqus_loaded) {
               disqus_loaded = true;
-      
+
               var e = document.createElement("script");
               e.type = "text/javascript";
               e.async = true;
-              e.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+              e.src = "//{{ .Site.DisqusShortname }}.disqus.com/embed.js";
               (
                 document.getElementsByTagName("head")[0] ||
                 document.getElementsByTagName("body")[0]
               ).appendChild(e);
-      
-              //Hide the button after opening
+
               document.getElementById("show-comments").style.display = "none";
             }
           }
-      
-          //Opens comments when linked to directly
+
           var hash = window.location.hash.substr(1);
           if (hash.length > 8) {
             if (hash.substring(0, 8) == "comment-") {
               disqus();
             }
           }
-      
-          //Remove this if you don't want to load comments for search engines
+
           if (
             /bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(
               navigator.userAgent
@@ -55,13 +63,19 @@
             disqus();
           }
         </script>
-        <script id="dsq-count-scr" src="https://{{ .Site.DisqusShortname }}.disqus.com/count.js" async>
-        </script>
+        <script
+          id="dsq-count-scr"
+          src="https://{{ .Site.DisqusShortname }}.disqus.com/count.js"
+          async
+        ></script>
         <noscript
           >Please enable JavaScript to view the
           <a href="https://disqus.com/?ref_noscript"
             >comments powered by Disqus.</a
           ></noscript
+        >
+        <a href="https://disqus.com" class="dsq-brlink"
+          >powered by <span class="logo-disqus">Disqus</span></a
         >
       </section>
       {{- end -}}
