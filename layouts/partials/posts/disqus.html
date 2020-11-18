@@ -4,19 +4,23 @@
     {{- if not $pc.Disable -}}
       {{- if .Site.DisqusShortname -}}
       <section id="disqus" style="text-align: center">
-        <div class="comments-block">
-          <button id="show-comments" onclick="disqus();return false;">
-            Load Disqus Comments
-          </button>
-        </div>
-      
+        <button class="disqus-comment-count"
+                data-disqus-identifier="{{ .RelPermalink }}"
+                id="show-comments"
+                onclick="disqus();return false;"
+        >Comments
+        </button>
         <div id="disqus_thread"></div>
-      
         <script>
+
           var disqus_loaded = false;
           var disqus_shortname = "{{ .Site.DisqusShortname }}";
       
           function disqus() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+            }
             if (!disqus_loaded) {
               disqus_loaded = true;
       
@@ -50,6 +54,8 @@
           ) {
             disqus();
           }
+        </script>
+        <script id="dsq-count-scr" src="https://{{ .Site.DisqusShortname }}.disqus.com/count.js" async>
         </script>
         <noscript
           >Please enable JavaScript to view the
