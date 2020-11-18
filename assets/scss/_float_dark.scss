@@ -1,0 +1,24 @@
+@mixin float_dark {
+  .float-container {
+    a {
+      color: $alt-fg-color-dark;
+      background-color: $alt-bg-color-dark;
+      &:hover, &:focus {
+        color: $link-color-dark;
+        @media only screen and (max-width : 768px) {
+          color: $alt-fg-color-dark;
+        }
+      }
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include float_dark()
+}
+
+ body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include float_dark()
+  }
+}

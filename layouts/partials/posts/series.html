@@ -12,7 +12,7 @@
         {{ range first (add $maxItems 1) $series.Pages }}
           {{ if ne .RelPermalink $currentPageUrl }}
             <li>
-              <a href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+              <a href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
             </li>
           {{ end }}
         {{ end }}

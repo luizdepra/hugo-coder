@@ -82,5 +82,7 @@
 - [Hussaini Zulkifli](https://github.com/hussaini/)
 - [Ellison Leão](https://github.com/ellisonleao)
 - [Lucas de Oliveira](https://github.com/lucas-dOliveira)
+- [Jian Loong Liew](https://github.com/JianLoong)
 - [earnest ma](https://github.com/earnestma)
 - [TMineCola](https://github.com/tminecola)
+- [Arafat Hasan](https://github.com/arafat-hasan)

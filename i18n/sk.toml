@@ -1,3 +1,6 @@
+[posts]
+other = "články"
+
 [category]
 other = "kategória"
 
@@ -21,6 +24,12 @@ other = "Prepáčte, ale táto stránka neexistuje."
 
 [head_back]
 other = "Späť na <a href=\"{{ . }}\">domácu stránku</a>."
+
+[see_also]
+other = "Pozrite tiež"
+
+[author]
+other = "autor"
 
 [powered_by]
 other = "Táto stránka bola vytvorená cez"

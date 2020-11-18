@@ -1,16 +1,16 @@
-baseurl = "http://www.example.com"
+baseURL = "http://www.example.com"
 title = "johndoe"
 
 theme = "hugo-coder"
 
-languagecode = "en"
-defaultcontentlanguage = "en"
+languageCode = "en"
+defaultContentLanguage = "en"
 
 paginate = 20
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+pygmentsStyle = "b2"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 
 disqusShortname = "yourdiscussshortname"
 
@@ -19,11 +19,11 @@ disqusShortname = "yourdiscussshortname"
     description = "John Doe's personal website"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
-    avatarurl = "images/avatar.jpg"
+    avatarURL = "images/avatar.jpg"
     #gravatar = "john.doe@example.com"
-    footercontent = "Enter a text here."
+    footerContent = "Enter a text here."
 
-    dateformat = "January 2, 2006"
+    dateFormat = "January 2, 2006"
 
     hideFooter = false
     hideCredits = false
@@ -40,10 +40,10 @@ disqusShortname = "yourdiscussshortname"
     # "auto" (use preference set by browser)
     # "dark" (dark background, light foreground)
     # "light" (light background, dark foreground) (default)
-    colorscheme = "auto"
+    colorScheme = "auto"
 
     # Hide the toggle button, along with the associated vertical divider
-    hidecolorschemetoggle = false
+    hideColorSchemeToggle = false
 
     # Series see also post count
     maxSeeAlsoItems = 5
@@ -118,7 +118,7 @@ disqusShortname = "yourdiscussshortname"
 
 [languages]
     [languages.en]
-        languagename = "English"
+        languageName = "English"
 
         [languages.en.menu]
 
@@ -144,7 +144,7 @@ disqusShortname = "yourdiscussshortname"
 
 
     [languages.pt-br]
-        languagename = "Português"
+        languageName = "Português"
         title = "João Ninguém"
 
         [languages.pt-br.params]
@@ -152,7 +152,7 @@ disqusShortname = "yourdiscussshortname"
             info = "Full Stack DevOps e Mágico"
             description = "Sítio pessoal de João Ninguém"
             keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "Coloque algum texto aqui."
+            footerContent = "Coloque algum texto aqui."
 
         [languages.pt-br.menu]
 

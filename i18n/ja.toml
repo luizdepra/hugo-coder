@@ -7,6 +7,12 @@ other = "タグ"
 [series]
 other = "シリーズ"
 
+[author]
+other = "筆者"
+
+[posts]
+other = "記事"
+
 [reading_time]
 one = "1分で読めます"
 other = "{{ .Count }}分で読めます"
@@ -18,7 +24,10 @@ other = "ページが見つかりません"
 other = "申し訳ございません。アクセスしようとしたページが見つかりませんでした。"
 
 [head_back]
-other = "<a href=\"{{ . }}\">ホームページ</a>からお探しいただきますようお願い申し上げます。"
+other = "<a href=\"{{ . }}\">トップページ</a>からお探しいただきますようお願い申し上げます。"
 
 [powered_by]
 other = "利用技術"
+
+[see_also]
+other = "関連記事："
