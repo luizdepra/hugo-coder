@@ -5,9 +5,8 @@
       {{- if .Site.DisqusShortname -}}
       <section id="disqus" style="text-align: center">
         <button
-          style="display: none"
           class="disqus-comment-count"
-          data-disqus-identifier="{{ .Permalink }}"
+          data-disqus-identifier="{{ .File.UniqueID }}"
           id="show-comments"
           onclick="disqus();return false;"
         >
@@ -15,19 +14,18 @@
         </button>
         <div id="disqus_thread"></div>
         <script>
-          window.onload = function () {
+           window.onload = function () {
             if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
               document.getElementById("disqus_thread").innerHTML =
                 "Disqus comments not available when the website is previewed locally.";
+                document.getElementById("show-comments").style.display = "none";
               return;
-            } else {
-              document.getElementById("show-comments").style.display = null;
-            }
+              }
           };
 
           var disqus_loaded = false;
           var disqus_config = function () {
-            this.page.identifier = "{{ .Permalink }}";
+            this.page.identifier = "{{ .File.UniqueID }}";
             this.page.title = "{{ .Title }}";
             this.page.url = "{{ .Permalink | html }}";
           };
