@@ -10,15 +10,22 @@ img {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+img[alt~="_gallery"] {
+  -moz-box-shadow:    0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
+  -webkit-box-shadow: 0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
+  box-shadow:         0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
+  border-radius: unquote("max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) / 5px 5px 5px 5px");
+  border-top-left-radius: unquote("max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) 5px");
+  border-top-right-radius: unquote("max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) 5px");
+  border-bottom-right-radius: unquote("max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) 5px");
+  border-bottom-left-radius: unquote("max(0px, min(5px, ((100vw - 3px) - 100%) * 9999)) 5px");
+  margin-bottom: 2%;
+}
+
 /* Aligning images only on tablet/pc, not mobile. */
 @media (min-width: 550px) {
   img[alt~="_gallery"] {
-    -moz-box-shadow:    0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
-    -webkit-box-shadow: 0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
-    box-shadow:         0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
-    border-radius: 5px;
     max-width: 49%;
-    margin-bottom: 2%;
   }
   img[alt$=">"] {
     float: right;
