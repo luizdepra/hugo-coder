@@ -134,9 +134,12 @@
   }
 }
 .summary {
+  font-family: $text-font-family;
+	font-size: 1.6rem;
   font-weight: normal;
   text-align: justify;
   @media only screen and (max-width: 768px) {
+    font-size: 1.4rem;
     margin: 10px auto;
     max-width: 550px;
   }
