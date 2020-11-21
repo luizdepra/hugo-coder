@@ -30,23 +30,25 @@
   </div>
 </section>
 {{ if .Site.Params.showRecent }}
-<section class="container list">
-  <div class="centered">
-    <h3 class="title">
-      {{ i18n "recent_posts" }}
-    </h3>
-  </div>
-  <div class="posts">
-    <ul>
-      {{ range first .Site.Params.showRecent .Paginator.Pages }}
-        {{- .Render "li" -}}
-      {{ end }}
-    </ul>
-  </div>
-  <div class="centered">
-    <button onclick="location.href='/posts'">
-      {{ i18n "see_more"}} 
-    </button>
-  </div>
-</section>
+<div style="width: 100%; margin: auto;">
+  <section class="container list">
+    <div class="centered">
+      <h3 class="title">
+        {{ i18n "recent_posts" }}
+      </h3>
+    </div>
+    <div class="posts">
+      <ul>
+        {{ range first .Site.Params.showRecent .Paginator.Pages }}
+          {{- .Render "li" -}}
+        {{ end }}
+      </ul>
+    </div>
+    <div class="centered">
+      <button onclick="location.href='/posts'">
+        {{ i18n "see_more"}} 
+      </button>
+    </div>
+  </section>
+</div>
 {{ end }}
