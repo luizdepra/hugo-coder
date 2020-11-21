@@ -30,10 +30,12 @@
   </div>
 </section>
 {{ if .Site.Params.showRecent }}
-<section class="recent list">
-  <h3 class="title">
-    {{ i18n "recent_posts" }}
-  </h3>
+<section class="container list">
+  <div class="centered">
+    <h3 class="title">
+      {{ i18n "recent_posts" }}
+    </h3>
+  </div>
   <div class="posts">
     <ul>
       {{ range first .Site.Params.showRecent .Paginator.Pages }}
@@ -41,8 +43,10 @@
       {{ end }}
     </ul>
   </div>
-  <button onclick="location.href='/posts'">
-    {{ i18n "see_more"}} 
-  </button>
+  <div class="centered">
+    <button onclick="location.href='/posts'">
+      {{ i18n "see_more"}} 
+    </button>
+  </div>
 </section>
 {{ end }}

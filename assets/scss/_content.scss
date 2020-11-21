@@ -73,44 +73,6 @@
   }
 }
 
-.recent {
-  width: 100%;
-  text-align: center;
-  h3 {
-    margin-top: 2rem;
-  }
-  .posts {
-    max-width: 500px;
-    margin: auto;
-    padding: 0 10px 0 10px;
-    ul li {
-      display: block !important;
-      .date {
-        margin-right: 0;
-        text-align: center;
-        .postimg {
-          margin-top: 10px;
-          max-height: 240px;
-          max-width: 100%;
-          img {
-            -webkit-transition: transform .5s ease;
-            transition: transform .5s ease;
-          }
-          &:focus img,
-          &:hover img {
-            -webkit-transform: scale(1.20);
-            transform: scale(1.20);
-          }
-        }
-      }
-      .title {
-        margin-right: 0;
-        text-align: center;
-      }
-    } 
-  }
-}
-
 .postimg {
   max-height: 138px;
   margin-left: auto;
@@ -134,6 +96,7 @@
   }
 }
 .summary {
+  margin: 15px auto;
   font-family: $text-font-family;
 	font-size: 1.6rem;
   font-weight: normal;
