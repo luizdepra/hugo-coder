@@ -86,4 +86,5 @@
 - [earnest ma](https://github.com/earnestma)
 - [TMineCola](https://github.com/tminecola)
 - [Arafat Hasan](https://github.com/arafat-hasan)
+- [YUJI](https://yuji.ne.jp/)
 - [Peter Duchnovsky](https://github.com/pduchnovsky)
