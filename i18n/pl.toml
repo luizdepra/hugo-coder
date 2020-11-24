@@ -7,8 +7,15 @@ other = "tag"
 [series]
 other = "seria"
 
+[author]
+other = "autor(ka)"
+
+[posts]
+other = "posty"
+
 [reading_time]
-other = "czas czytania: {{ .Count }} min"
+one = "1 min czytania"
+other = "{{ .Count }} min czytania"
 
 [page_not_found]
 other = "Nie znaleziono strony"
@@ -21,3 +28,6 @@ other = "Możesz wrócić na <a href=\"{{ . }}\">stronę domową</a>."
 
 [powered_by]
 other = "Napędzane przez"
+
+[see_also]
+other = "Zobacz również"

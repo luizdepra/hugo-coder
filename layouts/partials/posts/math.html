@@ -1,7 +1,7 @@
 {{- if or (.Params.math) (.Site.Params.math) -}}
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.2/es5/tex-mml-chtml.min.js" integrity="sha512-7rZgZU/u5XjLaO7dBpkcvZ2+ilGXbdIak0FXUgMoO+adNy7RUceort055Wn7LkZY3VLwEsSDpi8Ui+32N1vrfw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.2/es5/startup.min.js" integrity="sha512-C0BuHB/QtgUf7Brtfjp1U7wFsexOoYcZvMBYXis306U6/t1LkY2gdRyFwhSfrt2KYRk3FD+8y9BnOuLiEub+yA==" crossorigin="anonymous"></script>
   <script>
     MathJax = {
       tex: {
@@ -18,9 +18,9 @@
   </script>
 {{- end -}}
 {{- if or (.Params.katex) (.Site.Params.katex) -}}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.1/katex.min.css" integrity="sha512-QgXfhkU+Cno4HWFb3oPFijb+aSWv78H9GHEsSlVGNsXQ7iepDlabPRwvXsW/mQOKVHhqHtYOU0MLKHUiuuTIcA==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.1/katex.min.js" integrity="sha512-S/vrb4Jueg+n/i3R+7vNC4UPT3z9yGeMEABDFgC8GW2g2kukn0mUZIjIkazX0TTlaBvw1OjlTMLzWm33F4HWOQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.1/contrib/auto-render.min.js" integrity="sha512-GicGrbLBXJh2kbF+DYD+sCW5hPavoOfVAKSOE7+qgYCgVTcwe+/D4LXegS9JVTY72ovc5Ung4Fml+i1uD3uOyQ==" crossorigin="anonymous"
     onload="renderMathInElement(document.body,
       {
         delimiters: [
