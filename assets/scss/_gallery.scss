@@ -11,9 +11,9 @@ img {
 }
 
 img[alt~="_gallery"] {
-  -moz-box-shadow:    0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
-  -webkit-box-shadow: 0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
-  box-shadow:         0px 0px 4px $img-shadow-color, 0px 0px 9px $img-shadow-color2;
+  -moz-box-shadow:    0px 0px 3px $img-shadow-color, 0px 0px 10px $img-shadow-color2;
+  -webkit-box-shadow: 0px 0px 3px $img-shadow-color, 0px 0px 10px $img-shadow-color2;
+  box-shadow:         0px 0px 3px $img-shadow-color, 0px 0px 10px $img-shadow-color2;
   border-radius: 5px;
   margin-bottom: 2%;
 }

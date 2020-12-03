@@ -77,9 +77,9 @@
   max-height: 138px;
   margin-left: auto;
   margin-bottom: 30px;
-  -moz-box-shadow:    0px 0px 2px $img-shadow-color, 0px 0px 5px $img-shadow-color2;
-  -webkit-box-shadow: 0px 0px 2px $img-shadow-color, 0px 0px 5px $img-shadow-color2;
-  box-shadow:         0px 0px 2px $img-shadow-color, 0px 0px 5px $img-shadow-color2;
+  -moz-box-shadow:    0px 0px 1px $img-shadow-color, 0px 0px 6px $img-shadow-color2;
+  -webkit-box-shadow: 0px 0px 1px $img-shadow-color, 0px 0px 6px $img-shadow-color2;
+  box-shadow:         0px 0px 1px $img-shadow-color, 0px 0px 6px $img-shadow-color2;
   border-radius: 5px;
   overflow: hidden;
   @media only screen and (max-width: 768px) {
@@ -88,11 +88,6 @@
     margin-bottom: 10px;
     margin-right: auto;
     margin-top: 10px;
-  }
-  img {
-    height: inherit;
-    vertical-align: bottom;
-    object-fit: cover;
   }
 }
 .summary {
