@@ -1,11 +1,6 @@
 stackbitVersion: ~0.3.0
-ssgName: custom
-publishDir: demo/public
-buildCommand: make prepare && hugo --source demo --baseURL "/"
+ssgName: hugo
 uploadDir: images
-staticDir: exampleSite/static
-pagesDir: exampleSite/content
-dataDir: exampleSite
 models:
   config:
     type: data
