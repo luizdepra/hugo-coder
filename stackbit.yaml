@@ -1,11 +1,11 @@
 stackbitVersion: ~0.3.0
 ssgName: hugo
 uploadDir: images
+pageLayoutKey: null
 models:
   config:
-    type: data
-    label: Config
-    file: config.toml
+    type: config
+    label: Site Config
     fields:
       - type: string
         name: title
