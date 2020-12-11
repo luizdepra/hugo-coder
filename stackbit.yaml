@@ -137,6 +137,13 @@ models:
               - type: string
                 name: code
                 label: URL for Goat Counter
+          - type: object
+            name: cloudflare
+            label:  Cloudflare Web Analytics (optional)
+            fields:
+              - type: string
+                name: token
+                label: token for Cloudflare Web Analytics
       - type: object
         name: languages
         fields:
