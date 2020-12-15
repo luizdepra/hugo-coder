@@ -87,4 +87,5 @@
 - [TMineCola](https://github.com/tminecola)
 - [Arafat Hasan](https://github.com/arafat-hasan)
 - [YUJI](https://yuji.ne.jp/)
+- [JaeSang Yoo](https://github.com/JSYoo5B)
 - [Peter Duchnovsky](https://github.com/pduchnovsky)
