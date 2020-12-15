@@ -76,7 +76,7 @@ disqusShortname = "yourdiscussshortname"
 [params.goatCounter]
     code = "code"
 
-# If you want to use  Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
 [params.cloudflare]
     token = "token"
 
