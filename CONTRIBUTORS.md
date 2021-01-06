@@ -88,4 +88,4 @@
 - [Arafat Hasan](https://github.com/arafat-hasan)
 - [YUJI](https://yuji.ne.jp/)
 - [JaeSang Yoo](https://github.com/JSYoo5B)
-- [Alex Miranda](https://github.com/ammiranda)
+- [Alex Miranda](https://ammiranda.com)
