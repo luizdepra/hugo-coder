@@ -144,6 +144,16 @@ models:
               - type: string
                 name: token
                 label: token for Cloudflare Web Analytics
+          - type: object
+            name: matomo
+            label: Matomo (optional)
+            fields:
+              - type: string
+                name: siteID
+                label: Site ID for Matomo
+              - type: string
+                name: serverURL
+                label: URL for Matomo
       - type: object
         name: languages
         fields:

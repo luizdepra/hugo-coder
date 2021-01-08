@@ -80,6 +80,13 @@ disqusShortname = "yourdiscussshortname"
 [params.cloudflare]
     token = "token"
 
+# If you want to use Matomo(https://matomo.org) for analytics, add this section
+[params.matomo]
+    # Default value is "1", overwrite this if you are cloud-hosting
+    siteID = "ABCDE"
+    # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
+    serverURL = "analytics.example.com"
+
 [taxonomies]
   category = "categories"
   series = "series"
