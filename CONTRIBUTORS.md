@@ -63,7 +63,7 @@
 - [Piotr Orzechowski](https://orzechowski.tech)
 - [Glenn Feunteun](https://github.com/gfeun)
 - [Santiago González](https://github.com/netrules)
-- [Codruț Constantin Gușoi](https://www.sdwolfz.pro)
+- [Codruț Constantin Gușoi](https://www.codrut.pro)
 - [Clément Pannetier](https://clementpannetier.dev)
 - [FantasticMao](https://github.com/FantasticMao)
 - [Utkarsh Gupta](https://utkarsh2102.com)
@@ -88,4 +88,8 @@
 - [Arafat Hasan](https://github.com/arafat-hasan)
 - [YUJI](https://yuji.ne.jp/)
 - [JaeSang Yoo](https://github.com/JSYoo5B)
+<<<<<<< HEAD
 - [Alex Miranda](https://ammiranda.com)
+=======
+- [Felix](https://github.com/lazyyz)
+>>>>>>> upstream/master
