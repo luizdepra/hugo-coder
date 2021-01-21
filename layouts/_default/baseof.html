@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
     {{ if .Site.Params.csp }}
-      {{ partial "_shared/csp.html" . }}
+      {{ partial "csp.html" . }}
     {{ end }}
 
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
