@@ -90,3 +90,4 @@
 - [JaeSang Yoo](https://github.com/JSYoo5B)
 - [Felix](https://github.com/lazyyz)
 - [Peter Duchnovsky](https://pduchnovsky.com)
+- [Alex Miranda](https://ammiranda.com)
