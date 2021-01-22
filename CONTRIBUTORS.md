@@ -89,3 +89,4 @@
 - [YUJI](https://yuji.ne.jp/)
 - [JaeSang Yoo](https://github.com/JSYoo5B)
 - [Felix](https://github.com/lazyyz)
+- [Peter Duchnovsky](https://pduchnovsky.com)
