@@ -91,3 +91,4 @@
 - [Felix](https://github.com/lazyyz)
 - [Peter Duchnovsky](https://pduchnovsky.com)
 - [Alex Miranda](https://ammiranda.com)
+- [Alphonse Mariya](https://github.com/alfunx)
