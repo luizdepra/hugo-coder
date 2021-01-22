@@ -7,9 +7,15 @@ other = "标签"
 [series]
 other = "系列"
 
+[author]
+other = "作者"
+
+[posts]
+other = "文章"
+
 [reading_time]
-one = "1分钟阅读时间"
-other = "{{ .Count }} 分钟阅读时间"
+one = "阅读时间：1 分钟"
+other = "阅读时间：{{ .Count }} 分钟"
 
 [page_not_found]
 other = "找不到页面"
@@ -18,7 +24,10 @@ other = "找不到页面"
 other = "此页面不存在"
 
 [head_back]
-other = "返回 <a href=\"{{ . }}\">主页面</a>."
+other = "返回 <a href=\"{{ . }}\">首页</a>."
 
 [powered_by]
 other = "技术支持"
+
+[see_also]
+other = "参见"
