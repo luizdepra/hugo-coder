@@ -138,6 +138,10 @@
     {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
       {{- partial "analytics/goatcounter" . -}}
     {{ end }}
+
+    {{ if and .Site.Params.cloudflare .Site.Params.cloudflare.token }}
+      {{- partial "analytics/cloudflare" . -}}
+    {{ end }}
   </body>
 
 </html>
