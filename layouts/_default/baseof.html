@@ -92,6 +92,7 @@
     {{ end }}
 
     {{ hugo.Generator }}
+    {{- partial "head_custom.html" . }}
   </head>
 
   {{ $csClass := "colorscheme-light" }}
