@@ -1,3 +1,5 @@
+[![Theme is hugo-coder](https://img.shields.io/badge/Theme-hugo--coder-2b8cbe)](https://github.com/luizdepra/hugo-coder)
+
 ![Hugo Coder Logotype](https://github.com/luizdepra/hugo-coder/blob/master/images/logos/logotype-a.png)
 
 A simple and clean blog theme for [Hugo](https://gohugo.io/).
