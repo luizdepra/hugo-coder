@@ -47,6 +47,24 @@ h6 {
   font-weight: 700;
   color: $alt-fg-color;
   margin: 6.4rem 0 3.2rem 0;
+
+  &:hover .heading-link {
+    visibility: visible;
+  }
+
+  .heading-link {
+    color: $link-color;
+    font-weight: inherit;
+    text-decoration: none;
+    font-size: 80%;
+    visibility: hidden;
+  }
+
+  .title-link {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+  }
 }
 
 h1 {
