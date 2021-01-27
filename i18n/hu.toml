@@ -7,6 +7,12 @@ other = "Címke"
 [series]
 other = "Sorozat"
 
+[author]
+other = "Szerző"
+
+[posts]
+other = "Írások"
+
 [reading_time]
 one = "Egyperces"
 other = "{{ .Count }} percnyi olvasnivaló"
@@ -22,3 +28,6 @@ other = "Itt visszaléphet a <a href=\"{{ . }}\">Főoldalra</a>."
 
 [powered_by]
 other = "Motor:"
+
+[see_also]
+other = "Lásd még"

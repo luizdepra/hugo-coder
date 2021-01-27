@@ -5,14 +5,19 @@
     {{ $name := . | urlize }}
     {{ $series := index $.Site.Taxonomies.series $name }}
     {{ if gt (len $series.Pages) 1 }}
-      <h3>See also in {{ . }}</h3>
+      <h3 id="{{ i18n "see_also" | default "See also in" | anchorize }}-{{ anchorize . | safeURL }}">
+        {{ i18n "see_also" | default "See also in" }} {{ . }}
+        <a class="heading-link" href="#{{ i18n "see_also" | default "See also in" | anchorize }}-{{ anchorize . | safeURL }}">
+          <i class="fa fa-link" aria-hidden="true"></i>
+        </a>
+      </h3>
       <nav>
         <ul>
         {{ $maxItems := $.Site.Params.maxSeeAlsoItems | default 5 }}
         {{ range first (add $maxItems 1) $series.Pages }}
           {{ if ne .RelPermalink $currentPageUrl }}
             <li>
-              <a href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+              <a href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
             </li>
           {{ end }}
         {{ end }}

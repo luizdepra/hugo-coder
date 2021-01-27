@@ -1,0 +1,33 @@
+[category]
+other = "categorie"
+
+[tag]
+other = "etichetă"
+
+[series]
+other = "serie"
+
+[author]
+other = "autor"
+
+[posts]
+other = "articole"
+
+[reading_time]
+one   = "Un minut de lectură"
+other = "{{ .Count }} {{ if lt .Count 20 }}minute{{ else }}de minute{{ end }} de lectură"
+
+[page_not_found]
+other = "Pagină Pierdută"
+
+[page_does_not_exist]
+other = "Ne pare rău, această pagină nu există."
+
+[head_back]
+other = "Poți să te întorci la <a href=\"{{ . }}\">pagina principală</a>."
+
+[powered_by]
+other = "Susținut de"
+
+[see_also]
+other = "Altele din seria"

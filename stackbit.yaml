@@ -1,29 +1,24 @@
-stackbitVersion: ~0.2.0
-ssgName: custom
-publishDir: demo/public
-buildCommand: make prepare && hugo --source demo --baseURL "/"
+stackbitVersion: ~0.3.0
+ssgName: hugo
 uploadDir: images
-staticDir: exampleSite/static
-pagesDir: exampleSite/content
-dataDir: exampleSite
+pageLayoutKey: null
 models:
   config:
-    type: data
-    label: Config
-    file: config.toml
+    type: config
+    label: Site Config
     fields:
       - type: string
         name: title
         label: Title
         required: true
       - type: string
-        name: baseurl
+        name: baseURL
         label: Base URL
         description: Hostname (and path) to the root
       - type: string
-        name: languagecode
+        name: languageCode
       - type: string
-        name: defaultcontentlanguage
+        name: defaultContentLanguage
       - type: string
         name: themesDir
       - type: string
@@ -32,13 +27,13 @@ models:
       - type: number
         name: paginate
       - type: boolean
-        name: canonifyurls
+        name: canonifyURLs
       - type: string
-        name: pygmentsstyle
+        name: pygmentsStyle
       - type: boolean
-        name: pygmentscodefences
+        name: pygmentsCodeFences
       - type: boolean
-        name: pygmentscodefencesguesssyntax
+        name: pygmentsCodeFencesGuessSyntax
       - type: string
         name: disqusShortname
       - type: object
@@ -55,17 +50,19 @@ models:
           - type: string
             name: info
           - type: string
-            name: avatarurl
+            name: avatarURL
           - type: boolean
             name: hideFooter
           - type: string
-            name: footercontent
+            name: footerContent
           - type: string
-            name: dateformat
+            name: dateFormat
           - type: boolean
             name: hideCredits
           - type: boolean
             name: hideCopyright
+          - type: boolean
+            name: hideColorSchemeToggle
           - type: number
             name: since
           - type: string
@@ -73,13 +70,17 @@ models:
           - type: boolean
             name: rtl
           - type: string
-            name: colorscheme
+            name: colorScheme
           - type: number
             name: maxSeeAlsoItems
           - type: list
-            name: custom_css
+            name: customCSS
           - type: list
-            name: custom_js
+            name: customSCSS
+          - type: list
+            name: customJS
+          - type: boolean
+            name: enableTwemoji
           - type: list
             name: social
             label: Social Media Icons
@@ -114,13 +115,49 @@ models:
               - type: string
                 name: serverURL
                 label: URL for Fathom Analytics
+          - type: object
+            name: plausibleAnalytics
+            label: Plausible Analytics (optional)
+            fields:
+              - type: string
+                name: domain
+                label: Website domain for Plausible Analytics
+              - type: string
+                name: serverURL
+                label: URL for Plausible Analytics
+          - type: object
+            name: goatCounter
+            label: Goat Counter (optional)
+            fields:
+              - type: string
+                name: code
+                label: URL for Goat Counter
+          - type: object
+            name: cloudflare
+            label:  Cloudflare Web Analytics (optional)
+            fields:
+              - type: string
+                name: token
+                label: token for Cloudflare Web Analytics
+          - type: object
+            name: matomo
+            label: Matomo (optional)
+            fields:
+              - type: string
+                name: siteID
+                label: Site ID for Matomo
+              - type: string
+                name: serverURL
+                label: URL for Matomo
       - type: object
         name: languages
         fields:
-          - type: language_config
+          - type: model
             name: en
-          - type: language_config
+            models: [language_config]
+          - type: model
             name: "pt-br"
+            models: [language_config]
       - type: object
         name: taxonomies
         fields:
@@ -130,6 +167,8 @@ models:
             name: series
           - type: string
             name: tag
+          - type: string
+            name: author
   basicpage:
     type: page
     label: Basic Page
@@ -172,6 +211,11 @@ models:
         label: Series
         items:
           type: string
+      - type: list
+        name: authors
+        label: Authors
+        items:
+          type: string
       - type: string
         name: externalLink
       - type: string
@@ -185,9 +229,13 @@ models:
         items:
           type: string
       - type: image
-        name: featured_image
+        name: featuredImage
         label: Featured Image
         description: Image featured in post display
+      - type: list
+        name: authors
+        items:
+          type: string
   snippets:
     type: page
     label: Snippets
@@ -201,7 +249,7 @@ models:
     label: Language Config
     fields:
       - type: string
-        name: languagename
+        name: languageName
       - type: string
         name: title
       - type: object
@@ -216,7 +264,7 @@ models:
           - type: string
             name: keywords
           - type: string
-            name: footercontent
+            name: footerContent
           - type: number
             name: since
       - type: object

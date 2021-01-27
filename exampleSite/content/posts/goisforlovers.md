@@ -14,6 +14,7 @@ categories = [
     "golang",
 ]
 series = ["Getting Started", "Hugo"]
+authors = ["Jane Smith"]
 +++
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
@@ -240,7 +241,7 @@ instead of depending on the context.
 
       {{ $title := .Site.Title }}
       {{ range .Params.tags }}
-        <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> - {{ $title }} </li>
+        <li> <a href="{{ $baseURL }}/tags/{{ . | urlize }}">{{ . }}</a> - {{ $title }} </li>
       {{ end }}
 
 Notice how once we have entered the loop the value of {{ . }} has changed. We

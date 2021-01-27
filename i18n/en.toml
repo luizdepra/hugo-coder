@@ -7,7 +7,14 @@ other = "tag"
 [series]
 other = "series"
 
+[author]
+other = "author"
+
+[posts]
+other = "posts"
+
 [reading_time]
+one = "One-minute read"
 other = "{{ .Count }}-minute read"
 
 [page_not_found]
@@ -21,3 +28,6 @@ other = "You can head back to <a href=\"{{ . }}\">homepage</a>."
 
 [powered_by]
 other = "Powered by"
+
+[see_also]
+other = "See also in"

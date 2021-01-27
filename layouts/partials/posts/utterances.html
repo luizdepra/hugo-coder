@@ -1,0 +1,12 @@
+{{- if isset .Site.Params "utterances" -}}
+  {{- if and (isset .Site.Params.utterances "repo") (not (eq .Site.Params.utterances.repo "" )) (eq (.Params.disable_comments | default false) false) -}}
+  <script src="https://utteranc.es/client.js"
+    repo= "{{ .Site.Params.utterances.repo }}"
+    issue-term="{{ default "title" .Site.Params.utterances.issueTerm }}"
+    {{ if isset .Site.Params.utterances "label" }}label="{{ .Site.Params.utterances.label }}"{{ end }}
+    theme="{{ default "github-light" .Site.Params.utterances.theme }}"
+    crossorigin="anonymous"
+    async>
+  </script>
+  {{- end -}}
+{{- end -}}
