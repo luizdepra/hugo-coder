@@ -80,6 +80,38 @@ disqusShortname = "yourdiscussshortname"
 [params.cloudflare]
     token = "token"
 
+# If you want to use Matomo(https://matomo.org) for analytics, add this section
+[params.matomo]
+    # Default value is "1", overwrite this if you are cloud-hosting
+    siteID = "ABCDE"
+    # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
+    serverURL = "analytics.example.com"
+
+# If you want to implement a Content-Security-Policy, add this section
+[params.csp]
+	  childsrc = ["'self'"]
+	  fontsrc = [
+        "'self'",
+		    "https://fonts.gstatic.com",
+		    "https://cdn.jsdelivr.net/"
+    ]
+	  formaction = ["'self'"]
+	  framesrc = ["'self'"]
+	  imgsrc = ["'self'"]
+	  objectsrc = ["'none'"]
+	  stylesrc = [
+        "'self'",
+		    "'unsafe-inline'",
+		    "https://fonts.googleapis.com/",
+		    "https://cdn.jsdelivr.net/"
+    ]
+	  scriptsrc = [
+        "'self'",
+		    "'unsafe-inline'",
+		    "https://www.google-analytics.com"
+    ]
+	  prefetchsrc = ["'self'"]
+
 [taxonomies]
   category = "categories"
   series = "series"
