@@ -28,8 +28,10 @@ disqusShortname = "yourdiscussshortname"
     hideFooter = false
     hideCredits = false
     hideCopyright = false
-    disqusOnClick = true
     since = 2019
+
+    # Make disqus load only when a button is clicked
+    disqusOnClick = false
 
     # Enable reading time metadata for twitter card
     rtimeMeta = false
