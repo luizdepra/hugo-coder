@@ -35,11 +35,11 @@ disqusShortname = "yourdiscussshortname"
     rtimeMeta = false
 
     # Show recent blog posts on homepage
-    showRecent = 2
+    showRecent = 0
     
     # Enable Image Preview & Post Summary on posts page
-    enablePostImg = true
-    enablePostSummary = true
+    enablePostImg = false
+    enablePostSummary = false
 
     # Define default global site thumbnail (for twitter card etc.)
     # is also used for showRecent & enableImgPreview options above, if not defined per post
