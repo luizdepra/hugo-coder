@@ -1,7 +1,7 @@
 {{ if not .Site.Params.hideFooter | default false }}
   <footer class="footer">
     <section class="container">
-      {{ with .Site.Params.footercontent | safeHTML }}
+      {{ with .Site.Params.footerContent | safeHTML }}
         <p>{{ . }}</p>
       {{ end }}
       {{ if not .Site.Params.hideCopyright }}
@@ -10,7 +10,7 @@
           {{ .Site.Params.since }} -
         {{ end }}
         {{ now.Year }}
-        {{ with .Site.Params.Author }} {{ . }} {{ end }}
+        {{ with .Site.Params.author }} {{ . }} {{ end }}
       {{ end }}
       {{ if not .Site.Params.hideCredits }}
         {{ if not .Site.Params.hideCopyright }} · {{ end }}

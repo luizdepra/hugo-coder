@@ -9,7 +9,8 @@ other = "серии"
 
 [reading_time]
 one = "Читать одну минуту"
-other = "Читать около {{ .Count }} минут"
+few = "Читать около {{ .Count }} минут"
+many = "Читать около {{ .Count }} минут"
 
 [page_not_found]
 other = "Страница не найдена"
@@ -22,3 +23,12 @@ other = "Можете вернуться обратно на <a href=\"{{ . }}\"
 
 [powered_by]
 other = "Работает на"
+
+[author]
+other = "автор"
+
+[posts]
+other = "статьи"
+
+[see_also]
+other = "Также смотреть"

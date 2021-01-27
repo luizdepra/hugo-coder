@@ -1,17 +1,16 @@
-baseurl = "http://www.example.com"
+baseURL = "http://www.example.com"
 title = "johndoe"
 
 theme = "hugo-coder"
 
-languagecode = "en"
-defaultcontentlanguage = "en"
+languageCode = "en"
+defaultContentLanguage = "en"
 
 paginate = 20
-canonifyurls = true
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+pygmentsStyle = "b2"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 
 disqusShortname = "yourdiscussshortname"
 
@@ -20,11 +19,11 @@ disqusShortname = "yourdiscussshortname"
     description = "John Doe's personal website"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
-    avatarurl = "images/avatar.jpg"
+    avatarURL = "images/avatar.jpg"
     #gravatar = "john.doe@example.com"
-    footercontent = "Enter a text here."
+    footerContent = "Enter a text here."
 
-    dateformat = "January 2, 2006"
+    dateFormat = "January 2, 2006"
 
     hideFooter = false
     hideCredits = false
@@ -41,16 +40,25 @@ disqusShortname = "yourdiscussshortname"
     # "auto" (use preference set by browser)
     # "dark" (dark background, light foreground)
     # "light" (light background, dark foreground) (default)
-    colorscheme = "auto"
+    colorScheme = "auto"
+
+    # Hide the toggle button, along with the associated vertical divider
+    hideColorSchemeToggle = false
 
     # Series see also post count
     maxSeeAlsoItems = 5
 
+    # Enable Twemoji
+    enableTwemoji = true
+
     # Custom CSS
-    custom_css = []
+    customCSS = []
+
+    # Custom SCSS
+    customSCSS = []
 
     # Custom JS
-    custom_js = []
+    customJS = []
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 [params.fathomAnalytics]
@@ -58,39 +66,86 @@ disqusShortname = "yourdiscussshortname"
     # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
     serverURL = "analytics.example.com"
 
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+[params.plausibleAnalytics]
+    domain = "example.com"
+    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+    serverURL = "analytics.example.com"
+
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+[params.goatCounter]
+    code = "code"
+
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+[params.cloudflare]
+    token = "token"
+
+# If you want to use Matomo(https://matomo.org) for analytics, add this section
+[params.matomo]
+    # Default value is "1", overwrite this if you are cloud-hosting
+    siteID = "ABCDE"
+    # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
+    serverURL = "analytics.example.com"
+
+# If you want to implement a Content-Security-Policy, add this section
+[params.csp]
+	  childsrc = ["'self'"]
+	  fontsrc = [
+        "'self'",
+		    "https://fonts.gstatic.com",
+		    "https://cdn.jsdelivr.net/"
+    ]
+	  formaction = ["'self'"]
+	  framesrc = ["'self'"]
+	  imgsrc = ["'self'"]
+	  objectsrc = ["'none'"]
+	  stylesrc = [
+        "'self'",
+		    "'unsafe-inline'",
+		    "https://fonts.googleapis.com/",
+		    "https://cdn.jsdelivr.net/"
+    ]
+	  scriptsrc = [
+        "'self'",
+		    "'unsafe-inline'",
+		    "https://www.google-analytics.com"
+    ]
+	  prefetchsrc = ["'self'"]
+
 [taxonomies]
   category = "categories"
   series = "series"
   tag = "tags"
+  author = "authors"
 
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github"
+    icon = "fa fa-github"
     weight = 1
     url = "https://github.com/johndoe/"
 [[params.social]]
     name = "Gitlab"
-    icon = "fab fa-gitlab"
+    icon = "fa fa-gitlab"
     weight = 2
     url = "https://gitlab.com/johndoe/"
 [[params.social]]
     name = "Twitter"
-    icon = "fab fa-twitter"
+    icon = "fa fa-twitter"
     weight = 3
     url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "fa fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/johndoe/"
 [[params.social]]
     name = "Medium"
-    icon = "fab fa-medium"
+    icon = "fa fa-medium"
     weight = 5
     url = "https://medium.com/@johndoe"
 [[params.social]]
     name = "RSS"
-    icon = "fas fa-rss"
+    icon = "fa fa-rss"
     weight = 6
     url = "https://myhugosite.com/index.xml"
     rel = "alternate"
@@ -99,7 +154,7 @@ disqusShortname = "yourdiscussshortname"
 
 [languages]
     [languages.en]
-        languagename = "English"
+        languageName = "English"
 
         [languages.en.menu]
 
@@ -125,7 +180,7 @@ disqusShortname = "yourdiscussshortname"
 
 
     [languages.pt-br]
-        languagename = "Português"
+        languageName = "Português"
         title = "João Ninguém"
 
         [languages.pt-br.params]
@@ -133,7 +188,7 @@ disqusShortname = "yourdiscussshortname"
             info = "Full Stack DevOps e Mágico"
             description = "Sítio pessoal de João Ninguém"
             keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "Coloque algum texto aqui."
+            footerContent = "Coloque algum texto aqui."
 
         [languages.pt-br.menu]
 

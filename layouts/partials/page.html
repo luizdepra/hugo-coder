@@ -1,7 +1,11 @@
 <section class="container page">
   <article>
     <header>
-      <h1>{{ .Title }}</h1>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ .Title }}
+        </a>
+      </h1>
     </header>
 
     {{ .Content }}

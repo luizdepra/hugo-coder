@@ -25,17 +25,22 @@
     }
     #menu-toggle {
       @media only screen and (max-width : 768px) {
-        &:checked + label {
+        &:checked + label > i {
           color: $alt-bg-color-dark;
         }
       }
     }
+    i {
+      color: $fg-color-dark;
+      &:hover,
+      &:focus {
+        color: $link-color-dark;
+      }
+    }
     .menu-button {
-      @media only screen and (max-width : 768px) {
-        color: $fg-color-dark;
-        &:hover,
-        &:focus {
-          color: $link-color-dark;
+      i {
+        &:hover, &:focus {
+          color: $alt-fg-color-dark;
         }
       }
     }

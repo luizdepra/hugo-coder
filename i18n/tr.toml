@@ -7,6 +7,9 @@ other = "tag"
 [series]
 other = "dizi"
 
+[author]
+other = "yazar"
+
 [reading_time]
 one = "Bir dakikalık okuma"
 other = "{{ .Count }} dakikalık okuma"
@@ -22,3 +25,9 @@ other = "<a href=\"{{ . }}\">Ana sayfaya</a> dönebilirsiniz."
 
 [powered_by]
 other = "Site program altyapısı"
+
+[see_also]
+other = "Ayrıca bakınız"
+
+[posts]
+other = "Gönderiler"

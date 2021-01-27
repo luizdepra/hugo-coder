@@ -1,0 +1,26 @@
+[category]
+other = "kategorie"
+
+[tag]
+other = "tag"
+
+[series]
+other = "série"
+
+[reading_time]
+other = "Délka čtení: {{ .Count }}"
+
+[page_not_found]
+other = "Stránka nenalezena"
+
+[page_does_not_exist]
+other = "Omlouváme se, stránka nebyla nalezena."
+
+[head_back]
+other = "Můžete se vrátit na <a href=\"{{ . }}\">homepage</a>."
+
+[powered_by]
+other = "Stránka používá"
+
+[see_also]
+other = "Podívejte se také na"
