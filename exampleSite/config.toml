@@ -87,6 +87,10 @@ disqusShortname = "yourdiscussshortname"
     # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
     serverURL = "analytics.example.com"
 
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+[params.googleTagManager]
+    id = "gid"
+
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
 	  childsrc = ["'self'"]

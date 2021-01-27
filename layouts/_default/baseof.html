@@ -2,6 +2,9 @@
 <html lang="{{ .Site.Language.Lang }}">
 
   <head>
+    {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
+    {{- partial "analytics/googletagmanager" . -}}
+    {{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
@@ -92,7 +95,6 @@
     {{ end }}
 
     {{ hugo.Generator }}
-    {{- partial "head_custom.html" . }}
   </head>
 
   {{ $csClass := "colorscheme-light" }}
