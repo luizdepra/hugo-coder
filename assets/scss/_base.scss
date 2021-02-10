@@ -12,9 +12,9 @@ html {
 body {
   color: $fg-color;
   background-color: $bg-color;
-	font-family: $text-font-family;
-	font-size: 1.6em;
-	font-weight: 300;
+	font-family: $font-family;
+	font-size: 1.8em;
+	font-weight: 400;
   line-height: 1.8em;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  font-weight: 300;
+  font-weight: 500;
   color: $link-color;
   text-decoration: none;
   transition: all .25s ease-in;
@@ -43,10 +43,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
-  font-weight: 700;
+  font-family: $font-family;
+  font-weight: 600;
   color: $alt-fg-color;
-  margin: 6.4rem 0 3.2rem 0;
+  margin: 4rem 0 2.5rem 0;
 
   &:hover .heading-link {
     visibility: visible;
