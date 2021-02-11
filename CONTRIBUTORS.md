@@ -94,3 +94,4 @@
 - [Alex Miranda](https://ammiranda.com)
 - [Alphonse Mariya](https://github.com/alfunx)
 - [Ziwei Pan](https://github.com/PanZiwei/)
+- [Viktar Patotski](https://github.com/xp-vit)
