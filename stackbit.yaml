@@ -64,6 +64,16 @@ models:
           - type: boolean
             name: disqusOnClick
           - type: boolean
+            name: rtimeMeta
+          - type: boolean
+            name: showRecent
+          - type: boolean
+            name: enablePostImg
+          - type: boolean
+            name: enablePostSummary
+          - type: list
+            name: images
+          - type: boolean
             name: hideColorSchemeToggle
           - type: number
             name: since
