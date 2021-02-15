@@ -22,7 +22,8 @@
       <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
 
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2"
+          integrity="sha384-db853060d762c4b766f9b4375b82a5edc8bcf879d490c54afd51f31d29e2809499996ea6870403e0bca7a98f21a20d99" crossorigin>
 
     {{ if .Site.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
