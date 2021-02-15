@@ -118,7 +118,7 @@
         <script src="{{ $script.RelPermalink }}"></script>
       {{ else }}
         {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
-        <script src="{{ $script.RelPermalink }}"></script>
+        <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
       {{ end }}
     {{ end }}
 
