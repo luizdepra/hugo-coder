@@ -55,7 +55,7 @@ These can also be changed based on the language:
 
 ## License
 
-Coder Timeline is licemsed under [MIT license](https://github.com/13hannes11/hugo-coder-timeline/blob/master/LICENSE.md), exatcly like Coder which ([MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).)
+Coder Timeline is licensed under [MIT license](https://github.com/13hannes11/hugo-coder-timeline/blob/master/LICENSE.md), exactly like Coder which ([MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).)
 
 ## Maintenance
 
