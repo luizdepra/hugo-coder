@@ -9,7 +9,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/luizdepra/hugo-coder">
+    <a href="https://github.com/13hannes11/hugo-coder-timeline">
       <img src="images/logos/logotype-a.png" alt="Hugo Coder Logo" width="600px" height="184px">
     </a>
   </p>
@@ -17,40 +17,46 @@
 
 A simple and clean blog theme for [Hugo](https://gohugo.io/).
 
-![](images/screenshot.png)
+![](https://github.com/13hannes11/hugo-coder-timeline/blob/master/images/screenshot.png)
+
 
 ## Live Demo
 
-See [here](https://hugo-coder.netlify.app/).
+See [here](https://hanneskuchelmeister.de/).
 
 ## Fork
 This theme is forked from https://github.com/luizdepra/hugo-coder.
 
+## Custom Config Options
+
+I added config options for the timeline title and which posts to include in the timeline.
+```
+    timelineTitle="My Posts" # General timeline title
+    timelineType="posts"
+```
+These can also be changed based on the language:
+```
+    [languages.pt-br]
+        languageName = "Português"
+        ...
+        timelineTitle = "Meus Artigos"
+        ...
+```
+
 ## Quick Start
 
-1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder`.
-2. Configure your `config.toml`. You can either use [this minimal configuration](https://github.com/luizdepra/hugo-coder/wiki/Configurations#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/wiki/Configurations). The [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [`exampleSite`](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) is also a good reference.
-3. Build your site with `hugo server` and see the result at `http://localhost:1313/`.
+1. Add the repository into your Hugo Project repository as a submodule, `https://github.com/13hannes11/hugo-coder-timeline.git themes/hugo-coder-timeline`.
+2. Configure your `config.toml`. You can either the [`config.toml`](https://github.com/13hannes11/hugo-coder-timeline/blob/master/exampleSite/config.toml) in the [`exampleSite`](https://github.com/13hannes11/hugo-coder-timeline/tree/master/exampleSite), or use the documentation of the original non forked version. For that use [this minimal configuration](https://github.com/luizdepra/hugo-coder/wiki/Configurations#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/wiki/Configurations).
+3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
 
-## Documentations
+## Extra Guides
 
-See [`docs`](docs/home.md) folder.
+* [Multilingual Mode](https://github.com/luizdepra/hugo-coder/wiki/Multilingual-Mode)
 
 ## License
 
-Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).
+Coder Timeline is licemsed under [MIT license](https://github.com/13hannes11/hugo-coder-timeline/blob/master/LICENSE.md), exatcly like Coder which ([MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).)
 
 ## Maintenance
 
-This theme is maintained by its author [Luiz de Prá](https://github.com/luizdepra) with the help from these awesome [contributors](CONTRIBUTORS.md).
-
-## Sponsoring
-
-If you like my project or it was useful for you, consider supporting its development. Just:
-
-<a href="https://www.buymeacoffee.com/luizdepra" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-## Special Thanks
-
-- Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
-- All contributors, for every PR and Issue reported.
+This fork is updated by [Hannes F. Kuchelmeister](https://github.com/13hannes11).
