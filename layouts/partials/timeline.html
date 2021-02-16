@@ -1,10 +1,11 @@
 <section class="container list">
   <h1 class="title">
-    Projects
+    {{ (.Site.Params.timelineTitle | default "Posts") }}
   </h1>
   <ul>
-    {{ range where .Paginator.Pages "Section" "ne" "" }}
+    {{ range where .Paginator.Pages "Type" "eq" (.Site.Params.timelineType | default "posts") }}
     <li>
+      
       <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
       <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
     </li>
