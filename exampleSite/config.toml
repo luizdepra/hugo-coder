@@ -1,7 +1,7 @@
 baseURL = "http://www.example.com"
 title = "johndoe"
 
-theme = "hugo-coder"
+theme = "hugo-coder-timeline"
 
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -59,6 +59,9 @@ disqusShortname = "yourdiscussshortname"
 
     # Custom JS
     customJS = []
+    
+    timelineTitle="My Posts" # General timeline title
+    timelineType="timeline" # Which type of posts to take (here everything from folder timeline/)
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 [params.fathomAnalytics]
@@ -155,7 +158,6 @@ disqusShortname = "yourdiscussshortname"
 [languages]
     [languages.en]
         languageName = "English"
-
         [languages.en.menu]
 
             [[languages.en.menu.main]]
@@ -182,7 +184,7 @@ disqusShortname = "yourdiscussshortname"
     [languages.pt-br]
         languageName = "Português"
         title = "João Ninguém"
-
+        timelineTitle = "Meus Artigos" # Language Specific timeline title
         [languages.pt-br.params]
             author = "João Ninguém"
             info = "Full Stack DevOps e Mágico"
