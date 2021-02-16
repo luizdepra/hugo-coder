@@ -40,7 +40,7 @@ These can also be changed based on the language:
 
 ## Quick Start
 
-1. Add the repository into your Hugo Project repository as a submodule, `https://github.com/13hannes11/hugo-coder-timeline.git themes/hugo-coder-timeline`.
+1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/13hannes11/hugo-coder-timeline.git themes/hugo-coder-timeline`.
 2. Configure your `config.toml`. You can either the [`config.toml`](https://github.com/13hannes11/hugo-coder-timeline/blob/master/exampleSite/config.toml) in the [`exampleSite`](https://github.com/13hannes11/hugo-coder-timeline/tree/master/exampleSite), or use the documentation of the original non forked version. For that use [this minimal configuration](https://github.com/luizdepra/hugo-coder/wiki/Configurations#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/wiki/Configurations).
 3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
 
