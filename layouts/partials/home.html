@@ -27,5 +27,22 @@
       {{ end }}
     </ul>
     {{ end }}
+    {{ with .Site.Params.badges }}
+    <ul>
+      {{ range sort . "weight" }}
+      {{ if .img }}
+      <li style="max-width: 250px;">
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+          <img src="{{ .img | relURL }}" alt="{{ .name }}">
+        </a>
+      </li>
+      {{ else }}
+      <li>
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+    {{ end }}
   </div>
 </section>
