@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
+    <meta name="color-scheme" content="light dark">
+    
     {{ if .Site.Params.csp }}
       {{ partial "csp.html" . }}
     {{ end }}
@@ -30,7 +32,9 @@
       <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
 
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.1.7" as="font" type="font/woff2" crossorigin>
+    {{ $fa := resources.Get "fonts/forkawesome-webfont.woff2" }}
+    {{ $faFingerprint := $fa | fingerprint }}
+    <link rel="preload" href="{{ $fa.RelPermalink }}?v=1.1.7" as="font" type="font/woff2" integrity="{{ $faFingerprint.Data.Integrity }}" crossorigin>
 
     {{ if .Site.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
