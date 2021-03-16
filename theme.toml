@@ -22,5 +22,5 @@ features = [
 min_version = "0.73.0"
 
 [author]
-  name = "Luiz F. A. de Prá"
-  homepage = "https://luizdepra.com"
+name = "Luiz F. A. de Prá"
+homepage = "https://luizdepra.com"
