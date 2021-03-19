@@ -22,9 +22,9 @@ body.rtl {
       li {
         .date {
           text-align: left;
-          margin-left: 3.0rem;
+          margin-left: 3rem;
           margin-right: 0;
-          @media only screen and (max-width : 768px) {
+          @media only screen and (max-width: 768px) {
             text-align: right;
           }
         }

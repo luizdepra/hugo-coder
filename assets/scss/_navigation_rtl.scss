@@ -1,7 +1,7 @@
 body.rtl {
   .navigation-list {
     float: left;
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width: 768px) {
       left: 0;
       right: auto;
     }
@@ -11,7 +11,7 @@ body.rtl {
   }
 
   .menu-button {
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width: 768px) {
       float: left;
     }
   }

@@ -1,7 +1,5 @@
 @mixin content_dark {
-
   .content {
-
     .list {
       ul {
         li {
@@ -32,15 +30,14 @@
       }
     }
   }
-
 }
 
 body.colorscheme-dark {
-  @include content_dark()
+  @include content_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include content_dark()
+    @include content_dark();
   }
 }

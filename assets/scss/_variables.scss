@@ -1,11 +1,12 @@
 // Fonts
-$font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$code-font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$code-font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 
 // Colors
-$bg-color: #FAFAFA !default;
+$bg-color: #fafafa !default;
 $fg-color: #212121 !default;
-$alt-bg-color: #E0E0E0 !default;
+$alt-bg-color: #e0e0e0 !default;
 $alt-fg-color: #000 !default;
 $link-color: #1565c0 !default;
 
@@ -17,9 +18,8 @@ $alt-fg-color-dark: #dadada !default;
 $link-color-dark: #42a5f5 !default;
 
 // Notice Colors
-$fg-color-notice-title: #FAFAFA !default;
+$fg-color-notice-title: #fafafa !default;
 $fg-color-notice-title-dark: #212121 !default;
-
 
 // Each notice have two background color. One for title and one for contents
 $bg-color-notice-note-title: #6ab0de !default;
@@ -33,8 +33,6 @@ $bg-color-notice-info: #fff2db !default;
 
 $bg-color-notice-tip-title: #5dd45dcc !default;
 $bg-color-notice-tip: #e6f9e6 !default;
-
-
 
 // Notice Colors dark
 $fg-colour-notice-text: #000000;

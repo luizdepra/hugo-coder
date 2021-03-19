@@ -1,5 +1,4 @@
 @mixin base_dark {
-
   color: $fg-color-dark;
   background-color: $bg-color-dark;
 
@@ -50,18 +49,18 @@
     border-left: 2px solid $alt-bg-color-dark;
   }
 
-  table td, table th {
+  table td,
+  table th {
     border: 2px solid $alt-fg-color-dark;
   }
-
 }
 
 body.colorscheme-dark {
-  @include base_dark()
+  @include base_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include base_dark()
+    @include base_dark();
   }
 }

@@ -16,7 +16,7 @@
     padding: 1rem 1rem;
     border-radius: 0.5rem 0.5rem 0 0;
     font-weight: 700;
-    font-family: $heading-font-family;
+    font-family: $font-family;
   }
 
   .notice.warning {
@@ -55,11 +55,11 @@
 }
 
 body.colorscheme-dark {
-  @include notices_dark()
+  @include notices_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include notices_dark()
+    @include notices_dark();
   }
 }

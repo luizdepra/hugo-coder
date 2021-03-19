@@ -1,8 +1,7 @@
 @mixin navigation_dark {
-
-
   .navigation {
-    a, span {
+    a,
+    span {
       color: $fg-color-dark;
     }
     a {
@@ -12,19 +11,19 @@
       }
     }
     .navigation-list {
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         background-color: $bg-color-dark;
         border-top: solid 2px $alt-bg-color-dark;
         border-bottom: solid 2px $alt-bg-color-dark;
       }
       .menu-separator {
-        @media only screen and (max-width : 768px) {
+        @media only screen and (max-width: 768px) {
           border-top: 2px solid $fg-color-dark;
         }
       }
     }
     #menu-toggle {
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         &:checked + label > i {
           color: $alt-bg-color-dark;
         }
@@ -39,21 +38,21 @@
     }
     .menu-button {
       i {
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: $alt-fg-color-dark;
         }
       }
     }
   }
-
 }
 
 body.colorscheme-dark {
-  @include navigation_dark()
+  @include navigation_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include navigation_dark()
+    @include navigation_dark();
   }
 }
