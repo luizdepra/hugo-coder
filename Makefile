@@ -12,9 +12,8 @@ release: build
 	rm -rf ./resources && cp -r ./demo/resources ./resources
 
 prepare: clean
-	mkdir -p demo/themes/hugo-coder
+	mkdir -p demo
 	rsync -av exampleSite/ demo
-	rsync -av --exclude='demo' --exclude='exampleSite' --exclude='.git' . demo/themes/hugo-coder
 
 clean:
 	rm -rf demo
