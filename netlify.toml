@@ -1,12 +1,18 @@
 [build]
+HUGO_VERSION = "0.77.0"
+GO_VERSION = "1.16.2"
 publish = "demo/public"
 command = "make prepare && hugo --source demo --baseURL $URL"
 
 [context.production.environment]
+GO_VERSION = "1.16.2"
 HUGO_VERSION = "0.77.0"
 
 [context.deploy-preview]
+HUGO_VERSION = "0.77.0"
+GO_VERSION = "1.16.2"
 command = "make prepare && hugo --source demo --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
+GO_VERSION = "1.16.2"
 HUGO_VERSION = "0.77.0"
