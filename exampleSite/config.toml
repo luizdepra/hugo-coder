@@ -1,6 +1,5 @@
 baseURL = "http://www.example.com"
 title = "johndoe"
-theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
 paginate = 20
@@ -8,6 +7,10 @@ pygmentsStyle = "b2"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 disqusShortname = "yourdiscussshortname"
+
+[module]
+  [[module.imports]]
+    path = "github.com/luizdepra/hugo-coder"
 
 [params]
 author = "John Doe"
