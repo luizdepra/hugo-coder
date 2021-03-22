@@ -3228,22 +3228,23 @@ img.emoji {
         .centered .error h2 {
           font-size: 2.8rem; } }
 .notice {
-  padding: 1rem;
-  line-height: 2rem;
-  border-radius: 0.5rem; }
-  .notice p:last-child {
-    margin-bottom: 1.5rem; }
-
-.notice-title {
-  margin: -1rem -1rem 1rem;
-  padding: 1rem 1rem;
-  border-radius: 0.5rem 0.5rem 0 0;
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; }
+  border-radius: 0.2rem;
+  position: relative;
+  margin: 1rem 0;
+  padding: 0 0.75rem;
+  overflow: auto; }
+  .notice .title {
+    font-weight: 700;
+    margin: 0 -0.75rem;
+    padding: 0.2rem 3.5rem; }
+    .notice .title i {
+      position: absolute;
+      top: 1rem;
+      left: 1rem; }
 
 .notice.warning {
   background: #fae2e2; }
-  .notice.warning .notice-title {
+  .notice.warning .title {
     background: #d9534fe6; }
 
 .notice.info {
@@ -3260,11 +3261,6 @@ img.emoji {
   background: #e6f9e6; }
   .notice.tip .notice-title {
     background: #5dd45dcc; }
-
-.icon-notice {
-  display: inline-flex;
-  align-self: center;
-  margin-right: 8px; }
 
 .navigation {
   height: 6rem;

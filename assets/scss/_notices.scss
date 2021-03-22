@@ -1,27 +1,32 @@
 .notice {
-  padding: 1rem;
-  line-height: 2rem;
-  border-radius: 0.5rem;
-  p {
-    &:last-child {
-      margin-bottom: 1.5rem;
+  border-radius: 0.2rem;
+  position: relative;
+  margin: 1rem 0;
+  padding: 0 0.75rem;
+  overflow: auto;
+
+  .title {
+    font-weight: 700;
+    margin: 0 -0.75rem;
+    padding: 0.2rem 3.5rem;
+
+    i {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
     }
   }
 }
 
-.notice-title {
-  margin: -1rem -1rem 1rem;
-  padding: 1rem 1rem;
-  border-radius: 0.5rem 0.5rem 0 0;
-  font-weight: 700;
-  font-family: $font-family;
-}
-
 .notice.warning {
-  .notice-title {
-    background: $bg-color-notice-warning-title;
-  }
   background: $bg-color-notice-warning;
+
+  .title {
+    background: $bg-color-notice-warning-title;
+
+    i {
+    }
+  }
 }
 
 .notice.info {
@@ -43,10 +48,4 @@
     background: $bg-color-notice-tip-title;
   }
   background: $bg-color-notice-tip;
-}
-
-.icon-notice {
-  display: inline-flex;
-  align-self: center;
-  margin-right: 8px;
 }
