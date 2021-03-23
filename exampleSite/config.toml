@@ -8,6 +8,7 @@ pygmentsStyle = "b2"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 disqusShortname = "yourdiscussshortname"
+enableEmoji = true
 
 [params]
 author = "John Doe"
@@ -36,7 +37,7 @@ hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
 # Enable Twemoji
-enableTwemoji = true
+enableTwemoji = false
 # Custom CSS
 customCSS = []
 # Custom SCSS
@@ -137,7 +138,7 @@ rel = "alternate"
 type = "application/rss+xml"
 
 [languages.en]
-languageName = "English"
+languageName = ":uk:"
 
 [[languages.en.menu.main]]
 name = "About"
@@ -160,7 +161,7 @@ weight = 5
 url = "contact/"
 
 [languages.pt-br]
-languageName = "Português"
+languageName = ":brazil:"
 title = "João Ninguém"
 
 [languages.pt-br.params]
