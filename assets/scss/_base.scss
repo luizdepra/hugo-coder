@@ -16,6 +16,7 @@ body {
   font-size: 1.8em;
   font-weight: 400;
   line-height: 1.8em;
+
   @media only screen and (max-width: 768px) {
     font-size: 1.6em;
     line-height: 1.6em;
@@ -27,6 +28,7 @@ a {
   color: $link-color;
   text-decoration: none;
   transition: all 0.25s ease-in;
+
   &:focus,
   &:hover {
     text-decoration: underline;
@@ -70,46 +72,57 @@ h6 {
 h1 {
   font-size: 3.2rem;
   line-height: 3.6rem;
+
   @media only screen and (max-width: 768px) {
     font-size: 3rem;
     line-height: 3.4rem;
   }
 }
+
 h2 {
   font-size: 2.8rem;
   line-height: 3.2rem;
+
   @media only screen and (max-width: 768px) {
     font-size: 2.6rem;
     line-height: 3rem;
   }
 }
+
 h3 {
   font-size: 2.4rem;
   line-height: 2.8rem;
+
   @media only screen and (max-width: 768px) {
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
 }
+
 h4 {
   font-size: 2.2rem;
   line-height: 2.6rem;
+
   @media only screen and (max-width: 768px) {
     font-size: 2rem;
     line-height: 2.4rem;
   }
 }
+
 h5 {
   font-size: 2rem;
   line-height: 2.4rem;
+
   @media only screen and (max-width: 768px) {
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
 }
+
 h6 {
   font-size: 1.8rem;
   line-height: 2.2rem;
+
   @media only screen and (max-width: 768px) {
     font-size: 1.6rem;
     line-height: 2rem;
@@ -121,8 +134,8 @@ strong {
   font-weight: 700;
 }
 
-.highlight > div,
-.highlight > pre {
+.highlight>div,
+.highlight>pre {
   margin: 0 0 2rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -136,6 +149,7 @@ pre {
   line-height: 2.6rem;
   overflow-x: auto;
   margin: 0;
+
   code {
     display: inline-block;
     background-color: inherit;
@@ -163,23 +177,29 @@ th,
 td {
   padding: 1.6rem;
 }
+
 table {
   border-collapse: collapse;
 }
+
 table td,
 table th {
   border: 2px solid $alt-fg-color;
 }
+
 table tr:first-child th {
   border-top: 0;
 }
+
 table tr:last-child td {
   border-bottom: 0;
 }
+
 table tr td:first-child,
 table tr th:first-child {
   border-left: 0;
 }
+
 table tr td:last-child,
 table tr th:last-child {
   border-right: 0;
@@ -191,6 +211,16 @@ img {
 
 figure {
   text-align: center;
+}
+
+.preload-transitions * {
+  $null-transition: none !important;
+
+  -webkit-transition: $null-transition;
+  -moz-transition: $null-transition;
+  -ms-transition: $null-transition;
+  -o-transition: $null-transition;
+  transition: $null-transition;
 }
 
 .wrapper {

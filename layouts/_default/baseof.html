@@ -102,7 +102,7 @@
   {{ else if eq .Site.Params.colorScheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
+  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
         onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
   >
     {{ partial "float" . }}

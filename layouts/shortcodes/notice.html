@@ -1,13 +1,12 @@
-{{ $type := .Get 0 }}
-{{ $title := default ( .Get 1 ) $type }}
-{{ $raw := (markdownify .Inner | chomp) }}
-{{ $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 }}
-{{ $icon := dict "note" "fa-sticky-note" "tip" "fa-lightbulb-o" "example" "fa-file-text" "question" "fa-question" "info" "fa-exclamation-circle" "warning" "fa-exclamation-triangle" "error" "fa-times-circle" }}
+{{- $type := .Get 0 -}}
+{{- $title := .Get 1 | default $type -}}
+{{- $inner := .Inner | .Page.RenderString | chomp -}}
+{{- $icon := dict "note" "fa-sticky-note" "tip" "fa-lightbulb-o" "example" "fa-file-text" "question" "fa-question" "info" "fa-exclamation-circle" "warning" "fa-exclamation-triangle" "error" "fa-times-circle" -}}
 <div class="notice {{ $type }}">
-  <div class="title">
-    <i class="fa {{ index $icon $type }}" aria-hidden="true"></i>{{ i18n $title | default $title | title }}
+  <div class="notice-title">
+    <i class="fa {{ index $icon $type }}" aria-hidden="true"></i>{{ i18n $title | default $title | humanize }}
   </div>
-  <div class="content">
-    {{- if or $block (not $raw) }}{{ $raw }}{{ else }}<p>{{ $raw }}</p>{{ end -}}
+  <div class="notice-content">
+    {{- $inner -}}
   </div>
 </div>
