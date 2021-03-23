@@ -116,14 +116,12 @@
       {{ partial "footer.html" . }}
     </main>
 
-    {{ if not .Site.Params.hideColorSchemeToggle }}
-      {{ if .Site.IsServer }}
-        {{ $script := resources.Get "js/coder.js" }}
-        <script src="{{ $script.RelPermalink }}"></script>
-      {{ else }}
-        {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
-        <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-      {{ end }}
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/coder.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
     {{ end }}
 
     {{ range .Site.Params.customJS }}
