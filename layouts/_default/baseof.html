@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
     <meta name="color-scheme" content="light dark">
-    
+
     {{ if .Site.Params.csp }}
       {{ partial "csp.html" . }}
     {{ end }}
@@ -118,10 +118,10 @@
 
     {{ if not .Site.Params.hideColorSchemeToggle }}
       {{ if .Site.IsServer }}
-        {{ $script := resources.Get "js/dark-mode.js" }}
+        {{ $script := resources.Get "js/coder.js" }}
         <script src="{{ $script.RelPermalink }}"></script>
       {{ else }}
-        {{ $script := resources.Get "js/dark-mode.js" | minify | fingerprint }}
+        {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
         <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
       {{ end }}
     {{ end }}
