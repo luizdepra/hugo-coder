@@ -1,12 +1,12 @@
 [build]
 publish = "exampleSite/public"
-command = "cd exampleSite && hugo --themesDir=../.. --source=exampleSite --baseURL $URL"
+command = "cd exampleSite && hugo --themesDir=../.. --baseURL $URL"
 
 [context.production.environment]
 HUGO_VERSION = "0.73.0"
 
 [context.deploy-preview]
-command = "cd exampleSite &&  hugo --themesDir=../.. --source=exampleSite --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
+command = "cd exampleSite &&  hugo --themesDir=../.. --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.73.0"
