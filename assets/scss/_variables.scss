@@ -1,17 +1,53 @@
 // Fonts
-$font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$code-font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+$font-family: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Oxygen-Sans,
+Ubuntu,
+Cantarell,
+"Helvetica Neue",
+Helvetica,
+sans-serif;
+$code-font-family: SFMono-Regular,
+Consolas,
+Liberation Mono,
+Menlo,
+monospace;
 
 // Colors
-$bg-color: #FAFAFA !default;
+$bg-color: #fafafa !default;
 $fg-color: #212121 !default;
-$alt-bg-color: #E0E0E0 !default;
+$alt-bg-color: #e0e0e0 !default;
 $alt-fg-color: #000 !default;
 $link-color: #1565c0 !default;
 
-// Colors dark
+// Dark colors
 $bg-color-dark: #212121 !default;
 $fg-color-dark: #dadada !default;
 $alt-bg-color-dark: #424242 !default;
 $alt-fg-color-dark: #dadada !default;
 $link-color-dark: #42a5f5 !default;
+
+// Notice colors
+$fg-color-notice-note-icon: #5e35b1 !default;
+$bg-color-notice-note-title: #673ab71a !default;
+$bg-color-notice-note-content: #7e57c21a !default;
+$fg-color-notice-tip-icon: #00897b !default;
+$bg-color-notice-tip-title: #0096881a !default;
+$bg-color-notice-tip-content: #26a69a1a !default;
+$fg-color-notice-example-icon: #6d4c41 !default;
+$bg-color-notice-example-title: #7955481a !default;
+$bg-color-notice-example-content: #8d6e631a !default;
+$fg-color-notice-question-icon: #7cb342 !default;
+$bg-color-notice-question-title: #8bc34a1a !default;
+$bg-color-notice-question-content: #9ccc651a !default;
+$fg-color-notice-info-icon: #1e88e5 !default;
+$bg-color-notice-info-title: #2196f31a !default;
+$bg-color-notice-info-content: #42a5f51a !default;
+$fg-color-notice-warning-icon: #ffb300 !default;
+$bg-color-notice-warning-title: #ffc1071a !default;
+$bg-color-notice-warning-content: #ffca281a !default;
+$fg-color-notice-error-icon: #e53935 !default;
+$bg-color-notice-error-title: #f443361a !default;
+$bg-color-notice-error-content: #ef53501a !default;

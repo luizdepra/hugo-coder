@@ -7,11 +7,11 @@
 }
 
 body.colorscheme-dark {
-  @include footer_dark()
+  @include footer_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include footer_dark()
+    @include footer_dark();
   }
 }
