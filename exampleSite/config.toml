@@ -151,7 +151,7 @@ url = "posts/"
 [[languages.en.menu.main]]
 name = "Projects"
 weight = 3
-url = "https://luizdepra.dev"
+url = "projects/"
 
 [[languages.en.menu.main]]
 name = "Contact me"
@@ -182,7 +182,7 @@ url = "posts/"
 [[languages.pt-br.menu.main]]
 name = "Projetos"
 weight = 3
-url = "https://luizdepra.dev"
+url = "projects/"
 
 [[languages.pt-br.menu.main]]
 name = "Contato"

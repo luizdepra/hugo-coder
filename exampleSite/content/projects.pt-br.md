@@ -3,4 +3,4 @@ title = "Projetos"
 slug = "projects"
 +++
 
-Em construção... Aguarde!
+Nada para ver aqui.. Circulando!
