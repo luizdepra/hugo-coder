@@ -32,14 +32,23 @@ other = "Powered by"
 [see_also]
 other = "See also in"
 
-[notice_warning]
-other = "Warning"
+[note]
+other = "note"
 
-[notice_tip]
-other = "Tip"
+[tip]
+other = "tip"
 
-[notice_note]
-other = "Note"
+[example]
+other = "example"
 
-[notice_info]
-other = "Info"
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"
