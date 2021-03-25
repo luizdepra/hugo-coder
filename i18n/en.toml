@@ -1,14 +1,23 @@
 [category]
 other = "category"
 
+[categories]
+other = "categories"
+
 [tag]
 other = "tag"
+
+[tags]
+other = "tags"
 
 [series]
 other = "series"
 
 [author]
 other = "author"
+
+[authors]
+other = "authors"
 
 [posts]
 other = "posts"

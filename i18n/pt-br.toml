@@ -1,14 +1,23 @@
 [category]
 other = "categoria"
 
+[categories]
+other = "categorias"
+
 [tag]
-other = "tag"
+other = "etiqueta"
+
+[tags]
+other = "etiquetas"
 
 [series]
 other = "séries"
 
-[author]
+[autor]
 other = "autor"
+
+[authors]
+other = "autores"
 
 [posts]
 other = "artigos"
