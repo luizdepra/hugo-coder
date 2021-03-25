@@ -1,14 +1,23 @@
 [category]
 other = "categoria"
 
+[categories]
+other = "categorias"
+
 [tag]
-other = "tag"
+other = "etiqueta"
+
+[tags]
+other = "etiquetas"
 
 [series]
 other = "séries"
 
-[author]
+[autor]
 other = "autor"
+
+[authors]
+other = "autores"
 
 [posts]
 other = "artigos"
@@ -28,3 +37,24 @@ other = "Você pode voltar para a <a href=\"{{ . }}\">página inicial</a>."
 
 [powered_by]
 other = "Promovido por"
+
+[note]
+other = "nota"
+
+[tip]
+other = "dica"
+
+[example]
+other = "exemplo"
+
+[question]
+other = "pergunta"
+
+[info]
+other = "info"
+
+[warning]
+other = "aviso"
+
+[error]
+other = "erro"
