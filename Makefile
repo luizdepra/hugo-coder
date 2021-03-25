@@ -1,19 +1,12 @@
 HUGO_BIN=hugo
 
-.PHONY: prepare release build demo clean
+.PHONY: build demo release
 
-build: prepare
-	$(HUGO_BIN) --source demo
+build:
+	$(HUGO_BIN) --themesDir=../.. --source=exampleSite
 
-demo: prepare
-	$(HUGO_BIN) server --buildDrafts --source demo
+demo:
+	$(HUGO_BIN) server -D --themesDir=../.. --source=exampleSite
 
 release: build
-	rm -rf ./resources && cp -r ./demo/resources ./resources
-
-prepare: clean
-	mkdir -p demo
-	rsync -av exampleSite/ demo
-
-clean:
-	rm -rf demo
+	rm -rf ./resources && cp -r ./exampleSite/resources ./resources

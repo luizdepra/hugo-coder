@@ -1,22 +1,23 @@
 *,
 *:after,
 *:before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	box-sizing: border-box;
-	font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
   color: $fg-color;
   background-color: $bg-color;
-	font-family: $font-family;
-	font-size: 1.8em;
-	font-weight: 400;
+  font-family: $font-family;
+  font-size: 1.8em;
+  font-weight: 400;
   line-height: 1.8em;
-  @media only screen and (max-width : 768px) {
+
+  @media only screen and (max-width: 768px) {
     font-size: 1.6em;
     line-height: 1.6em;
   }
@@ -26,7 +27,8 @@ a {
   font-weight: 500;
   color: $link-color;
   text-decoration: none;
-  transition: all .25s ease-in;
+  transition: all 0.25s ease-in;
+
   &:focus,
   &:hover {
     text-decoration: underline;
@@ -34,7 +36,7 @@ a {
 }
 
 p {
-  margin: 2.0rem 0 2.0rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 h1,
@@ -70,58 +72,70 @@ h6 {
 h1 {
   font-size: 3.2rem;
   line-height: 3.6rem;
-  @media only screen and (max-width : 768px) {
-    font-size: 3.0rem;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 3rem;
     line-height: 3.4rem;
   }
 }
+
 h2 {
   font-size: 2.8rem;
   line-height: 3.2rem;
-  @media only screen and (max-width : 768px) {
+
+  @media only screen and (max-width: 768px) {
     font-size: 2.6rem;
-    line-height: 3.0rem;
+    line-height: 3rem;
   }
 }
+
 h3 {
   font-size: 2.4rem;
   line-height: 2.8rem;
-  @media only screen and (max-width : 768px) {
+
+  @media only screen and (max-width: 768px) {
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
 }
+
 h4 {
   font-size: 2.2rem;
   line-height: 2.6rem;
-  @media only screen and (max-width : 768px) {
-    font-size: 2.0rem;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
     line-height: 2.4rem;
   }
 }
+
 h5 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 2.4rem;
-  @media only screen and (max-width : 768px) {
+
+  @media only screen and (max-width: 768px) {
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
 }
+
 h6 {
   font-size: 1.8rem;
   line-height: 2.2rem;
-  @media only screen and (max-width : 768px) {
+
+  @media only screen and (max-width: 768px) {
     font-size: 1.6rem;
-    line-height: 2.0rem;
+    line-height: 2rem;
   }
 }
 
-b, strong {
+b,
+strong {
   font-weight: 700;
 }
 
-.highlight > div,
-.highlight > pre {
+.highlight>div,
+.highlight>pre {
   margin: 0 0 2rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -135,6 +149,7 @@ pre {
   line-height: 2.6rem;
   overflow-x: auto;
   margin: 0;
+
   code {
     display: inline-block;
     background-color: inherit;
@@ -152,31 +167,39 @@ code {
 
 blockquote {
   border-left: 2px solid $alt-bg-color;
-  padding-left: 2.0rem;
+  padding-left: 2rem;
   line-height: 2.2rem;
   font-weight: 400;
   font-style: italic;
 }
 
-th, td {
+th,
+td {
   padding: 1.6rem;
 }
+
 table {
   border-collapse: collapse;
 }
-table td, table th {
+
+table td,
+table th {
   border: 2px solid $alt-fg-color;
 }
+
 table tr:first-child th {
   border-top: 0;
 }
+
 table tr:last-child td {
   border-bottom: 0;
 }
+
 table tr td:first-child,
 table tr th:first-child {
   border-left: 0;
 }
+
 table tr td:last-child,
 table tr th:last-child {
   border-right: 0;
@@ -190,6 +213,16 @@ figure {
   text-align: center;
 }
 
+.preload-transitions * {
+  $null-transition: none !important;
+
+  -webkit-transition: $null-transition;
+  -moz-transition: $null-transition;
+  -ms-transition: $null-transition;
+  -o-transition: $null-transition;
+  transition: $null-transition;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -200,10 +233,10 @@ figure {
 
 .container {
   margin: 0 auto;
-  max-width: 90.0rem;
+  max-width: 90rem;
   width: 100%;
-  padding-left: 2.0rem;
-  padding-right: 2.0rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .fab {
@@ -233,6 +266,6 @@ figure {
 img.emoji {
   height: 1em;
   width: 1em;
-  margin: 0 .05em 0 .1em;
+  margin: 0 0.05em 0 0.1em;
   vertical-align: -0.1em;
 }

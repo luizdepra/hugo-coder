@@ -1,4 +1,3 @@
 **/themes/
-demo/
-.hugo/*
-!.hugo/version
+exampleSite/public/
+exampleSite/resources/

@@ -3,44 +3,54 @@
   display: flex;
   margin-top: 1.6rem;
   margin-bottom: 3.2rem;
+
   article {
     details {
       summary {
         cursor: pointer;
       }
     }
+
     header {
       margin-top: 6.4rem;
       margin-bottom: 3.2rem;
+
       h1 {
         font-size: 4.2rem;
         line-height: 4.6rem;
         margin: 0;
-        @media only screen and (max-width : 768px) {
-          font-size: 4.0rem;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 4rem;
           line-height: 4.4rem;
         }
       }
     }
+
     footer {
-      margin-top: 4.0rem;
+      margin-top: 4rem;
+
       .see-also {
         margin: 3.2rem 0;
+
         h3 {
           margin: 3.2rem 0;
         }
       }
     }
+
     p {
       text-align: justify;
       text-justify: auto;
       hyphens: auto;
     }
   }
+
   .post {
     .post-title {
-      margin-bottom: .75em;
+      margin-bottom: 0.75em;
     }
+
     .post-meta {
       i {
         text-align: center;
@@ -48,6 +58,7 @@
         margin-left: 0;
         margin-right: 0.5rem;
       }
+
       .date {
         .posted-on {
           margin-left: 0;
@@ -56,10 +67,12 @@
       }
     }
   }
+
   figure {
     margin: 0;
     padding: 0;
   }
+
   figcaption p {
     text-align: center;
     font-style: italic;
@@ -68,11 +81,12 @@
   }
 }
 
-.avatar img{
+.avatar img {
   width: 20rem;
   height: auto;
   border-radius: 50%;
-  @media only screen and (max-width : 768px) {
+
+  @media only screen and (max-width: 768px) {
     width: 10rem;
   }
 }
@@ -82,38 +96,45 @@
     margin: 3.2rem 0 3.2rem 0;
     list-style: none;
     padding: 0;
+
     li {
       font-size: 1.8rem;
-      @media only screen and (max-width : 768px) {
+
+      @media only screen and (max-width: 768px) {
         margin: 1.6rem 0 1.6rem 0;
       }
+
       .date {
         display: inline-block;
-        flex:1;
-        width: 20.0rem;
+        flex: 1;
+        width: 20rem;
         text-align: right;
-        margin-right: 3.0rem;
-        @media only screen and (max-width : 768px) {
+        margin-right: 3rem;
+
+        @media only screen and (max-width: 768px) {
           display: block;
           text-align: left;
         }
       }
+
       .title {
         font-size: 1.8rem;
-        flex:2;
+        flex: 2;
         color: $fg-color;
         font-family: $font-family;
         font-weight: 700;
+
         &:hover,
         &:focus {
-          color: $link-color
+          color: $link-color;
         }
       }
     }
   }
+
   ul:not(.pagination) {
     li {
-      @media only screen and (min-width : 768.1px) {
+      @media only screen and (min-width: 768.1px) {
         display: flex;
       }
     }
@@ -124,40 +145,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   .about {
     text-align: center;
+
     h1 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
+
     h2 {
-      margin-top: 1.0rem;
+      margin-top: 1rem;
       margin-bottom: 0.5rem;
       font-size: 2.4rem;
-      @media only screen and (max-width : 768px) {
-        font-size: 2.0rem;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 2rem;
       }
     }
+
     ul {
       list-style: none;
-      margin: 3.0rem 0 1.0rem 0;
+      margin: 3rem 0 1rem 0;
       padding: 0;
+
       li {
         display: inline-block;
         position: relative;
+
         a {
           color: $fg-color;
           text-transform: uppercase;
-          margin-left: 1.0rem;
-          margin-right: 1.0rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
           font-size: 1.6rem;
+
           &:hover,
           &:focus {
             color: $link-color;
           }
-          @media only screen and (max-width : 768px) {
+
+          @media only screen and (max-width: 768px) {
             font-size: 1.4rem;
           }
+
           i {
             font-size: 3.2rem;
           }
@@ -168,19 +199,23 @@
 
   .error {
     text-align: center;
+
     h1 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
       font-size: 4.6rem;
-      @media only screen and (max-width : 768px) {
+
+      @media only screen and (max-width: 768px) {
         font-size: 3.2rem;
       }
     }
+
     h2 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 3.2rem;
       font-size: 3.2rem;
-      @media only screen and (max-width : 768px) {
+
+      @media only screen and (max-width: 768px) {
         font-size: 2.8rem;
       }
     }

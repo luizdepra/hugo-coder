@@ -1,18 +1,9 @@
 [build]
 HUGO_VERSION = "0.77.0"
+HUGO_THEME = "repo"
 GO_VERSION = "1.16.2"
-publish = "demo/public"
-command = "make prepare && hugo --source demo --baseURL $URL"
-
-[context.production.environment]
-GO_VERSION = "1.16.2"
-HUGO_VERSION = "0.77.0"
+publish = "exampleSite/public"
+command = "cd exampleSite && hugo --themesDir=../.. --baseURL $URL"
 
 [context.deploy-preview]
-HUGO_VERSION = "0.77.0"
-GO_VERSION = "1.16.2"
-command = "make prepare && hugo --source demo --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-GO_VERSION = "1.16.2"
-HUGO_VERSION = "0.77.0"
+command = "cd exampleSite &&  hugo --themesDir=../.. --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
