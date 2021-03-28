@@ -1,16 +1,11 @@
-stackbitVersion: ~0.2.0
-ssgName: custom
-publishDir: demo/public
-buildCommand: make prepare && hugo --source demo --baseURL "/"
+stackbitVersion: ~0.3.0
+ssgName: hugo
 uploadDir: images
-staticDir: exampleSite/static
-pagesDir: exampleSite/content
-dataDir: exampleSite
+pageLayoutKey: null
 models:
   config:
-    type: data
-    label: Config
-    file: config.toml
+    type: config
+    label: Site Config
     fields:
       - type: string
         name: title
@@ -144,13 +139,25 @@ models:
               - type: string
                 name: token
                 label: token for Cloudflare Web Analytics
+          - type: object
+            name: matomo
+            label: Matomo (optional)
+            fields:
+              - type: string
+                name: siteID
+                label: Site ID for Matomo
+              - type: string
+                name: serverURL
+                label: URL for Matomo
       - type: object
         name: languages
         fields:
-          - type: language_config
+          - type: model
             name: en
-          - type: language_config
+            models: [language_config]
+          - type: model
             name: "pt-br"
+            models: [language_config]
       - type: object
         name: taxonomies
         fields:
@@ -225,6 +232,10 @@ models:
         name: featuredImage
         label: Featured Image
         description: Image featured in post display
+      - type: list
+        name: authors
+        items:
+          type: string
   snippets:
     type: page
     label: Snippets

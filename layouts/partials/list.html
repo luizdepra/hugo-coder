@@ -1,11 +1,13 @@
 <section class="container list">
   <h1 class="title">
-    {{- if eq .Kind "term" -}}
-      {{- i18n .Data.Singular | title -}}
-      {{- print ": " -}}
-    {{- end -}}
+    <a class="title-link" href="{{ .Permalink | safeURL }}">
+      {{- if eq .Kind "term" -}}
+        {{- i18n .Data.Singular | title -}}
+        {{- print ": " -}}
+      {{- end -}}
 
-    {{- .Title -}}
+      {{- i18n (lower .Title) | default .Title | title -}}
+    </a>
   </h1>
   {{ .Content }}
   <ul>

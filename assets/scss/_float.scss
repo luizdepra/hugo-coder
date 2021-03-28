@@ -4,24 +4,35 @@
   z-index: 100;
   position: fixed;
   font-size: 1.6em;
+
   a {
-    display: block;
-    text-align: center;
-    width: 3.0rem;
-    height: 3.0rem;
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
     color: $alt-fg-color;
     background-color: $alt-bg-color;
-    font-size: 2.0rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     opacity: 50%;
-    transition: all .25s ease-in;
-    &:hover, &:focus {
+    transition: all 0.25s ease-in;
+
+    &:hover,
+    &:focus {
       color: $link-color;
       opacity: 100%;
-      @media only screen and (max-width : 768px) {
+
+      @media only screen and (max-width: 768px) {
         color: $alt-fg-color;
         opacity: 50%;
       }
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

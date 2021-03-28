@@ -7,8 +7,14 @@ other = "Label"
 [series]
 other = "Serie"
 
+[author]
+other = "Auteur"
+
+[posts]
+other = "Berichten"
+
 [reading_time]
-one = "Een minuut leestijd"
+one = "Eén minuut leestijd"
 other = "{{ .Count }} minuten leestijd"
 
 [page_not_found]
@@ -22,3 +28,6 @@ other = "U kunt terugkeren naar de <a href=\"{{ . }}\">thuispagina</a>."
 
 [powered_by]
 other = "Aangedreven door"
+
+[see_also]
+other = "Zie ook in"
