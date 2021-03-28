@@ -1,14 +1,23 @@
 [category]
 other = "category"
 
+[categories]
+other = "categories"
+
 [tag]
 other = "tag"
+
+[tags]
+other = "tags"
 
 [series]
 other = "series"
 
 [author]
 other = "author"
+
+[authors]
+other = "authors"
 
 [posts]
 other = "posts"
@@ -31,3 +40,24 @@ other = "Powered by"
 
 [see_also]
 other = "See also in"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

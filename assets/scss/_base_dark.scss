@@ -1,5 +1,4 @@
 @mixin base_dark {
-
   color: $fg-color-dark;
   background-color: $bg-color-dark;
 
@@ -14,6 +13,24 @@
   h5,
   h6 {
     color: $alt-fg-color-dark;
+
+    &:hover .heading-link {
+      visibility: visible;
+    }
+
+    .heading-link {
+      color: $link-color-dark;
+      font-weight: inherit;
+      text-decoration: none;
+      font-size: 80%;
+      visibility: hidden;
+    }
+
+    .title-link {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration: none;
+    }
   }
 
   code {
@@ -32,18 +49,18 @@
     border-left: 2px solid $alt-bg-color-dark;
   }
 
-  table td, table th {
+  table td,
+  table th {
     border: 2px solid $alt-fg-color-dark;
   }
-
 }
 
 body.colorscheme-dark {
-  @include base_dark()
+  @include base_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include base_dark()
+    @include base_dark();
   }
 }

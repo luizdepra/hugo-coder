@@ -1,0 +1,12 @@
+{{- $type := .Get 0 -}}
+{{- $title := .Get 1 | default $type -}}
+{{- $inner := .Inner | .Page.RenderString | chomp -}}
+{{- $icon := dict "note" "fa-sticky-note" "tip" "fa-lightbulb-o" "example" "fa-file-text" "question" "fa-question" "info" "fa-exclamation-circle" "warning" "fa-exclamation-triangle" "error" "fa-times-circle" -}}
+<div class="notice {{ $type }}">
+  <div class="notice-title">
+    <i class="fa {{ index $icon $type }}" aria-hidden="true"></i>{{ i18n $title | default $title | humanize }}
+  </div>
+  <div class="notice-content">
+    {{- $inner -}}
+  </div>
+</div>

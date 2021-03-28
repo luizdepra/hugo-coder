@@ -1,0 +1,214 @@
+body.colorscheme-dark {
+  color: #dadada;
+  background-color: #212121; }
+  body.colorscheme-dark a {
+    color: #42a5f5; }
+  body.colorscheme-dark h1,
+  body.colorscheme-dark h2,
+  body.colorscheme-dark h3,
+  body.colorscheme-dark h4,
+  body.colorscheme-dark h5,
+  body.colorscheme-dark h6 {
+    color: #dadada; }
+    body.colorscheme-dark h1:hover .heading-link,
+    body.colorscheme-dark h2:hover .heading-link,
+    body.colorscheme-dark h3:hover .heading-link,
+    body.colorscheme-dark h4:hover .heading-link,
+    body.colorscheme-dark h5:hover .heading-link,
+    body.colorscheme-dark h6:hover .heading-link {
+      visibility: visible; }
+    body.colorscheme-dark h1 .heading-link,
+    body.colorscheme-dark h2 .heading-link,
+    body.colorscheme-dark h3 .heading-link,
+    body.colorscheme-dark h4 .heading-link,
+    body.colorscheme-dark h5 .heading-link,
+    body.colorscheme-dark h6 .heading-link {
+      color: #42a5f5;
+      font-weight: inherit;
+      text-decoration: none;
+      font-size: 80%;
+      visibility: hidden; }
+    body.colorscheme-dark h1 .title-link,
+    body.colorscheme-dark h2 .title-link,
+    body.colorscheme-dark h3 .title-link,
+    body.colorscheme-dark h4 .title-link,
+    body.colorscheme-dark h5 .title-link,
+    body.colorscheme-dark h6 .title-link {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration: none; }
+  body.colorscheme-dark code {
+    background-color: #424242;
+    color: #dadada; }
+  body.colorscheme-dark pre code {
+    background-color: inherit;
+    color: inherit; }
+  body.colorscheme-dark blockquote {
+    border-left: 2px solid #424242; }
+  body.colorscheme-dark table td,
+  body.colorscheme-dark table th {
+    border: 2px solid #dadada; }
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    color: #dadada;
+    background-color: #212121; }
+    body.colorscheme-auto a {
+      color: #42a5f5; }
+    body.colorscheme-auto h1,
+    body.colorscheme-auto h2,
+    body.colorscheme-auto h3,
+    body.colorscheme-auto h4,
+    body.colorscheme-auto h5,
+    body.colorscheme-auto h6 {
+      color: #dadada; }
+      body.colorscheme-auto h1:hover .heading-link,
+      body.colorscheme-auto h2:hover .heading-link,
+      body.colorscheme-auto h3:hover .heading-link,
+      body.colorscheme-auto h4:hover .heading-link,
+      body.colorscheme-auto h5:hover .heading-link,
+      body.colorscheme-auto h6:hover .heading-link {
+        visibility: visible; }
+      body.colorscheme-auto h1 .heading-link,
+      body.colorscheme-auto h2 .heading-link,
+      body.colorscheme-auto h3 .heading-link,
+      body.colorscheme-auto h4 .heading-link,
+      body.colorscheme-auto h5 .heading-link,
+      body.colorscheme-auto h6 .heading-link {
+        color: #42a5f5;
+        font-weight: inherit;
+        text-decoration: none;
+        font-size: 80%;
+        visibility: hidden; }
+      body.colorscheme-auto h1 .title-link,
+      body.colorscheme-auto h2 .title-link,
+      body.colorscheme-auto h3 .title-link,
+      body.colorscheme-auto h4 .title-link,
+      body.colorscheme-auto h5 .title-link,
+      body.colorscheme-auto h6 .title-link {
+        color: inherit;
+        font-weight: inherit;
+        text-decoration: none; }
+    body.colorscheme-auto code {
+      background-color: #424242;
+      color: #dadada; }
+    body.colorscheme-auto pre code {
+      background-color: inherit;
+      color: inherit; }
+    body.colorscheme-auto blockquote {
+      border-left: 2px solid #424242; }
+    body.colorscheme-auto table td,
+    body.colorscheme-auto table th {
+      border: 2px solid #dadada; } }
+
+body.colorscheme-dark .content .list ul li .title {
+  color: #dadada; }
+  body.colorscheme-dark .content .list ul li .title:hover, body.colorscheme-dark .content .list ul li .title:focus {
+    color: #42a5f5; }
+
+body.colorscheme-dark .content .centered .about ul li a {
+  color: #dadada; }
+  body.colorscheme-dark .content .centered .about ul li a:hover, body.colorscheme-dark .content .centered .about ul li a:focus {
+    color: #42a5f5; }
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .content .list ul li .title {
+    color: #dadada; }
+    body.colorscheme-auto .content .list ul li .title:hover, body.colorscheme-auto .content .list ul li .title:focus {
+      color: #42a5f5; }
+  body.colorscheme-auto .content .centered .about ul li a {
+    color: #dadada; }
+    body.colorscheme-auto .content .centered .about ul li a:hover, body.colorscheme-auto .content .centered .about ul li a:focus {
+      color: #42a5f5; } }
+
+body.colorscheme-dark .notice .notice-title {
+  border-bottom: 1px solid #212121; }
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .notice .notice-title {
+    border-bottom: 1px solid #212121; } }
+
+body.colorscheme-dark .navigation a,
+body.colorscheme-dark .navigation span {
+  color: #dadada; }
+
+body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:focus {
+  color: #42a5f5; }
+
+@media only screen and (max-width: 768px) {
+  body.colorscheme-dark .navigation .navigation-list {
+    background-color: #212121;
+    border-top: solid 2px #424242;
+    border-bottom: solid 2px #424242; } }
+
+@media only screen and (max-width: 768px) {
+  body.colorscheme-dark .navigation .navigation-list .menu-separator {
+    border-top: 2px solid #dadada; } }
+
+@media only screen and (max-width: 768px) {
+  body.colorscheme-dark .navigation #menu-toggle:checked + label > i {
+    color: #424242; } }
+
+body.colorscheme-dark .navigation i {
+  color: #dadada; }
+  body.colorscheme-dark .navigation i:hover, body.colorscheme-dark .navigation i:focus {
+    color: #42a5f5; }
+
+body.colorscheme-dark .navigation .menu-button i:hover, body.colorscheme-dark .navigation .menu-button i:focus {
+  color: #dadada; }
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .navigation a,
+  body.colorscheme-auto .navigation span {
+    color: #dadada; }
+  body.colorscheme-auto .navigation a:hover, body.colorscheme-auto .navigation a:focus {
+    color: #42a5f5; } }
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
+  body.colorscheme-auto .navigation .navigation-list {
+    background-color: #212121;
+    border-top: solid 2px #424242;
+    border-bottom: solid 2px #424242; } }
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
+  body.colorscheme-auto .navigation .navigation-list .menu-separator {
+    border-top: 2px solid #dadada; } }
+
+@media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
+  body.colorscheme-auto .navigation #menu-toggle:checked + label > i {
+    color: #424242; } }
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .navigation i {
+    color: #dadada; }
+    body.colorscheme-auto .navigation i:hover, body.colorscheme-auto .navigation i:focus {
+      color: #42a5f5; }
+  body.colorscheme-auto .navigation .menu-button i:hover, body.colorscheme-auto .navigation .menu-button i:focus {
+    color: #dadada; } }
+
+body.colorscheme-dark .footer a {
+  color: #42a5f5; }
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .footer a {
+    color: #42a5f5; } }
+
+body.colorscheme-dark .float-container a {
+  color: #dadada;
+  background-color: #424242; }
+  body.colorscheme-dark .float-container a:hover, body.colorscheme-dark .float-container a:focus {
+    color: #42a5f5; }
+    @media only screen and (max-width: 768px) {
+      body.colorscheme-dark .float-container a:hover, body.colorscheme-dark .float-container a:focus {
+        color: #dadada; } }
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .float-container a {
+    color: #dadada;
+    background-color: #424242; }
+    body.colorscheme-auto .float-container a:hover, body.colorscheme-auto .float-container a:focus {
+      color: #42a5f5; } }
+    @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
+      body.colorscheme-auto .float-container a:hover, body.colorscheme-auto .float-container a:focus {
+        color: #dadada; } }
+
+/*# sourceMappingURL=coder-dark.css.map */
