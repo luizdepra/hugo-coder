@@ -151,6 +151,11 @@
     {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
       {{- partial "analytics/googletagmanager" . -}}
     {{ end }}
+
+    {{ if and .Site.Params.buyMeACoffee .Site.Params.buyMeACoffee.username }}
+      {{- partial "donations/buy-me-a-coffee" . -}}
+    {{ end }}
+
   </body>
 
 </html>

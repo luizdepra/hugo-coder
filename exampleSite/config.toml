@@ -91,6 +91,14 @@ stylesrc = [
 scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com"]
 prefetchsrc = ["'self'"]
 
+# If you want to use buymeacoffee(https://buymeacoffee.com) for donation, add this section
+[params.buyMeACoffee]
+    username = "username"
+    # You can define the color in hex format, default value is #FFDD00
+    color = "#FFDD00"
+    # Default value is an empty string
+    message = "welcome message"
+
 [taxonomies]
 category = "categories"
 series = "series"
