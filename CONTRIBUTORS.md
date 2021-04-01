@@ -50,7 +50,7 @@
 - [Bobby Lindsey](https://bobbywlindsey.com)
 - [José Mª Escartín](https://github.com/jme52)
 - [John Schroeder](https://blog.schroedernet.software)
-- [Tobias Lindberg](https://tobiaslindberg.com)
+- [Tobias Lindberg](https://github.com/tobiasehlert)
 - [KK](https://github.com/bebound)
 - [Eli W. Hunter](https://github.com/elihunter173)
 - [Víctor López](https://github.com/viticlick)
