@@ -1,14 +1,23 @@
 [category]
 other = "kategoria"
 
+[categories]
+other = "kategorie"
+
 [tag]
 other = "tag"
+
+[tags]
+other = "tagi"
 
 [series]
 other = "seria"
 
 [author]
 other = "autor(ka)"
+
+[authors]
+other = "autorzy"
 
 [posts]
 other = "posty"
@@ -31,3 +40,24 @@ other = "Napędzane przez"
 
 [see_also]
 other = "Zobacz również"
+
+[note]
+other = "notka"
+
+[tip]
+other = "wskazówka"
+
+[example]
+other = "przykład"
+
+[question]
+other = "pytanie"
+
+[info]
+other = "informacja"
+
+[warning]
+other = "ostrzeżenie"
+
+[error]
+other = "błąd"
