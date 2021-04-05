@@ -1,11 +1,26 @@
 [category]
 other = "Kategori"
 
+[categories]
+other = "Katgorier"
+
 [tag]
 other = "Tagg"
 
+[tags]
+other = "Taggar"
+
 [series]
 other = "Serie"
+
+[author]
+other = "Författare"
+
+[authors]
+other = "Författare"
+
+[posts]
+other = "Inlägg"
 
 [reading_time]
 one = "Ein minut lästid"
@@ -21,4 +36,28 @@ other = "Ursäkta, men denna sida existerar inte."
 other = "Här kan du komma tillbaka till <a href=\"{{ . }}\">startsidan</a>."
 
 [powered_by]
-other = "Med hjälp av"
+other = "Byggd med"
+
+[see_also]
+other = "Se även i"
+
+[note]
+other = "Notera"
+
+[tip]
+other = "Tips"
+
+[example]
+other = "Exempel"
+
+[question]
+other = "Fråga"
+
+[info]
+other = "Info"
+
+[warning]
+other = "Varning"
+
+[error]
+other = "Fel"
