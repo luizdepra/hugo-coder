@@ -1,13 +1,22 @@
 [category]
 other = "分类"
 
+[categories]
+other = "分类"
+
 [tag]
+other = "标签"
+
+[tags]
 other = "标签"
 
 [series]
 other = "系列"
 
 [author]
+other = "作者"
+
+[authors]
 other = "作者"
 
 [posts]
@@ -31,3 +40,24 @@ other = "技术支持"
 
 [see_also]
 other = "参见"
+
+[note]
+other = "注释"
+
+[tip]
+other = "提示"
+
+[example]
+other = "例子"
+
+[question]
+other = "问题"
+
+[info]
+other = "信息"
+
+[warning]
+other = "警告"
+
+[error]
+other = "错误"
