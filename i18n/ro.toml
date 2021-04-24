@@ -1,14 +1,23 @@
 [category]
 other = "categorie"
 
+[categories]
+other = "categorii"
+
 [tag]
 other = "etichetă"
+
+[tags]
+other = "etichete"
 
 [series]
 other = "serie"
 
 [author]
 other = "autor"
+
+[authors]
+other = "autori"
 
 [posts]
 other = "articole"
@@ -31,3 +40,24 @@ other = "Susținut de"
 
 [see_also]
 other = "Altele din seria"
+
+[note]
+other = "notă"
+
+[tip]
+other = "sfat"
+
+[example]
+other = "exemplu"
+
+[question]
+other = "întrebare"
+
+[info]
+other = "informație"
+
+[warning]
+other = "avertisment"
+
+[error]
+other = "eroare"
