@@ -1,0 +1,63 @@
+[category]
+other = "kategori"
+
+[categories]
+other = "kategoritë"
+
+[tag]
+other = "shenjim"
+
+[tags]
+other = "shenjuesat"
+
+[series]
+other = "seritë"
+
+[author]
+other = "autori"
+
+[authors]
+other = "autorë"
+
+[posts]
+other = "postime"
+
+[reading_time]
+one = "një-minutë lexim"
+other = "{{ .Count }}-minute read"
+
+[page_not_found]
+other = "Nuk u gjet faqja"
+
+[page_does_not_exist]
+other = "Na vjen keq, faqja nuk u gjet"
+
+[head_back]
+other = "Mund të ktheheni prapë tek <a href=\"{{ . }}\">homepage</a>."
+
+[powered_by]
+other = "Mundësuar nga "
+
+[see_also]
+other = "Shiko gjithashtu"
+
+[note]
+other = "shënim"
+
+[tip]
+other = "ndihmë"
+
+[example]
+other = "shembull"
+
+[question]
+other = "pyetje"
+
+[info]
+other = "informacion"
+
+[warning]
+other = "kujdes"
+
+[error]
+other = "gabim"
