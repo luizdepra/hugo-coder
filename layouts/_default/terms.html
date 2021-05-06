@@ -1,0 +1,11 @@
+{{ define "title" }}
+  {{- if eq .Kind "term" -}}
+    {{- i18n .Data.Singular | title -}}
+    {{- print ": " -}}
+  {{- end -}}
+
+  {{- .Title }} · {{ .Site.Title -}}
+{{ end }}
+{{ define "content" }}
+  {{ partial "terms.html" . }}
+{{ end }}
