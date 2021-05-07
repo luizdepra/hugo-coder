@@ -1,0 +1,23 @@
+<!-- layouts/_default/_markup/render-image.html -->
+
+{{ $img := "" }}
+{{ $source := ( .Destination | safeURL ) }}
+{{ $imgPath := add "/content" $source }}
+{{ if fileExists $imgPath }}
+    {{ $img = imageConfig $imgPath }}
+{{ else }}
+    {{ $imgPath := add "/static" $source }}
+    {{ if fileExists $imgPath }}
+        {{ $img = imageConfig $imgPath }}
+    {{ end }}
+{{ end }}
+
+{{ if $img }}
+  <img
+  src="{{ $source }}"
+  alt="{{ htmlUnescape .Text }}"
+  loading="lazy"
+  width="{{ $img.Width }}"
+  height="{{ $img.Height }}"
+  />
+{{ end }}
