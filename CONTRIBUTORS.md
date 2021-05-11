@@ -98,3 +98,4 @@
 - [cuso4-5h2o](https://www.cuso4.me)
 - [freeformz](https://icanhazdowntime.org)
 - [Roberto Gongora](https://yourfavourite.blog)
+- [kuba86](https://kuba86.com)
