@@ -23,7 +23,7 @@ O [Emoji cheat sheet](http://www.emoji-cheat-sheet.com/) é uma referência úti
 
 **Nota:** Os passos anteriores ativam os caractéres e sequências de emoji do Padrão Unicode no Hugo, porém a renderização desses glifos depende do navegador e plataforma utilizada. Para escolher o estilo dos emojis você pode tanto usar um font de emoji de terceiros ou uma lista de fontes. Por exemplo:
 
-{{< highlight html >}}
+{{< highlight css >}}
 .emoji {
   font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
 }
