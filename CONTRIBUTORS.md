@@ -98,4 +98,5 @@
 - [cuso4-5h2o](https://www.cuso4.me)
 - [freeformz](https://icanhazdowntime.org)
 - [Roberto Gongora](https://yourfavourite.blog)
+- [Vladislav Matus](https://github.com/matusvla)
 - [Kirill Feoktistov](https://feoktistoff.org)
