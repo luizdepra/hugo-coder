@@ -11,9 +11,11 @@ if (localStorage.getItem("colorscheme")) {
     setTheme(darkModeMediaQuery.matches ? "dark" : "light");
 }
 
-darkModeToggle.addEventListener('click', () => {
-    setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
-});
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', () => {
+        setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
+    });
+}
 
 darkModeMediaQuery.addListener((event) => {
     setTheme(event.matches ? "dark" : "light");
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function setTheme(theme) {
     body.classList.remove('colorscheme-auto');
-    inverse = theme === 'dark' ? 'light' : 'dark';
+    const inverse = theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('colorscheme', theme);
     body.classList.remove('colorscheme-' + inverse);
     body.classList.add('colorscheme-' + theme);
