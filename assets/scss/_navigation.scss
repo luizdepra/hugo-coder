@@ -8,7 +8,6 @@
     font-size: 1.7rem;
     font-family: $font-family;
     font-weight: 600;
-    line-height: 6rem;
     color: $fg-color;
   }
 
@@ -32,8 +31,8 @@
     margin-top: 0;
 
     @media only screen and (max-width: 768px) {
-      position: absolute;
-      top: 6rem;
+      position: relative;
+      top: 2rem;
       right: 0;
       z-index: 5;
       visibility: hidden;
@@ -117,8 +116,8 @@
     display: none;
 
     @media only screen and (max-width: 768px) {
+      position: relative;
       display: block;
-      margin: 1.8rem 0;
       font-size: 2.4rem;
       font-weight: 400;
     }
