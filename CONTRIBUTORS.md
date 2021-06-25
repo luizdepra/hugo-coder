@@ -99,3 +99,5 @@
 - [freeformz](https://icanhazdowntime.org)
 - [Roberto Gongora](https://yourfavourite.blog)
 - [kuba86](https://kuba86.com)
+- [Vladislav Matus](https://github.com/matusvla)
+- [Kirill Feoktistov](https://feoktistoff.org)
