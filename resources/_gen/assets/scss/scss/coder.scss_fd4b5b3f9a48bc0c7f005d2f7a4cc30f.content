@@ -3228,7 +3228,7 @@ figure {
   width: 100%; }
 
 .container {
-  margin: 0 auto;
+  margin: 1rem auto;
   max-width: 90rem;
   width: 100%;
   padding-left: 2rem;
@@ -3485,7 +3485,6 @@ img.emoji {
     font-size: 1.7rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, "PingFang SC", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
     font-weight: 600;
-    line-height: 6rem;
     color: #212121; }
   .navigation a:hover, .navigation a:focus {
     color: #1565c0; }
@@ -3499,8 +3498,8 @@ img.emoji {
     margin-top: 0; }
     @media only screen and (max-width: 768px) {
       .navigation .navigation-list {
-        position: absolute;
-        top: 6rem;
+        position: relative;
+        top: 2rem;
         right: 0;
         z-index: 5;
         visibility: hidden;
@@ -3557,8 +3556,8 @@ img.emoji {
     display: none; }
     @media only screen and (max-width: 768px) {
       .navigation .menu-button {
+        position: relative;
         display: block;
-        margin: 1.8rem 0;
         font-size: 2.4rem;
         font-weight: 400; } }
     .navigation .menu-button i:hover, .navigation .menu-button i:focus {

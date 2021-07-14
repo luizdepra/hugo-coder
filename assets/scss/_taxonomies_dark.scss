@@ -1,4 +1,4 @@
-@mixin taxonomy {
+@mixin taxonomy_dark {
   .taxonomy-element {
     background-color: $alt-bg-color-dark;
 
@@ -8,5 +8,15 @@
     a:active {
       color: $fg-color-dark;
     }
+  }
+}
+
+body.colorscheme-dark {
+  @include taxonomy_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include taxonomy_dark();
   }
 }
