@@ -11,6 +11,9 @@ enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
 
+# To enable inline assets
+enableInlineShortcodes = true
+
 [params]
 author = "John Doe"
 description = "John Doe's personal website"
