@@ -88,6 +88,7 @@
 - [Arafat Hasan](https://github.com/arafat-hasan)
 - [YUJI](https://yuji.ne.jp/)
 - [JaeSang Yoo](https://github.com/JSYoo5B)
+<<<<<<< HEAD
 - [tianheg](https://github.com/tianheg)
 - [Felix](https://github.com/lazyyz)
 - [Peter Duchnovsky](https://pduchnovsky.com)
@@ -114,3 +115,4 @@
 - [George Tsiokos](https://george.tsiokos.com)
 - [Eltjo](https://github.com/eltjo)
 - [Saurmandal](https://saur.neocities.org)
+- [Jneo8](https://github.com/jneo8)
