@@ -39,8 +39,9 @@
   }
 
   pre {
+    background-color: $alt-bg-color-dark !important;
     code {
-      background-color: inherit;
+//      background-color: inherit;
       color: inherit;
     }
   }
