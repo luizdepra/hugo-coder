@@ -91,8 +91,7 @@
     integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
     {{ end }}
 
-
-    <script src="/counterdev.js" integrity="sha384-isY4lBlcZ5WEF0GkajdvVlBZHNX8zHXdO5Yh/yMa3DxrRQvAuIvUMJ2f5fWwhOrC"></script>
+    <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"kuba86",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>
     {{ hugo.Generator }}
   </head>
 
