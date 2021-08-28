@@ -1,13 +1,16 @@
 <script>
   function isSessionSetSwa() {
+    console.log("isSessionSetSwa:"+sessionStorage.getItem("_swa"))
     return sessionStorage.getItem("_swa") === true
   }
   function isReferrerSetSwa() {
+    console.log("isReferrerSetSwa:"+document.referrer.indexOf(location.protocol + "//" + location.host))
     return document.referrer.indexOf(location.protocol + "//" + location.host) === true
   }
   if(!isSessionSetSwa() && isReferrerSetSwa()) {
     const trackingUrl = "https://counter.dev/track?"
     const parameters = new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ $.Site.Params.counterdev.user }}",utcoffset:"2"})
+    console.log("url:"+trackingUrl+parameters)
     fetch(trackingUrl+parameters)
   }
   sessionStorage.setItem("_swa","1");
