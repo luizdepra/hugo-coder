@@ -1,0 +1,15 @@
+<script>
+  function isSessionSetSwa() {
+    return sessionStorage.getItem("_swa") === true
+  }
+  function isReferrerSetSwa() {
+    return document.referrer.indexOf(location.protocol + "//" + location.host) === true
+  }
+  if(!isSessionSetSwa() && isReferrerSetSwa()) {
+    const trackingUrl = "https://counter.dev/track?"
+    const parameters = new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ $.Site.Params.counterdev.user }}",utcoffset:"2"})
+    fetch(trackingUrl+parameters)
+  }
+  sessionStorage.setItem("_swa","1");
+  // if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ $.Site.Params.counterdev.user }}",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");
+</script>
