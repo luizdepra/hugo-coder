@@ -1,5 +1,19 @@
 @mixin content_dark {
   .content {
+    .post {
+      .tags {
+        .tag {
+          background-color: $alt-bg-color-dark;
+
+          a {
+            color: $fg-color-dark;
+          }
+          a:active {
+            color: $fg-color-dark;
+          }
+        }
+      }
+    }
     .list {
       ul {
         li {

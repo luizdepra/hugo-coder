@@ -65,6 +65,23 @@
           margin-right: 1.5rem;
         }
       }
+
+      .tags {
+        .tag {
+          display: inline-block;
+          padding: 0.3rem 0.6rem;
+          background-color: $alt-bg-color;
+          border-radius: 0.6rem;
+          line-height: 1.4em;
+
+          a {
+            color: $fg-color;
+          }
+          a:active {
+            color: $fg-color;
+          }
+        }
+      }
     }
   }
 
