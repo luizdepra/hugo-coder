@@ -101,3 +101,4 @@
 - [kuba86](https://kuba86.com)
 - [Vladislav Matus](https://github.com/matusvla)
 - [Kirill Feoktistov](https://feoktistoff.org)
+- [Michael Weiss](https://mweiss.ch)

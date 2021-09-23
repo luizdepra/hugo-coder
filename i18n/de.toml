@@ -1,11 +1,26 @@
 [category]
 other = "Kategorie"
 
+[categories]
+other = "Kategorien"
+
 [tag]
 other = "Tag"
 
+[tags]
+other = "Tags"
+
 [series]
 other = "Serie"
+
+[author]
+other = "Autor"
+
+[authors]
+other = "Autoren"
+
+[posts]
+other = "Beiträge"
 
 [reading_time]
 one = "Eine Minute Lesezeit"
@@ -22,3 +37,27 @@ other = "Du kannst hier zurück zur <a href=\"{{ . }}\">Startseite</a>."
 
 [powered_by]
 other = "Gestaltet mit"
+
+[see_also]
+other = "Siehe auch in"
+
+[note]
+other = "Bemerkung"
+
+[tip]
+other = "Tipp"
+
+[example]
+other = "Beispiel"
+
+[question]
+other = "Frage"
+
+[info]
+other = "Info"
+
+[warning]
+other = "Warnung"
+
+[error]
+other = "Fehler"
