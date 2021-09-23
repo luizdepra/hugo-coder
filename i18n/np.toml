@@ -1,0 +1,33 @@
+[category]
+other = "वर्ग"
+
+[tag]
+other = "ट्याग"
+
+[series]
+other = "श्रृंखला"
+
+[author]
+other = "लेखक"
+
+[reading_time]
+one = "एक मिनेट पढाई"
+other = "{{ .Count }} मिनेट पढाई"
+
+[page_not_found]
+other = "पृष्ठ भेटिएन।"
+
+[page_does_not_exist]
+other = "माफ गर्नुहोस, यो पृष्ठ उपलब्ध छैन।"
+
+[head_back]
+other = "मुख्यपृष्ठमा फर्किन सक्नुहुन्छ।<a href=\"{{ . }}\">मुख्यपृष्ठ</a>."
+
+[powered_by]
+other = "द्वारा संचालित"
+
+[see_also]
+other = "यो पनि हेर्नुहोस।"
+
+[posts]
+other = "सामग्री"
