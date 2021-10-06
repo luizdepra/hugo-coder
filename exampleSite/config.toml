@@ -42,7 +42,7 @@ maxSeeAlsoItems = 5
 enableTwemoji = false
 # Custom CSS
 customCSS = []
-# Custom SCSS
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
 # Custom JS
 customJS = []
