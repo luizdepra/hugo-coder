@@ -123,7 +123,13 @@
     {{ end }}
 
     {{ range .Site.Params.customJS }}
-      <script src="{{ . | relURL }}"></script>
+      {{ if $.Site.IsServer }}
+        {{ $script := resources.Get . }}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{ else }}
+        {{ $script := resources.Get . | minify | fingerprint }}
+        <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+      {{ end }}
     {{ end }}
 
     {{ template "_internal/google_analytics.html" . }}
