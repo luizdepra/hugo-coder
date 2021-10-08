@@ -102,3 +102,4 @@
 - [Vladislav Matus](https://github.com/matusvla)
 - [Kirill Feoktistov](https://feoktistoff.org)
 - [Michael Weiss](https://mweiss.ch)
+- [Simon Pai](https://github.com/simonpai)
