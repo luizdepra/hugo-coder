@@ -92,11 +92,6 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    {{ if .Site.Params.enableTwemoji }}
-      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
-        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
-    {{ end }}
-
     {{ hugo.Generator }}
   </head>
 
@@ -106,9 +101,7 @@
   {{ else if eq .Site.Params.colorScheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
-        onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
-  >
+  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
     {{ partial "float" . }}
     <main class="wrapper">
       {{ partial "header.html" . }}

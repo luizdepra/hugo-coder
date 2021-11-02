@@ -79,8 +79,6 @@ models:
             name: customSCSS
           - type: list
             name: customJS
-          - type: boolean
-            name: enableTwemoji
           - type: list
             name: social
             label: Social Media Icons
