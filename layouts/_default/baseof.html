@@ -61,7 +61,13 @@
     {{ end }}
 
     {{ range .Site.Params.customCSS }}
-      <link rel="stylesheet" href="{{ . | relURL }}" />
+      {{ if $.Site.IsServer }}
+        {{ $styles := resources.Get . }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ else }}
+        {{ $styles := resources.Get . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
     {{ end }}
 
     {{ range .Site.Params.customSCSS }}
@@ -86,11 +92,6 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    {{ if .Site.Params.enableTwemoji }}
-      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
-        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
-    {{ end }}
-
     {{ hugo.Generator }}
   </head>
 
@@ -100,9 +101,7 @@
   {{ else if eq .Site.Params.colorScheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
-        onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
-  >
+  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
     {{ partial "float" . }}
     <main class="wrapper">
       {{ partial "header.html" . }}
@@ -123,7 +122,13 @@
     {{ end }}
 
     {{ range .Site.Params.customJS }}
-      <script src="{{ . | relURL }}"></script>
+      {{ if $.Site.IsServer }}
+        {{ $script := resources.Get . }}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{ else }}
+        {{ $script := resources.Get . | minify | fingerprint }}
+        <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+      {{ end }}
     {{ end }}
 
     {{ template "_internal/google_analytics.html" . }}
