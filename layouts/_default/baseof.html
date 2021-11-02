@@ -61,7 +61,13 @@
     {{ end }}
 
     {{ range .Site.Params.customCSS }}
-      <link rel="stylesheet" href="{{ . | relURL }}" />
+      {{ if $.Site.IsServer }}
+        {{ $styles := resources.Get . }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ else }}
+        {{ $styles := resources.Get . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
     {{ end }}
 
     {{ range .Site.Params.customSCSS }}
@@ -123,7 +129,13 @@
     {{ end }}
 
     {{ range .Site.Params.customJS }}
-      <script src="{{ . | relURL }}"></script>
+      {{ if $.Site.IsServer }}
+        {{ $script := resources.Get . }}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{ else }}
+        {{ $script := resources.Get . | minify | fingerprint }}
+        <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+      {{ end }}
     {{ end }}
 
     {{ template "_internal/google_analytics.html" . }}

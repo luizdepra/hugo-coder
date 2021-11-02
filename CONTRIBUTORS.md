@@ -103,3 +103,4 @@
 - [Kirill Feoktistov](https://feoktistoff.org)
 - [leins275](https://github.com/LanskovNV)
 - [Michael Weiss](https://mweiss.ch)
+- [Simon Pai](https://github.com/simonpai)
