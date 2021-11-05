@@ -51,16 +51,10 @@ models:
             name: info
           - type: string
             name: avatarURL
-          - type: boolean
-            name: hideFooter
           - type: string
             name: footerContent
           - type: string
             name: dateFormat
-          - type: boolean
-            name: hideCredits
-          - type: boolean
-            name: hideCopyright
           - type: boolean
             name: hideColorSchemeToggle
           - type: number

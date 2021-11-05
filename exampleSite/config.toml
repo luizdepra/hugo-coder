@@ -20,9 +20,6 @@ avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 footerContent = "Enter a text here."
 dateFormat = "January 2, 2006"
-hideFooter = false
-hideCredits = false
-hideCopyright = false
 since = 2019
 # Git Commit in Footer, uncomment the line below to enable it
 commit = "https://github.com/luizdepra/hugo-coder/tree/"
