@@ -52,8 +52,6 @@ models:
           - type: string
             name: avatarURL
           - type: string
-            name: footerContent
-          - type: string
             name: dateFormat
           - type: boolean
             name: hideColorSchemeToggle
@@ -255,8 +253,6 @@ models:
             name: description
           - type: string
             name: keywords
-          - type: string
-            name: footerContent
           - type: number
             name: since
       - type: object

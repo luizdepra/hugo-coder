@@ -18,7 +18,6 @@ keywords = "blog,developer,personal"
 info = ["Full Stack DevOps", "Magician"]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
-footerContent = "Enter a text here."
 dateFormat = "January 2, 2006"
 since = 2019
 # Git Commit in Footer, uncomment the line below to enable it
@@ -164,7 +163,6 @@ author = "João Ninguém"
 info = "Full Stack DevOps e Mágico"
 description = "Sítio pessoal de João Ninguém"
 keywords = "blog,desenvolvedor,pessoal"
-footerContent = "Coloque algum texto aqui."
 
 [[languages.pt-br.menu.main]]
 name = "Sobre"
