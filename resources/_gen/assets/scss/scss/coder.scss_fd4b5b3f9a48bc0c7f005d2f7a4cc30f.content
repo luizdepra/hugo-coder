@@ -3149,8 +3149,7 @@ strong {
 .highlight > pre {
   margin: 0 0 2rem;
   padding: 1rem;
-  border-radius: 1rem;
-  background-color: #e0e0e0 !important; }
+  border-radius: 1rem; }
 
 pre {
   display: block;
