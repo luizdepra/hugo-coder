@@ -3379,8 +3379,6 @@ figure {
           @media only screen and (max-width: 768px) {
             .centered .about ul li a {
               font-size: 1.4rem; } }
-          .centered .about ul li a i {
-            font-size: 3.2rem; }
   .centered .error {
     text-align: center; }
     .centered .error h1 {
