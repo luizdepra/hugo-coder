@@ -1,11 +1,17 @@
-[category]
-other = "فئة"
+[categories]
+one = "فئة"
 
-[tag]
-other = "وَسم"
+[tags]
+one = "وَسم"
 
 [series]
-other = "سلسلة"
+one = "سلسلة"
+
+[authors]
+one = "الكاتب"
+
+[posts]
+other = "المنشورات"
 
 [reading_time]
 other = "تستغرق {{ .Count }} د"
@@ -22,11 +28,5 @@ other = "بإمكانك العودة إلى <a href=\"{{ . }}\">homepage</a>."
 [powered_by]
 other = "بواسطة"
 
-[author]
-other = "الكاتب"
-
 [see_also]
 other = "انظر أيضاً"
-
-[posts]
-other = "المنشورات"

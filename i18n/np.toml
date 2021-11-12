@@ -1,14 +1,17 @@
-[category]
-other = "वर्ग"
+[categories]
+one = "वर्ग"
 
-[tag]
-other = "ट्याग"
+[tags]
+one = "ट्याग"
 
 [series]
-other = "श्रृंखला"
+one = "श्रृंखला"
 
-[author]
-other = "लेखक"
+[authors]
+one = "लेखक"
+
+[posts]
+other = "सामग्री"
 
 [reading_time]
 one = "एक मिनेट पढाई"
@@ -28,6 +31,3 @@ other = "द्वारा संचालित"
 
 [see_also]
 other = "यो पनि हेर्नुहोस।"
-
-[posts]
-other = "सामग्री"

@@ -1,22 +1,17 @@
-[category]
-other = "分类"
-
 [categories]
+one = "分类"
 other = "分类"
-
-[tag]
-other = "标签"
 
 [tags]
+one = "标签"
 other = "标签"
 
 [series]
+one = "系列"
 other = "系列"
 
-[author]
-other = "作者"
-
 [authors]
+one = "作者"
 other = "作者"
 
 [posts]

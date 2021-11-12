@@ -1,14 +1,17 @@
-[posts]
-other = "články"
+[categories]
+one = "kategória"
 
-[category]
-other = "kategória"
-
-[tag]
-other = "téma"
+[tags]
+one = "téma"
 
 [series]
-other = "diel"
+one = "diel"
+
+[authors]
+one = "autor"
+
+[posts]
+other = "články"
 
 [reading_time]
 one = "Prečítate si za minútu"
@@ -27,9 +30,6 @@ other = "Späť na <a href=\"{{ . }}\">domácu stránku</a>."
 
 [see_also]
 other = "Pozrite tiež"
-
-[author]
-other = "autor"
 
 [powered_by]
 other = "Táto stránka bola vytvorená cez"

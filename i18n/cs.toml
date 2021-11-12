@@ -1,11 +1,15 @@
-[category]
-other = "kategorie"
+[categories]
+one = "kategorie"
 
-[tag]
-other = "tag"
+[tags]
+one = "tag"
 
 [series]
-other = "série"
+one = "série"
+
+[authors]
+
+[posts]
 
 [reading_time]
 other = "Délka čtení: {{ .Count }}"

@@ -1,22 +1,17 @@
-[category]
-other = "categorie"
-
 [categories]
+one = "categorie"
 other = "categorii"
 
-[tag]
-other = "etichetă"
-
 [tags]
+one = "etichetă"
 other = "etichete"
 
 [series]
+one = "serie"
 other = "serie"
 
-[author]
-other = "autor"
-
 [authors]
+one = "autor"
 other = "autori"
 
 [posts]

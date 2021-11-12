@@ -1,14 +1,14 @@
-[category]
-other = "카테고리"
+[categories]
+one = "카테고리"
 
-[tag]
-other = "태그"
+[tags]
+one = "태그"
 
 [series]
-other = "시리즈"
+one = "시리즈"
 
-[author]
-other = "저자"
+[authors]
+one = "저자"
 
 [posts]
 other = "포스트"
