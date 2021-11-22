@@ -80,6 +80,7 @@
   table tr th:last-child {
     border-right: 0;
   }
+}
 
 body.colorscheme-dark {
   @include base_dark();
