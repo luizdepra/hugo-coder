@@ -104,3 +104,4 @@
 - [leins275](https://github.com/LanskovNV)
 - [Michael Weiss](https://mweiss.ch)
 - [Simon Pai](https://github.com/simonpai)
+- [Brenton Mallen](https://github.com/brentonmallen1)
