@@ -49,9 +49,36 @@
     border-left: 2px solid $alt-bg-color-dark;
   }
 
+  th,
+  td {
+    padding: 1.6rem;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
   table td,
   table th {
     border: 2px solid $alt-fg-color-dark;
+  }
+
+  table tr:first-child th {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table tr td:first-child,
+  table tr th:first-child {
+    border-left: 0;
+  }
+
+  table tr td:last-child,
+  table tr th:last-child {
+    border-right: 0;
   }
 }
 
