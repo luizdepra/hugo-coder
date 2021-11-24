@@ -103,7 +103,14 @@
   {{ end }}
   <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
     {{ partial "float" . }}
-    <main class="wrapper">
+
+    {{ if (isset .Site.Params "homebackground") }}
+        {{ with .Site.Params.homeBackground }}
+        <main class="wrapper" style="background-image:url({{ . | relURL }});">
+        {{ end }}
+    {{ else }}
+        <main class="wrapper">
+    {{ end }}
       {{ partial "header.html" . }}
 
       <div class="content">

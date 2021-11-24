@@ -1,15 +1,23 @@
 <footer class="footer">
+    {{ if (.Site.Params.footNote) }} 
+    <section class="container">
+        <p>Note</p>
+        {{ with .Site.Params.footNote }}
+        <small>{{ . }}</small>
+        {{ end }}
+    </section>
+    {{ end }}
   <section class="container">
     ©
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
       {{ .Site.Params.since }} -
     {{ end }}
     {{ now.Year }}
-    {{ with .Site.Params.author }} {{ . }} {{ end }}
-    ·
-    {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    {{ if (and .Site.Params.commit .GitInfo) }}
-      [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a>]
+    {{ if (.Site.Params.authorUrl) }}
+        <a href="{{ .Site.Params.authorUrl }}" target="_blank">{{ with .Site.Params.author }} {{ . }} {{ end }}</a>
+    {{ else }}
+        {{ with .Site.Params.author }} {{ . }} {{ end }}
     {{ end }}
+    ·
   </section>
 </footer>

@@ -1,10 +1,4 @@
-{{ if (isset .Site.Params "homebackground") }}
- {{ with .Site.Params.homeBackground }}
- <section class="container centered" style="background-image:url({{ . | relURL }});">
- {{ end }}
-{{ else }}
 <section class="container centered">
-{{ end }}
   <div class="about">
     {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
       {{ with .Site.Params.avatarURL }}
