@@ -2,4 +2,5 @@
 **/themes/
 exampleSite/public/
 exampleSite/resources/
+resources/_gen/
 *.lock
