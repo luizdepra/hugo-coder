@@ -38,6 +38,13 @@
     color: $fg-color-dark;
   }
 
+  // fix color schemes which do not explicitly set fg-color
+  .highlight {
+    pre {
+      color: $fg-color;
+    }
+  }
+
   pre {
     code {
       background-color: inherit;
