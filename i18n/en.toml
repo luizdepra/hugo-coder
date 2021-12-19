@@ -33,7 +33,7 @@ other = "Page Not Found"
 other = "Sorry, this page does not exist."
 
 [head_back]
-other = "You can head back to <a href=\"{{ . }}\">homepage</a>."
+other = "You can head back to the <a href=\"{{ . }}\">homepage</a>."
 
 [powered_by]
 other = "Powered by"
