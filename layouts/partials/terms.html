@@ -2,10 +2,9 @@
   <h1 class="title">
     <a class="title-link" href="{{ .Permalink | safeURL }}">
       {{- if eq .Kind "term" -}}
-      {{- i18n .Data.Singular | title -}}
-      {{- print ": " -}}
+        {{- i18n .Data.Plural | title -}}
+        {{- print ": " -}}
       {{- end -}}
-
       {{- i18n (lower .Title) | default .Title | title -}}
     </a>
   </h1>

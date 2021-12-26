@@ -1,14 +1,17 @@
-[category]
-other = "श्रेणी"
+[categories]
+one = "श्रेणी"
 
-[tag]
-other = "टैग"
+[tags]
+one = "टैग"
 
 [series]
-other = "श्रृंखला"
+one = "श्रृंखला"
 
-[author]
-other = "लेखक"
+[authors]
+one = "लेखक"
+
+[posts]
+other = "सामग्री"
 
 [reading_time]
 one = "एक पढ़ने का समय"
@@ -28,6 +31,3 @@ other = "द्वारा संचालित"
 
 [see_also]
 other = "यह भी देखें"
-
-[posts]
-other = "सामग्री"

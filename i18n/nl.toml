@@ -1,14 +1,14 @@
-[category]
-other = "Categorie"
+[categories]
+one = "Categorie"
 
-[tag]
-other = "Label"
+[tags]
+one = "Label"
 
 [series]
-other = "Serie"
+one = "Serie"
 
-[author]
-other = "Auteur"
+[authors]
+one = "Auteur"
 
 [posts]
 other = "Berichten"

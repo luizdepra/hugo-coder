@@ -1,14 +1,17 @@
-[category]
-other = "分類"
+[categories]
+one = "分類"
 
-[tag]
-other = "標籤"
+[tags]
+one = "標籤"
 
 [series]
-other = "系列"
+one = "系列"
 
-[author]
-other = "作者"
+[authors]
+one = "作者"
+
+[posts]
+other = "文章"
 
 [reading_time]
 one = "閱讀時間 1 分鐘"
@@ -28,6 +31,3 @@ other = "技術支援"
 
 [see_also]
 other = "參見"
-
-[posts]
-other = "文章"

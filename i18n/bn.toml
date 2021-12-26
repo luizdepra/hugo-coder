@@ -1,14 +1,14 @@
-[category]
-other = "বিভাগ"
+[categories]
+one = "বিভাগ"
 
-[tag]
-other = "ট্যাগ"
+[tags]
+one = "ট্যাগ"
 
 [series]
-other = "সিরিজ"
+one = "সিরিজ"
 
-[author]
-other = "লেখক"
+[authors]
+one = "লেখক"
 
 [posts]
 other = "সব পোস্ট"

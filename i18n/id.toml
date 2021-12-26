@@ -1,14 +1,14 @@
-[category]
-other = "kategori"
+[categories]
+one = "kategori"
 
-[tag]
-other = "label"
+[tags]
+one = "label"
 
 [series]
-other = "seri"
+one = "seri"
 
-[author]
-other = "penulis"
+[authors]
+one = "penulis"
 
 [posts]
 other = "artikel"

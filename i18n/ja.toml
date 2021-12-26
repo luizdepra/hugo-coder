@@ -1,14 +1,14 @@
-[category]
-other = "カテゴリー"
+[categories]
+one = "カテゴリー"
 
-[tag]
-other = "タグ"
+[tags]
+one = "タグ"
 
 [series]
-other = "シリーズ"
+one = "シリーズ"
 
-[author]
-other = "筆者"
+[authors]
+one = "筆者"
 
 [posts]
 other = "記事"

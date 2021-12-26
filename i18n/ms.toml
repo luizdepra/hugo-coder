@@ -1,11 +1,15 @@
-[category]
-other = "kategori"
+[categories]
+one = "kategori"
 
-[tag]
-other = "teg"
+[tags]
+one = "teg"
 
 [series]
-other = "siri"
+one = "siri"
+
+[authors]
+
+[posts]
 
 [reading_time]
 one = "Bacaan 1 minit"

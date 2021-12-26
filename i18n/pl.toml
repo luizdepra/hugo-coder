@@ -1,22 +1,17 @@
-[category]
-other = "kategoria"
-
 [categories]
+one = "kategoria"
 other = "kategorie"
 
-[tag]
-other = "tag"
-
 [tags]
+one = "tag"
 other = "tagi"
 
 [series]
+one = "seria"
 other = "seria"
 
-[author]
-other = "autor(ka)"
-
 [authors]
+one = "autor(ka)"
 other = "autorzy"
 
 [posts]

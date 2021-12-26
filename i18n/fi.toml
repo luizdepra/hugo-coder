@@ -1,14 +1,17 @@
-[category]
-other = "kategoria"
+[categories]
+one = "kategoria"
 
-[tag]
-other = "merkki"
+[tags]
+one = "merkki"
 
 [series]
-other = "sarja"
+one = "sarja"
 
-[author]
-other = "Kirjoittaja"
+[authors]
+one = "Kirjoittaja"
+
+[posts]
+other = "Artikkelit"
 
 [reading_time]
 one = "Yksi lukuminuutti"
@@ -28,6 +31,3 @@ other = "Tarjoaa"
 
 [see_also]
 other = "Katso myös"
-
-[posts]
-other = "Artikkelit"

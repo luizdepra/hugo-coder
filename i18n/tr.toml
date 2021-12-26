@@ -1,14 +1,17 @@
-[category]
-other = "kategori"
+[categories]
+one = "kategori"
 
-[tag]
-other = "tag"
+[tags]
+one = "tag"
 
 [series]
-other = "dizi"
+one = "dizi"
 
-[author]
-other = "yazar"
+[authors]
+one = "yazar"
+
+[posts]
+other = "Gönderiler"
 
 [reading_time]
 one = "Bir dakikalık okuma"
@@ -28,6 +31,3 @@ other = "Site program altyapısı"
 
 [see_also]
 other = "Ayrıca bakınız"
-
-[posts]
-other = "Gönderiler"

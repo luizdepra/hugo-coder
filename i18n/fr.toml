@@ -1,14 +1,21 @@
-[category]
-other = "catégorie"
+[categories]
+one = "catégorie"
+other = "catégories"
 
-[tag]
-other = "tag"
+[tags]
+one = "tag"
+other = "tags"
 
 [series]
+one = "série"
 other = "séries"
 
-[author]
-other = "auteur"
+[authors]
+one = "auteur"
+other = "auteurs"
+
+[posts]
+other = "articles"
 
 [reading_time]
 one = "Une minute de lecture"
@@ -28,6 +35,3 @@ other = "Propulsé par"
 
 [see_also]
 other = "Voir aussi dans"
-
-[posts]
-other = "Articles"

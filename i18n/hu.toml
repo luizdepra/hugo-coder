@@ -1,14 +1,14 @@
-[category]
-other = "Kategória"
+[categories]
+one = "Kategória"
 
-[tag]
-other = "Címke"
+[tags]
+one = "Címke"
 
 [series]
-other = "Sorozat"
+one = "Sorozat"
 
-[author]
-other = "Szerző"
+[authors]
+one = "Szerző"
 
 [posts]
 other = "Írások"

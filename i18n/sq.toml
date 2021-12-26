@@ -1,22 +1,17 @@
-[category]
-other = "kategori"
-
 [categories]
+one = "kategori"
 other = "kategoritë"
 
-[tag]
-other = "shenjim"
-
 [tags]
+one = "shenjim"
 other = "shenjuesat"
 
 [series]
+one = "seritë"
 other = "seritë"
 
-[author]
-other = "autori"
-
 [authors]
+one = "autori"
 other = "autorë"
 
 [posts]
