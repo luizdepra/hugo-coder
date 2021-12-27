@@ -1,14 +1,18 @@
 [categories]
 one = "kategória"
+other = "categories"
 
 [tags]
 one = "téma"
+other = "tags"
 
 [series]
 one = "diel"
+other = "series"
 
 [authors]
 one = "autor"
+other = "authors"
 
 [posts]
 other = "články"
@@ -33,3 +37,24 @@ other = "Pozrite tiež"
 
 [powered_by]
 other = "Táto stránka bola vytvorená cez"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

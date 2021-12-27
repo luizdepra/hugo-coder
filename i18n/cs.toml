@@ -1,15 +1,21 @@
 [categories]
 one = "kategorie"
+other = "categories"
 
 [tags]
 one = "tag"
+other = "tags"
 
 [series]
 one = "série"
+other = "series"
 
 [authors]
+one = "author"
+other = "authors"
 
 [posts]
+other = "posts"
 
 [reading_time]
 other = "Délka čtení: {{ .Count }}"
@@ -28,3 +34,24 @@ other = "Stránka používá"
 
 [see_also]
 other = "Podívejte se také na"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

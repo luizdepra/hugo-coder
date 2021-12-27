@@ -35,3 +35,24 @@ other = "Propulsé par"
 
 [see_also]
 other = "Voir aussi dans"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

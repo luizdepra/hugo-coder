@@ -1,14 +1,18 @@
 [categories]
 one = "kategoria"
+other = "categories"
 
 [tags]
 one = "merkki"
+other = "tags"
 
 [series]
 one = "sarja"
+other = "series"
 
 [authors]
 one = "Kirjoittaja"
+other = "authors"
 
 [posts]
 other = "Artikkelit"
@@ -31,3 +35,24 @@ other = "Tarjoaa"
 
 [see_also]
 other = "Katso myös"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

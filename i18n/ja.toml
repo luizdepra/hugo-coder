@@ -1,14 +1,18 @@
 [categories]
 one = "カテゴリー"
+other = "categories"
 
 [tags]
 one = "タグ"
+other = "tags"
 
 [series]
 one = "シリーズ"
+other = "series"
 
 [authors]
 one = "筆者"
+other = "authors"
 
 [posts]
 other = "記事"
@@ -31,3 +35,24 @@ other = "利用技術"
 
 [see_also]
 other = "関連記事："
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

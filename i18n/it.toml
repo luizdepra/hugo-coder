@@ -35,3 +35,24 @@ other = "Generato da"
 
 [see_also]
 other = "Vedi anche in"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

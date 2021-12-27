@@ -33,6 +33,9 @@ other = "Você pode voltar para a <a href=\"{{ . }}\">página inicial</a>."
 [powered_by]
 other = "Promovido por"
 
+[see_also]
+other = "Veja também em"
+
 [note]
 other = "nota"
 

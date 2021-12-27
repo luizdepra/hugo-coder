@@ -1,15 +1,21 @@
 [categories]
 one = "kategori"
+other = "categories"
 
 [tags]
 one = "teg"
+other = "tags"
 
 [series]
 one = "siri"
+other = "series"
 
 [authors]
+one = "author"
+other = "authors"
 
 [posts]
+other = "posts"
 
 [reading_time]
 one = "Bacaan 1 minit"
@@ -29,3 +35,24 @@ other = "Dikuasakan oleh"
 
 [see_also]
 other = "Lihat juga"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

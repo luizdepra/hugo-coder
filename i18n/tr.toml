@@ -1,14 +1,18 @@
 [categories]
 one = "kategori"
+other = "categories"
 
 [tags]
 one = "tag"
+other = "tags"
 
 [series]
 one = "dizi"
+other = "series"
 
 [authors]
 one = "yazar"
+other = "authors"
 
 [posts]
 other = "Gönderiler"
@@ -31,3 +35,24 @@ other = "Site program altyapısı"
 
 [see_also]
 other = "Ayrıca bakınız"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

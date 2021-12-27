@@ -1,14 +1,18 @@
 [categories]
 one = "категория"
+other = "categories"
 
 [tags]
 one = "тэг"
+other = "tags"
 
 [series]
 one = "серии"
+other = "series"
 
 [authors]
 one = "автор"
+other = "authors"
 
 [posts]
 other = "статьи"
@@ -32,3 +36,24 @@ other = "Работает на"
 
 [see_also]
 other = "Также смотреть"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

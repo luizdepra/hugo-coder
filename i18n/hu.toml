@@ -1,14 +1,18 @@
 [categories]
 one = "Kategória"
+other = "categories"
 
 [tags]
 one = "Címke"
+other = "tags"
 
 [series]
 one = "Sorozat"
+other = "series"
 
 [authors]
 one = "Szerző"
+other = "authors"
 
 [posts]
 other = "Írások"
@@ -31,3 +35,24 @@ other = "Motor:"
 
 [see_also]
 other = "Lásd még"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

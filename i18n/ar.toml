@@ -1,14 +1,18 @@
 [categories]
 one = "فئة"
+other = "categories"
 
 [tags]
 one = "وَسم"
+other = "tags"
 
 [series]
 one = "سلسلة"
+other = "series"
 
 [authors]
 one = "الكاتب"
+other = "authors"
 
 [posts]
 other = "المنشورات"
@@ -30,3 +34,24 @@ other = "بواسطة"
 
 [see_also]
 other = "انظر أيضاً"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

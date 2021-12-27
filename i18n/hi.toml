@@ -1,14 +1,18 @@
 [categories]
 one = "श्रेणी"
+other = "categories"
 
 [tags]
 one = "टैग"
+other = "tags"
 
 [series]
 one = "श्रृंखला"
+other = "series"
 
 [authors]
 one = "लेखक"
+other = "authors"
 
 [posts]
 other = "सामग्री"
@@ -31,3 +35,24 @@ other = "द्वारा संचालित"
 
 [see_also]
 other = "यह भी देखें"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

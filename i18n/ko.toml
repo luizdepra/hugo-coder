@@ -1,14 +1,18 @@
 [categories]
 one = "카테고리"
+other = "categories"
 
 [tags]
 one = "태그"
+other = "tags"
 
 [series]
 one = "시리즈"
+other = "series"
 
 [authors]
 one = "저자"
+other = "authors"
 
 [posts]
 other = "포스트"
@@ -31,3 +35,24 @@ other = "Powered by"
 
 [see_also]
 other = "관련 글:"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"
