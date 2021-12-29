@@ -34,9 +34,10 @@ colorScheme = "auto"
 hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
+# Custom assets use a file path relative to Hugo's asset folder (default: {your project root}/assets)
 # Custom CSS
 customCSS = []
-# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+# Custom SCSS
 customSCSS = []
 # Custom JS
 customJS = []
