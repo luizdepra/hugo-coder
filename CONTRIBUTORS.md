@@ -105,3 +105,4 @@
 - [Michael Weiss](https://mweiss.ch)
 - [Simon Pai](https://github.com/simonpai)
 - [Brenton Mallen](https://github.com/brentonmallen1)
+- [Michiel Appelman](https://appelman.se)
