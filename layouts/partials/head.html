@@ -1,0 +1,23 @@
+<head>
+  {{ partial "head/meta-tags.html" . }}
+
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+  {{ if .Permalink }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+
+  {{ partialCached "head/theme-styles.html" . }}
+
+  {{ partialCached "head/color-scheme.html" . }}
+
+  {{ partialCached "head/custom-styles.html" . }}
+
+  {{ partialCached "head/custom-icons.html" . }}
+
+  {{ partialCached "head/alternative-output-formats.html" . }}
+
+  {{ partialCached "head/hugo-generator.html" . }}
+
+  {{ partial "head/extensions.html" . }}
+</head>
