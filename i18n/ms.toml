@@ -14,8 +14,8 @@ other = "siri"
 other = "penulis"
 
 [authors]
-one = "author"
-other = "authors"
+one = "penulis"
+other = "penulis"
 
 [posts]
 other = "artikel"
