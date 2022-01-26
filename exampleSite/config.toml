@@ -17,19 +17,19 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Tom Bilske"
-    description = "A product manager who cares about experience"
+    description = "A product manager who loves building products"
     keywords = "blog,developer,personal"
-    info = "Product, UX, Experience"
+    info = "Trying to build products in a way that’s fun, useful, and actually solves a problem"
     avatarurl = "images/profile.jpg"
-    #gravatar = "john.doe@example.com"
-    footercontent = "Enter a text here."
+    #gravatar = ""
+    footercontent = ""
 
     dateformat = "January 2, 2006"
 
     hideFooter = true
     hideCredits = true
     hideCopyright = true
-    since = 2019
+    since = 2020
 
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/luizdepra/hugo-coder/tree/"
@@ -78,10 +78,10 @@ disqusShortname = "yourdiscussshortname"
     weight = 2
     url = "https://www.linkedin.com/in/tombilske/"
 [[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium"
+    name = "Polywork"
+    icon = "fas fa-briefcase"
     weight = 3
-    url = "https://medium.com/@tombilske"
+    url = "https://www.polywork.com/tombilske"
 [[params.social]]
     name = "Email"
     icon = "fa fa-envelope"
