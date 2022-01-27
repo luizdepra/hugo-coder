@@ -1,21 +1,21 @@
 [categories]
-one = "Categorie"
-other = "categories"
+one = "categorie"
+other = "categorieën"
 
 [tags]
-one = "Label"
-other = "tags"
+one = "label"
+other = "labels"
 
 [series]
-one = "Serie"
+one = "serie"
 other = "series"
 
 [authors]
-one = "Auteur"
-other = "authors"
+one = "auteur"
+other = "auteurs"
 
 [posts]
-other = "Berichten"
+other = "berichten"
 
 [reading_time]
 one = "Eén minuut leestijd"
@@ -37,22 +37,22 @@ other = "Aangedreven door"
 other = "Zie ook in"
 
 [note]
-other = "note"
+other = "notitie"
 
 [tip]
 other = "tip"
 
 [example]
-other = "example"
+other = "voorbeeld"
 
 [question]
-other = "question"
+other = "vraag"
 
 [info]
 other = "info"
 
 [warning]
-other = "warning"
+other = "waarschuwing"
 
 [error]
-other = "error"
+other = "fout"
