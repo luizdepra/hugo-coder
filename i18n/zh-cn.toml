@@ -30,6 +30,9 @@ other = "此页面不存在"
 [head_back]
 other = "返回 <a href=\"{{ . }}\">首页</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "技术支持"
 

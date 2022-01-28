@@ -30,6 +30,9 @@ other = "Ne pare rău, această pagină nu există."
 [head_back]
 other = "Poți să te întorci la <a href=\"{{ . }}\">pagina principală</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Susținut de"
 

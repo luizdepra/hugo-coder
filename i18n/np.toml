@@ -30,6 +30,9 @@ other = "माफ गर्नुहोस, यो पृष्ठ उपलब
 [head_back]
 other = "मुख्यपृष्ठमा फर्किन सक्नुहुन्छ।<a href=\"{{ . }}\">मुख्यपृष्ठ</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "द्वारा संचालित"
 

@@ -33,6 +33,9 @@ other = "Maaf, halaman ini tidak wujud."
 [head_back]
 other = "Kembali ke <a href=\"{{ . }}\">halaman utama</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Dikuasakan oleh"
 

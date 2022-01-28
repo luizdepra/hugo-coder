@@ -30,6 +30,9 @@ other = "Özür dileriz, böyle bir sayfa yok."
 [head_back]
 other = "<a href=\"{{ . }}\">Ana sayfaya</a> dönebilirsiniz."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Site program altyapısı"
 

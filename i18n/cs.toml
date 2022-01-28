@@ -29,6 +29,9 @@ other = "Omlouváme se, stránka nebyla nalezena."
 [head_back]
 other = "Můžete se vrátit na <a href=\"{{ . }}\">homepage</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Stránka používá"
 
