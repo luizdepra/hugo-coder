@@ -105,4 +105,5 @@
 - [Michael Weiss](https://mweiss.ch)
 - [Simon Pai](https://github.com/simonpai)
 - [Brenton Mallen](https://github.com/brentonmallen1)
+- [Xiaoyang Luo](https://github.com/ccviolett/)
 - [Michiel Appelman](https://appelman.se)

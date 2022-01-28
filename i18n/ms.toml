@@ -1,21 +1,24 @@
 [categories]
 one = "kategori"
-other = "categories"
+other = "kategori"
 
 [tags]
 one = "teg"
-other = "tags"
+other = "teg"
 
 [series]
 one = "siri"
-other = "series"
+other = "siri"
+
+[author]
+other = "penulis"
 
 [authors]
-one = "author"
-other = "authors"
+one = "penulis"
+other = "penulis"
 
 [posts]
-other = "posts"
+other = "artikel"
 
 [reading_time]
 one = "Bacaan 1 minit"
@@ -37,22 +40,22 @@ other = "Dikuasakan oleh"
 other = "Lihat juga"
 
 [note]
-other = "note"
+other = "nota"
 
 [tip]
 other = "tip"
 
 [example]
-other = "example"
+other = "contoh"
 
 [question]
-other = "question"
+other = "soalan"
 
 [info]
-other = "info"
+other = "maklumat"
 
 [warning]
-other = "warning"
+other = "amaran"
 
 [error]
-other = "error"
+other = "ralat"
