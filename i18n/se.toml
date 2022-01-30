@@ -30,6 +30,9 @@ other = "Ursäkta, men denna sida existerar inte."
 [head_back]
 other = "Här kan du komma tillbaka till <a href=\"{{ . }}\">startsidan</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Byggd med"
 

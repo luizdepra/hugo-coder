@@ -30,6 +30,9 @@ other = "Sajnálom, a kért oldal nem létezik."
 [head_back]
 other = "Itt visszaléphet a <a href=\"{{ . }}\">Főoldalra</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Motor:"
 

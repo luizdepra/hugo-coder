@@ -30,6 +30,9 @@ other = "Valitettavasti tätä sivua ei ole olemassa."
 [head_back]
 other = "Voit palata takaisin <a href=\"{{ . }}\">kotisivulle</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Tarjoaa"
 

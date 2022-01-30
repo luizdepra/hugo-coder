@@ -29,6 +29,9 @@ other = "هذه الصفحة غير موجودة"
 [head_back]
 other = "بإمكانك العودة إلى <a href=\"{{ . }}\">homepage</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "بواسطة"
 

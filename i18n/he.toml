@@ -30,6 +30,9 @@ other = "מצטערים, דף אינטרנט זה אינו קיים"
 [head_back]
 other = " אתה יכול לחזור<a href=\"{{ . }}\">לדף הבית</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "מופעל על ידי"
 

@@ -30,6 +30,9 @@ other = "Siamo spiacenti, questa pagina non esiste."
 [head_back]
 other = "Torna alla <a href=\"{{ . }}\">homepage</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Generato da"
 

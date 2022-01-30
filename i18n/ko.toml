@@ -30,6 +30,9 @@ other = "해당 페이지가 존재하지 않습니다."
 [head_back]
 other = "<a href=\"{{ . }}\">홈페이지</a>로 돌아가기"
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Powered by"
 

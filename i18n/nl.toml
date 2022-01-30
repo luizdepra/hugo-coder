@@ -30,6 +30,9 @@ other = "Sorry, deze pagina bestaat niet."
 [head_back]
 other = "U kunt terugkeren naar de <a href=\"{{ . }}\">thuispagina</a>."
 
+[licensed_under]
+other = "Valt onder"
+
 [powered_by]
 other = "Aangedreven door"
 

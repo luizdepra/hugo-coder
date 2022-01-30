@@ -13,6 +13,7 @@ enableEmoji = true
 
 [params]
 author = "John Doe"
+# license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "John Doe's personal website"
 keywords = "blog,developer,personal"
 info = ["Full Stack DevOps", "Magician"]
