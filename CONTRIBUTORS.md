@@ -107,3 +107,4 @@
 - [Brenton Mallen](https://github.com/brentonmallen1)
 - [Xiaoyang Luo](https://github.com/ccviolett/)
 - [Michiel Appelman](https://appelman.se)
+- [Chris Wilson](https://github.com/cdwilson)

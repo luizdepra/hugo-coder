@@ -208,7 +208,21 @@ table tr th:last-child {
 }
 
 img {
+  display: block;
   max-width: 100%;
+
+  &.left {
+    margin-right: auto;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
 }
 
 figure {
