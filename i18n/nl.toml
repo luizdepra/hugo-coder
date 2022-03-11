@@ -1,17 +1,21 @@
-[category]
-other = "Categorie"
+[categories]
+one = "categorie"
+other = "categorieën"
 
-[tag]
-other = "Label"
+[tags]
+one = "label"
+other = "labels"
 
 [series]
-other = "Serie"
+one = "serie"
+other = "series"
 
-[author]
-other = "Auteur"
+[authors]
+one = "auteur"
+other = "auteurs"
 
 [posts]
-other = "Berichten"
+other = "berichten"
 
 [reading_time]
 one = "Eén minuut leestijd"
@@ -26,8 +30,32 @@ other = "Sorry, deze pagina bestaat niet."
 [head_back]
 other = "U kunt terugkeren naar de <a href=\"{{ . }}\">thuispagina</a>."
 
+[licensed_under]
+other = "Valt onder"
+
 [powered_by]
 other = "Aangedreven door"
 
 [see_also]
 other = "Zie ook in"
+
+[note]
+other = "notitie"
+
+[tip]
+other = "tip"
+
+[example]
+other = "voorbeeld"
+
+[question]
+other = "vraag"
+
+[info]
+other = "info"
+
+[warning]
+other = "waarschuwing"
+
+[error]
+other = "fout"

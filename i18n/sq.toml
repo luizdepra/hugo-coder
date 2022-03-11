@@ -1,22 +1,17 @@
-[category]
-other = "kategori"
-
 [categories]
+one = "kategori"
 other = "kategoritë"
 
-[tag]
-other = "shenjim"
-
 [tags]
+one = "shenjim"
 other = "shenjuesat"
 
 [series]
+one = "seritë"
 other = "seritë"
 
-[author]
-other = "autori"
-
 [authors]
+one = "autori"
 other = "autorë"
 
 [posts]
@@ -34,6 +29,9 @@ other = "Na vjen keq, faqja nuk u gjet"
 
 [head_back]
 other = "Mund të ktheheni prapë tek <a href=\"{{ . }}\">homepage</a>."
+
+[licensed_under]
+other = "Licensed under"
 
 [powered_by]
 other = "Mundësuar nga "

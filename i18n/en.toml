@@ -1,22 +1,17 @@
-[category]
-other = "category"
-
 [categories]
+one = "category"
 other = "categories"
 
-[tag]
-other = "tag"
-
 [tags]
+one = "tag"
 other = "tags"
 
 [series]
+one = "series"
 other = "series"
 
-[author]
-other = "author"
-
 [authors]
+one = "author"
 other = "authors"
 
 [posts]
@@ -33,7 +28,10 @@ other = "Page Not Found"
 other = "Sorry, this page does not exist."
 
 [head_back]
-other = "You can head back to <a href=\"{{ . }}\">homepage</a>."
+other = "You can head back to the <a href=\"{{ . }}\">homepage</a>."
+
+[licensed_under]
+other = "Licensed under"
 
 [powered_by]
 other = "Powered by"

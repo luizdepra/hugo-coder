@@ -1,22 +1,17 @@
-[category]
-other = "Kategori"
-
 [categories]
+one = "Kategori"
 other = "Katgorier"
 
-[tag]
-other = "Tagg"
-
 [tags]
+one = "Tagg"
 other = "Taggar"
 
 [series]
+one = "Serie"
 other = "Serie"
 
-[author]
-other = "Författare"
-
 [authors]
+one = "Författare"
 other = "Författare"
 
 [posts]
@@ -34,6 +29,9 @@ other = "Ursäkta, men denna sida existerar inte."
 
 [head_back]
 other = "Här kan du komma tillbaka till <a href=\"{{ . }}\">startsidan</a>."
+
+[licensed_under]
+other = "Licensed under"
 
 [powered_by]
 other = "Byggd med"

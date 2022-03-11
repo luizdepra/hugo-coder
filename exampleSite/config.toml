@@ -13,16 +13,13 @@ enableEmoji = true
 
 [params]
 author = "John Doe"
+# license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "John Doe's personal website"
 keywords = "blog,developer,personal"
 info = ["Full Stack DevOps", "Magician"]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
-footerContent = "Enter a text here."
 dateFormat = "January 2, 2006"
-hideFooter = false
-hideCredits = false
-hideCopyright = false
 since = 2019
 # Git Commit in Footer, uncomment the line below to enable it
 commit = "https://github.com/luizdepra/hugo-coder/tree/"
@@ -38,11 +35,9 @@ colorScheme = "auto"
 hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
-# Enable Twemoji
-enableTwemoji = false
 # Custom CSS
 customCSS = []
-# Custom SCSS
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
 # Custom JS
 customJS = []
@@ -88,7 +83,12 @@ stylesrc = [
   "https://fonts.googleapis.com/",
   "https://cdn.jsdelivr.net/"
 ]
-scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com"]
+scriptsrc = [
+  "'self'", 
+  "'unsafe-inline'", 
+  "https://www.google-analytics.com",
+  "https://cdn.jsdelivr.net/"
+]
 prefetchsrc = ["'self'"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 connectsrc = ["'self'", "https://www.google-analytics.com"]
@@ -101,37 +101,37 @@ author = "authors"
 
 [[params.social]]
 name = "Github"
-icon = "fa fa-github"
+icon = "fa fa-2x fa-github"
 weight = 1
 url = "https://github.com/johndoe/"
 
 [[params.social]]
 name = "Gitlab"
-icon = "fa fa-gitlab"
+icon = "fa fa-2x fa-gitlab"
 weight = 2
 url = "https://gitlab.com/johndoe/"
 
 [[params.social]]
 name = "Twitter"
-icon = "fa fa-twitter"
+icon = "fa fa-2x fa-twitter"
 weight = 3
 url = "https://twitter.com/johndoe/"
 
 [[params.social]]
 name = "LinkedIn"
-icon = "fa fa-linkedin"
+icon = "fa fa-2x fa-linkedin"
 weight = 4
 url = "https://www.linkedin.com/in/johndoe/"
 
 [[params.social]]
 name = "Medium"
-icon = "fa fa-medium"
+icon = "fa fa-2x fa-medium"
 weight = 5
 url = "https://medium.com/@johndoe"
 
 [[params.social]]
 name = "RSS"
-icon = "fa fa-rss"
+icon = "fa fa-2x fa-rss"
 weight = 6
 url = "https://myhugosite.com/index.xml"
 rel = "alternate"
@@ -169,7 +169,6 @@ author = "João Ninguém"
 info = "Full Stack DevOps e Mágico"
 description = "Sítio pessoal de João Ninguém"
 keywords = "blog,desenvolvedor,pessoal"
-footerContent = "Coloque algum texto aqui."
 
 [[languages.pt-br.menu.main]]
 name = "Sobre"

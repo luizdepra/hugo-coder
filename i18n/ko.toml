@@ -1,14 +1,18 @@
-[category]
-other = "카테고리"
+[categories]
+one = "카테고리"
+other = "categories"
 
-[tag]
-other = "태그"
+[tags]
+one = "태그"
+other = "tags"
 
 [series]
-other = "시리즈"
+one = "시리즈"
+other = "series"
 
-[author]
-other = "저자"
+[authors]
+one = "저자"
+other = "authors"
 
 [posts]
 other = "포스트"
@@ -26,8 +30,32 @@ other = "해당 페이지가 존재하지 않습니다."
 [head_back]
 other = "<a href=\"{{ . }}\">홈페이지</a>로 돌아가기"
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Powered by"
 
 [see_also]
 other = "관련 글:"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

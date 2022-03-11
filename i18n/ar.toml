@@ -1,11 +1,21 @@
-[category]
-other = "فئة"
+[categories]
+one = "فئة"
+other = "categories"
 
-[tag]
-other = "وَسم"
+[tags]
+one = "وَسم"
+other = "tags"
 
 [series]
-other = "سلسلة"
+one = "سلسلة"
+other = "series"
+
+[authors]
+one = "الكاتب"
+other = "authors"
+
+[posts]
+other = "المنشورات"
 
 [reading_time]
 other = "تستغرق {{ .Count }} د"
@@ -19,14 +29,32 @@ other = "هذه الصفحة غير موجودة"
 [head_back]
 other = "بإمكانك العودة إلى <a href=\"{{ . }}\">homepage</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "بواسطة"
-
-[author]
-other = "الكاتب"
 
 [see_also]
 other = "انظر أيضاً"
 
-[posts]
-other = "المنشورات"
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

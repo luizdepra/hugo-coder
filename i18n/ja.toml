@@ -1,14 +1,18 @@
-[category]
-other = "カテゴリー"
+[categories]
+one = "カテゴリー"
+other = "categories"
 
-[tag]
-other = "タグ"
+[tags]
+one = "タグ"
+other = "tags"
 
 [series]
-other = "シリーズ"
+one = "シリーズ"
+other = "series"
 
-[author]
-other = "筆者"
+[authors]
+one = "筆者"
+other = "authors"
 
 [posts]
 other = "記事"
@@ -26,8 +30,32 @@ other = "申し訳ございません。アクセスしようとしたページ�
 [head_back]
 other = "<a href=\"{{ . }}\">トップページ</a>からお探しいただきますようお願い申し上げます。"
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "利用技術"
 
 [see_also]
 other = "関連記事："
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

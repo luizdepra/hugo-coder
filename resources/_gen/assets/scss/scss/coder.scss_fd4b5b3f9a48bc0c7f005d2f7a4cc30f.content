@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -63,7 +64,8 @@ pre {
    * Remove the gray background on active links in IE 10.
    */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  word-wrap: break-word; }
 
 /**
    * 1. Remove the bottom border in Chrome 57-
@@ -304,7 +306,7 @@ template {
   display: none; }
 
 /*!
-Fork Awesome 1.1.7
+Fork Awesome 1.2.0
 License - https://forkaweso.me/Fork-Awesome/license
 
 Copyright 2018 Dave Gandy & Fork Awesome
@@ -318,9 +320,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: 'ForkAwesome';
-  src: url("../fonts/forkawesome-webfont.eot?v=1.1.7");
-  src: url("../fonts/forkawesome-webfont.eot?#iefix&v=1.1.7") format("embedded-opentype"), url("../fonts/forkawesome-webfont.woff2?v=1.1.7") format("woff2"), url("../fonts/forkawesome-webfont.woff?v=1.1.7") format("woff"), url("../fonts/forkawesome-webfont.ttf?v=1.1.7") format("truetype"), url("../fonts/forkawesome-webfont.svg?v=1.1.7#forkawesomeregular") format("svg");
+  font-family: "ForkAwesome";
+  src: url("../fonts/forkawesome-webfont.eot?v=1.2.0");
+  src: url("../fonts/forkawesome-webfont.eot?#iefix&v=1.2.0") format("embedded-opentype"), url("../fonts/forkawesome-webfont.woff2?v=1.2.0") format("woff2"), url("../fonts/forkawesome-webfont.woff?v=1.2.0") format("woff"), url("../fonts/forkawesome-webfont.ttf?v=1.2.0") format("truetype"), url("../fonts/forkawesome-webfont.svg?v=1.2.0#forkawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -359,9 +361,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding-left: 0;
   margin-left: 2.14285714em;
   list-style-type: none; }
-
-.fa-ul > li {
-  position: relative; }
+  .fa-ul > li {
+    position: relative; }
 
 .fa-li {
   position: absolute;
@@ -369,9 +370,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 2.14285714em;
   top: 0.14285714em;
   text-align: center; }
-
-.fa-li.fa-lg {
-  left: -1.85714286em; }
+  .fa-li.fa-lg {
+    left: -1.85714286em; }
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -472,8 +472,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   line-height: 2em;
   vertical-align: middle; }
 
-.fa-stack-1x,
-.fa-stack-2x {
+.fa-stack-1x, .fa-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
@@ -488,7 +487,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-inverse {
   color: #fff; }
 
-/* Fork Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 .fa-glass:before {
   content: "\f000"; }
@@ -2854,6 +2853,165 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fa-biometric:before {
   content: "\f32b"; }
 
+.fa-wire:before {
+  content: "\f32c"; }
+
+.fa-tor-onion:before {
+  content: "\f32e"; }
+
+.fa-volume-mute:before {
+  content: "\f32f"; }
+
+.fa-bell-ringing:before {
+  content: "\f32d"; }
+
+.fa-bell-ringing-o:before {
+  content: "\f330"; }
+
+.fa-hal:before {
+  content: "\f333"; }
+
+.fa-jupyter:before {
+  content: "\f335"; }
+
+.fa-julia:before {
+  content: "\f334"; }
+
+.fa-classicpress:before {
+  content: "\f331"; }
+
+.fa-classicpress-circle:before {
+  content: "\f332"; }
+
+.fa-open-collective:before {
+  content: "\f336"; }
+
+.fa-orcid:before {
+  content: "\f337"; }
+
+.fa-researchgate:before {
+  content: "\f338"; }
+
+.fa-funkwhale:before {
+  content: "\f339"; }
+
+.fa-askfm:before {
+  content: "\f33a"; }
+
+.fa-blockstack:before {
+  content: "\f33b"; }
+
+.fa-boardgamegeek:before {
+  content: "\f33c"; }
+
+.fa-bunny:before {
+  content: "\f35f"; }
+
+.fa-buymeacoffee:before {
+  content: "\f33d"; }
+
+.fa-cc-by:before {
+  content: "\f33e"; }
+
+.fa-creative-commons-alt:before,
+.fa-cc-cc:before {
+  content: "\f33f"; }
+
+.fa-cc-nc-eu:before {
+  content: "\f341"; }
+
+.fa-cc-nc-jp:before {
+  content: "\f342"; }
+
+.fa-cc-nc:before {
+  content: "\f340"; }
+
+.fa-cc-nd:before {
+  content: "\f343"; }
+
+.fa-cc-pd:before {
+  content: "\f344"; }
+
+.fa-cc-remix:before {
+  content: "\f345"; }
+
+.fa-cc-sa:before {
+  content: "\f346"; }
+
+.fa-cc-share:before {
+  content: "\f347"; }
+
+.fa-cc-zero:before {
+  content: "\f348"; }
+
+.fa-conway-hacker:before,
+.fa-conway-glider:before {
+  content: "\f349"; }
+
+.fa-csharp:before {
+  content: "\f34a"; }
+
+.fa-email-bulk:before {
+  content: "\f34b"; }
+
+.fa-email-bulk-o:before {
+  content: "\f34c"; }
+
+.fa-gnu:before {
+  content: "\f34d"; }
+
+.fa-google-play:before {
+  content: "\f34e"; }
+
+.fa-heroku:before {
+  content: "\f34f"; }
+
+.fa-hassio:before,
+.fa-home-assistant:before {
+  content: "\f350"; }
+
+.fa-java:before {
+  content: "\f351"; }
+
+.fa-mariadb:before {
+  content: "\f352"; }
+
+.fa-markdown:before {
+  content: "\f353"; }
+
+.fa-mysql:before {
+  content: "\f354"; }
+
+.fa-nordcast:before {
+  content: "\f355"; }
+
+.fa-plume:before {
+  content: "\f356"; }
+
+.fa-postgresql:before {
+  content: "\f357"; }
+
+.fa-sass-alt:before {
+  content: "\f359"; }
+
+.fa-sass:before {
+  content: "\f358"; }
+
+.fa-skate:before {
+  content: "\f35a"; }
+
+.fa-sketchfab:before {
+  content: "\f35b"; }
+
+.fa-tex:before {
+  content: "\f35c"; }
+
+.fa-textpattern:before {
+  content: "\f35d"; }
+
+.fa-unity:before {
+  content: "\f35e"; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2864,8 +3022,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
+.sr-only-focusable:active, .sr-only-focusable:focus {
   position: static;
   width: auto;
   height: auto;
@@ -2885,7 +3042,7 @@ html {
 body {
   color: #212121;
   background-color: #fafafa;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, "PingFang SC", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
   font-size: 1.8em;
   font-weight: 400;
   line-height: 1.8em; }
@@ -2910,7 +3067,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, "PingFang SC", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
   font-weight: 600;
   color: #000;
   margin: 4rem 0 2.5rem 0; }
@@ -3012,7 +3169,9 @@ code {
   font-size: 1.6rem;
   font-weight: 400;
   background-color: #e0e0e0;
-  color: #212121; }
+  color: #212121;
+  border-radius: 0.6rem;
+  padding: 0.3rem 0.6rem; }
 
 blockquote {
   border-left: 2px solid #e0e0e0;
@@ -3066,7 +3225,7 @@ figure {
   width: 100%; }
 
 .container {
-  margin: 0 auto;
+  margin: 1rem auto;
   max-width: 90rem;
   width: 100%;
   padding-left: 2rem;
@@ -3089,12 +3248,6 @@ figure {
 
 .fas {
   font-weight: 900; }
-
-img.emoji {
-  height: 1em;
-  width: 1em;
-  margin: 0 0.05em 0 0.1em;
-  vertical-align: -0.1em; }
 
 .content {
   flex: 1;
@@ -3134,6 +3287,16 @@ img.emoji {
   .content .post .post-meta .date .posted-on {
     margin-left: 0;
     margin-right: 1.5rem; }
+  .content .post .post-meta .tags .tag {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    background-color: #e0e0e0;
+    border-radius: 0.6rem;
+    line-height: 1.4em; }
+    .content .post .post-meta .tags .tag a {
+      color: #212121; }
+    .content .post .post-meta .tags .tag a:active {
+      color: #212121; }
   .content figure {
     margin: 0;
     padding: 0; }
@@ -3173,7 +3336,7 @@ img.emoji {
       font-size: 1.8rem;
       flex: 2;
       color: #212121;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, "PingFang SC", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
       font-weight: 700; }
       .list ul li .title:hover, .list ul li .title:focus {
         color: #1565c0; }
@@ -3216,8 +3379,6 @@ img.emoji {
           @media only screen and (max-width: 768px) {
             .centered .about ul li a {
               font-size: 1.4rem; } }
-          .centered .about ul li a i {
-            font-size: 3.2rem; }
   .centered .error {
     text-align: center; }
     .centered .error h1 {
@@ -3311,9 +3472,8 @@ img.emoji {
   .navigation span {
     display: inline;
     font-size: 1.7rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, "PingFang SC", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
     font-weight: 600;
-    line-height: 6rem;
     color: #212121; }
   .navigation a:hover, .navigation a:focus {
     color: #1565c0; }
@@ -3327,8 +3487,8 @@ img.emoji {
     margin-top: 0; }
     @media only screen and (max-width: 768px) {
       .navigation .navigation-list {
-        position: absolute;
-        top: 6rem;
+        position: relative;
+        top: 2rem;
         right: 0;
         z-index: 5;
         visibility: hidden;
@@ -3385,8 +3545,8 @@ img.emoji {
     display: none; }
     @media only screen and (max-width: 768px) {
       .navigation .menu-button {
+        position: relative;
         display: block;
-        margin: 1.8rem 0;
         font-size: 2.4rem;
         font-weight: 400; } }
     .navigation .menu-button i:hover, .navigation .menu-button i:focus {
@@ -3400,7 +3560,7 @@ img.emoji {
 .pagination {
   margin-top: 6rem;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, "PingFang SC", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif; }
   .pagination li {
     display: inline;
     text-align: center;
@@ -3415,6 +3575,20 @@ img.emoji {
         margin: 0;
         text-align: center;
         width: 3.2rem; }
+
+.taxonomy li {
+  display: inline-block;
+  margin: 0.9rem; }
+
+.taxonomy .taxonomy-element {
+  display: block;
+  padding: 0.3rem 0.9rem;
+  background-color: #e0e0e0;
+  border-radius: 0.6rem; }
+  .taxonomy .taxonomy-element a {
+    color: #212121; }
+  .taxonomy .taxonomy-element a:active {
+    color: #212121; }
 
 .footer {
   width: 100%;

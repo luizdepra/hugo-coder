@@ -1,14 +1,18 @@
-[category]
-other = "kategori"
+[categories]
+one = "kategori"
+other = "categories"
 
-[tag]
-other = "label"
+[tags]
+one = "label"
+other = "tags"
 
 [series]
-other = "seri"
+one = "seri"
+other = "series"
 
-[author]
-other = "penulis"
+[authors]
+one = "penulis"
+other = "authors"
 
 [posts]
 other = "artikel"
@@ -26,8 +30,32 @@ other = "Maaf, halaman ini tidak ada."
 [head_back]
 other = "Anda dapat kembali ke <a href=\"{{ . }}\">beranda</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Dipersembahkan oleh"
 
 [see_also]
 other = "artikel terkait"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

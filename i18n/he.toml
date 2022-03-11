@@ -1,14 +1,21 @@
-[category]
-other = "קטגוריה"
+[categories]
+one = "קטגוריה"
+other = "categories"
 
-[tag]
-other = "תגית"
+[tags]
+one = "תגית"
+other = "tags"
 
 [series]
-other = "סדרה"
+one = "סדרה"
+other = "series"
 
-[author]
-other = "סופר"
+[authors]
+one = "סופר"
+other = "authors"
+
+[posts]
+other = "פוסטים"
 
 [reading_time]
 one = "דקה אחת לקרוא"
@@ -23,12 +30,32 @@ other = "מצטערים, דף אינטרנט זה אינו קיים"
 [head_back]
 other = " אתה יכול לחזור<a href=\"{{ . }}\">לדף הבית</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "מופעל על ידי"
 
 [see_also]
 other = "רואה עוד ב"
 
-[posts]
-other = "פוסטים"
+[note]
+other = "note"
 
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

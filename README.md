@@ -17,7 +17,7 @@
 
 A simple and clean blog theme for [Hugo](https://gohugo.io/).
 
-![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
+![](images/screenshot.png)
 
 ## Live Demo
 
@@ -27,17 +27,12 @@ See [here](https://hugo-coder.netlify.app/).
 
 1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder`.
 2. Configure your `config.toml`. You can either use [this minimal configuration](https://github.com/luizdepra/hugo-coder/wiki/Configurations#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/wiki/Configurations). The [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [`exampleSite`](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) is also a good reference.
-3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
+3. Build your site with `hugo server` and see the result at `http://localhost:1313/`.
 
 ## Extra Guides
 
 * [Multilingual Mode](https://github.com/luizdepra/hugo-coder/wiki/Multilingual-Mode)
 
-## Stackbit
-
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
-
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/luizdepra/hugo-coder)
 
 ## License
 

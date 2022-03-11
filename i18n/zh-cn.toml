@@ -1,22 +1,17 @@
-[category]
-other = "分类"
-
 [categories]
+one = "分类"
 other = "分类"
-
-[tag]
-other = "标签"
 
 [tags]
+one = "标签"
 other = "标签"
 
 [series]
+one = "系列"
 other = "系列"
 
-[author]
-other = "作者"
-
 [authors]
+one = "作者"
 other = "作者"
 
 [posts]
@@ -34,6 +29,9 @@ other = "此页面不存在"
 
 [head_back]
 other = "返回 <a href=\"{{ . }}\">首页</a>."
+
+[licensed_under]
+other = "Licensed under"
 
 [powered_by]
 other = "技术支持"

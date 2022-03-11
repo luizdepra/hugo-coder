@@ -1,22 +1,17 @@
-[category]
-other = "kategoria"
-
 [categories]
+one = "kategoria"
 other = "kategorie"
 
-[tag]
-other = "tag"
-
 [tags]
+one = "tag"
 other = "tagi"
 
 [series]
+one = "seria"
 other = "seria"
 
-[author]
-other = "autor(ka)"
-
 [authors]
+one = "autor(ka)"
 other = "autorzy"
 
 [posts]
@@ -34,6 +29,9 @@ other = "Wybacz, ta strona nie istnieje."
 
 [head_back]
 other = "Możesz wrócić na <a href=\"{{ . }}\">stronę domową</a>."
+
+[licensed_under]
+other = "Licensed under"
 
 [powered_by]
 other = "Napędzane przez"

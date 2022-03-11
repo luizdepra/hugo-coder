@@ -1,14 +1,21 @@
-[category]
-other = "वर्ग"
+[categories]
+one = "वर्ग"
+other = "categories"
 
-[tag]
-other = "ट्याग"
+[tags]
+one = "ट्याग"
+other = "tags"
 
 [series]
-other = "श्रृंखला"
+one = "श्रृंखला"
+other = "series"
 
-[author]
-other = "लेखक"
+[authors]
+one = "लेखक"
+other = "authors"
+
+[posts]
+other = "सामग्री"
 
 [reading_time]
 one = "एक मिनेट पढाई"
@@ -23,11 +30,32 @@ other = "माफ गर्नुहोस, यो पृष्ठ उपलब
 [head_back]
 other = "मुख्यपृष्ठमा फर्किन सक्नुहुन्छ।<a href=\"{{ . }}\">मुख्यपृष्ठ</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "द्वारा संचालित"
 
 [see_also]
 other = "यो पनि हेर्नुहोस।"
 
-[posts]
-other = "सामग्री"
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"
