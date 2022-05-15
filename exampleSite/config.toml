@@ -84,8 +84,8 @@ stylesrc = [
   "https://cdn.jsdelivr.net/"
 ]
 scriptsrc = [
-  "'self'", 
-  "'unsafe-inline'", 
+  "'self'",
+  "'unsafe-inline'",
   "https://www.google-analytics.com",
   "https://cdn.jsdelivr.net/"
 ]

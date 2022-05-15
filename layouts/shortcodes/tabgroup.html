@@ -1,0 +1,10 @@
+{{ $align := .Get "align" | default "left" }}
+{{ $style := .Get "style" | default "markdown" }}
+{{ $group := .Page.Scratch.Get "tabGroupIndex" | default 0 }}
+{{ $index := .Page.Scratch.Set "tabElementIndex" 0 }}
+
+<div class="tabs {{ if eq $style "code" }}tabs-code {{ end }}tabs-{{ $align }}">
+  {{ .Inner }}
+</div>
+
+{{ .Page.Scratch.Set "tabGroupIndex" (add 1 $group) }}

@@ -1,0 +1,27 @@
+@mixin tabs_dark {
+  .tabs {
+    label.tab-label {
+      background-color: $alt-bg-color-dark;
+      border-color: $lighter-alt-bg-color-dark;
+    }
+
+    input.tab-input:checked + label.tab-label {
+      background-color: $bg-color-dark;
+    }
+
+    .tab-content {
+      background-color: $bg-color-dark;
+      border-color: $lighter-alt-bg-color-dark;
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include tabs_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include tabs_dark();
+  }
+}
