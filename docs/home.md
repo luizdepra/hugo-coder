@@ -4,6 +4,7 @@
 
 * [Quick Start](quick-start.md)
 * [Configurations](configurations.md)
+* [FAQ](faq.md)
 
 ## Extra Guides
 
