@@ -29,10 +29,9 @@ See [here](https://hugo-coder.netlify.app/).
 2. Configure your `config.toml`. You can either use [this minimal configuration](https://github.com/luizdepra/hugo-coder/wiki/Configurations#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/wiki/Configurations). The [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [`exampleSite`](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) is also a good reference.
 3. Build your site with `hugo server` and see the result at `http://localhost:1313/`.
 
-## Extra Guides
+## Documentations
 
-* [Multilingual Mode](https://github.com/luizdepra/hugo-coder/wiki/Multilingual-Mode)
-
+See [`docs`](docs/home.md) folder.
 
 ## License
 
