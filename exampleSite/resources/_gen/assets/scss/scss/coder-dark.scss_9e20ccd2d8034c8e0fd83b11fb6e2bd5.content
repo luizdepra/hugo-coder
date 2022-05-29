@@ -233,6 +233,27 @@ body.colorscheme-dark .navigation .menu-button i:hover, body.colorscheme-dark .n
   body.colorscheme-auto .navigation .menu-button i:hover, body.colorscheme-auto .navigation .menu-button i:focus {
     color: #dadada; } }
 
+body.colorscheme-dark .tabs label.tab-label {
+  background-color: #424242;
+  border-color: #4f4f4f; }
+
+body.colorscheme-dark .tabs input.tab-input:checked + label.tab-label {
+  background-color: #212121; }
+
+body.colorscheme-dark .tabs .tab-content {
+  background-color: #212121;
+  border-color: #4f4f4f; }
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .tabs label.tab-label {
+    background-color: #424242;
+    border-color: #4f4f4f; }
+  body.colorscheme-auto .tabs input.tab-input:checked + label.tab-label {
+    background-color: #212121; }
+  body.colorscheme-auto .tabs .tab-content {
+    background-color: #212121;
+    border-color: #4f4f4f; } }
+
 body.colorscheme-dark .taxonomy-element {
   background-color: #424242; }
   body.colorscheme-dark .taxonomy-element a {
