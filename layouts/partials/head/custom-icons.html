@@ -3,3 +3,6 @@
 
 <link rel="apple-touch-icon" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
+
+<link rel="manifest" href="{{ .Site.Params.manifest | default "/site.webmanifest" | relURL }}">
+<link rel="mask-icon" href="{{ .Site.Params.mask_icon | default "/images/safari-pinned-tab.svg" | relURL }}" color="{{ .Site.Params.mask_icon_color | default "#5bbad5" }}">

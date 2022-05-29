@@ -108,5 +108,6 @@
 - [Xiaoyang Luo](https://github.com/ccviolett/)
 - [Michiel Appelman](https://appelman.se)
 - [Mark Wood](https://digitalnotions.net)
+- [Sam A.](https://samsapti.dev)
 - [John Feminella](https://jxf.me)
 - [zzsqwq](https://zzsqwq.cn)
