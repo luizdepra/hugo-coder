@@ -3147,7 +3147,7 @@ strong {
 
 .highlight > div,
 .highlight > pre {
-  margin: 0 0 2rem;
+  margin: 2rem 0 2rem;
   padding: 1rem;
   border-radius: 1rem; }
 
@@ -3575,6 +3575,55 @@ figure {
         margin: 0;
         text-align: center;
         width: 3.2rem; }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 0;
+  position: relative; }
+  .tabs.tabs-left {
+    justify-content: flex-start; }
+    .tabs.tabs-left label.tab-label {
+      margin-right: 0.5rem; }
+    .tabs.tabs-left .tab-content {
+      border-radius: 0px 4px 4px 4px; }
+  .tabs.tabs-right {
+    justify-content: flex-end; }
+    .tabs.tabs-right label.tab-label {
+      margin-left: 0.5rem; }
+    .tabs.tabs-right .tab-content {
+      border-radius: 4px 0px 4px 4px; }
+  .tabs input.tab-input {
+    display: none; }
+  .tabs label.tab-label {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    border-radius: 4px 4px 0px 0px;
+    border-style: solid;
+    border-bottom-style: hidden;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    order: 1;
+    padding: 0.3rem 0.6rem;
+    position: relative;
+    top: 1px;
+    user-select: none; }
+  .tabs input.tab-input:checked + label.tab-label {
+    background-color: #fafafa; }
+  .tabs .tab-content {
+    background-color: #fafafa;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    display: none;
+    order: 2;
+    padding: 1rem;
+    width: 100%; }
+  .tabs.tabs-code .tab-content {
+    padding: 0.5rem; }
+    .tabs.tabs-code .tab-content pre {
+      margin: 0; }
 
 .taxonomy li {
   display: inline-block;
