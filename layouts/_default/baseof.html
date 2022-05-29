@@ -1,160 +1,71 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
+{{ partial "head.html" . }}
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
+{{ $csClass := "colorscheme-light" }}
+{{ if eq .Site.Params.colorScheme "dark" }}
+{{ $csClass = "colorscheme-dark" }}
+{{ else if eq .Site.Params.colorScheme "auto" }}
+{{ $csClass = "colorscheme-auto" }}
+{{ end }}
 
-    {{ if .Site.Params.csp }}
-      {{ partial "csp.html" . }}
-    {{ end }}
+<body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+  {{ partial "float" . }}
+  <main class="wrapper">
+    {{ partial "header.html" . }}
 
-    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
-    <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords }}">
+    <div class="content">
+      {{ block "content" . }}{{ end }}
+    </div>
 
-    {{ template "_internal/twitter_cards.html" . }}
-    {{ template "_internal/opengraph.html" . }}
+    {{ partial "footer.html" . }}
+  </main>
 
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-
-    {{ if .Permalink }}
-      <link rel="canonical" href="{{ .Permalink }}">
-    {{ end }}
-
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
-
-    {{ if .Site.IsServer }}
-      {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-    {{ else }}
-      {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-    {{ end }}
-
-    {{ if .Site.Params.rtl }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
-    {{ if  or (eq .Site.Params.colorScheme "auto") (eq .Site.Params.colorScheme "dark") }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
-    {{ range .Site.Params.customCSS }}
-      {{ if $.Site.IsServer }}
-        {{ $styles := resources.Get . }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $styles := resources.Get . | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
-    {{ range .Site.Params.customSCSS }}
-      {{/* We don't change the targetPath to because it's transparent to users */}}
-      {{ if $.Site.IsServer }}
-        {{ $cssOpts := (dict "enableSourceMap" true ) }}
-        {{ $styles := resources.Get . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | relURL }}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | relURL }}" sizes="16x16">
-
-    <link rel="apple-touch-icon" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
-
-    {{ range .AlternativeOutputFormats -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-    {{ end -}}
-
-    {{ hugo.Generator }}
-  </head>
-
-  {{ $csClass := "colorscheme-light" }}
-  {{ if eq .Site.Params.colorScheme "dark" }}
-    {{ $csClass = "colorscheme-dark" }}
-  {{ else if eq .Site.Params.colorScheme "auto" }}
-    {{ $csClass = "colorscheme-auto" }}
+  {{ if .Site.IsServer }}
+  {{ $script := resources.Get "js/coder.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
-  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-    {{ partial "float" . }}
-    <main class="wrapper">
-      {{ partial "header.html" . }}
 
-      <div class="content">
-        {{ block "content" . }}{{ end }}
-      </div>
+  {{ range .Site.Params.customJS }}
+  {{ if $.Site.IsServer }}
+  {{ $script := resources.Get . }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := resources.Get . | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
+  {{ end }}
 
-      {{ partial "footer.html" . }}
-    </main>
+  {{ template "_internal/google_analytics.html" . }}
 
-    {{ if .Site.IsServer }}
-      {{ $script := resources.Get "js/coder.js" }}
-      <script src="{{ $script.RelPermalink }}"></script>
-    {{ else }}
-      {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
-      <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-    {{ end }}
+  {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
+  {{- partial "analytics/fathom" . -}}
+  {{ end }}
 
-    {{ range .Site.Params.customJS }}
-      {{ if $.Site.IsServer }}
-        {{ $script := resources.Get . }}
-        <script src="{{ $script.RelPermalink }}"></script>
-      {{ else }}
-        {{ $script := resources.Get . | minify | fingerprint }}
-        <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-      {{ end }}
-    {{ end }}
+  {{ if and .Site.Params.plausibleAnalytics .Site.Params.plausibleAnalytics.domain }}
+  {{- partial "analytics/plausible" . -}}
+  {{ end }}
 
-    {{ template "_internal/google_analytics.html" . }}
+  {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
+  {{- partial "analytics/goatcounter" . -}}
+  {{ end }}
 
-    {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
-      {{- partial "analytics/fathom" . -}}
-    {{ end }}
+  {{ if and .Site.Params.cloudflare .Site.Params.cloudflare.token }}
+  {{- partial "analytics/cloudflare" . -}}
+  {{ end }}
 
-    {{ if and .Site.Params.plausibleAnalytics .Site.Params.plausibleAnalytics.domain }}
-      {{- partial "analytics/plausible" . -}}
-    {{ end }}
+  {{ if and .Site.Params.matomo .Site.Params.matomo.serverURL }}
+  {{- partial "analytics/matomo" . -}}
+  {{ end }}
 
-    {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
-      {{- partial "analytics/goatcounter" . -}}
-    {{ end }}
+  {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
+  {{- partial "analytics/googletagmanager" . -}}
+  {{ end }}
 
-    {{ if and .Site.Params.cloudflare .Site.Params.cloudflare.token }}
-      {{- partial "analytics/cloudflare" . -}}
-    {{ end }}
-
-    {{ if and .Site.Params.matomo .Site.Params.matomo.serverURL }}
-      {{- partial "analytics/matomo" . -}}
-    {{ end }}
-
-    {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
-      {{- partial "analytics/googletagmanager" . -}}
-    {{ end }}
-  </body>
+  {{- partial "body/extensions" . -}}
+</body>
 
 </html>

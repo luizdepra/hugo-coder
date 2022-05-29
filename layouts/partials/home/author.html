@@ -1,0 +1,6 @@
+<h1>{{ .Site.Params.author }}</h1>
+{{ if reflect.IsSlice .Site.Params.info }}
+<h2>{{ range .Site.Params.info }}{{.}}<br>{{ end}}</h2>
+{{ else }}
+<h2>{{ .Site.Params.info }}</h2>
+{{ end }}
