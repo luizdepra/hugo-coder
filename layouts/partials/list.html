@@ -2,18 +2,17 @@
   <h1 class="title">
     <a class="title-link" href="{{ .Permalink | safeURL }}">
       {{- if eq .Kind "term" -}}
-        {{- i18n .Data.Singular | title -}}
+        {{- i18n .Data.Plural 1 | title -}}
         {{- print ": " -}}
       {{- end -}}
-
-      {{- .Title -}}
+      {{- i18n (lower .Title) | default .Title | title -}}
     </a>
   </h1>
   {{ .Content }}
   <ul>
     {{ range .Paginator.Pages }}
     <li>
-      <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+      <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
       <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
     </li>
     {{ end }}

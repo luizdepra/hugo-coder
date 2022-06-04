@@ -1,6 +1,7 @@
 +++
-date = "2019-01-17"
-title = "Hugo coder wiki"
+author = "Hugo Authors"
+date = "2019-03-04"
+title = "External Page: Hugo Coder Wiki"
 slug = "hugo-coder-wiki"
 tags = [
     "hugo",
@@ -11,6 +12,4 @@ categories = [
     "Development",
 ]
 externalLink = "https://github.com/luizdepra/hugo-coder/wiki"
-series = ["Hugo"]
-authors = ["External link test"]
 +++

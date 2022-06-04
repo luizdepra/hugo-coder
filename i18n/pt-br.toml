@@ -1,14 +1,18 @@
-[category]
-other = "categoria"
+[categories]
+one = "categoria"
+other = "categorias"
 
-[tag]
-other = "tag"
+[tags]
+one = "etiqueta"
+other = "etiquetas"
 
 [series]
+one = "séries"
 other = "séries"
 
-[author]
-other = "autor"
+[authors]
+one = "autor"
+other = "autores"
 
 [posts]
 other = "artigos"
@@ -26,5 +30,32 @@ other = "Desculpe, essa página não existe."
 [head_back]
 other = "Você pode voltar para a <a href=\"{{ . }}\">página inicial</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Promovido por"
+
+[see_also]
+other = "Veja também em"
+
+[note]
+other = "nota"
+
+[tip]
+other = "dica"
+
+[example]
+other = "exemplo"
+
+[question]
+other = "pergunta"
+
+[info]
+other = "info"
+
+[warning]
+other = "aviso"
+
+[error]
+other = "erro"

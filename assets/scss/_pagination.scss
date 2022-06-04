@@ -1,18 +1,22 @@
 .pagination {
-  margin-top: 6.0rem;
+  margin-top: 6rem;
   text-align: center;
-  font-family: $heading-font-family;
+  font-family: $font-family;
+
   li {
     display: inline;
     text-align: center;
     font-weight: 700;
+
     span {
       margin: 0;
       text-align: center;
       width: 3.2rem;
     }
+
     a {
       font-weight: 300;
+
       span {
         margin: 0;
         text-align: center;

@@ -1,11 +1,24 @@
-[category]
+[categories]
+one = "kategori"
 other = "kategori"
 
-[tag]
+[tags]
+one = "teg"
 other = "teg"
 
 [series]
+one = "siri"
 other = "siri"
+
+[author]
+other = "penulis"
+
+[authors]
+one = "penulis"
+other = "penulis"
+
+[posts]
+other = "artikel"
 
 [reading_time]
 one = "Bacaan 1 minit"
@@ -20,8 +33,32 @@ other = "Maaf, halaman ini tidak wujud."
 [head_back]
 other = "Kembali ke <a href=\"{{ . }}\">halaman utama</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Dikuasakan oleh"
 
 [see_also]
 other = "Lihat juga"
+
+[note]
+other = "nota"
+
+[tip]
+other = "tip"
+
+[example]
+other = "contoh"
+
+[question]
+other = "soalan"
+
+[info]
+other = "maklumat"
+
+[warning]
+other = "amaran"
+
+[error]
+other = "ralat"

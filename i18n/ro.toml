@@ -1,14 +1,18 @@
-[category]
-other = "categorie"
+[categories]
+one = "categorie"
+other = "categorii"
 
-[tag]
-other = "etichetă"
+[tags]
+one = "etichetă"
+other = "etichete"
 
 [series]
+one = "serie"
 other = "serie"
 
-[author]
-other = "autor"
+[authors]
+one = "autor"
+other = "autori"
 
 [posts]
 other = "articole"
@@ -26,8 +30,32 @@ other = "Ne pare rău, această pagină nu există."
 [head_back]
 other = "Poți să te întorci la <a href=\"{{ . }}\">pagina principală</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Susținut de"
 
 [see_also]
 other = "Altele din seria"
+
+[note]
+other = "notă"
+
+[tip]
+other = "sfat"
+
+[example]
+other = "exemplu"
+
+[question]
+other = "întrebare"
+
+[info]
+other = "informație"
+
+[warning]
+other = "avertisment"
+
+[error]
+other = "eroare"

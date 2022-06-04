@@ -2,7 +2,7 @@ name = "Coder-Timeline"
 license = "MIT"
 licenselink = "https://github.com/13hannes11/hugo-coder-timeline/blob/master/LICENSE.md"
 description = "An extenison for the theme Coder simple and clean blog theme for Hugo"
-homepage = "https://github.com/luizdepra/hugo-coder/"
+homepage = "https://github.com/13hannes11/hugo-coder-timeline/"
 tags = [
   "blog",
   "minimal",
@@ -15,12 +15,14 @@ tags = [
 features = [
   "analytics",
   "favicon",
+  "multilingual",
   "pagination",
   "single-column",
   "syntax-highlighting"
 ]
-min_version = "0.73.0"
+min_version = "0.79.0"
 
 [author]
-  name = "Hannes Kuchelmeister"
-  homepage = "https://hanneskuchelmeister.de"
+name = "Hannes Kuchelmeister"
+homepage = "https://hanneskuchelmeister.de"
+

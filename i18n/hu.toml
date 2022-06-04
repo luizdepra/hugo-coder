@@ -1,14 +1,18 @@
-[category]
-other = "Kategória"
+[categories]
+one = "Kategória"
+other = "categories"
 
-[tag]
-other = "Címke"
+[tags]
+one = "Címke"
+other = "tags"
 
 [series]
-other = "Sorozat"
+one = "Sorozat"
+other = "series"
 
-[author]
-other = "Szerző"
+[authors]
+one = "Szerző"
+other = "authors"
 
 [posts]
 other = "Írások"
@@ -26,8 +30,32 @@ other = "Sajnálom, a kért oldal nem létezik."
 [head_back]
 other = "Itt visszaléphet a <a href=\"{{ . }}\">Főoldalra</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "Motor:"
 
 [see_also]
 other = "Lásd még"
+
+[note]
+other = "note"
+
+[tip]
+other = "tip"
+
+[example]
+other = "example"
+
+[question]
+other = "question"
+
+[info]
+other = "info"
+
+[warning]
+other = "warning"
+
+[error]
+other = "error"

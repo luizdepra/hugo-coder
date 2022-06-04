@@ -1,32 +1,38 @@
 .navigation {
-  height: 6.0rem;
+  height: 6rem;
   width: 100%;
-  a, span {
+
+  a,
+  span {
     display: inline;
-    font-size: 1.6rem;
-    font-family: $heading-font-family;
-    font-weight: 700;
-    line-height: 6.0rem;
+    font-size: 1.7rem;
+    font-family: $font-family;
+    font-weight: 600;
     color: $fg-color;
   }
+
   a {
+
     &:hover,
     &:focus {
-      color: $link-color
+      color: $link-color;
     }
   }
+
   .navigation-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
+
   .navigation-list {
     float: right;
     list-style: none;
     margin-bottom: 0;
     margin-top: 0;
-    @media only screen and (max-width : 768px) {
-      position: absolute;
-      top: 6.0rem;
+
+    @media only screen and (max-width: 768px) {
+      position: relative;
+      top: 2rem;
       right: 0;
       z-index: 5;
       visibility: hidden;
@@ -39,37 +45,47 @@
       border-bottom: solid 2px $alt-bg-color;
       transition: opacity 0.25s, max-height 0.15s linear;
     }
+
     .navigation-item {
       float: left;
       margin: 0;
       position: relative;
-      @media only screen and (max-width : 768px) {
+
+      @media only screen and (max-width: 768px) {
         float: none !important;
         text-align: center;
-        a, span {
-          line-height: 5.0rem;
+
+        a,
+        span {
+          line-height: 5rem;
         }
       }
-      a, span {
-        margin-left: 1.0rem;
-        margin-right: 1.0rem;
+
+      a,
+      span {
+        margin-left: 1rem;
+        margin-right: 1rem;
       }
     }
+
     .separator {
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         display: none;
       }
     }
+
     .menu-separator {
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         border-top: 2px solid $fg-color;
-        margin: 0 8.0rem;
+        margin: 0 8rem;
+
         span {
           display: none;
         }
       }
     }
   }
+
   #dark-mode-toggle {
     margin: 1.7rem 0;
     font-size: 2.4rem;
@@ -79,37 +95,46 @@
     z-index: 100;
     position: fixed;
   }
+
   #menu-toggle {
     display: none;
-    @media only screen and (max-width : 768px) {
-      &:checked + label > i {
+
+    @media only screen and (max-width: 768px) {
+      &:checked+label>i {
         color: $alt-bg-color;
       }
-      &:checked + label + ul {
+
+      &:checked+label+ul {
         visibility: visible;
         opacity: 1;
         max-height: 100rem;
       }
     }
   }
+
   .menu-button {
     display: none;
-    @media only screen and (max-width : 768px) {
+
+    @media only screen and (max-width: 768px) {
+      position: relative;
       display: block;
-      margin: 1.8rem 0;
       font-size: 2.4rem;
       font-weight: 400;
     }
 
     i {
-      &:hover, &:focus {
+
+      &:hover,
+      &:focus {
         color: $alt-fg-color;
       }
     }
   }
+
   i {
     color: $fg-color;
     cursor: pointer;
+
     &:hover,
     &:focus {
       color: $link-color;

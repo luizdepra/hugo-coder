@@ -1,12 +1,25 @@
 @mixin content_dark {
-
   .content {
-  
+    .post {
+      .tags {
+        .tag {
+          background-color: $alt-bg-color-dark;
+
+          a {
+            color: $fg-color-dark;
+          }
+          a:active {
+            color: $fg-color-dark;
+          }
+        }
+      }
+    }
     .list {
       ul {
         li {
           .title {
             color: $fg-color-dark;
+
             &:hover,
             &:focus {
               color: $link-color-dark;
@@ -22,6 +35,7 @@
           li {
             a {
               color: $fg-color-dark;
+
               &:hover,
               &:focus {
                 color: $link-color-dark;
@@ -35,16 +49,15 @@
   .back-button{
     color: $fg-color-dark !important;
   }
-
 }
 
 body.colorscheme-dark {
-  @include content_dark()
+  @include content_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include content_dark()
+    @include content_dark();
   }
 }
 

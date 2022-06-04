@@ -1,0 +1,17 @@
+@mixin notices_dark {
+  .notice {
+    .notice-title {
+      border-bottom: 1px solid $bg-color-dark;
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include notices_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include notices_dark();
+  }
+}

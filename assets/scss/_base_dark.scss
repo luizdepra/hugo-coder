@@ -1,5 +1,4 @@
 @mixin base_dark {
-
   color: $fg-color-dark;
   background-color: $bg-color-dark;
 
@@ -39,6 +38,13 @@
     color: $fg-color-dark;
   }
 
+  // fix color schemes which do not explicitly set fg-color
+  .highlight {
+    pre {
+      color: $fg-color;
+    }
+  }
+
   pre {
     code {
       background-color: inherit;
@@ -50,18 +56,45 @@
     border-left: 2px solid $alt-bg-color-dark;
   }
 
-  table td, table th {
+  th,
+  td {
+    padding: 1.6rem;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table td,
+  table th {
     border: 2px solid $alt-fg-color-dark;
   }
 
+  table tr:first-child th {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table tr td:first-child,
+  table tr th:first-child {
+    border-left: 0;
+  }
+
+  table tr td:last-child,
+  table tr th:last-child {
+    border-right: 0;
+  }
 }
 
 body.colorscheme-dark {
-  @include base_dark()
+  @include base_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include base_dark()
+    @include base_dark();
   }
 }

@@ -1,0 +1,111 @@
+.notice {
+  border-radius: 0.2rem;
+  position: relative;
+  margin: 2rem 0;
+  padding: 0 0.75rem;
+  overflow: auto;
+
+  .notice-title {
+    position: relative;
+    font-weight: 700;
+    margin: 0 -0.75rem;
+    padding: 0.2rem 3.5rem;
+    border-bottom: 1px solid $bg-color;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 1.8rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .notice-content {
+    display: block;
+    margin: 2rem 2rem;
+  }
+}
+
+.notice.note {
+  background-color: $bg-color-notice-note-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-note-title;
+
+    i {
+      color: $fg-color-notice-note-icon;
+    }
+  }
+}
+
+.notice.tip {
+  background-color: $bg-color-notice-tip-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-tip-title;
+
+    i {
+      color: $fg-color-notice-tip-icon;
+    }
+  }
+}
+
+.notice.example {
+  background-color: $bg-color-notice-example-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-example-title;
+
+    i {
+      color: $fg-color-notice-example-icon;
+    }
+  }
+}
+
+.notice.question {
+  background-color: $bg-color-notice-question-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-question-title;
+
+    i {
+      color: $fg-color-notice-question-icon;
+    }
+  }
+}
+
+.notice.info {
+  background-color: $bg-color-notice-info-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-info-title;
+
+    i {
+      color: $fg-color-notice-info-icon;
+    }
+  }
+}
+
+.notice.warning {
+  background-color: $bg-color-notice-warning-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-warning-title;
+
+    i {
+      color: $fg-color-notice-warning-icon;
+    }
+  }
+}
+
+.notice.error {
+  background-color: $bg-color-notice-error-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-error-title;
+
+    i {
+      color: $fg-color-notice-error-icon;
+    }
+  }
+}

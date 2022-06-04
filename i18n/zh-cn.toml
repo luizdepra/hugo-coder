@@ -1,13 +1,17 @@
-[category]
+[categories]
+one = "分类"
 other = "分类"
 
-[tag]
+[tags]
+one = "标签"
 other = "标签"
 
 [series]
+one = "系列"
 other = "系列"
 
-[author]
+[authors]
+one = "作者"
 other = "作者"
 
 [posts]
@@ -26,8 +30,32 @@ other = "此页面不存在"
 [head_back]
 other = "返回 <a href=\"{{ . }}\">首页</a>."
 
+[licensed_under]
+other = "Licensed under"
+
 [powered_by]
 other = "技术支持"
 
 [see_also]
 other = "参见"
+
+[note]
+other = "注释"
+
+[tip]
+other = "提示"
+
+[example]
+other = "例子"
+
+[question]
+other = "问题"
+
+[info]
+other = "信息"
+
+[warning]
+other = "警告"
+
+[error]
+other = "错误"
