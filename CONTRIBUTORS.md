@@ -111,3 +111,4 @@
 - [Sam A.](https://samsapti.dev)
 - [John Feminella](https://jxf.me)
 - [zzsqwq](https://zzsqwq.cn)
+- [George Tsiokos](https://george.tsiokos.com)
