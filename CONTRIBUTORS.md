@@ -112,4 +112,5 @@
 - [John Feminella](https://jxf.me)
 - [zzsqwq](https://zzsqwq.cn)
 - [George Tsiokos](https://george.tsiokos.com)
+- [Eltjo](https://github.com/eltjo)
 - [Saurmandal](https://saur.neocities.org)
