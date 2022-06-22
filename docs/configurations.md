@@ -9,6 +9,7 @@
     * [Goat Counter](#goat-counter)
     * [Cloudflare](#cloudflare)
     * [Matomo](#matomo)
+    * [Application Insights](#application-insights)
   * [Commenting Systems](#commenting-systems)
     * [Disqus](#disqus)
     * [Commento](#commento)
@@ -33,6 +34,7 @@ This theme supports:
   * [Goat Counter](https://www.goatcounter.com/)
   * [Cloudflare](https://www.cloudflare.com/analytics/)
   * [Matomo](https://matomo.org/)
+  * [Application Insights](https://azure.com/)
 * Commenting Systems
   * [Disqus](https://disqus.com/)
   * [Commento](https://commento.io/)
@@ -87,6 +89,13 @@ Follow [these steps](https://gohugo.io/templates/internal/#configure-google-anal
 [params.matomo]
     siteID = "ABCDE"
     serverURL = "analytics.example.com"
+```
+
+#### Application Insights
+
+```toml
+[params.applicationInsights]
+    connectionString = "connectionstring" # https://docs.microsoft.com/en-us/azure/azure-monitor/app/sdk-connection-string
 ```
 
 ### Commenting Systems
