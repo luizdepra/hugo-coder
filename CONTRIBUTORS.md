@@ -114,3 +114,4 @@
 - [George Tsiokos](https://george.tsiokos.com)
 - [Eltjo](https://github.com/eltjo)
 - [Saurmandal](https://saur.neocities.org)
+- [Jneo8](https://github.com/jneo8)
