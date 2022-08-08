@@ -69,6 +69,10 @@ customJS = []
 # [params.googleTagManager]
 # id = "gid"
 
+# If you want to use Application Insights(https://azure.com/) for analytics, add this section
+# [params.applicationInsights]
+# connectionString = "connectionString"
+
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
 childsrc = ["'self'"]

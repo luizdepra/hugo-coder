@@ -1,25 +1,25 @@
 [categories]
 one = "श्रेणी"
-other = "categories"
+other = "श्रेणियाँ"
 
 [tags]
 one = "टैग"
-other = "tags"
+other = "टैग्स"
 
 [series]
 one = "श्रृंखला"
-other = "series"
+other = "श्रृंखलाएँ"
 
 [authors]
 one = "लेखक"
-other = "authors"
+other = "लेखक"
 
 [posts]
 other = "सामग्री"
 
 [reading_time]
-one = "एक पढ़ने का समय"
-other = "{{ .Count }} पढ़ने का समय"
+one = "पढ़ने में एक मिनट लगेगा"
+other = "पढ़ने में {{ .Count }} मिनट लगेंगे"
 
 [page_not_found]
 other = "पृष्ठ नहीं मिला"
@@ -28,34 +28,34 @@ other = "पृष्ठ नहीं मिला"
 other = "क्षमा करें, यह पृष्ठ मौजूद नहीं है।"
 
 [head_back]
-other = "आप वापस आ सकते हैं <a href=\"{{ . }}\">मुखपृष्ठ</a>."
+other = "आप <a href=\"{{ . }}\">मुखपृष्ठ</a> पर वापस आ सकते हैं।"
 
 [licensed_under]
-other = "Licensed under"
+other = "लाइसेंस:"
 
 [powered_by]
-other = "द्वारा संचालित"
+other = "संचालन:"
 
 [see_also]
 other = "यह भी देखें"
 
 [note]
-other = "note"
+other = "नोट"
 
 [tip]
-other = "tip"
+other = "टिप्पणी"
 
 [example]
-other = "example"
+other = "उदाहरण"
 
 [question]
-other = "question"
+other = "प्रश्न"
 
 [info]
-other = "info"
+other = "जानकारी"
 
 [warning]
-other = "warning"
+other = "चेतावनी"
 
 [error]
-other = "error"
+other = "त्रुटि"

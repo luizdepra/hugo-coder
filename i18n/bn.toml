@@ -1,18 +1,18 @@
 [categories]
 one = "বিভাগ"
-other = "categories"
+other = "বিভাগসমূহ"
 
 [tags]
 one = "ট্যাগ"
-other = "tags"
+other = "ট্যাগসমূহ"
 
 [series]
 one = "সিরিজ"
-other = "series"
+other = "সিরিজ"
 
 [authors]
 one = "লেখক"
-other = "authors"
+other = "লেখকসমূহ"
 
 [posts]
 other = "সব পোস্ট"
@@ -31,31 +31,31 @@ other = "দুঃখিত, কাঙ্ক্ষিত পাতাটির �
 other = "আপনি <a href=\"{{ . }}\">নীড়পাতায়</a> ফিরে যেতে পারেন"
 
 [licensed_under]
-other = "Licensed under"
+other = "লাইসেন্স:"
 
 [powered_by]
-other = "চালনায়"
+other = "চালনা:"
 
 [see_also]
 other = "আরও দেখুন"
 
 [note]
-other = "note"
+other = "নোট"
 
 [tip]
-other = "tip"
+other = "টিপ"
 
 [example]
-other = "example"
+other = "উদাহরণ"
 
 [question]
-other = "question"
+other = "প্রশ্ন"
 
 [info]
-other = "info"
+other = "তথ্য"
 
 [warning]
-other = "warning"
+other = "নির্দেশ"
 
 [error]
-other = "error"
+other = "ত্রুটি"
