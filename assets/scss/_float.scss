@@ -14,17 +14,17 @@
     color: $alt-fg-color;
     background-color: $alt-bg-color;
     border-radius: 0.2rem;
-    opacity: 50%;
+    opacity: 0.5;
     transition: all 0.25s ease-in;
 
     &:hover,
     &:focus {
       color: $link-color;
-      opacity: 100%;
+      opacity: 1;
 
       @media only screen and (max-width: 768px) {
         color: $alt-fg-color;
-        opacity: 50%;
+        opacity: 0.5;
       }
     }
 
