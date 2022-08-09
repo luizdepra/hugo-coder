@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-{{ partial "head.html" . }}
+  <head>
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "head.html" . }}
+  </head>
 
 {{ $csClass := "colorscheme-light" }}
 {{ if eq .Site.Params.colorScheme "dark" }}
