@@ -62,3 +62,6 @@ other = "amaran"
 
 [error]
 other = "ralat"
+
+[link_to_heading]
+other = "Link to heading"

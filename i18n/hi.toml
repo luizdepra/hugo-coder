@@ -59,3 +59,7 @@ other = "चेतावनी"
 
 [error]
 other = "त्रुटि"
+
+
+[link_to_heading]
+other = "Link to heading"

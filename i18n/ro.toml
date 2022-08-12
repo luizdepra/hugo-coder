@@ -18,7 +18,7 @@ other = "autori"
 other = "articole"
 
 [reading_time]
-one   = "Un minut de lectură"
+one = "Un minut de lectură"
 other = "{{ .Count }} {{ if lt .Count 20 }}minute{{ else }}de minute{{ end }} de lectură"
 
 [page_not_found]
@@ -59,3 +59,6 @@ other = "avertisment"
 
 [error]
 other = "eroare"
+
+[link_to_heading]
+other = "Link to heading"
