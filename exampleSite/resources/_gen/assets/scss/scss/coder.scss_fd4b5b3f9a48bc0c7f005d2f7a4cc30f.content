@@ -3663,15 +3663,15 @@ figure {
     color: #000;
     background-color: #e0e0e0;
     border-radius: 0.2rem;
-    opacity: 50%;
+    opacity: 0.5;
     transition: all 0.25s ease-in; }
     .float-container a:hover, .float-container a:focus {
       color: #1565c0;
-      opacity: 100%; }
+      opacity: 1; }
       @media only screen and (max-width: 768px) {
         .float-container a:hover, .float-container a:focus {
           color: #000;
-          opacity: 50%; } }
+          opacity: 0.5; } }
     .float-container a i {
       position: absolute;
       top: 50%;

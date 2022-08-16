@@ -24,6 +24,13 @@
     {{ partial "footer.html" . }}
   </main>
 
+  {{ if .HasShortcode "mermaid" }}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.5/dist/mermaid.min.js" integrity="sha256-RqbL4xBKYq/iP+616ZrXdmaNyCuRX1mW7wjsHPfa8uY=" crossorigin="anonymous"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  {{ end }}
+
   {{ if .Site.IsServer }}
   {{ $script := resources.Get "js/coder.js" }}
   <script src="{{ $script.RelPermalink }}"></script>
