@@ -78,7 +78,7 @@ customJS = []
 childsrc = ["'self'"]
 fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
 formaction = ["'self'"]
-framesrc = ["'self'"]
+framesrc = ["'self'", "https://giscus.app/"]
 imgsrc = ["'self'"]
 objectsrc = ["'none'"]
 stylesrc = [
@@ -90,6 +90,7 @@ stylesrc = [
 scriptsrc = [
   "'self'",
   "'unsafe-inline'",
+  "https://giscus.app/",
   "https://www.google-analytics.com",
   "https://cdn.jsdelivr.net/"
 ]
@@ -102,6 +103,19 @@ category = "categories"
 series = "series"
 tag = "tags"
 author = "authors"
+
+# Giscus
+# Should follow the tutorials [here](https://giscus.app/).
+[params.giscus] # https://giscus.app
+repo = "{repo}" # Repo where the comments will live
+repo_id = "{repo_id}" # Repo where the comments will live
+category = "General" # Repo where the comments will live
+category_id = "{cate_id}" # Repo where the comments will live
+mapping = "pathname" # How Utterances will match comment to page
+theme = "light" # What theme to use
+reactions_enabled = "1" # Enable reactions
+emit_metadata= "0" # Emit metadata
+lang = "en" # Language
 
 [[params.social]]
 name = "Github"
