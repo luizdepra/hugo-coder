@@ -299,6 +299,21 @@ disqusShortname = "yourdiscussshortname"
   tag = "tags"
   author = "authors"
 
+# Giscus
+# Should follow the tutorials [here](https://giscus.app/).
+[params.giscus] # https://giscus.app
+repo = "{repo}" # Repo where the comments will live
+repo_id = "{repo_id}" # Repo where the comments will live
+category = "General" # Repo where the comments will live
+category_id = "{cate_id}" # Repo where the comments will live
+mapping = "pathname" # How Utterances will match comment to page
+theme = "light" # What theme to use
+reactions_enabled = "1" # Enable reactions
+emit_metadata= "0" # Emit metadata
+lang = "en" # Language
+input_position = "bottom" # Input position
+
+
 # Social links
 [[params.social]]
   name = "Github"

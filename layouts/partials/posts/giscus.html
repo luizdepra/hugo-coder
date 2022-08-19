@@ -1,0 +1,19 @@
+<!-- giscus -->
+{{- if .Site.Params.giscus.repo }}
+    <script src="https://giscus.app/client.js"
+          data-repo="{{site.Params.giscus.repo}}"
+          data-repo-id="{{site.Params.giscus.repo_id}}"
+          data-category="{{site.Params.giscus.category}}"
+          data-category-id="{{site.Params.giscus.category_id}}"
+          data-mapping="{{site.Params.giscus.mapping}}"
+          data-reactions-enabled="{{site.Params.giscus.reactions_enabled}}"
+          data-theme="{{site.Params.giscus.theme}}"
+          data-lang="{{site.Params.giscus.lang}}"
+          data-emit-metadata="{{site.Params.giscus.emit_metadata}}"
+          data-input-position="{{site.Params.giscus.input_position}}"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/giscus">comments powered by giscuss.</a></noscript>
+{{- end }}
