@@ -311,6 +311,7 @@ theme = "light" # What theme to use
 reactions_enabled = "1" # Enable reactions
 emit_metadata= "0" # Emit metadata
 lang = "en" # Language
+input_position = "bottom" # Input position
 
 
 # Social links
