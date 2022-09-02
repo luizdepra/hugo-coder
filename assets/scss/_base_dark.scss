@@ -41,11 +41,12 @@
   // fix color schemes which do not explicitly set fg-color
   .highlight {
     pre {
-      color: $fg-color;
+      background-color: $alt-bg-color-dark;
+      color: $fg-color-dark;
     }
   }
 
-  pre {
+  :not(.highlight) > pre {
     code {
       background-color: inherit;
       color: inherit;
