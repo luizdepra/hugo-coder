@@ -1,4 +1,4 @@
-baseURL = "http://www.example.com"
+baseURL = "http://loaclhost:1313"
 title = "johndoe"
 theme = "hugo-coder"
 languageCode = "en"
