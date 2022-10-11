@@ -31,7 +31,7 @@ other = "此页面不存在"
 other = "返回 <a href=\"{{ . }}\">首页</a>."
 
 [licensed_under]
-other = "Licensed under"
+other = "许可依据"
 
 [powered_by]
 other = "技术支持"
@@ -61,4 +61,4 @@ other = "警告"
 other = "错误"
 
 [link_to_heading]
-other = "Link to heading"
+other = "链接到标题"
