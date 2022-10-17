@@ -41,8 +41,9 @@ body.colorscheme-dark {
     background-color: #424242;
     color: #dadada; }
   body.colorscheme-dark .highlight pre {
-    color: #212121; }
-  body.colorscheme-dark pre code {
+    background-color: #424242;
+    color: #dadada; }
+  body.colorscheme-dark :not(.highlight) > pre code {
     background-color: inherit;
     color: inherit; }
   body.colorscheme-dark blockquote {
@@ -110,8 +111,9 @@ body.colorscheme-dark {
       background-color: #424242;
       color: #dadada; }
     body.colorscheme-auto .highlight pre {
-      color: #212121; }
-    body.colorscheme-auto pre code {
+      background-color: #424242;
+      color: #dadada; }
+    body.colorscheme-auto :not(.highlight) > pre code {
       background-color: inherit;
       color: inherit; }
     body.colorscheme-auto blockquote {
