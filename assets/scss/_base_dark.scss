@@ -43,6 +43,11 @@
     pre {
       background-color: $alt-bg-color-dark;
       color: $fg-color-dark;
+
+      code {
+        background-color: inherit;
+        color: inherit;
+      }
     }
   }
 
