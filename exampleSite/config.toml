@@ -96,6 +96,7 @@ customJS = []
 # prefetchsrc = ["'self'"]
 # # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 # connectsrc = ["'self'", "https://www.google-analytics.com"]
+# reporturi = ["https://www.example.com/my-csp-report-endpoint"]
 
 [taxonomies]
 category = "categories"
