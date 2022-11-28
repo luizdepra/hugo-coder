@@ -76,6 +76,9 @@ function setTheme(theme) {
         
     }
     
+    // Create and send event
+    const event = new Event('themeChanged');
+    document.dispatchEvent(event);
 }
 
 function rememberTheme(theme) {
