@@ -1,31 +1,30 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
+title: ""
 labels: "Triage Needed"
-assignees: ''
-
+assignees: ""
 ---
 
 ## Describe the problem:
 
-*Explain the problem you have encountered*
+_Explain the problem you have encountered_
 
 ### Steps to reproduce:
 
-  1. _____
-  2. _____
-  3. _____
-  
+1. ***
+2. ***
+3. ***
+
 ### Observed Results:
 
-  * What happened?
-  * What did you expect to happen?
+-   What happened?
+-   What did you expect to happen?
 
 ### Relevant code exceptions or logs
 
 Note: Please copy/paste text of the messages, no screenshots of logs please.
 
-  ```
-  // paste your log here
-  ```
+```
+// paste your log here
+```
