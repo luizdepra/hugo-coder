@@ -1,18 +1,18 @@
 [categories]
 one = "カテゴリー"
-other = "categories"
+other = "カテゴリー"
 
 [tags]
 one = "タグ"
-other = "tags"
+other = "タグ"
 
 [series]
 one = "シリーズ"
-other = "series"
+other = "シリーズ"
 
 [authors]
-one = "筆者"
-other = "authors"
+one = "著者"
+other = "著者"
 
 [posts]
 other = "記事"
@@ -34,7 +34,7 @@ other = "<a href=\"{{ . }}\">トップページ</a>からお探しいただき�
 other = "Licensed under"
 
 [powered_by]
-other = "利用技術"
+other = "Powered by"
 
 [see_also]
 other = "関連記事："
@@ -61,4 +61,4 @@ other = "warning"
 other = "error"
 
 [link_to_heading]
-other = "Link to heading"
+other = "見出しへのリンク"
