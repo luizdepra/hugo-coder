@@ -49,6 +49,17 @@
   {{ end }}
   {{ end }}
 
+  {{ range .Site.Params.customRemoteJS }}
+  {{ if $.Site.IsServer }}
+  {{ $script := resources.GetRemote . }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := resources.GetRemote . | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
+  {{ end }}
+
+
   {{ template "_internal/google_analytics.html" . }}
 
   {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}

@@ -130,11 +130,11 @@ These are all the parameters used by `hugo-coder` theme.
 | Name                          | Type   | Required | Description                                      | Default                          | Example                                          |
 | ----------------------------- | ------ | -------- | ------------------------------------------------ | -------------------------------- | ------------------------------------------------ |
 | author                        | string | Yes      | Author name.                                     |                                  | `"John Doe"`                                     |
-| info                          | string | Yes      | An headline, job title or similar.               |                                  | `"Full Stack Developer"`                         | 
+| info                          | string | Yes      | An headline, job title or similar.               |                                  | `"Full Stack Developer"`                         |
 | description                   | string | Yes      | Description of the site.                         |                                  | `"John Doe's personal website"`                  |
 | keywords                      | string | Yes      | Site keywords.                                   |                                  | `"blog,developer,personal"`                      |
-| avatarURL                     | string | No       | Photo of the author.                             |                                  | `"images/avatar.jpg"`                            | 
-| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                         | 
+| avatarURL                     | string | No       | Photo of the author.                             |                                  | `"images/avatar.jpg"`                            |
+| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                         |
 | favicon_32                    | string | No       | Custom path to a 32x32 favicon.                  | `"/img/favicon-32x32.png"`       | `"/img/favicon-32x32.png"`                       |
 | favicon_16                    | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                       |
 | touchIcon                     | string | No       | Custom path to a touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
@@ -149,13 +149,14 @@ These are all the parameters used by `hugo-coder` theme.
 | customCSS                     | list   | No       | Add extra CSS files to the website.              | []                               | `["css/extra-style.css"]`                        |
 | customSCSS                    | list   | No       | Add extra SCSS files to the website.             | []                               | `["scss/extra-style.scss"]`                      |
 | customJS                      | list   | No       | Add extra JS files to the website.               | []                               | `["js/extra-script.js"]`                         |
+| customRemoteJS                | list   | No       | Add extra remote JS files to the website.        | []                               | `["https://www.example.com/file.js"]` |
 | enableTwemoji                 | bool   | No       | Adds support for Twemoji                         | `false`                          | `true` or `false`                                |
 
 ### Social Icons Configuration
 
 Social Icons are optional. To use them you will need to set at least all the following required parameters for each icon.
 
-| Configuration  | Type   | Required | Description                              | Example                         | 
+| Configuration  | Type   | Required | Description                              | Example                         |
 | -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
 | name           | string | Yes      | Icon name.                               | `"Github"`                      |
 | icon           | string | Yes      | ForkAwesome icon classes.                | `"fa fa-github"`                |
@@ -186,7 +187,7 @@ An example:
 
 Menu Items are optional. To use them you will need to set all the following required parameters for each icon.
 
-| Configuration  | Type   | Required | Description                              | Example                         | 
+| Configuration  | Type   | Required | Description                              | Example                         |
 | -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
 | name           | string | Yes      | Menu Item name.                          | `"Posts"`                       |
 | weight         | int    | Yes      | Menu Item order.                         | `1`                             |
@@ -212,7 +213,7 @@ An example:
 
 CSP stands for [Content Security Policy](https://developers.google.com/web/fundamentals/security/csp). These configurations are optional. To use them you will need to set all the following required parameters. See [here](https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources) for reference.
 
-| Configuration  | Type        | Required | Description | Example                         | 
+| Configuration  | Type        | Required | Description | Example                         |
 | -------------- | ----------- | -------- | ----------- | ------------------------------- |
 | childsrc       | string list | Yes      |             | `["'self'"]`                    |
 | fontsrc        | string list | Yes      |             | `["'self'"]`                    |
