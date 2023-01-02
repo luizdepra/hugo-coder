@@ -39,8 +39,12 @@ maxSeeAlsoItems = 5
 customCSS = []
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
+
 # Custom JS
 customJS = []
+
+# Custom remote JS files
+customRemoteJS = []
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
