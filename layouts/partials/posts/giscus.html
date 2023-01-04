@@ -1,0 +1,33 @@
+{{- if isset .Site.Params "giscus" -}}
+  {{- if and (isset .Site.Params.giscus "repo") (not (eq .Site.Params.giscus.repo "" )) (eq (.Params.disableComments | default false) false) -}}
+  <div class="comments">
+    <script>
+  
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? '{{$.Site.Params.giscus.theme}}' : getTheme;
+    
+    let s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.setAttribute('data-repo', '{{ .Site.Params.giscus.repo }}');
+    s.setAttribute('data-repo-id', '{{ .Site.Params.giscus.repoID }}');
+    s.setAttribute('data-category', '{{ .Site.Params.giscus.category }}');
+    s.setAttribute('data-category-id', '{{ .Site.Params.giscus.categoryID }}');
+    s.setAttribute('data-mapping', '{{ default "pathname" .Site.Params.giscus.mapping }}');
+    s.setAttribute('data-term', '{{ .Site.Params.giscus.term }}');
+    s.setAttribute('data-strict', '{{ default "0" .Site.Params.giscus.strict }}');
+    s.setAttribute('data-reactions-enabled', '{{ default "1" .Site.Params.giscus.reactionsEnabled }}');
+    s.setAttribute('data-emit-metadata', '{{ default "0" .Site.Params.giscus.emitMetadata }}');
+    s.setAttribute('data-input-position', '{{ default "bottom" .Site.Params.giscus.inputPosition }}');
+    s.setAttribute('data-theme', getTheme);
+    s.setAttribute('data-lang', '{{ default "en" .Site.Params.giscus.lang }}');
+    s.setAttribute('data-loading', '{{ .Site.Params.giscus.loading }}');
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
+  
+    </script>
+    </div>
+  {{- end -}}
+{{- end -}}
