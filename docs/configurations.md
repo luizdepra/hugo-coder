@@ -14,6 +14,7 @@
     * [Disqus](#disqus)
     * [Commento](#commento)
     * [Utterances](#utterances)
+    * [Giscus](#giscus)
 * [Theme Parameters](#theme-parameters)
   * [Social Icons Configuration](#social-icons-configuration)
   * [Menu Items Configurations](#menu-items-configurations)
@@ -39,6 +40,7 @@ This theme supports:
   * [Disqus](https://disqus.com/)
   * [Commento](https://commento.io/)
   * [Utterances](https://utteranc.es/)
+  * [Giscus](https://giscus.app/)
 
 ### Analytics
 
@@ -121,6 +123,25 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
   issueTerm = "" # https://utteranc.es/#heading-mapping
   label = "" # https://utteranc.es/#heading-issue-label
   theme = "" # https://utteranc.es/#heading-theme
+```
+
+#### Giscus
+
+```toml
+[params.giscus] # https://giscus.app
+  repo = ""
+  repoID = "" 
+  category = ""
+  categoryID = ""
+  mapping = ""
+  term = ""
+  strict = ""
+  reactionsEnabled = ""
+  emitMetadata = ""
+  inputPosition = ""
+  theme = ""
+  lang = ""
+  loading = ""
 ```
 
 ## Theme Parameters
