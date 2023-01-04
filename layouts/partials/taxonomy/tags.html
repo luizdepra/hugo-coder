@@ -5,7 +5,7 @@
       <span class="separator">•</span>
     {{- end }}
     <span class="tag">
-      <a href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
     </span>
   {{- end -}}
 </div>
