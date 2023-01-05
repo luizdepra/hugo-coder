@@ -25,7 +25,7 @@
               {{ i18n "reading_time" .ReadingTime }}
             </span>
           </div>
-          {{ with .Page.Params.Authors }}{{ partial "taxonomy/authors.html" . }}{{ end }}
+          {{ with .GetTerms "authors" }}{{ partial "taxonomy/authors.html" . }}{{ end }}
           {{ with .GetTerms "categories" }}{{ partial "taxonomy/categories.html" . }}{{ end }}
           {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
         </div>
