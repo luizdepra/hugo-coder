@@ -1,5 +1,5 @@
 +++
-author = "Hugo Authors"
+authors = ["Hugo Authors"]
 title = "Guia de Sintaxe Markdown"
 date = "2019-03-11"
 description = "Artigo de exemplo mostrando a sintaxe básica Markdown e a formatação de elementos HTML."
