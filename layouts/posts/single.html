@@ -33,7 +33,7 @@
 
       <div class="post-content">
         {{ if .Params.featuredImage }}
-          <img src="{{ .Params.featuredImage | relURL }}" alt="Featured image"/>
+          <img src="{{ or (.Resources.GetMatch .Params.featuredImage) (resources.Get .Params.featuredImage).RelPermalink (.Params.featuredImage | relURL) }}" alt="Featured image"/>
         {{ end }}
         {{ .Content }}
       </div>
