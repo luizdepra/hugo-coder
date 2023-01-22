@@ -138,7 +138,7 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
 ```toml
 [params.giscus] # https://giscus.app
   repo = ""
-  repoID = "" 
+  repoID = ""
   category = ""
   categoryID = ""
   mapping = ""
@@ -319,9 +319,9 @@ disqusShortname = "yourdiscussshortname"
   colorScheme = "auto"
   hidecolorschemetoggle = false
 
-  customCSS = ["css/custom.css"]
-  customSCSS = ["scss/custom.scss"]
-  customJS = ["js/custom.js"]
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
 
 [taxonomies]
   category = "categories"
