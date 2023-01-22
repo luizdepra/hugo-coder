@@ -77,6 +77,11 @@ customRemoteJS = []
 # [params.applicationInsights]
 # connectionString = "connectionString"
 
+# If you want to use microanalytics.io for analytics, add this section
+# [params.microAnalytics]
+# id = "ABCDE"
+# dnt = "false" # respect DNT tracker, "true" by default
+
 # If you want to implement a Content-Security-Policy, add this section
 # [params.csp]
 # childsrc = ["'self'"]
