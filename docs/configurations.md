@@ -100,6 +100,14 @@ Follow [these steps](https://gohugo.io/templates/internal/#configure-google-anal
     connectionString = "connectionstring" # https://docs.microsoft.com/en-us/azure/azure-monitor/app/sdk-connection-string
 ```
 
+#### microanalytics.io
+
+```toml
+[params.microAnalytics]
+    id = "ABCDE"
+    dnt = "false" # respect DNT tracker, "true" by default
+```
+
 ### Commenting Systems
 
 Comments are displayed within post pages, but can be disabled with `disableComments` front-matter.

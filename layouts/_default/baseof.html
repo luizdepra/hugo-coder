@@ -87,7 +87,11 @@
   {{ end }}
 
   {{ if and .Site.Params.applicationInsights .Site.Params.applicationInsights.connectionString }}
-    {{- partial "analytics/applicationinsights" . -}}
+  {{- partial "analytics/applicationinsights" . -}}
+  {{ end }}
+
+  {{ if and .Site.Params.microAnalytics .Site.Params.microAnalytics.id }}
+  {{- partial "analytics/microanalyticsio" . -}}
   {{ end }}
 
   {{- partial "body/extensions" . -}}
