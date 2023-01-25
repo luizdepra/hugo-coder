@@ -73,6 +73,10 @@ customRemoteJS = []
 # [params.googleTagManager]
 # id = "gid"
 
+# If you want to use Yandex Metrika(https://metrika.yandex.ru) for analytics, add this section
+# [params.yandexMetrika]
+# id = "gid"
+
 # If you want to use Application Insights(https://azure.com/) for analytics, add this section
 # [params.applicationInsights]
 # connectionString = "connectionString"

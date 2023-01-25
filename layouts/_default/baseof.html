@@ -94,6 +94,10 @@
   {{- partial "analytics/microanalyticsio" . -}}
   {{ end }}
 
+  {{ if and .Site.Params.yandexMetrika .Site.Params.yandexMetrika.id }}
+  {{- partial "analytics/yandex-metrika" . -}}
+  {{ end }}
+
   {{- partial "body/extensions" . -}}
 </body>
 
