@@ -50,8 +50,6 @@ The blockquote element represents content that is quoted from another source, op
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
 ## Tables
 
 Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-box.
@@ -135,6 +133,10 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-
   * Milk
   * Cheese
 
+#### Foot Notes
+
+Check it[^2] at the end[^3] of this text[^4].
+
 ## Other Elements — abbr, sub, sup, kbd, mark
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
@@ -146,3 +148,8 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^2]: A footnote.
+[^3]: Another one.
+[^4]: Cool, right?

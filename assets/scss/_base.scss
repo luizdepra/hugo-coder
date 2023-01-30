@@ -219,6 +219,12 @@ figure {
   text-align: center;
 }
 
+.footnotes {
+  ol li p {
+    margin: 0;
+  }
+}
+
 .preload-transitions * {
   $null-transition: none !important;
 
