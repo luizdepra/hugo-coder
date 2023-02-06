@@ -69,6 +69,8 @@ Follow [these steps](https://gohugo.io/templates/internal/#configure-google-anal
 [params.plausibleAnalytics]
   domain = "example.com"
   serverURL = "plausible.io" # (optionnal) Replace if you use a custom domain
+  outboundLinksTracking = false  # (optional) If set and true, track outbound links
+  fileDownloadsTracking = false  # (optional) If set amd true, track file downloads
 ```
 
 #### Goat Counter
