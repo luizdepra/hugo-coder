@@ -1,15 +1,7 @@
 # Configurations
 
 * [About Hugo Configurations](#about-hugo-configurations)
-  * [Analytics](#analytics)
-    * [Google Analytics](#google-analytics)
-    * [Google Tag Manager](#google-tag-manager)
-    * [Fathom Analytics](#fathom-analytics)
-    * [Plausible Analytics](#plausible-analytics)
-    * [Goat Counter](#goat-counter)
-    * [Cloudflare](#cloudflare)
-    * [Matomo](#matomo)
-    * [Application Insights](#application-insights)
+  * [Analytics](/docs/analytics.md)
   * [Commenting Systems](#commenting-systems)
     * [Disqus](#disqus)
     * [Commento](#commento)
@@ -27,86 +19,13 @@
 
 This theme supports:
 
-* Analytics
-  * [Google Analytics](https://developers.google.com/analytics)
-  * [Google Tag Manager](https://developers.google.com/tag-manager)
-  * [Fathom Analytics](https://usefathom.com/)
-  * [Plausible Analytics](https://plausible.io/)
-  * [Goat Counter](https://www.goatcounter.com/)
-  * [Cloudflare](https://www.cloudflare.com/analytics/)
-  * [Matomo](https://matomo.org/)
-  * [Application Insights](https://azure.com/)
+* [Analytics](/docs/analytics.md)
+
 * Commenting Systems
   * [Disqus](https://disqus.com/)
   * [Commento](https://commento.io/)
   * [Utterances](https://utteranc.es/)
   * [Giscus](https://giscus.app/)
-
-### Analytics
-
-#### Google Analytics
-
-Follow [these steps](https://gohugo.io/templates/internal/#configure-google-analytics).
-
-#### Google Tag Manager
-
-```toml
-[params.googleTagManager]
-    id = "gid"
-```
-
-#### Fathom Analytics
-
-```toml
-[params.fathomAnalytics]
-  siteID = "ABCDE"
-  serverURL = "cdn.usefathom.com" # (optionnal) Replace if you use a custom domain
-```
-
-#### Plausible Analytics
-
-```toml
-[params.plausibleAnalytics]
-  domain = "example.com"
-  serverURL = "plausible.io" # (optionnal) Replace if you use a custom domain
-```
-
-#### Goat Counter
-
-```toml
-[params.goatCounter]
-  code = "code" # You will access your account at https://[code].goatcounter.com
-```
-
-#### Cloudflare
-
-```toml
-[params.cloudflare]
-    token = "token"
-```
-
-#### Matomo
-
-```toml
-[params.matomo]
-    siteID = "ABCDE"
-    serverURL = "analytics.example.com"
-```
-
-#### Application Insights
-
-```toml
-[params.applicationInsights]
-    connectionString = "connectionstring" # https://docs.microsoft.com/en-us/azure/azure-monitor/app/sdk-connection-string
-```
-
-#### microanalytics.io
-
-```toml
-[params.microAnalytics]
-    id = "ABCDE"
-    dnt = "false" # respect DNT tracker, "true" by default
-```
 
 ### Commenting Systems
 
