@@ -16,7 +16,7 @@ supressDNT | Ignore Do-Not-Track setting in the browser | :x: | false
 
 ## Example
 
-```
+```toml
 [params.wideAngleAnalytics]
   siteID = "1D4EG3B9ACA03F4243"
   serverURL = "fyi.wideangle.co"
