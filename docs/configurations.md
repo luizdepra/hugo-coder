@@ -1,15 +1,7 @@
 # Configurations
 
 * [About Hugo Configurations](#about-hugo-configurations)
-  * [Analytics](#analytics)
-    * [Google Analytics](#google-analytics)
-    * [Google Tag Manager](#google-tag-manager)
-    * [Fathom Analytics](#fathom-analytics)
-    * [Plausible Analytics](#plausible-analytics)
-    * [Goat Counter](#goat-counter)
-    * [Cloudflare](#cloudflare)
-    * [Matomo](#matomo)
-    * [Application Insights](#application-insights)
+  * [Analytics](/docs/analytics.md)
   * [Commenting Systems](#commenting-systems)
     * [Disqus](#disqus)
     * [Commento](#commento)
