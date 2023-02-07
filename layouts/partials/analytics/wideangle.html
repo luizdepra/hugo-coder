@@ -1,0 +1,5 @@
+<script async defer
+  src='https://{{ .Site.Params.wideAngleAnalytics.serverURL | default "stats.wideangle.co" }}/script/{{ .Site.Params.wideAngleAnalytics.siteID}}.js'
+  data-waa-fingerprint='{{ .Site.Params.wideAngleAnalytics.fingerprint | default "false" }}'
+  data-waa-dnt-supress='{{ .Site.Params.wideAngleAnalytics.supressDNT | default "false" }}'>
+</script>
