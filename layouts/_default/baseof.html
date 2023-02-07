@@ -78,6 +78,10 @@
   {{- partial "analytics/cloudflare" . -}}
   {{ end }}
 
+  {{ if and .Site.Params.wideAngleAnalytics .Site.Params.wideAngleAnalytics.siteID }}
+  {{- partial "analytics/wideangle" . -}}
+  {{ end }}
+
   {{ if and .Site.Params.matomo .Site.Params.matomo.serverURL }}
   {{- partial "analytics/matomo" . -}}
   {{ end }}
