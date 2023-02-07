@@ -55,6 +55,8 @@ customRemoteJS = []
 # [params.plausibleAnalytics]
 # domain = "example.com"
 # serverURL = "analytics.example.com" # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+# outboundLinksTracking = true
+# fileDownloadsTracking = true
 
 # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
 # [params.goatCounter]

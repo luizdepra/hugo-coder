@@ -125,4 +125,5 @@
 - [Martin Hellspong](https://github.com/marhel)
 - [Robert Tucker](https://github.com/robertwtucker)
 - [Michał Pawlik](https://michalp.net)
+- [Kilian Kluge](https://github.com/ionicsolutions)
 - [Jaroslaw Rozanski](https://jarekrozanski.eu)
