@@ -3,11 +3,13 @@
 {{ end }}
 {{ define "content" }}
   <section class="container list">
-    <h1 class="title">
-      <a class="title-link" href="{{ .Permalink | safeURL }}">
-        {{ title (i18n (lower .Title)) | default .Title }}
-      </a>
-    </h1>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ title (i18n (lower .Title)) | default .Title }}
+        </a>
+      </h1>
+    </header>
     {{ .Content }}
     <ul>
       {{- range .Paginator.Pages -}}
