@@ -3148,8 +3148,8 @@ b,
 strong {
   font-weight: 700; }
 
-.highlight > div,
-.highlight > pre {
+.highlight div,
+.highlight pre {
   margin: 2rem 0 2rem;
   padding: 1rem;
   border-radius: 1rem; }
@@ -3161,18 +3161,16 @@ pre {
   font-weight: 400;
   line-height: 2.6rem;
   overflow-x: auto;
-  margin: 0; }
+  margin: 2rem 0 2rem;
+  padding: 1rem;
+  border-radius: 1rem; }
   pre code {
-    display: inline-block;
-    background-color: inherit;
-    color: inherit; }
+    display: inline-block; }
 
 code {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #e0e0e0;
-  color: #212121;
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem; }
 
@@ -3260,19 +3258,21 @@ figure {
   display: flex;
   margin-top: 1.6rem;
   margin-bottom: 3.2rem; }
-  .content article details summary {
-    cursor: pointer; }
-  .content article header {
+  .content header {
     margin-top: 6.4rem;
     margin-bottom: 3.2rem; }
-    .content article header h1 {
+    .content header h1 {
       font-size: 4.2rem;
       line-height: 4.6rem;
       margin: 0; }
       @media only screen and (max-width: 768px) {
-        .content article header h1 {
+        .content header h1 {
           font-size: 4rem;
           line-height: 4.4rem; } }
+  .content article a:where(.external-link)::after {
+    content: "⬈"; }
+  .content article details summary {
+    cursor: pointer; }
   .content article footer {
     margin-top: 4rem; }
     .content article footer .see-also {

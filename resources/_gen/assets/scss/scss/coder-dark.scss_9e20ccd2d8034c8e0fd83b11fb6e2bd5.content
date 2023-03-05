@@ -37,6 +37,7 @@ body.colorscheme-dark {
       color: inherit;
       font-weight: inherit;
       text-decoration: none; }
+<<<<<<< HEAD
   body.colorscheme-dark code {
     background-color: #424242;
     color: #dadada; }
@@ -49,6 +50,8 @@ body.colorscheme-dark {
   body.colorscheme-dark :not(.highlight) > pre code {
     background-color: inherit;
     color: inherit; }
+=======
+>>>>>>> 2bdf4f3 (Fix syntax highlight to be more configurable)
   body.colorscheme-dark blockquote {
     border-left: 2px solid #424242; }
   body.colorscheme-dark th,
@@ -110,6 +113,7 @@ body.colorscheme-dark {
         color: inherit;
         font-weight: inherit;
         text-decoration: none; }
+<<<<<<< HEAD
     body.colorscheme-auto code {
       background-color: #424242;
       color: #dadada; }
@@ -122,6 +126,8 @@ body.colorscheme-dark {
     body.colorscheme-auto :not(.highlight) > pre code {
       background-color: inherit;
       color: inherit; }
+=======
+>>>>>>> 2bdf4f3 (Fix syntax highlight to be more configurable)
     body.colorscheme-auto blockquote {
       border-left: 2px solid #424242; }
     body.colorscheme-auto th,

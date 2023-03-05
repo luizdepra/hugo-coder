@@ -37,18 +37,6 @@ body.colorscheme-dark {
       color: inherit;
       font-weight: inherit;
       text-decoration: none; }
-  body.colorscheme-dark code {
-    background-color: #424242;
-    color: #dadada; }
-  body.colorscheme-dark .highlight pre {
-    background-color: #424242;
-    color: #212121; }
-    body.colorscheme-dark .highlight pre code {
-      background-color: inherit;
-      color: inherit; }
-  body.colorscheme-dark :not(.highlight) > pre code {
-    background-color: inherit;
-    color: inherit; }
   body.colorscheme-dark blockquote {
     border-left: 2px solid #424242; }
   body.colorscheme-dark th,
@@ -110,18 +98,6 @@ body.colorscheme-dark {
         color: inherit;
         font-weight: inherit;
         text-decoration: none; }
-    body.colorscheme-auto code {
-      background-color: #424242;
-      color: #dadada; }
-    body.colorscheme-auto .highlight pre {
-      background-color: #424242;
-      color: #212121; }
-      body.colorscheme-auto .highlight pre code {
-        background-color: inherit;
-        color: inherit; }
-    body.colorscheme-auto :not(.highlight) > pre code {
-      background-color: inherit;
-      color: inherit; }
     body.colorscheme-auto blockquote {
       border-left: 2px solid #424242; }
     body.colorscheme-auto th,
