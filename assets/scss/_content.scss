@@ -21,6 +21,10 @@
   }
 
   article {
+    a:where(.external-link)::after {
+      content: "⬈"
+    }
+
     details {
       summary {
         cursor: pointer;
@@ -77,6 +81,7 @@
           a {
             color: $fg-color;
           }
+
           a:active {
             color: $fg-color;
           }
