@@ -33,31 +33,6 @@
     }
   }
 
-  code {
-    background-color: $alt-bg-color-dark;
-    color: $fg-color-dark;
-  }
-
-  // fix color schemes which do not explicitly set fg-color
-  .highlight {
-    pre {
-      background-color: $alt-bg-color-dark;
-      color: $bg-color-dark;
-
-      code {
-        background-color: inherit;
-        color: inherit;
-      }
-    }
-  }
-
-  :not(.highlight) > pre {
-    code {
-      background-color: inherit;
-      color: inherit;
-    }
-  }
-
   blockquote {
     border-left: 2px solid $alt-bg-color-dark;
   }

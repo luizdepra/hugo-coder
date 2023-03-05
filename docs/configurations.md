@@ -7,6 +7,7 @@
     * [Commento](#commento)
     * [Utterances](#utterances)
     * [Giscus](#giscus)
+* [Syntax Highlight](#syntax-highlight)
 * [Theme Parameters](#theme-parameters)
   * [Social Icons Configuration](#social-icons-configuration)
   * [Menu Items Configurations](#menu-items-configurations)
@@ -70,6 +71,19 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
   lang = ""
   loading = ""
 ```
+
+## Syntax Highlight
+
+The theme uses the Goldmark syntax highlight system. To configure it add to your `config.toml`:
+
+```
+[markup.highlight]
+style = "github-dark"
+```
+
+All `style` are available [here](https://xyproto.github.io/splash/docs/all.html).
+
+It is also possible to use custom styles with generated CSS files. See [here](https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css).
 
 ## Theme Parameters
 
@@ -214,11 +228,10 @@ defaultcontentlanguage = "en"
 
 paginate = 20
 
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
 disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
 
 [params]
   author = "John Doe"
