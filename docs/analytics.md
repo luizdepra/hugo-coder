@@ -13,4 +13,5 @@
 * [Matomo](https://matomo.org/) - [documentation](/docs/analytics/matomo.md)
 * [Micro Analytics](https://microanalytics.io/) - [documentation](/docs/analytics/microanalytics.md)
 * [Plausible Analytics](https://plausible.io/) - [documentation](/docs/analytics/plausible.md)
+* [Umami](https://umami.is/) - [documentation](/docs/analytics/umami.md)
 * [Wide Angle Analytics](https://wideangle.co/) - [documentation](/docs/analytics/wideangle.md)
