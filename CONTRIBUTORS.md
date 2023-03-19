@@ -127,3 +127,4 @@
 - [Michał Pawlik](https://michalp.net)
 - [Kilian Kluge](https://github.com/ionicsolutions)
 - [Jaroslaw Rozanski](https://jarekrozanski.eu)
+- [Easton Man](https://github.com/eastonman)
