@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-  <head>
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    {{ partial "head.html" . }}
-  </head>
+
+<head>
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{ partial "head.html" . }}
+</head>
 
 {{ $csClass := "colorscheme-light" }}
 {{ if eq .Site.Params.colorScheme "dark" }}
@@ -25,7 +26,8 @@
   </main>
 
   {{ if .HasShortcode "mermaid" }}
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js" integrity="sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"
+    integrity="sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU=" crossorigin="anonymous"></script>
   <script>
     mermaid.initialize({ startOnLoad: true });
   </script>
@@ -100,6 +102,10 @@
 
   {{ if and .Site.Params.yandexMetrika .Site.Params.yandexMetrika.id }}
   {{- partial "analytics/yandex-metrika" . -}}
+  {{ end }}
+
+  {{ if and .Site.Params.umami .Site.Params.umami.siteID }}
+  {{- partial "analytics/umami" . -}}
   {{ end }}
 
   {{- partial "body/extensions" . -}}
