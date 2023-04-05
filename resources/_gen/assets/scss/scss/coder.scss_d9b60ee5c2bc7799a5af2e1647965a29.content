@@ -3277,7 +3277,8 @@ figure {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: "\f08e";
-    padding-left: 0.5rem; }
+    padding-left: 0.5em;
+    font-size: 0.75em; }
   .content article details summary {
     cursor: pointer; }
   .content article footer {
