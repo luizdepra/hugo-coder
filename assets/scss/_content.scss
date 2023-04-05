@@ -23,7 +23,6 @@
   article {
     a:where(.external-link)::after {
       @include fa-icon;
-      @extend .fa;
       content: fa-content($fa-var-external-link);
       padding-left: 0.5rem;
     }
