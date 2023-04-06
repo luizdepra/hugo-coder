@@ -1,20 +1,21 @@
 [categories]
 one = "kategori"
-other = "categories"
+other = "kategoriler"
 
 [tags]
-one = "tag"
-other = "tags"
+one = "etiket"
+other = "etiketler"
 
 [series]
 one = "dizi"
-other = "series"
+other = "diziler"
 
 [authors]
 one = "yazar"
-other = "authors"
+other = "yazarlar"
 
 [posts]
+one = "Gönderi"
 other = "Gönderiler"
 
 [reading_time]
@@ -31,7 +32,7 @@ other = "Özür dileriz, böyle bir sayfa yok."
 other = "<a href=\"{{ . }}\">Ana sayfaya</a> dönebilirsiniz."
 
 [licensed_under]
-other = "Licensed under"
+other = "Lisansı alınta:"
 
 [powered_by]
 other = "Site program altyapısı"
@@ -40,25 +41,25 @@ other = "Site program altyapısı"
 other = "Ayrıca bakınız"
 
 [note]
-other = "note"
+other = "not"
 
 [tip]
-other = "tip"
+other = "tavsiye"
 
 [example]
-other = "example"
+other = "örnek"
 
 [question]
-other = "question"
+other = "soru"
 
 [info]
-other = "info"
+other = "bilgi"
 
 [warning]
-other = "warning"
+other = "uyarı"
 
 [error]
-other = "error"
+other = "hata"
 
 [link_to_heading]
-other = "Link to heading"
+other = "Başlık Linki"
