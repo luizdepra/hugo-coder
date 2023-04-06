@@ -128,3 +128,4 @@
 - [Kilian Kluge](https://github.com/ionicsolutions)
 - [Jaroslaw Rozanski](https://jarekrozanski.eu)
 - [Easton Man](https://github.com/eastonman)
+- [Yiğit Altınay](https://altinay.xyz)
