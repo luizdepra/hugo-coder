@@ -22,7 +22,10 @@
 
   article {
     a:where(.external-link)::after {
-      content: "⬈"
+      @include fa-icon;
+      content: fa-content($fa-var-external-link);
+      padding-left: 0.5em;
+      font-size: 0.75em;
     }
 
     details {

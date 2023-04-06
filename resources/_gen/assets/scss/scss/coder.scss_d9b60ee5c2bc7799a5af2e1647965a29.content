@@ -3270,7 +3270,15 @@ figure {
           font-size: 4rem;
           line-height: 4.4rem; } }
   .content article a:where(.external-link)::after {
-    content: "⬈"; }
+    display: inline-block;
+    font: normal normal normal 14px/1 ForkAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f08e";
+    padding-left: 0.5em;
+    font-size: 0.75em; }
   .content article details summary {
     cursor: pointer; }
   .content article footer {
