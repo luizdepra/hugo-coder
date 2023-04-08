@@ -88,6 +88,10 @@ customRemoteJS = []
 # id = "ABCDE"
 # dnt = "false" # respect DNT tracker, "true" by default
 
+# If you want to use Pirsch(https://pirsch.io) for analytics, add this section
+# [params.pirsch]
+# code = "ABCDE"
+
 # If you want to implement a Content-Security-Policy, add this section
 # [params.csp]
 # childsrc = ["'self'"]
