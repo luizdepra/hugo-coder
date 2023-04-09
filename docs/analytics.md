@@ -12,6 +12,7 @@
 * [Goat Counter](https://www.goatcounter.com/) - [documentation](/docs/analytics/goatcounter.md)
 * [Matomo](https://matomo.org/) - [documentation](/docs/analytics/matomo.md)
 * [Micro Analytics](https://microanalytics.io/) - [documentation](/docs/analytics/microanalytics.md)
+* [Pirsch](https://pirsch.io/) - [documentation](/docs/analytics/pirsch.md)
 * [Plausible Analytics](https://plausible.io/) - [documentation](/docs/analytics/plausible.md)
 * [Umami](https://umami.is/) - [documentation](/docs/analytics/umami.md)
 * [Wide Angle Analytics](https://wideangle.co/) - [documentation](/docs/analytics/wideangle.md)

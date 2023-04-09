@@ -108,6 +108,10 @@
   {{- partial "analytics/umami" . -}}
   {{ end }}
 
+  {{ if and .Site.Params.pirsch .Site.Params.pirsch.code }}
+  {{- partial "analytics/pirsch" . -}}
+  {{ end }}
+
   {{- partial "body/extensions" . -}}
 </body>
 
