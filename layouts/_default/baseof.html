@@ -80,6 +80,10 @@
   {{- partial "analytics/cloudflare" . -}}
   {{ end }}
 
+  {{ if and .Site.Params.baidu .Site.Params.baidu.token }}
+  {{- partial "analytics/baidu" . -}}
+  {{ end }}
+
   {{ if and .Site.Params.wideAngleAnalytics .Site.Params.wideAngleAnalytics.siteID }}
   {{- partial "analytics/wideangle" . -}}
   {{ end }}

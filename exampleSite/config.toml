@@ -66,6 +66,10 @@ customRemoteJS = []
 # [params.cloudflare]
 # token = "token"
 
+# If you want to use Baidu Analytics(https://tongji.baidu.com) for analytics, add this section
+# [params.baidu]
+# token = "token"
+
 # If you want to use Matomo(https://matomo.org) for analytics, add this section
 # [params.matomo]
 # siteID = "ABCDE" # Default value is "1", overwrite this if you are cloud-hosting
