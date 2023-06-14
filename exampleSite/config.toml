@@ -9,7 +9,7 @@ enableEmoji = true
 # disqusShortname = "yourdiscussshortname"
 
 [markup.highlight]
-style = "github-dark"
+noClasses = false
 
 [params]
 author = "John Doe"
@@ -64,10 +64,6 @@ customRemoteJS = []
 
 # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
 # [params.cloudflare]
-# token = "token"
-
-# If you want to use Baidu Analytics(https://tongji.baidu.com) for analytics, add this section
-# [params.baidu]
 # token = "token"
 
 # If you want to use Matomo(https://matomo.org) for analytics, add this section
