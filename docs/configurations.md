@@ -74,16 +74,16 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
 
 ## Syntax Highlight
 
-The theme uses the Goldmark syntax highlight system. To configure it add to your `config.toml`:
+The theme uses the Goldmark syntax highlight system. GitHub light and dark are set as the default styles. To choose a different style, make sure `noClasses` is not set to false (default is true) and add to your `config.toml`:
 
 ```
 [markup.highlight]
-style = "github-dark"
+style = "monokai"
 ```
 
 All `style` are available [here](https://xyproto.github.io/splash/docs/all.html).
 
-It is also possible to use custom styles with generated CSS files. See [here](https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css).
+Alternatively, it is possible to use custom styles with generated CSS files. See [here](https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css).
 
 ## Theme Parameters
 
