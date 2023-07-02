@@ -27,6 +27,7 @@ This theme supports:
   * [Commento](https://commento.io/)
   * [Utterances](https://utteranc.es/)
   * [Giscus](https://giscus.app/)
+  * [Telegram](https://comments.app/)
 
 ### Commenting Systems
 
@@ -70,6 +71,20 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
   theme = ""
   lang = ""
   loading = ""
+```
+
+#### Telegram
+
+```toml
+[params.telegram] # https://comments.app/
+  siteID = ""
+  limit = ""
+  height = ""
+  color = ""
+  dislikes = ""
+  outlined = ""
+  colorful = ""
+  dark = ""
 ```
 
 ## Syntax Highlight
