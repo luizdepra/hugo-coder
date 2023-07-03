@@ -111,7 +111,8 @@ These are all the parameters used by `hugo-coder` theme.
 | description                   | string | Yes      | Description of the site.                         |                                  | `"John Doe's personal website"`                  |
 | keywords                      | string | Yes      | Site keywords.                                   |                                  | `"blog,developer,personal"`                      |
 | avatarURL                     | string | No       | Photo of the author.                             |                                  | `"images/avatar.jpg"`                            |
-| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                         |
+| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                       |
+| faviconSVG                    | string | No       | Custom path to a SCG favicon.                    | `"/img/favicon.svg"`             | `"/img/favicon.svg"`                       |
 | favicon_32                    | string | No       | Custom path to a 32x32 favicon.                  | `"/img/favicon-32x32.png"`       | `"/img/favicon-32x32.png"`                       |
 | favicon_16                    | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                       |
 | touchIcon                     | string | No       | Custom path to a touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
@@ -256,6 +257,7 @@ style = "github-dark"
   avatarurl = "images/avatar.jpg"
   #gravatar = "john.doe@example.com"
 
+  faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
