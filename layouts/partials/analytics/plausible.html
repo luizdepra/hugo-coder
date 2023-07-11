@@ -1,1 +1,1 @@
-<script async defer data-domain="{{ .Site.Params.plausibleAnalytics.domain }}" src="https://{{ .Site.Params.plausibleAnalytics.serverURL | default "plausible.io" }}/js/plausible.js"></script>
+<script async defer data-domain="{{ .Site.Params.plausibleAnalytics.domain }}" src="https://{{ .Site.Params.plausibleAnalytics.serverURL | default "plausible.io" }}/js/script{{if .Site.Params.plausibleAnalytics.fileDownloadsTracking}}.file-downloads{{end}}{{if .Site.Params.plausibleAnalytics.outboundLinksTracking}}.outbound-links{{end}}.js"></script>

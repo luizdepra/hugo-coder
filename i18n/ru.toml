@@ -1,18 +1,18 @@
 [categories]
 one = "категория"
-other = "categories"
+other = "категории"
 
 [tags]
 one = "тэг"
-other = "tags"
+other = "тэги"
 
 [series]
-one = "серии"
-other = "series"
+one = "серия"
+other = "серии"
 
 [authors]
 one = "автор"
-other = "authors"
+other = "авторы"
 
 [posts]
 other = "статьи"
@@ -32,34 +32,34 @@ other = "Извините, но этой страницы не существу�
 other = "Можете вернуться обратно на <a href=\"{{ . }}\">домашнюю страницу</a>."
 
 [licensed_under]
-other = "Licensed under"
+other = "Лицензирован по"
 
 [powered_by]
 other = "Работает на"
 
 [see_also]
-other = "Также смотреть"
+other = "Также смотрите"
 
 [note]
-other = "note"
+other = "заметка"
 
 [tip]
-other = "tip"
+other = "совет"
 
 [example]
-other = "example"
+other = "пример"
 
 [question]
-other = "question"
+other = "вопрос"
 
 [info]
-other = "info"
+other = "информация"
 
 [warning]
-other = "warning"
+other = "предупреждение"
 
 [error]
-other = "error"
+other = "ошибка"
 
 [link_to_heading]
-other = "Link to heading"
+other = "Ссылка на заголовок"

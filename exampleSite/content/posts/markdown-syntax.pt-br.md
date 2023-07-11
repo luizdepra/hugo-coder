@@ -1,5 +1,5 @@
 +++
-author = "Hugo Authors"
+authors = ["Hugo Authors"]
 title = "Guia de Sintaxe Markdown"
 date = "2019-03-11"
 description = "Artigo de exemplo mostrando a sintaxe básica Markdown e a formatação de elementos HTML."
@@ -9,8 +9,8 @@ tags = [
     "html",
 ]
 categories = [
-    "temas",
-    "sintaxe",
+    "themes",
+    "syntax",
 ]
 series = ["Guia do Thema"]
 aliases = ["migrate-from-jekyl"]
@@ -49,8 +49,6 @@ O elemento de citações representa um conteúdo citado de outra origem, opciona
 
 > Não comunique compartilhando memória, compartilhe memória comunicando.<br>
 > — <cite>Rob Pike[^1]</cite>
-
-[^1]: A citação acima foi extraída da [apresentação](https://www.youtube.com/watch?v=PAAkCSZUG1c) do Rob Pike durante a Gopherfest, de 18 de Novembro de 2015.
 
 ## Tabelas
 
@@ -136,6 +134,10 @@ Tabelas não fazem parte do cerne da especificação do Markdown, mas o Hugo ofe
   * Leite
   * Queijo
 
+#### Notas de Rodapé
+
+Verifique[^2] no final[^3] desse texto[^4].
+
 ## Outros Elementos — abbr, sub, sup, kbd, mark
 
 <abbr title="Graphics Interchange Format">GIF</abbr> é um formato de imagem bitmap.
@@ -147,3 +149,8 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Aperte <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> para fechar.
 
 A maioria das <mark>salamandras</mark> são noturnas e caçam insetos, vermes, e outras criaturas pequenas.
+
+[^1]: A citação acima foi extraída da [apresentação](https://www.youtube.com/watch?v=PAAkCSZUG1c) do Rob Pike durante a Gopherfest, de 18 de Novembro de 2015.
+[^2]: Uma nota de rodapé.
+[^3]: Outra aqui.
+[^4]: Legal, né?

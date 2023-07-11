@@ -9,7 +9,7 @@
 {{ with .Site.Params.author }}
 <meta name="author" content="{{ . }}">{{ end }}
 <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
-<meta name="keywords" content="{{ (delimit .Keywords " ,") | default .Site.Params.keywords }}">
+<meta name="keywords" content="{{ (delimit .Keywords ", ") | default .Site.Params.keywords }}">
 
 {{ template "_internal/twitter_cards.html" . }}
 {{ template "_internal/opengraph.html" . }}

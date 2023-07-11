@@ -23,6 +23,10 @@ body {
   }
 }
 
+iframe[src*=disqus] {
+  color-scheme: light;
+}
+
 a {
   font-weight: 500;
   color: $link-color;
@@ -134,11 +138,14 @@ strong {
   font-weight: 700;
 }
 
-.highlight>div,
-.highlight>pre {
-  margin: 2rem 0 2rem;
-  padding: 1rem;
-  border-radius: 1rem;
+.highlight {
+
+  div,
+  pre {
+    margin: 2rem 0 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
 }
 
 pre {
@@ -148,7 +155,9 @@ pre {
   font-weight: 400;
   line-height: 2.6rem;
   overflow-x: auto;
-  margin: 0;
+  margin: 2rem 0 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
 
   code {
     display: inline-block;
@@ -161,10 +170,10 @@ code {
   font-family: $code-font-family;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: $alt-bg-color;
-  color: $fg-color;
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
+  background-color: $darker-alt-bg-color;
+  color: $fg-color;
 }
 
 blockquote {
@@ -213,6 +222,12 @@ img {
 
 figure {
   text-align: center;
+}
+
+.footnotes {
+  ol li p {
+    margin: 0;
+  }
 }
 
 .preload-transitions * {

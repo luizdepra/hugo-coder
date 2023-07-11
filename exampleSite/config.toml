@@ -4,12 +4,12 @@ theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
 paginate = 20
-pygmentsStyle = "bw"
-pygmentsCodeFences = true
-pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+noClasses = false
 
 [params]
 author = "John Doe"
@@ -39,8 +39,12 @@ maxSeeAlsoItems = 5
 customCSS = []
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
+
 # Custom JS
 customJS = []
+
+# Custom remote JS files
+customRemoteJS = []
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
@@ -51,6 +55,8 @@ customJS = []
 # [params.plausibleAnalytics]
 # domain = "example.com"
 # serverURL = "analytics.example.com" # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+# outboundLinksTracking = true
+# fileDownloadsTracking = true
 
 # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
 # [params.goatCounter]
@@ -69,9 +75,22 @@ customJS = []
 # [params.googleTagManager]
 # id = "gid"
 
+# If you want to use Yandex Metrika(https://metrika.yandex.ru) for analytics, add this section
+# [params.yandexMetrika]
+# id = "gid"
+
 # If you want to use Application Insights(https://azure.com/) for analytics, add this section
 # [params.applicationInsights]
 # connectionString = "connectionString"
+
+# If you want to use microanalytics.io for analytics, add this section
+# [params.microAnalytics]
+# id = "ABCDE"
+# dnt = "false" # respect DNT tracker, "true" by default
+
+# If you want to use Pirsch(https://pirsch.io) for analytics, add this section
+# [params.pirsch]
+# code = "ABCDE"
 
 # If you want to implement a Content-Security-Policy, add this section
 # [params.csp]

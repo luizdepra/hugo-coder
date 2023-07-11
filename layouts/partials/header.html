@@ -28,7 +28,7 @@
                 {{ $node.Scratch.Set "separator" false }}
               {{ end }}
               <li class="navigation-item">
-                <a href="{{ .Permalink }}">{{ .Language.LanguageName | emojify }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Language.LanguageName | emojify }}</a>
               </li>
             {{ end }}
           {{ end }}

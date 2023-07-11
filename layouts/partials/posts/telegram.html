@@ -1,0 +1,22 @@
+{{- if isset .Site.Params "telegram" -}}
+  {{- if and (isset .Site.Params.telegram "siteid") (not (eq .Site.Params.telegram.siteID "" )) (eq (.Params.disableComments | default false) false) -}}
+  <div class="comments">
+    <script>
+
+      let s = document.createElement('script');
+      s.src = 'https://comments.app/js/widget.js?3';
+      s.setAttribute('data-comments-app-website', '{{ .Site.Params.telegram.siteID }}');
+      s.setAttribute('data-limit', '{{ .Site.Params.telegram.limit }}');
+      s.setAttribute('data-height', '{{ .Site.Params.telegram.height }}');
+      s.setAttribute('data-color', '{{ .Site.Params.telegram.color }}');
+      s.setAttribute('data-dislikes', '{{ .Site.Params.telegram.dislikes }}');
+      s.setAttribute('data-outlined', '{{ .Site.Params.telegram.outlined }}');
+      s.setAttribute('data-colorful', '{{ .Site.Params.telegram.colorful }}');
+      s.setAttribute('data-dark', '{{ .Site.Params.telegram.dark }}');
+      document.querySelector('div.comments').innerHTML = '';
+      document.querySelector('div.comments').appendChild(s);
+
+    </script>
+    </div>
+  {{- end -}}
+{{- end -}}

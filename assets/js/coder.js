@@ -75,7 +75,21 @@ function setTheme(theme) {
         })
         
     }
+
+    function sendMessage(message) {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: theme,
+        },
+      });
     
+    // Create and send event
+    const event = new Event('themeChanged');
+    document.dispatchEvent(event);
 }
 
 function rememberTheme(theme) {
