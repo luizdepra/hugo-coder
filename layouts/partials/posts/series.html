@@ -2,7 +2,7 @@
 {{ if .Params.series }}
 <section class="see-also">
   {{ range .Params.series }}
-    {{ $name := . | urlize }}
+    {{ $name := . | anchorize }}
     {{ $series := index $.Site.Taxonomies.series $name }}
     {{ if gt (len $series.Pages) 1 }}
       <h3 id="{{ i18n "see_also" | default "See also in" | anchorize }}-{{ anchorize . | safeURL }}">
