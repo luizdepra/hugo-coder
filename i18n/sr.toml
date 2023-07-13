@@ -1,0 +1,64 @@
+[categories]
+one = "категорија"
+other = "категорије"
+
+[tags]
+one = "таг"
+other = "тагови"
+
+[series]
+one = "серија"
+other = "серије"
+
+[authors]
+one = "аутор"
+other = "аутори"
+
+[posts]
+other = "објаве"
+
+[reading_time]
+one = "Један минут читања"
+other = "{{ .Count }} минута читања"
+
+[page_not_found]
+other = "Страница није пронађена"
+
+[page_does_not_exist]
+other = "Извините, ова страница не постоји."
+
+[head_back]
+other = "Можете се вратити на <a href=\"{{ . }}\">почетну страницу</a>."
+
+[licensed_under]
+other = "Лиценсирано под"
+
+[powered_by]
+other = "Покреће"
+
+[see_also]
+other = "такође проверити"
+
+[note]
+other = "напомена"
+
+[tip]
+other = "савет"
+
+[example]
+other = "пример"
+
+[question]
+other = "питање"
+
+[info]
+other = "информација"
+
+[warning]
+other = "упозорење"
+
+[error]
+other = "грешка"
+
+[link_to_heading]
+other = "Линк до заглавља"
