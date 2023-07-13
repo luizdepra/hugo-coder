@@ -318,16 +318,17 @@ This theme includes one content type:
 
 These are the front matter variables used by `hugo-coder` theme.
 
-| Name             | Type   | Required | Description                                        | Default | Example                                                                       |
-| ---------------- | ------ | -------- | -------------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
-| tags             | list   | No       | Add tag(s) to this post.                           |         | `["Hugo", "Go"]`                                                              |
-| categories       | list   | No       | Add categorie(s) to this post.                     |         | `["Hugo", "Go"]`                                                              |
-| series           | list   | No       | Add series to this post (used by OpenGraph).       |         | `["Theme Demo"]`                                                              |
-| author           | list   | No       | Add author to this post.                           |         | `["John Doe"]`                                                                |
-| externalLink     | string | No       | Link to an external post.                          |         | `"https://github.com/luizdepra/hugo-coder/wiki"`                              |
-| featuredImage    | string | No       | Link/path to add an image below post metadata.     |         | `"https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png"` |
-| math             | bool   | No       | If true, MathJax is enabled only for this post.    | `false` | `true` or `false`                                                             |
-| katex            | bool   | No       | If true, katex is enabled only for this post.      | `false` | `true` or `false`                                                             |
-| disableComments  | bool   | No       | If true, comments are disabled.                    | `false` | `true` or `false`                                                             |
+| Name             | Type   | Required | Description                                        | Default | Example                                                                         |
+| ---------------- | ------ | -------- | -------------------------------------------------- | ------- | ------------------------------------------------------------------------------- |
+| tags             | list   | No       | Add tag(s) to this post.                           |         | `["Hugo", "Go"]`                                                                |
+| categories       | list   | No       | Add categorie(s) to this post.                     |         | `["Hugo", "Go"]`                                                                |
+| series           | list   | No       | Add series to this post (used by OpenGraph).       |         | `["Theme Demo"]`                                                                |
+| author           | list   | No       | Add author to this post.                           |         | `["John Doe"]`                                                                  |
+| externalLink     | string | No       | Link to an external post.                          |         | `"https://github.com/luizdepra/hugo-coder/wiki"`                                |
+| featuredImage    | string | No       | Link/path to add an image below post metadata.     |         | `"https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png"`   |
+| math             | bool   | No       | If true, MathJax is enabled only for this post.    | `false` | `true` or `false`                                                               |
+| katex            | bool   | No       | If true, katex is enabled only for this post.      | `false` | `true` or `false`                                                               |
+| disableComments  | bool   | No       | If true, comments are disabled.                    | `false` | `true` or `false`                                                               |
+| canonicalUrl     | string | No       | Link to override <link rel="canonical"/> in <head> | `false` | `"https://my-company.com/blog/my-blog-post-that-I-repost-without-hurtiong-seo"` |
 
 > "tags", "categories", "series" and "authors" are taxonomies defined in the `config.toml` file.
