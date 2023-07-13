@@ -10,14 +10,14 @@ tags = [
     "html",
 ]
 categories = [
-    "theme demo",
-    "syntax",
+    "sintaxe",
+    "demonstração do tema",
 ]
-series = ["Theme Demo"]
+series = ["Demonstração do Tema"]
 +++
 
-If you want to use [Mermaid-JS](https://mermaid-js.github.io/mermaid/#/) on your website.
-Provide `mermaid` as [Shortcode](https://gohugo.io/content-management/shortcodes/#readout) in your markdown file.
+Se quiser usar o [Mermaid-JS](https://mermaid-js.github.io/mermaid/#/) em sua página.
+Use o [shortcode](https://gohugo.io/content-management/shortcodes/#readout) `mermaid` em seus conteúdos Markdown.
 
 {{<mermaid>}}
 flowchart LR
@@ -40,4 +40,4 @@ Alice->>Bob: Hi Bob
 Bob->>Alice: Hi Alice
 {{</mermaid>}}
 
-Find more example on [Mermaid-JS](https://mermaid-js.github.io/mermaid/#/) website.
+Entro mais exemplos na página do [Mermaid-JS](https://mermaid-js.github.io/mermaid/#/).

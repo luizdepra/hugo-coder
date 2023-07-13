@@ -1,16 +1,25 @@
 +++
-author = "Hugo Authors"
+authors = ["Programador Solitário"]
 title = "Mais Conteúdo Rico"
-date = "2019-03-09"
+date = "2023-07-11"
 description = "Uma breve descrição sobre Shortcodes customizados do Hugo Coder"
 tags = [
-    "shortcodes"
+    "hugo",
+    "markdown",
+    "css",
+    "html",
+    "shortcodes",
 ]
+categories = [
+    "sintaxe",
+    "demonstração do tema",
+]
+series = ["Demonstração do Tema"]
 +++
 
 O Hugo Coder proporciona alguns Shortcodes Customizados.
-<!--more-->
----
+
+## <!--more-->
 
 ## Shortcodes Avisos
 
