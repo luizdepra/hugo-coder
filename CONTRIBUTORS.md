@@ -131,5 +131,5 @@
 - [Yiğit Altınay](https://altinay.xyz)
 - [Fei Kong](https://github.com/alpha0422)
 - [Ahmet Enes Bayraktar](https://github.com/aeb-dev)
-- [Kemal Akkoyun](https://github.com/kakkoyun)
 - [Todor Bogosavljević](https://github.com/tbx1b)
+- [Kemal Akkoyun](https://github.com/kakkoyun)
