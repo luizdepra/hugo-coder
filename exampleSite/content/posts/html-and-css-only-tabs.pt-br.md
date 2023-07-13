@@ -1,5 +1,5 @@
 +++
-authors = ["Lone Coder"]
+authors = ["Programador Solitário"]
 title = "HTML and CSS only tabs"
 date = "2023-07-09"
 description = "Sample article showcasing shortcodes for HTML/CSS only tabs"
@@ -11,16 +11,16 @@ tags = [
     "shortcodes",
 ]
 categories = [
-    "theme demo",
-    "syntax",
+    "sintaxe",
+    "demonstração do tema",
 ]
-series = ["Theme Demo"]
+series = ["Demonstração do Tema"]
 aliases = ["migrate-from-jekyl"]
 +++
 
 ## Shortcodes
 
-The following content:
+O seguinte conteúdo:
 
 ```markdown
 {{</* tabgroup */>}}
@@ -34,7 +34,7 @@ Goodbye Everybody!
 {{</* /tabgroup */>}}
 ```
 
-Will generate:
+Irá gerar:
 
 {{< tabgroup >}}
 {{< tab name="Hello" >}}
@@ -46,9 +46,9 @@ Goodbye Everybody!
 {{< /tab >}}
 {{< /tabgroup >}}
 
-## Right alighment
+## Alinhamento à direita
 
-You can also align the tabs to the right:
+Você também pode alinhas as tabs à direita:
 
 ```markdown
 {{</* tabgroup align="right" */>}}
@@ -62,7 +62,7 @@ Goodbye Everybody!
 {{</* /tabgroup */>}}
 ```
 
-Giving you this look:
+Obtendo o seguinte resultado:
 
 {{< tabgroup align="right" >}}
 {{< tab name="Hello" >}}
@@ -74,9 +74,9 @@ Goodbye Everybody!
 {{< /tab >}}
 {{< /tabgroup >}}
 
-## Markdown content
+## Conteúdo Markdown
 
-Any valid markdown can be used inside the tab:
+Qualquer conteúdo Markdown válido pode ser usado dentro das tabs:
 
 ````markdown
 {{</* tabgroup align="right" style="code" */>}}
@@ -104,7 +104,7 @@ console.log("Hello");
 {{</* /tabgroup */>}}
 ````
 
-And you get this lovely content:
+Assim você obterá o seguinte resultado:
 
 {{< tabgroup align="right" style="code" >}}
 {{< tab name="Ruby" >}}
@@ -130,5 +130,4 @@ console.log("Hello");
 {{< /tab >}}
 {{< /tabgroup >}}
 
-In this case `style="code"` makes it look a little nicer for scenarios where
-your content is purely a code block.
+Nesse exemplo, `style="code"` faz com que o resultado seja mais agradável quando conteúdo é puramente blocos de código.
