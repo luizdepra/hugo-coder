@@ -115,7 +115,7 @@
         max-height: 100rem;
       }
 
-      &:focus-visible + .menu-button {
+      &:focus-visible+label {
         outline-style: auto;
       }
     }
