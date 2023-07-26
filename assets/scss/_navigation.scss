@@ -97,11 +97,14 @@
   }
 
   #menu-toggle {
-    position: relative;
-    left: -99999px;
-    opacity: 0;
-
+    display: none;
+    
     @media only screen and (max-width: 768px) {
+      display: initial;
+      position: relative;
+      left: -99999px;
+      opacity: 0;
+
       &:checked+label>i {
         color: $alt-bg-color;
       }
