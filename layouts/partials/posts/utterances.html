@@ -1,12 +1,21 @@
 {{- if isset .Site.Params "utterances" -}}
-  {{- if and (isset .Site.Params.utterances "repo") (not (eq .Site.Params.utterances.repo "" )) (eq (.Params.disableComments | default false) false) -}}
-  <div class="comments">
-    <script>
-  
+{{- if and (isset .Site.Params.utterances "repo") (not (eq .Site.Params.utterances.repo "" )) (eq
+(.Params.disableComments | default false) false) -}}
+<div class="comments">
+  <script>
+
     let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
-  
-    getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;
-    
+    let themeInParams = '{{$.Site.Params.utterances.theme}}';
+
+    if (getTheme == null) {
+      if (themeInParams !== '' && themeInParams !== 'auto') {
+        getTheme = themeInParams;
+      }
+      else {
+        getTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+      }
+    }
+
     let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
     let s = document.createElement('script');
     s.src = 'https://utteranc.es/client.js';
@@ -17,8 +26,8 @@
     s.setAttribute('async', '');
     document.querySelector('div.comments').innerHTML = '';
     document.querySelector('div.comments').appendChild(s);
-  
-    </script>
-    </div>
-  {{- end -}}
+
+  </script>
+</div>
+{{- end -}}
 {{- end -}}
