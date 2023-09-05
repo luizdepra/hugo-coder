@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Nonacademicons';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../fonts/nonacademicons.eot');
+  src: url('../fonts/nonacademicons.eot') format('embedded-opentype'),
+    url('../fonts/nonacademicons.ttf') format('truetype'),
+    url('../fonts/nonacademicons.woff') format('woff'),
+    url('../fonts/nonacademicons.svg') format('svg');
+}
+
+.nai {
+  font-family: 'Nonacademicons';
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.nai-clarivate-square:before {
+  content: "\e755";
+}
+
+.nai-scopus-square:before {
+  content: "\e756";
+}
+
+.nai-orcid-square:before {
+  content: "\e757";
+}
+
+.nai-nextgen-square:before {
+  content: "\e758";
+}
+
+.nai-prtr-square:before {
+  content: "\e759";
+}
+
+.nai-clarivate:before {
+  content: "\e760";
+}
+
+.nai-scopus:before {
+  content: "\e761";
+}
+
+.nai-orcid:before {
+  content: "\e762";
+}
+
+.nai-nextgen:before {
+  content: "\e763";
+}
+
+.nai-prtr:before {
+  content: "\e764";
+}
+
+.nai-aei:before {
+  content: "\e765";
+}
+
+.nai-aei-square:before {
+  content: "\e766";
+}
+
+.nai-uc3m-alt:before {
+  content: "\e767";
+}
+
+.nai-uc3m-alt-square:before {
+  content: "\e768";
+}
+
+.nai-uc3m:before {
+  content: "\e769";
+}
+
+.nai-uc3m-square:before {
+  content: "\e770";
+}
+
+.nai-lichess:before {
+  content: "\e771";
+}
+
+.nai-lichess-square:before {
+  content: "\e772";
+}
+
+/* duplication of fontawesome style classes using 'nai' instead of 'fa' */
+.nai-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em;
+}
+
+.nai-xs {
+  font-size: .75em;
+}
+
+.nai-sm {
+  font-size: .875em;
+}
+
+.nai-1x {
+  font-size: 1em;
+}
+
+.nai-2x {
+  font-size: 2em;
+}
+
+.nai-3x {
+  font-size: 3em;
+}
+
+.nai-4x {
+  font-size: 4em;
+}
+
+.nai-5x {
+  font-size: 5em;
+}
+
+.nai-6x {
+  font-size: 6em;
+}
+
+.nai-7x {
+  font-size: 7em;
+}
+
+.nai-8x {
+  font-size: 8em;
+}
+
+.nai-9x {
+  font-size: 9em;
+}
+
+.nai-10x {
+  font-size: 10em;
+}
+
+.nai-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.nai-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+
+.nai-ul>li {
+  position: relative;
+}
+
+.nai-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.nai-border {
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+  padding: .2em .25em .15em;
+}
+
+.nai-pull-left {
+  float: left;
+}
+
+.nai-pull-right {
+  float: right;
+}
+
+.nai.nai-pull-left {
+  margin-right: .3em;
+}
+
+.nai.nai-pull-right {
+  margin-right: .3em;
+}
+
+.nai-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.nai-stack-1x,
+.nai-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.nai-stack-1x {
+  line-height: inherit;
+}
+
+.nai-stack-2x {
+  font-size: 2em;
+}
+
+.nai-inverse {
+  color: #fff;
+}
