@@ -1,5 +1,8 @@
 <footer class="footer">
   <section class="container">
+        {{ with .Site.Params.footercontent | safeHTML }}
+        <p>{{ . }}</p>
+      {{ end }}
     ©
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
       {{ .Site.Params.since }} -
