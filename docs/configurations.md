@@ -27,6 +27,7 @@ This theme supports:
   * [Commento](https://commento.io/)
   * [Utterances](https://utteranc.es/)
   * [Giscus](https://giscus.app/)
+  * [Telegram](https://comments.app/)
 
 ### Commenting Systems
 
@@ -72,18 +73,32 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
   loading = ""
 ```
 
+#### Telegram
+
+```toml
+[params.telegram] # https://comments.app/
+  siteID = ""
+  limit = ""
+  height = ""
+  color = ""
+  dislikes = ""
+  outlined = ""
+  colorful = ""
+  dark = ""
+```
+
 ## Syntax Highlight
 
-The theme uses the Goldmark syntax highlight system. To configure it add to your `config.toml`:
+The theme uses the Goldmark syntax highlight system. GitHub light and dark are set as the default styles. To choose a different style, make sure `noClasses` is not set to false (default is true) and add to your `config.toml`:
 
 ```
 [markup.highlight]
-style = "github-dark"
+style = "monokai"
 ```
 
 All `style` are available [here](https://xyproto.github.io/splash/docs/all.html).
 
-It is also possible to use custom styles with generated CSS files. See [here](https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css).
+Alternatively, it is possible to use custom styles with generated CSS files. See [here](https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css).
 
 ## Theme Parameters
 
@@ -96,7 +111,8 @@ These are all the parameters used by `hugo-coder` theme.
 | description                   | string | Yes      | Description of the site.                         |                                  | `"John Doe's personal website"`                  |
 | keywords                      | string | Yes      | Site keywords.                                   |                                  | `"blog,developer,personal"`                      |
 | avatarURL                     | string | No       | Photo of the author.                             |                                  | `"images/avatar.jpg"`                            |
-| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                         |
+| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                       |
+| faviconSVG                    | string | No       | Custom path to a SCG favicon.                    | `"/img/favicon.svg"`             | `"/img/favicon.svg"`                       |
 | favicon_32                    | string | No       | Custom path to a 32x32 favicon.                  | `"/img/favicon-32x32.png"`       | `"/img/favicon-32x32.png"`                       |
 | favicon_16                    | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                       |
 | touchIcon                     | string | No       | Custom path to a touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
@@ -241,6 +257,7 @@ style = "github-dark"
   avatarurl = "images/avatar.jpg"
   #gravatar = "john.doe@example.com"
 
+  faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
@@ -301,16 +318,17 @@ This theme includes one content type:
 
 These are the front matter variables used by `hugo-coder` theme.
 
-| Name             | Type   | Required | Description                                        | Default | Example                                                                       |
-| ---------------- | ------ | -------- | -------------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
-| tags             | list   | No       | Add tag(s) to this post.                           |         | `["Hugo", "Go"]`                                                              |
-| categories       | list   | No       | Add categorie(s) to this post.                     |         | `["Hugo", "Go"]`                                                              |
-| series           | list   | No       | Add series to this post (used by OpenGraph).       |         | `["Theme Demo"]`                                                              |
-| author           | list   | No       | Add author to this post.                           |         | `["John Doe"]`                                                                |
-| externalLink     | string | No       | Link to an external post.                          |         | `"https://github.com/luizdepra/hugo-coder/wiki"`                              |
-| featuredImage    | string | No       | Link/path to add an image below post metadata.     |         | `"https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png"` |
-| math             | bool   | No       | If true, MathJax is enabled only for this post.    | `false` | `true` or `false`                                                             |
-| katex            | bool   | No       | If true, katex is enabled only for this post.      | `false` | `true` or `false`                                                             |
-| disableComments  | bool   | No       | If true, comments are disabled.                    | `false` | `true` or `false`                                                             |
+| Name             | Type   | Required | Description                                        | Default | Example                                                                         |
+| ---------------- | ------ | -------- | -------------------------------------------------- | ------- | ------------------------------------------------------------------------------- |
+| tags             | list   | No       | Add tag(s) to this post.                           |         | `["Hugo", "Go"]`                                                                |
+| categories       | list   | No       | Add categorie(s) to this post.                     |         | `["Hugo", "Go"]`                                                                |
+| series           | list   | No       | Add series to this post (used by OpenGraph).       |         | `["Theme Demo"]`                                                                |
+| author           | list   | No       | Add author to this post.                           |         | `["John Doe"]`                                                                  |
+| externalLink     | string | No       | Link to an external post.                          |         | `"https://github.com/luizdepra/hugo-coder/wiki"`                                |
+| featuredImage    | string | No       | Link/path to add an image below post metadata.     |         | `"https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png"`   |
+| math             | bool   | No       | If true, MathJax is enabled only for this post.    | `false` | `true` or `false`                                                               |
+| katex            | bool   | No       | If true, katex is enabled only for this post.      | `false` | `true` or `false`                                                               |
+| disableComments  | bool   | No       | If true, comments are disabled.                    | `false` | `true` or `false`                                                               |
+| canonicalUrl     | string | No       | Link to override <link rel="canonical"/> in <head> | `false` | `"https://my-company.com/blog/my-blog-post-that-I-repost-without-hurtiong-seo"` |
 
 > "tags", "categories", "series" and "authors" are taxonomies defined in the `config.toml` file.

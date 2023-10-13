@@ -1,16 +1,25 @@
 +++
-author = "Hugo Authors"
+authors = ["Lone Coder"]
 title = "More Rich Content"
-date = "2019-03-09"
+date = "2023-07-11"
 description = "A brief description about Hugo Coder's Custom Shortcodes"
 tags = [
-    "shortcodes"
+    "hugo",
+    "markdown",
+    "css",
+    "html",
+    "shortcodes",
 ]
+categories = [
+    "theme demo",
+    "syntax",
+]
+series = ["Theme Demo"]
 +++
 
 Hugo Coder provides some Custom Shortcodes.
-<!--more-->
----
+
+## <!--more-->
 
 ## Shortcodes Avisos
 

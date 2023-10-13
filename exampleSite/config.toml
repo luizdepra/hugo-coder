@@ -9,7 +9,7 @@ enableEmoji = true
 # disqusShortname = "yourdiscussshortname"
 
 [markup.highlight]
-style = "github-dark"
+noClasses = false
 
 [params]
 author = "John Doe"
