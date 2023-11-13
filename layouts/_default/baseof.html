@@ -116,6 +116,10 @@
   {{- partial "analytics/pirsch" . -}}
   {{ end }}
 
+  {{ if and .Site.Params.clicky .Site.Params.clicky.id }}
+  {{- partial "analytics/clicky" . -}}
+  {{ end }}
+
   {{- partial "body/extensions" . -}}
 </body>
 
