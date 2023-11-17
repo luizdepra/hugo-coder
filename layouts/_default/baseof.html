@@ -41,6 +41,9 @@
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
 
+  {{ $script := resources.Get "js/htmx.min.js" | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+
   {{ range .Site.Params.customJS }}
   {{ if $.Site.IsServer }}
   {{ $script := resources.Get . }}
