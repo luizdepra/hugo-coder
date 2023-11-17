@@ -28,6 +28,7 @@ iframe[src*=disqus] {
 }
 
 a {
+  cursor: pointer;
   font-weight: 500;
   color: $link-color;
   text-decoration: none;

@@ -1,6 +1,6 @@
 <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
+    <a class="navigation-title" hx-get="{{ .Site.BaseURL | relLangURL }}" hx-swap="outerHTML" hx-target="#content" hx-select="#content" hx-push-url="true">
       {{ .Site.Title }}
     </a>
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
@@ -12,7 +12,7 @@
         {{ with .Site.Menus.main}}
           {{ range sort . }}
             <li class="navigation-item">
-              <a class="navigation-link" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
+              <a class="navigation-link" hx-get="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}" hx-swap="outerHTML" hx-target="#content" hx-select="#content" hx-push-url="true">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}

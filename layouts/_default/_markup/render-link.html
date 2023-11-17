@@ -1,1 +1,12 @@
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }} {{ if findRE "^(https?:)?//" (lower .Destination) }} class="external-link" target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+<a 
+  {{ with .Title}} title="{{ . }}"{{ end }}
+  {{ if findRE "^(https?:)?//" (lower .Destination) }}
+    href="{{ .Destination | safeURL }}" class="external-link" target="_blank" rel="noopener"
+  {{ else }}
+    hx-get="{{ .Destination | safeURL }}"
+    hx-swap="outerHTML"
+    hx-target="#content"
+    hx-select="#content"
+    hx-push-url="true"
+  {{ end }}
+>{{ .Text | safeHTML }}</a>
