@@ -3,7 +3,7 @@ title = "johndoe"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 20
+paginate = 6
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
@@ -95,7 +95,7 @@ customRemoteJS = []
 # If you want to use Umami(https://umami.is) for analytics, add this section
 # [params.umami]
 # siteID = "ABCDE"
-# scriptURL = "analytics.REGION.umami.is/SCRIPTNAME.js" 
+# scriptURL = "analytics.REGION.umami.is/SCRIPTNAME.js"
 
 # If you want to implement a Content-Security-Policy, add this section
 # [params.csp]
