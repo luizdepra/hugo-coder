@@ -1,4 +1,7 @@
 .pagination {
+  display: flex;
+  justify-content: center;
+
   margin-top: 6rem;
   text-align: center;
   font-family: $font-family;
