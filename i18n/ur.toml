@@ -1,0 +1,64 @@
+[categories]
+one = "قسم"
+other = "اقسام"
+
+[tags]
+one = "ٹیگ"
+other = "ٹیگز"
+
+[series]
+one = "سلسلہ"
+other = "سلسلہ"
+
+[authors]
+one = "مصنف"
+other = "مصنفین"
+
+[posts]
+other = "اِشاعَتی"
+
+[reading_time]
+one = "اسے پڑھنے میں ایک منٹ لگے گا"
+other = "اسے پڑھنے میں {{ Count }} منٹ لگتا ہے۔"
+
+[page_not_found]
+other = "صفحہ نہیں ملا"
+
+[page_does_not_exist]
+other = "معذرت، یہ صفحہ موجود نہیں ہے۔"
+
+[head_back]
+other = "آپ <a href=\"{{ . }}\">ہوم پیج</a> پر واپس جا سکتے ہیں۔"
+
+[licensed_under]
+other = "Licensed under"
+
+[powered_by]
+other = "شکریہ"
+
+[see_also]
+other = "بھی دیکھو"
+
+[note]
+other = "نوٹ"
+
+[tip]
+other = "ٹپ"
+
+[example]
+other = "مثال"
+
+[question]
+other = "سوال"
+
+[info]
+other = "معلومات"
+
+[warning]
+other = "انتباہ"
+
+[error]
+other = "غلطی"
+
+[link_to_heading]
+other = "Link to heading"

@@ -32,6 +32,7 @@ This theme supports the following languages:
 - Turkish
 - Simplified Chinese
 - Taiwan Chinese
+- Urdu
 
 ## Configure languages
 
