@@ -111,8 +111,8 @@ These are all the parameters used by `hugo-coder` theme.
 | description                   | string | Yes      | Description of the site.                         |                                  | `"John Doe's personal website"`                  |
 | keywords                      | string | Yes      | Site keywords.                                   |                                  | `"blog,developer,personal"`                      |
 | avatarURL                     | string | No       | Photo of the author.                             |                                  | `"images/avatar.jpg"`                            |
-| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                       |
-| faviconSVG                    | string | No       | Custom path to a SCG favicon.                    | `"/img/favicon.svg"`             | `"/img/favicon.svg"`                       |
+| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                         |
+| faviconSVG                    | string | No       | Custom path to a SCG favicon.                    | `"/img/favicon.svg"`             | `"/img/favicon.svg"`                             |
 | favicon_32                    | string | No       | Custom path to a 32x32 favicon.                  | `"/img/favicon-32x32.png"`       | `"/img/favicon-32x32.png"`                       |
 | favicon_16                    | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                       |
 | touchIcon                     | string | No       | Custom path to a touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
@@ -127,8 +127,9 @@ These are all the parameters used by `hugo-coder` theme.
 | customCSS                     | list   | No       | Add extra CSS files to the website.              | []                               | `["css/extra-style.css"]`                        |
 | customSCSS                    | list   | No       | Add extra SCSS files to the website.             | []                               | `["scss/extra-style.scss"]`                      |
 | customJS                      | list   | No       | Add extra JS files to the website.               | []                               | `["js/extra-script.js"]`                         |
-| customRemoteJS                | list   | No       | Add extra remote JS files to the website.        | []                               | `["https://www.example.com/file.js"]` |
+| customRemoteJS                | list   | No       | Add extra remote JS files to the website.        | []                               | `["https://www.example.com/file.js"]`            |
 | enableTwemoji                 | bool   | No       | Adds support for Twemoji                         | `false`                          | `true` or `false`                                |
+| disableDefaultJsScripts       | bool   | No       | If true, disables default js scripts (coder.js)  | `false`                          | `true` or `false`                                |
 
 ### Social Icons Configuration
 
