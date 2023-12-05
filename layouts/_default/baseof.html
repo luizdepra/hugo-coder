@@ -36,13 +36,13 @@
   {{ if .Site.Params.disableDefaultJsScripts }}
   {{ if not .Site.Params.hideColorSchemeToggle }}
   {{ errorf "Invalid configuration. Default JS scripts are disabled, but 'hideColorSchemeToggle' is false." }}
+  {{end}}
   {{ else if .Site.IsServer }}
   {{ $script := resources.Get "js/coder.js" }}
   <script src="{{ $script.RelPermalink }}"></script>
   {{ else }}
   {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-  {{ end }}
   {{ end }}
 
   {{ range .Site.Params.customJS }}
