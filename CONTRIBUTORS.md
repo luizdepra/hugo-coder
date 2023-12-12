@@ -138,4 +138,4 @@
 - [iron3oxide](https://github.com/iron3oxide)
 - [Jens Rantil](https://github.com/JensRantil)
 - [Muqeet Malik](https://github.com/mmalik23)
-  
+- [Antoine "Toinux" Wam](https://github.com/itzwam)
