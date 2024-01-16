@@ -117,6 +117,7 @@ These are all the parameters used by `hugo-coder` theme.
 | favicon_16                    | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                       |
 | touchIcon                     | string | No       | Custom path to an apple-touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
 | mask_icon                     | string | No       | Custom path to a mask-icon                      | `"/images/safari-pinned-tab.svg"` | `"/images/safari-pinned-tab.svg"`                 |
+| mask_icon_color                     | string | No       | Custom color for mask-icon color                      | `"#5bbad5"` | `"#5bbad5"`                 |
 | since                         | string | No       | Date shown in the footer before now year         |                                  | `"2020"`                                         |
 | maxSeeAlsoItems               | number | No       | Series see also post count                       | `5`                              | `10`                                             |
 | commit                        | string | No       | Show the last git commit in the footer           |                                  | `"https://github.com/luizdepra/hugo-coder/tree/"`|
