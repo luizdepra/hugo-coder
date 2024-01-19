@@ -22,7 +22,8 @@
 
   article {
     a:where(.external-link)::after {
-      @include fa-icon;
+      @extend %fa-icon;
+      @extend .fa-solid;
       content: fa-content($fa-var-external-link);
       padding-left: 0.5em;
       font-size: 0.75em;
