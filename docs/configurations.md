@@ -204,7 +204,7 @@ CSP stands for [Content Security Policy](https://developers.google.com/web/funda
 | objectsrc      | string list | Yes      |             | `["'self'"]`                    |
 | stylesrc       | string list | Yes      |             | `["'self'"]`                    |
 | scriptsrc      | string list | Yes      |             | `["'self'"]`                    |
-| prefetchsrc    | string list | Yes      |             | `["'self'"]`                    |
+| connectsrc     | string list | Yes      |             | `["'self'"]`                    |
 
 An example:
 
@@ -231,7 +231,8 @@ An example:
     "'unsafe-inline'",
     "https://www.google-analytics.com"
   ]
-  prefetchsrc = ["'self'"]
+  # connect-src directive – defines valid targets for XMLHttpRequest (AJAX), WebSockets or EventSource
+  connectsrc = ["'self'"]
 ```
 
 ## Complete Example
