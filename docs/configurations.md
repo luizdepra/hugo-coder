@@ -140,7 +140,7 @@ Social Icons are optional. To use them you will need to set at least all the fol
 | Configuration  | Type   | Required | Description                              | Example                         |
 | -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
 | name           | string | Yes      | Icon name.                               | `"Github"`                      |
-| icon           | string | Yes      | ForkAwesome icon classes.                | `"fa fa-github"`                |
+| icon           | string | Yes      | FontAwesome icon classes.                | `"fa fa-github"`                |
 | weight         | int    | Yes      | Icon order.                              | `1`                             |
 | url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"` |
 
