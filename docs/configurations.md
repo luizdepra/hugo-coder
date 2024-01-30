@@ -173,6 +173,7 @@ Menu Items are optional. To use them you will need to set all the following requ
 | name           | string | Yes      | Menu Item name.                          | `"Posts"`                       |
 | weight         | int    | Yes      | Menu Item order.                         | `1`                             |
 | url            | string | Yes      | URL to redirect.                         | `"/posts/"`                     |
+| class          | string | No       | Menu Item extra class attribute.         | `"menu-item"`                   |
 | target         | string | No       | URL target attribute.                    | `"_blank"`                      |
 | rel            | string | No       | URL rel attribute.                       | `"alternate"`                   |
 | type           | string | No       | URL type attribute.                      | `"application/rss+xml"`         |
