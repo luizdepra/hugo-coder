@@ -1,7 +1,7 @@
 {{ with .Params.comments }}
   <div class="article-content">
     <h2>Comments</h2>
-    <p>You can use your Mastodon account to reply to this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">post</a>. Learn how this is implemented <a class="link" href="/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
+    <p>You can use your Mastodon account to reply to this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">post</a>. Learn how this is implemented <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
     <p><button id="replyButton" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">Reply</button></p>
     <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
     <dialog id="toot-reply" class="mastodon" data-component="dialog">
