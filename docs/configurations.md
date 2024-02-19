@@ -159,7 +159,7 @@ An example:
   url = "https://gitlab.com/johndoe/"
 [[params.social]]
   name = "Twitter"
-  icon = "fa-brands fa-twitter fa-2x"
+  icon = "fa-brands fa-x-twitter fa-2x"
   weight = 3
   url = "https://twitter.com/johndoe/"
 ```
@@ -296,7 +296,7 @@ style = "github-dark"
   url = "https://gitlab.com/johndoe/"
 [[params.social]]
   name = "Twitter"
-  icon = "fa-brands fa-twitter fa-2x"
+  icon = "fa-brands fa-x-twitter fa-2x"
   weight = 3
   url = "https://twitter.com/johndoe/"
 
