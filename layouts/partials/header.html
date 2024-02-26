@@ -1,7 +1,7 @@
 <nav class="navigation">
   <section class="container">
     {{ with .Site }}
-    <a class="navigation-title" href="{{ index (apply (slice .Home.RelPermalink) (.Params.urlFunc | default "relLangURL") ".") 0 }}">
+    <a class="navigation-title" href="{{ absLangURL "" }}">
       {{ .Title }}
     </a>
     {{ end }}
