@@ -1,8 +1,10 @@
 <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
-      {{ .Site.Title }}
+    {{ with .Site }}
+    <a class="navigation-title" href="{{ absLangURL "" }}">
+      {{ .Title }}
     </a>
+    {{ end }}
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
