@@ -6,7 +6,7 @@ To start using `hugo-coder`:
 2. Configure your `config.toml`. You can use [this minimal configuration](https://github.com/luizdepra/hugo-coder/blob/main/docs/configurations.md#complete-example) as a base. The [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) from the `exampleSite` is also a good reference.
 3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
 
-If you just want to test this theme, go to [this page](https://themes.gohugo.io/theme/hugo-coder/).
+If you just want to test this theme, go to [this page](https://themes.gohugo.io/themes/hugo-coder/).
 
 You can also clone or download it, then run these commands:
 
