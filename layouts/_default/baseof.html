@@ -108,6 +108,10 @@
   {{- partial "analytics/microanalyticsio" . -}}
   {{ end }}
 
+  {{ if .Site.Params.vercelAnalytics}}
+  {{- partial "analytics/vercel" . -}}
+  {{ end }}
+
   {{ if and .Site.Params.yandexMetrika .Site.Params.yandexMetrika.id }}
   {{- partial "analytics/yandex-metrika" . -}}
   {{ end }}
