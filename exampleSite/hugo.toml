@@ -5,8 +5,11 @@ languageCode = "en"
 defaultContentLanguage = "en"
 paginate = 6
 enableEmoji = true
+
+[services]
+[services.disqus]
 # Enable Disqus comments
-# disqusShortname = "yourdiscussshortname"
+# shortname = "yourdiscussshortname"
 
 [markup.highlight]
 noClasses = false
