@@ -23,7 +23,7 @@ dateFormat = "January 2, 2006"
 since = 2019
 # Git Commit in Footer, uncomment the line below to enable it
 commit = "https://github.com/luizdepra/hugo-coder/tree/"
-# Right To Left, shift content direction for languagues such as Arabic
+# Right To Left, shift content direction for languages such as Arabic
 rtl = false
 # Specify light/dark colorscheme
 # Supported values:

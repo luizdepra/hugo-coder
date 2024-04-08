@@ -125,7 +125,7 @@ These are all the parameters used by `hugo-coder` theme.
 | math                          | bool   | No       | Enable MathJax Module and add JS into your site. | `false`                          | `true` or `false`                                |
 | katex                         | bool   | No       | Enable katex for all content types.              | `false`                          | `true` or `false`                                |
 | colorScheme                   | string | No       | Specify light/dark colorscheme                   | `"auto"`                         | `"auto"` or `"light"` or `"dark"`                |
-| hideColorSchemeToggle         | bool   | No       | If true, hides the color sheme toggle            | `false`                          | `true` or `false`                                |
+| hideColorSchemeToggle         | bool   | No       | If true, hides the color scheme toggle            | `false`                          | `true` or `false`                                |
 | customCSS                     | list   | No       | Add extra CSS files to the website.              | []                               | `["css/extra-style.css"]`                        |
 | customSCSS                    | list   | No       | Add extra SCSS files to the website.             | []                               | `["scss/extra-style.scss"]`                      |
 | customJS                      | list   | No       | Add extra JS files to the website.               | []                               | `["js/extra-script.js"]`                         |
