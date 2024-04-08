@@ -306,9 +306,9 @@ template {
   display: none; }
 
 /*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
+ * Copyright 2024 Fonticons, Inc.
  */
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
@@ -613,7 +613,7 @@ template {
   transform: scale(-1, -1); }
 
 .fa-rotate-by {
-  transform: rotate(var(--fa-rotate-angle, none)); }
+  transform: rotate(var(--fa-rotate-angle, 0)); }
 
 .fa-stack {
   display: inline-block;
@@ -2916,6 +2916,9 @@ readers do not read off random characters that represent icons */
 .fa-italic::before {
   content: "\f033"; }
 
+.fa-table-cells-column-lock::before {
+  content: "\e678"; }
+
 .fa-church::before {
   content: "\f51d"; }
 
@@ -5088,6 +5091,9 @@ readers do not read off random characters that represent icons */
 .fa-font::before {
   content: "\f031"; }
 
+.fa-table-cells-row-lock::before {
+  content: "\e67a"; }
+
 .fa-rupiah-sign::before {
   content: "\e23d"; }
 
@@ -6517,9 +6523,9 @@ readers do not read off random characters that represent icons */
   border-width: 0; }
 
 /*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
+ * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';
@@ -6537,9 +6543,9 @@ readers do not read off random characters that represent icons */
   font-weight: 400; }
 
 /*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
+ * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';
@@ -6558,9 +6564,9 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 /*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
+ * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
   --fa-style-family-brands: 'Font Awesome 6 Brands';
@@ -6675,6 +6681,9 @@ readers do not read off random characters that represent icons */
 
 .fa-drupal:before {
   content: "\f1a9"; }
+
+.fa-jxl:before {
+  content: "\e67b"; }
 
 .fa-hire-a-helper:before {
   content: "\f3b0"; }
@@ -6977,6 +6986,9 @@ readers do not read off random characters that represent icons */
   content: "\e40f"; }
 
 .fa-kickstarter:before {
+  content: "\f3bb"; }
+
+.fa-square-kickstarter:before {
   content: "\f3bb"; }
 
 .fa-grav:before {
@@ -7411,6 +7423,9 @@ readers do not read off random characters that represent icons */
 .fa-google-plus-square:before {
   content: "\f0d4"; }
 
+.fa-web-awesome:before {
+  content: "\e682"; }
+
 .fa-mandalorian:before {
   content: "\f50f"; }
 
@@ -7573,6 +7588,9 @@ readers do not read off random characters that represent icons */
 .fa-xbox:before {
   content: "\f412"; }
 
+.fa-square-web-awesome-stroke:before {
+  content: "\e684"; }
+
 .fa-searchengin:before {
   content: "\f3eb"; }
 
@@ -7681,6 +7699,9 @@ readers do not read off random characters that represent icons */
 .fa-whatsapp:before {
   content: "\f232"; }
 
+.fa-square-upwork:before {
+  content: "\e67c"; }
+
 .fa-slideshare:before {
   content: "\f1e7"; }
 
@@ -7759,6 +7780,9 @@ readers do not read off random characters that represent icons */
 .fa-sellsy:before {
   content: "\f213"; }
 
+.fa-square-web-awesome:before {
+  content: "\e683"; }
+
 .fa-sass:before {
   content: "\f41e"; }
 
@@ -7794,6 +7818,9 @@ readers do not read off random characters that represent icons */
 
 .fa-waze:before {
   content: "\f83f"; }
+
+.fa-bluesky:before {
+  content: "\e671"; }
 
 .fa-cc-jcb:before {
   content: "\f24b"; }
@@ -8132,9 +8159,9 @@ readers do not read off random characters that represent icons */
   content: "\f3f6"; }
 
 /*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
+ * Copyright 2024 Fonticons, Inc.
  */
 .fa.fa-glass:before {
   content: "\f000"; }
@@ -10988,6 +11015,59 @@ figure {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+
+.mastodon-wrapper {
+  display: flex;
+  gap: 3rem;
+  flex-direction: row; }
+
+.comment-level {
+  max-width: 3rem;
+  min-width: 3rem; }
+
+.reply-original {
+  display: none; }
+
+.mastodon-comment {
+  background-color: var(--body-background);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex-grow: 2; }
+  .mastodon-comment .comment {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: true; }
+  .mastodon-comment .comment-avatar img {
+    width: 6rem; }
+  .mastodon-comment .content {
+    flex-grow: 2; }
+  .mastodon-comment .comment-author {
+    display: flex;
+    flex-direction: column; }
+    .mastodon-comment .comment-author-name {
+      font-weight: bold; }
+      .mastodon-comment .comment-author-name a {
+        display: flex;
+        align-items: center; }
+    .mastodon-comment .comment-author-date {
+      margin-left: auto; }
+  .mastodon-comment .disabled {
+    color: var(--accent-color); }
+
+.mastodon-comment-content p:first-child {
+  margin-top: 0; }
+
+.mastodon {
+  --dlg-bg: #282c37;
+  --dlg-w: 600px;
+  --dlg-color: #9baec8;
+  --dlg-button-p: 0.75em 2em;
+  --dlg-outline-c: #00D9F5; }
 
 /* Background */
 .bg {
