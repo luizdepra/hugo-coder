@@ -1,5 +1,5 @@
 {{- if isset .Site.Params "cusdis" -}}
-    {{- if and (isset .Site.Params.cusdis "data_app_id") (not (eq .Site.Params.cusdis.repo "" )) (eq (.Params.disableComments | default false) false) -}}
+    {{- if and (isset .Site.Params.cusdis "data_app_id") (eq (.Params.disableComments | default false) false) -}}
         <div class="comments">
             <h4>Comments:</h4>
             <div id="cusdis_thread"
