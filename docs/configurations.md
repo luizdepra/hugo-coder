@@ -258,6 +258,8 @@ defaultcontentlanguage = "en"
 
 paginate = 20
 
+[services]
+[services.disqus]
 disqusShortname = "yourdiscussshortname"
 
 [markup.highlight]
