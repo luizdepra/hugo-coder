@@ -7,6 +7,7 @@
     * [Commento](#commento)
     * [Utterances](#utterances)
     * [Giscus](#giscus)
+    * [Cusdis](#cusdis)
 * [Syntax Highlight](#syntax-highlight)
 * [Theme Parameters](#theme-parameters)
   * [Social Icons Configuration](#social-icons-configuration)
@@ -27,6 +28,7 @@ This theme supports:
   * [Commento](https://commento.io/)
   * [Utterances](https://utteranc.es/)
   * [Giscus](https://giscus.app/)
+  * [Cusdis](https://cusdis.com/)
   * [Telegram](https://comments.app/)
 
 ### Commenting Systems
@@ -85,6 +87,13 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
   outlined = ""
   colorful = ""
   dark = ""
+```
+
+#### Cusdis
+
+```toml
+[params.cusdis] # https://cusdis.com
+  data_app_id = ""
 ```
 
 ## Syntax Highlight
