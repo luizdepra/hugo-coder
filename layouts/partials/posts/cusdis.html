@@ -1,0 +1,16 @@
+{{- if isset .Site.Params "cusdis" -}}
+    {{- if and (isset .Site.Params.cusdis "data_app_id") (eq (.Params.disableComments | default false) false) -}}
+        <div class="comments">
+            <h4>Comments:</h4>
+            <div id="cusdis_thread"
+                 data-host="https://cusdis.com"
+                 data-app-id="{{ .Site.Params.cusdis.data_app_id }}"
+                 data-page-id="{{ .File.UniqueID }}"
+                 data-page-url="{{ .Permalink }}"
+                 data-page-title="{{ .Title }}">
+            </div>
+            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+        </div>
+    {{- end -}}
+{{- end -}}
+
