@@ -3,5 +3,5 @@
 ```toml
 [params.fathomAnalytics]
   siteID = "ABCDE"
-  serverURL = "cdn.usefathom.com" # (optionnal) Replace if you use a custom domain
+  serverURL = "cdn.usefathom.com" # (optional) Replace if you use a custom domain
 ```

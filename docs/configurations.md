@@ -134,7 +134,7 @@ These are all the parameters used by `hugo-coder` theme.
 | math                          | bool   | No       | Enable MathJax Module and add JS into your site. | `false`                          | `true` or `false`                                |
 | katex                         | bool   | No       | Enable katex for all content types.              | `false`                          | `true` or `false`                                |
 | colorScheme                   | string | No       | Specify light/dark colorscheme                   | `"auto"`                         | `"auto"` or `"light"` or `"dark"`                |
-| hideColorSchemeToggle         | bool   | No       | If true, hides the color sheme toggle            | `false`                          | `true` or `false`                                |
+| hideColorSchemeToggle         | bool   | No       | If true, hides the color scheme toggle            | `false`                          | `true` or `false`                                |
 | customCSS                     | list   | No       | Add extra CSS files to the website.              | []                               | `["css/extra-style.css"]`                        |
 | customSCSS                    | list   | No       | Add extra SCSS files to the website.             | []                               | `["scss/extra-style.scss"]`                      |
 | customJS                      | list   | No       | Add extra JS files to the website.               | []                               | `["js/extra-script.js"]`                         |
@@ -149,7 +149,7 @@ Social Icons are optional. To use them you will need to set at least all the fol
 | Configuration  | Type   | Required | Description                              | Example                         |
 | -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
 | name           | string | Yes      | Icon name.                               | `"Github"`                      |
-| icon           | string | Yes      | ForkAwesome icon classes.                | `"fa fa-github"`                |
+| icon           | string | Yes      | FontAwesome icon classes.                | `"fa-brands fa-github"`         |
 | weight         | int    | Yes      | Icon order.                              | `1`                             |
 | url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"` |
 
@@ -158,17 +158,17 @@ An example:
 ```toml
 [[params.social]]
   name = "Github"
-  icon = "fa fa-github fa-2x"
+  icon = "fa-brands fa-github fa-2x"
   weight = 1
   url = "https://github.com/johndoe/"
 [[params.social]]
   name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  icon = "fa-brands fa-gitlab fa-2x"
   weight = 2
   url = "https://gitlab.com/johndoe/"
 [[params.social]]
   name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  icon = "fa-brands fa-x-twitter fa-2x"
   weight = 3
   url = "https://twitter.com/johndoe/"
 ```
@@ -182,6 +182,7 @@ Menu Items are optional. To use them you will need to set all the following requ
 | name           | string | Yes      | Menu Item name.                          | `"Posts"`                       |
 | weight         | int    | Yes      | Menu Item order.                         | `1`                             |
 | url            | string | Yes      | URL to redirect.                         | `"/posts/"`                     |
+| class          | string | No       | Menu Item extra class attribute.         | `"menu-item"`                   |
 | target         | string | No       | URL target attribute.                    | `"_blank"`                      |
 | rel            | string | No       | URL rel attribute.                       | `"alternate"`                   |
 | type           | string | No       | URL type attribute.                      | `"application/rss+xml"`         |
@@ -213,7 +214,7 @@ CSP stands for [Content Security Policy](https://developers.google.com/web/funda
 | objectsrc      | string list | Yes      |             | `["'self'"]`                    |
 | stylesrc       | string list | Yes      |             | `["'self'"]`                    |
 | scriptsrc      | string list | Yes      |             | `["'self'"]`                    |
-| prefetchsrc    | string list | Yes      |             | `["'self'"]`                    |
+| connectsrc     | string list | Yes      |             | `["'self'"]`                    |
 
 An example:
 
@@ -240,7 +241,8 @@ An example:
     "'unsafe-inline'",
     "https://www.google-analytics.com"
   ]
-  prefetchsrc = ["'self'"]
+  # connect-src directive – defines valid targets for XMLHttpRequest (AJAX), WebSockets or EventSource
+  connectsrc = ["'self'"]
 ```
 
 ## Complete Example
@@ -293,17 +295,17 @@ style = "github-dark"
 # Social links
 [[params.social]]
   name = "Github"
-  icon = "fa fa-github fa-2x"
+  icon = "fa-brands fa-github fa-2x"
   weight = 1
   url = "https://github.com/johndoe/"
 [[params.social]]
   name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
+  icon = "fa-brands fa-gitlab fa-2x"
   weight = 2
   url = "https://gitlab.com/johndoe/"
 [[params.social]]
   name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
+  icon = "fa-brands fa-x-twitter fa-2x"
   weight = 3
   url = "https://twitter.com/johndoe/"
 
