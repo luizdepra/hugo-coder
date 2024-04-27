@@ -1,6 +1,5 @@
 {{- if isset .Site.Params "utterances" -}}
-{{- if and (isset .Site.Params.utterances "repo") (not (eq .Site.Params.utterances.repo "" )) (eq
-(.Params.disableComments | default false) false) -}}
+{{- if and (isset .Site.Params.utterances "repo") (not (eq .Site.Params.utterances.repo "" )) (eq (.Params.disableComments | default false) false) -}}
 <div class="comments">
   <script>
 
