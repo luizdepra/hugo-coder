@@ -142,3 +142,4 @@
 - [Shaked8634](https://github.com/shaked8634)  
 - [Leo Heimann Ruiz](https://leo.heitmannruiz.org/)
 - [Antoine "Toinux" Wam](https://github.com/itzwam)
+- [Reberti Carvalho Soares](https://github.com/RebertiCS)
