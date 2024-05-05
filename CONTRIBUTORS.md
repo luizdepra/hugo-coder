@@ -3,6 +3,7 @@
 - [Chip Senkbeil](https://github.com/chipsenkbeil)
 - [Dale Noe](https://github.com/dalenoe)
 - [Gabor Nagy](https://github.com/Aigeruth)
+- [Gary Chan](https://github.com/essesoul)
 - [Harry Khanna](https://github.com/hkhanna)
 - [Ihor Dvoretskyi](https://github.com/idvoretskyi)
 - [Jacob Wood](https://github.com/jacoblukewood)
