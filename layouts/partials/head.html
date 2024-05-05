@@ -19,3 +19,7 @@
 {{ if .IsHome }}{{ partial "head/hugo-generator.html" . }}{{ end }}
 
 {{ partial "head/extensions.html" . }}
+
+{{ if (findRE "<pre" .Content 1) }}
+    <link rel="stylesheet" href="/css/clipboard.css">
+{{ end }}
