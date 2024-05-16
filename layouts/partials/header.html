@@ -5,7 +5,7 @@
       {{ .Title }}
     </a>
     {{ end }}
-    {{ if or .Site.Menus.main .Site.IsMultiLingual }}
+    {{ if or .Site.Menus.main hugo.IsMultilingual }}
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
         <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
@@ -18,7 +18,7 @@
             </li>
           {{ end }}
         {{ end }}
-        {{ if .Site.IsMultiLingual }}
+        {{ if hugo.IsMultilingual }}
           {{ $node := . }}
           {{ .Scratch.Set "separator" true }}
           {{ range (default .Site.Home.AllTranslations .Translations) }}

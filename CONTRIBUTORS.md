@@ -143,3 +143,4 @@
 - [Leo Heimann Ruiz](https://leo.heitmannruiz.org/)
 - [Antoine "Toinux" Wam](https://github.com/itzwam)
 - [Reberti Carvalho Soares](https://github.com/RebertiCS)
+- [Andreas Deininger](https://github.com/deining)

@@ -1,5 +1,5 @@
  {{ range .Site.Params.customCSS }}
-  {{ if $.Site.IsServer }}
+  {{ if hugo.IsServer }}
     {{ $styles := resources.Get . }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
   {{ else }}
@@ -10,7 +10,7 @@
 
 {{ range .Site.Params.customSCSS }}
   {{/* We don't change the targetPath to because it's transparent to users */}}
-  {{ if $.Site.IsServer }}
+  {{ if hugo.IsServer }}
     {{ $cssOpts := (dict "enableSourceMap" true ) }}
     {{ $styles := resources.Get . | toCSS $cssOpts }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
