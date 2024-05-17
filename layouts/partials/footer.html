@@ -16,4 +16,8 @@
       [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>]
     {{ end }}
   </section>
+  <!-- copy code -->
+  {{ if (findRE "<code" .Content 1) }}
+<script src="{{"/js/clipboard.js" | relURL}}"></script>
+  {{ end }}
 </footer>
