@@ -25,7 +25,7 @@ other = "{{ .Count }} Minuten Lesezeit"
 other = "Seite nicht gefunden"
 
 [page_does_not_exist]
-other = "Tut mir Leid, die Seite existiert leider nicht."
+other = "Tut mir leid, die Seite existiert leider nicht."
 
 [head_back]
 other = "Du kannst hier zurück zur <a href=\"{{ . }}\">Startseite</a>."
@@ -61,4 +61,4 @@ other = "Warnung"
 other = "Fehler"
 
 [link_to_heading]
-other = "Link to heading"
+other = "Link zu Überschrift"
