@@ -44,6 +44,11 @@ p {
   @media only screen and (max-width: 768px) {
     margin: 1.5rem 0 1.5rem 0;
   }
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 h1,
@@ -148,6 +153,7 @@ strong {
     margin: 2rem 0 2rem;
     padding: 1rem;
     border-radius: 1rem;
+    overflow-x: auto;
   }
 }
 
