@@ -17,4 +17,5 @@
 * [Pirsch](https://pirsch.io/) - [documentation](/docs/analytics/pirsch.md)
 * [Plausible Analytics](https://plausible.io/) - [documentation](/docs/analytics/plausible.md)
 * [Umami](https://umami.is/) - [documentation](/docs/analytics/umami.md)
+* [Vercel Analytics](https://vercel.com/analytics) - [documentation](/docs/analytics/vercel.md)
 * [Wide Angle Analytics](https://wideangle.co/) - [documentation](/docs/analytics/wideangle.md)

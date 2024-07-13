@@ -5,8 +5,11 @@ languageCode = "en"
 defaultContentLanguage = "en"
 paginate = 6
 enableEmoji = true
+
+[services]
+[services.disqus]
 # Enable Disqus comments
-# disqusShortname = "yourdiscussshortname"
+# shortname = "yourdiscussshortname"
 
 [markup.highlight]
 noClasses = false
@@ -23,7 +26,7 @@ dateFormat = "January 2, 2006"
 since = 2019
 # Git Commit in Footer, uncomment the line below to enable it
 commit = "https://github.com/luizdepra/hugo-coder/tree/"
-# Right To Left, shift content direction for languagues such as Arabic
+# Right To Left, shift content direction for languages such as Arabic
 rtl = false
 # Specify light/dark colorscheme
 # Supported values:
@@ -129,37 +132,37 @@ author = "authors"
 
 [[params.social]]
 name = "Github"
-icon = "fa fa-2x fa-github"
+icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/johndoe/"
 
 [[params.social]]
 name = "Gitlab"
-icon = "fa fa-2x fa-gitlab"
+icon = "fa-brands fa-gitlab fa-2x"
 weight = 2
 url = "https://gitlab.com/johndoe/"
 
 [[params.social]]
 name = "Twitter"
-icon = "fa fa-2x fa-twitter"
+icon = "fa-brands fa-x-twitter fa-2x"
 weight = 3
 url = "https://twitter.com/johndoe/"
 
 [[params.social]]
 name = "LinkedIn"
-icon = "fa fa-2x fa-linkedin"
+icon = "fa-brands fa-linkedin fa-2x"
 weight = 4
 url = "https://www.linkedin.com/in/johndoe/"
 
 [[params.social]]
 name = "Medium"
-icon = "fa fa-2x fa-medium"
+icon = "fa-brands fa-medium fa-2x"
 weight = 5
 url = "https://medium.com/@johndoe"
 
 [[params.social]]
 name = "RSS"
-icon = "fa fa-2x fa-rss"
+icon = "fa-solid fa-rss fa-2x"
 weight = 6
 url = "https://myhugosite.com/index.xml"
 rel = "alternate"
