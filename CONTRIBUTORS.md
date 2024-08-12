@@ -144,3 +144,4 @@
 - [Antoine "Toinux" Wam](https://github.com/itzwam)
 - [Reberti Carvalho Soares](https://github.com/RebertiCS)
 - [Andreas Deininger](https://github.com/deining)
+- [Matt Ellery](https://github.com/matt-ellery)
