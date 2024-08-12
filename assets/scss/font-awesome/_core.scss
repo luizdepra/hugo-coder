@@ -6,15 +6,15 @@
   font-weight: var(--#{$fa-css-prefix}-style, #{$fa-style});
 }
 
-.#{$fa-css-prefix},
-.#{$fa-css-prefix}-classic,
-.#{$fa-css-prefix}-sharp,
-.fas,
 .#{$fa-css-prefix}-solid,
-.far,
 .#{$fa-css-prefix}-regular,
+.#{$fa-css-prefix}-brands,
+.fas,
+.far,
 .fab,
-.#{$fa-css-prefix}-brands {
+.#{$fa-css-prefix}-sharp-solid,
+.#{$fa-css-prefix}-classic,
+.#{$fa-css-prefix} {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: var(--#{$fa-css-prefix}-display, #{$fa-display});
