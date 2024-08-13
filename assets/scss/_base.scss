@@ -41,6 +41,9 @@ a {
 
 p {
   margin: 2rem 0 2rem 0;
+  @media only screen and (max-width: 768px) {
+    margin: 1.5rem 0 1.5rem 0;
+  }
 }
 
 h1,
@@ -174,6 +177,9 @@ code {
   padding: 0.3rem 0.6rem;
   background-color: $darker-alt-bg-color;
   color: $fg-color;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 blockquote {
