@@ -90,7 +90,7 @@
 - [JaeSang Yoo](https://github.com/JSYoo5B)
 - [tianheg](https://github.com/tianheg)
 - [Felix](https://github.com/lazyyz)
-- [Peter Duchnovsky](https://pduchnovsky.com)
+- [Peter Duchnovsky](https://duchnovsky.com)
 - [Alex Miranda](https://ammiranda.com)
 - [Alphonse Mariya](https://github.com/alfunx)
 - [Ziwei Pan](https://github.com/PanZiwei/)
