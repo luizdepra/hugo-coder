@@ -25,7 +25,7 @@
   }
 
   article {
-    a:where(.external-link)::after {
+    a:where(.external-link):not(:has(img)):after {
       @extend %fa-icon;
       @extend .fa-solid;
       content: fa-content($fa-var-external-link);
