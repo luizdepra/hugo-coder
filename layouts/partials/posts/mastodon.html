@@ -1,8 +1,9 @@
-{{ with .Params.comments }}
+{{- if isset .Site.Params "mastodon" -}}
+  {{- with .Site.Params.mastodon -}}
   <div class="article-content">
     <h2>Comments</h2>
-    <p>You can use your Mastodon account to reply to this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">post</a>. Learn how this is implemented <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
-    <p><button id="replyButton" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">Reply</button></p>
+    <p>You can use your Mastodon account to reply to this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .statusID }}">post</a>. Learn how this is implemented <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
+    <p><button id="replyButton" href="https://{{ .host }}/@{{ .username }}/{{ .statusID }}">Reply</button></p>
     <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
     <dialog id="toot-reply" class="mastodon" data-component="dialog">
       <h3>Reply to {{ .username }}'s post</h3>
@@ -12,33 +13,33 @@
       </p>
       <p>Copy and paste this URL into the search field of your favourite Fediverse app or the web interface of your Mastodon server.</p>
       <div class="copypaste">
-        <input type="text" readonly="" value="https://{{ .host }}/@{{ .username }}/{{ .id }}">
+        <input type="text" readonly="" value="https://{{ .host }}/@{{ .username }}/{{ .statusID }}">
         <button class="button" id="copyButton">Copy</button>
         <button class="button" id="cancelButton">Close</button>
       </div>
     </dialog>
     <noscript>You need JavaScript to view the comments.</noscript>
-    <script src="{{ $.Site.Params.purify.cdn }}"></script> 
+    <script src="{{ .purifyCDN }}"></script>
     <script type="text/javascript">
-  
+
       const dialog = document.querySelector('dialog');
-  
+
       document.getElementById('replyButton').addEventListener('click', () => {
         dialog.showModal();
       });
-  
+
       document.getElementById('copyButton').addEventListener('click', () => {
-        navigator.clipboard.writeText('https://{{ .host }}/@{{ .username }}/{{ .id }}');
+        navigator.clipboard.writeText('https://{{ .host }}/@{{ .username }}/{{ .statusID }}');
       });
-  
+
       document.getElementById('cancelButton').addEventListener('click', () => {
         dialog.close();
       });
-  
+
       dialog.addEventListener('keydown', e => {
         if (e.key === 'Escape') dialog.close();
       });
-  
+
       const dateOptions = {
         year: "numeric",
         month: "numeric",
@@ -46,7 +47,7 @@
         hour: "numeric",
         minute: "numeric",
       };
-  
+
       function escapeHtml(unsafe) {
         return unsafe
              .replace(/&/g, "&amp;")
@@ -55,21 +56,21 @@
              .replace(/"/g, "&quot;")
              .replace(/'/g, "&#039;");
      }
-  
+
       document.getElementById("load-comment").addEventListener("click", function() {
         document.getElementById("load-comment").innerHTML = "Loading";
-        fetch('https://{{ .host }}/api/v1/statuses/{{ .id }}/context')
+        fetch('https://{{ .host }}/api/v1/statuses/{{ .statusID }}/context')
           .then(function(response) {
             return response.json();
           })
           .then(function(data) {
             if(data['descendants'] &&
-               Array.isArray(data['descendants']) && 
+               Array.isArray(data['descendants']) &&
               data['descendants'].length > 0) {
                 document.getElementById('mastodon-comments-list').innerHTML = "";
                 data['descendants'].forEach(function(reply) {
                   reply.account.display_name = escapeHtml(reply.account.display_name);
-                  reply.account.reply_class = reply.in_reply_to_id == "{{ .id }}" ? "reply-original" : "reply-child";
+                  reply.account.reply_class = reply.in_reply_to_id == "{{ .statusID }}" ? "reply-original" : "reply-child";
                   reply.created_date = new Date(reply.created_at);
                   reply.account.emojis.forEach(emoji => {
                     reply.account.display_name = reply.account.display_name.replace(`:${emoji.shortcode}:`,
@@ -90,7 +91,7 @@
       </div>
       <div class="comment-author-date">${reply.created_date.toLocaleString(navigator.language, dateOptions)}</div>
     </div>
-    <div class="comment-content">${reply.content}</div> 
+    <div class="comment-content">${reply.content}</div>
   </div>
   </div>
   `;
@@ -103,4 +104,5 @@
         });
     </script>
   </div>
-{{ end }}
+  {{- end -}}
+{{- end -}}

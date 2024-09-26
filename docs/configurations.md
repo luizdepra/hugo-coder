@@ -1,21 +1,23 @@
 # Configurations
 
-* [About Hugo Configurations](#about-hugo-configurations)
-  * [Analytics](/docs/analytics.md)
-  * [Commenting Systems](#commenting-systems)
-    * [Disqus](#disqus)
-    * [Commento](#commento)
-    * [Utterances](#utterances)
-    * [Giscus](#giscus)
-    * [Cusdis](#cusdis)
-* [Syntax Highlight](#syntax-highlight)
-* [Theme Parameters](#theme-parameters)
-  * [Social Icons Configuration](#social-icons-configuration)
-  * [Menu Items Configurations](#menu-items-configurations)
-  * [CSP](#csp)
-* [Complete Example](#complete-example)
-* [Front Matter](#front-matter)
-  * [Posts](#posts)
+- [Configurations](#configurations)
+  - [About Hugo Configurations](#about-hugo-configurations)
+    - [Commenting Systems](#commenting-systems)
+      - [Disqus](#disqus)
+      - [Commento](#commento)
+      - [Utterances](#utterances)
+      - [Giscus](#giscus)
+      - [Telegram](#telegram)
+      - [Cusdis](#cusdis)
+      - [Mastodon](#mastodon)
+  - [Syntax Highlight](#syntax-highlight)
+  - [Theme Parameters](#theme-parameters)
+    - [Social Icons Configuration](#social-icons-configuration)
+    - [Menu Items Configurations](#menu-items-configurations)
+    - [CSP](#csp)
+  - [Complete Example](#complete-example)
+  - [Front Matter](#front-matter)
+    - [Posts](#posts)
 
 ## About Hugo Configurations
 
@@ -94,6 +96,17 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
 ```toml
 [params.cusdis] # https://cusdis.com
   data_app_id = ""
+```
+
+#### Mastodon
+
+```toml
+[params.mastodon]
+  host = "" # Address of your Mastodon instance
+  username = "" # Your username
+  statusID = "" # ID os the status (post) that comments should be related
+  purifyCDN = "" # CDN address of pointing to a Purify package
+
 ```
 
 ## Syntax Highlight
