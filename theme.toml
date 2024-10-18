@@ -11,7 +11,10 @@ tags = [
   "responsive",
   "simple",
   "clean",
-  "personal"
+  "personal",
+  "light",
+  "dark",
+  "dark mode"
 ]
 features = [
   "analytics",
