@@ -270,7 +270,8 @@ theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 20
+[pagination]
+paperSize = 20
 
 [services]
 [services.disqus]
