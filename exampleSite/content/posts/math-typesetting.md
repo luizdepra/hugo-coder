@@ -33,8 +33,8 @@ In this example we will be using [KaTeX](https://katex.org/)
 {{ end }}
 ```
 
--   To enable KaTex globally set the parameter `math` to `true` in a project's configuration
--   To enable KaTex on a per page basis include the parameter `math: true` in content files
+-   To enable KaTeX globally set the parameter `math` to `true` in a project's configuration
+-   To enable KaTeX on a per page basis include the parameter `math: true` in content files
 
 **Note:** Use the online reference of [Supported TeX Functions](https://katex.org/docs/supported.html)
 
