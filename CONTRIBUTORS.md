@@ -146,3 +146,4 @@
 - [Andreas Deininger](https://github.com/deining)
 - [Ardemium](https://github.com/ardemium)
 - [Matt Ellery](https://github.com/matt-ellery)
+- [Daniel Olshansky](https://github.com/olshansk)
