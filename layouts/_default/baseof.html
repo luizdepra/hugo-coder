@@ -108,6 +108,10 @@
   {{- partial "analytics/microanalyticsio" . -}}
   {{ end }}
 
+  {{ if and .Site.Params.onedollarstats .Site.Params.onedollarstats.id }}
+  {{- partial "analytics/onedollarstats" . -}}
+  {{ end }}
+
   {{ if .Site.Params.vercelAnalytics}}
   {{- partial "analytics/vercel" . -}}
   {{ end }}
