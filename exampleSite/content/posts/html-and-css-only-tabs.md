@@ -46,7 +46,7 @@ Goodbye Everybody!
 {{< /tab >}}
 {{< /tabgroup >}}
 
-## Right alighment
+## Right alignment
 
 You can also align the tabs to the right:
 
