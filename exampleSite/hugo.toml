@@ -3,8 +3,10 @@ title = "johndoe"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 6
 enableEmoji = true
+
+[pagination]
+pagerSize = 6
 
 [services]
 [services.disqus]

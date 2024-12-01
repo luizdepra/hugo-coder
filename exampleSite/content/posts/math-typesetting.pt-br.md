@@ -33,8 +33,8 @@ Nesse exemplo usaremos o [KaTeX](https://katex.org/).
 {{ end }}
 ```
 
--   Para ativar o KaTex globalmente defina o parâmetro `math` como `true` na confgiuração do projeto
--   Para ativar o KaTex em páginas específicas inclua o parâmetro `math: true` nos arquivos de conteúdo
+-   Para ativar o KaTeX globalmente defina o parâmetro `math` como `true` na confgiuração do projeto
+-   Para ativar o KaTeX em páginas específicas inclua o parâmetro `math: true` nos arquivos de conteúdo
 
 **Nota:** Use a referência online [Supported TeX Functions](https://katex.org/docs/supported.html) como base para criar notações matemáticas.
 
