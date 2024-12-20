@@ -13,8 +13,12 @@ pagerSize = 6
 # Enable Disqus comments
 # shortname = "yourdiscussshortname"
 
+[markup]
 [markup.highlight]
 noClasses = false
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
 author = "John Doe"
