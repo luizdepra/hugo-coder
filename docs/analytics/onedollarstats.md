@@ -7,7 +7,7 @@
 
 You will also need to update your content security policy:
 
-```
+```toml
 [params.csp]
   ...
   scriptsrc = [
@@ -15,4 +15,9 @@ You will also need to update your content security policy:
     "https://assets.onedollarstats.com",
   ]
   ...
+  connectsrc = [
+    ...
+    "https://assets.onedollarstats.com",
+    ...
+  ]
 ```
