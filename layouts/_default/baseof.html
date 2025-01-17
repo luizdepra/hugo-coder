@@ -2,7 +2,7 @@
 <html lang="{{ .Site.Language.Lang }}">
 
 <head>
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <title>{{ block "title" . }}{{ .Site.Params.HeadTitle | default .Site.Title }}{{ end }}</title>
   {{ partial "head.html" . }}
 </head>
 
@@ -134,5 +134,4 @@
 
   {{- partial "body/extensions" . -}}
 </body>
-
 </html>
