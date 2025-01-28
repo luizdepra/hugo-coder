@@ -16,6 +16,7 @@ pagerSize = 6
 [markup]
 [markup.highlight]
 noClasses = false
+
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
