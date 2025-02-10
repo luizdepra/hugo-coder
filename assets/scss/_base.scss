@@ -23,7 +23,7 @@ body {
   }
 }
 
-iframe[src*=disqus] {
+iframe[src*="disqus"] {
   color-scheme: light;
 }
 
@@ -142,7 +142,6 @@ strong {
 }
 
 .highlight {
-
   div,
   pre {
     margin: 2rem 0 2rem;
@@ -189,6 +188,9 @@ blockquote {
   line-height: 2.2rem;
   font-weight: 400;
   font-style: italic;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 th,
