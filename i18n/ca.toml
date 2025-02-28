@@ -15,11 +15,11 @@ one= "autor"
 other = "autors"
 
 [posts]
-other = "entradades"
+other = "entrades"
 
 [reading_time]
 one = "Lectura d'un minut"
-other = "lectura de {{ .Count }} minuts"
+other = "Lectura de {{ .Count }} minuts"
 
 [page_not_found]
 other = "Pàgina no trobada"
@@ -31,7 +31,7 @@ other = "Ho sentim, aquesta pàgina no existeix."
 other = "Podeu tornar a la <a href=\"{{ . }}\">pàgina d'inici</a>."
 
 [licensed_under]
-other = "Llicènciada sota"
+other = "Sota llicència de"
 
 [powered_by]
 other = "Fet anar per"
@@ -43,8 +43,7 @@ other = "Veure també a"
 other = "nota"
 
 [tip]
-other = "tip"
-altre = "propina"
+other = "propina"
 
 [example]
 other = "exemple"
@@ -53,8 +52,7 @@ other = "exemple"
 other = "pregunta"
 
 [info]
-other = "info"
-altre = "informació"
+other = "informació"
 
 [warning]
 other = "avís"
