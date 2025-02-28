@@ -1,0 +1,65 @@
+[categories]
+one = "categoria"
+other = "categories"
+
+[tags]
+one = "etiqueta"
+other = "etiquetes"
+
+[series]
+one = "sèrie"
+other = "sèrie"
+
+[authors]
+one= "autor"
+other = "autors"
+
+[posts]
+other = "entrades"
+
+[reading_time]
+one = "Lectura d'un minut"
+other = "Lectura de {{ .Count }} minuts"
+
+[page_not_found]
+other = "Pàgina no trobada"
+
+[page_does_not_exist]
+other = "Ho sentim, aquesta pàgina no existeix."
+
+[head_back]
+other = "Podeu tornar a la <a href=\"{{ . }}\">pàgina d'inici</a>."
+
+[licensed_under]
+other = "Sota llicència de"
+
+[powered_by]
+other = "Fet anar per"
+
+[see_also]
+other = "Veure també a"
+
+[note]
+other = "nota"
+
+[tip]
+other = "propina"
+
+[example]
+other = "exemple"
+
+[question]
+other = "pregunta"
+
+[info]
+other = "informació"
+
+[warning]
+other = "avís"
+
+[error]
+other = "error"
+
+[link_to_heading]
+other = "Enllaç a l'encapçalament"
+
