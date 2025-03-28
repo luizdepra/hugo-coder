@@ -5,15 +5,15 @@
         <title>{{ .Title }}</title>
         {{ $styles := .Styles .}}
         {{ $styles | minify | minifyText }}
-  {{ end }}
+   {{ end }}
 </head>
 
 <body>
-  {{ block "content" . }}
-      {{ .Content }}
-  {{ end }}
-  <div class="gravatar-container">
-    <img src="https://www.gravatar.com/avatar/your_gravatar_id" alt="Gravatar Image">
-  </div>
+   {{ block "content" . }}
+       {{ .Content }}
+   {{ end }}
+   <div class="gravatar-container">
+       <img src="https://www.gravatar.com/avatar/3635ab3e26ed90749ab2aa3ca1ebc4ca" alt="Gravatar Image">
+   </div>
 </body>
 </html>
