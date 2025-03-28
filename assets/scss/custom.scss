@@ -1,10 +1,8 @@
 .about .avatar img {
-  width: 80px !important;
-  height: 80px !important;
+  width: 80px;
+  height: 80px;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
   object-fit: cover;
-  -webkit-filter: none;
-  filter: none;
 }
