@@ -3,8 +3,10 @@ title = "SanMarcSoft Blog"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 20
 enableEmoji = true
+
+[pagination]
+  pagerSize = 20
 
 [params]
   author = "Matthew Stevens"
