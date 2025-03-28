@@ -1,10 +1,14 @@
- {{ range .Site.Params.customCSS }}
+{{ range .Site.Params.customCSS }}
   {{ if hugo.IsServer }}
     {{ $styles := resources.Get . }}
+    {{ if $styles }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+    {{ end }}
   {{ else }}
     {{ $styles := resources.Get . | minify | fingerprint }}
+    {{ if $styles }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+    {{ end }}
   {{ end }}
 {{ end }}
 
@@ -13,9 +17,13 @@
   {{ if hugo.IsServer }}
     {{ $cssOpts := (dict "enableSourceMap" true ) }}
     {{ $styles := resources.Get . | toCSS $cssOpts }}
+    {{ if $styles }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+    {{ end }}
   {{ else }}
     {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
+    {{ if $styles }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+    {{ end }}
   {{ end }}
 {{ end }}

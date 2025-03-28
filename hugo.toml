@@ -15,7 +15,7 @@ enableEmoji = true
   keywords = "blog,developer,personal"
   avatarURL = "https://www.gravatar.com/avatar/3635ab3e26ed90749ab2aa3ca1ebc4ca?s=80"
   colorScheme = "auto"
-  customCSS = ["custom.scss"]
+  customCSS = ["scss/custom.scss"]
   
   # Social links
   [[params.social]]
