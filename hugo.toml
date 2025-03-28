@@ -1,6 +1,32 @@
 baseURL = "https://blog.sanmarcsoft.com/"
+title = "SanMarcSoft Blog"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+enableEmoji = true
+
+[params]
+  author = "Matthew Stevens"
+  info = "SanMarcSoft - technically, this is a blog"
+  description = "From Code to Prose"
+  keywords = "blog,developer,personal"
+  avatarURL = "images/avatar.jpg"
+  colorScheme = "auto"
+  
+  # Social links
+  [[params.social]]
+    name = "Github"
+    icon = "fa fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/yourusername/"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
 
 [module]
-[module.hugoVersion]
-min = "0.124.0"
-theme = "hugo-coder"
+  [module.hugoVersion]
+    min = "0.124.0"
