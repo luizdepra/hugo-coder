@@ -9,9 +9,11 @@
 </head>
 
 <body>
-   {{ block "content" . }}
-       {{ .Content }}
-   {{ end }}
-   <img src="https://www.gravatar.com/avatar/your_gravatar_id" alt="Gravatar Image">
+  {{ block "content" . }}
+      {{ .Content }}
+  {{ end }}
+  <div class="gravatar-container">
+    <img src="https://www.gravatar.com/avatar/your_gravatar_id" alt="Gravatar Image">
+  </div>
 </body>
 </html>
