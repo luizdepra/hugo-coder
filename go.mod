@@ -1,3 +1,3 @@
-module github.com/luizdepra/hugo-coder
+module github.com/sanmarcsoft/blog
 
 go 1.16
