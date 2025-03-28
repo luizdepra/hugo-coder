@@ -1,6 +1,6 @@
 .idea
-**/themes/
 exampleSite/public/
 exampleSite/resources/
 *.lock
 public
+.aider*
