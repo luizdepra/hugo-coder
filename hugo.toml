@@ -13,7 +13,7 @@ enableEmoji = true
   info = "SanmarcSoft LLC"
   description = "From Code to Prose"
   keywords = "blog,developer,personal"
-  avatarURL = "https://www.gravatar.com/avatar/3635ab3e26ed90749ab2aa3ca1ebc4ca?s=160&d=mp"
+  avatarURL = "https://www.gravatar.com/avatar/3635ab3e26ed90749ab2aa3ca1ebc4ca?s=160&d=identicon"
   colorScheme = "auto"
   customCSS = ["custom.scss"]
   
