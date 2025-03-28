@@ -1,3 +1,16 @@
-{{ define "content" }}
-  {{ partial "home.html" . }}
-{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .GetLang . }}">
+<head>
+    {{ block "head" . }}
+        <title>{{ .Title }}</title>
+        {{ $styles := .Styles .}}
+        {{ $styles | minify | minifyText }}
+   {{ end }}
+</head>
+
+<body>
+   {{ block "content" . }}
+       {{ .Content }}
+   {{ end }}
+</body>
+</html>
