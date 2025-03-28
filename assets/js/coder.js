@@ -59,7 +59,7 @@ function setTheme(theme) {
                 subtree: true
             });
         });
-   }
+  }
 
     if (theme === 'dark') {
         const message = {
@@ -70,31 +70,31 @@ function setTheme(theme) {
             iframe.contentWindow.postMessage(message, 'https://utteranc.es');
        })
 
-   } else {
-       const message = {
-           type: 'set-theme',
-           theme: 'github-light'
-       };
-       waitForElm('.utterances-frame').then((iframe) => {
-           iframe.contentWindow.postMessage(message, 'https://utteranc.es');
-       })
+  } else {
+      const message = {
+          type: 'set-theme',
+          theme: 'github-light'
+      };
+      waitForElm('.utterances-frame').then((iframe) => {
+          iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+      });
 
-   }
+  }
 
-   function sendMessage(message) {
-       const iframe = document.querySelector('iframe.giscus-frame');
-       if (!iframe) return;
-       iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-     }
-     sendMessage({
-       setConfig: {
-         theme: theme,
-       },
-     });
+  function sendMessage(message) {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) return;
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    }
+    sendMessage({
+      setConfig: {
+        theme: theme,
+      },
+    });
 
-   // Create and send event
-   const event = new Event('themeChanged');
-   document.dispatchEvent(event);
+  // Create and send event
+  const event = new Event('themeChanged');
+  document.dispatchEvent(event);
 }
 
 function rememberTheme(theme) {
