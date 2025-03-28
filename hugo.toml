@@ -1,9 +1,14 @@
 baseURL = "https://blog.sanmarcsoft.com/"
 title = "SanMarcSoft Blog"
 theme = "hugo-coder"
+
+[module]
+  [[module.imports]]
+    path = "github.com/luizdepra/hugo-coder"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-paginate = 10
+[pagination]
+  pagerSize = 10
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
