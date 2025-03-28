@@ -10,10 +10,10 @@ enableEmoji = true
 
 [params]
   author = "Matthew Stevens"
-  info = "SanMarcSoft - technically, this is a blog"
+  info = "From Code to Prose"
   description = "From Code to Prose"
   keywords = "blog,developer,personal"
-  avatarURL = "images/avatar.jpg"
+  avatarURL = "https://www.gravatar.com/avatar/3635ab3e26ed90749ab2aa3ca1ebc4ca"
   colorScheme = "auto"
   
   # Social links
