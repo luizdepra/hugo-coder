@@ -31,4 +31,4 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync public/ s3://blog.sanmarcsoft.com --delete # Replace with your S3 bucket name
+          aws s3 sync public/ s3://blog-sanmarcsoft-com --delete
