@@ -1,6 +1,6 @@
 baseURL = "https://blog.sanmarcsoft.com/"
 title = "SanMarcSoft Blog"
-theme = "hugo-coder"
+theme = "github.com/luizdepra/hugo-coder"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 [pagination]
