@@ -110,10 +110,10 @@ weight = 1
 url = "https://github.com/sanmarcsoft/"
 
 [[params.social]]
-name = "Mastodon"
-icon = "fa fa-mastodon"
+name = "Bluesky"
+icon = "fa fa-cloud"
 weight = 2
-url = "https://mastodon.social/@sanmarcsoft"
+url = "https://bsky.app/profile/sanmarcsoft.bsky.social"
 
 [[params.social]]
 name = "LinkedIn"
