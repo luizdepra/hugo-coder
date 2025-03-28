@@ -110,16 +110,16 @@ weight = 1
 url = "https://github.com/sanmarcsoft/"
 
 [[params.social]]
-name = "Twitter"
-icon = "fa fa-twitter"
+name = "Mastodon"
+icon = "fa fa-mastodon"
 weight = 2
-url = "https://twitter.com/sanmarcsoft/"
+url = "https://mastodon.social/@sanmarcsoft"
 
 [[params.social]]
 name = "LinkedIn"
 icon = "fa fa-linkedin"
 weight = 3
-url = "https://www.linkedin.com/company/sanmarcsoft/"
+url = "http://linkedin.com/company/sanmarcsoft"
 
 # Menu links
 [[menu.main]]
