@@ -19,12 +19,13 @@ jobs:
           sudo apt-get install -y sass
           sudo apt-get remove -y ruby-sass
           echo "dart-sass installed successfully"
+          sass --version # Verify dart-sass version
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.145.0'
-          extended: true # ENSURE THIS LINE IS PRESENT AND UNCOMMENTED
+          extended: true
 
       - name: Build Hugo site
         run: hugo
