@@ -12,12 +12,12 @@ We need a dedicated technical writing team – but one that’s equipped with th
 
 *   **Be Embedded:** Ideally, members of the team should be embedded within development teams, working alongside engineers. This fosters collaboration, shared understanding, and real-time feedback.
 *   **Master Coding Tools:** The team needs to be proficient in using tools like:
-   *   **Code Documentation Generators:** Tools like JSDoc, Doxygen, and Swagger can automatically generate documentation from code comments.
-   *   **Static Analysis Tools:** These tools can identify potential documentation gaps and inconsistencies.
-   *   **Version Control Systems (Git):** Understanding branching strategies and commit messages is crucial for tracking changes and maintaining documentation accuracy.
+  *   **Code Documentation Generators:** Tools like JSDoc, Doxygen, and Swagger can automatically generate documentation from code comments.
+  *   **Static Analysis Tools:** These tools can identify potential documentation gaps and inconsistencies.
+  *   **Version Control Systems (Git):** Understanding branching strategies and commit messages is crucial for tracking changes and maintaining documentation accuracy.
 *   **Leverage AI:** Artificial intelligence is rapidly changing the landscape of technical writing. AI-powered tools can:
-   *   **Generate Initial Drafts:** AI can quickly create first drafts of documentation based on code comments and API specifications.
-   *   **Automate Repetitive Tasks:** AI can automate tasks like generating summaries, translating documentation, and updating outdated content.
+  *   **Generate Initial Drafts:** AI can quickly create first drafts of documentation based on code comments and API specifications.
+  *   **Automate Repetitive Tasks:** AI can automate tasks like generating summaries, translating documentation, and updating outdated content.
    *   **Improve Searchability:** AI can enhance the searchability of documentation by understanding the context and relationships between different concepts.
 
 **Moving Beyond Manual Documentation**
