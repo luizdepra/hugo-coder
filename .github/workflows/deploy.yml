@@ -1,42 +1,61 @@
 name: Deploy to S3
 
-on:
-  push:
-    branches:
-      - main
+    on:
+      push:
+        branches:
+          - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+    jobs:
+      deploy:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Install dart-sass and find path
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y sass
-          sudo apt-get remove -y ruby-sass
-          echo "dart-sass installed successfully"
-          which sass 2>&1 | tee which_sass.log # Force output to log
-          ls -l $(which sass) 2>&1 | tee ls_sass.log # Force output to log
-          cat which_sass.log
-          cat ls_sass.log
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v4
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.145.0'
-          extended: true
+          - name: Install Node.js
+            uses: actions/setup-node@v3
+            with:
+              node-version: '18' # Or your preferred Node.js version
 
-      - name: Build Hugo site
-        run: hugo
+          - name: Install dart-sass
+            run: npm install -g sass
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-north-1
+          - name: Verify dart-sass
+            run: |
+              which sass
+              ls -l $(which sass)
+              sass --version
 
-      - name: Deploy to S3
-        run: |
-          aws s3 sync public/ s3://blog-sanmarcsoft-com --delete
+          - name: Setup Hugo
+            uses: peaceiris/actions-hugo@v2
+            with:
+              hugo-version: '0.145.0'
+              extended: true
+
+          - name: Build Hugo site
+            run: hugo
+
+          - name: Configure AWS credentials
+            uses: aws-actions/configure-aws-credentials@v4
+            with:
+              aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+              aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+              aws-region: eu-north-1
+
+          - name: Deploy to S3
+            run: |
+              aws s3 sync public/ s3://blog-sanmarcsoft-com --delete
+    ```
+
+2.  **Verify Hugo Configuration:**
+    * The hugo build step is failing, because it cannot find the configuration files.
+    * This is likely, because the build step is running in the wrong directory.
+    * Add a `cd` command to the build hugo site step.
+    * Modify the hugo build step to this:
+
+```yaml
+    - name: Build Hugo site
+      run: |
+        cd ./
+        hugo
