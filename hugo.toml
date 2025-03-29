@@ -16,13 +16,13 @@ enableEmoji = true
   avatarURL = "https://www.gravatar.com/avatar/3635ab3e26ed90749ab2aa3ca1ebc4ca?s=80"
   colorScheme = "auto"
   customCSS = ["scss/custom.scss"]
-  
+
   # Social links
   [[params.social]]
     name = "Github"
     icon = "fa fa-github fa-2x"
     weight = 1
-    url = "https://github.com/yourusername/"
+    url = "https://github.com/sanmarcsoft/"
 
 [taxonomies]
   category = "categories"
