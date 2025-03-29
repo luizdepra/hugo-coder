@@ -16,7 +16,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Or your preferred Node.js version
+          node-version: '18'
 
       - name: Install dart-sass
         run: npm install -g sass
@@ -36,7 +36,7 @@ jobs:
       - name: Build Hugo site
         run: |
           cd ./
-          hugo
+          hugo --sass=$(which sass) # Explicitly set sass path
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
