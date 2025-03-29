@@ -13,30 +13,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
       - name: Install dart-sass
-        run: npm install -g sass
-
-      - name: Verify dart-sass
         run: |
+          sudo snap install dart-sass
           which sass
-          ls -l $(which sass)
           sass --version
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.145.0'
-          extended: true
+          hugo-version: '0.145.0' # or 'latest'
 
       - name: Build Hugo site
         run: |
           cd ./
-          hugo --sass=$(which sass) # Explicitly set sass path
+          echo "PATH: $PATH"
+          echo "snap bin directory: /snap/bin"
+          ls -l /snap/bin
+          hugo --minify --baseURL "https://blog.sanmarcsoft.com/"
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
