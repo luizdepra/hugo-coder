@@ -24,7 +24,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.145.0'
-          extended: true
+          extended: true # ENSURE THIS LINE IS PRESENT AND UNCOMMENTED
 
       - name: Build Hugo site
         run: hugo
