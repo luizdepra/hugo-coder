@@ -22,7 +22,7 @@ jobs:
       - name: Build Hugo site
         run: |
           cd ./
-          ls -al scss/ # List scss files and permissions
+          ls -al assets/ # List the assets directory contents
           hugo version
           hugo
 
