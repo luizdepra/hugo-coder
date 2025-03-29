@@ -34,7 +34,9 @@ name: Deploy to S3
               extended: true
 
           - name: Build Hugo site
-            run: hugo
+            run: |
+              cd ./
+              hugo
 
           - name: Configure AWS credentials
             uses: aws-actions/configure-aws-credentials@v4
@@ -46,16 +48,3 @@ name: Deploy to S3
           - name: Deploy to S3
             run: |
               aws s3 sync public/ s3://blog-sanmarcsoft-com --delete
-    ```
-
-2.  **Verify Hugo Configuration:**
-    * The hugo build step is failing, because it cannot find the configuration files.
-    * This is likely, because the build step is running in the wrong directory.
-    * Add a `cd` command to the build hugo site step.
-    * Modify the hugo build step to this:
-
-```yaml
-    - name: Build Hugo site
-      run: |
-        cd ./
-        hugo
