@@ -13,13 +13,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install dart-sass
+      - name: Install dart-sass and set path
         run: |
           sudo apt-get update
           sudo apt-get install -y sass
           sudo apt-get remove -y ruby-sass
           echo "dart-sass installed successfully"
-          sass --version # Verify dart-sass version
+          echo "PATH=$PATH:/usr/bin" >> $GITHUB_ENV #Add /usr/bin to the system path.
+          sass --version
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
