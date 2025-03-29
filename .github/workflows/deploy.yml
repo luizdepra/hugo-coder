@@ -16,8 +16,10 @@ jobs:
           sudo apt-get install -y sass
           sudo apt-get remove -y ruby-sass
           echo "dart-sass installed successfully"
-          which sass
-          ls -l $(which sass)
+          which sass 2>&1 | tee which_sass.log # Force output to log
+          ls -l $(which sass) 2>&1 | tee ls_sass.log # Force output to log
+          cat which_sass.log
+          cat ls_sass.log
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
