@@ -1,3 +1,17 @@
++++
+authors = ["Matthew Stevens"]
+title = "Technical Writing Teams with Coding Tools and AI"
+date = "2025-04-01"
+description = "In modern software development, agile methodologies dominate. Development teams iterate rapidly..."
+tags = [
+    "hugo",
+    "markdown",
+    "emoji",
+]
+categories = ["Documentation"]
+series = ["Documentation"]
++++
+
 # The Speed of Development Demands Technical Writing Teams with Coding Tools and AI
 
 The software development landscape is evolving at breakneck speed. Agile methodologies, DevOps practices, and the relentless pursuit of innovation mean that code changes, features are added, and documentation needs to keep pace – and it needs to keep pace *fast*. Relying on individual developers to scribble down notes and create documentation as an afterthought is no longer a viable strategy. It’s a recipe for outdated, incomplete, and ultimately useless documentation.

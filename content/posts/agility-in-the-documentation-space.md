@@ -1,10 +1,16 @@
----
-title: "Agility in the documentation space"
-date: 2025-04-01T14:20:00Z # Adjust the date and time as needed
-draft: true # Set to false when ready to publish
-description: "How technical documentation needs to match the pace of agile development teams."
-tags: ["agile", "documentation", "velocity", "technical writing", "devops"]
----
++++
+authors = ["Matthew Stevens"]
+title = "The Bottleneck of Slow Technical Writing Teams"
+date = "2025-03-31"
+description = "In modern software development, agile methodologies dominate. Development teams iterate rapidly..."
+tags = [
+    "hugo",
+    "markdown",
+    "emoji",
+]
+categories = ["Documentation"]
+series = ["Documentation"]
++++
 
 In modern software development, agile methodologies dominate. Development teams iterate rapidly, delivering features and updates with impressive velocity. However, for this speed to translate effectively into user adoption and product success, technical documentation must evolve and move in lockstep with development.
 
@@ -28,3 +34,4 @@ To bridge the gap and ensure documentation keeps up, technical writing teams can
 *   **Iterative Documentation:** Just like the software, documentation should be iterative. Publish essential information quickly and refine it over subsequent sprints.
 
 By adopting these agile principles, documentation teams can transform from a potential bottleneck into a crucial enabler, ensuring that accurate, relevant information is available precisely when needed, thereby amplifying the impact of agile development efforts.
+---
