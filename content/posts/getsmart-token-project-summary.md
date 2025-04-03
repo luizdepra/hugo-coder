@@ -20,7 +20,7 @@ series = ["Education Technology"]
 
 The [GetSmart Token](https://getstoken.org/) project represents a groundbreaking approach to recognizing and rewarding informal learning. As a non-profit initiative backed by the Digital Financial Aid Corporation (a US 501(c)(3) charity), GetSmart Token (GETS) has developed an accessible blockchain-based badge system that transforms learning achievements into credentials with actual remunerable value.
 
-As the technical writer and product owner for the 2025 roadmap and release, I helped shape how this innovative platform connects learners, educators, and sponsors in an inclusive ecosystem where skills acquisition translates directly to economic opportunity.
+As the technical writer and product owner for the 2025 roadmap and release, I helped shape how this innovative platform connects learners, educators, and sponsors in an inclusive ecosystem where skills acquisition translates directly to economic opportunity. My work included developing comprehensive [internal documentation](https://help-int.getstoken.org) that guides the team through creating, funding, and verifying awards on the public blockchain.
 
 ## Core Innovation: "Reframe Education Your Way"
 
@@ -62,8 +62,17 @@ The GetSmart Token approach has already shown promising results, similar to othe
 - Provided HR departments with quick verification of skills via platforms like LinkedIn
 - Successfully motivated behaviors and represented achievements across various contexts
 
-## Looking Forward
+## My Contribution as Technical Writer and Product Owner
 
-As the technical writer and product owner for the 2025 roadmap, I helped articulate how GetSmart Token is "democratizing education since 2022" by creating a system where achievements carry real economic value. The platform continues to evolve in its mission to revolutionize learning experiences through innovative token solutions that invest in education, empower learners, and shape tomorrow's leaders.
+As the technical writer and product owner for the 2025 roadmap, I:
 
-For organizations and individuals interested in participating in the GetSmart Token ecosystem as donors, learners, or project creators, visit [getstoken.org](https://getstoken.org/) to learn more about getting involved.
+- Developed the comprehensive internal documentation system at [help-int.getstoken.org](https://help-int.getstoken.org)
+- Created user-friendly guides for creating, funding, and verifying blockchain awards
+- Established documentation standards that supported the project's accessibility goals
+- Collaborated with founder Dr. Josh Lange to articulate the technical vision
+- Structured the 2025-2026 roadmap documentation to align with organizational objectives
+- Designed documentation that supported users with no blockchain knowledge
+
+My work helped articulate how GetSmart Token is "democratizing education since 2022" by creating a system where achievements carry real economic value. The platform continues to evolve in its mission to revolutionize learning experiences through innovative token solutions that invest in education, empower learners, and shape tomorrow's leaders.
+
+For organizations and individuals interested in participating in the GetSmart Token ecosystem as donors, learners, or project creators, visit [getstoken.org](https://getstoken.org/) to learn more about getting involved or explore the [Twitter](https://twitter.com/GetsToken) and [YouTube](https://www.youtube.com/@GetSmartToken) channels for the latest updates.
