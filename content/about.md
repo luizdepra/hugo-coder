@@ -1,25 +1,17 @@
 +++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
+title = "About SanMarcSoft"
+description = "Leading agile software documentation and technical writing for SMBs and NGOs."
+date = "2019-02-28" # Consider updating this date if appropriate
+aliases = ["about-us", "about-sanmarcsoft", "contact"]
 author = "Matthew Stevens"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+SanMarcSoft is a leading agile software documentation and technical writing operation. We specialize in empowering Small to Medium-sized Businesses (SMBs) and Non-Governmental Organizations (NGOs) to enhance their software development processes and project management agility.
 
-Hugo makes use of a variety of open source projects including:
+Our focus is on creating clear, concise, and accurate documentation that keeps pace with modern development cycles. We understand the unique challenges faced by SMBs and NGOs and offer tailored solutions to improve internal knowledge sharing, streamline user onboarding, and ultimately accelerate project success.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+By integrating seamlessly with your teams and leveraging best practices in technical communication and agile methodologies, SanMarcSoft helps you build robust documentation frameworks that support growth and innovation.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+Whether you're looking to establish a documentation strategy from scratch, optimize existing content, or ensure your documentation scales with your projects, SanMarcSoft provides the expertise and support you need.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Learn more about how we can help your organization by contacting us today.
