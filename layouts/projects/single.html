@@ -31,7 +31,7 @@
           <i class="fa fa-folder" aria-hidden="true"></i>
           {{ range $index, $category := . }}
           {{ if $index }}, {{ end }}
-          <a href="{{ "/categories/" | relLangURL }}{{ $category | urlize }}">{{ $category }}</a>
+          <a href="{{ "categories/" | relLangURL }}{{ $category | urlize }}">{{ $category }}</a>
           {{ end }}
         </div>
         {{ end }}
@@ -40,7 +40,7 @@
           <i class="fa fa-tag" aria-hidden="true"></i>
           {{ range $index, $tag := . }}
           {{ if $index }}, {{ end }}
-          <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">{{ $tag }}</a>
+          <a href="{{ "tags/" | relLangURL }}{{ $tag | urlize }}">{{ $tag }}</a>
           {{ end }}
         </div>
         {{ end }}
