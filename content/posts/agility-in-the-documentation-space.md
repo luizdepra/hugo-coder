@@ -1,6 +1,6 @@
 +++
 authors = ["Matthew Stevens"]
-title = "Overcoming the Documentation Bottleneck: Agile Strategies for Technical Writing Teams"
+title = "Agile Docs: Overcoming Bottlenecks in Technical Writing"
 date = "2025-03-31"
 description = "Slow documentation hinders agile development. Learn strategies like Docs-as-Code and embedded writing to align technical documentation with rapid software delivery cycles."
 tags = [

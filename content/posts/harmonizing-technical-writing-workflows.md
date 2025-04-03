@@ -1,6 +1,6 @@
 +++
 authors = ["Matthew Stevens"]
-title = "Integrate and Accelerate: Harmonizing Technical Writing with Dev, QA, and Support Workflows"
+title = "Harmonize Tech Writing: Integrate with Dev, QA & Support"
 date = "2025-04-03"
 description = "Boost software delivery speed and quality by integrating technical writing workflows with development, QA, and support using agile, Docs-as-Code, Git, and collaborative feedback loops."
 tags = [

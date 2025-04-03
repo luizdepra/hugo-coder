@@ -1,6 +1,6 @@
 +++
 authors = ["Matthew Stevens"]
-title = "Empowering Technical Writers: Leveraging Coding Tools and AI for Modern Documentation"
+title = "AI & Coding Tools for Technical Writers: Boost Documentation"
 date = "2025-04-01"
 description = "Explore how technical writing teams can harness coding tools (Git, auto-generators) and AI to create accurate, up-to-date documentation in fast-paced development environments."
 tags = [
