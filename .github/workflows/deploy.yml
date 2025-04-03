@@ -1,27 +1,47 @@
-name: Deploy to S3
+# Updated workflow name for clarity
+name: Deploy to S3 and Invalidate CloudFront
+
 on:
   push:
     branches:
-      - main
+      - main # Trigger deployment on push to main branch
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # Change to v4
+        uses: actions/checkout@v4 # Good, already v4
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.145.0'
+          hugo-version: '0.145.0' # Keep your specified Hugo version
           extended: true
+
       - name: Build Hugo site
-        run: hugo
+        run: hugo # Builds the site into the 'public/' directory
+
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        # Updated to v4 for latest features and security updates
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-north-1 # Replace with your S3 bucket's region
+          aws-region: eu-north-1 # Your S3 bucket's region - CORRECT
+
       - name: Deploy to S3
         run: |
-          aws s3 sync public/ s3://blog-sanmarcsoft-com --delete
+          aws s3 sync public/ s3://blog-sanmarcsoft-com --delete --exclude ".git/*" --exclude ".github/*"
+          # Syncs the built 'public' directory to your S3 bucket
+          # --delete removes files in S3 that are not in the 'public' dir anymore
+          # Added --exclude for common files not needed in the deployment
+
+      # --- This is the new step you need to add ---
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+        env:
+          # CloudFront API calls often need to target us-east-1, regardless of distribution location
+          # Ensure your IAM user permissions aren't restricted by region for CloudFront API calls
+          AWS_REGION: us-east-1
