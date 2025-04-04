@@ -15,12 +15,15 @@ Last month, I wrote about [securing your email with GPG encryption](/posts/email
 
 A vivid illustration of how even secure channels can be compromised through human error was recently documented in [*The Atlantic*](https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/). A journalist recounted how Trump administration officials, intending to discuss sensitive "war plans" using Signal, inadvertently included the journalist in their encrypted group chat.
 
-This accidental inclusion provided the author with direct, unintended access to internal discussions. The incident serves as a stark reminder of two key points:
+The error occurred because Congressman Mike Waltz had saved Atlantic editor Jeffrey Goldberg in his contacts by initials only. This seemingly minor contact management oversight led to a significant security breach when Waltz intended to message a different "JG" in his contact list.
+
+This accidental inclusion provided the author with direct, unintended access to internal discussions. The incident serves as a stark reminder of several key points:
 
 1. Operational security relies heavily on careful user practices, regardless of the technology used.
 2. Human error, like adding the wrong recipient, can undermine the security assumptions of any communication channel.
+3. Proper contact management is essential—abbreviated or incomplete contact names create serious security risks.
 
-Even though the officials were using Signal's strong encryption, the simple mistake of adding an unintended recipient to the conversation completely bypassed all technical protections. This core lesson about recipient management applies universally to all communication platforms. We must remain vigilant about *who* we are communicating with, not just how secure the channel is.
+Even though the officials were using Signal's strong encryption, the simple mistake of having ambiguous contacts completely bypassed all technical protections. This core lesson about recipient management applies universally to all communication platforms. We must remain vigilant about *who* we are communicating with, not just how secure the channel is.
 
 ## Why Signal Stands Apart
 
@@ -125,6 +128,7 @@ While Signal provides excellent technical protection, it's important to understa
 3. **Legal Compulsion**: In some jurisdictions, you could be legally compelled to unlock your device
 4. **Screenshots**: While Signal can block screenshots on Android, it cannot prevent all forms of message capture
 5. **User Error**: As the Atlantic article demonstrated, even Signal's perfect encryption is useless if you add the wrong person to your conversation
+6. **Contact Management**: Abbreviated or ambiguous contact names (like using only initials) can lead to messaging the wrong person
 
 As [Bruce Schneier](https://www.schneier.com/) reminds us, "Security is a process, not a product." Signal is a powerful tool, but it must be part of a broader security mindset. Security researcher [Matt Blaze](https://bsky.app/profile/mattblaze.bsky.social) has written extensively about these limitations in his [Substack newsletter](https://mattblaze.org/).
 
@@ -136,7 +140,8 @@ Based on my experience and conversations with other writers, here's how to effec
 2. **Create clear policies**: Decide what types of information belong on Signal versus email or other platforms
 3. **Use disappearing messages appropriately**: Set expiration times based on the sensitivity of the information
 4. **Verify contacts**: For highly sensitive communications, verify security numbers in person or via video call
-5. **Regular security audits**: Periodically review your Signal contacts and groups to ensure they're current and appropriate
+5. **Maintain detailed contact records**: As the Waltz/Goldberg incident demonstrated, never abbreviate contact names or use initials only—each contact should have a full, unambiguous name and relevant details
+6. **Regular security audits**: Periodically review your Signal contacts and groups to ensure they're current and appropriate
 
 ## Conclusion: The Writer's Security Triad
 
