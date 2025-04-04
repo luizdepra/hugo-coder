@@ -40,7 +40,7 @@ graph TD
     I([Screen Security]) -->|Prevents| J([Screenshots and app content in recent apps])
 {{< /mermaid >}}
 
-Security expert [Bruce Schneier](https://www.schneier.com/) has noted that Signal's protocol is "one of the best-designed and best-implemented encryption systems we have." This is why journalists, lawyers, activists, and yes, even government officials trying to avoid leaks, rely on it daily. Privacy advocate Moxie Marlinspike, the founder of Signal, has consistently championed user privacy above all else.
+Security expert [Bruce Schneier](https://www.schneier.com/) has noted that Signal's protocol is "one of the best-designed and best-implemented encryption systems we have." This is why journalists, lawyers, activists, and yes, even government officials trying to avoid leaks, rely on it daily. Privacy advocate [Moxie Marlinspike](https://twitter.com/moxie), the founder of Signal, has consistently championed user privacy above all else.
 
 ## The Signal Difference: A Technical Comparison
 
