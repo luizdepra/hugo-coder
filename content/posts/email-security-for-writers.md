@@ -1,10 +1,12 @@
 +++
+authors = ["Matthew Stevens"]
 title = "Email Security for Writers: Using GPG Encryption"
-date = 2025-04-05T09:30:00Z
+date = 2025-04-04
 draft = false
 description = "Learn how GPG encryption protects your content and sources."
 categories = ["security"]
 tags = ["email security", "gpg encryption", "pgp", "digital privacy"]
+series = ["Documentation"]
 +++
 
 ## Why Writers Need Email Encryption
