@@ -1,11 +1,11 @@
----
-title: "Email Security for Writers: Using GPG Encryption"
-date: 2025-04-05T09:30:00Z
-draft: false
-description: "Learn how GPG encryption protects your content and sources."
-categories: ["security"]
-tags: ["email security", "gpg encryption", "pgp", "digital privacy"]
----
++++
+title = "Email Security for Writers: Using GPG Encryption"
+date = 2025-04-05T09:30:00Z
+draft = false
+description = "Learn how GPG encryption protects your content and sources."
+categories = ["security"]
+tags = ["email security", "gpg encryption", "pgp", "digital privacy"]
++++
 
 ## Why Writers Need Email Encryption
 
