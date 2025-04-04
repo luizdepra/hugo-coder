@@ -6,7 +6,7 @@ description: "Learn why writers should use GPG encryption for email security. Pr
 tags: ["email security", "gpg encryption", "pgp", "digital privacy", "content protection", "journalism", "technical writing"]
 ---
 
-# Why Writers Need Email Encryption
+## Why Writers Need Email Encryption
 
 As writers, our words are our livelihood. Whether you're a journalist, technical writer, or content creator, you likely exchange sensitive information via email daily. But how secure are these communications?
 
