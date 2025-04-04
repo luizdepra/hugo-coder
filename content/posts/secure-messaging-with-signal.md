@@ -188,7 +188,7 @@ While Signal provides excellent technical protection, it's important to understa
 8. **Security Nihilism**: The same report found many users experience "security nihilism," a debilitating sense that truly secure communication is impossible
 9. **Inappropriate Use**: Using consumer messaging apps for classified or highly sensitive government communications creates risks regardless of the app's security
 
-As [Bruce Schneier](https://www.schneier.com/) reminds us, ["Security is a process, not a product."](https://www.schneier.com/essays/archives/2000/04/the_process_of_secur.html) In his analysis of the Signal chat leak, Schneier notes that the incident creates a complex security trade-off for agencies like the NSA: "When the NSA discovers a technological vulnerability in a service such as Signal... does it exploit it in secret, or reveal it so that it can be fixed?" Signal is a powerful tool, but it must be part of a broader security mindset. Security researcher [Matt Blaze](https://federate.social/@mattblaze) has written extensively about these limitations in his [blog](https://www.mattblaze.org/blog/).
+As [Bruce Schneier](https://www.schneier.com/) reminds us, ["Security is a process, not a product."](https://www.schneier.com/essays/archives/2000/04/the_process_of_secur.html) In his analysis of the Signal chat leak, Schneier notes that the incident creates a complex security trade-off for agencies like the NSA: "When the NSA discovers a technological vulnerability in a service such as Signal... does it exploit it in secret, or reveal it so that it can be fixed?" Signal is a powerful tool, but it must be part of a broader security mindset.
 
 ## Integrating Signal Into Your Writing Workflow
 
