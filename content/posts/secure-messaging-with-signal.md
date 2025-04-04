@@ -47,7 +47,7 @@ Security expert [Bruce Schneier](https://www.schneier.com/) has noted that Signa
 Let's compare Signal to other popular messaging platforms:
 
 {{< mermaid >}}
-graph LR
+flowchart LR
     A([Signal]) -->|End-to-End Encryption| B([Always enabled, minimal metadata])
     C([WhatsApp]) -->|End-to-End Encryption| D([Enabled but collects metadata])
     E([iMessage]) -->|End-to-End Encryption| F([Only between Apple devices])
