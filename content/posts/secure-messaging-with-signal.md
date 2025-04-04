@@ -48,16 +48,72 @@ Let's compare Signal to other popular messaging platforms:
 
 According to a 2023 analysis by Tech Policy Press, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:
 
-| App | Encryption | Metadata Protection | Ownership | Key Limitations | Security Rating |
-|-----|------------|---------------------|-----------|-----------------|----------------|
-| **Signal** | End-to-end by default | Minimal collection, encrypted | Signal Foundation (non-profit) | Requires phone number | <span style="color:green">**Best**</span> |
-| **WhatsApp** | End-to-end by default | Extensive collection | Meta/Facebook | Shares metadata with Meta | <span style="color:yellow">**Moderate**</span> |
-| **iMessage** | End-to-end | Limited protection | Apple | Only works between Apple devices | <span style="color:yellow">**Moderate**</span> |
-| **SMS/Texting** | None | None | Various carriers | Completely insecure | <span style="color:red">**Poor**</span> |
-| **Facebook Messenger** | Optional ("Secret Conversations") | Minimal protection | Meta/Facebook | E2E not enabled by default | <span style="color:red">**Poor**</span> |
-| **Telegram** | Optional ("Secret Chats") | Limited protection | Telegram LLC | Regular chats not E2E encrypted | <span style="color:yellow">**Moderate**</span> |
+<div style="background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-size: 0.9em;">
+<table style="width: 100%; border-collapse: collapse; border: 2px solid #ddd;">
+<thead style="background-color: #e9ecef;">
+<tr>
+<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">App</th>
+<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Encryption</th>
+<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Metadata Protection</th>
+<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Ownership</th>
+<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Key Limitations</th>
+<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Security Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background-color: #f2f2f2;">
+<td style="border: 1px solid #ddd; padding: 8px;"><strong>Signal</strong></td>
+<td style="border: 1px solid #ddd; padding: 8px;">End-to-end by default</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Minimal collection, encrypted</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Signal Foundation (non-profit)</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Requires phone number</td>
+<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:green"><strong>Best</strong></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 8px;"><strong>WhatsApp</strong></td>
+<td style="border: 1px solid #ddd; padding: 8px;">End-to-end by default</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Extensive collection</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Meta/Facebook</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Shares metadata with Meta</td>
+<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
+</tr>
+<tr style="background-color: #f2f2f2;">
+<td style="border: 1px solid #ddd; padding: 8px;"><strong>iMessage</strong></td>
+<td style="border: 1px solid #ddd; padding: 8px;">End-to-end</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Limited protection</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Apple</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Only works between Apple devices</td>
+<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 8px;"><strong>SMS/Texting</strong></td>
+<td style="border: 1px solid #ddd; padding: 8px;">None</td>
+<td style="border: 1px solid #ddd; padding: 8px;">None</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Various carriers</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Completely insecure</td>
+<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:red"><strong>Poor</strong></span></td>
+</tr>
+<tr style="background-color: #f2f2f2;">
+<td style="border: 1px solid #ddd; padding: 8px;"><strong>Facebook Messenger</strong></td>
+<td style="border: 1px solid #ddd; padding: 8px;">Optional ("Secret Conversations")</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Minimal protection</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Meta/Facebook</td>
+<td style="border: 1px solid #ddd; padding: 8px;">E2E not enabled by default</td>
+<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:red"><strong>Poor</strong></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 8px;"><strong>Telegram</strong></td>
+<td style="border: 1px solid #ddd; padding: 8px;">Optional ("Secret Chats")</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Limited protection</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Telegram LLC</td>
+<td style="border: 1px solid #ddd; padding: 8px;">Regular chats not E2E encrypted</td>
+<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-This color-coded table highlights why Signal is considered the gold standard for secure messaging. Green indicates the best security option, yellow indicates moderate security with some concerns, and red indicates poor security. Signal is the only platform that combines default end-to-end encryption with minimal metadata collection and non-profit ownership focused on privacy rather than data monetization.
+This enhanced table highlights why Signal is considered the gold standard for secure messaging. Green indicates the best security option, yellow indicates moderate security with some concerns, and red indicates poor security. Signal is the only platform that combines default end-to-end encryption with minimal metadata collection and non-profit ownership focused on privacy rather than data monetization.
 
 ## Real-World Applications for Writers
 
