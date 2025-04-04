@@ -1,6 +1,6 @@
 +++
 title = "Why Writers Should Use Signal: Secure Messaging for Confidential Communications"
-date = 2024-03-14
+date = 2024-03-28
 draft = false
 description = "Learn why Signal is the preferred messaging app for writers who need to protect sources and confidential communications. Includes lessons from the 'Signalgate' scandal."
 categories = ["security"]
