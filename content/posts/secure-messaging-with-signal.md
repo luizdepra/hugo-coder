@@ -48,12 +48,16 @@ Let's compare Signal to other popular messaging platforms:
 
 According to a 2023 analysis by Tech Policy Press, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:
 
-1. **Signal**: Messages encrypted on your device, decrypted only on recipient's device. Signal is the only app that encrypts or doesn't store metadata like contacts, group information, and even message sender details.
-2. **WhatsApp**: Uses the Signal protocol for encryption but collects extensive metadata and is owned by Meta, creating privacy concerns through its connections to other Meta services.
-3. **iMessage**: Secure between Apple devices but backups may not be encrypted, and the distinction between encrypted iMessages (blue) and unencrypted SMS (green) is often misunderstood by users.
-4. **SMS**: Messages transmitted in plain text, readable by carriers and potentially others (as highlighted by the Atlantic article incident).
-5. **Facebook Messenger**: Messages stored on Meta's servers unless you specifically use "Secret Conversations," with confusing naming conventions that may mislead users about their security.
-6. **Telegram**: Despite its reputation, regular chats are not end-to-end encrypted by default. Only "Secret Chats" offer true end-to-end encryption, and many users don't realize this distinction.
+| App | Encryption | Metadata Protection | Ownership | Key Limitations |
+|-----|------------|---------------------|-----------|-----------------|
+| **Signal** | End-to-end by default | Minimal collection, encrypted | Signal Foundation (non-profit) | Requires phone number |
+| **WhatsApp** | End-to-end by default | Extensive collection | Meta/Facebook | Shares metadata with Meta |
+| **iMessage** | End-to-end | Limited protection | Apple | Only works between Apple devices |
+| **SMS/Texting** | None | None | Various carriers | Completely insecure |
+| **Facebook Messenger** | Optional ("Secret Conversations") | Minimal protection | Meta/Facebook | E2E not enabled by default |
+| **Telegram** | Optional ("Secret Chats") | Limited protection | Telegram LLC | Regular chats not E2E encrypted |
+
+This table highlights why Signal is considered the gold standard for secure messaging. It's the only platform that combines default end-to-end encryption with minimal metadata collection and non-profit ownership focused on privacy rather than data monetization.
 
 ## Real-World Applications for Writers
 
