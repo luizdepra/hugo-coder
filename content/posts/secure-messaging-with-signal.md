@@ -218,7 +218,7 @@ A comprehensive 2024 analysis by the Electronic Frontier Foundation (EFF) in the
 
 As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools. The recent Signal chat leak involving high-ranking government officials has further complicated this landscape. As Schneier notes, "Other governments, possibly including US allies, will now have much more incentive to break Signal's security than they did in the past," while simultaneously the US government now has "urgent incentives to protect" the app's security since officials are using it for sensitive communications.[^2]
 
-[^1]: Electronic Frontier Foundation. (2024, February). Secure Messaging Apps Comparison. EFF. https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison
+[^1]: Electronic Frontier Foundation. (2024, February). [Secure Messaging Apps Comparison](https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison). EFF.
 
 [^2]: Schneier, B. (2025, March 31). The Signal Chat Leak and the NSA. Schneier on Security. https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html
 
