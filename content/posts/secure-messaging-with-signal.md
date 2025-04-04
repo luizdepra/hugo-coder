@@ -128,7 +128,7 @@ How does this apply to your writing practice? Consider these scenarios:
 
 ### Client Communications
 
-Technical writer Marcus Chen shares: "When discussing proprietary software features with clients, I use Signal. It gives them confidence that competitors won't intercept details about upcoming products."
+Many technical writers use Signal when discussing proprietary software features with clients. It gives clients confidence that competitors won't intercept details about upcoming products.
 
 ### Collaborative Writing
 
