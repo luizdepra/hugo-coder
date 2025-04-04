@@ -5,6 +5,8 @@ draft: false
 description: "Learn how GPG encryption protects your content and sources when working with clients, NGOs, and governments."
 categories: ["security"]
 tags: ["email security", "gpg encryption", "pgp", "digital privacy", "content protection", "journalism", "technical writing"]
+type: "post"
+layout: "post"
 ---
 
 ## Why Writers Need Email Encryption
