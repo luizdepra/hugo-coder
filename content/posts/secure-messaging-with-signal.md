@@ -231,16 +231,6 @@ Have you incorporated Signal into your writing workflow? Share your experiences 
 <p id="fn1"><sup>1</sup> Electronic Frontier Foundation, "Secure Messaging Apps Comparison," EFF, February 2024, <a href="https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison">https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison</a>. <a href="#ref1">↩</a></p>
 
 <p id="fn2"><sup>2</sup> Bruce Schneier, "The Signal Chat Leak and the NSA," Schneier on Security, March 31, 2025, <a href="https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html">https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html</a>. <a href="#ref2">↩</a></p>
-+++
-title = "Signal for Writers: Secure Confidential Messaging"
-authors = ["Matthew Stevens"]
-date = 2024-03-28T10:00:00Z
-draft = false
-description = "Learn why Signal is the preferred messaging app for writers who need to protect sources and confidential communications."
-categories = ["security"]
-tags = ["signal", "secure messaging", "privacy", "encryption", "journalism", "source protection", "communication security"]
-series = ["Documentation"]
-+++
 
 Last month, I wrote about [securing your email with GPG encryption](/posts/email-security-for-writers/). Today, I want to discuss another essential tool in a writer's security toolkit: Signal, the encrypted messaging app that has become the gold standard for confidential communications.
 
