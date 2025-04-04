@@ -27,11 +27,11 @@ Let me walk you through what happens when you send an unencrypted email:
 
 {{< mermaid >}}
 graph LR
-    A[Your Computer] -->|Unencrypted| B[Your Email Server]
-    B -->|Unencrypted| C[Internet]
-    C -->|Unencrypted| D[Recipient's Email Server]
-    D -->|Unencrypted| E[Recipient's Computer]
-    C -->|Copy?| F[Unknown Third Parties]
+    A([Your Computer]) -->|Unencrypted| B([Your Email Server])
+    B -->|Unencrypted| C([Internet])
+    C -->|Unencrypted| D([Recipient's Email Server])
+    D -->|Unencrypted| E([Recipient's Computer])
+    C -->|Copy?| F([Unknown Third Parties])
 {{< /mermaid >}}
 
 At any point along this journey, your message could be intercepted, read, or copied. Not a comforting thought when you're sending a confidential draft or communicating with a sensitive source.
@@ -40,11 +40,11 @@ Now, here's what happens with encrypted email:
 
 {{< mermaid >}}
 graph LR
-    A[Your Computer] -->|Encrypted| B[Your Email Server]
-    B -->|Encrypted| C[Internet]
-    C -->|Encrypted| D[Recipient's Email Server]
-    D -->|Encrypted| E[Recipient's Computer]
-    C -->|Encrypted Gibberish| F[Unknown Third Parties]
+    A([Your Computer]) -->|Encrypted| B([Your Email Server])
+    B -->|Encrypted| C([Internet])
+    C -->|Encrypted| D([Recipient's Email Server])
+    D -->|Encrypted| E([Recipient's Computer])
+    C -->|Encrypted Gibberish| F([Unknown Third Parties])
 {{< /mermaid >}}
 
 The difference? Only you and your recipient can read the contents. Anyone else sees only encrypted gibberish.
@@ -100,13 +100,13 @@ Once installed, creating your key pair is straightforward:
 
 {{< mermaid >}}
 flowchart TD
-    A[Open Terminal/Command Prompt] --> B[Run: gpg --full-generate-key]
-    B --> C[Select key type: RSA and RSA]
-    C --> D[Choose key size: 4096 bits]
-    D --> E[Set expiration: 2 years recommended]
-    E --> F[Enter your name and email]
-    F --> G[Create a strong passphrase]
-    G --> H[Keys generated!]
+    A([Open Terminal/Command Prompt]) --> B([Run: gpg --full-generate-key])
+    B --> C([Select key type: RSA and RSA])
+    C --> D([Choose key size: 4096 bits])
+    D --> E([Set expiration: 2 years recommended])
+    E --> F([Enter your name and email])
+    F --> G([Create a strong passphrase])
+    G --> H([Keys generated!])
 {{< /mermaid >}}
 
 The process takes about five minutes. Your computer will ask you to generate randomness by using your keyboard or mouse—this strengthens the encryption.
@@ -136,9 +136,9 @@ Here's what the exchange process looks like:
 
 {{< mermaid >}}
 graph TD
-    A[Export your public key] --> B[Share with recipient]
-    C[Recipient imports your key] --> D[Recipient sends you their key]
-    E[You import their key] --> F[You can now exchange encrypted emails]
+    A([Export your public key]) --> B([Share with recipient])
+    C([Recipient imports your key]) --> D([Recipient sends you their key])
+    E([You import their key]) --> F([You can now exchange encrypted emails])
 {{< /mermaid >}}
 
 ## The Writer's Workflow with Encrypted Email
@@ -162,11 +162,11 @@ For a complete security picture:
 
 {{< mermaid >}}
 graph TD
-    A[GPG Encryption] -->|Protects| B[Email Content]
-    A -->|Protects| C[Attachments]
-    A -->|Doesn't Protect| D[Subject Line]
-    A -->|Doesn't Protect| E[Sender/Recipient]
-    A -->|Doesn't Protect| F[Timing]
+    A([GPG Encryption]) -->|Protects| B([Email Content])
+    A -->|Protects| C([Attachments])
+    A -->|Doesn't Protect| D([Subject Line])
+    A -->|Doesn't Protect| E([Sender/Recipient])
+    A -->|Doesn't Protect| F([Timing])
 {{< /mermaid >}}
 
 For most writers, GPG provides sufficient protection. If you need complete anonymity, you might consider additional tools like secure messaging apps or anonymous email services.
