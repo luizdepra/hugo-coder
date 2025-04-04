@@ -47,7 +47,7 @@ Security expert [Bruce Schneier](https://www.schneier.com/) has noted that Signa
 Let's compare Signal to other popular messaging platforms:
 
 {{< mermaid >}}
-flowchart LR
+graph LR
     A([Signal]) -->|End-to-End Encryption| B([Always enabled, minimal metadata])
     C([WhatsApp]) -->|End-to-End Encryption| D([Enabled but collects metadata])
     E([iMessage]) -->|End-to-End Encryption| F([Only between Apple devices])
@@ -93,7 +93,7 @@ Getting started with Signal is straightforward:
 For maximum security, consider these additional steps:
 
 {{< mermaid >}}
-flowchart TD
+graph TD
     A([Install Signal]) --> B([Register with phone number])
     B --> C([Enable screen security])
     C --> D([Set up disappearing messages])
