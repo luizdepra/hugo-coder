@@ -51,66 +51,66 @@ Let's compare Signal to other popular messaging platforms:
 
 According to a 2023 analysis by Tech Policy Press, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:
 
-<div style="background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-size: 0.9em;">
-<table style="width: 100%; border-collapse: collapse; border: 2px solid #ddd;">
-<thead style="background-color: #e9ecef;">
+<div style="background-color: #e9ecef; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-size: 0.9em;">
+<table style="width: 100%; border-collapse: collapse; border: 2px solid #345; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
+<thead style="background-color: #345; color: white;">
 <tr>
-<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">App</th>
-<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Encryption</th>
-<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Metadata Protection</th>
-<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Ownership</th>
-<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Key Limitations</th>
-<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Security Rating</th>
+<th style="border: 1px solid #234; padding: 8px; text-align: left;">App</th>
+<th style="border: 1px solid #234; padding: 8px; text-align: left;">Encryption</th>
+<th style="border: 1px solid #234; padding: 8px; text-align: left;">Metadata Protection</th>
+<th style="border: 1px solid #234; padding: 8px; text-align: left;">Ownership</th>
+<th style="border: 1px solid #234; padding: 8px; text-align: left;">Key Limitations</th>
+<th style="border: 1px solid #234; padding: 8px; text-align: left;">Security Rating</th>
 </tr>
 </thead>
 <tbody>
-<tr style="background-color: #f2f2f2;">
-<td style="border: 1px solid #ddd; padding: 8px;"><strong>Signal</strong></td>
-<td style="border: 1px solid #ddd; padding: 8px;">End-to-end by default</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Minimal collection, encrypted</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Signal Foundation (non-profit)</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Requires phone number</td>
-<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:green"><strong>Best</strong></span></td>
+<tr style="background-color: #d4e5f7;">
+<td style="border: 1px solid #bcd; padding: 8px;"><strong>Signal</strong></td>
+<td style="border: 1px solid #bcd; padding: 8px;">End-to-end by default</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Minimal collection, encrypted</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Signal Foundation (non-profit)</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Requires phone number</td>
+<td style="border: 1px solid #bcd; padding: 8px;"><span style="color:green"><strong>Best</strong></span></td>
 </tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 8px;"><strong>WhatsApp</strong></td>
-<td style="border: 1px solid #ddd; padding: 8px;">End-to-end by default</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Extensive collection</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Meta/Facebook</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Shares metadata with Meta</td>
-<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
+<tr style="background-color: #e2e2e2;">
+<td style="border: 1px solid #ccc; padding: 8px;"><strong>WhatsApp</strong></td>
+<td style="border: 1px solid #ccc; padding: 8px;">End-to-end by default</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Extensive collection</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Meta/Facebook</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Shares metadata with Meta</td>
+<td style="border: 1px solid #ccc; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
 </tr>
-<tr style="background-color: #f2f2f2;">
-<td style="border: 1px solid #ddd; padding: 8px;"><strong>iMessage</strong></td>
-<td style="border: 1px solid #ddd; padding: 8px;">End-to-end</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Limited protection</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Apple</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Only works between Apple devices</td>
-<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
+<tr style="background-color: #d4e5f7;">
+<td style="border: 1px solid #bcd; padding: 8px;"><strong>iMessage</strong></td>
+<td style="border: 1px solid #bcd; padding: 8px;">End-to-end</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Limited protection</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Apple</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Only works between Apple devices</td>
+<td style="border: 1px solid #bcd; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
 </tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 8px;"><strong>SMS/Texting</strong></td>
-<td style="border: 1px solid #ddd; padding: 8px;">None</td>
-<td style="border: 1px solid #ddd; padding: 8px;">None</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Various carriers</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Completely insecure</td>
-<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:red"><strong>Poor</strong></span></td>
+<tr style="background-color: #e2e2e2;">
+<td style="border: 1px solid #ccc; padding: 8px;"><strong>SMS/Texting</strong></td>
+<td style="border: 1px solid #ccc; padding: 8px;">None</td>
+<td style="border: 1px solid #ccc; padding: 8px;">None</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Various carriers</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Completely insecure</td>
+<td style="border: 1px solid #ccc; padding: 8px;"><span style="color:red"><strong>Poor</strong></span></td>
 </tr>
-<tr style="background-color: #f2f2f2;">
-<td style="border: 1px solid #ddd; padding: 8px;"><strong>Facebook Messenger</strong></td>
-<td style="border: 1px solid #ddd; padding: 8px;">Optional ("Secret Conversations")</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Minimal protection</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Meta/Facebook</td>
-<td style="border: 1px solid #ddd; padding: 8px;">E2E not enabled by default</td>
-<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:red"><strong>Poor</strong></span></td>
+<tr style="background-color: #d4e5f7;">
+<td style="border: 1px solid #bcd; padding: 8px;"><strong>Facebook Messenger</strong></td>
+<td style="border: 1px solid #bcd; padding: 8px;">Optional ("Secret Conversations")</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Minimal protection</td>
+<td style="border: 1px solid #bcd; padding: 8px;">Meta/Facebook</td>
+<td style="border: 1px solid #bcd; padding: 8px;">E2E not enabled by default</td>
+<td style="border: 1px solid #bcd; padding: 8px;"><span style="color:red"><strong>Poor</strong></span></td>
 </tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 8px;"><strong>Telegram</strong></td>
-<td style="border: 1px solid #ddd; padding: 8px;">Optional ("Secret Chats")</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Limited protection</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Telegram LLC</td>
-<td style="border: 1px solid #ddd; padding: 8px;">Regular chats not E2E encrypted</td>
-<td style="border: 1px solid #ddd; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
+<tr style="background-color: #e2e2e2;">
+<td style="border: 1px solid #ccc; padding: 8px;"><strong>Telegram</strong></td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional ("Secret Chats")</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Limited protection</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Telegram LLC</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Regular chats not E2E encrypted</td>
+<td style="border: 1px solid #ccc; padding: 8px;"><span style="color:yellow"><strong>Moderate</strong></span></td>
 </tr>
 </tbody>
 </table>
