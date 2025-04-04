@@ -46,16 +46,6 @@ Security expert [Bruce Schneier](https://www.schneier.com/) has noted that Signa
 
 Let's compare Signal to other popular messaging platforms:
 
-{{< mermaid >}}
-graph LR
-    A[Signal] -->|End-to-End Encryption| B[Always enabled, minimal metadata]
-    C[WhatsApp] -->|End-to-End Encryption| D[Enabled but collects metadata]
-    E[iMessage] -->|End-to-End Encryption| F[Only between Apple devices]
-    G[SMS/Texting] -->|No Encryption| H[Completely insecure]
-    I[Facebook Messenger] -->|Optional Encryption| J[Not enabled by default]
-    K[Telegram] -->|Optional Encryption| L[Only in "Secret Chats"]
-{{< /mermaid >}}
-
 According to a 2023 analysis by Tech Policy Press, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:
 
 1. **Signal**: Messages encrypted on your device, decrypted only on recipient's device. Signal is the only app that encrypts or doesn't store metadata like contacts, group information, and even message sender details.
