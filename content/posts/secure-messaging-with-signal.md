@@ -49,7 +49,7 @@ Security expert [Bruce Schneier](https://www.schneier.com/) has noted that Signa
 
 Let's compare Signal to other popular messaging platforms:
 
-According to a 2024 analysis by the Electronic Frontier Foundation and security researchers at Johns Hopkins University, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:
+According to a 2024 analysis by the Electronic Frontier Foundation and security researchers at Johns Hopkins University, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:<sup><a href="#fn1" id="ref1">1</a></sup>
 
 <div style="background-color: #e9ecef; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-size: 0.9em;">
 <table style="width: 100%; border-collapse: collapse; border: 2px solid #345; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
@@ -214,17 +214,23 @@ In today's digital landscape, writers need a three-pronged approach to security:
 
 This security triad protects your work, your sources, and your professional relationships throughout the writing process. Technology journalist [Runa Sandvik](https://bsky.app/profile/runasand.bsky.social), who focuses on security for journalists, has created an excellent [Substack newsletter](https://runasand.substack.com/) covering these exact topics.
 
-A comprehensive 2024 analysis by the Electronic Frontier Foundation (EFF) in their updated Secure Messaging Scorecard reaffirmed that Signal continues to lead the way in secure messaging, particularly in its approach to metadata protection and user privacy.[^1] The report highlights Signal as the only major messaging app that meets all their security criteria, including proper implementation of end-to-end encryption, minimal data retention, and code that's open to independent review.
+A comprehensive 2024 analysis by the Electronic Frontier Foundation (EFF) in their updated Secure Messaging Scorecard reaffirmed that Signal continues to lead the way in secure messaging, particularly in its approach to metadata protection and user privacy.<sup><a href="#fn1" id="ref1">1</a></sup> The report highlights Signal as the only major messaging app that meets all their security criteria, including proper implementation of end-to-end encryption, minimal data retention, and code that's open to independent review.
 
-As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools. The recent Signal chat leak involving high-ranking government officials has further complicated this landscape. As Schneier notes, "Other governments, possibly including US allies, will now have much more incentive to break Signal's security than they did in the past," while simultaneously the US government now has "urgent incentives to protect" the app's security since officials are using it for sensitive communications.[^2]
+As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools. The recent Signal chat leak involving high-ranking government officials has further complicated this landscape. As Schneier notes, "Other governments, possibly including US allies, will now have much more incentive to break Signal's security than they did in the past," while simultaneously the US government now has "urgent incentives to protect" the app's security since officials are using it for sensitive communications.<sup><a href="#fn2" id="ref2">2</a></sup>
 
-[^1]: Electronic Frontier Foundation. (2024, February). [Secure Messaging Apps Comparison](https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison). EFF.
+[^1]: Electronic Frontier Foundation, "Secure Messaging Apps Comparison," EFF, February 2024, <https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison>.
 
-[^2]: Schneier, B. (2025, March 31). The Signal Chat Leak and the NSA. Schneier on Security. https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html
+[^2]: Bruce Schneier, "The Signal Chat Leak and the NSA," Schneier on Security, March 31, 2025, <https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html>.
 
 Signal helps provide that freedom, allowing you to focus on what matters most: your writing.
 
 Have you incorporated Signal into your writing workflow? Share your experiences in the comments below.
+
+<hr>
+
+<p id="fn1"><sup>1</sup> Electronic Frontier Foundation, "Secure Messaging Apps Comparison," EFF, February 2024, <a href="https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison">https://www.eff.org/deeplinks/2024/02/secure-messaging-apps-comparison</a>. <a href="#ref1">↩</a></p>
+
+<p id="fn2"><sup>2</sup> Bruce Schneier, "The Signal Chat Leak and the NSA," Schneier on Security, March 31, 2025, <a href="https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html">https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html</a>. <a href="#ref2">↩</a></p>
 +++
 title = "Signal for Writers: Secure Confidential Messaging"
 authors = ["Matthew Stevens"]
