@@ -132,7 +132,7 @@ Many technical writers use Signal when discussing proprietary software features 
 
 ### Collaborative Writing
 
-"Our writing team is distributed across three continents," says editor Priya Sharma. "Signal group chats let us discuss sensitive editorial decisions without worrying about our communications being monitored or leaked."
+Signal group chats allow distributed writing teams to discuss sensitive editorial decisions without worrying about their communications being monitored or leaked. This is particularly valuable for teams working across different countries with varying privacy laws.
 
 ## Setting Up Signal: A Quick Guide
 
