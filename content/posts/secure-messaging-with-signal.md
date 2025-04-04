@@ -15,15 +15,18 @@ Last month, I wrote about [securing your email with GPG encryption](/posts/email
 
 A vivid illustration of how even secure channels can be compromised through human error was recently documented in [*The Atlantic*](https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/). A journalist recounted how Trump administration officials, intending to discuss sensitive "war plans" using Signal, inadvertently included the journalist in their encrypted group chat.
 
-The error occurred because Congressman Mike Waltz had saved Atlantic editor Jeffrey Goldberg in his contacts by initials only. This seemingly minor contact management oversight led to a significant security breach when Waltz intended to message a different "JG" in his contact list.
+The error occurred because National Security Advisor Mike Waltz had saved Atlantic editor Jeffrey Goldberg in his contacts by initials only. This seemingly minor contact management oversight led to a significant security breach when Waltz intended to message a different "JG" in his contact list. While Waltz later suggested to Fox News that Goldberg might have "deliberately" accessed the chat or that it happened through "some other technical mean," security experts widely agree this was simply user error, not a vulnerability in Signal itself.
 
-This accidental inclusion provided the author with direct, unintended access to internal discussions. The incident serves as a stark reminder of several key points:
+This accidental inclusion provided the author with direct, unintended access to internal discussions about a planned military strike against Yemen-based Houthis. The incident serves as a stark reminder of several key points:
 
 1. Operational security relies heavily on careful user practices, regardless of the technology used.
 2. Human error, like adding the wrong recipient, can undermine the security assumptions of any communication channel.
 3. Proper contact management is essential—abbreviated or incomplete contact names create serious security risks.
+4. Government officials should use appropriate channels for sensitive communications, not consumer apps on personal devices.
 
-Even though the officials were using Signal's strong encryption, the simple mistake of having ambiguous contacts completely bypassed all technical protections. This core lesson about recipient management applies universally to all communication platforms. We must remain vigilant about *who* we are communicating with, not just how secure the channel is.
+Even though the officials were using Signal's strong encryption, the simple mistake of having ambiguous contacts completely bypassed all technical protections. According to security expert Bruce Schneier, this incident has created a complex situation where "the US government has urgent incentives to protect" Signal's security, as high-ranking officials are now known to use it for sensitive communications.
+
+This core lesson about recipient management applies universally to all communication platforms. We must remain vigilant about *who* we are communicating with, not just how secure the channel is.
 
 ## Why Signal Stands Apart
 
@@ -183,8 +186,9 @@ While Signal provides excellent technical protection, it's important to understa
 6. **Contact Management**: Abbreviated or ambiguous contact names (like using only initials) can lead to messaging the wrong person
 7. **Security Folklore**: A 2023 Tech Policy Press report identified widespread "security folklore" - beliefs about app security that aren't grounded in fact but nonetheless guide user decisions
 8. **Security Nihilism**: The same report found many users experience "security nihilism," a debilitating sense that truly secure communication is impossible
+9. **Inappropriate Use**: Using consumer messaging apps for classified or highly sensitive government communications creates risks regardless of the app's security
 
-As [Bruce Schneier](https://www.schneier.com/) reminds us, "Security is a process, not a product." Signal is a powerful tool, but it must be part of a broader security mindset. Security researcher [Matt Blaze](https://bsky.app/profile/mattblaze.bsky.social) has written extensively about these limitations in his [Substack newsletter](https://mattblaze.org/).
+As [Bruce Schneier](https://www.schneier.com/) reminds us, "Security is a process, not a product." In his analysis of the Signal chat leak, Schneier notes that the incident creates a complex security trade-off for agencies like the NSA: "When the NSA discovers a technological vulnerability in a service such as Signal... does it exploit it in secret, or reveal it so that it can be fixed?" Signal is a powerful tool, but it must be part of a broader security mindset. Security researcher [Matt Blaze](https://bsky.app/profile/mattblaze.bsky.social) has written extensively about these limitations in his [Substack newsletter](https://mattblaze.org/).
 
 ## Integrating Signal Into Your Writing Workflow
 
@@ -210,9 +214,13 @@ In today's digital landscape, writers need a three-pronged approach to security:
 
 This security triad protects your work, your sources, and your professional relationships throughout the writing process. Technology journalist [Runa Sandvik](https://bsky.app/profile/runasand.bsky.social), who focuses on security for journalists, has created an excellent [Substack newsletter](https://runasand.substack.com/) covering these exact topics.
 
-A comprehensive 2023 analysis by Tech Policy Press concluded that Signal leads the way in secure messaging, particularly in its approach to metadata protection and user privacy.[^1] The report recommends that other messaging apps follow Signal's example of encrypting or not storing user metadata. As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools.
+A comprehensive 2023 analysis by Tech Policy Press concluded that Signal leads the way in secure messaging, particularly in its approach to metadata protection and user privacy.[^1] The report recommends that other messaging apps follow Signal's example of encrypting or not storing user metadata. 
+
+As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools. The recent Signal chat leak involving high-ranking government officials has further complicated this landscape. As Schneier notes, "Other governments, possibly including US allies, will now have much more incentive to break Signal's security than they did in the past," while simultaneously the US government now has "urgent incentives to protect" the app's security since officials are using it for sensitive communications.[^2]
 
 [^1]: Hendrix, J., Sinders, C., Quintin, C., Wagner, L. W., Bernard, T., & Mehta, A. (2023, June 20). What is Secure? An Analysis of Popular Messaging Apps. Tech Policy Press. https://www.techpolicy.press/what-is-secure-an-analysis-of-popular-messaging-apps/
+
+[^2]: Schneier, B. (2025, March 31). The Signal Chat Leak and the NSA. Schneier on Security. https://www.schneier.com/blog/archives/2025/03/the-signal-chat-leak-and-the-nsa.html
 
 Signal helps provide that freedom, allowing you to focus on what matters most: your writing.
 
