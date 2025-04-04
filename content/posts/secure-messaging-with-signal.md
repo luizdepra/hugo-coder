@@ -48,20 +48,22 @@ Let's compare Signal to other popular messaging platforms:
 
 {{< mermaid >}}
 graph LR
-    A([Signal]) -->|End-to-End Encryption| B([Always enabled])
-    C([WhatsApp]) -->|End-to-End Encryption| D([Enabled but owned by Meta/Facebook])
+    A([Signal]) -->|End-to-End Encryption| B([Always enabled, minimal metadata])
+    C([WhatsApp]) -->|End-to-End Encryption| D([Enabled but collects metadata])
     E([iMessage]) -->|End-to-End Encryption| F([Only between Apple devices])
     G([SMS/Regular Texting]) -->|No Encryption| H([Completely insecure])
     I([Facebook Messenger]) -->|Optional Encryption| J([Not enabled by default])
+    K([Telegram]) -->|Optional Encryption| L([Only in "Secret Chats"])
 {{< /mermaid >}}
 
-The technical superiority of Signal becomes clear when we examine what happens to your message data:
+According to a 2023 analysis by Tech Policy Press, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:
 
-1. **Signal**: Messages encrypted on your device, decrypted only on recipient's device
-2. **WhatsApp**: Similar encryption but collects metadata and is owned by Meta
-3. **iMessage**: Secure between Apple devices but backups may not be encrypted
-4. **SMS**: Messages transmitted in plain text, readable by carriers and potentially others (as highlighted by the Atlantic article incident)
-5. **Facebook Messenger**: Messages stored on Facebook servers unless you use "Secret Conversations"
+1. **Signal**: Messages encrypted on your device, decrypted only on recipient's device. Signal is the only app that encrypts or doesn't store metadata like contacts, group information, and even message sender details.
+2. **WhatsApp**: Uses the Signal protocol for encryption but collects extensive metadata and is owned by Meta, creating privacy concerns through its connections to other Meta services.
+3. **iMessage**: Secure between Apple devices but backups may not be encrypted, and the distinction between encrypted iMessages (blue) and unencrypted SMS (green) is often misunderstood by users.
+4. **SMS**: Messages transmitted in plain text, readable by carriers and potentially others (as highlighted by the Atlantic article incident).
+5. **Facebook Messenger**: Messages stored on Meta's servers unless you specifically use "Secret Conversations," with confusing naming conventions that may mislead users about their security.
+6. **Telegram**: Despite its reputation, regular chats are not end-to-end encrypted by default. Only "Secret Chats" offer true end-to-end encryption, and many users don't realize this distinction.
 
 ## Real-World Applications for Writers
 
@@ -129,12 +131,14 @@ While Signal provides excellent technical protection, it's important to understa
 4. **Screenshots**: While Signal can block screenshots on Android, it cannot prevent all forms of message capture
 5. **User Error**: As the Atlantic article demonstrated, even Signal's perfect encryption is useless if you add the wrong person to your conversation
 6. **Contact Management**: Abbreviated or ambiguous contact names (like using only initials) can lead to messaging the wrong person
+7. **Security Folklore**: A 2023 Tech Policy Press report identified widespread "security folklore" - beliefs about app security that aren't grounded in fact but nonetheless guide user decisions
+8. **Security Nihilism**: The same report found many users experience "security nihilism," a debilitating sense that truly secure communication is impossible
 
 As [Bruce Schneier](https://www.schneier.com/) reminds us, "Security is a process, not a product." Signal is a powerful tool, but it must be part of a broader security mindset. Security researcher [Matt Blaze](https://bsky.app/profile/mattblaze.bsky.social) has written extensively about these limitations in his [Substack newsletter](https://mattblaze.org/).
 
 ## Integrating Signal Into Your Writing Workflow
 
-Based on my experience and conversations with other writers, here's how to effectively incorporate Signal into your professional practice:
+Based on my experience, conversations with other writers, and recent research from Tech Policy Press, here's how to effectively incorporate Signal into your professional practice:
 
 1. **Establish Signal as a preferred channel**: Let sources, clients, and collaborators know you're available on Signal for sensitive communications
 2. **Create clear policies**: Decide what types of information belong on Signal versus email or other platforms
@@ -142,6 +146,9 @@ Based on my experience and conversations with other writers, here's how to effec
 4. **Verify contacts**: For highly sensitive communications, verify security numbers in person or via video call
 5. **Maintain detailed contact records**: As the Waltz/Goldberg incident demonstrated, never abbreviate contact names or use initials only—each contact should have a full, unambiguous name and relevant details
 6. **Regular security audits**: Periodically review your Signal contacts and groups to ensure they're current and appropriate
+7. **Customize security settings**: Take advantage of Signal's granular privacy settings to tailor the app to your specific needs
+8. **Avoid backups to unencrypted services**: Be cautious about backing up Signal messages to cloud services that might not maintain the same level of encryption
+9. **Be aware of metadata**: While Signal minimizes metadata collection, understand what information might still be exposed in your communications
 
 ## Conclusion: The Writer's Security Triad
 
@@ -152,6 +159,8 @@ In today's digital landscape, writers need a three-pronged approach to security:
 3. **Secure your instant communications**: With [Signal](https://signal.org/)
 
 This security triad protects your work, your sources, and your professional relationships throughout the writing process. Technology journalist [Runa Sandvik](https://bsky.app/profile/runasand.bsky.social), who focuses on security for journalists, has created an excellent [Substack newsletter](https://runasand.substack.com/) covering these exact topics.
+
+A comprehensive 2023 analysis by Tech Policy Press concluded that Signal leads the way in secure messaging, particularly in its approach to metadata protection and user privacy. The report recommends that other messaging apps follow Signal's example of encrypting or not storing user metadata. As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools.
 
 Signal helps provide that freedom, allowing you to focus on what matters most: your writing.
 
