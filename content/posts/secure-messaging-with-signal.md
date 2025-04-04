@@ -210,7 +210,9 @@ In today's digital landscape, writers need a three-pronged approach to security:
 
 This security triad protects your work, your sources, and your professional relationships throughout the writing process. Technology journalist [Runa Sandvik](https://bsky.app/profile/runasand.bsky.social), who focuses on security for journalists, has created an excellent [Substack newsletter](https://runasand.substack.com/) covering these exact topics.
 
-A comprehensive 2023 analysis by Tech Policy Press concluded that Signal leads the way in secure messaging, particularly in its approach to metadata protection and user privacy. The report recommends that other messaging apps follow Signal's example of encrypting or not storing user metadata. As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools.
+A comprehensive 2023 analysis by Tech Policy Press concluded that Signal leads the way in secure messaging, particularly in its approach to metadata protection and user privacy.[^1] The report recommends that other messaging apps follow Signal's example of encrypting or not storing user metadata. As governments around the world increasingly threaten encryption with new regulations, it's crucial that writers understand and advocate for truly secure communication tools.
+
+[^1]: Hendrix, J., Sinders, C., Quintin, C., Wagner, L. W., Bernard, T., & Mehta, A. (2023, June 20). What is Secure? An Analysis of Popular Messaging Apps. Tech Policy Press. https://www.techpolicy.press/what-is-secure-an-analysis-of-popular-messaging-apps/
 
 Signal helps provide that freedom, allowing you to focus on what matters most: your writing.
 
