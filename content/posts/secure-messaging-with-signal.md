@@ -255,7 +255,7 @@ Getting started with Signal is straightforward:
 For maximum security, consider these additional steps:
 
 {{< mermaid >}}
-flowchart TD
+graph TD
     A([Install Signal]) --> B([Register with phone number])
     B --> C([Enable screen security])
     C --> D([Set up disappearing messages])
