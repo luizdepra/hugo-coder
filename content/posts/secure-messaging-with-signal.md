@@ -9,7 +9,7 @@ tags = ["signal", "secure messaging", "privacy", "encryption", "journalism", "so
 series = ["Documentation"]
 +++
 
-Last month, I wrote about [securing your email with GPG encryption](/posts/email-security-for-writers/). Today, I want to discuss another essential tool in a writer's security toolkit: Signal, the encrypted messaging app that has become the gold standard for confidential communications.
+Following up on my article about [implementing signed commits](/posts/implementing-signed-commits/), I want to discuss another essential tool in a writer's security toolkit: Signal, the encrypted messaging app that has become the gold standard for confidential communications.
 
 ## When Text Messages Become Headlines
 
@@ -24,7 +24,7 @@ This cautionary tale reminds us that while Signal offers robust technical securi
 
 ## Why Signal Stands Apart
 
-As writers, we often handle sensitive information—unpublished drafts, source quotes, client feedback, or confidential research. Just as we [protect our Git commits](/posts/implementing-signed-commits/) and [encrypt our emails](/posts/email-security-for-writers/), we need to secure our instant communications.
+As writers, we often handle sensitive information—unpublished drafts, source quotes, client feedback, or confidential research. Just as we [protect our Git commits](/posts/implementing-signed-commits/), we need to secure our instant communications.
 
 Signal offers several advantages that make it particularly valuable for writers:
 
@@ -139,11 +139,10 @@ Based on my experience and conversations with other writers, here's how to effec
 
 ## Conclusion: The Writer's Security Triad
 
-In today's digital landscape, writers need a three-pronged approach to security:
+In today's digital landscape, writers need a two-pronged approach to security:
 
 1. **Secure your content creation**: With tools like [signed Git commits](/posts/implementing-signed-commits/)
-2. **Secure your formal communications**: With [email encryption](/posts/email-security-for-writers/)
-3. **Secure your instant communications**: With Signal
+2. **Secure your instant communications**: With Signal
 
 This security triad protects your work, your sources, and your professional relationships throughout the writing process.
 

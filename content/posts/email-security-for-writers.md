@@ -197,6 +197,6 @@ If you'd like to dive deeper:
 
 - [Email Self-Defense Guide](https://emailselfdefense.fsf.org/) by the Free Software Foundation offers step-by-step instructions
 - [The GNU Privacy Handbook](https://www.gnupg.org/gph/en/manual.html) provides comprehensive documentation
-- Our [signed commits article](/posts/implementing-signed-commits/) covers related security concepts
+- My previous article on [signed commits](/posts/implementing-signed-commits/) covers related security concepts
 
 Have questions about setting up GPG for your specific writing workflow? Drop a comment below or reach out directly. I'm happy to help fellow writers secure their communications.
