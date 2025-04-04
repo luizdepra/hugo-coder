@@ -1,6 +1,6 @@
 +++
 title = "How to Implement Git Signed Commits: A Simple Security Guide for Hugo Users"
-date = 2025-04-04T13:46:00Z
+date = 2024-02-15T13:46:00Z
 draft = false
 description = "Learn how to secure your Git workflow with signed commits. This step-by-step guide explains digital signatures, GPG and SSH keys, and how to verify your identity when contributing to projects."
 tags = ["git security", "signed commits", "digital signatures", "hugo workflow", "github security", "gpg keys", "ssh keys"]

@@ -1,7 +1,7 @@
 +++
 authors = ["Matthew Stevens"]
 title = "Secure Your Writing: A Practical Guide to Email Encryption"
-date = 2025-04-04
+date = 2024-02-28
 draft = false
 description = "Why writers need email encryption and how to set it up easily with GPG to protect your work, sources, and reputation."
 categories = ["security"]
