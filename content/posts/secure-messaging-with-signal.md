@@ -48,16 +48,16 @@ Let's compare Signal to other popular messaging platforms:
 
 According to a 2023 analysis by Tech Policy Press, the technical superiority of Signal becomes clear when we examine what happens to your message data and metadata:
 
-| App | Encryption | Metadata Protection | Ownership | Key Limitations |
-|-----|------------|---------------------|-----------|-----------------|
-| **Signal** | End-to-end by default | Minimal collection, encrypted | Signal Foundation (non-profit) | Requires phone number |
-| **WhatsApp** | End-to-end by default | Extensive collection | Meta/Facebook | Shares metadata with Meta |
-| **iMessage** | End-to-end | Limited protection | Apple | Only works between Apple devices |
-| **SMS/Texting** | None | None | Various carriers | Completely insecure |
-| **Facebook Messenger** | Optional ("Secret Conversations") | Minimal protection | Meta/Facebook | E2E not enabled by default |
-| **Telegram** | Optional ("Secret Chats") | Limited protection | Telegram LLC | Regular chats not E2E encrypted |
+| App | Encryption | Metadata Protection | Ownership | Key Limitations | Security Rating |
+|-----|------------|---------------------|-----------|-----------------|----------------|
+| **Signal** | End-to-end by default | Minimal collection, encrypted | Signal Foundation (non-profit) | Requires phone number | <span style="color:green">**Best**</span> |
+| **WhatsApp** | End-to-end by default | Extensive collection | Meta/Facebook | Shares metadata with Meta | <span style="color:yellow">**Moderate**</span> |
+| **iMessage** | End-to-end | Limited protection | Apple | Only works between Apple devices | <span style="color:yellow">**Moderate**</span> |
+| **SMS/Texting** | None | None | Various carriers | Completely insecure | <span style="color:red">**Poor**</span> |
+| **Facebook Messenger** | Optional ("Secret Conversations") | Minimal protection | Meta/Facebook | E2E not enabled by default | <span style="color:red">**Poor**</span> |
+| **Telegram** | Optional ("Secret Chats") | Limited protection | Telegram LLC | Regular chats not E2E encrypted | <span style="color:yellow">**Moderate**</span> |
 
-This table highlights why Signal is considered the gold standard for secure messaging. It's the only platform that combines default end-to-end encryption with minimal metadata collection and non-profit ownership focused on privacy rather than data monetization.
+This color-coded table highlights why Signal is considered the gold standard for secure messaging. Green indicates the best security option, yellow indicates moderate security with some concerns, and red indicates poor security. Signal is the only platform that combines default end-to-end encryption with minimal metadata collection and non-profit ownership focused on privacy rather than data monetization.
 
 ## Real-World Applications for Writers
 
