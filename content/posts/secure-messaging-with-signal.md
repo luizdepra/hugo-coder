@@ -13,7 +13,7 @@ Last month, I wrote about [securing your email with GPG encryption](/posts/email
 
 ## When Text Messages Become Headlines
 
-A vivid illustration of how even secure channels can be compromised through human error was recently documented in [*The Atlantic*](https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/). A journalist recounted how Trump administration officials, intending to discuss sensitive "war plans" using Signal, inadvertently included the journalist in their encrypted group chat.
+A vivid illustration of how even secure channels can be compromised through human error was recently documented in [*The Atlantic*](https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/). Jeffrey Goldberg, editor-in-chief of *The Atlantic*, recounted how Trump administration officials, intending to discuss sensitive "war plans" using Signal, inadvertently included him in their encrypted group chat.
 
 The error occurred because National Security Advisor Mike Waltz had saved Atlantic editor Jeffrey Goldberg in his contacts by initials only. This seemingly minor contact management oversight led to a significant security breach when Waltz intended to message a different "JG" in his contact list. While Waltz later suggested to Fox News that Goldberg might have "deliberately" accessed the chat or that it happened through "some other technical mean," security experts widely agree this was simply user error, not a vulnerability in Signal itself.
 
