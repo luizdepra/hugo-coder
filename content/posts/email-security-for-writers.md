@@ -3,6 +3,7 @@ title: "Email Security for Writers: Protecting Your Content with GPG Encryption"
 date: 2025-04-05T09:30:00Z
 draft: false
 description: "Learn why writers should use GPG encryption for email security. Protect your content, sources, and reputation when working with enterprise clients, NGOs, and governments."
+categories: ["security"]
 tags: ["email security", "gpg encryption", "pgp", "digital privacy", "content protection", "journalism", "technical writing"]
 ---
 
