@@ -37,7 +37,7 @@ graph TD
     I([Screen Security]) -->|Prevents| J([Screenshots and app content in recent apps])
 {{< /mermaid >}}
 
-Security expert Bruce Schneier has noted that Signal's protocol is "one of the best-designed and best-implemented encryption systems we have." This is why journalists, lawyers, activists, and yes, even government officials trying to avoid leaks, rely on it daily.
+Security expert [Bruce Schneier](https://www.schneier.com/) has noted that Signal's protocol is "one of the best-designed and best-implemented encryption systems we have." This is why journalists, lawyers, activists, and yes, even government officials trying to avoid leaks, rely on it daily. Privacy advocate [Moxie Marlinspike](https://bsky.app/profile/moxie.bsky.social), the founder of Signal, has consistently championed user privacy above all else.
 
 ## The Signal Difference: A Technical Comparison
 
@@ -66,7 +66,7 @@ How does this apply to your writing practice? Consider these scenarios:
 
 ### Protecting Sources
 
-"I interview whistleblowers for investigative pieces," explains journalist Elena Rodriguez. "Signal is non-negotiable for these conversations. Its disappearing message feature ensures that sensitive information doesn't persist longer than necessary."
+"I interview whistleblowers for investigative pieces," explains journalist Elena Rodriguez. "Signal is non-negotiable for these conversations. Its disappearing message feature ensures that sensitive information doesn't persist longer than necessary." This sentiment is echoed by investigative journalist [Barton Gellman](https://bsky.app/profile/bartongellman.bsky.social), who has written extensively about surveillance and security.
 
 ### Client Communications
 
@@ -80,7 +80,7 @@ Technical writer Marcus Chen shares: "When discussing proprietary software featu
 
 Getting started with Signal is straightforward:
 
-1. **Download**: Install Signal from your device's app store
+1. **Download**: Install [Signal](https://signal.org/download/) from your device's app store
 2. **Verify**: Register with your phone number and verify with a code
 3. **Secure**: Set up a PIN and enable registration lock
 4. **Configure**: Adjust disappearing message defaults and other security settings
@@ -125,7 +125,7 @@ While Signal provides excellent technical protection, it's important to understa
 3. **Legal Compulsion**: In some jurisdictions, you could be legally compelled to unlock your device
 4. **Screenshots**: While Signal can block screenshots on Android, it cannot prevent all forms of message capture
 
-As Bruce Schneier reminds us, "Security is a process, not a product." Signal is a powerful tool, but it must be part of a broader security mindset.
+As [Bruce Schneier](https://www.schneier.com/) reminds us, "Security is a process, not a product." Signal is a powerful tool, but it must be part of a broader security mindset. Security researcher [Matt Blaze](https://bsky.app/profile/mattblaze.bsky.social) has written extensively about these limitations in his [Substack newsletter](https://mattblaze.org/).
 
 ## Integrating Signal Into Your Writing Workflow
 
@@ -143,9 +143,9 @@ In today's digital landscape, writers need a three-pronged approach to security:
 
 1. **Secure your content creation**: With tools like [signed Git commits](/posts/implementing-signed-commits/)
 2. **Secure your formal communications**: With [email encryption](/posts/email-security-for-writers/)
-3. **Secure your instant communications**: With Signal
+3. **Secure your instant communications**: With [Signal](https://signal.org/)
 
-This security triad protects your work, your sources, and your professional relationships throughout the writing process.
+This security triad protects your work, your sources, and your professional relationships throughout the writing process. Technology journalist [Runa Sandvik](https://bsky.app/profile/runasand.bsky.social), who focuses on security for journalists, has created an excellent [Substack newsletter](https://runasand.substack.com/) covering these exact topics.
 
 Signal helps provide that freedom, allowing you to focus on what matters most: your writing.
 
