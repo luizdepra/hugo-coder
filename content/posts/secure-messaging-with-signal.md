@@ -13,14 +13,14 @@ Last month, I wrote about [securing your email with GPG encryption](/posts/email
 
 ## When Text Messages Become Headlines
 
-A vivid illustration of how even presumed secure channels can be compromised through human error was recently documented in [*The Atlantic*](https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/). A journalist recounted how Trump administration officials, intending to discuss sensitive "war plans," inadvertently included the journalist in their text message chain.
+A vivid illustration of how even secure channels can be compromised through human error was recently documented in [*The Atlantic*](https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/). A journalist recounted how Trump administration officials, intending to discuss sensitive "war plans" using Signal, inadvertently included the journalist in their encrypted group chat.
 
 This accidental inclusion provided the author with direct, unintended access to internal discussions. The incident serves as a stark reminder of two key points:
 
 1. Operational security relies heavily on careful user practices, regardless of the technology used.
 2. Human error, like adding the wrong recipient, can undermine the security assumptions of any communication channel.
 
-While the officials in this case weren't using Signal specifically (the article implies standard texting), the core lesson about recipient management applies universally to all communication, including secure platforms like Signal. We must remain vigilant about *who* we are communicating with.
+Even though the officials were using Signal's strong encryption, the simple mistake of adding an unintended recipient to the conversation completely bypassed all technical protections. This core lesson about recipient management applies universally to all communication platforms. We must remain vigilant about *who* we are communicating with, not just how secure the channel is.
 
 ## Why Signal Stands Apart
 
@@ -124,6 +124,7 @@ While Signal provides excellent technical protection, it's important to understa
 2. **Human Factors**: As the incident reported in *The Atlantic* showed, adding the wrong person to any conversation bypasses all technical protections
 3. **Legal Compulsion**: In some jurisdictions, you could be legally compelled to unlock your device
 4. **Screenshots**: While Signal can block screenshots on Android, it cannot prevent all forms of message capture
+5. **User Error**: As the Atlantic article demonstrated, even Signal's perfect encryption is useless if you add the wrong person to your conversation
 
 As [Bruce Schneier](https://www.schneier.com/) reminds us, "Security is a process, not a product." Signal is a powerful tool, but it must be part of a broader security mindset. Security researcher [Matt Blaze](https://bsky.app/profile/mattblaze.bsky.social) has written extensively about these limitations in his [Substack newsletter](https://mattblaze.org/).
 
