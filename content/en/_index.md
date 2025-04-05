@@ -16,8 +16,6 @@ categories = [
 
 **SanMarcSoft LLC** specializes in **Technical Writing** and **Project Management** solutions that bring clarity, efficiency, and excellence to your software and engineering projects. Whether you're launching a new product, refining internal systems, or navigating complex integrations — we help you deliver with confidence.
 
-
-
 ## 🛠️ Our Expertise
 
 - **Technical Documentation**
@@ -53,4 +51,4 @@ Let’s connect and make your next release smoother, smarter, and stress-free.
 
 ---
 
-> **SanMarcSoft LLC** — *We don't just manage the project. We write the playbook.*
+ **SanMarcSoft LLC** — *From Code to Prose.*
