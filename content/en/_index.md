@@ -1,9 +1,9 @@
 +++
 authors = ["Matthew Stevens"]
-title: "SanMarcSoft LLC"
-description: "Technical Writing and Project Management Consulting"
+title = "SanMarcSoft LLC"
+description = "Technical Writing and Project Management Consulting"
 date = "2025-04-05"
-description = "Guide to emoji usage in Hugo"
+# Removed duplicate description: "Guide to emoji usage in Hugo"
 tags = [
     "hugo",
     "markdown",
