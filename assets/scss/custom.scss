@@ -6,3 +6,25 @@
   border-radius: 50%;
   object-fit: cover;
 }
+// Custom SCSS to override hugo-coder theme defaults
+// Match www.sanmarcsoft.com look and feel
+
+// --- Color Overrides ---
+
+// Light theme (matches www.sanmarcsoft.com)
+$bg-color: #ffffff; // White background
+$fg-color: #333333; // Dark gray text
+
+// Optional: Define link colors if needed
+// $link-color: #007bff; // Example blue link color
+
+// --- Font Overrides ---
+// Add font overrides here if needed later
+
+// --- Layout Adjustments ---
+// Add layout adjustments here if needed later
+
+
+// Important: If using SCSS variables to override theme defaults,
+// ensure this file is loaded correctly by Hugo's asset pipeline.
+// This is typically done via the `customSCSS` parameter in hugo.toml.
