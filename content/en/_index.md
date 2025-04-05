@@ -5,15 +5,12 @@ description = "Technical Writing and Project Management Consulting"
 date = "2025-04-05"
 # Removed duplicate description: "Guide to emoji usage in Hugo"
 tags = [
-    "hugo",
-    "markdown",
-    "emoji",
+    "Technical Writing",
+    "Project Management"
 ]
 categories = [
-    "syntax",
-    "theme demo",
+    "homepage",
 ]
-series = ["Theme Demo"]
 +++
 
 
