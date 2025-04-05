@@ -5,9 +5,9 @@ date = "2025-04-05"
 <!-- HERO SECTION -->
 <div style="display: flex; justify-content: center; align-items: center; text-align: center; padding: 3rem 1rem;">
   <div style="background-color: #f9f9f9; padding: 2rem; border-radius: 1rem; box-shadow: 0 8px 24px rgba(0,0,0,0.1); max-width: 720px; width: 100%;">
-    <h1 style="margin-bottom: 0.5rem;">Keep Your Docs Moving at the Speed of Your Code</h1>
-    <h3 style="font-weight: normal; font-style: italic; margin-top: 0;">From Code to Prose</h3>
-    <p style="margin: 1rem 0;">We help fast-moving software teams keep documentation aligned with delivery — so nothing breaks when you scale.</p>
+    <h1 style="margin-bottom: 0.5rem; color: #333333;">Keep Your Docs Moving at the Speed of Your Code</h1>
+    <h3 style="font-weight: normal; font-style: italic; margin-top: 0; color: #333333;">From Code to Prose</h3>
+    <p style="margin: 1rem 0; color: #333333;">We help fast-moving software teams keep documentation aligned with delivery — so nothing breaks when you scale.</p>
     <a href="mailto:office@sanmarcsoft.com" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background-color: black; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Start My Project Review</a>
     <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #666;">We’ll review your docs and recommend a plan that fits your product velocity.</p>
   </div>
