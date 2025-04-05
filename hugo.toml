@@ -172,3 +172,8 @@ name = "About"
 weight = 3
 url = "about/"
 
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 4
+url = "projects/"
+
