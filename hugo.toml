@@ -4,6 +4,7 @@ theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
+contentDir = "content"
 
 [pagination]
 pagerSize = 6
@@ -153,6 +154,8 @@ url = "https://www.linkedin.com/in/thematthewstevens/"
 
 [languages.en]
 languageName = ":uk:"
+contentDir = "content/en"
+weight = 1
 
 [[languages.en.menu.main]]
 name = "Home"
@@ -164,6 +167,8 @@ name = "Blog"
 weight = 2
 url = "posts/"
 
-
-
+[[languages.en.menu.main]]
+name = "About"
+weight = 3
+url = "about/"
 
