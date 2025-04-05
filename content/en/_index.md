@@ -1,47 +1,77 @@
 +++
-title = "SanMarcSoft LLC"
-date = "2025-04-05" # Using a simple string date for now
+date = "2025-04-05"
 +++
 
-
-# 🚀 Welcome to SanMarcSoft LLC
-### *Precision in Documentation. Power in Delivery.*
-
-**SanMarcSoft LLC** specializes in **Technical Writing** and **Project Management** solutions that bring clarity, efficiency, and excellence to your software and engineering projects. Whether you're launching a new product, refining internal systems, or navigating complex integrations — we help you deliver with confidence.
-
-## 🛠️ Our Expertise
-
-- **Technical Documentation**
-  Clear, concise, and user-focused manuals, API guides, knowledge bases, SOPs, and developer docs.
-
-- **Project Management**
-  Agile, Waterfall, or hybrid — we steer your project from kickoff to delivery with intelligent planning, risk management, and stakeholder alignment.
-
-- **Process Optimization**
-  We bring order to chaos, streamlining workflows and aligning teams with scalable documentation and repeatable systems.
-
-- **Content Strategy**
-  From internal tools to customer-facing portals, we ensure your technical content is always accurate, accessible, and actionable.
+<!-- HERO SECTION -->
+<div style="display: flex; justify-content: center; align-items: center; text-align: center; padding: 3rem 1rem;">
+  <div style="background-color: #f9f9f9; padding: 2rem; border-radius: 1rem; box-shadow: 0 8px 24px rgba(0,0,0,0.1); max-width: 720px; width: 100%;">
+    <h1 style="margin-bottom: 0.5rem;">Keep Your Docs Moving at the Speed of Your Code</h1>
+    <h3 style="font-weight: normal; font-style: italic; margin-top: 0;">From Code to Prose</h3>
+    <p style="margin: 1rem 0;">We help fast-moving software teams keep documentation aligned with delivery — so nothing breaks when you scale.</p>
+    <a href="mailto:office@sanmarcsoft.com" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background-color: black; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Start My Project Review</a>
+    <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #666;">We’ll review your docs and recommend a plan that fits your product velocity.</p>
+  </div>
+</div>
 
 ---
 
-## 🌟 Why SanMarcSoft?
+## 🧩 Documentation That Keeps Pace With Your Product
 
-- ✅ **Decades of Combined Experience** in software, SaaS, DevOps, and enterprise systems
-- ✅ **Cross-Functional Expertise** in bridging engineering, design, product, and support teams
-- ✅ **Detail-Oriented + Deadline-Driven** — the perfect blend of precision and momentum
-- ✅ **Trusted by Innovators** — from startups to Fortune 500s
+Software doesn’t stand still. Your docs shouldn’t either.
 
----
+**SanMarcSoft** partners with growing teams to create and maintain technical documentation that evolves alongside your software. We don’t just ship docs — we build a system that moves with you.
 
-## 🔗 Ready to Elevate Your Project?
-
-Let’s connect and make your next release smoother, smarter, and stress-free.
-
-📧 **Email:** [info@sanmarcsoft.com](mailto:info@sanmarcsoft.com)
-🌐 **Website:** [www.sanmarcsoft.com](https://www.sanmarcsoft.com)
-📍 Serving clients worldwide — 100% remote capable
+- 🔄 Always up to date  
+- 🚀 Matched to your sprint velocity  
+- 🔍 Clear, accessible, and user-focused  
+- ✅ Versioned in sync with your releases (without the headaches)
 
 ---
 
- **SanMarcSoft LLC** — *From Code to Prose.*
+## ✅ What You Get (Without Slowing Down Your Team)
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2rem; padding: 1rem 0;">
+  <div style="flex: 1; min-width: 280px; max-width: 300px;">
+    <h4>📉 Fewer Support Tickets</h4>
+    <p>Well-structured docs mean customers (and internal teams) get answers faster — without pinging your devs.</p>
+  </div>
+  <div style="flex: 1; min-width: 280px; max-width: 300px;">
+    <h4>⚙️ Less Process Drift</h4>
+    <p>Your team runs smoother when knowledge is captured in real time — not three quarters too late.</p>
+  </div>
+  <div style="flex: 1; min-width: 280px; max-width: 300px;">
+    <h4>⏱️ Dev Time Protected</h4>
+    <p>Your engineers stay focused on building. We take care of documenting — fast, accurately, and independently.</p>
+  </div>
+</div>
+
+---
+
+## 🙌 Trusted by Engineering-Led Teams
+
+> “SanMarcSoft became our secret weapon. The docs were always current — even when the product changed every week.”  
+> <small>– Dr. Josh Lange - GetSmart Token Platform Founder</small>
+
+> “We stopped worrying about documentation. It just… kept up. Honestly, it felt like magic.”  
+> <small>– Dr. Angelika Zotter - Syngergetics Language Solutions</small>
+
+> “Our engineers respect them. That’s rare in technical writing.”  
+> <small>– Metaborong, Blockchain Offshore Software Development</small>
+
+---
+
+## 🔍 Let’s See If We’re a Fit
+
+We’ll review your product and current documentation setup — and propose a writing plan that matches your release rhythm.
+
+📧 **Email:** [office@sanmarcsoft.com](mailto:office@sanmarcsoft.com)  
+📞 **Call/Text:** [+1 (512) 851-0606](tel:+15128510606)  
+📍 Based in Texas. Partnering with software teams around the world.
+
+<a href="mailto:office@sanmarcsoft.com" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background-color: black; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Start My Free Review</a>
+
+<p style="font-size: 0.8rem; margin-top: 0.5rem; color: #666;">No spam. Just honest, expert feedback.</p>
+
+---
+
+> **SanMarcSoft LLC** — *From Code to Prose.*
