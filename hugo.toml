@@ -157,7 +157,7 @@ languageName = ":uk:"
 [[languages.en.menu.main]]
 name = "Home"
 weight = 1
-url = "https://www.sanmarcsoft.com"
+url = "/" # Point to the site root (homepage)
 
 [[languages.en.menu.main]]
 name = "Blog"
