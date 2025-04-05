@@ -43,8 +43,7 @@ maxSeeAlsoItems = 5
 # Custom CSS
 customCSS = []
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
-# Use customer.scss for site-specific overrides
-customSCSS = ["scss/customer.scss"]
+customSCSS = []
 
 # Custom JS
 customJS = []
