@@ -155,24 +155,14 @@ url = "https://www.linkedin.com/in/thematthewstevens/"
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
-name = "About"
+name = "Home"
 weight = 1
-url = "about/"
+url = "https://www.sanmarcsoft.com"
 
 [[languages.en.menu.main]]
 name = "Blog"
 weight = 2
 url = "posts/"
-
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
-
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 5
-url = "contact/"
 
 
 
