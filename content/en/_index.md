@@ -4,7 +4,7 @@ title = "SanMarcSoft LLC"
 description = "Technical Writing and Project Management Consulting"
 date = "2025-04-05"
 # Removed duplicate description: "Guide to emoji usage in Hugo"
-tags = ["Technical Writing", "Project Management"]
+# tags = ["Technical Writing", "Project Management"] # Temporarily commented out for debugging
 categories = [
     "homepage",
 ]
