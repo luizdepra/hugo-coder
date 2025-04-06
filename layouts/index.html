@@ -1,4 +1,8 @@
 
 {{ define "content" }}
-  {{ partial "home.html" . }}
+  <h1>{{ .Title }}</h1>
+  <hr>
+  <div>
+    {{ .Content }}
+  </div>
 {{ end }}
