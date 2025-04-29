@@ -14,7 +14,7 @@
   <ul>
     {{ range .Paginator.Pages }}
     <li>
-      {{ if .Params.showthedate }}
+      {{ if not (.Site.Params.hidedates) }}
       <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
       {{ end }}
       <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
