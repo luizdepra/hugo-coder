@@ -41,7 +41,7 @@
   {{ $script := resources.Get "js/coder.js" }}
   <script src="{{ $script.RelPermalink }}"></script>
   {{ else }}
-  {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
+  {{ $script := resources.Get "js/coder.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
 
@@ -50,7 +50,7 @@
   {{ $script := resources.Get . }}
   <script src="{{ $script.RelPermalink }}"></script>
   {{ else }}
-  {{ $script := resources.Get . | minify | fingerprint }}
+  {{ $script := resources.Get . | resources.Minify | resources.Fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
   {{ end }}
@@ -60,7 +60,7 @@
   {{ $script := resources.GetRemote . }}
   <script src="{{ $script.RelPermalink }}"></script>
   {{ else }}
-  {{ $script := resources.GetRemote . | minify | fingerprint }}
+  {{ $script := resources.GetRemote . | resources.Minify | resources.Fingerprint }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
   {{ end }}
