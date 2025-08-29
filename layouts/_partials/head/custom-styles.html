@@ -3,7 +3,7 @@
     {{ $styles := resources.Get . }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
   {{ else }}
-    {{ $styles := resources.Get . | minify | fingerprint }}
+    {{ $styles := resources.Get . | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
   {{ end }}
 {{ end }}
@@ -15,7 +15,7 @@
     {{ $styles := resources.Get . | toCSS $cssOpts }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
   {{ else }}
-    {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
+    {{ $styles := resources.Get . | toCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
   {{ end }}
 {{ end }}
