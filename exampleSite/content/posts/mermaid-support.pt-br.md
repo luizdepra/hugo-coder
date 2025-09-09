@@ -13,7 +13,8 @@ categories = [
     "sintaxe",
     "demonstração do tema",
 ]
-series = ["Demonstração do Tema"]
+[params]
+  series = ["Demonstração do Tema"]
 +++
 
 Se quiser usar o [Mermaid-JS](https://mermaid-js.github.io/mermaid/#/) em sua página.
