@@ -1,0 +1,17 @@
+<div
+  id="gossip-wrap-{{ .Get "id" | default "demo" }}"
+  data-n="{{ .Get "n" | default "5" }}"
+  data-fanout="{{ .Get "fanout" | default "1" }}"
+  style="max-width:720px;margin:1rem auto;"
+></div>
+
+<script src="/js/gossip.js" defer></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const sel = "#gossip-wrap-{{ .Get "id" | default "demo" }}";
+    const host = document.querySelector(sel);
+    const n = Math.min(16, Math.max(2, parseInt(host?.dataset?.n || "5", 10)));
+    const fanout = Math.max(1, parseInt(host?.dataset?.fanout || "1", 10));
+    window.GossipMount?.(sel, { n, fanout });
+  });
+</script>
