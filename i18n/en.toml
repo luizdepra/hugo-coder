@@ -62,3 +62,6 @@ other = "error"
 
 [link_to_heading]
 other = "Link to heading"
+
+[entry_toc]
+other = "Table of Contents"
