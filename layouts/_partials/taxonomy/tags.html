@@ -5,7 +5,13 @@
       <span class="separator">•</span>
     {{- end }}
     <span class="tag">
-      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <a href="{{ .RelPermalink }}">
+        {{ if site.Params.preserveTags }}
+            {{ .Data.Term }}
+        {{ else }}
+            {{ .LinkTitle }}
+        {{ end }}
+      </a>
     </span>
   {{- end -}}
 </div>

@@ -3,8 +3,17 @@
     {{- i18n .Data.Plural 1 | title -}}
     {{- print ": " -}}
   {{- end -}}
-  {{- i18n (lower .Title) | default .Title | title }} · {{ .Site.Title -}}
+
+  {{- if and site.Params.preserveTags (eq .Data.Plural "tags") -}}
+    {{- .Data.Term -}}
+  {{- else -}}
+    {{- i18n (lower .Title) | default .Title | title -}}
+  {{- end }}
+
+  · {{ .Site.Title -}}
 {{ end }}
+
 {{ define "content" }}
   {{ partial "list.html" . }}
 {{ end }}
+

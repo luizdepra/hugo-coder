@@ -6,7 +6,12 @@
           {{- i18n .Data.Plural 1 | title -}}
           {{- print ": " -}}
         {{- end -}}
-        {{- i18n (lower .Title) | default .Title | title -}}
+
+        {{- if and site.Params.preserveTags (eq .Kind "term") (eq .Data.Plural "tags") -}}
+          {{- .Data.Term -}}
+        {{- else -}}
+          {{- i18n (lower .Title) | default .Title | title -}}
+        {{- end -}}
       </a>
     </h1>
   </header>
