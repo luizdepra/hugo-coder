@@ -8,6 +8,7 @@ _in alphabetic order_
 -   [Baidu Analytics](https://tongji.baidu.com/) - [documentation](/docs/analytics/baidu.md)
 -   [Clicky](https://clicky.com/) - [documentation](/docs/analytics/clicky.md)
 -   [Cloudflare](https://www.cloudflare.com/analytics/) - [documentation](/docs/analytics/cloudflare.md)
+-   [Counter.dev](https://counter.dev/) - [documentation](/docs/analytics/counterdev.md)
 -   [Google Analytics](https://developers.google.com/analytics) - [documentation](/docs/analytics/googleanalytics.md)
 -   [Google Tag Manager](https://developers.google.com/tag-manager) - [documentation](/docs/analytics/googletagmanager.md)
 -   [Fathom Analytics](https://usefathom.com/) - [documentation](/docs/analytics/fathom.md)

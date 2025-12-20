@@ -4,6 +4,10 @@
 <head>
   <title>{{ block "title" . }}{{ .Site.Params.HeadTitle | default .Site.Title }}{{ end }}</title>
   {{ partial "head.html" . }}
+
+  {{ if and .Site.Params.counterdev .Site.Params.counterdev.id }}
+  {{- partial "analytics/counterdev" . -}}
+  {{ end }}
 </head>
 
 {{ $csClass := "colorscheme-light" }}
