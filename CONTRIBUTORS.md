@@ -148,3 +148,4 @@
 -   [Matt Ellery](https://github.com/matt-ellery)
 -   [Daniel Olshansky](https://github.com/olshansk)
 -   [Gregor Podjed](https://github.com/gragorther)
+-   [dantezhu](https://github.com/dantezhu)
