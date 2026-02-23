@@ -1,0 +1,9 @@
+{{- $toc := default .Site.Params.Entry.toc .Params.toc -}}
+{{- $tocOpen := default .Site.Params.Entry.tocOpen .Params.tocOpen -}}
+
+{{- if $toc }}
+<details class="entry__toc toc" {{ if $tocOpen }}open{{ end }}>
+	<summary class="toc__title">{{- T "entry_toc" -}}</summary>
+	{{ .TableOfContents }}
+</details>
+{{- end }}
