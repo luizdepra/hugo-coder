@@ -76,6 +76,10 @@ customRemoteJS = []
 # [params.cloudflare]
 # token = "token"
 
+# If you want to use Counter.dev(https://counter.dev) for analytics, add this section
+# [params.counterdev]
+# id = "data-id"
+
 # If you want to use Matomo(https://matomo.org) for analytics, add this section
 # [params.matomo]
 # siteID = "ABCDE" # Default value is "1", overwrite this if you are cloud-hosting
