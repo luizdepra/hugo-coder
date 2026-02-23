@@ -168,6 +168,7 @@ Social Icons are optional. To use them you will need to set at least all the fol
 | icon           | string | Yes      | FontAwesome icon classes.                | `"fa-brands fa-github"`         |
 | weight         | int    | Yes      | Icon order.                              | `1`                             |
 | url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"` |
+| rel            | string | No       | Define the relationship                  | `"me"`                          |
 
 An example:
 

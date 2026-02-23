@@ -149,3 +149,4 @@
 -   [Daniel Olshansky](https://github.com/olshansk)
 -   [Gregor Podjed](https://github.com/gragorther)
 -   [dantezhu](https://github.com/dantezhu)
+-   [Alexander Lazarević](https://e11bits.com)
