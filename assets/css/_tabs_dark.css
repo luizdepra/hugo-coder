@@ -1,0 +1,37 @@
+body.colorscheme-dark {
+  .tabs {
+    label.tab-label {
+      background-color: var(--alt-bg-color-dark);
+      border-color: var(--lighter-alt-bg-color-dark);
+    }
+
+    input.tab-input:checked + label.tab-label {
+      background-color: var(--bg-color-dark);
+    }
+
+    .tab-content {
+      background-color: var(--bg-color-dark);
+      border-color: var(--lighter-alt-bg-color-dark);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    .tabs {
+      label.tab-label {
+        background-color: var(--alt-bg-color-dark);
+        border-color: var(--lighter-alt-bg-color-dark);
+      }
+
+      input.tab-input:checked + label.tab-label {
+        background-color: var(--bg-color-dark);
+      }
+
+      .tab-content {
+        background-color: var(--bg-color-dark);
+        border-color: var(--lighter-alt-bg-color-dark);
+      }
+    }
+  }
+}
