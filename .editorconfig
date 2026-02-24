@@ -22,7 +22,7 @@ trim_trailing_whitespace = false
 indent_size = 2
 
 # web files
-[*.{html,css,scss}]
+[*.{html,css}]
 indent_size = 2
 
 [Makefile]

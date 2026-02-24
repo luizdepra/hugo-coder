@@ -1,0 +1,17 @@
+body.colorscheme-dark {
+  .notice {
+    .notice-title {
+      border-bottom: 1px solid var(--bg-color-dark);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    .notice {
+      .notice-title {
+        border-bottom: 1px solid var(--bg-color-dark);
+      }
+    }
+  }
+}
