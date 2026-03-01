@@ -3,7 +3,6 @@ authors = ["Programador Solitário"]
 title = "Configuração de Equações Matemáticas"
 date = "2023-07-10"
 description = "Um guia rápido sobre utilizar KaTeX"
-math ="true"
 tags = [
     "hugo",
     "markdown",
@@ -14,7 +13,9 @@ categories = [
     "sintaxe",
     "demonstração do tema",
 ]
-series = ["Demonstração do Tema"]
+[params]
+  math = "true"
+  series = ["Demonstração do Tema"]
 +++
 
 Em um projeto Hugo as Notações Matemáticas podem ser usadas com a ajuda de bibliotecas JavaScript de terceiros.

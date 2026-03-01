@@ -14,7 +14,8 @@ categories = [
     "sintaxe",
     "demonstração do tema",
 ]
-series = ["Demonstração do Tema"]
+[params]
+  series = ["Demonstração do Tema"]
 +++
 
 O Hugo Coder proporciona alguns Shortcodes Customizados.

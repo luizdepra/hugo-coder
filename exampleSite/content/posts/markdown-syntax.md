@@ -13,7 +13,8 @@ categories = [
     "theme demo",
     "syntax",
 ]
-series = ["Theme Demo"]
+[params]
+  series = ["Theme Demo"]
 aliases = ["migrate-from-jekyl"]
 +++
 

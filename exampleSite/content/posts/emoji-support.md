@@ -12,7 +12,8 @@ categories = [
     "syntax",
     "theme demo",
 ]
-series = ["Theme Demo"]
+[params]
+  series = ["Theme Demo"]
 +++
 
 Emoji can be enabled in a Hugo project in a number of ways.

@@ -14,7 +14,8 @@ categories = [
     "sintaxe",
     "demonstração do tema",
 ]
-series = ["Demonstração do Tema"]
+[params]
+  series = ["Demonstração do Tema"]
 aliases = ["migrate-from-jekyl"]
 +++
 

@@ -3,7 +3,6 @@ authors = ["Lone Coder"]
 title = "Math Typesetting"
 date = "2023-07-10"
 description = "A brief guide to setup KaTeX"
-math = true
 tags = [
     "hugo",
     "markdown",
@@ -14,7 +13,9 @@ categories = [
     "theme demo",
     "syntax",
 ]
-series = ["Theme Demo"]
+[params]
+  math = true
+  series = ["Theme Demo"]
 +++
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.

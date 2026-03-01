@@ -6,5 +6,6 @@ slug = "hugo-coder-wiki"
 tags = [
     "hugo"
 ]
-externalLink = "https://github.com/luizdepra/hugo-coder/wiki"
+[params]
+  externalLink = "https://github.com/luizdepra/hugo-coder/wiki"
 +++

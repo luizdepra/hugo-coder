@@ -12,7 +12,8 @@ categories = [
     "sintaxe",
     "demonstração do tema",
 ]
-series = ["Demonstração do Tema"]
+[params]
+  series = ["Demonstração do Tema"]
 +++
 
 Emojis podem ser ativados em um projeto Hugo de diversar formas.
