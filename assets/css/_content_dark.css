@@ -1,0 +1,101 @@
+body.colorscheme-dark {
+  .content {
+    .post {
+      .tags {
+        .tag {
+          background-color: var(--alt-bg-color-dark);
+
+          a {
+            color: var(--fg-color-dark);
+          }
+          a:active {
+            color: var(--fg-color-dark);
+          }
+        }
+      }
+    }
+    .list {
+      ul {
+        li {
+          .title {
+            color: var(--fg-color-dark);
+
+            &:hover,
+            &:focus {
+              color: var(--link-color-dark);
+            }
+          }
+        }
+      }
+    }
+
+    .centered {
+      .about {
+        ul {
+          li {
+            a {
+              color: var(--fg-color-dark);
+
+              &:hover,
+              &:focus {
+                color: var(--link-color-dark);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    .content {
+      .post {
+        .tags {
+          .tag {
+            background-color: var(--alt-bg-color-dark);
+
+            a {
+              color: var(--fg-color-dark);
+            }
+            a:active {
+              color: var(--fg-color-dark);
+            }
+          }
+        }
+      }
+      .list {
+        ul {
+          li {
+            .title {
+              color: var(--fg-color-dark);
+
+              &:hover,
+              &:focus {
+                color: var(--link-color-dark);
+              }
+            }
+          }
+        }
+      }
+
+      .centered {
+        .about {
+          ul {
+            li {
+              a {
+                color: var(--fg-color-dark);
+
+                &:hover,
+                &:focus {
+                  color: var(--link-color-dark);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

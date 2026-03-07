@@ -3,23 +3,19 @@
 <link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 {{ if hugo.IsServer }}
-  {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
-  {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
+  {{ $styles := resources.Get "css/coder.css" }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
 {{ else }}
-  {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
-  {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | resources.Minify | resources.Fingerprint }}
+  {{ $styles := resources.Get "css/coder.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}
 
 {{ if .Site.Params.rtl }}
   {{ if hugo.IsServer }}
-    {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" "enableSourceMap" true ) }}
-    {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
+    {{ $styles := resources.Get "css/coder-rtl.css" }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
   {{ else }}
-    {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
-    {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | resources.Minify | resources.Fingerprint }}
+    {{ $styles := resources.Get "css/coder-rtl.css" | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
   {{ end }}
 {{ end }}

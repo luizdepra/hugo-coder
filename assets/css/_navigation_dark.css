@@ -1,0 +1,113 @@
+body.colorscheme-dark {
+  .navigation {
+    a,
+    span {
+      color: var(--fg-color-dark);
+    }
+
+    a {
+      &:hover,
+      &:focus {
+        color: var(--link-color-dark);
+      }
+    }
+
+    .navigation-list {
+      @media only screen and (max-width: 768px) {
+        background-color: var(--bg-color-dark);
+        border-top: solid 2px var(--alt-bg-color-dark);
+        border-bottom: solid 2px var(--alt-bg-color-dark);
+      }
+
+      .menu-separator {
+        @media only screen and (max-width: 768px) {
+          border-top: 2px solid var(--fg-color-dark);
+        }
+      }
+    }
+
+    #menu-toggle {
+      @media only screen and (max-width: 768px) {
+        &:checked+label>i {
+          color: var(--alt-bg-color-dark);
+        }
+      }
+    }
+
+    i {
+      color: var(--fg-color-dark);
+
+      &:hover,
+      &:focus {
+        color: var(--link-color-dark);
+      }
+    }
+
+    .menu-button {
+      i {
+        &:hover,
+        &:focus {
+          color: var(--alt-fg-color-dark);
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    .navigation {
+      a,
+      span {
+        color: var(--fg-color-dark);
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: var(--link-color-dark);
+        }
+      }
+
+      .navigation-list {
+        @media only screen and (max-width: 768px) {
+          background-color: var(--bg-color-dark);
+          border-top: solid 2px var(--alt-bg-color-dark);
+          border-bottom: solid 2px var(--alt-bg-color-dark);
+        }
+
+        .menu-separator {
+          @media only screen and (max-width: 768px) {
+            border-top: 2px solid var(--fg-color-dark);
+          }
+        }
+      }
+
+      #menu-toggle {
+        @media only screen and (max-width: 768px) {
+          &:checked+label>i {
+            color: var(--alt-bg-color-dark);
+          }
+        }
+      }
+
+      i {
+        color: var(--fg-color-dark);
+
+        &:hover,
+        &:focus {
+          color: var(--link-color-dark);
+        }
+      }
+
+      .menu-button {
+        i {
+          &:hover,
+          &:focus {
+            color: var(--alt-fg-color-dark);
+          }
+        }
+      }
+    }
+  }
+}

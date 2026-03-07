@@ -1,0 +1,165 @@
+body.colorscheme-dark {
+  color: var(--fg-color-dark);
+  background-color: var(--bg-color-dark);
+
+  a {
+    color: var(--link-color-dark);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--alt-fg-color-dark);
+
+    &:hover .heading-link {
+      visibility: visible;
+    }
+
+    .heading-link {
+      color: var(--link-color-dark);
+      font-weight: inherit;
+      text-decoration: none;
+      font-size: 80%;
+      visibility: hidden;
+    }
+
+    .title-link {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration: none;
+    }
+  }
+
+  pre code {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  code {
+    background-color: var(--lighter-alt-bg-color-dark);
+    color: var(--fg-color-dark);
+  }
+
+  blockquote {
+    border-left: 2px solid var(--alt-bg-color-dark);
+  }
+
+  th,
+  td {
+    padding: 1.6rem;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table td,
+  table th {
+    border: 2px solid var(--alt-fg-color-dark);
+  }
+
+  table tr:first-child th {
+    border-top: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table tr td:first-child,
+  table tr th:first-child {
+    border-left: 0;
+  }
+
+  table tr td:last-child,
+  table tr th:last-child {
+    border-right: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    color: var(--fg-color-dark);
+    background-color: var(--bg-color-dark);
+
+    a {
+      color: var(--link-color-dark);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--alt-fg-color-dark);
+
+      &:hover .heading-link {
+        visibility: visible;
+      }
+
+      .heading-link {
+        color: var(--link-color-dark);
+        font-weight: inherit;
+        text-decoration: none;
+        font-size: 80%;
+        visibility: hidden;
+      }
+
+      .title-link {
+        color: inherit;
+        font-weight: inherit;
+        text-decoration: none;
+      }
+    }
+
+    pre code {
+      background-color: inherit;
+      color: inherit;
+    }
+
+    code {
+      background-color: var(--lighter-alt-bg-color-dark);
+      color: var(--fg-color-dark);
+    }
+
+    blockquote {
+      border-left: 2px solid var(--alt-bg-color-dark);
+    }
+
+    th,
+    td {
+      padding: 1.6rem;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table td,
+    table th {
+      border: 2px solid var(--alt-fg-color-dark);
+    }
+
+    table tr:first-child th {
+      border-top: 0;
+    }
+
+    table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    table tr td:first-child,
+    table tr th:first-child {
+      border-left: 0;
+    }
+
+    table tr td:last-child,
+    table tr th:last-child {
+      border-right: 0;
+    }
+  }
+}

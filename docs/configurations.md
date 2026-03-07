@@ -150,7 +150,6 @@ These are all the parameters used by `hugo-coder` theme.
 | colorScheme             | string | No       | Specify light/dark colorscheme                                           | `"auto"`                          | `"auto"` or `"light"` or `"dark"`                 |
 | hideColorSchemeToggle   | bool   | No       | If true, hides the color scheme toggle                                   | `false`                           | `true` or `false`                                 |
 | customCSS               | list   | No       | Add extra CSS files to the website.                                      | []                                | `["css/extra-style.css"]`                         |
-| customSCSS              | list   | No       | Add extra SCSS files to the website.                                     | []                                | `["scss/extra-style.scss"]`                       |
 | customJS                | list   | No       | Add extra JS files to the website.                                       | []                                | `["js/extra-script.js"]`                          |
 | customRemoteJS          | list   | No       | Add extra remote JS files to the website.                                | []                                | `["https://www.example.com/file.js"]`             |
 | enableTwemoji           | bool   | No       | Adds support for Twemoji                                                 | `false`                           | `true` or `false`                                 |
@@ -304,7 +303,6 @@ style = "github-dark"
   hidecolorschemetoggle = false
 
   # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
 [taxonomies]
