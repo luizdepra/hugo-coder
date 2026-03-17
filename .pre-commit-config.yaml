@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: lint
+        name: npm run lint
+        entry: npm run lint
+        language: system
+        pass_filenames: false
+        always_run: true

@@ -1,6 +1,6 @@
 HUGO_BIN=hugo
 
-.PHONY: build demo release
+.PHONY: build demo release lint format setup
 
 build:
 	$(HUGO_BIN) --themesDir=../.. --source=exampleSite
@@ -10,3 +10,13 @@ demo:
 
 release: build
 	rm -rf ./resources && cp -r ./exampleSite/resources ./resources
+
+setup:
+	npm install
+	prek install
+
+lint:
+	npm run lint
+
+format:
+	npm run format

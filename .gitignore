@@ -3,4 +3,6 @@
 exampleSite/public/
 exampleSite/resources/
 *.lock
+package-lock.json
+node_modules
 public

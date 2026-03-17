@@ -1,0 +1,20 @@
+{
+  "name": "hugo-coder",
+  "private": true,
+  "scripts": {
+    "lint:html": "prettier --check \"layouts/**/*.html\" \"exampleSite/**/*.html\"",
+    "lint:scss": "stylelint \"assets/scss/**/*.scss\"",
+    "lint": "npm run lint:html && npm run lint:scss",
+    "format:html": "prettier --write \"layouts/**/*.html\" \"exampleSite/**/*.html\"",
+    "format:scss": "stylelint --fix \"assets/scss/**/*.scss\"",
+    "format": "npm run format:html && npm run format:scss"
+  },
+  "devDependencies": {
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.3.3",
+    "prettier-plugin-go-template": "^0.0.15",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-scss": "^6.5.0"
+  }
+}

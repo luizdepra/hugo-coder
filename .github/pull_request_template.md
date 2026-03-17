@@ -26,6 +26,7 @@ Put an `x` into the box(es) that apply:
 
 #### Resources
 
+- [ ] If you changed templates or styles, run `make format`
 - [ ] If you have changed any SCSS code, run `make release` to regenerate all CSS files
 
 #### Contributors
