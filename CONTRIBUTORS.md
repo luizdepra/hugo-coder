@@ -150,3 +150,4 @@
 -   [Gregor Podjed](https://github.com/gragorther)
 -   [dantezhu](https://github.com/dantezhu)
 -   [Alexander Lazarević](https://e11bits.com)
+-   [Oliver B. Fischer](https://stdout.oliverfischer.dev) 
