@@ -10,7 +10,9 @@
       </a>
     </h1>
   </header>
-  {{ .Content }}
+  <article>
+    {{ .Content }}
+  </article>
   <ul>
     {{ range .Paginator.Pages }}
     <li>
