@@ -1,25 +1,25 @@
 [categories]
-one = "Kategória"
-other = "categories"
+one = "kategória"
+other = "kategóriák"
 
 [tags]
-one = "Címke"
-other = "tags"
+one = "címke"
+other = "címkék"
 
 [series]
-one = "Sorozat"
-other = "series"
+one = "sorozat"
+other = "sorozatok"
 
 [authors]
-one = "Szerző"
-other = "authors"
+one = "szerző"
+other = "szerzők"
 
 [posts]
-other = "Írások"
+other = "bejegyzések"
 
 [reading_time]
-one = "Egyperces"
-other = "{{ .Count }} percnyi olvasnivaló"
+one = "Egyperces olvasnivaló"
+other = "{{ .Count }} perces olvasnivaló"
 
 [page_not_found]
 other = "Az oldal nem található"
@@ -31,34 +31,37 @@ other = "Sajnálom, a kért oldal nem létezik."
 other = "Itt visszaléphet a <a href=\"{{ . }}\">Főoldalra</a>."
 
 [licensed_under]
-other = "Licensed under"
+other = "Ezen licenc alatt:"
 
 [powered_by]
 other = "Motor:"
 
 [see_also]
-other = "Lásd még"
+other = "Lásd még itt:"
 
 [note]
-other = "note"
+other = "jegyzet"
 
 [tip]
-other = "tip"
+other = "tanács"
 
 [example]
-other = "example"
+other = "példa"
 
 [question]
-other = "question"
+other = "kérdés"
 
 [info]
-other = "info"
+other = "információ"
 
 [warning]
-other = "warning"
+other = "figyelmeztetés"
 
 [error]
-other = "error"
+other = "hiba"
 
 [link_to_heading]
-other = "Link to heading"
+other = "Link a címsorhoz"
+
+[entry_toc]
+other = "Tartalomjegyzék"
