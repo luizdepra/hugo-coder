@@ -150,3 +150,4 @@
 -   [Gregor Podjed](https://github.com/gragorther)
 -   [dantezhu](https://github.com/dantezhu)
 -   [Alexander Lazarević](https://e11bits.com)
+-   [William Floyd](https://w-floyd.com)
