@@ -150,6 +150,7 @@
 -   [Gregor Podjed](https://github.com/gragorther)
 -   [dantezhu](https://github.com/dantezhu)
 -   [Alexander Lazarević](https://e11bits.com)
+-   [Oliver B. Fischer](https://stdout.oliverfischer.dev) 
 -   [Ábel Nagy](https://github.com/abel-nagy)
 -   [William Floyd](https://w-floyd.com)
 -   [Tiago Carrondo](https://carrondo.pt)
