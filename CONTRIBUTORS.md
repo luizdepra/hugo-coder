@@ -152,3 +152,4 @@
 -   [Alexander Lazarević](https://e11bits.com)
 -   [Ábel Nagy](https://github.com/abel-nagy)
 -   [William Floyd](https://w-floyd.com)
+-   [Tiago Carrondo](https://carrondo.pt)
