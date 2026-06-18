@@ -27,6 +27,9 @@ other = "Page Not Found"
 [page_does_not_exist]
 other = "Sorry, this page does not exist."
 
+[alias]
+other = "Redirecting to:"
+
 [head_back]
 other = "You can head back to the <a href=\"{{ . }}\">homepage</a>."
 

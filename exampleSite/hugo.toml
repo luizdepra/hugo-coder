@@ -145,6 +145,14 @@ series = "series"
 tag = "tags"
 author = "authors"
 
+[params.aliases]
+# Include OpenGraph and Twitter Card metadata in generated alias
+# redirect pages. This can improve link previews when alias URLs
+# are shared directly.
+#
+# Default: false
+socialMetadata = true
+
 [[params.social]]
 name = "Github"
 icon = "fa-brands fa-github fa-2x"
