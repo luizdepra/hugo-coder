@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Redirecting to {{ .Permalink }}</title>
+        <link rel="canonical" href="{{ .Permalink }}" />
+        <meta name="robots" content="noindex,follow">
+        <meta http-equiv="refresh" content="0; url={{ .Permalink }}" />
+        {{ if site.Params.aliases.socialMetadata }}
+            {{ with .Page }}
+                <!-- alternative would be {{ template "_internal/opengraph.html" . }} and  {{ template "_internal/twitter_cards.html" . }} -->
+                <meta property="og:url" content="{{ .Permalink }}">
+                <meta property="og:site_name" content="{{ site.Title }}">
+                {{ with or .Params.description .Description .Summary }}
+                    <meta property="og:description" content="{{ . }}">
+                {{ end }}
+                {{ with .Title }}
+                    <meta property="og:title" content="{{ . }}">
+                {{ else }}
+                    <meta property="og:title" content="Redirecting to {{ .Permalink }}">
+                {{ end }}
+                <meta property="og:type" content="website">
+            {{ end }}
+        {{ end }}
+    </head>
+    <body>
+        <p>{{ i18n "alias" }} <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
+    </body>
+</html>
