@@ -1,0 +1,65 @@
+:root {
+  --font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    Helvetica,
+    "游ゴシック",
+    "PingFang SC",
+    STXihei,
+    "华文细黑",
+    "Microsoft YaHei",
+    "微软雅黑",
+    SimSun,
+    "宋体",
+    Heiti,
+    "黑体",
+    sans-serif;
+  --code-font-family: "SF Mono",
+    Consolas,
+    Liberation Mono,
+    Menlo,
+    monospace;
+
+  --bg-color: #fafafa;
+  --fg-color: #212121;
+  --alt-bg-color: #e0e0e0;
+  --alt-fg-color: #000;
+  --darker-alt-bg-color: #ccc;
+  --link-color: #1565c0;
+
+  --bg-color-dark: #212121;
+  --fg-color-dark: #dadada;
+  --alt-bg-color-dark: #424242;
+  --alt-fg-color-dark: #dadada;
+  --lighter-alt-bg-color-dark: #4f4f4f;
+  --link-color-dark: #42a5f5;
+
+  --fg-color-notice-note-icon: #5e35b1;
+  --bg-color-notice-note-title: #673ab71a;
+  --bg-color-notice-note-content: #7e57c21a;
+  --fg-color-notice-tip-icon: #00897b;
+  --bg-color-notice-tip-title: #0096881a;
+  --bg-color-notice-tip-content: #26a69a1a;
+  --fg-color-notice-example-icon: #6d4c41;
+  --bg-color-notice-example-title: #7955481a;
+  --bg-color-notice-example-content: #8d6e631a;
+  --fg-color-notice-question-icon: #7cb342;
+  --bg-color-notice-question-title: #8bc34a1a;
+  --bg-color-notice-question-content: #9ccc651a;
+  --fg-color-notice-info-icon: #1e88e5;
+  --bg-color-notice-info-title: #2196f31a;
+  --bg-color-notice-info-content: #42a5f51a;
+  --fg-color-notice-warning-icon: #ffb300;
+  --bg-color-notice-warning-title: #ffc1071a;
+  --bg-color-notice-warning-content: #ffca281a;
+  --fg-color-notice-error-icon: #e53935;
+  --bg-color-notice-error-title: #f443361a;
+  --bg-color-notice-error-content: #ef53501a;
+
+  --fa-font-path: "../fonts";
+}

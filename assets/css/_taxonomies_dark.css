@@ -1,0 +1,27 @@
+body.colorscheme-dark {
+  .taxonomy-element {
+    background-color: var(--alt-bg-color-dark);
+
+    a {
+      color: var(--fg-color-dark);
+    }
+    a:active {
+      color: var(--fg-color-dark);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    .taxonomy-element {
+      background-color: var(--alt-bg-color-dark);
+
+      a {
+        color: var(--fg-color-dark);
+      }
+      a:active {
+        color: var(--fg-color-dark);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+body.colorscheme-dark {
+  .footer {
+    a {
+      color: var(--link-color-dark);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    .footer {
+      a {
+        color: var(--link-color-dark);
+      }
+    }
+  }
+}

@@ -26,7 +26,7 @@ Put an `x` into the box(es) that apply:
 
 #### Resources
 
-- [ ] If you have changed any SCSS code, run `make release` to regenerate all CSS files
+- [ ] If you have changed any CSS code, run `make release` to regenerate all assets
 
 #### Contributors
 

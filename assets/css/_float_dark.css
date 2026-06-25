@@ -1,0 +1,37 @@
+body.colorscheme-dark {
+  .float-container {
+    a {
+      color: var(--alt-fg-color-dark);
+      background-color: var(--alt-bg-color-dark);
+
+      &:hover,
+      &:focus {
+        color: var(--link-color-dark);
+
+        @media only screen and (max-width: 768px) {
+          color: var(--alt-fg-color-dark);
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.colorscheme-auto {
+    .float-container {
+      a {
+        color: var(--alt-fg-color-dark);
+        background-color: var(--alt-bg-color-dark);
+
+        &:hover,
+        &:focus {
+          color: var(--link-color-dark);
+
+          @media only screen and (max-width: 768px) {
+            color: var(--alt-fg-color-dark);
+          }
+        }
+      }
+    }
+  }
+}
