@@ -11,10 +11,19 @@
         <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
+        {{ $currentPage := . }}
         {{ with .Site.Menus.main}}
           {{ range sort . }}
+            {{ if $currentPage.IsMenuCurrent .Menu . }}
+            <li class="navigation-item active" aria-current="page">
+            {{ else if $currentPage.HasMenuCurrent .Menu . }}
+            <li class="navigation-item ancestor" aria-current="true">
+            {{ else }}
             <li class="navigation-item">
-              <a class="navigation-link {{ .Params.class }}" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
+            {{ end }}
+              <a class="navigation-link {{ .Params.class }}" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">
+                {{ .Name }}
+	      </a>
             </li>
           {{ end }}
         {{ end }}

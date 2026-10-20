@@ -66,6 +66,11 @@
         margin-left: 1rem;
         margin-right: 1rem;
       }
+ 
+      &.active > a,
+      &.ancestor > a {
+        color: $link-color;
+      }
     }
 
     .separator {
