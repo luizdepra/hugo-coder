@@ -12,7 +12,7 @@
       </label>
       <ul class="navigation-list">
         {{ with .Site.Menus.main}}
-          {{ range sort . }}
+          {{ range . }}
             <li class="navigation-item">
               <a class="navigation-link {{ .Params.class }}" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
             </li>
