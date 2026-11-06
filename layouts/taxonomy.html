@@ -6,5 +6,5 @@
   {{- i18n (lower .Title) | default .Title | title }} · {{ .Site.Title -}}
 {{ end }}
 {{ define "content" }}
-  {{ partial "terms.html" . }}
+  {{ partial "taxonomy.html" . }}
 {{ end }}
