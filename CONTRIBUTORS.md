@@ -154,3 +154,4 @@
 -   [Ábel Nagy](https://github.com/abel-nagy)
 -   [William Floyd](https://w-floyd.com)
 -   [Tiago Carrondo](https://carrondo.pt)
+    [Luke Wassink](https://github.com/lukewassink)
