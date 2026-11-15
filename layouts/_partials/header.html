@@ -13,7 +13,7 @@
       <ul class="navigation-list">
         {{ $currentPage := . }}
         {{ with .Site.Menus.main}}
-          {{ range sort . }}
+          {{ range . }}
             {{ if $currentPage.IsMenuCurrent .Menu . }}
             <li class="navigation-item active" aria-current="page">
             {{ else if $currentPage.HasMenuCurrent .Menu . }}
@@ -23,7 +23,7 @@
             {{ end }}
               <a class="navigation-link {{ .Params.class }}" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">
                 {{ .Name }}
-	      </a>
+	            </a>
             </li>
           {{ end }}
         {{ end }}
