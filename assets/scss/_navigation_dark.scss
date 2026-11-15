@@ -26,6 +26,13 @@
           border-top: 2px solid $fg-color-dark;
         }
       }
+
+      .navigation-item {
+        &.active > a,
+        &.ancestor > a {
+          color: $link-color-dark;
+        }
+      }
     }
 
     #menu-toggle {
