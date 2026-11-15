@@ -162,6 +162,16 @@
           color: $link-color;
         }
       }
+
+      .draft {
+        color: white;
+        vertical-align: middle;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        background-color: #2a9d8f;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
     }
   }
 
